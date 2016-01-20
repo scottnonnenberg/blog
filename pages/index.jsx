@@ -14,7 +14,6 @@ export default class extends React.Component {
   render() {
     let i, len, page, pageLinks, ref, ref1, ref2, title;
     pageLinks = [];
-    console.log(this.props.pages);
 
     ref = sortBy(this.props.pages, (page) => {
       let ref;
