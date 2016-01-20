@@ -126,5 +126,3 @@ On our way home she walks up to a different machine with it in stock and rents i
 As application developers, we need to treat customer credit cards as impermanent things. Software needs to handle payment failures without treating the customer like a criminal. Especially if the customer has a track record of successful payments.
 
 And as consumers, sometimes we will have to call customer service or email support, and sometimes we may even have to go without that service we love for a couple days. :0)
-
-#### Toward zen!

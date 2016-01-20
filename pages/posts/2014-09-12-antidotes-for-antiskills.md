@@ -85,6 +85,5 @@ As this thought process begins to leak past the original set of frustrations int
 
 
 #### Can we eradicate antiskills completely?
-Probably not, and I don't think we should try. May we always use them in small amounts, only as necessary for the job at hand!
 
-#### Toward zen!
+Probably not, and I don't think we should try. May we always use them in small amounts, only as necessary for the job at hand!

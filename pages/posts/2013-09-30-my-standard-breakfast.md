@@ -86,5 +86,3 @@ Small cutting boards are way better than big ones. Easier to wash, easier to han
 * Get a dish brush; it’ll make those daily dishes way easier to deal with.
 
 And now you know just a little bit more about my unusual mornings. :0)
-
-#### Toward zen!

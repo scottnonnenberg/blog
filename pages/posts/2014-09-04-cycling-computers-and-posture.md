@@ -93,10 +93,6 @@ One of these days I’ll meet my flexibility goals and jump on a bike. But it’
 
 I’d love to hear about your efforts and progress!
 
-
-
-#### Toward zen!
-
 ---
 
 Further reading

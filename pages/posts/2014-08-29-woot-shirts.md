@@ -56,8 +56,6 @@ And my girlfriend even wears the woot shirt I got her, amazingly. :0)
 #### The Future
 Over the last seven years, I’ve bought 41 shirts from shirt.woot. But as the years wear on, the shirts will be worn, and will become worn. And I’ll need to find a new solution to my clothes-shopping problem. Maybe I’ll shop the [shirt.woot archives](http://shirt.woot.com/catalog?ref=sh_ctlg), or maybe I’ll find something new. We shall see.
 
-#### Toward zen!
-
 ---
 
 The shirts featured above:

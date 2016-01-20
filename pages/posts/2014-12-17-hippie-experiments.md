@@ -49,8 +49,6 @@ You can either buy some pre-made, or make it yourself with magnesium chloride ba
 
 Here’s to constant improvement! Not all of my experiments have been successful, but the successes make it all worth it. Maybe they’ll be successes for you too?
 
-#### Toward zen!
-
 ---
 
 A few more details:

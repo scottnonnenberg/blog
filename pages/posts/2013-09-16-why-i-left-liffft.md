@@ -57,6 +57,3 @@ In the last few months I’ve been resetting like I did after Microsoft. I left 
 All this with the goal of building a boutique software business. My goal is to find a group of people who are interested in apps that will help them optimize their life - reclaim time, enhance focus, be happier, etc. For example, right now one of my big focus areas is on calming my life: I don’t watch or read the news, I only check email once a day, and really try to check facebook very rarely (I removed it from my phone in the last couple weeks). In that vein, I have an app very close to Beta release that helps you check email less frequently ([sign up for app release updates here](https://sinap.ps/)).
 
 And, get ready for a lot more posts on this blog! My plan is to include the details of how I’ve optimized my life (health, fitness, focus, etc.), cover the books I’ve read recently and general thoughts, and talk shop too: dev discoveries/tips and app releases/updates.
-
-
-#### Toward zen!

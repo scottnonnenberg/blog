@@ -70,5 +70,3 @@ Yes, you can see a ramp-up there in July, but that was a natural progression. I 
 I’ve learned my limits for distance and recovery time, but the biggest learning has to do with motivation. If I don’t manage expectations well, I’ll try, fail, and give up completely. Many of the breaks I took were way longer than they needed to be.
 
 Have I learned how to build a sustainable running habit? I don’t know yet. Anyway, I’m not the one in charge. Talk to my legs.
-
-#### Toward zen!

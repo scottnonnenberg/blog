@@ -82,5 +82,3 @@ I feel like the last several years have prepared me for this time in my life. I�
 Before my departure, I remember being very nervous about leaving Microsoft. I wasn’t sure exactly what was going to happen next once I turned in my keycard. Now, after three years I can say that even those low-confidence post-Microsoft expectations were all wrong. But that’s a good thing! Growth!
 
 My time since Microsoft hasn’t always been comfortable, but it has been very rewarding. Here’s to another year of closing my eyes and stepping out into the void. :0)
-
-#### Toward zen!

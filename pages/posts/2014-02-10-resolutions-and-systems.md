@@ -62,8 +62,6 @@ Finally, I reevaluated my goals for the year. For some of the goals, I realized 
 
 Probably most importantly, reviewing January left me excited to put some better scores on the board for February. I think I’ll continue this new tradition. :0)
 
-#### Toward zen!
-
 ---
 
 Further reading:

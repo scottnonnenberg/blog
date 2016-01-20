@@ -104,5 +104,3 @@ I realized that I had followed the pattern too, in various parts of my career. W
 ---
 
 So those are twelve things I learned at Microsoft. I’ve got quite a few more if you’d like me to talk your ear off. And I still use all of this, so I think my time there was worth it!
-
-##### Toward zen!

@@ -47,8 +47,6 @@ Okay, maybe you don’t agree with me. At least now you understand why I [wrote 
 
 Well, at least we don’t have to worry about being too hot anymore. :0)
 
-#### Toward Zen!
-
 ---
 
 Just a little more:

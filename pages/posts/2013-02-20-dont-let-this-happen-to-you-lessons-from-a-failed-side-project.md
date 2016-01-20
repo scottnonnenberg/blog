@@ -59,5 +59,3 @@ I ended up cutting things off with these guys. I definitely wasn’t signed up f
 This taste left me wanting more of the startup world. What could I do better next time? I love solving problems, and figuring out how to get a business off the ground seemed like a pretty big problem. Not long after all of this I left Microsoft. Now, at [LIFFFT](https://www.liffft.com/) we’re always getting better at techniques like [customer development](http://steveblank.com/category/customer-development/) and [lean startup](http://en.wikipedia.org/wiki/Lean_Startup) and we help other companies do the same.
 
 As you pursue side projects, remember to take a balanced approach. It’s exciting! It’s fun! You’re following your dream! But learn from my mistakes and protect yourself from heartbreak.
-
-#### Toward zen!

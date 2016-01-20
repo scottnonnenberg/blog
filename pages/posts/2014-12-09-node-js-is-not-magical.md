@@ -135,8 +135,6 @@ After all that, is it still worth using Node.js? **Yes.** I particularly like th
 
 Thanks for reading! Now, if you do decide to make the transition to Node.js, you can rest assured that you’re moving to it for the right reasons. Good luck!
 
-#### Toward zen!
-
 ---
 
 A little bit more:
