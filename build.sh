@@ -1,4 +1,4 @@
-# exit with error if we find outstanding changes in repo
+set -e
 
 echo '** checking git status'
 
@@ -12,10 +12,12 @@ fi
 DIR=`dirname $0`
 TARGET=${DIR}/public
 
-if [ -d  ] ; then
+if [ -d "${TARGET}" ] ; then
   echo
   echo '** removing previous public folder'
-  rm -rf ${TARGET}
+  pushd ${TARGET} > /dev/null
+  rm -rf *
+  popd > /dev/null
 fi
 
 echo
