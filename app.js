@@ -22,7 +22,7 @@ exports.onRouteChange = function(state, page, pages, config) {
   }
   else {
     window._paq.push(['setCustomUrl', page.path]);
-    window._paq.push(['setDocumentTitle', 'blog/' + page.title | page.requirePath]);
+    window._paq.push(['setDocumentTitle', 'blog/' + page.title || page.requirePath]);
     window._paq.push(['trackPageView']);
   }
 }
