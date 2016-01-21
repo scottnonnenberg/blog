@@ -4,13 +4,31 @@ import DocumentTitle from 'react-document-title';
 import { link } from 'gatsby-helpers'
 import { TypographyStyle } from 'utils/typography'
 
+const piwikDomain = 'https://piwik.sinap.ps';
+const CDNDomain = 'https://static.sinap.ps';
+
+const now = new Date();
+const buster = now.getTime();
+
+const piwikSetup = `
+  window._paq = window._paq || [];
+  window._paq.push(['setTrackerUrl', '${piwikDomain}/piwik.php']);
+  window._paq.push(['setSiteId', '3']);
+  window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
+  window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
+  window._paq.push(['enableLinkTracking']);
+  window._paq.push(['setDocumentTitle', 'blog/' + document.title]);
+  window._paq.push(['trackPageView']);
+
+  // add tag
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+  g.defer=true; g.async=true; g.src='${CDNDomain}/js/piwik/2.15.0/piwik.min.js';
+  s.parentNode.insertBefore(g,s);
+`;
+
 export default class Html extends React.Component {
   render() {
-    let title;
-    title = DocumentTitle.rewind();
-    if (this.props.title) {
-      title = this.props.title;
-    }
+    const title = this.props.title || DocumentTitle.rewind();
 
     return (
       <html lang="en">
@@ -18,7 +36,7 @@ export default class Html extends React.Component {
           <meta charSet="utf-8"/>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
           <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
-          <title>{this.props.title}</title>
+          <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon}/>
           <TypographyStyle/>
           <style dangerouslySetInnerHTML={{__html:
@@ -41,7 +59,11 @@ export default class Html extends React.Component {
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
-          <script src={link("/bundle.js")}/>
+          <script src={link("/bundle.js?t=" + buster)}/>
+          <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
+          <noscript>
+            <img src={`${piwikDomain}/piwik.php?idsite=` + 1} style={{border: 80}} />
+          </noscript>
         </body>
       </html>
     );
