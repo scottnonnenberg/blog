@@ -14,9 +14,7 @@ exports.loadContext = function(callback) {
 var first = true;
 
 exports.onRouteChange = function(state, page, pages, config) {
-  if (!window._paq) {
-    return;
-  }
+  window._paq = window._paq || [];
 
   if (first) {
     window._paq.push(['trackPageView', 'initial render']);
@@ -24,7 +22,7 @@ exports.onRouteChange = function(state, page, pages, config) {
   }
   else {
     window._paq.push(['setCustomUrl', page.path]);
-    window._paq.push(['setDocumentTitle', 'blog/' + document.title]);
+    window._paq.push(['setDocumentTitle', 'blog/' + page.title | page.requirePath]);
     window._paq.push(['trackPageView']);
   }
 }
