@@ -22,7 +22,7 @@ Let’s dig into these antiskills and their antidotes...
 
 ![sit down, shut up and do as you’re told](https://static.sinap.ps/blog/2014/Sep/sit_down_shut_up_and_do_as_you_re_told-1410405365318.png)
 
-#### Antiskill: Doing What You’re Told
+### Antiskill: Doing What You’re Told
 
 _At the beginning of my career, as an intern software developer at Hewlett-Packard, I would get tasks from my manager then go do them. If I ran out of tasks, I’d need to go back and get more. It’s a good thing I was able to get through the tasks fast, because I couldn’t work any smarter._
 
@@ -34,7 +34,7 @@ This may be a reasonable short-term strategy. But without understanding why you�
 
 The best kind of workplace harnesses more than your ability to do tasks. It demands creative thought. If you aren’t already in a place like that, you can either find a new job or show your manager the business value of your creative thought.
 
-#### Antidotes
+### Antidotes
 
 * Educate yourself about your company’s business: how it provides value to customers and how you fit into that. Make suggestions based on your understanding.
 * Ask questions about the tasks being handed to you. If you agree with the plan, you can verify that your thinking matches your manager’s. If not, you can present your evidence for doing things differently. Maybe you’ll convince your manager a change is required. Or perhaps you’ll uncover a major difference in thinking that will be a problem going forward. Both are good to know.
@@ -43,7 +43,7 @@ The best kind of workplace harnesses more than your ability to do tasks. It dema
 
 ![headless chicken](https://static.sinap.ps/blog/2014/Sep/headless_chicken-1410405270942.jpg)
 
-#### Antiskill: Being Responsive
+### Antiskill: Being Responsive
 
 _As a project manager at Microsoft, near the end of every milestone I would have meetings for multiple hours every day to decide which last-minute issues to fix. Everything worth talking about was high-urgency, high-priority. It was especially bad a couple days before the final build - our vigilance extended through the weekend._
 
@@ -53,7 +53,7 @@ It’s true; there are situations where it’s extremely valuable to turn up the
 
 In many cases, there’s a core reason behind that need for high-frequency reactive effort. What resources do your peers or team need to ensure that they can move forward without your help? Do they need documentation? Training? Do you need to get rid of folks on the team who just need too much handholding?
 
-#### Antidotes
+### Antidotes
 
 * When you get a notification, use a timer to keep from responding too quickly. This will start to train people that your response time is slower, making it more likely that they’ll spend more time on it before coming to you. If they still have a problem and it’s important, they can call you or come talk to you in person. Gradually increase the length of your timer.
 * Ask “Why?” about the interruption repeatedly until you get to something that can be fixed so it doesn’t happen next time. Go fix that thing.
@@ -62,7 +62,7 @@ In many cases, there’s a core reason behind that need for high-frequency react
 
 ![obama: deal with it](https://static.sinap.ps/blog/2014/Sep/deal_with_it_obama-1410405282195.jpg)
 
-#### Antiskill: Dealing With It
+### Antiskill: Dealing With It
 
 _One of my big surprises at Microsoft was the length of the Visual Studio build time. Sure, I’d seen long builds - some of my C++ and Java projects in college had taken over a minute to build. But this was something else entirely. A full Visual Studio build, snapped in the late evening, took until the next morning._
 
@@ -74,7 +74,7 @@ If not, you’re in danger of something called [Learned Helplessness](http://en.
 
 As this thought process begins to leak past the original set of frustrations into your personal life, you consume more and do/create less. You watch TV instead of trying a new recipe or making art.
 
-#### Antidotes
+### Antidotes
 
 * Practice the virtuous cycle of coming up with something you want to do, then doing it. Start with small things, then get progressively bigger. If you already feel effective in part of your life, think about applying some techniques from that part to the areas which are feeling stifled.
 * Practice holding these ideas in your head at the same time:
@@ -84,6 +84,6 @@ As this thought process begins to leak past the original set of frustrations int
 * Make a list of your frustrations and prioritize it. For now, ignore all but your first item. Come up with a step-by-step plan to address it, potentially including peers and mentors to help you tune that plan. Then get to work!
 
 
-#### Can we eradicate antiskills completely?
+### Can we eradicate antiskills completely?
 
 Probably not, and I don't think we should try. May we always use them in small amounts, only as necessary for the job at hand!

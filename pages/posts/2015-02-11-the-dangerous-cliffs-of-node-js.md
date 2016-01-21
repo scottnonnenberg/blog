@@ -11,7 +11,7 @@ previous: /a-system-for-2015/
 
 It’s not all roses in the world of [Node.js](http://nodejs.org/). In fact, more than just about every other platform I’ve used, it can feel like a precarious mountain path with a long cliff below. Yes, it features some very beautiful vistas, but one wrong step and it’s all over. Let’s cover four of those simple mistakes with substantial, unexpected consequences, as well as some potential guardrails.
 
-#### Crashes
+### Crashes
 
 The simplest of these mistakes is the classic crash. My code has done this so very many times. It’s easy; just try to get a key from an null object, or try to call a string like a function, and you’ve crashed.
 
@@ -34,14 +34,12 @@ Sadly, even quick restarts will result in [socket hang-ups](http://stackoverflow
 ##### Mitigations:
 
 * [`thehelp-cluster`](https://github.com/thehelp/cluster) is a library I wrote to shut down your [`express`](http://expressjs.com/) server gracefully when a crash happens. It first responds with an error to the original request (via your [`express` error handler](http://expressjs.com/guide/error-handling.html)), then closes all open [keepalive connections](http://stackoverflow.com/questions/20763999/how-does-http-keep-alive-work), and finally takes the process down when all outstanding requests are complete. After a crash your process is in an unknown state, so I thought it prudent to shut down as soon as possible.
-
 * [`hapi`](http://hapijs.com/) is also resilient to crashes in endpoint handlers. It keeps the server alive after crashes, which could result in unexpected behavior or memory leaks.
-
 * Both of these solutions use [`domain`](http://nodejs.org/api/domain.html). Sadly, [domains are deprecated despite having no good replacement solution](https://github.com/iojs/io.js/issues/66).
 
 [![dangerous cliffs via sarah_c_murray of flickr](https://static.sinap.ps/blog/2015/02_feb/cliff_edges_are_dangerous-1423614893374.jpg)](https://www.flickr.com/photos/sarah_c_murray/5448305160)
 
-#### Hangs
+### Hangs
 
 *Last November one of my node.js apps started taking a really long time to respond. It was responding in about a minute, where I was expecting it to be far less than a second. First, I looked at the application logs on the app node the slow requests were coming from, and found no responses that took longer than a few ms.*
 
@@ -56,18 +54,14 @@ But even if you’ve fully vetted all your third-party libraries, it’s still e
 ##### Mitigations:
 
 * Monitor nginx logs for hang notifications. By default they are in the error-specific log file, and look like this: *upstream timed out (110: Connection timed out)*
-
 * Install express logging. I use the [`morgan`](https://github.com/expressjs/morgan) express logger, which installs a [high-resolution timer](http://nodejs.org/api/process.html#process_process_hrtime) you can access via the `:response-time` token. I’ve found that on hangs it [outputs not a duration but a dash](https://github.com/expressjs/morgan/blob/master/index.js#L263), but this can also mean that the user cancelled the action. Either way, lots of dashes for `:response-time` is a bad sign.
-
 * `hapi` doesn’t seem to output anything to the logs on a hang, even with the [`good-console`](https://www.npmjs.com/package/good-console) plugin in place. :0(
-
 * Even if you’re detecting these situations, I think we can agree that we don’t want users waiting very long to finally get no response. By default, `express` and `hapi` will both keep a connection open until the remote client gives up, and I’ve seen Chrome to be something like two minutes, and [`nginx`](http://nginx.org/) is 60 seconds by default. `hapi` does have a [built-in route timeout option](http://hapijs.com/api#route-options) you’ll want to investigate. `express` is a little tricker. You can use middleware like [`timeout`](https://github.com/expressjs/timeout), but you will need watch for your long-running handlers attempting to send responses after the timeout error has already been sent to the client.
-
 * If you’re not writing a server interacting with clients, then embrace logging. The only way to catch a hang in this scenario is by detecting missing log entries!
 
 [![dangerous cliffs via 9610484@N05 on flickr](https://static.sinap.ps/blog/2015/02_feb/dangerous_cliffs-1423615251162.jpg)](https://www.flickr.com/photos/9610484@N05/3483050503)
 
-#### Blocking the event loop
+### Blocking the event loop
 
 *My first Node.js app backed a site with heavy client-side interactivity, and delivered the required data in three big chunks. Some of that data went back as far as a year to enable all the interactivity we wanted in the charts. More and more data built up every day, adding to the size. Things just didn’t seem snappy with all that data flying around. It became clear that getting the data from the data store, then transforming it and sending it to the client, took long enough to slow down the event loop.*
 
@@ -80,14 +74,12 @@ For all that data transformation time, the process is unresponsive to other requ
 ##### Mitigations:
 
 * Prefer streams. [`streams`](http://nodejs.org/api/stream.html) are the way to handle large amounts of data without taking down the process. Put the time in to [learn how to](http://www.sitepoint.com/basics-node-js-streams/) [use them effectively](https://github.com/substack/stream-handbook).
-
 * If you must get all the data up front, be sure that you include some kind of __limit__ clause, and check any user-provided bounds input.
-
 * Monitor your request response times. [New Relic](http://newrelic.com/nodejs) plugs into Express automatically, or you can use [`morgan`](https://github.com/expressjs/morgan) support for response times. The `good-console` plugin for `hapi` includes response times by default. Because one too-long synchronous code block will delay everything else, you’ll see very clear patterns in the data.
 
 [![dangerous cliffs via swotai on flickr](https://static.sinap.ps/blog/2015/02_feb/sheer_unstable_cliffs-1423615339192.jpg)](https://www.flickr.com/photos/swotai/3028197916)
 
-#### Too much concurrency
+### Too much concurrency
 
 *For my last contract I needed to write a program to process 11.6 gigabytes of JSON data, transforming it before injecting it into a database. Happily, [JSONStream](https://github.com/dominictarr/JSONStream) was there to assist in handling the data little bits at a time, because I certainly couldn’t load it all into memory at once. I had it implemented in short order, then started my first run.*
 
@@ -98,16 +90,13 @@ Node.js is really good at kicking off a lot of concurrent tasks. But like anythi
 ##### Mitigations:
 
 * Use something like [`toobusy-js`](https://github.com/STRML/node-toobusy) to monitor your event loop latency. At its most basic, it will detect a slow event loop, which can be a sign of high load or long synchronous processing. You can also use it to turn away requests under high latency, avoiding runaway failure as more incoming requests add load to an already-struggling process.
-
 * Limit the number of concurrent requests you make to a downstream service. It’s just polite, especially if you don’t own that service. While you're at it, make sure you're well-read on [`agent`](http://nodejs.org/api/http.html#http_class_http_agent), keep-alive and sockets. It's impolite _and_ slow to close and reopen lots of sockets if you don't need to.
-
 * If you do own the downstream service, or you know the failure modes of the third party service really well, you might consider using the [Circuit Breaker ](http://martinfowler.com/bliki/CircuitBreaker.html)[pattern](http://martinfowler.com/bliki/CircuitBreaker.html). Here is a [node implementation](https://github.com/ryanfitz/node-circuitbreaker).
-
 * In failure cases, consider using [exponential back-off](https://github.com/MathieuTurcotte/node-backoff), because Node.js is also good at retrying things very quickly: ["If you have all these fast node processes on lots of servers, all trying to connect to a database that went down, you can take down a production firewall. Just saying."](http://youtu.be/5ttx8Nkgjl8?t=47m5s)
 
 [![dangerous cliffs via daveynin on flickr](https://static.sinap.ps/blog/2015/02_feb/rocky_trail-1423614995322.jpg)](https://www.flickr.com/photos/daveynin/4787623561)
 
-#### Getting to the summit
+### Getting to the summit
 
 Of course, testing is the first line of defense to prevent all of these things. But a production service needs resiliency. These mitigations are [defense in depth](http://en.wikipedia.org/wiki/Defense_in_depth_%28computing%29) techniques, so if an issue does get to production, its effect will be minimized.
 

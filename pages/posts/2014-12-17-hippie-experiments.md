@@ -13,7 +13,7 @@ I also experiment with a lot of weird things. Like making my own kombucha (*fail
 
 ![bamboo steamer](https://static.sinap.ps/blog/2014/Dec/bamboo_steamer-1417828984766.jpg)
 
-#### Bamboo steamer
+### Bamboo steamer
 
 I love leftovers. A lot of people get sick of eating the same thing for a few dinners in a row, but it works just fine for me. And honestly I can’t justify cooking from scratch every day. So my plan is to cook relatively large recipes then reheat for the next couple days.
 
@@ -25,7 +25,7 @@ It’s easy! I just put a water-filled pan on the stovetop on high, then drop th
 
 ![deodorant ingredients](https://static.sinap.ps/blog/2014/Dec/deoderant_ingredients-1417828992821.jpg)
 
-#### Homemade Deodorant
+### Homemade Deodorant
 
 I don’t like strong smells. My dish soap and laundry detergent are both fragrance free, and my hand soap is a diluted mint. So, most mainstream deodorants are are immediately off the table. I also generally like to reduce the number of ingredients in my personal care products.
 
@@ -37,7 +37,7 @@ Not convinced? Last summer my homemade deodorant got a ringing endorsement at a 
 
 ![magnesium chloride flakes](https://static.sinap.ps/blog/2014/Dec/magnesium_flakes-1417829007063.jpg)
 
-#### Magnesium oil
+### Magnesium oil
 
 When I started using magnesium oil about a year ago, my workout recovery improved, and it seemed like I was building muscle more easily. With the oil, post-workout soreness was more a gentle reminder of recent activity than a sternly-worded letter from my body to my brain.
 
@@ -45,18 +45,14 @@ I had previously read that magnesium and calcium could be used to assist with mu
 
 You can either buy some pre-made, or make it yourself with magnesium chloride bath flakes. Just boil 1 cup of water, and slowly stir in 1 cup of the flakes until they fully dissolve. Once that has cooled down, rub it on your skin for a totally new way to get your key minerals. The reminder that the skin absorbs things that way definitely puts showering and swimming in a new light, huh?
 
-#### Experimentation FTW!
+### Experimentation FTW!
 
 Here’s to constant improvement! Not all of my experiments have been successful, but the successes make it all worth it. Maybe they’ll be successes for you too?
 
 ---
 
 A few more details:
-
 * Yes, I have broken one of my normal dinner plates when attempting to use it in my bamboo steamer. I’ve had no problems since I switched to pyrex. :0(
-
 * Corn starch is more commonly used in homemade deoderant. I use arrowroot powder because I'm allergic to corn!
-
 * One challenge with coconut oil-based deodorant is that coconut oil has a melting point of 76 degrees fahrenheit, right within normal indoor temperatures. So your deodorant can be a liquid, soft, or fully solid depending on the time of the year, whether the heat lamp is on in your bathroom, etc. Just find a [good container](http://www.humangear.com/gotoob/) and you won’t have to worry.
-
 * [A little more about magnesium chloride](http://www.ancient-minerals.com/magnesium-chloride/).

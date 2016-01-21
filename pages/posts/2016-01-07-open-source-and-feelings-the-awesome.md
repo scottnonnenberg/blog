@@ -7,7 +7,7 @@ next: /four-books-for-greater-understanding/
 previous: /contract-teaching/
 ---
 
-![image alt text](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/osfeels.png)
+![Open Source and Feelings Logo](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/osfeels.png)
 
 I went to a little conference here in Seattle last fall called [Open Source and Feelings](http://osfeels.com). [It was awesome, inspiring, and challenging](https://twitter.com/scottnonnenberg/status/650745465806295040). The event was unique for a tech conference in that it didn’t focus on code at all. It instead covered the issues that surround code: the difficulties of running open source projects, developing experiences that customers love, navigating the software development employment market, and so on. It’s about time that we all started talking about these things!
 

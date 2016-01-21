@@ -11,7 +11,7 @@ In American pop culture, Autumn is orange and brown, pumpkins, brightly colored 
 
 ![leaves](https://static.sinap.ps/blog/2014/Sep/leaves-1411691625098.JPG)
 
-#### Newness
+### Newness
 From a young age we’re all conditioned to expect to start something new in the fall. The first day of school. Time to stop playing around, time to be productive again. Strangely, that feeling has continued far past my school years:
 
 - _New job:_ After a post-graduation road trip to Alaska with friends, I started full-time at Microsoft at the end of summer. This year and last year around this time I started on new contracts.
@@ -22,7 +22,7 @@ From a young age we’re all conditioned to expect to start something new in the
 
 ![equinox sunset](https://static.sinap.ps/blog/2014/Sep/equinox_sunset-1411691632311.jpg)
 
-#### Reflection
+### Reflection
 The Autumn Equinox was this week, and I got to spend it watching the sunset (above) here in Seattle at a nice little park with a view of the Olympics. The park even has an installation showing you where the sun sets at the summer and winter solstice. The day of the Equinox, the sun was right in the middle.
 
 If it seems like a time of significance, it is. This is one of the two times of year when the day and night are just about the same length. Unfortunately, modern culture is pretty disconnected with the natural rhythms of the world, so we need to look to some old traditions for their thoughts on the matter. [“Pagan” mythology calls the Autumn Equinox _Mabon_](http://www.huffingtonpost.com/2014/09/23/mabon-2014_n_5863384.html), and has some pretty great recommendations: _“express gratitude, complete projects and honor a moment of balance.”_ And of course Thanksgiving brings in this idea of reflecting and giving thanks as well.
@@ -31,7 +31,7 @@ To me, it just makes sense. No more margaritas on the patio. No more lazy dusk w
 
 ![change per day chart](https://static.sinap.ps/blog/2014/Sep/change_per_day-1411692657480.png)
 
-#### Melancholy
+### Melancholy
 It's a time of balance between the day and night, but this time of year is also a time of change. Each new day here in Seattle sees a reduction in daylight of nearly three and a half minutes. Maybe you’ve noticed? I have definitely noticed. It is with some sadness that I welcome the fall here in the Northwest.
 
 Fall marks the beginning of many months of darkness, gray skies and rainy days. While Seattle is known for its rain, we really get more of a drizzle most of the time. More than any other time, Fall in Seattle means real rain. Real rain keeps you inside. And of course nobody likes the big hit of Daylight Saving Time - all of a sudden we’re coming home from work in the dark.
@@ -40,7 +40,7 @@ So, with the knowledge of all this approaching, the melancholy appears. But we c
 
 ![sunset sunrise chart](https://static.sinap.ps/blog/2014/Sep/sunrise_sunset-1411691657761.png)
 
-#### Coping via Programming
+### Coping via Programming
 Okay, maybe you don’t agree with me. At least now you understand why I [wrote a program](https://github.com/scottnonnenberg/suncsv) to generate sunrise and sunset times. Specifically, it generates a CSV (comma-separated value) file you can use to import sunrise and sunset events into your calendar or spreadsheet program of choice.
 
 [Install the app](https://github.com/scottnonnenberg/suncsv#setup), generate a CSV, [add those events to your calendar](https://github.com/scottnonnenberg/suncsv#add-to-google-calendar), then deal better with the new daylight hours. Maybe plan to go running or take a walk at lunch instead of before or after work?

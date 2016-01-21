@@ -10,7 +10,7 @@ previous: /12-things-i-learned-from-microsoft/
 Most of you who I’ve spoken with in the last month or two likely know already that I left [LIFFFT](http://www.liffft.com/). I wanted to make a wider announcement as our trajectories continue to diverge.
 
 
-#### Moving On from Microsoft
+### Moving On from Microsoft
 This story goes all the way back to my experiences at Microsoft. Let’s be honest - I was really frustrated there. I saw requests from customers go unaddressed for version after version, adding up to years, with no end in sight. At the very beginning of my time there, it made a little bit of sense: unimaginable effort was required to get software ready for release, leaving little room for anything else. Later, I thought it was about the poor planning, the arms race of buffers, and aging architecture. But as I gained a wider perspective near the end of my time there, I saw that there was an explicit conflict between company strategy and making users happy.
 
 This wasn’t what I wanted to spend my time doing. I wanted to make software that would make the world a better place. Releases that would be greeted with smiles, not grumbles. I also wanted a more direct path between my actions and that happiness.
@@ -20,7 +20,7 @@ It’s pretty basic. I wanted the goal of my efforts to be a worthy cause, and I
 So I left without a lot of direction. I planned to take some time to figure things out. I did some travelling, visited friends and family, got through a backlog of tasks that had been piling up,  wrote some long-overdue code for a side project I had started a year earlier, and relaxed a little bit too.
 
 
-#### Launching LIFFFT
+### Launching LIFFFT
 After a short while, a good friend came to me and pitched LIFFFT. It was an audacious vision for a company where we’d help companies with our combined startup/corporate/technical/facilitator experience, and build and launch apps while we weren’t doing that. It was very exciting. I knew I could help; I had seen firsthand how a company could lose sight of those core techniques required to build something new, to truly listen to its customers.
 
 So I joined up, and we had quite a journey. I learned a huge amount. Just a few great experiences:
@@ -51,7 +51,7 @@ So, I had some good conversations with my co-founders and we decided that it mad
 I wish LIFFFT the best - they’re passionate about what they do. They’re the right decision to help you get more innovative with your company.
 
 
-##### Starting Scott Nonnenberg Software
+### Starting Scott Nonnenberg Software
 In the last few months I’ve been resetting like I did after Microsoft. I left a lot of stuff at Goodwill, visited family in CA, did various food/health experiments, got through a lot of tasks that had been piling up, and making lots of lists. Also working down those lists. :0)
 
 All this with the goal of building a boutique software business. My goal is to find a group of people who are interested in apps that will help them optimize their life - reclaim time, enhance focus, be happier, etc. For example, right now one of my big focus areas is on calming my life: I don’t watch or read the news, I only check email once a day, and really try to check facebook very rarely (I removed it from my phone in the last couple weeks). In that vein, I have an app very close to Beta release that helps you check email less frequently ([sign up for app release updates here](https://sinap.ps/)).

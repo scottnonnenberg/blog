@@ -8,7 +8,7 @@ previous: /the-dangerous-cliffs-of-node-js/
 ---
 
 
-### ![ssa logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
+![Social Security Administration Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
 
 If you’re a frequent visitor at [gammacorvi.com](https://gammacorvi.com/) (and of course you should be), you may have noticed an unusual entry under the [Clients heading](https://gammacorvi.com/#clients): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
 
@@ -28,7 +28,7 @@ In the case of their engagement with SSA, USDS recommended Node.js for its produ
 
 With the decision to use Node.js made but few resources of their own, USDS needed to pull others in to help bring SSA up to speed. They came across my name, and my availability and experience matched what they were looking for. This is what I did for them...
 
-### ![usds logo](https://static.sinap.ps/blog/2015/10_oct/ssa/usds-logo.png)
+![United States Digital Service Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/usds-logo.png)
 
 ### 1. Hands-on classroom training
 

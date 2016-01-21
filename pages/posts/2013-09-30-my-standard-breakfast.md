@@ -16,7 +16,7 @@ First, yeah it’s a lot of food. But then again I used to eat three or four bow
 
 ![First Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast1.jpg)
 
-#### What?
+### What?
 As you might expect, it’s made of very high-quality ingredients:
 
 * Three organic pastured eggs (ideally with nice orange yolks!)
@@ -29,18 +29,18 @@ As you might expect, it’s made of very high-quality ingredients:
 
 ![Second Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast2.jpg)
 
-#### When?
+### When?
 Every morning, even on weekends.
 
 
-#### Why?
+### Why?
 Why do I spend the time every morning to make this? Well, I believe in quality nutrition. Based on my research, good health is not all about exercise. It’s about getting enough sleep, reducing the stress in your life, and giving your body high quality fuel. And then maybe some exercise when your body is ready.
 
 People worry about so-called “white” foods and their simple carbs, the large amount of saturated fat in butter, or the cholesterol in eggs. I figure that all of my breakfast ingredients are minimally processed and produced in really the best way I can find it. Treating the animals well, avoiding the use of chemicals. The obesity epidemic is new in the last ~50 years, and I’m attempting to eat how people ate before then.
 
 ![Third Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast3.jpg)
 
-#### How?
+### How?
 It takes 15-20 minutes to prepare, and another 15 or so to eat. Usually I read as I eat, always trying to use my time wisely.
 
 Oh, you meant how did I get here? Well, as I said before, I started off with cereal. I was quite the connoisseur, actually.
@@ -67,13 +67,13 @@ Since then, I’ve made some small tweaks:
 
 ![Fourth Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast4.jpg)
 
-#### Is it worth it?
+### Is it worth it?
 Absolutely. No doubt about it. The latest iterations are really tasty - fresh potatoes are way better than the disks, and I’m pretty good at getting them crispy. I’ve even experimented with chili powder mixed in with the potatoes - it makes red potatoes much more palatable.
 
 Just as important, it’s nutritionally comprehensive and very stabilizing. I’m alert and calm all the way through a lunchtime workout and late lunch. I recommend it!
 
 
-#### Pro Tips
+### Pro Tips
 Yep, I’ve cooked in my kitchen just about every morning for the past three years. I’ve learned a few things:
 
 * You don’t have to wash your cutting board every day (but you definitely should after potatoes, and very likely after garlic and onion. unless you like that classic apples and garlic flavor…)
