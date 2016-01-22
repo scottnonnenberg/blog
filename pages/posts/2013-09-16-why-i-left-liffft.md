@@ -1,5 +1,4 @@
 ---
-hits: 123
 title: Why I left LIFFFT
 date: 2013-09-16T14:00:00.000Z
 layout: post

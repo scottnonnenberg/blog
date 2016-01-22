@@ -52,6 +52,10 @@ superagent
       if (url === '/how-not-to-do-customer-service-credit-card-edition/') {
         return;
       }
+      if (url === '/why-i-left-liffft/') {
+        return;
+      }
+
       if (url === '/the-dangerous-cliffs-of-node-js/') {
         hits += 631;
       }
