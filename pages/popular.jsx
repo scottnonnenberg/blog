@@ -14,6 +14,8 @@ export default class extends React.Component {
       return data && Boolean(page.data.hits);
     })
     pages = sortBy(pages, page => page.data.hits);
+    pages = pages.reverse();
+    pages = pages.slice(0, 10);
 
     const pageLinks = map(pages, page => (
       <li
@@ -46,9 +48,9 @@ export default class extends React.Component {
             />
             Written by <strong>{this.props.config.authorName}</strong> who lives and works in Seattle building useful things. <a href="https://twitter.com/scottnonnenberg">You should follow him on Twitter</a>
           </p>
-          <ul>
+          <ol>
             {pageLinks}
-          </ul>
+          </ol>
         </div>
       </DocumentTitle>
     )
