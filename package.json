@@ -2,15 +2,6 @@
   "name": "blog-scottnonnenberg-com",
   "private": true,
   "version": "1.0.0",
-  "description": "https://blog.scottnonnenberg.coms",
-
-  "repository": {
-    "type": "git",
-    "url": "git@infra:sites/blog"
-  },
-
-  "author": "Scott Nonnenberg <mathews.kyle@gmail.com>",
-  "license": "proprietary",
 
   "homepage": "https://blogs.scottnonnenberg.com",
 
@@ -23,7 +14,16 @@
     "react-dom": "0.14.3",
     "react-responsive-grid": "0.3.0",
     "react-router": "0.13.5",
+    "superagent": "1.7.1",
     "typography": "0.6.2",
     "underscore.string": "3.2.3"
+  },
+
+  "author": "Scott Nonnenberg <scott@nonnenberg.com>",
+  "license": "proprietary",
+
+  "repository": {
+    "type": "git",
+    "url": "git@infra:sites/blog"
   }
 }
