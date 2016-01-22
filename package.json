@@ -1,33 +1,29 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "blog-scottnonnenberg-com",
+  "private": true,
   "version": "1.0.0",
-  "description": "Starter Gatsby Blog",
-  "main": "n/a",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "https://blog.scottnonnenberg.coms",
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git@infra:sites/blog"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+
+  "author": "Scott Nonnenberg <mathews.kyle@gmail.com>",
+  "license": "proprietary",
+
+  "homepage": "https://blogs.scottnonnenberg.com",
+
   "dependencies": {
-    "lodash": "^3.10.1",
-    "moment": "^2.10.3",
-    "react": "^0.14.3",
-    "react-document-title": "^2.0.1",
-    "react-dom": "^0.14.3",
-    "react-responsive-grid": "^0.3.0",
-    "react-router": "^0.13.5",
-    "typography": "^0.6.2",
-    "underscore.string": "^3.2.2"
+    "front-matter": "2.0.5",
+    "lodash": "3.10.1",
+    "moment": "2.11.1",
+    "react": "0.14.6",
+    "react-document-title": "2.0.1",
+    "react-dom": "0.14.3",
+    "react-responsive-grid": "0.3.0",
+    "react-router": "0.13.5",
+    "typography": "0.6.2",
+    "underscore.string": "3.2.3"
   }
 }
