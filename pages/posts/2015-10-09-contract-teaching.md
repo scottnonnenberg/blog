@@ -1,5 +1,5 @@
 ---
-hits: 11
+hits: 21
 title: 'Contract: Teaching!'
 date: 2015-10-09T16:53:00.000Z
 layout: post

@@ -52,6 +52,12 @@ superagent
       if (url === '/how-not-to-do-customer-service-credit-card-edition/') {
         return;
       }
+      if (url === '/the-dangerous-cliffs-of-node-js/') {
+        hits += 631;
+      }
+      if (url === '/contract-teaching/') {
+        hits += 10;
+      }
 
       var target = lookup[url];
       if (!target) {
