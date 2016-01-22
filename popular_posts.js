@@ -64,11 +64,15 @@ superagent
         return;
       }
 
-      console.log('updating', target.path, ' with ' + hits);
-
       var contents = target.contents;
       var existingHits = /^hits: [0-9]+$/m;
       var newHits = /^[^-]*---/;
+
+      if (target.data && target.data.hits && target.data.hits === hits) {
+        return;
+      }
+
+      console.log('updating', target.path, ' with ' + hits);
 
       if (existingHits.test(contents)) {
         contents = contents.replace(existingHits, 'hits: ' + hits);
