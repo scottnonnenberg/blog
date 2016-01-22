@@ -1,6 +1,8 @@
 import React from 'react';
 import { RouteHandler, Link } from 'react-router';
 import sortBy from 'lodash/collection/sortBy';
+import map from 'lodash/collection/map';
+import filter from 'lodash/collection/filter';
 import DocumentTitle from 'react-document-title';
 import { link } from 'gatsby-helpers';
 import { rhythm, fontSizeToMS } from 'utils/typography'
