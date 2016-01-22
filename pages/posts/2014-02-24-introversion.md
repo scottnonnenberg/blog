@@ -1,4 +1,5 @@
 ---
+hits: 52
 title: Introversion
 date: 2014-02-24T10:28:13.000Z
 layout: post

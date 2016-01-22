@@ -1,4 +1,5 @@
 ---
+hits: 3
 title: 'Open Source and Feelings: The Awesome'
 date: 2016-01-07T01:26:05.000Z
 layout: post
