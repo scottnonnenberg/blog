@@ -6,6 +6,10 @@ layout: post
 path: /hippie-experiments/
 next: /a-system-for-2015/
 previous: /node-js-is-not-magical/
+tags:
+  - fun
+  - nutrition
+  - fitness
 ---
 
 I’m outing myself. I have some distinctly hippie-style attitudes. I don’t really go for cleanses or macrobiotic eating, but I certainly like my modifiers. Local, organic, raw, unprocessed, grass-fed, pasture-raised, sustainable, fair-trade? Sounds good!

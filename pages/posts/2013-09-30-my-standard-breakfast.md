@@ -6,6 +6,9 @@ layout: post
 path: /my-standard-breakfast/
 next: /how-not-to-do-customer-service-credit-card-edition/
 previous: /why-i-left-liffft/
+tags:
+  - fun
+  - nutrition
 ---
 
 Whenever I tell anyone about what I have for breakfast every morning, they say two things:

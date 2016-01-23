@@ -5,6 +5,10 @@ layout: post
 path: /open-source-and-feelings-the-challenge/
 next:
 previous: /a-running-update/
+tags:
+  - business
+  - conferences
+  - software
 ---
 
 [Open Source and Feelings, last October](http://osfeels.com/), was a great conference. My previous post about it, [The Awesome](https://blog.scottnonnenberg.com/open-source-and-feelings-the-awesome/), covers the good parts. But I also want to talk about the hard parts. Because the feelings in question at the conference weren’t all warm and fuzzy.

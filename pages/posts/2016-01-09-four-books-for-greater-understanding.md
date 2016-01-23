@@ -6,6 +6,10 @@ layout: post
 path: /four-books-for-greater-understanding/
 next: /the-trouble-with-promises/
 previous: /open-source-and-feelings-the-awesome/
+tags:
+  - fun
+  - books
+  - nvc
 ---
 
 I read 30 books in 2015, most for the first time. These four nonfiction books were all first-time reads and left me with quite a few new ideas bouncing around this head of mine. Combined, they made 2015 a year of deeper human and self understanding:

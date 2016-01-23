@@ -6,6 +6,9 @@ layout: post
 path: /the-trouble-with-promises/
 next: /the-why-of-agile/
 previous: /four-books-for-greater-understanding/
+tags:
+  - javascript
+  - software
 ---
 
 [Promises](https://www.promisejs.org/). In my mind I have an uneasy truce with them. The war ended primarily because I’ve been forced to use promises on contracts. Since then, [standards bodies seem to have agreed to make them the one true asynchronous programming method](https://www.w3.org/2001/tag/doc/promises-guide). And if you’re writing code between layers [which provide](http://knexjs.org/) and [expect promises](https://github.com/graphql/graphql-js/blob/fee4fe322f982c9f1b8d5c2e2eb9137d1fcba74a/src/execution/execute.js#L277), I suppose it’s time to [do as the Romans](https://en.wiktionary.org/wiki/when_in_Rome,_do_as_the_Romans_do).

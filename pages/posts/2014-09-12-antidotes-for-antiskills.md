@@ -6,6 +6,9 @@ layout: post
 path: /antidotes-for-antiskills/
 next: /learning-limits-post-injury-running/
 previous: /cycling-computers-and-posture/
+tags:
+  - fun
+  - business
 ---
 
 ![deal with it cat](https://static.sinap.ps/blog/2014/Sep/deal_with_it_cat-1410405231949.jpg)

@@ -5,6 +5,9 @@ layout: post
 path: /systems-and-incentives/
 next: /a-running-update/
 previous: /enterprise-node-jsjavascript-difficulties/
+tags:
+  - business
+  - software
 ---
 
 *A couple years ago I was working on two layers of an application: the Node.js proxy/translation middle tier, and the backbone-based single-page web app. After some investigation into my highest-priority task, I determined that I didn’t have what I needed to implement it without a change in the third layer: the backend. I assembled a message with the intended customer experience and our high priority for the feature, then sent it off to the backend team.*

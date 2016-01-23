@@ -5,6 +5,10 @@ layout: post
 path: /the-why-of-agile/
 next: /enterprise-node-jsjavascript-difficulties/
 previous: /the-trouble-with-promises/
+tags:
+  - business
+  - software
+  - books
 ---
 
 I had a nickname in my family when I was very young: "Bu’why." I got it because I would ask 'but why?' so very often of the people around me. Most of the time they’d attempt to answer, but their frustration became apparent in the nickname.

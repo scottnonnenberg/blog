@@ -6,6 +6,11 @@ layout: post
 path: /node-js-is-not-magical/
 next: /hippie-experiments/
 previous: /the-last-year/
+tags:
+  - business
+  - nodejs
+  - javascript
+  - software
 ---
 
 ![node.js](https://static.sinap.ps/blog/2014/Dec/nodejs_logo-1417834491072.png)

@@ -5,6 +5,10 @@ layout: post
 path: /enterprise-node-jsjavascript-difficulties/
 next: /systems-and-incentives/
 previous: /the-why-of-agile/
+tags:
+  - business
+  - nodejs
+  - software
 ---
 
 I’ve worked with quite a few large companies over the years, and some very clear patterns have emerged regarding change. It’s hard. It’s a big deal to switch over to new development technologies, but [big organizations are starting to take the plunge](https://www.quora.com/What-companies-are-using-Node-js-in-production).

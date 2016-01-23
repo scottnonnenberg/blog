@@ -6,6 +6,9 @@ layout: post
 path: /injury-identity-and-non-attachment/
 next: /woot-shirts/
 previous: /introversion/
+tags:
+  - fun
+  - ideas
 ---
 
 ![it doesn’t look that bad, right? right??](https://static.sinap.ps/blog/2014/Aug/injury-1408754037885.jpg)

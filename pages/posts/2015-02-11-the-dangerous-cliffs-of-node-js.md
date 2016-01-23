@@ -6,6 +6,11 @@ layout: post
 path: /the-dangerous-cliffs-of-node-js/
 next: /contract-teaching/
 previous: /a-system-for-2015/
+tags:
+  - business
+  - nodejs
+  - javascript
+  - software
 ---
 
 [![dangerous cliffs via craigmoulding on flickr](https://static.sinap.ps/blog/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg)](https://www.flickr.com/photos/craigmoulding/5881291261)

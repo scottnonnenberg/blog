@@ -5,6 +5,9 @@ date: 2013-02-20T16:00:00.000Z
 layout: post
 path: /dont-let-this-happen-to-you-lessons-from-a-failed-side-project/
 next: /12-things-i-learned-from-microsoft/
+tags:
+  - business
+  - software
 ---
 
 It was August. It was a rare warm day in Seattle and I was optimistic. I was itching to make something, to get back into programming. I’d been too business and not enough geek at my day job at Microsoft. I didn’t know that seven months later I’d be angry at a good friend.

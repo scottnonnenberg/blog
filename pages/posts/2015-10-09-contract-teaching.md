@@ -6,6 +6,11 @@ layout: post
 path: /contract-teaching/
 next: /open-source-and-feelings-the-awesome/
 previous: /the-dangerous-cliffs-of-node-js/
+tags:
+  - business
+  - reactjs
+  - nodejs
+  - software
 ---
 
 

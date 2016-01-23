@@ -5,6 +5,10 @@ layout: post
 path: /a-running-update/
 next: /open-source-and-feelings-the-challenge/
 previous: /systems-and-incentives/
+tags:
+  - fun
+  - fitness
+  - data
 ---
 
 It’s hard to believe that it has been 16 months since my last post [last post on running](https://blog.scottnonnenberg.com/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?

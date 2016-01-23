@@ -5,6 +5,9 @@ layout: post
 path: /how-not-to-do-customer-service-credit-card-edition/
 next: /resolutions-and-systems/
 previous: /my-standard-breakfast/
+tags:
+  - fun
+  - software
 ---
 
 There a lot of great companies out there today using technology to build really nice user experiences. But the sad fact is that there are some pretty painful seams left in those nice experiences. Below follows three recent situations related to the arrival of a replacement credit card in my mailbox.

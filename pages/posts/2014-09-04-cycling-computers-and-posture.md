@@ -6,6 +6,9 @@ layout: post
 path: /cycling-computers-and-posture/
 next: /antidotes-for-antiskills/
 previous: /woot-shirts/
+tags:
+  - fun
+  - fitness
 ---
 
 ![bike](https://static.sinap.ps/blog/2014/Sep/bike-1409700490953.jpg)
@@ -17,6 +20,7 @@ Bikes have been a large part of my life for a long time. But not lately. Before 
 When I was a kid, I was on my bike all the time. It was fun to go fast, to make tight turns, to get to friends’ houses in the neighborhood. I rode my bike to school most days all the way from 6th Grade until late High School (this is California, so it didn’t rain that much). The bike was only retired when my parents gave me their well-loved Audi, just a year younger than I was. Hey, you can’t say no to a free car, right?
 
 ### Cycling for fitness
+
 My senior year of high school I was working for Hewlett Packard after school every day. I treated it like an important extracurricular. I was building my resume, learning about the working world, and making more than minimum wage, so it made sense to turn down the tennis team that year. But with classes, work, and the drive between them every day, I was sitting a lot. I needed a little more physical activity in my life. My bike, so frequently used in the past, was the obvious choice.
 
 I went on long rides through the hills of Rocklin, CA. It felt good to get out of the house, get the blood pumping, feel like I wasn’t sitting there rotting. But it wasn’t too long before I decided that the hills were too hard going up, and too easy going down.
@@ -33,6 +37,7 @@ I wasn’t interested in addressing the system, just that bothersome symptom. Bu
 ![fully kitted out](https://static.sinap.ps/blog/2014/Sep/kit-1409700656226.jpg)
 
 ### Rediscovering cycling
+
 I bought a new bike in the summer of 2009, and with the help of friends I was able to use it beyond the few warm, dry months here in Seattle. Not the friends who wore all spandex when they rode their multi-thousand-dollar carbon fiber road bikes. No, I latched onto the people around me who understood the practical aspects of cycling. Like them I wore mostly street clothes. Fleece and jeans! Rollin’ PacNW!
 
 It really helped my commute across Lake Washington to get to Microsoft’s Redmond Campus. I had lots of options when on my bike. Where before I had multiple buses to catch, rigid schedules to keep, or high-stress merging, the bike allowed me to jump on a bus whenever. If I felt like it I could add a couple miles and grab a bus closer to the lake, or even bike the 25 miles up and around Lake Washington on the Burke-Gilman Trail.
@@ -42,6 +47,7 @@ When I left Microsoft and started working in Seattle, my bike was that much more
 Pretty awesome deal, right?
 
 ### Listening with fresh ears
+
 When I [injured my achilles](https://blog.scottnonnenberg.com/injury-identity-and-non-attachment/) in 2012 I gained a new friend: a physical therapist. It wasn't a one-appointment thing, since recovery was was a many-month ordeal. I got in the habit of taking her seriously, and listening to my body’s needs a bit better.
 
 As my injury healed, we started talking about my body as a comprehensive system instead of focusing on individual symptoms. It was same message I had heard years before, but this time I was listening very closely. I was tight in places, weak in other places. I was primed for injury, even more so with advancing age. And there was a pattern to it...
@@ -49,6 +55,7 @@ As my injury healed, we started talking about my body as a comprehensive system 
 > "Young men trade their health for money; old men trade their money for health" - Chinese proverb (via my acupuncturist)
 
 ### Computer posture
+
 After 20 years of sitting at a desk, I had succumbed to the hunched-over, closed-chest posture common to those of us in the technology world. It’s not a pretty thing:
 
 - tight hamstrings
@@ -65,6 +72,7 @@ So decided to jump all the way in with a standing desk. Standing all day was tou
 ![travel standing desk](https://static.sinap.ps/blog/2014/Sep/travel_standing_desk-1409700557302.jpg)
 
 ### Cycling and posture
+
 After nearly a year of changes to my work area, including moving to dual keyboards, I realized that there was one major posture-impacting holdout. There was still time each day that I was hunched over, and I could feel it in my neck after every ride. It was the cycling.
 
 When I brought it up, my physical therapist slumped her shoulders a little bit. She had some exercises I could do, but they would simply reduce the negative impact of cycling. And I already had some bad habits: a too-curved back, not using my hamstrings enough as I pedaled.

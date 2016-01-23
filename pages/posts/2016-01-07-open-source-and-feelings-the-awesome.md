@@ -6,6 +6,11 @@ layout: post
 path: /open-source-and-feelings-the-awesome/
 next: /four-books-for-greater-understanding/
 previous: /contract-teaching/
+tags:
+  - business
+  - conferences
+  - nvc
+  - software
 ---
 
 ![Open Source and Feelings Logo](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/osfeels.png)

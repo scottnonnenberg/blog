@@ -6,6 +6,9 @@ layout: post
 path: /introversion/
 next: /injury-identity-and-non-attachment/
 previous: /resolutions-and-systems/
+tags:
+  - fun
+  - ideas
 ---
 
 ![Some of my old base drawings](https://static.sinap.ps/blog/2014/Feb/base_drawings.jpg)
