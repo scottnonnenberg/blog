@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
 
 import sortBy from 'lodash/collection/sortBy';
@@ -13,32 +14,25 @@ import Author from 'components/Author';
 import PostListEntry from 'components/PostListEntry';
 
 
-export default class extends React.Component {
+export default class NotFound extends React.Component {
   render() {
-    const title = 'Popular Posts';
-
-    let posts = getPosts(this.props.pages);
-
-    posts = filter(posts, post => Boolean(post.data.hits));
-    posts = sortBy(posts, post => post.data.hits);
-    posts = posts.reverse();
-    posts = posts.slice(0, 10);
-
-    const pageLinks = map(posts, post => (
-      <PostListEntry key={post.path} post={post} />
-    ));
+    const title = 'Couldn\'t find that!';
 
     return (
       <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
-          <ol>
-            {pageLinks}
-          </ol>
+          Looks like something went a little wrong!
+          <h3
+            style={{
+              marginTop: rhythm(1),
+              marginBottom: rhythm(2)
+            }}
+          ><Link to={link('/')}>&lt; Go back home</Link></h3>
           <hr
             style={{
               marginTop: rhythm(1),
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(2)
             }}
           />
           <Author {...this.props} />

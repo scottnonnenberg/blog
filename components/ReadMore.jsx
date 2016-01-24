@@ -1,79 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { prune, include as includes } from 'underscore.string';
+import { include as includes } from 'underscore.string';
+
 import find from 'lodash/collection/find';
-import { rhythm, fontSizeToMS } from 'utils/typography'
 import { link } from 'gatsby-helpers'
 
-export default class extends React.Component {
-  renderNext(post) {
+import { rhythm, fontSizeToMS } from 'utils/typography'
+import shortDate from 'utils/shortDate';
+
+import TextPreview from 'components/TextPreview';
+
+
+export default class ReadMore extends React.Component {
+  renderItem(label, post) {
     if (!post) {
       return;
     }
 
-    const html = post.data.body;
-    const body = prune(html.replace(/<[^>]*>/g, ''), 200);
-
-    return <div>
-      <h6
-        style={{
-          margin: 0,
-          fontSize: fontSizeToMS(-1).fontSize,
-          lineHeight: fontSizeToMS(-1).lineHeight,
-          letterSpacing: -0.5
-        }}
-      >
-        NEXT:
-      </h6>
-      <h3
-        style={{
-          marginBottom: rhythm(1/4)
-        }}
-      >
-        <Link
-          to={post.path}
-          query={{next: true}}
+    return (
+      <div>
+        <h6
+          style={{
+            margin: 0,
+            fontSize: fontSizeToMS(-1).fontSize,
+            lineHeight: fontSizeToMS(-1).lineHeight,
+            letterSpacing: -0.5
+          }}
         >
-          {post.data.title}
-        </Link>
-      </h3>
-      <p>{body}</p>
-    </div>;
-  }
-
-  renderPrevious(post) {
-    if (!post) {
-      return;
-    }
-
-    const html = post.data.body;
-    const body = prune(html.replace(/<[^>]*>/g, ''), 200);
-
-    return <div>
-      <h6
-        style={{
-          margin: 0,
-          fontSize: fontSizeToMS(-1).fontSize,
-          lineHeight: fontSizeToMS(-1).lineHeight,
-          letterSpacing: -0.5
-        }}
-      >
-        PREVIOUS:
-      </h6>
-      <h3
-        style={{
-          marginBottom: rhythm(1/4)
-        }}
-      >
-        <Link
-          to={post.path}
-          query={{previous: true}}
-        >
-          {post.data.title}
-        </Link>
-      </h3>
-      <p>{body}</p>
-    </div>;
+          {label}:
+        </h6>
+        <TextPreview post={post} />
+      </div>
+    );
   }
 
   render() {
@@ -93,13 +51,13 @@ export default class extends React.Component {
     }
 
     if (!nextPost && !previousPost) {
-      return React.createElement("noscript", null);
+      return <noscript/>;
     }
     else {
       return (
         <div>
-          {this.renderNext(nextPost)}
-          {this.renderPrevious(previousPost)}
+          {this.renderItem('NEXT', nextPost)}
+          {this.renderItem('PREVIOUS', previousPost)}
         </div>
       );
     }

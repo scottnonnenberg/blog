@@ -25,8 +25,9 @@ exports.onRouteChange = function(state, page, pages, config) {
     first = false;
   }
   else {
+    const data = page.data || {};
     window._paq.push(['setCustomUrl', page.path]);
-    window._paq.push(['setDocumentTitle', 'blog/' + page.title || page.requirePath]);
+    window._paq.push(['setDocumentTitle', 'blog/' + (data.title || page.path)]);
     window._paq.push(['trackPageView']);
   }
 }

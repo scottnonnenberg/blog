@@ -1,54 +1,76 @@
 import React from 'react';
+import { Link, Navigation } from 'react-router';
 import moment from 'moment';
 import DocumentTitle from 'react-document-title';
-import { link } from 'gatsby-helpers';
-import ReadMore from '../components/ReadMore';
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import catchLinks from 'catch-links';
 
 import '../css/zenburn.css';
 
-module.exports = React.createClass({
-  render: function() {
-    var post
-    post = this.props.page.data;
+import map from 'lodash/collection/map';
+import { link } from 'gatsby-helpers';
+
+import { rhythm, fontSizeToMS } from 'utils/typography';
+import intersperse from 'utils/intersperse';
+
+import ReadMore from '../components/ReadMore';
+import Author from '../components/Author';
+
+
+export default React.createClass({
+  displayName: 'MarkdownWrapper',
+
+  mixins: [Navigation],
+
+  componentDidMount() {
+    var _this = this;
+
+    catchLinks(this.refs.markdown, function(href) {
+      _this.transitionTo(href);
+    });
+  },
+
+  render() {
+    const data = this.props.page.data;
+    const tags = data.tags;
+    const tagLinks = map(tags, tag => (
+      <Link key={tag} to={link(`/tags/${tag}/`)}>{tag}</Link>
+    ));
 
     return (
-      <DocumentTitle title={`${post.title} | ${this.props.config.blogTitle}`}>
-        <div className="markdown">
-          <h1>{post.title}</h1>
-          <div dangerouslySetInnerHTML={{__html: post.body}}/>
-          <em
-            style={{
-              display: 'block',
-              marginBottom: rhythm(2)
-            }}
-          >
-            Posted {moment(post.date).format('MMMM D, YYYY')}
-          </em>
+      <DocumentTitle title={`${data.title} | ${this.props.config.blogTitle}`}>
+        <div className="post">
+          <h1>{data.title}</h1>
+          <div ref="markdown" className="markdown" dangerouslySetInnerHTML={{__html: data.body}}/>
           <hr
             style={{
+              marginTop: rhythm(2),
               marginBottom: rhythm(1)
             }}
           />
-          <p>
-            <img
-              src={link("//www.gravatar.com/avatar/6d4e229c0d24e92a2d15499acab531d8?d=404")}
-              style={{
-                float: 'left',
-                marginRight: rhythm(1/4),
-                marginBottom: 0,
-                width: rhythm(2),
-                height: rhythm(2)
-              }}
-            />
-            <strong>{this.props.config.authorName}</strong> lives and works in Seattle building useful things. <a href="https://twitter.com/scottnonnenberg">New entries are posted on Twitter!</a>
-          </p>
+          <div className="metadata"
+            style={{
+              display: 'block',
+              marginTop: rhythm(1),
+              marginBottom: rhythm(1)
+            }}
+          >
+            <div><em>Posted:</em> {moment(data.date).format('MMMM D, YYYY')}</div>
+            <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>
+          </div>
           <hr
             style={{
+              marginTop: rhythm(1),
+              marginBottom: rhythm(1)
+            }}
+          />
+          <Author {...this.props} />
+          <hr
+            style={{
+              marginTop: rhythm(1),
               marginBottom: rhythm(2)
             }}
           />
-          <ReadMore post={post} {...this.props}/>
+          <ReadMore post={data} {...this.props}/>
         </div>
       </DocumentTitle>
     );

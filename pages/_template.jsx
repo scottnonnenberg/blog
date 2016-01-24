@@ -6,44 +6,58 @@ import { rhythm, fontSizeToMS } from 'utils/typography'
 
 import '../css/styles.css';
 
-export default class extends React.Component {
+export default class RootTemplate extends React.Component {
   render() {
     let header;
 
     if (this.props.state.path === link('/')) {
       header = (
-        <h1
-          style={{
-            fontSize: fontSizeToMS(2.5).fontSize,
-            lineHeight: fontSizeToMS(2.5).lineHeight,
-            marginBottom: rhythm(1.5)
-          }}
-        >
-          <Link
+        <div>
+          <h1
             style={{
-              textDecoration: 'none',
-              color: 'inherit'
+              fontSize: fontSizeToMS(2.5).fontSize,
+              lineHeight: fontSizeToMS(2.5).lineHeight
             }}
-            to={link('/')}
           >
-            {this.props.config.blogTitle}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'inherit'
+              }}
+              to={link('/')}
+            >
+              {this.props.config.blogTitle}
+            </Link>
+          </h1>
+          <div
+            style={{
+              marginBottom: rhythm(1)
+            }}
+          > A blog about software development and geekery of all kinds.
+          </div>
+        </div>
       );
     }
     else {
       header = (
-        <h3>
-          <Link
+        <div>
+          <h3>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'inherit'
+              }}
+              to={link('/')}
+            >
+              &lt; {this.props.config.blogTitle}
+            </Link>
+          </h3>
+          <hr
             style={{
-              textDecoration: 'none',
-              color: 'inherit'
+              marginBottom: rhythm(1)
             }}
-            to={link('/')}
-          >
-            {this.props.config.blogTitle}
-          </Link>
-        </h3>
+          />
+        </div>
       );
     }
 
