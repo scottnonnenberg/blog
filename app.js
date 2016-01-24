@@ -16,6 +16,10 @@ var first = true;
 exports.onRouteChange = function(state, page, pages, config) {
   window._paq = window._paq || [];
 
+  if (!page) {
+    return;
+  }
+
   if (first) {
     window._paq.push(['trackPageView', 'initial render']);
     first = false;
