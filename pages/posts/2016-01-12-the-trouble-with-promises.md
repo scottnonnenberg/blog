@@ -15,6 +15,8 @@ tags:
 
 I’m still uneasy. Why, you ask?
 
+<div class='fold'></div>
+
 ### An Exercise
 
 First, an exercise based on [this recent tweet](https://twitter.com/ryanflorence/status/685535261883682817) showing [code using the new promise-based](https://gist.github.com/ryanflorence/927ef8266fdd5525bf8e) [standard fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API):
@@ -83,8 +85,7 @@ Say you’ve decided to go with promises in your app. Here are a few tips to mak
 
 Now, go forth and be a productive engineer without any Holy Grail pretense. No library will solve all of your problems. Every new dependency simply means some level of benefit combined with costs to understand and maintain it over time. Better make sure the tradeoff is worth it.
 
-* * *
-
+---
 
 Additional reading:
 

@@ -16,6 +16,8 @@ I’m outing myself. I have some distinctly hippie-style attitudes. I don’t re
 
 I also experiment with a lot of weird things. Like making my own kombucha (*fail* - not tasty), and making my own yogurt (*fail* - too time-consuming). Happily, some work out well. Here are three successful experiments...
 
+<div class='fold'></div>
+
 ![bamboo steamer](https://static.sinap.ps/blog/2014/Dec/bamboo_steamer-1417828984766.jpg)
 
 ### Bamboo steamer

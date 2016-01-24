@@ -15,6 +15,8 @@ tags:
 
 Bikes have been a large part of my life for a long time. But not lately. Before we get into my reasons for that, let's talk about history a little bit...
 
+<div class='fold'></div>
+
 ### Beginnings
 
 When I was a kid, I was on my bike all the time. It was fun to go fast, to make tight turns, to get to friends’ houses in the neighborhood. I rode my bike to school most days all the way from 6th Grade until late High School (this is California, so it didn’t rain that much). The bike was only retired when my parents gave me their well-loved Audi, just a year younger than I was. Hey, you can’t say no to a free car, right?
@@ -104,7 +106,7 @@ I’d love to hear about your efforts and progress!
 
 ---
 
-Further reading
+Further reading:
 
 - I heartily recommend my talented physical therapist, [Adina DeSantis](http://adinadesantis.com/)!
 - Check out my friend Larry Swanson’s [Scared Sitless site](http://sitless.com/) for some healthy office fitness habits

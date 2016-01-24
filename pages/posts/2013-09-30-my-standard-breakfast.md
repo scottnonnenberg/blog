@@ -20,6 +20,8 @@ First, yeah it’s a lot of food. But then again I used to eat three or four bow
 
 ![First Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast1.jpg)
 
+<div class='fold'></div>
+
 ### What?
 As you might expect, it’s made of very high-quality ingredients:
 

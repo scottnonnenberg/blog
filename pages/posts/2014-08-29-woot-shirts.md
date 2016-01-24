@@ -16,6 +16,8 @@ I’m pretty much obsessed with [woot shirts](http://shirt.woot.com). If you kno
 
 But the key is that they solved a problem for me.
 
+<div class='fold'></div>
+
 ### Shopping
 
 I’ve always hated shopping for clothes. I essentially binge-shop to get it all over with as fast as possible. I wait until the last possible second, and then rip the band-aid off as fast as possible.

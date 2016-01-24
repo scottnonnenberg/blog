@@ -15,6 +15,8 @@ I had a nickname in my family when I was very young: "Bu’why." I got it becaus
 
 To this day, I’m still interested in the 'why' behind things. I’ve read a [whole book on traffic patterns](http://www.amazon.com/gp/product/B001BAGWQE/ref=dp-kindle-redirect?ie=UTF8&btkr=1) because I needed to know the deep 'why' behind traffic jams. I’ve read a [whole book on sleep](http://www.amazon.com/gp/product/B008XOG2N4?redirect=true&ref_=kinw_myk_ro_title) to try to get better rest. I believe the 'why' is very important.
 
+<div class='fold'></div>
+
 ### Best Practices
 
 > "Commercial or professional procedures that are accepted or prescribed as being correct or most effective" ([Wikipedia](https://en.wikipedia.org/wiki/Best_practice))

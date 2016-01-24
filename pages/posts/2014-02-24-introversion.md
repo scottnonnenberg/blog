@@ -17,6 +17,8 @@ I am an introvert. Of course, like most binary labels, there is a continuum. I c
 
 And I have this crazy idea that practice can make you better at being extraverted. But let’s start at the beginning.
 
+<div class='fold'></div>
+
 ### Early signs
 I was a pretty classic “nerd” in growing up. I got good grades, my drawings were more schematic than artistic, and I really liked to play video games. My parents knew better than to allow me to have a game system at home, so I had to get all I could at friends’ houses and on our home PC, always frustratingly behind the times for the games of the moment.
 

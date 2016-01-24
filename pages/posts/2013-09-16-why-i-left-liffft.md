@@ -12,6 +12,8 @@ tags:
 
 Most of you who I’ve spoken with in the last month or two likely know already that I left [LIFFFT](http://www.liffft.com/). I wanted to make a wider announcement as our trajectories continue to diverge.
 
+<div class='fold'></div>
+
 ### Moving On from Microsoft
 
 This story goes all the way back to my experiences at Microsoft. Let’s be honest - I was really frustrated there. I saw requests from customers go unaddressed for version after version, adding up to years, with no end in sight. At the very beginning of my time there, it made a little bit of sense: unimaginable effort was required to get software ready for release, leaving little room for anything else. Later, I thought it was about the poor planning, the arms race of buffers, and aging architecture. But as I gained a wider perspective near the end of my time there, I saw that there was an explicit conflict between company strategy and making users happy.

@@ -13,6 +13,8 @@ tags:
 
 It’s hard to believe that it has been 16 months since my last post [last post on running](https://blog.scottnonnenberg.com/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
 
+<div class='fold'></div>
+
 ### Consistency
 
 [![all runs since injury, X = time, Y = distance](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)

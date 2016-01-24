@@ -16,6 +16,8 @@ In American pop culture, Autumn is orange and brown, pumpkins, brightly colored 
 
 ![leaves](https://static.sinap.ps/blog/2014/Sep/leaves-1411691625098.JPG)
 
+<div class='fold'></div>
+
 ### Newness
 
 From a young age we’re all conditioned to expect to start something new in the fall. The first day of school. Time to stop playing around, time to be productive again. Strangely, that feeling has continued far past my school years:

@@ -23,6 +23,7 @@ Sure, they may sound like good things on first blush. And they are, in limited q
 
 Let’s dig into these antiskills and their antidotes...
 
+<div class='fold'></div>
 
 ![sit down, shut up and do as you’re told](https://static.sinap.ps/blog/2014/Sep/sit_down_shut_up_and_do_as_you_re_told-1410405365318.png)
 

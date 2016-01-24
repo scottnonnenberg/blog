@@ -18,6 +18,8 @@ After [partially tearing my left achilles tendon](https://blog.scottnonnenberg.c
 
 My reintroduction to running has been an exercise in learning to listen to my body and respect its limits. It’s a story best told in four phases…
 
+<div class='fold'></div>
+
 ![early attempts](https://static.sinap.ps/blog/2014/Sep/2013_04_early_attempts-1411078820611.png)
 
 ### Phase 1: Early Attempts

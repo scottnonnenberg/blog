@@ -12,7 +12,9 @@ tags:
   - software
 ---
 
-It’s [Fall, a time for reflection](https://blog.scottnonnenberg.com/autumn-associations/), and it has been about a year since I posted [Why I Left LIFFFT](https://blog.scottnonnenberg.com/why-i-left-liffft/). I think a little business update is in order. Let’s talk about how I’ve been filling my days…
+It’s [Fall, a time for reflection](https://blog.scottnonnenberg.com/autumn-associations/), and it has been about a year since I posted [Why I Left LIFFFT](https://blog.scottnonnenberg.com/why-i-left-liffft/). I think a little business update is in order. Let’s talk about how I’ve been filling my days...
+
+<div class='fold'></div>
 
 ![taking javascript seriously](https://static.sinap.ps/blog/2014/Oct/taking_javascript_seriously_me-1412211402696.jpg)
 

@@ -16,6 +16,8 @@ tags:
 
 *Fast forward to a couple weeks later. The same backend team calls me and asks for my signoff on a change coming in the next release of their system. As I pushed toward clarity with many questions, it dawned on me that this new feature was worthless from my perspective. It didn’t enable any new features for the customer, and would require changes from me to keep key functionality from breaking.*
 
+<div class='fold'></div>
+
 ### Who’s the asshole?
 
 Putting these two situations side-by-side, we just weren’t getting along. How could they be so out of touch with my needs? With the customer’s needs? As far as I knew, I was their only client. Were they just selfish, using scheduling as an excuse to be lazy? Was I being selfish?

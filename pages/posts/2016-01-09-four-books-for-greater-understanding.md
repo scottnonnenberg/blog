@@ -21,6 +21,8 @@ I read 30 books in 2015, most for the first time. These four nonfiction books we
 
 Let’s dig in!
 
+<div class='fold'></div>
+
 ### [Cutting through Spiritual Materialism (1973)](https://en.wikipedia.org/wiki/Cutting_Through_Spiritual_Materialism)
 
 This book was originally released as Eastern religions were becoming mainstream in the United States. [Chögyam Trungpa](https://en.wikipedia.org/wiki/Ch%C3%B6gyam_Trungpa) was trained in Tibet, then came to the United States by way of India, England (where one of his meditation students was David Bowie) and Scotland.

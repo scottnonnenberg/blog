@@ -17,6 +17,8 @@ tags:
 
 It’s not all roses in the world of [Node.js](http://nodejs.org/). In fact, more than just about every other platform I’ve used, it can feel like a precarious mountain path with a long cliff below. Yes, it features some very beautiful vistas, but one wrong step and it’s all over. Let’s cover four of those simple mistakes with substantial, unexpected consequences, as well as some potential guardrails.
 
+<div class='fold'></div>
+
 ### Crashes
 
 The simplest of these mistakes is the classic crash. My code has done this so very many times. It’s easy; just try to get a key from an null object, or try to call a string like a function, and you’ve crashed.

@@ -34,6 +34,8 @@ Yes, Node.js can result in higher productivity, but it’s not magical. Getting 
 
 Let’s get started!
 
+<div class='fold'></div>
+
 ### 1. Javascript
 
 The first thing to consider is your team’s familiarity with Javascript. Yes, [you can compile from some other language into Javascript](https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js), but you you’ll still need to know the underlying technology. Happily, there are both pros and cons:

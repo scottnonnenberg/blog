@@ -22,6 +22,8 @@ Maybe you’re a manager seeing developers ask for change, or maybe you’re a d
 
 Then we’ll talk about some of my recommendations for making all of this smoother.
 
+<div class='fold'></div>
+
 ### 1. Difficult to motivate change
 
 First let’s talk about why Node.js is interesting. Developers are excited about Javascript on the server primarily because they already know javascript. They are writing lots of code for the browser using javascript, and now with Node.js they can focus on just one language. Because this is driving large amounts of energy into the ecosystem, there are many, many open source modules available on npm.
@@ -99,8 +101,7 @@ The key is to push this small bit of functionality all the way to production. On
 
 Once you’re feeling good, expand from there! Good luck!
 
-* * *
-
+---
 
 Additional resources:
 

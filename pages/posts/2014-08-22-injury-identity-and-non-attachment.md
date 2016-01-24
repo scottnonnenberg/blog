@@ -15,6 +15,8 @@ tags:
 
 Two years ago, I was forced to reevaluate my identity.
 
+<div class='fold'></div>
+
 ### Adventure
 It was SXSW 2012, and I was having fun in Austin. A few days previous, I had just spent time with all sorts of cool Startup Weekend organizers from all over the world at the Startup Weekend Global Organizer Summit. With that over, I was making the rounds at SXSW, hitting party after party, exchanging business cards with people from all over the world.
 

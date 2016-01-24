@@ -12,6 +12,8 @@ tags:
 
 It was August. It was a rare warm day in Seattle and I was optimistic. I was itching to make something, to get back into programming. I’d been too business and not enough geek at my day job at Microsoft. I didn’t know that seven months later I’d be angry at a good friend.
 
+<div class='fold'></div>
+
 We were sitting on bench overlooking the Ballard docks in the sun, and my friend was describing a great idea he had for using software to improve people’s lives. He already ran a reasonably successful blog about happiness and living well, so I took him seriously. I was interested.
 
 ### Mistake #1: Starting a project with unfettered optimism

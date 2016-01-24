@@ -19,6 +19,8 @@ I went to a little conference here in Seattle last fall called [Open Source and 
 
 Though it’s been awhile, I thought it would still be useful to highlight some of my favorite sessions. [The videos](http://www.confreaks.tv/events/osfeels2015) are still available, and [the topics](http://osfeels.com/schedule) are still useful!
 
+<div class='fold'></div>
+
 ![NVC is not about tone-policing, via https://twitter.com/onealexharms/status/650397122664095745](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/tone-policing.jpg)
 
 ### Non-violent communication

@@ -12,11 +12,9 @@ tags:
 
 There a lot of great companies out there today using technology to build really nice user experiences. But the sad fact is that there are some pretty painful seams left in those nice experiences. Below follows three recent situations related to the arrival of a replacement credit card in my mailbox.
 
----
+<div class='fold'></div>
 
-Actually, before I get started let me complain a little about my credit card company. Okay, fair enough, they didn’t cancel my old one so I had no immediate problems. What I’m concerned about is that the only notification I got about the situation was via a non-descript envelope in the mail, which I check probably once a week. No email, no text, no phone call, nothing. And I actually don’t recall any reason given for the new card - I assume that it was because “fraudulent activity” was detected, but I’m not sure. But I suppose it could have been some sort of hacked website or something. Very strange.
-
----
+_Actually, before I get started let me complain a little about my credit card company. Okay, fair enough, they didn’t cancel my old one so I had no immediate problems. What I’m concerned about is that the only notification I got about the situation was via a non-descript envelope in the mail, which I check probably once a week. No email, no text, no phone call, nothing. And I actually don’t recall any reason given for the new card - I assume that it was because “fraudulent activity” was detected, but I’m not sure. But I suppose it could have been some sort of hacked website or something. Very strange._
 
 Okay, on to the resultant customer service foibles. These stories all begin after I’d already gone through the process of updating my card in a few places as purchases failed, like Amazon and Apple.
 
@@ -117,7 +115,7 @@ I start trying to call support over this $1.29 movie, and while I wait I try to 
 
 ![Redbox already rented message](https://static.sinap.ps/blog/2014/Feb/Redbox_already_rented-1.png)
 
-> NO! It’s NOT available for me at the location I chose! That’s why I’m trying to reserve it again! I’m not stupid!
+_NO! It’s NOT available for me at the location I chose! That’s why I’m trying to reserve it again! I’m not stupid!_
 
 At this point my girlfriend starts trying to calm me down. I breathe deeply. Zen! I hang up on the customer service call, and we sit down for a drink.
 

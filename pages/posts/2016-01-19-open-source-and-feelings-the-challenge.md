@@ -15,6 +15,8 @@ tags:
 
 [![via https://twitter.com/r343l/status/650412701059956736](https://static.sinap.ps/blog/2016/01_jan/osfeels_challenge/bathroom.jpg)](https://twitter.com/r343l/status/650412701059956736)
 
+<div class='fold'></div>
+
 ### Feeling: Uncomfortable
 
 I wasn’t completely comfortable during the conference. But that’s a good thing! Each new area of discomfort made me think. Sometimes it was a new issue entirely, other times a new, more visceral angle on something I already knew about:
@@ -48,8 +50,7 @@ The Open Source and Feelings conference is ultimately a progressive community wi
 
 ...but we’ll have to wait a whole year for the [next one](https://twitter.com/OSFeels)!
 
-* * *
-
+---
 
 Further reading:
 

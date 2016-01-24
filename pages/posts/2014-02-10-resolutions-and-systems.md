@@ -21,6 +21,8 @@ The packed gyms, new diets, and renewed focus at at work are all starting to fad
 
 For me, my resolutions were just part of my overall goal system. Still, I did put some new things in place for 2014. But before we talk about that, let’s first talk about my current systems.
 
+<div class='fold'></div>
+
 ### My Systems
 
 Goals are good, but they can be overwhelming. Just looking at a list of year-sized goals can feel overwhelming. So what to do? How about this:

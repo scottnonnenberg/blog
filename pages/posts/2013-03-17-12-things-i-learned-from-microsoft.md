@@ -13,6 +13,8 @@ tags:
 
 Those of you who know me know I’ve had my frustrations with Microsoft. But I spent eight years of my life there for a reason. I learned a huge amount while I was there. Without further ado, 12 things I learned from Microsoft.
 
+<div class='fold'></div>
+
 ### 1. It takes a lot to get software to your customers
 
 When I worked at Hewlett-Packard and Terran Interactive in college, I just wrote code. I wasn’t exposed to all that it took to get that code onto users’ machines. In my first months as a Program Manager in Microsoft’s DevDiv, working on Visual Studio’s Debugger, I finally saw everything surrounding that core functionality:
@@ -38,7 +40,7 @@ Even with this structure the discussion could get off track, so I honed my abili
 
 It started with my little Visual Studio Debugger team, running those meetings. Over time those meetings got bigger and I worked on hiding my nerves and projecting my voice. Less than a year after starting at Microsoft, I spoke about debugger features at TechEd 2004 in San Diego, then again that summer in Amsterdam for TechEd Europe 2004. I’d immerse myself in my subject area, simplify as much as possible, practice the demo over and over and over, then be completely relieved when it was done. I distinctly remember hearing my voice echo off the back of the room in Amsterdam as I did the first of my three sessions.
 
----
+### Getting into the rhythm...
 
 After nearly two years, I switched to a new role that focused more on project management and less on feature design. I was now working with the entire C# Team, and eventually spending more and more time helping to manage the entire Visual Studio release and other divisional initiatives.
 
@@ -68,10 +70,9 @@ The best email is no email, of course. Ideally you’d set things up so that peo
 
 At the top of each email was an executive summary, just a few sentences. Immediately actionable items were just below that. I’d always include a visual schedule for the project, showing where we were on the timeline that week. Further down the email was additional detail, charts and graphs to keep things interesting, and finally links to resources. The bigger the audience, the more likely I’d run it by a colleague for quick check.
 
----
+### Getting more advanced...
 
 As I advanced in my career at Microsoft, I got better at some of the soft skills. I was given larger, more independent projects to manage, like the Visual Studio 2010 SP1 release and the division-wide Visual Studio Dogfooding Program.
-
 
 ### 9. Get buyoff before the meeting
 
@@ -107,6 +108,6 @@ On one end of the spectrum there were the really senior people, experienced and 
 
 I realized that I had followed the pattern too, in various parts of my career. When a job was an opportunity for growth, requiring a skill level just past what I had, it felt like I was propelled forward almost automatically. To this day I have a rule of thumb - if I can’t tell you what I’ve learned in the last two weeks, I know I’m no longer in the right place.
 
----
+### Whew!
 
 So those are twelve things I learned at Microsoft. I’ve got quite a few more if you’d like me to talk your ear off. And I still use all of this, so I think my time there was worth it!
