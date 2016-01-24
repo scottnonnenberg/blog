@@ -20,7 +20,7 @@ export default class Index extends React.Component {
   render() {
     const posts = getPosts(this.props.pages);
     const highlightPost = posts[0];
-    const textPreviewPosts = posts.slice(1, 5);
+    const textPreviewPosts = posts.slice(1, 6);
     const plainPosts = posts.slice(6);
 
     const textPreviews = map(textPreviewPosts, post => (
