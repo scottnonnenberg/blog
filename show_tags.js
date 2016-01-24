@@ -22,7 +22,6 @@ var lookup = Object.create(null);
 
 _.forEach(posts, function(post) {
   _.forEach(post.data.tags, function(tag) {
-    console.log(post.data.title, tag);
     var list = lookup[tag] = lookup[tag] || [];
     list.push(post);
   });
