@@ -14,7 +14,7 @@ tags:
 
 ![all runs since injury, X = time, Y = distance](https://static.sinap.ps/blog/2014/Sep/whole_chart-1411078782215.png)
 
-After [partially tearing my left achilles tendon](https://blog.scottnonnenberg.com/injury-identity-and-non-attachment/), it took more than a year until I tried to start running again. I trained and planned for months for that first day back running. But it definitely didn’t happen like I expected.
+After [partially tearing my left achilles tendon](/injury-identity-and-non-attachment/), it took more than a year until I tried to start running again. I trained and planned for months for that first day back running. But it definitely didn’t happen like I expected.
 
 My reintroduction to running has been an exercise in learning to listen to my body and respect its limits. It’s a story best told in four phases…
 
@@ -38,7 +38,7 @@ But then everything changed. I bought a [FitBit Flex](https://www.fitbit.com/fle
 
 ### Interlude: Barefoot Running
 
-Before we go on, I should mention that this is all barefoot running. [Midfoot strikes](http://www.theguardian.com/lifeandstyle/the-running-blog/2014/apr/17/chi-running-heel-strike-midfoot-technique-coach) and minimalist footwear, and it just happens to have something to do with [posture](https://blog.scottnonnenberg.com/cycling-computers-and-posture/). It wasn’t a spur-of-the-moment decision; I included [barefoot-specific exercises](https://www.google.com/#q=proprioception+making+sense+of+barefoot+running+book) in my preparation for that first run: squatting and jumps for balance and strength, and hopping for stride cadence.
+Before we go on, I should mention that this is all barefoot running. [Midfoot strikes](http://www.theguardian.com/lifeandstyle/the-running-blog/2014/apr/17/chi-running-heel-strike-midfoot-technique-coach) and minimalist footwear, and it just happens to have something to do with [posture](/cycling-computers-and-posture/). It wasn’t a spur-of-the-moment decision; I included [barefoot-specific exercises](https://www.google.com/#q=proprioception+making+sense+of+barefoot+running+book) in my preparation for that first run: squatting and jumps for balance and strength, and hopping for stride cadence.
 
 Why barefoot? After my injury, I wanted to come back better, with the right form, strong feet and ankles, and reduced chance of future injury. Some claim that barefoot can [provide that](http://zenhabits.net/barefoot-running/), that [the body doesn’t want shoes](http://www.amazon.com/Born-Run-Hidden-Superathletes-Greatest/dp/0307279189). Anyway, if I’m already recovering from something major, why not take that opportunity to make a major change?
 

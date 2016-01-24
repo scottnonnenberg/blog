@@ -50,7 +50,7 @@ Pretty awesome deal, right?
 
 ### Listening with fresh ears
 
-When I [injured my achilles](https://blog.scottnonnenberg.com/injury-identity-and-non-attachment/) in 2012 I gained a new friend: a physical therapist. It wasn't a one-appointment thing, since recovery was was a many-month ordeal. I got in the habit of taking her seriously, and listening to my body’s needs a bit better.
+When I [injured my achilles](/injury-identity-and-non-attachment/) in 2012 I gained a new friend: a physical therapist. It wasn't a one-appointment thing, since recovery was was a many-month ordeal. I got in the habit of taking her seriously, and listening to my body’s needs a bit better.
 
 As my injury healed, we started talking about my body as a comprehensive system instead of focusing on individual symptoms. It was same message I had heard years before, but this time I was listening very closely. I was tight in places, weak in other places. I was primed for injury, even more so with advancing age. And there was a pattern to it...
 

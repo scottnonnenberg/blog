@@ -51,7 +51,7 @@ Key ideas:
 
 [Marshall B. Rosenberg](https://en.wikipedia.org/wiki/Marshall_Rosenberg) was a true visionary. He didn’t like the pathology-focused standard practices in his field of clinical psychology, so developed a human-centered system. Instead of worrying about which ‘disease’ or ‘problem’ a patient had, he would try to deeply understand that person. From there he expanded his focus beyond individual patients, knowing that his system could change the world. He worked with inner city kids, farm workers, politicians, negotiators, ambassadors, even Israelis and Palestinians.
 
-As I mentioned in my [Open Source and Feelings: The Awesome](https://blog.scottnonnenberg.com/open-source-and-feelings-the-awesome/) post, it was a conference session that finally convinced me to read this book. I felt like I had a pretty good idea of what [Non-Violent Communication (NVC)](https://en.wikipedia.org/wiki/Nonviolent_Communication) meant, having seen it mentioned quite a bit elsewhere, but this book really brought it to life. Marshall’s anecdotes and simple explanations drive it home. It’s definitely worth a read.
+As I mentioned in my [Open Source and Feelings: The Awesome](/open-source-and-feelings-the-awesome/) post, it was a conference session that finally convinced me to read this book. I felt like I had a pretty good idea of what [Non-Violent Communication (NVC)](https://en.wikipedia.org/wiki/Nonviolent_Communication) meant, having seen it mentioned quite a bit elsewhere, but this book really brought it to life. Marshall’s anecdotes and simple explanations drive it home. It’s definitely worth a read.
 
 Key ideas:
 

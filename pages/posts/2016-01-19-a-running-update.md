@@ -11,7 +11,7 @@ tags:
   - data
 ---
 
-It’s hard to believe that it has been 16 months since my last post [last post on running](https://blog.scottnonnenberg.com/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
+It’s hard to believe that it has been 16 months since my last post [last post on running](/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
 
 <div class='fold'></div>
 
@@ -19,7 +19,7 @@ It’s hard to believe that it has been 16 months since my last post [last post 
 
 [![all runs since injury, X = time, Y = distance](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)
 
-In my last post, I focused on my recovery from a serious injury: [a partial left achilles tear](https://blog.scottnonnenberg.com/injury-identity-and-non-attachment/). Each time I tried to ramp up, given my pre-injury expectations for myself, I pushed too hard. I had quite a few small injuries, and quite a few empty spots on the graph. My biggest question was: "Can I find a running schedule that will work long-term?"
+In my last post, I focused on my recovery from a serious injury: [a partial left achilles tear](/injury-identity-and-non-attachment/). Each time I tried to ramp up, given my pre-injury expectations for myself, I pushed too hard. I had quite a few small injuries, and quite a few empty spots on the graph. My biggest question was: "Can I find a running schedule that will work long-term?"
 
 Happily, the answer seems to be **yes**.
 

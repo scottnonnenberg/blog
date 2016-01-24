@@ -11,7 +11,7 @@ tags:
   - software
 ---
 
-[Open Source and Feelings, last October](http://osfeels.com/), was a great conference. My previous post about it, [The Awesome](https://blog.scottnonnenberg.com/open-source-and-feelings-the-awesome/), covers the good parts. But I also want to talk about the hard parts. Because the feelings in question at the conference weren’t all warm and fuzzy.
+[Open Source and Feelings, last October](http://osfeels.com/), was a great conference. My previous post about it, [The Awesome](/open-source-and-feelings-the-awesome/), covers the good parts. But I also want to talk about the hard parts. Because the feelings in question at the conference weren’t all warm and fuzzy.
 
 [![via https://twitter.com/r343l/status/650412701059956736](https://static.sinap.ps/blog/2016/01_jan/osfeels_challenge/bathroom.jpg)](https://twitter.com/r343l/status/650412701059956736)
 
@@ -23,7 +23,7 @@ I wasn’t completely comfortable during the conference. But that’s a good thi
 
 * **Gender-free bathrooms**: The two large bathrooms had been made gender-free, by covering over the urinals and putting up signs. I realized that I really never want to make eye contact in bathrooms, and urinals are a horrible tradition. The best approach is individual, lockable rooms each with a toilet and sink.
 * **Trigger warnings for animations**: I had never heard of this before! It’s good to hear about this kind of sensitivity as a software developer: the ability to turn them off is really important to some users.
-* **English makes it hard**: Just about everyone on stage struggled to replace ‘you guys’ with something less gender-specific. [Alex Harms has disavowed pronouns](https://twitter.com/onealexharms/status/258334483437199360), so I wrote and rewrote my [section about Alex’s session](https://blog.scottnonnenberg.com/open-source-and-feelings-the-awesome/) to try to make it flow without them.
+* **English makes it hard**: Just about everyone on stage struggled to replace ‘you guys’ with something less gender-specific. [Alex Harms has disavowed pronouns](https://twitter.com/onealexharms/status/258334483437199360), so I wrote and rewrote my [section about Alex’s session](/open-source-and-feelings-the-awesome/) to try to make it flow without them.
 * **Diversity takes a focused effort**: The conference had lunch group leaders who would gather attendees then walk them over to nearby restaurant. I joined one that looked like a good mixture of people, but then when we split into three different tables, we naturally segregated ourselves naturally: six men and one woman at my table.
 
 It all got me thinking about how comfortable I usually am in day-to-day life. It made me realize that I’m pretty complacent about rampant urinal use in bathrooms today.

@@ -76,7 +76,7 @@ Unlike traditional application servers which make it very hard for one programme
 
 In Java or C#, it takes some effort to implement a shared singleton. In Javascript, anything returned by a module is shared across the entire process. Other code gets that exact mutable object via `require()`.
 
-Most traditional application servers create a new thread for every incoming request. On the one hand, this makes it harder to coordinate between them, but it does ensure that a problem in one thread does not affect another. In Javascript, it’s all on one thread. There are no race conditions inside the process, but a [crash anywhere in the application takes the whole process down](https://blog.scottnonnenberg.com/the-dangerous-cliffs-of-node-js/).
+Most traditional application servers create a new thread for every incoming request. On the one hand, this makes it harder to coordinate between them, but it does ensure that a problem in one thread does not affect another. In Javascript, it’s all on one thread. There are no race conditions inside the process, but a [crash anywhere in the application takes the whole process down](/the-dangerous-cliffs-of-node-js/).
 
 Asynchronous code is the way of Javascript. What before would have been done in serial on one thread is now done in parallel. Thinking that way requires a change, and early on in that learning process, tough bugs happen frequently, like forgetting to pass a callback (crash), forgetting to call a callback (hang), and double-calling callbacks (crazy logging, unexpected behavior, or crash - very hard to debug). Improper use of async techniques by one developer can even cause test failures during another developer’s tests!
 
