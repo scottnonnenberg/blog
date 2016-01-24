@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router';
 import { prune } from 'underscore.string';
@@ -7,13 +6,15 @@ import { link } from 'gatsby-helpers'
 
 import { rhythm, fontSizeToMS } from 'utils/typography'
 import shortDate from 'utils/shortDate';
+import getPreFoldContent from 'utils/getPreFoldContent';
 
 
 export default class TextPreview extends React.Component {
   render() {
     const post = this.props.post;
     const html = post.data.body;
-    const body = prune(html.replace(/<[^>]*>/g, ''), 200);
+    const preFold = getPreFoldContent(html);
+    const body = prune(preFold.replace(/<[^>]*>/g, ''), 200);
 
     return <div>
       <h3
