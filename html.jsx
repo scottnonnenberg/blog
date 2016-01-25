@@ -20,7 +20,7 @@ export default class Html extends React.Component {
       window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
       window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
       window._paq.push(['enableLinkTracking']);
-      window._paq.push(['setDocumentTitle', 'blog/' + document.title]);
+      window._paq.push(['setDocumentTitle', 'blog/pre-js/' + document.title]);
       window._paq.push(['trackPageView']);
 
       // add tag
@@ -61,7 +61,7 @@ export default class Html extends React.Component {
           <script src={link("/bundle.js?t=" + buster)}/>
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
-            <img src={`${domainPiwik}/piwik.php?idsite=` + 1} style={{border: 80}} />
+            <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1`} style={{border: 0}} />
           </noscript>
         </body>
       </html>
