@@ -23,7 +23,7 @@ It’s not all roses in the world of [Node.js](http://nodejs.org/). In fact, mor
 
 The simplest of these mistakes is the classic crash. My code has done this so very many times. It’s easy; just try to get a key from an null object, or try to call a string like a function, and you’ve crashed.
 
-```language-javascript
+```javascript
 var x = 5;
 x.getData();
 // TypeError: Object 5 has no method 'getData'

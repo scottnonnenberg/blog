@@ -54,7 +54,7 @@ Second, when installing modules from npm, deep nesting of dependencies can cause
 
 Third, I’ve even run into a crazy situation: basic code behaving differently on Windows. For example:
 
-```language-javascript
+```javascript
 var start = new Date();
 var fn = function() {
   var now = new Date();

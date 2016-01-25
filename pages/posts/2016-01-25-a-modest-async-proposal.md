@@ -21,7 +21,7 @@ One key point of confusion really frustrates me: the solution to ‘callback hel
 
 The [pundits](http://stackabuse.com/avoiding-callback-hell-in-node-js/) [are](https://www.google.com/search?q=callback+hell&oq=callback+hell&aqs=chrome.0.69i59j69i60j69i57j69i60l2.1282j0j1&sourceid=chrome&es_sm=91&ie=UTF-8) [right](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/). The [callback pyramid of doom](http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/) [is a problem](https://www.terlici.com/2015/10/28/solving-node-callback-hell-asyncjs.html). Take a look at this code ([also available via github](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal)). What is it trying to do? Is it succesfully doing it?
 
-```language-javascript
+```javascript
 var saveUserNewPostReferences = function(id, cb) {
   lib.db.getUser(id, function(err, user) {
     if (err) {
@@ -73,7 +73,7 @@ Yep, it works. We first pull a user’s information, then all of their posts. Th
 
 But this problem is not at all unique to callbacks. You can be in the same hellish state with promises:
 
-```language-javascript
+```javascript
 var saveUserNewPostReferences = function(id) {
   var user, references;
 
@@ -131,7 +131,7 @@ First, let’s define our terms. Many discussions of async just talk about ‘ge
 
 Now let’s take a look at some approaches to asynchronous workflows. This technique makes every step its own independent, accessible function with individual names:
 
-```language-javascript
+```javascript
 function step1(id, cb) {
   doSomething(function(err, result) {
     if (err) {
@@ -146,7 +146,7 @@ But it still tightly couples each step to the next step. Not only does `step1` n
 
 We can do better, by removing each step’s knowledge about the other steps via  [`async.waterfall()`](https://github.com/caolan/async#waterfall):
 
-```language-javascript
+```javascript
 function step1(id, cb) {
   doSomething(function(err, result) {
     if (err) {
@@ -181,7 +181,7 @@ We can do better.
 
 Here’s my attempt at a clean async composition system. First, let’s take a look at the overall coordination method, what you’d call to kick off the process. You can see each of the individual steps and then the call to [`async.series()`](https://github.com/caolan/async#seriestasks-callback):
 
-```language-javascript
+```javascript
 NewReferencesProcess.prototype.go = function go(cb) {
   var steps = [
     this.getUser,
@@ -204,7 +204,7 @@ NewReferencesProcess.prototype.go = function go(cb) {
 
 Now, what do the individual steps look like?
 
-```language-javascript
+```javascript
 NewReferencesProcess.prototype.getUser = function getUser(cb) {
   var _this = this;
 
@@ -230,7 +230,7 @@ The first two examples use both closures and direct return values to pass values
 
 To run the whole thing, we create an instance, passing it the target `userId`:
 
-```language-javascript
+```javascript
 var refProcess = new NewReferencesProcess({userId: 3});
 
 refProcess.go(function(err, newReferences) {

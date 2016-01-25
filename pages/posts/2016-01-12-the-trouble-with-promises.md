@@ -21,7 +21,7 @@ I’m still uneasy. Why, you ask?
 
 First, an exercise based on [this recent tweet](https://twitter.com/ryanflorence/status/685535261883682817) showing [code using the new promise-based](https://gist.github.com/ryanflorence/927ef8266fdd5525bf8e) [standard fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API):
 
-```language-javascript
+```javascript
 function fetchJSON(options, cb) {
   fetch(options)
     .then(res => res.json())
@@ -39,7 +39,7 @@ However, if, deep into the synchronous call tree started by that success-case `c
 
 What’s the right solution? This code will fully break out of promises, putting all of your code back into a callback-only context. It defers to the event loop with `setTimeout`, escaping all lingering Promise-provided try/catch blocks:
 
-```language-javascript
+```javascript
 function fetchJSON(options, cb) {
   fetch(options)
     .then(res => res.json())
