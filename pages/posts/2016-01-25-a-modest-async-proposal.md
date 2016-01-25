@@ -11,7 +11,7 @@ tags:
   - software
 ---
 
-When discussing async in the world of Javascript, you find a lot of zealots. Promises fix [callback hell](http://callbackhell.com/)! Promises are a crutch for those who can’t hack it with callbacks! [I try take a more balanced perspective](https://blog.scottnonnenberg.com/the-trouble-with-promises/): Both of them have their place, and a lot of people are confused about it all.
+When discussing async in the world of Javascript, you find a lot of zealots. Promises fix [callback hell](http://callbackhell.com/)! Promises are a crutch for those who can’t hack it with callbacks! [I try take a more balanced perspective](/the-trouble-with-promises/): Both of them have their place, and a lot of people are confused about it all.
 
 One key point of confusion really frustrates me. The solution to ‘callback hell’ is not promises. It’s refactoring.
 
