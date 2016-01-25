@@ -27,6 +27,4 @@ result*.html
 npm-debug.log
 *.sublime-workspace
 
-env.json
-env_prod.json
-packages
+production_config.toml

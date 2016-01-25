@@ -4,31 +4,30 @@ import DocumentTitle from 'react-document-title';
 import { link } from 'gatsby-helpers'
 import { TypographyStyle } from 'utils/typography'
 
-const piwikDomain = 'https://piwik.sinap.ps';
-const CDNDomain = 'https://static.sinap.ps';
-
 const now = new Date();
 const buster = now.getTime();
 
-const piwikSetup = `
-  window._paq = window._paq || [];
-  window._paq.push(['setTrackerUrl', '${piwikDomain}/piwik.php']);
-  window._paq.push(['setSiteId', '3']);
-  window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
-  window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
-  window._paq.push(['enableLinkTracking']);
-  window._paq.push(['setDocumentTitle', 'blog/' + document.title]);
-  window._paq.push(['trackPageView']);
-
-  // add tag
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-  g.defer=true; g.async=true; g.src='${CDNDomain}/js/piwik/2.15.0/piwik.min.js';
-  s.parentNode.insertBefore(g,s);
-`;
 
 export default class Html extends React.Component {
   render() {
     const title = this.props.title || DocumentTitle.rewind();
+    const { domainPiwik, domainCDN } = this.props.config || {};
+
+    const piwikSetup = `
+      window._paq = window._paq || [];
+      window._paq.push(['setTrackerUrl', '${domainPiwik}/piwik.php']);
+      window._paq.push(['setSiteId', '3']);
+      window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
+      window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
+      window._paq.push(['enableLinkTracking']);
+      window._paq.push(['setDocumentTitle', 'blog/' + document.title]);
+      window._paq.push(['trackPageView']);
+
+      // add tag
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+      g.defer=true; g.async=true; g.src='${domainCDN}/js/piwik/2.15.0/piwik.min.js';
+      s.parentNode.insertBefore(g,s);
+    `;
 
     return (
       <html lang="en">
@@ -62,7 +61,7 @@ export default class Html extends React.Component {
           <script src={link("/bundle.js?t=" + buster)}/>
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
-            <img src={`${piwikDomain}/piwik.php?idsite=` + 1} style={{border: 80}} />
+            <img src={`${domainPiwik}/piwik.php?idsite=` + 1} style={{border: 80}} />
           </noscript>
         </body>
       </html>
