@@ -85,4 +85,4 @@ It’s easy to walk out of an event like that, high on the great people, convers
 
 Or, even more challenging: "wait, this industry I was pretty comfortable in has deep problems? What does that say about me?"
 
-Watch for my second blog post about the conference, where I'll dig into some of this. This was *The Awesome*. Next, I’ll tackle *The Challenge*.
+Next: read my [second blog post about the conference, where I dig into *The Challenge*](/open-source-and-feelings-the-challenge/).
