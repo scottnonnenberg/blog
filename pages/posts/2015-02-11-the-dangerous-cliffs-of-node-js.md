@@ -15,6 +15,8 @@ tags:
 
 [![dangerous cliffs via craigmoulding on flickr](https://static.sinap.ps/blog/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg)](https://www.flickr.com/photos/craigmoulding/5881291261)
 
+*[Update: In July 2015 I gave [a talk based on this post at the Seattle Node.js meetup](http://www.meetup.com/Seattle-Node-js/events/222999198/). You can find my [slides and demos on Github](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs).]*
+
 It’s not all roses in the world of [Node.js](http://nodejs.org/). In fact, more than just about every other platform I’ve used, it can feel like a precarious mountain path with a long cliff below. Yes, it features some very beautiful vistas, but one wrong step and it’s all over. Let’s cover four of those simple mistakes with substantial, unexpected consequences, as well as some potential guardrails.
 
 <div class='fold'></div>
