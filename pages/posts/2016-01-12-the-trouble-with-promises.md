@@ -89,9 +89,10 @@ Now, go forth and be a productive engineer without any Holy Grail pretense. No l
 
 Additional reading:
 
-* Can you solve these puzzles? [http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
-* A nice illustrated deep explanation of how promises work: [http://robotlolita.me/2015/11/15/how-do-promises-work.html](http://robotlolita.me/2015/11/15/how-do-promises-work.html)
-* A bit more theoretical exploration: [https://medium.com/@isntitvacant/observations-on-promises-2b08a0d0c27#.vk3vv5egm](https://medium.com/@isntitvacant/observations-on-promises-2b08a0d0c27#.vk3vv5egm)
+* Can you solve these puzzles? http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html
+* A nice illustrated deep explanation of how promises work: http://robotlolita.me/2015/11/15/how-do-promises-work.html
+* A bit more theoretical exploration: https://medium.com/@isntitvacant/observations-on-promises-2b08a0d0c27#.vk3vv5egm
+* `async`/`await` in ES2016 requires you to understand promises. Also, another example of code not properly converting back to pure callbacks... https://medium.com/@bluepnume/learn-about-promises-before-you-start-using-async-await-eb148164a9c8#.yh55d1790
 * Bluebird source:
-    * You can see how Bluebird decides how it ensures async operations in its various environments here: [https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/schedule.js](https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/schedule.js).
-    * You can see how Bluebird implements `asCallback()` here: [https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/nodeify.js](https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/nodeify.js). Interesting that it still calls your node-style callback in a try/catch then throws it later.
+    * You can see how Bluebird decides how it ensures async operations in its various environments here: https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/schedule.js.
+    * You can see how Bluebird implements `asCallback()` here: https://github.com/petkaantonov/bluebird/blob/7a39370ba1b98da0aaef1fa9d85b2fd5daaba4ee/src/nodeify.js. Interesting that it still calls your node-style callback in a try/catch then throws it later.
