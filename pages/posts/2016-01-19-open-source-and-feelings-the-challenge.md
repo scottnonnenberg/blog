@@ -55,15 +55,15 @@ The Open Source and Feelings conference is ultimately a progressive community wi
 Further reading:
 
 * Tech industry culture and diversity
-    * Taking apart the gospel of meritocracy: [http://glenngillen.com/thoughts/on-meritocracy](http://glenngillen.com/thoughts/on-meritocracy)
+    * Taking apart the gospel of meritocracy: http://glenngillen.com/thoughts/on-meritocracy
     * The tech industry problem of 'argument culture,' what I experiended at Microsoft https://www.kateheddleston.com/blog/argument-cultures-and-unregulated-aggression
-    * The lack of diversity in engineering organizations is a sign that something deeper is wrong: [https://www.kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction](https://www.kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction)
-    * What it’s like as the only woman in tech/gaming culture: [https://medium.com/matter/the-women-i-pretend-to-be-ef0a5ce97277#.5w5kaxdtx](https://medium.com/matter/the-women-i-pretend-to-be-ef0a5ce97277#.5w5kaxdtx)
-    * What it’s like as a black woman in the tech industry: [https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.58u0ta218](https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.58u0ta218)
+    * The lack of diversity in engineering organizations is a sign that something deeper is wrong: https://www.kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction
+    * What it’s like as the only woman in tech/gaming culture: https://medium.com/matter/the-women-i-pretend-to-be-ef0a5ce97277#.5w5kaxdtx
+    * What it’s like as a black woman in the tech industry: https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.58u0ta218
 * Open source burnout
-    * A great talk by Kathleen Danielson from PyCon 2015 about how to avoid it: [https://www.youtube.com/watch?v=RbeHBnWfXUc](https://www.youtube.com/watch?v=RbeHBnWfXUc)
-    * A discussion of the Burnout Cycle - including early symptoms to watch for: [https://opensource.com/business/15/12/avoid-burnout-live-happy](https://opensource.com/business/15/12/avoid-burnout-live-happy)
-    * Further discussion of the issues: hiring based on OSS contributions, the morality of participation/contribution, burnout, etc. [https://remysharp.com/2015/01/09/dont-like-open-source](https://remysharp.com/2015/01/09/dont-like-open-source)
+    * A great talk by Kathleen Danielson from PyCon 2015 about how to avoid it: https://www.youtube.com/watch?v=RbeHBnWfXUc
+    * A discussion of the Burnout Cycle - including early symptoms to watch for: https://opensource.com/business/15/12/avoid-burnout-live-happy
+    * Further discussion of the issues: hiring based on OSS contributions, the morality of participation/contribution, burnout, etc. https://remysharp.com/2015/01/09/dont-like-open-source
 * Nonbinary gender
-    * A good primer with links to further resources: [http://everydayfeminism.com/2014/12/myths-non-binary-people/](http://everydayfeminism.com/2014/12/myths-non-binary-people/)
-    * Practical resources: [http://nonbinary.org/wiki/Practical_Resources](http://nonbinary.org/wiki/Practical_Resources)
+    * A good primer with links to further resources: http://everydayfeminism.com/2014/12/myths-non-binary-people/
+    * Practical resources: http://nonbinary.org/wiki/Practical_Resources
