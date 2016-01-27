@@ -56,6 +56,7 @@ Further reading:
 
 * Tech industry culture and diversity
     * Taking apart the gospel of meritocracy: [http://glenngillen.com/thoughts/on-meritocracy](http://glenngillen.com/thoughts/on-meritocracy)
+    * The tech industry problem of 'argument culture,' what I experiended at Microsoft https://www.kateheddleston.com/blog/argument-cultures-and-unregulated-aggression
     * The lack of diversity in engineering organizations is a sign that something deeper is wrong: [https://www.kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction](https://www.kateheddleston.com/blog/how-our-engineering-environments-are-killing-diversity-introduction)
     * What it’s like as the only woman in tech/gaming culture: [https://medium.com/matter/the-women-i-pretend-to-be-ef0a5ce97277#.5w5kaxdtx](https://medium.com/matter/the-women-i-pretend-to-be-ef0a5ce97277#.5w5kaxdtx)
     * What it’s like as a black woman in the tech industry: [https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.58u0ta218](https://medium.com/this-is-hard/the-other-side-of-diversity-1bb3de2f053e#.58u0ta218)
