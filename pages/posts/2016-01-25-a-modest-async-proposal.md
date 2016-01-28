@@ -17,7 +17,7 @@ One key point of confusion really frustrates me. The solution to ‘callback hel
 
 <div class='fold'></div>
 
-### Hell
+## Hell
 
 The [pundits](http://stackabuse.com/avoiding-callback-hell-in-node-js/) [are](https://www.google.com/search?q=callback+hell&oq=callback+hell&aqs=chrome.0.69i59j69i60j69i57j69i60l2.1282j0j1&sourceid=chrome&es_sm=91&ie=UTF-8) [right](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/). The [callback pyramid of doom](http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/) [is a problem](https://www.terlici.com/2015/10/28/solving-node-callback-hell-asyncjs.html). Take a look at this code ([also available via github](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal)). What is it trying to do? Is it succesfully doing it?
 
@@ -123,7 +123,7 @@ But it really doesn’t matter what async system technique we use, we still have
 
 Let’s do something about that: let’s refactor.
 
-### Creative purgatory
+## Creative purgatory
 
 It’s good to see that a lot of the articles talking about this problem show solutions in callbacks, promises, and even [generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators). There seems to be less zealotry on this topic than there used to be. But these attempts at refactoring are all still a bit weak.
 
@@ -177,7 +177,7 @@ Better, but each step still needs to know about the next step’s required signa
 
 We can do better.
 
-### A modest proposal
+## A modest proposal
 
 Here’s my attempt at a clean async composition system. First, let’s take a look at the overall coordination method, what you’d call to kick off the process. You can see each of the individual steps and then the call to [`async.series()`](https://github.com/caolan/async#seriestasks-callback):
 
@@ -199,7 +199,6 @@ NewReferencesProcess.prototype.go = function go(cb) {
     return cb(err, _.last(results));
   });
 };
-
 ```
 
 Now, what do the individual steps look like?
@@ -221,7 +220,6 @@ NewReferencesProcess.prototype.getUser = function getUser(cb) {
     return cb(null, user);
   });
 };
-
 ```
 
 You can see that we’re operating in the context of a class. `getUser` is a member function of that class, and when it calls its target async method `this.db.getUser()` you can see that it stores the result of that call at `this._user`. The value at  `this`, an instance of the `NewReferencesProcess` class, is the shared state used to pass values down the workflow and enable dependency injection of target libraries (by replacing `this.db`).
@@ -242,7 +240,7 @@ refProcess.go(function(err, newReferences) {
 });
 ```
 
-### Heaven?
+## Heaven?
 
 Take a look at [my example code, with all five working example files](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal). Clone it and play with it. You’ll find the complete callback-style version of my async pattern as well as a version implemented with promises. What do you think?
 

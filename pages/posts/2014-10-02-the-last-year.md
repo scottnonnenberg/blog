@@ -18,7 +18,8 @@ It’s [Fall, a time for reflection](/autumn-associations/), and it has been abo
 
 ![taking javascript seriously](https://static.sinap.ps/blog/2014/Oct/taking_javascript_seriously_me-1412211402696.jpg)
 
-### Presentations
+## Presentations
+
 After giving a quick example of [some cool stuff](https://github.com/scottnonnenberg/learn-node) I’ve done with Node.js at the [Learn Node SeattleJS](http://www.meetup.com/seattlejs/events/134937662/) meetup last September, I was invited to speak at the [Seattle Software Craftsmanship](http://www.meetup.com/seattle-software-craftsmanship/) meetup. About a month later, I spoke there about Javascript.
 
 Seattle Software Craftsmanship is made up of folks who really care about architecture and the craft of building software, so they look down on Javascript a bit. My goal wasn’t to make them like Javascript. I had a more realistic goal: to help them deal better with the Javascript they are forced to write.
@@ -41,14 +42,16 @@ Abstract: _When I last spoke at SSC, it was about Javascript. We covered a lot o
 
 ![open source](https://static.sinap.ps/blog/2014/Oct/open_source-1412211395097.png)
 
-### Open Source
+## Open Source
+
 For several years now, I’ve been using Open Source Software pretty heavily. Of course there were the dabblings with Linux in college, but starting at Microsoft mostly quashed that. Four years ago, when I jumped headlong back into the world of code, I chose Ruby on Rails. Not long after, bought my first Mac, based heavily on open-source technology. Now I host my Node.js apps on Ubuntu VPS machines.
 
 In the last year I’ve really tried to increase my contributions back to the community. My pull requests have been approved for a number of projects ([postgres-adapter](https://github.com/jugglingdb/postgres-adapter),
 [jugglingdb](https://github.com/1602/jugglingdb), [groc](https://github.com/nevir/groc), and
 [grunt-mocha-cli](https://github.com/Rowno/grunt-mocha-cli)). But my bigger focus is on original projects filling needs not covered adequately by the community today.
 
-### TheHelp
+## TheHelp
+
 I’ve started and worked on quite a few Node.js projects at this point, and I started noticing some patterns. Standard things that just about all projects needed. Nearly two years ago now, I created a private library I called TheHelp, hoping to use it for my project and release it to the public too. I did use it heavily in all my projects. It grew and grew.
 
 A year ago, I realized that I’d never release TheHelp in its current state. I needed to split it up. As I investigated this possibility, I was surprised to discover something like ten separate components hiding inside that one project. So I started the process of splitting TheHelp into its component parts. Everything got a lot cleaner.
@@ -66,7 +69,8 @@ Install ‘em and let me know what you think! :0)
 
 ![company logos](https://static.sinap.ps/blog/2014/Oct/clients-1412211376291.jpg)
 
-### Contracting
+## Contracting
+
 Last October, a couple software development contracts fell into my lap, and I took the one focused on my platform of choice: Node.js. This kicked off a number of contracts over the past year. Happily, I have been able to avoid the mistakes of the past and keep my hours low - 20 hours or less per week. I can make progress towards my own goals while also making my client happy.
 
 In the last year, I’ve worked on three contracts:
@@ -78,14 +82,16 @@ In the last year, I’ve worked on three contracts:
 
 ![gamma corvi bird](https://static.sinap.ps/blog/2014/Oct/gamma_corvi_bird-1412211369527.png)
 
-### Introducing Gamma Corvi
+## Introducing Gamma Corvi
+
 In the last year I discovered some of the interesting ways the law doesn’t consider Sole Proprietorships to be real companies. The most impactful for me, discovered in setting up one of my contracts, was that [Sole Proprietors are often considered employees, not independent contractors](http://www.forbes.com/sites/robertwood/2012/05/09/irs-provides-template-for-employee-vs-contractor-mess/).
 
 So I incorporated: [Gamma Corvi, Inc.](https://gammacorvi.com) I do my contract work through it, and will soon be releasing original applications through it too. It feels good to have full legitimacy. It’s got an accountant, a lawyer, a payroll setup, and a real business bank account. Gamma Corvi, Inc. is for real. :0)
 
 I named it after [the brightest star in the Corvus constellation](http://en.wikipedia.org/wiki/Gamma_Corvi), itself named for the Corvid family of birds. Why? Because I've grown fond of the smart little crows common in my neighborhood. I even added some easter eggs with [crow-related trivia and videos](https://www.youtube.com/watch?v=QqLU-o7N7Kw) to [the company web site](https://gammacorvi.com)!
 
-### But what does it mean?
+## But what does it mean?
+
 I feel like the last several years have prepared me for this time in my life. I’m learning a lot, releasing projects, doing contracts, living how I want. But honestly, the last few years have all felt like that. Actually, the last three years. Come to think of it, it’s been exactly three years since I left Microsoft.
 
 Before my departure, I remember being very nervous about leaving Microsoft. I wasn’t sure exactly what was going to happen next once I turned in my keycard. Now, after three years I can say that even those low-confidence post-Microsoft expectations were all wrong. But that’s a good thing! Growth!

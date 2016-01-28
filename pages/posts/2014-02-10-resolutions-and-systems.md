@@ -23,7 +23,7 @@ For me, my resolutions were just part of my overall goal system. Still, I did pu
 
 <div class='fold'></div>
 
-### My Systems
+## My Systems
 
 Goals are good, but they can be overwhelming. Just looking at a list of year-sized goals can feel overwhelming. So what to do? How about this:
 
@@ -62,11 +62,11 @@ Like my weekly goals, I have a template I use every day. These are the first fou
 
 Last year my girlfriend and I spent New Year’s day reflecting and coming up with goals for the year. I forget why I decided to do it, but I took a couple hours and listed out all of my accomplishments and notable events for 2012. That document got really big, and made me feel pretty good - I had learned a lot of new technologies, done a lot of travel, fixed some gnarly bugs, etc. This year I did it again and it worked just as well. Seeing all that I’ve done gives me a sense of momentum, which makes it seem natural to move forward ambitiously.
 
-### Resolutions? Not really
+## Resolutions? Not really
 
 Honestly, the New Year is just an opportunity to unify how I’ve been thinking and behaving lately. At the end of the year, I’ll have been making progress towards longtime goals as well new, unexpected goals. Late December and early January is the chance to put that all in one place. One set of goals for the year.
 
-### New for 2014: Monthly Review
+## New for 2014: Monthly Review
 
 Finally, my new system for 2014. It’s so easy to get too focused on the day or week or be completely overwhelmed when looking at the year. This year I am finally knitting these two perspectives together with monthly reviews.
 

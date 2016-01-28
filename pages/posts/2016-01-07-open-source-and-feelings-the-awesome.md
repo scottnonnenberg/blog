@@ -23,7 +23,7 @@ Though it’s been awhile, I thought it would still be useful to highlight some 
 
 ![NVC is not about tone-policing, via https://twitter.com/onealexharms/status/650397122664095745](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/tone-policing.jpg)
 
-### Non-violent communication
+## Non-violent communication
 
 My favorite talk was by [Isaac Z. Schlueter](http://blog.izs.me/), called [Non-Violent Communication for Fun, Profit, and Self Defense](http://www.confreaks.tv/videos/osfeels2015-non-violent-communication-for-fun-profit-and-self-defense). Non-violent communication (NVC) is a system of *communication* and *self-reflection* pioneered by one [Marshall B. Rosenberg](https://www.cnvc.org/about/marshall-rosenberg.html). It has [popped up](http://moreahvestan.com/communication-coaching/) [a few times](http://www.yourtango.com/experts/ms-moreah-vestan/4-ways-communicate-your-heart-when-youre-annoyed#comments-content) for me lately, but the conference finally pushed me over the edge: I read [Rosenberg’s book A Language of Life](http://www.amazon.com/gp/product/B014OISVU4?psc=1&redirect=true&ref_=oh_aui_d_detailpage_o00_) not long afterwards.
 
@@ -35,7 +35,7 @@ And that’s just barely scratching the surface. As Isaac mentioned in the slide
 
 ![strong feels and being right, via https://twitter.com/Strabd/status/650074737356308480](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/empathy.jpg)
 
-### Empathy
+## Empathy
 
 My next favorite talk was called [Learning to Empathy](http://www.confreaks.tv/videos/osfeels2015-learning-to-empathy) by [Alex Harms](https://twitter.com/onealexharms). Empathy has become a buzzword in the software development and usability space in the past few years, and it was liberally sprinkled through just about every talk. But this one was unique - it faced, head-on, the hard problem of actually being empathetic.
 
@@ -57,7 +57,7 @@ Some choice quotes:
 
 ![via https://twitter.com/osbridge/status/650008835629842432](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/impostor-syndrome.jpg)
 
-### Positive self-talk
+## Positive self-talk
 
 [Kat Toomajian](https://twitter.com/zarhooie)’s talk [From the Inside Out: How Self-Talk Affects Your Community](http://www.confreaks.tv/videos/osfeels2015-from-the-inside-out-how-self-talk-affects-your-community) really stood out to me due to its very practical recommendations and frank discussion of stuff that affects all of us. She spoke about [Impostor Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome), for example, something I struggled with early in my career at Microsoft.
 
@@ -71,7 +71,7 @@ The ratios help reinforce a mostly positive perspective. The fact that you’re 
 
 ![via https://twitter.com/osbridge/status/650008835629842432](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/burnout.jpg)
 
-### Burnout and Open Source
+## Burnout and Open Source
 
 [Jacob Kaplan-Moss](https://jacobian.org/)’s talk, first of the conference, was an intense session called [What Part of "... for Life" Don't You Understand?](http://www.confreaks.tv/videos/osfeels2015-what-part-of-for-life-don-t-you-understand) One the one hand, open source involvement was personally fulfilling and opened up new career opportunities for him. On the other, without proper self-care, it was a road to burnout. He eventually had to bow out completely. Jacob discussed this in-depth, including a 12-item ‘stages of burnout’ slide [(10:45)](https://youtu.be/EqcuzSwySR4?t=10m45s).
 
@@ -79,7 +79,7 @@ Burnout ended up being a major theme of the conference. Most speakers included t
 
 Burnout happens, though not on the public stage since its victims generally fade out of the community, out of the spotlight. And those lost are frequently replaced by eager new faces, ready to make the same mistakes. Why are they willing to make the same mistakes? Because companies are using open-source contributions as a sort of second resume, but it amounts to requiring free work. And should it be free work anyway, given that many companies make lots of money using open-source software without giving back?
 
-### The Challenge
+## The Challenge
 
 It’s easy to walk out of an event like that, high on the great people, conversation and sessions, and go right back into your standard routine. Big, industry-wide questions raised? Maybe I’ll think about them some more at next year’s conference. What can I do about it anyway? I’m not really an activist.
 

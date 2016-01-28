@@ -19,7 +19,7 @@ In American pop culture, Autumn is orange and brown, pumpkins, brightly colored 
 
 <div class='fold'></div>
 
-### Newness
+## Newness
 
 From a young age we’re all conditioned to expect to start something new in the fall. The first day of school. Time to stop playing around, time to be productive again. Strangely, that feeling has continued far past my school years:
 
@@ -31,7 +31,7 @@ From a young age we’re all conditioned to expect to start something new in the
 
 ![equinox sunset](https://static.sinap.ps/blog/2014/Sep/equinox_sunset-1411691632311.jpg)
 
-### Reflection
+## Reflection
 
 The Autumn Equinox was this week, and I got to spend it watching the sunset (above) here in Seattle at a nice little park with a view of the Olympics. The park even has an installation showing you where the sun sets at the summer and winter solstice. The day of the Equinox, the sun was right in the middle.
 
@@ -41,7 +41,7 @@ To me, it just makes sense. No more margaritas on the patio. No more lazy dusk w
 
 ![change per day chart](https://static.sinap.ps/blog/2014/Sep/change_per_day-1411692657480.png)
 
-### Melancholy
+## Melancholy
 
 It's a time of balance between the day and night, but this time of year is also a time of change. Each new day here in Seattle sees a reduction in daylight of nearly three and a half minutes. Maybe you’ve noticed? I have definitely noticed. It is with some sadness that I welcome the fall here in the Northwest.
 
@@ -51,7 +51,7 @@ So, with the knowledge of all this approaching, the melancholy appears. But we c
 
 ![sunset sunrise chart](https://static.sinap.ps/blog/2014/Sep/sunrise_sunset-1411691657761.png)
 
-### Coping via Programming
+## Coping via Programming
 
 Okay, maybe you don’t agree with me. At least now you understand why I [wrote a program](https://github.com/scottnonnenberg/suncsv) to generate sunrise and sunset times. Specifically, it generates a CSV (comma-separated value) file you can use to import sunrise and sunset events into your calendar or spreadsheet program of choice.
 
@@ -63,7 +63,7 @@ Well, at least we don’t have to worry about being too hot anymore. :0)
 
 Just a little more:
 
-- Don’t forget to take your Vitamin D!
+- Don’t forget to take your Vitamin D3!
 - In Seattle? Download pre-generated [2014](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/Sep/2014.csv) and [2015](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/Sep/2015.csv) CSV files.
 - Even easier, add my [Seattle Sunrise/Sunset Times](https://www.google.com/calendar/embed?src=9m16s7lk4c251q7iv0gjvddesg%40group.calendar.google.com&ctz=America/Los_Angeles) Google Calendar to your Google Calendar. Just click the button in the bottom right.
 - Other cultures have their own Autumn Equinox traditions - [check ‘em out!](http://mentalfloss.com/article/59049/autumnal-equinox-traditions)

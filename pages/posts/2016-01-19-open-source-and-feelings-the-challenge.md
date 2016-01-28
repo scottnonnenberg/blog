@@ -17,7 +17,7 @@ tags:
 
 <div class='fold'></div>
 
-### Feeling: Uncomfortable
+## Feeling: Uncomfortable
 
 I wasn’t completely comfortable during the conference. But that’s a good thing! Each new area of discomfort made me think. Sometimes it was a new issue entirely, other times a new, more visceral angle on something I already knew about:
 
@@ -30,7 +30,7 @@ It all got me thinking about how comfortable I usually am in day-to-day life. It
 
 In all seriousness, though, I started thinking: "Am I part of the problem?"
 
-### Feeling: Concern
+## Feeling: Concern
 
 I thought back to my first couple years at Microsoft, right out of college. I was initially surprised by all the yelling and swearing in meetings, but I was told that it was in service to higher ideals of logical perfection. So I joined in. The theory was that we would remove our egos from the conversation and it would be a battle of pure ideas. I tried, but it definitely didn’t feel good to be told publicly, frequently with a raised voice, that my idea or its presentation wasn’t good enough.
 
@@ -38,13 +38,13 @@ I needed a ‘thick skin’ to survive there, but the culture didn’t even allo
 
 Over time, however, I got good at it. I internalized it. I’d like to think that I was better because I didn’t yell or swear. But I did tear people’s ideas apart mercilessly.
 
-### Feeling: Hope
+## Feeling: Hope
 
 Being at the conference reminded me that there are others, new to the industry, going through that enculturation process right now. And they’re realizing that it sucks, especially if you don’t already look or act like the majority. It turns out that the tech ideal is impossible: we can’t remove our egos from the conversation. It’s definitely not about pure ideas. And we don’t need to haze n00bs because we were hazed as n00bs.
 
 We can instead try to make things better for those who come next. We can improve communication and use empathy to improve software and the teams building it. We can make open source more sustainable to reduce burnout. And we can make communities of all kinds more accepting by being sensitive to everyone’s needs.
 
-### The Challenge
+## The Challenge
 
 The Open Source and Feelings conference is ultimately a progressive community with a vision for the future of the tech industry. I want that future. I applaud the challenge. And we can start working towards it right now.
 

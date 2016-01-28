@@ -15,7 +15,7 @@ It’s hard to believe that it has been 16 months since my last post [last post 
 
 <div class='fold'></div>
 
-### Consistency
+## Consistency
 
 [![all runs since injury, X = time, Y = distance](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)](https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png)
 
@@ -25,7 +25,7 @@ Happily, the answer seems to be **yes**.
 
 After over a year of fully on or fully off running, I finally figured out how to avoid longer breaks. I also figured out how to be content with minimal or no improvement. I focused on how I felt during the run, with no external goal. No need to constantly increase my distance numbers. No need to change my pace. But changes did happen naturally.
 
-### The interruptions
+## The interruptions
 
 [![all runs since last post, X = time, Y = distance](https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png)](https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png)
 
@@ -38,14 +38,14 @@ Before we dig into the natural changes in my running since September 2014, let�
 
 I think this is a clear improvement over the previous months. Just one long break, and no running injuries.
 
-### Changes
+## Changes
 
 [![all runs since injury, X = time, Y = pace](https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png)
 ](https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png)
 
 There was no clear trend on my run distances over the course of the year, but there was a clear trend in pace. I’ve generally been trending downward since March 2013. A nice surprise. Evidence that I'm doing something right.
 
-### Overall averages
+## Overall averages
 
 <table>
   <tr>
@@ -83,7 +83,7 @@ There was no clear trend on my run distances over the course of the year, but th
 * **Mileage** - Just looking at the total run count you might think that 2014 and 2015 were quite similar. Overall mileage shows that I ran quite a bit further.
 * **Time** - Total time spent running each year. 2015 again higher, but not 25% higher like distance. The faster running pace was a more efficient use of time!
 
-### Contentment
+## Contentment
 
 No matter how you slice it, I’m feeling good about 2015. The key really seems to be to relax. If numbers go down in 2016, I’m fine with that. In that vein, I’m taking a break from working out right now, while most are out on the streets in force due to their New Year’s Resolutions.
 

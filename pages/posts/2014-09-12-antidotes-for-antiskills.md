@@ -27,7 +27,7 @@ Let’s dig into these antiskills and their antidotes...
 
 ![sit down, shut up and do as you’re told](https://static.sinap.ps/blog/2014/Sep/sit_down_shut_up_and_do_as_you_re_told-1410405365318.png)
 
-### Antiskill: Doing What You’re Told
+## Antiskill: Doing What You’re Told
 
 _At the beginning of my career, as an intern software developer at Hewlett-Packard, I would get tasks from my manager then go do them. If I ran out of tasks, I’d need to go back and get more. It’s a good thing I was able to get through the tasks fast, because I couldn’t work any smarter._
 
@@ -48,7 +48,7 @@ The best kind of workplace harnesses more than your ability to do tasks. It dema
 
 ![headless chicken](https://static.sinap.ps/blog/2014/Sep/headless_chicken-1410405270942.jpg)
 
-### Antiskill: Being Responsive
+## Antiskill: Being Responsive
 
 _As a project manager at Microsoft, near the end of every milestone I would have meetings for multiple hours every day to decide which last-minute issues to fix. Everything worth talking about was high-urgency, high-priority. It was especially bad a couple days before the final build - our vigilance extended through the weekend._
 
@@ -67,7 +67,7 @@ In many cases, there’s a core reason behind that need for high-frequency react
 
 ![obama: deal with it](https://static.sinap.ps/blog/2014/Sep/deal_with_it_obama-1410405282195.jpg)
 
-### Antiskill: Dealing With It
+## Antiskill: Dealing With It
 
 _One of my big surprises at Microsoft was the length of the Visual Studio build time. Sure, I’d seen long builds - some of my C++ and Java projects in college had taken over a minute to build. But this was something else entirely. A full Visual Studio build, snapped in the late evening, took until the next morning._
 
@@ -89,6 +89,6 @@ As this thought process begins to leak past the original set of frustrations int
 * Make a list of your frustrations and prioritize it. For now, ignore all but your first item. Come up with a step-by-step plan to address it, potentially including peers and mentors to help you tune that plan. Then get to work!
 
 
-### Can we eradicate antiskills completely?
+## Can we fully eradicate antiskills?
 
 Probably not, and I don't think we should try. May we always use them in small amounts, only as necessary for the job at hand!

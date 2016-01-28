@@ -18,7 +18,7 @@ tags:
 
 <div class='fold'></div>
 
-### Who’s the asshole?
+## Who’s the asshole?
 
 Putting these two situations side-by-side, we just weren’t getting along. How could they be so out of touch with my needs? With the customer’s needs? As far as I knew, I was their only client. Were they just selfish, using scheduling as an excuse to be lazy? Was I being selfish?
 
@@ -26,7 +26,7 @@ The answer: **neither**. It turns out that we were both being reasonable.
 
 Their system, the incentive structure for their team, was different from my system and its incentives. We like to think of ourselves and others as independent agents, but we’re always inside of a context. What may look like a bad or selfish person is simply someone responding to their system. Unless we make particular effort, we’ll wrongly evaluate others’ behavior in our context.
 
-### The Conflict
+## The Conflict
 
 What was defined as success for me was not defined as success for them. Just like me, members of the backend team were trying to do a ‘good job.’ For them, a ‘good job’ was to deliver what they promised, and to avoid bugs in the features delivered. A ‘good job’ for me was to deliver a different set of features.
 
@@ -34,7 +34,7 @@ Because I was working on features for the browser, I thought I had a better hand
 
 This kind of conflict is a common problem in large companies.
 
-### A simpler system
+## A simpler system
 
 Smaller companies, especially early-stage startups, don’t have this problem very often. Why is that? It’s because their systems are designed to encourage the right behavior.
 
@@ -42,7 +42,7 @@ In these kinds of organizations, everyone has a clear goal in mind - bottom line
 
 Additionally, smaller teams frequently empower each individual to do whatever it takes for the business. There’s no backend team, because everyone works on the entire app. It’s true agile, because every feature in the single, prioritized backlog is a true user story, resulting in new business value.
 
-### Keep the system in mind!
+## Keep the system in mind!
 
 So you’re not at a small, agile organization. What can you do? You can take on a new perspective.
 
@@ -58,7 +58,7 @@ If you’re a lead, you can consider a few more, higher-level tasks. Even withou
 5. *Empower individuals to solve complete problems*. Build a [culture of pull requests](http://neilb.org/2014/12/31/pr-etiquette.html) for internal projects, so anyone who needs something could implement it. Consider using technologies like [Node.js](https://nodejs.org/), which make it easier for one developer to implement a feature from the database all the way to the web browser.
 6. *Focus on group-level incentives based on business metrics*. Abstract metrics will encourage people to game the system. Too much focus on individual incentives can threaten team cohesiveness and minimize knowledge sharing.
 
-### The right perspective
+## The right perspective
 
 No matter where you are in an organization, this kind of approach is useful. And it turns out that understanding the larger context is useful in many situations beyond business.
 

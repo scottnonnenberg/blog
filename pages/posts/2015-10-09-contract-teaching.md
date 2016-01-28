@@ -25,7 +25,7 @@ It was quite a bit different from recent contracts, because I didn’t write any
 
 <div class='fold'></div>
 
-### Node.js? SSA? What??
+## Node.js? SSA? What??
 
 Before we jump into what I did for them, you’re probably a bit surprised. Why is the SSA interested in using new open-source technology when they’ve been using other technologies for so long? The answer is [The United States Digital Service](https://www.whitehouse.gov/digital/united-states-digital-service) (USDS). In their words, USDS is:
 
@@ -37,7 +37,7 @@ With the decision to use Node.js made but few resources of their own, USDS neede
 
 ![United States Digital Service Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/usds-logo.png)
 
-### 1. Hands-on classroom training
+## 1. Hands-on classroom training
 
 I was surprised when they asked for actual classroom training. I can point to any number of problems with the standard classroom training approach, but that actually makes me a better teacher. The classroom isn’t such a bad place, really - it does actually give you the opportunity to support most [learning styles](https://en.wikipedia.org/wiki/Learning_styles).
 
@@ -47,9 +47,9 @@ I spent a lot of time with students one-on-one as they progressed through the ma
 
 My goal was to get developers familiar with standard tools and approaches, confident in their ability to tackle new APIs without my help. Just about all exercises had students reading official documentation for the modules in use. With only three weeks on site, I had to be focused on building habits and attitudes.
 
-### ![my desk at the head of the classroom](https://static.sinap.ps/blog/2015/10_oct/ssa/head-of-classroom.jpg)
+## ![my desk at the head of the classroom](https://static.sinap.ps/blog/2015/10_oct/ssa/head-of-classroom.jpg)
 
-### 2. Pair/mob programming
+## 2. Pair/mob programming
 
 Once the classroom time was complete, I worked with the dev team to start developing real features on their pilot project. A few times early on it was me and another developer pair programming a feature, the developer with hands on the keyboard. But we quickly settled into a rhythm: a bigger room with a large screen on the wall, one person on the keyboard, and a whole group of us watching and giving advice. This is usually called mob programming. It made sense; with more people in the room, more could learn from my guidance.
 
@@ -61,7 +61,7 @@ I surfed the energy level, constantly trying to keep developers at that edge whe
 
 ![mob programming screen](https://static.sinap.ps/blog/2015/10_oct/ssa/mob-programming-screen.jpg)
 
-### 3. Node.js overview session
+## 3. Node.js overview session
 
 SSA also asked me to address a wider audience to help build awareness about Node.js. One team had decided to pilot a project with it, perhaps other groups might also be interested?
 
@@ -71,9 +71,9 @@ In this case, my audience was high-level technology leaders. I started from the 
 
 This lead to a healthy Q&A session. I noticed a clear trend in the questions I got from people who were encountering Node.js for the first time. They were looking for direct replacements for current tools. I’d get questions like "How do I do distributed transactions?" or “How do I connect it to an enterprise configuration server?” My goal with these questions was to break it down, get down to the specific scenario. Distributed transactions help you solve a set of problems. But what’s actual problem? Transactional database updates then hit another service on success only? That’s just basic asynchronous Node.js code and support for database transactions. No fancy library required.
 
-### ![SSA parking lot](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-parking-lot.jpg)
+## ![SSA parking lot](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-parking-lot.jpg)
 
-### The result?
+## The result?
 
 Let’s start with some quotes from their developers:
 
@@ -84,6 +84,6 @@ Let’s start with some quotes from their developers:
 I was brought in to help prepare them for a new project just starting up. That project still has aggressive goals and deadlines, and they still have a lot to learn. You can only learn so much in three weeks. But they know now what they should know, have materials to help them learn it, and have a new confidence that was missing before I arrived.
 
 
-### What about you?
+## What about you?
 
 Perhaps your company is also looking to make the jump from expensive proprietary software to high-productivity, community-driven open source technologies? Reach out and Gamma Corvi might just be able to help! Your developers will thank you.

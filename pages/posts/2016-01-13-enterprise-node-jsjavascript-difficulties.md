@@ -24,7 +24,7 @@ Then we’ll talk about some of my recommendations for making all of this smooth
 
 <div class='fold'></div>
 
-### 1. Difficult to motivate change
+## 1. Difficult to motivate change
 
 First let’s talk about why Node.js is interesting. Developers are excited about Javascript on the server primarily because they already know javascript. They are writing lots of code for the browser using javascript, and now with Node.js they can focus on just one language. Because this is driving large amounts of energy into the ecosystem, there are many, many open source modules available on npm.
 
@@ -34,7 +34,7 @@ However, developers can be surprisingly resistant to these changes. It makes sen
 
 Once everyone is motivated it’s still a tenuous position, because there’s...
 
-### 2. Too much to learn at once
+## 2. Too much to learn at once
 
 The size and energy in the ecosystem is a double-edged sword. Lots of alternatives for any given scenario. But that doesn’t make it easy to choose. Sometimes there are just two clear big players like Hapi and Express, and then the rest for niche scenarios and experts. But frontend frameworks are nowhere near as clear cut: Angular, React, Ember, Backbone/Marionette, Knockout, or something else?
 
@@ -44,7 +44,7 @@ And it’s not just the new core application functionality. It’s also source c
 
 So you’ve selected your initial set of dependencies. But you have another set of challenges ahead of you, because most large organizations use Windows.
 
-### 3. Windows Node.js development is hard
+## 3. Windows Node.js development is hard
 
 I’m happy to say that I don’t have any hands-to-keyboard experience on this. But I have pair programmed with a lot of people who were using Windows, and I felt their pain.
 
@@ -70,7 +70,7 @@ Lastly, in big organizations, machines are usually locked down. Developers can't
 
 Maybe you’ve worked through some of these challenges, working with IT to change the ‘standard’ developer workstation. Maybe even some sort of virtual machine-based solution. Now you’re off and running, developing features. But you’ve started...
 
-### 4. Stepping on each other’s toes
+## 4. Stepping on each other’s toes
 
 Unlike traditional application servers which make it very hard for one programmer to interfere with another, it’s very easy in the world of javascript.
 
@@ -80,7 +80,7 @@ Most traditional application servers create a new thread for every incoming requ
 
 Asynchronous code is the way of Javascript. What before would have been done in serial on one thread is now done in parallel. Thinking that way requires a change, and early on in that learning process, tough bugs happen frequently, like forgetting to pass a callback (crash), forgetting to call a callback (hang), and double-calling callbacks (crazy logging, unexpected behavior, or crash - very hard to debug). Improper use of async techniques by one developer can even cause test failures during another developer’s tests!
 
-### Recommendations
+## Recommendations
 
 How to avoid some of these challenges? Or, better put, how can you minimize the impact of all of this? As always, with that question: start small. Don’t try to change the world at once.
 
@@ -93,7 +93,7 @@ Then, depending on your focus, choose one of these.
 
 I prefer reimplementation because it will remove any debate about requirements, you’ll be able to focus on the differences between the two implementations.
 
-### Building Expertise
+## Building Expertise
 
 This forward team will learn a whole lot. It will be in a perfect spot to make all the initial dependency decisions and build guidelines for the rest of the organization. It will also tune its debugging skill for the target platform, ready to be a resource for others. And this is probably the time to pull in an expert like me - I can help you choose those dependencies, establish a learning plan, and generally move faster.
 

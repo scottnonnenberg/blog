@@ -11,13 +11,13 @@ tags:
   - software
 ---
 
-[JavaScript Promises](https://www.promisejs.org/). In my mind I have an uneasy truce with them. The war ended primarily because I’ve been forced to use promises on contracts. Since then, [standards bodies seem to have agreed to make them the one true asynchronous programming method](https://www.w3.org/2001/tag/doc/promises-guide). And if you’re writing code between layers [which provide](http://knexjs.org/) and [expect promises](https://github.com/graphql/graphql-js/blob/fee4fe322f982c9f1b8d5c2e2eb9137d1fcba74a/src/execution/execute.js#L277), I suppose it’s time to [do as the Romans](https://en.wiktionary.org/wiki/when_in_Rome,_do_as_the_Romans_do).
+[Javascript Promises](https://www.promisejs.org/). In my mind I have an uneasy truce with them. The war ended primarily because I’ve been forced to use promises on contracts. Since then, [standards bodies seem to have agreed to make them the one true asynchronous programming method](https://www.w3.org/2001/tag/doc/promises-guide). And if you’re writing code between layers [which provide](http://knexjs.org/) and [expect promises](https://github.com/graphql/graphql-js/blob/fee4fe322f982c9f1b8d5c2e2eb9137d1fcba74a/src/execution/execute.js#L277), I suppose it’s time to [do as the Romans](https://en.wiktionary.org/wiki/when_in_Rome,_do_as_the_Romans_do).
 
 I’m still uneasy. Why, you ask?
 
 <div class='fold'></div>
 
-### An Exercise
+## An Exercise
 
 First, an exercise based on [this recent tweet](https://twitter.com/ryanflorence/status/685535261883682817) showing [code using the new promise-based](https://gist.github.com/ryanflorence/927ef8266fdd5525bf8e) [standard fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API):
 
@@ -54,7 +54,7 @@ function fetchJSON(options, cb) {
 
 Ugly? Yes. Don’t write this code if you don’t have to. If you’re using [Bluebird](https://github.com/petkaantonov/bluebird) (which I would recommend), use [its built-in to-](http://bluebirdjs.com/docs/api/ascallback.html) and [from-callback conversions](http://bluebirdjs.com/docs/working-with-callbacks.html#automatic-vs.-manual-conversion). Sadly, the [new](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) [standard Promise](http://www.html5rocks.com/en/tutorials/es6/promises/) implementations don’t include these helper methods, which will make these kinds of mistakes more common. Which brings me to...
 
-### The Problem
+## The Problem
 
 Promises are billed as a simplification of asynchronous programming. Callbacks are painful, promises are the solution. But really promises layer complexity on top of a relatively simple initial system.
 
@@ -62,13 +62,13 @@ There’s no way around it. You need to understand the [event loop and callback 
 
 Now we add promises to our application. Maybe long chains of promises are marginally easier to reason about than deep [`async.waterfall()`](https://github.com/caolan/async#waterfall) or [`async.series()`](https://github.com/caolan/async#seriestasks-callback) constructs. But now we have more complexity and new failure modes. As we saw above, though it looked like the code was error-handling properly, [errors can be swallowed completely](http://jamesknelson.com/are-es6-promises-swallowing-your-errors/) and your reporting systems won’t hear about it. Errors are propagated differently with promises, and you’ll need to add these new behaviors as a new mode in your mind.
 
-### The Tradeoff
+## The Tradeoff
 
 I prefer to think of promises as a powerful but complex tool for composability. Callback style requires the client callback to be available when the async operation finishes. Now imagine the code you’d have to write to allow time-shifting of that asynchronous result. That’s promises. It’s a more complex system bolted on top of callbacks, so a result can be passed around and used by multiple clients whenever they are ready for it.
 
 When architecting systems, we must ask ourselves: is the additional complexity worth it? I think things like [redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware) are pretty cool. Passing promises around can allow for more declarative versus imperative design, and that makes for cleaner, more predictable architecture.
 
-### Some Tips for Promises
+## Some Tips for Promises
 
 Say you’ve decided to go with promises in your app. Here are a few tips to make that experience a bit nicer:
 
@@ -81,7 +81,7 @@ Say you’ve decided to go with promises in your app. Here are a few tips to mak
 * **Consider debuggability** - Design your code such that when errors happen, they can be tracked down. If an error propagates through too much promise infrastructure at once, will key information be lost? [Some example code here from my talk last July](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs/tree/master/src/demos/4.%20Error%20from%20async%20call).
 * **Know your library, use its helpers** - As discussed above, Bluebird has some really nice helpers on top of [the standard](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Use them. Adding a handler to [possiblyUnhandledException](http://bluebirdjs.com/docs/api/promise.onpossiblyunhandledrejection.html) takes some of the key failure modes off the table, and [longStacktraces](http://bluebirdjs.com/docs/api/promise.config.html) gives you great debugging information.
 
-### Go forth!
+## Go forth!
 
 Now, go forth and be a productive engineer without any Holy Grail pretense. No library will solve all of your problems. Every new dependency simply means some level of benefit combined with costs to understand and maintain it over time. Better make sure the tradeoff is worth it.
 

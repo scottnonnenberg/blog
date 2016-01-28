@@ -17,7 +17,7 @@ To this day, I’m still interested in the 'why' behind things. I’ve read a [w
 
 <div class='fold'></div>
 
-### Best Practices
+## Best Practices
 
 > "Commercial or professional procedures that are accepted or prescribed as being correct or most effective" ([Wikipedia](https://en.wikipedia.org/wiki/Best_practice))
 
@@ -25,7 +25,7 @@ Sadly, most people don’t want the ‘why,’ they just want the ‘what.’ Th
 
 "That last system we tried was a failure due to intrinsic problems with the system itself. This new system is better. This time it’s gonna be perfect!" This is Holy Grail thinking. Maybe things won’t go too badly with the new system, but the expectations are unrealistically high. Nobody’s any happier. There’s no real improvement. Why is that?
 
-### Software Development is Complex
+## Software Development is Complex
 
 I first became aware of [The Cynefin Framework](https://en.wikipedia.org/wiki/Cynefin_Framework) in 2012 when I was on a contract at the [Nordstrom Innovation Lab](http://www.startuplessonslearned.com/2011/10/case-study-nordstrom-innovation-lab.html). It looks at the complexity of a given system to determine what kind of approaches can be used within that system. It breaks systems into [four categories, usually presented in a grid](https://commons.wikimedia.org/wiki/File:Cynefin_as_of_1st_June_2014.png):
 
@@ -52,7 +52,7 @@ The question is: where is Software Development in that continuum? Some might cla
 
 I’d argue that it sometimes Complicated, and sometimes Chaotic. But most of the time, it’s Complex.
 
-### Dealing with the Complex
+## Dealing with the Complex
 
 Cynefin tells us that no set of best practices can tell us how to act in a given Complex system. It does say that some initial heuristics can be useful, but our focus should be on probing the problem domain and adapting our approach over time.
 
@@ -68,7 +68,7 @@ Any one of these systems could easily cause problems for a tightly planned devel
 
 This is the Why of [Agile](http://agilemethodology.org/). Agile helps a development team deal with all of these things, establishing a framework for adaptation over time. Agile is about giving a team the tools to become the best, most productive team it can be.
 
-### The Why of Agile Practices
+## The Why of Agile Practices
 
 Let’s talk about some of the specific ‘ceremonies’ and why they exist. We need to break out of the ‘must’ or ‘should’ mindset. We don’t do these things because they are required, we do them to get something out of them. If we’re not getting that anymore, then we can make a change.
 
@@ -83,7 +83,7 @@ Let’s talk about some of the specific ‘ceremonies’ and why they exist. We 
 
 Now it makes a little more sense why agile coaches say things like "early in your adoption of Agile, your estimates will be off." It’s all about gradual adaptation and improvement. Estimates get better, impediments are removed, and the team gradually pays down whatever technical debt it had before.
 
-### Feedback Loops
+## Feedback Loops
 
 > "The section of a control system that allows for feedback and self-correction and that adjusts its operation according to differences between the actual and the desired or optimal output." ([American Heritage® Dictionary](http://www.thefreedictionary.com/feedback+loop))
 

@@ -18,7 +18,7 @@ But the key is that they solved a problem for me.
 
 <div class='fold'></div>
 
-### Shopping
+## Shopping
 
 I’ve always hated shopping for clothes. I essentially binge-shop to get it all over with as fast as possible. I wait until the last possible second, and then rip the band-aid off as fast as possible.
 
@@ -30,7 +30,7 @@ But I needed to stick with what worked, because I had some fit problems. My arms
 
 ![good/evil](https://static.sinap.ps/blog/2014/Aug/good__evil-1409176567801.jpg)
 
-### Buying clothes online??
+## Buying clothes online??
 
 Flash forward to July 2007, when a crazy little tech-focused discount retailer called [woot](http://woot.com) started selling shirts. The news made its way to me through the tubes, and after some distressing clothes-shopping flashbacks, I broke through my negative associations. It was only $10, right? And so, I made my [very first shirt.woot purchase](http://shirt.woot.com/offers/mental-notes) on September 15, 2007.
 
@@ -40,7 +40,7 @@ And the shirt fit! It actually fit on the first try, thanks to some measuring ta
 
 ![shirt.woot packaging](https://static.sinap.ps/blog/2014/Aug/packages-1409176580694.jpg)
 
-### A growing addiction
+## A growing addiction
 
 After that first positive experience, I was hooked. I was getting an email with a new shirt available every day, and I’d often click through just to read their cheeky product summaries. They employed real humor and real effort in writing those non-summaries. They were a new beast in the retail world, certainly.
 
@@ -50,7 +50,7 @@ I bought a shirt every time I encountered one I liked. And it was good. Without 
 
 ![me and Danielle in tahoe, penguin/orca](https://static.sinap.ps/blog/2014/Aug/orca-1409176591274.JPG)
 
-### The beginning of the end
+## The beginning of the end
 Unfortunately, woot was bought by Amazon in 2010. It retained its character reasonably well for a couple years after that, but recently their daily emails were feeling a little more like spam. As if to confirm that thought, [Matt Rutledge](http://www.dmagazine.com/publications/d-magazine/2014/july/matt-rutledge-woot-has-a-new-deal-mediocre-corporation?single=1), the founder of woot, left Amazon this spring and started a [statement of a company](http://mediocre.com) and [new daily deals site](http://meh.com). Seems there was a bit of a culture clash.
 
 So, without much fanfare, this last June I decided to unsubscribe from the daily email. But I still proudly wear my collection. I take my shirts to multiple countries!
@@ -61,7 +61,7 @@ And my girlfriend even wears the woot shirt I got her, amazingly. :0)
 
 ![Danielle and couldn’t care less bear](https://static.sinap.ps/blog/2014/Aug/couldn_t_care_less-1409176647081.jpg)
 
-### The Future
+## The Future
 
 Over the last seven years, I’ve bought 41 shirts from shirt.woot. But as the years wear on, the shirts will be worn, and will become worn. And I’ll need to find a new solution to my clothes-shopping problem. Maybe I’ll shop the [shirt.woot archives](http://shirt.woot.com/catalog?ref=sh_ctlg), or maybe I’ll find something new. We shall see.
 

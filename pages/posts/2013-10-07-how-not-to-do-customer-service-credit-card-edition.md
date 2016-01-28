@@ -18,8 +18,8 @@ _Actually, before I get started let me complain a little about my credit card co
 
 Okay, on to the resultant customer service foibles. These stories all begin after I’d already gone through the process of updating my card in a few places as purchases failed, like Amazon and Apple.
 
+## Car2go
 
-### Car2go
 I’m a big fan of car2go - it’s a great compromise between driving and the bus. Check it out if you haven’t yet. :0)
 
 A couple days after using one of their tiny little blue and white cars, I get this message:
@@ -61,8 +61,8 @@ I immediately forward the mail to the Seattle office, with an additional note:
 
 Never got a response to this, but my account was reactivated. I was able to use car2go again when I next tried it 16 days later. That really could have gone a lot better.
 
+## Seattle ORCA card
 
-### Seattle ORCA card
 Seattle installed card readers in all their public transit a few years ago, allowing you to put money on their new “One Regional Card for All” (ORCA) cards. And you could even attach a credit card to them so when you got below a given balance, it would automatically charge the card for a refill amount you specify. A nice little convenient system.
 
 So, I’m happily using my card for the occasional bus trip when I get this email:
@@ -99,8 +99,8 @@ To be sure, I make the call, talk to them, and find out that I have to physicall
 
 In the couple years I’ve had an ORCA card, I’ve actually had to go through this check-sending process twice. It hasn’t gotten better. But I feel pretty proud that I did catch it once before a failed charge required a check to be sent. And yes, I still have autoload set up even today…
 
+## Redbox
 
-### Redbox
 I like redbox. I use it primarily because Netflix selection is weak and I have a few redboxes within easy walking distance. :0)
 
 So, as usual, I’m out to dinner and I open the app and reserve Jack the Giant Slayer, mindlessly clicking through things until I had everything reserved. And then it hit me - I don’t have that old credit card in my hand anymore, so I can’t just scan the card and pick it up like usual… Maybe I could change it?
@@ -121,8 +121,8 @@ At this point my girlfriend starts trying to calm me down. I breathe deeply. Zen
 
 On our way home she walks up to a different machine with it in stock and rents it with her credit card, no account required. Definitely points for redbox convenience there. And the movie wasn’t completely horrible either.
 
+## So, what can we learn?
 
-### So, what can we learn?
 As application developers, we need to treat customer credit cards as impermanent things. Software needs to handle payment failures without treating the customer like a criminal. Especially if the customer has a track record of successful payments.
 
 And as consumers, sometimes we will have to call customer service or email support, and sometimes we may even have to go without that service we love for a couple days. :0)
