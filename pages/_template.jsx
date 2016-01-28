@@ -15,8 +15,7 @@ export default class RootTemplate extends React.Component {
         <div>
           <h1
             style={{
-              fontSize: fontSizeToMS(2.5).fontSize,
-              lineHeight: fontSizeToMS(2.5).lineHeight
+              marginBottom: 0
             }}
           >
             {this.props.config.blogTitle}
@@ -58,7 +57,8 @@ export default class RootTemplate extends React.Component {
       <Container
         style={{
           maxWidth: rhythm(24),
-          padding: `${rhythm(2)} ${rhythm(1/2)}`
+          padding: `${rhythm(2)} ${rhythm(1/2)}`,
+          paddingTop: rhythm(1/2)
         }}
       >
         {header}
