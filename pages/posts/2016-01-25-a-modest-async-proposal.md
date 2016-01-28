@@ -69,7 +69,7 @@ var saveUserNewPostReferences = function(id, cb) {
 };
 ```
 
-Yep, it works. We first pull a user’s information, then all of their posts. Then we go look for any references to those posts, save all those new references, and finally send an email to the user if we found any new references. Pretty hard to understand, huh? Look at at those last eight lines!
+Yep, it works. We first pull a user’s information, then all of their posts. Then we go look for any references to those posts, save all those new references, and finally send an email to the user if we found any new references. Pretty hard to understand, huh? Look at at those last nine lines!
 
 But this problem is not at all unique to callbacks. You can be in the same hellish state with promises:
 
