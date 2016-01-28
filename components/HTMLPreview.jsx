@@ -43,14 +43,17 @@ export default React.createClass({
         }}
       >
         <Link to={link(post.path)}>
-          {post.data.title} <span
-            style={{
-              color: 'lightgray'
-            }}
-          >{' ' + shortDate(post.data.date)}</span>
+          {post.data.title}
         </Link>
+        <span className="date">
+          {' ' + shortDate(post.data.date)}
+        </span>
       </h2>
-      <div ref="html" dangerouslySetInnerHTML={{__html: callToAction}} />
+      <div
+        className="markdown"
+        ref="html"
+        dangerouslySetInnerHTML={{__html: callToAction}}
+      />
     </div>;
   }
 });

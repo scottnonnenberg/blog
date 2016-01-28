@@ -19,15 +19,7 @@ export default class RootTemplate extends React.Component {
               lineHeight: fontSizeToMS(2.5).lineHeight
             }}
           >
-            <Link
-              style={{
-                textDecoration: 'none',
-                color: 'inherit'
-              }}
-              to={link('/')}
-            >
-              {this.props.config.blogTitle}
-            </Link>
+            {this.props.config.blogTitle}
           </h1>
           <div
             style={{

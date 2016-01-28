@@ -1,9 +1,13 @@
+import filter from 'lodash/collection/filter';
+
 var startOfBlock = '<p>';
 var endOfBlockTest = /<\/p>/m;
 var endOfBlock = '</p>';
 
 export default function appendToLastTextBlock(content, toInsert) {
-  const blocks = content.split(startOfBlock);
+  const blocks = filter(content.split(startOfBlock), function(block) {
+    return Boolean(block.length);
+  });
 
   for (var i = blocks.length - 1; i >= 0; i--) {
     const block = blocks[i];
@@ -14,5 +18,6 @@ export default function appendToLastTextBlock(content, toInsert) {
       break;
     }
   }
+
   return startOfBlock + blocks.join(startOfBlock);;
 };

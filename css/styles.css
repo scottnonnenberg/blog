@@ -1,3 +1,56 @@
+body {
+  color: rgb(66,66,66);
+}
+h1 {
+  color: rgb(44,44,44);
+}
+h2,h3,h4,h5,h6 {
+  color: rgb(44,44,44);
+  margin-bottom: 0.5rem;
+}
+
+img {
+  margin-bottom: 0;
+}
+
+a {
+  color: rgb(42,93,173);
+}
+
+span.date {
+  color: lightgray;
+}
+
+.markdown p code, .markdown li code {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+  background: #EEEEEE;
+  border: 1px solid #CCCCCC;
+  display: inline;
+  font-family: Inconsolata, monospace, serif;
+  max-width: 100%;
+  padding: 0 0.1625rem;
+}
+
+.markdown pre {
+  background: #EEEEEE;
+}
+
+.markdown pre code {
+  padding: 0.5rem;
+  border: none;
+  display: inline-block;
+  white-space: inherit;
+  word-wrap: normal;
+  line-height: 1rem;
+}
+
 blockquote {
   padding-left: 16.875px;
   border-left: 6px solid lightgray;

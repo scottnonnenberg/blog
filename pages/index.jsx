@@ -11,7 +11,7 @@ import getPosts from 'utils/getPosts';
 import { rhythm } from 'utils/typography'
 
 import Author from 'components/Author';
-import PostListEntry from 'components/PostListEntry';
+import PostLink from 'components/PostLink';
 import TextPreview from 'components/TextPreview';
 import HTMLPreview from 'components/HTMLPreview';
 
@@ -24,12 +24,10 @@ export default class Index extends React.Component {
     const plainPosts = posts.slice(6);
 
     const textPreviews = map(textPreviewPosts, post => (
-      <li key={post.path}>
-        <TextPreview post={post} />
-      </li>
+      <TextPreview key={post.path} post={post} />
     ));
     const plainLinks = map(plainPosts, post => (
-      <PostListEntry key={post.path} post={post} />
+      <PostLink key={post.path} post={post} />
     ));
 
     return (
@@ -78,16 +76,8 @@ export default class Index extends React.Component {
             }}
           />
           <HTMLPreview post={highlightPost} />
-          <hr
-            style={{
-              marginTop: rhythm(2),
-              marginBottom: rhythm(2)
-            }}
-          />
-          <ul>
-            {textPreviews}
-            {plainLinks}
-          </ul>
+          {textPreviews}
+          {plainLinks}
           <hr
             style={{
               marginTop: rhythm(2),

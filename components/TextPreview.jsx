@@ -23,12 +23,11 @@ export default class TextPreview extends React.Component {
         }}
       >
         <Link to={link(post.path)}>
-          {post.data.title} <span
-            style={{
-              color: 'lightgray'
-            }}
-          >{' ' + shortDate(post.data.date)}</span>
+          {post.data.title}
         </Link>
+        <span className="date">
+          {' ' + shortDate(post.data.date)}
+        </span>
       </h3>
       <p>{body} <Link to={link(post.path)}>Read more »</Link></p>
     </div>;

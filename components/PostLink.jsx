@@ -8,24 +8,24 @@ import { link } from 'gatsby-helpers'
 import { rhythm, fontSizeToMS } from 'utils/typography'
 import shortDate from 'utils/shortDate';
 
-export default class PostListEntry extends React.Component {
+export default class PostLink extends React.Component {
   render() {
     const post = this.props.post;
     const data = post.data;
 
     return (
-      <li
+      <div
         style={{
           marginBottom: rhythm(1/4)
         }}
       >
-        <Link to={link(post.path)}>{data.title || post.path}</Link>
-        <span
-          style={{
-            color: 'lightgray'
-          }}
-        >{' ' + shortDate(data.date)}</span>
-      </li>
+        <Link to={link(post.path)}>
+          {data.title || post.path}
+        </Link>
+        <span className="date">
+          {' ' + shortDate(data.date)}
+        </span>
+      </div>
     );
   }
 }

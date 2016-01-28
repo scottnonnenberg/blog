@@ -4,7 +4,7 @@ import moment from 'moment';
 import DocumentTitle from 'react-document-title';
 import catchLinks from 'catch-links';
 
-import '../css/zenburn.css';
+import '../css/solarized-light.css';
 
 import map from 'lodash/collection/map';
 import { link } from 'gatsby-helpers';

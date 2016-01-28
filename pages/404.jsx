@@ -11,7 +11,6 @@ import getPosts from 'utils/getPosts';
 import { rhythm } from 'utils/typography'
 
 import Author from 'components/Author';
-import PostListEntry from 'components/PostListEntry';
 
 
 export default class NotFound extends React.Component {

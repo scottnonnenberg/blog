@@ -19,16 +19,16 @@ export default class ReadMore extends React.Component {
 
     return (
       <div>
-        <h6
+        <h5
           style={{
             margin: 0,
-            fontSize: fontSizeToMS(-1).fontSize,
-            lineHeight: fontSizeToMS(-1).lineHeight,
+            fontSize: fontSizeToMS(-0.5).fontSize,
+            lineHeight: fontSizeToMS(-0.5).lineHeight,
             letterSpacing: -0.5
           }}
         >
           {label}:
-        </h6>
+        </h5>
         <TextPreview post={post} />
       </div>
     );

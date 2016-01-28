@@ -2,10 +2,10 @@ import Typography from 'typography';
 
 const options = {
   baseFontSize: '18px',
-  baseLineHeight: '27px',
+  baseLineHeight: '31px',
   modularScales: [
     {
-      "scale": "minor third"
+      "scale": "major third"
     }
   ]
 }

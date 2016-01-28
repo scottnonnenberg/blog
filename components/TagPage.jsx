@@ -8,7 +8,7 @@ import getPosts from 'utils/getPosts';
 import getPostsWithTag from 'utils/getPostsWithTag';
 
 import TextPreview from 'components/TextPreview';
-import PostListEntry from 'components/PostListEntry';
+import PostLink from 'components/PostLink';
 import Author from 'components/Author';
 
 
@@ -23,22 +23,18 @@ export default class TagPage extends React.Component {
     const plainPosts = postsWithTag.slice(5);
 
     const textPreviews = map(textPreviewPosts, post => (
-      <li key={post.path}>
-        <TextPreview post={post} />
-      </li>
+      <TextPreview key={post.path} post={post} />
     ));
     const plainLinks = map(plainPosts, post => (
-      <PostListEntry key={post.path} post={post} />
+      <PostLink key={post.path} post={post} />
     ));
 
     return (
       <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
-          <ul>
-            {textPreviews}
-            {plainLinks}
-          </ul>
+          {textPreviews}
+          {plainLinks}
           <hr
             style={{
               marginTop: rhythm(2),
