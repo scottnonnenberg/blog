@@ -11,7 +11,7 @@ tags:
   - data
 ---
 
-It’s hard to believe that it has been 16 months since my last post [last post on running](/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
+It’s hard to believe that it has been 16 months since my [last post on running](/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
 
 <div class='fold'></div>
 
