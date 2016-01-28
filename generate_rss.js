@@ -26,7 +26,7 @@ const author = {
 
 const feed = new Feed({
   title: config.blogTitle,
-  id: 'something?',
+  id: config.domain,
   description: config.tagLine,
   link: config.domain,
   copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
