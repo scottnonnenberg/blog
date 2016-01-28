@@ -1,23 +1,13 @@
-var superagent = require('superagent');
-var _ = require('lodash');
-var fs = require('fs');
-var path = require('path');
-var frontMatter = require('front-matter');
+import fs from 'fs';
+import path from 'path';
 
-var postsPath = path.join(__dirname, 'pages/posts');
+import superagent from 'superagent';
+import _ from 'lodash';
 
-var postFiles = fs.readdirSync(postsPath);
-var posts = _.map(postFiles, function(file) {
-  var filePath = path.join(postsPath, file);
-  var contents = fs.readFileSync(filePath).toString();
-  var metadata = frontMatter(contents);
-  return {
-    path: filePath,
-    contents: contents,
-    body: metadata.body,
-    data: metadata.attributes
-  };
-});
+import loadPosts from './utils/loadPosts';
+
+
+const posts = loadPosts();
 
 var lookup = Object.create(null);
 _.forEach(posts, function(post) {
@@ -62,6 +52,8 @@ superagent
       if (url === '/contract-teaching/') {
         hits += 10;
       }
+
+      console.log('checking', url);
 
       var target = lookup[url];
       if (!target) {

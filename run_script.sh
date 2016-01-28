@@ -1,3 +1,3 @@
 mv .babelrc_ .babelrc
-babel-node generate_tags.js
+babel-node $1
 mv .babelrc .babelrc_

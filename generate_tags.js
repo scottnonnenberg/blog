@@ -1,44 +1,34 @@
-import _ from 'lodash';
 import fs from 'fs';
 import path from 'path';
-import frontMatter from 'front-matter';
+
+import _ from 'lodash';
+
+import loadPosts from './utils/loadPosts';
 import getTagCounts from './utils/getTagCounts';
 
-var postsPath = path.join(__dirname, 'pages/posts');
 
-var postFiles = fs.readdirSync(postsPath);
-var posts = _.map(postFiles, function(file) {
-  var filePath = path.join(postsPath, file);
-  var contents = fs.readFileSync(filePath).toString();
-  var metadata = frontMatter(contents);
-  return {
-    path: filePath,
-    contents: contents,
-    body: metadata.body,
-    data: metadata.attributes
-  };
-});
-
-var counts = getTagCounts(posts);
+const posts = loadPosts();
+const counts = getTagCounts(posts);
 
 console.log(counts);
 
-var templatePath = path.join(__dirname, 'components/_tagTemplate.jsx');
-var template = fs.readFileSync(templatePath).toString();
-var findTag = /"TAG"/m;
+const templatePath = path.join(__dirname, 'components/_tagTemplate.jsx');
+const template = fs.readFileSync(templatePath).toString();
+const findTag = /"TAG"/m;
 
 _.forEach(_.keys(counts), function(tag) {
-  var filePath = path.join(__dirname, 'pages/tags', tag + '.jsx');
-  var contents = template.replace(findTag, '"' + tag + '"');
+  const filePath = path.join(__dirname, 'pages/tags', tag + '.jsx');
+  const contents = template.replace(findTag, `"${tag}"`);
 
   try {
-    var currentContents = fs.readFileSync(filePath).toString();
-
+    const currentContents = fs.readFileSync(filePath).toString();
     if (currentContents === contents) {
       return;
     }
   }
-  catch (err) {}
+  catch (err) {
+    // file doesn't exist; need to write it
+  }
 
   console.log('writing page for tag ' + tag);
 
