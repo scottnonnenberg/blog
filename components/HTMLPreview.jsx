@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Navigation } from 'react-router';
-import { prune } from 'underscore.string';
+import prune from 'underscore.string/prune';
 import catchLinks from 'catch-links';
 
 import { link } from 'gatsby-helpers'

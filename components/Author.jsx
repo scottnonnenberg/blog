@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { prune, include as includes } from 'underscore.string';
 
 import find from 'lodash/collection/find';
 import { link } from 'gatsby-helpers';

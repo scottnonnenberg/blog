@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { prune } from 'underscore.string';
+import prune from 'underscore.string/prune';
 
 import { link } from 'gatsby-helpers'
 
