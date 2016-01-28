@@ -1,10 +1,12 @@
 import React from 'react';
 import { RouteHandler, Link } from 'react-router';
-import { Container, Grid, Breakpoint, Span } from 'react-responsive-grid';
+
 import { link } from 'gatsby-helpers';
+
 import { rhythm, fontSizeToMS } from 'utils/typography'
 
 import '../css/styles.css';
+
 
 export default class RootTemplate extends React.Component {
   render() {
@@ -54,16 +56,18 @@ export default class RootTemplate extends React.Component {
     }
 
     return (
-      <Container
+      <div
         style={{
           maxWidth: rhythm(24),
           padding: `${rhythm(2)} ${rhythm(1/2)}`,
-          paddingTop: rhythm(1/2)
+          paddingTop: rhythm(1/2),
+          marginRight: 'auto',
+          marginLeft: 'auto'
         }}
       >
         {header}
         <RouteHandler {...this.props}/>
-      </Container>
+      </div>
     );
   }
 }
