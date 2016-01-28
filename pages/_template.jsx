@@ -42,7 +42,7 @@ export default class RootTemplate extends React.Component {
               }}
               to={link('/')}
             >
-              &lt; {this.props.config.blogTitle}
+              « {this.props.config.blogTitle}
             </Link>
           </h3>
           <hr

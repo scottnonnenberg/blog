@@ -27,7 +27,7 @@ export default class NotFound extends React.Component {
               marginTop: rhythm(1),
               marginBottom: rhythm(2)
             }}
-          ><Link to={link('/')}>&lt; Go back home</Link></h3>
+          ><Link to={link('/')}>« Go back home</Link></h3>
           <hr
             style={{
               marginTop: rhythm(1),
