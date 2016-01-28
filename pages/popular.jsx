@@ -10,7 +10,7 @@ import getPosts from 'utils/getPosts';
 import { rhythm } from 'utils/typography'
 
 import Author from 'components/Author';
-import PostListEntry from 'components/PostListEntry';
+import TextPreview from 'components/TextPreview';
 
 
 export default class extends React.Component {
@@ -25,7 +25,9 @@ export default class extends React.Component {
     posts = posts.slice(0, 10);
 
     const pageLinks = map(posts, post => (
-      <PostListEntry key={post.path} post={post} />
+      <li key={post.path}>
+        <TextPreview  post={post} />
+      </li>
     ));
 
     return (
@@ -37,7 +39,7 @@ export default class extends React.Component {
           </ol>
           <hr
             style={{
-              marginTop: rhythm(1),
+              marginTop: rhythm(2),
               marginBottom: rhythm(1)
             }}
           />

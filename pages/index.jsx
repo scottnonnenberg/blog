@@ -24,7 +24,9 @@ export default class Index extends React.Component {
     const plainPosts = posts.slice(6);
 
     const textPreviews = map(textPreviewPosts, post => (
-      <TextPreview key={post.path} post={post} />
+      <li key={post.path}>
+        <TextPreview post={post} />
+      </li>
     ));
     const plainLinks = map(plainPosts, post => (
       <PostListEntry key={post.path} post={post} />
@@ -75,14 +77,8 @@ export default class Index extends React.Component {
               marginBottom: rhythm(2)
             }}
           />
-          {textPreviews}
-          <hr
-            style={{
-              marginTop: rhythm(2),
-              marginBottom: rhythm(2)
-            }}
-          />
           <ul>
+            {textPreviews}
             {plainLinks}
           </ul>
           <hr
