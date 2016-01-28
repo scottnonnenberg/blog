@@ -13,6 +13,18 @@ img {
   margin-bottom: 0;
 }
 
+td, th {
+  color: rgb(44,44,44);
+  line-height: 1rem;
+  padding: .5rem;
+  text-align: left;
+  vertical-align: top;
+}
+table tbody > tr:nth-child(odd) > th,
+table tbody > tr:nth-child(odd) > td {
+    background-color: #EEEEEE;
+}
+
 a {
   color: rgb(42,93,173);
 }
