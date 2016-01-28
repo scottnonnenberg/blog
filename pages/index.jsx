@@ -72,7 +72,7 @@ export default class Index extends React.Component {
           </ol>
           <hr
             style={{
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(1)
             }}
           />
           <HTMLPreview post={highlightPost} />
