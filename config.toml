@@ -1,6 +1,11 @@
 blogTitle = "Scott Nonnenberg"
 authorName = "Scott Nonnenberg"
+authorEmail = "scott@nonnenberg.com"
+authorURL = "http://scottnonnenberg.com"
 authorShortName = "Scott"
 linkPrefix = "/"
+domain = "https://blog.scottnonnenberg.com"
+tagLine = "A blog about software development and geekery of all kinds."
 domainCDN = "https://static.sinap.ps"
 domainPiwik = "https://piwik.sinap.ps"
+

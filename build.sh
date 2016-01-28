@@ -28,6 +28,11 @@ echo '** building with gatsby'
 gatsby build
 
 echo
+echo '** building RSS/Atom XML'
+
+./run_script.sh generate_rss.js
+
+echo
 echo '** compressing files'
 
 find ./public | grep -v \.gz$ | while read FILE;

@@ -7,5 +7,5 @@ export default function getPosts(allPages) {
     return page.path && page.path !== '/' && data && !data.draft;
   });
 
-  return sortBy(posts, page => page.data.data).reverse();
+  return sortBy(posts, page => page.data.date).reverse();
 };

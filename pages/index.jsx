@@ -64,6 +64,13 @@ export default class Index extends React.Component {
                 marginRight: rhythm(1)
               }}
             ><a href="https://scottnonnenberg.com">About Me</a></li>
+            <li
+              style={{
+                display: 'inline',
+                marginRight: rhythm(1)
+              }}
+            ><a href="/rss.xml" target="_blank">RSS</a>/<a href="/atom.xml" target="_blank">Atom</a></li>
+
           </ol>
           <hr
             style={{

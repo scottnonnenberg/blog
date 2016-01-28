@@ -33,7 +33,8 @@ export default class RootTemplate extends React.Component {
             style={{
               marginBottom: rhythm(1)
             }}
-          > A blog about software development and geekery of all kinds.
+          >
+            {this.props.config.tagLine}
           </div>
         </div>
       );
