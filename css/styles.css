@@ -42,23 +42,7 @@ a {
   color: rgb(42,93,173);
   text-decoration: none;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  /*
-    linear-gradient(
-      bottom,
-      transparent,
-      transparent $offset,
-      $color $offset,
-      $color ($offset + $weight),
-      transparent ($offset + $weight)
-    )
-  */
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(42,93,173) 1px, rgb(42,93,173) 2px, rgba(0, 0, 0, 0) 2px);
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  a {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(42,93,173) 1px, rgb(42,93,173) 1.5px, rgba(0, 0, 0, 0) 1.5px);
-  }
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
