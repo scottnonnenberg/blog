@@ -53,7 +53,7 @@ superagent
         hits += 10;
       }
 
-      console.log('checking', url);
+      // console.log('checking', url);
 
       var target = lookup[url];
       if (!target) {
