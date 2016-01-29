@@ -1,17 +1,25 @@
 import React from 'react';
 import Typography from 'typography';
 import DocumentTitle from 'react-document-title';
-import { link } from 'gatsby-helpers'
-import { TypographyStyle } from 'utils/typography'
+
+import { link } from 'gatsby-helpers';
+
+import { TypographyStyle } from './utils/typography';
+import generateMetaTags from './utils/generateMetaTags';
+import CurrentState from './components/CurrentState';
+
 
 const now = new Date();
 const buster = now.getTime();
 
-
-export default class Html extends React.Component {
+export default class HTML extends React.Component {
   render() {
     const title = this.props.title || DocumentTitle.rewind();
     const { domainPiwik, domainCDN } = this.props.config || {};
+
+    const state = CurrentState.rewind();
+    const path = state ? state.path : null;
+    const metaTags = generateMetaTags(this.props.page, this.props.config, path);
 
     const piwikSetup = `
       window._paq = window._paq || [];
@@ -32,16 +40,17 @@ export default class Html extends React.Component {
     return (
       <html lang="en">
         <head>
+          <title>{title}</title>
           <meta charSet="utf-8"/>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name='viewport' content='user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0'/>
-          <title>{title}</title>
+          <meta name='viewport' content='initial-scale=1.0'/>
+          {metaTags}
           <link rel="shortcut icon" href={this.props.favicon}/>
           <TypographyStyle/>
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
-          <script src={link("/bundle.js?t=" + buster)}/>
+          <script async defer src={link("/bundle.js?t=" + buster)}/>
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
             <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1`} style={{border: 0}} />
@@ -51,4 +60,5 @@ export default class Html extends React.Component {
     );
   }
 }
-Html.defaultProps = { body: "" };
+
+HTML.defaultProps = { body: "" };

@@ -4,6 +4,7 @@ import { RouteHandler, Link } from 'react-router';
 import { link } from 'gatsby-helpers';
 
 import { rhythm, fontSizeToMS } from 'utils/typography'
+import CurrentState from 'components/CurrentState';
 
 import '../css/styles.css';
 
@@ -65,6 +66,7 @@ export default class RootTemplate extends React.Component {
           marginLeft: 'auto'
         }}
       >
+        <CurrentState state={this.props.state} />
         {header}
         <RouteHandler {...this.props}/>
       </div>
