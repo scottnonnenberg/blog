@@ -182,7 +182,7 @@ We can do better.
 Here’s my attempt at a clean async composition system. First, let’s take a look at the overall coordination method, what you’d call to kick off the process. You can see each of the individual steps and then the call to [`async.series()`](https://github.com/caolan/async#seriestasks-callback):
 
 ```javascript
-NewReferencesProcess.prototype.go = function go(cb) {
+NewReferencesProcess.prototype.go = function(cb) {
   var steps = [
     this.getUser,
     this.getPosts,
@@ -196,7 +196,7 @@ NewReferencesProcess.prototype.go = function go(cb) {
       return cb(err);
     }
 
-    return cb(err, _.last(results));
+    return cb(null, _.last(results));
   });
 };
 ```
@@ -204,7 +204,7 @@ NewReferencesProcess.prototype.go = function go(cb) {
 Now, what do the individual steps look like?
 
 ```javascript
-NewReferencesProcess.prototype.getUser = function getUser(cb) {
+NewReferencesProcess.prototype.getUser = function(cb) {
   var _this = this;
 
   this.db.getUser(this._userId, function(err, user) {
