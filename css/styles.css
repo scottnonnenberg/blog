@@ -56,6 +56,11 @@ a.plain {
   background-image: none;
 }
 
+::-moz-selection {
+  background-color: rgb(255, 255, 192);
+  text-shadow: none;
+}
+
 ::selection {
   background-color: rgb(255, 255, 192);
   text-shadow: none;
