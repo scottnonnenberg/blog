@@ -41,7 +41,8 @@ table tbody > tr:nth-child(odd) > td {
 a {
   color: rgb(42,93,173);
   text-decoration: none;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  /* thanks to https://eager.io/blog/smarter-link-underlines/ */
+  text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(42,93,173) 1px, rgb(42,93,173) 2px, rgba(0, 0, 0, 0) 2px);
 }
 
