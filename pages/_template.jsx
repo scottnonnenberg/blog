@@ -39,7 +39,6 @@ export default class RootTemplate extends React.Component {
           <h3>
             <Link
               style={{
-                textDecoration: 'none',
                 color: 'inherit'
               }}
               to={link('/')}
