@@ -40,6 +40,35 @@ table tbody > tr:nth-child(odd) > td {
 
 a {
   color: rgb(42,93,173);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  /*
+    linear-gradient(
+      bottom,
+      transparent,
+      transparent $offset,
+      $color $offset,
+      $color ($offset + $weight),
+      transparent ($offset + $weight)
+    )
+  */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(42,93,173) 1px, rgb(42,93,173) 2px, rgba(0, 0, 0, 0) 2px);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  a {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(42,93,173) 1px, rgb(42,93,173) 1.5px, rgba(0, 0, 0, 0) 1.5px);
+  }
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  background-image: none;
+  text-shadow: none;
+}
+
+a.plain {
+  text-shadown: none;
+  background-image: none;
 }
 
 span.date {
@@ -63,6 +92,11 @@ span.date {
   padding: 0 0.1625rem;
 }
 
+.markdown p a code, .markdown li code a {
+  text-shadow: none;
+  text-decoration: underline;
+}
+
 .markdown pre {
   background: #EEEEEE;
 }
@@ -74,6 +108,7 @@ span.date {
   white-space: inherit;
   word-wrap: normal;
   line-height: 1rem;
+  background-image: none;
 }
 
 blockquote {
@@ -83,3 +118,5 @@ blockquote {
   margin-right: 0;
   padding-right: 0;
 }
+
+
