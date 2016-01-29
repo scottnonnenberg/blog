@@ -11,7 +11,7 @@ tags:
   - software
 ---
 
-When discussing async in the world of Javascript, you find a lot of zealots. Promises fix [callback hell](http://callbackhell.com/)! Promises are a crutch for those who can’t hack it with callbacks! [I try take a more balanced perspective](/the-trouble-with-promises/): Both of them have their place, and a lot of people are confused about it all.
+When discussing async in the world of Javascript, you find a lot of zealots. Promises fix [callback hell](http://callbackhell.com/)! Promises are a crutch for those who can’t hack it with callbacks! [I try to take a more balanced perspective](/the-trouble-with-promises/): Both of them have their place, and a lot of people are confused about it all.
 
 One key point of confusion really frustrates me. The solution to ‘callback hell’ is not promises. It’s refactoring.
 
@@ -246,4 +246,4 @@ Take a look at [my example code, with all five working example files](https://gi
 
 I like it. Each step is far easier to test and reason about, and you can rearrange the steps as long as each step has the information it needs on `this`. Speaking of `this`, you can print the whole object out at any time and see all the data you need to debug the workflow.
 
-Maybe you’ll use this pattern in your applications, or maybe it’ll just sow seeds of creativity in your mind. Either way, if you’re refactoring, I’m happy.
+Maybe you’ll use this pattern in your applications, or maybe it’ll just sow seeds of creativity in your mind. As long as you’re refactoring, I’m happy.
