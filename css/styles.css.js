@@ -8,7 +8,7 @@ export default `
 
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 95%;
+    font-size: 90%;
   }
 }
 
