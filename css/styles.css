@@ -51,15 +51,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-shadow: none;
 }
 
-a.plain {
-  text-shadow: none;
-  background-image: none;
-}
-
 a:hover {
   text-shadow: none;
   background-image: none;
   background-color: rgb(255, 255, 192);
+}
+
+a.plain {
+  text-shadow: none;
+  background-image: none;
+  background-color: transparent;
 }
 
 ::-moz-selection {
