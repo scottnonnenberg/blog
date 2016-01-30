@@ -24,12 +24,11 @@ exports.onRouteChange = function(state, page, pages, config) {
   const title = data.title || page.path;
 
   if (first) {
-    window._paq.push(['trackPageView', 'blog/boot-js/' + title]);
     first = false;
   }
   else {
     window._paq.push(['setCustomUrl', page.path]);
-    window._paq.push(['setDocumentTitle', 'blog/js/' + title]);
+    window._paq.push(['setDocumentTitle', document.domain + '/' + title]);
     window._paq.push(['trackPageView']);
   }
 }
