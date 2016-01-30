@@ -15,7 +15,7 @@ const buster = now.getTime();
 export default class HTML extends React.Component {
   render() {
     const title = this.props.title || DocumentTitle.rewind();
-    const { domainPiwik, domainCDN } = this.props.config || {};
+    const { domainPiwik, domainCDN, favicon } = this.props.config || {};
 
     const state = CurrentState.rewind();
     const path = state ? state.path : null;
@@ -45,7 +45,7 @@ export default class HTML extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
           <meta name='viewport' content='initial-scale=1.0'/>
           {metaTags}
-          <link rel="shortcut icon" href={this.props.favicon}/>
+          <link rel="shortcut icon" href={favicon}/>
           <TypographyStyle/>
         </head>
         <body className="landing-page">
