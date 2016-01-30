@@ -4,9 +4,13 @@ import DocumentTitle from 'react-document-title';
 
 import { link } from 'gatsby-helpers';
 
-import { TypographyStyle } from './utils/typography';
-import generateMetaTags from './utils/generateMetaTags';
-import CurrentState from './components/CurrentState';
+import { TypographyStyle } from 'utils/typography';
+import generateMetaTags from 'utils/generateMetaTags';
+import CurrentState from 'components/CurrentState';
+
+
+import highlightTheme from 'css/solarized-light.css';
+import generalStyles from 'css/styles.css';
 
 
 const now = new Date();
@@ -47,10 +51,11 @@ export default class HTML extends React.Component {
           {metaTags}
           <link rel="shortcut icon" href={favicon}/>
           <TypographyStyle/>
+          <style dangerouslySetInnerHTML={{__html: generalStyles + highlightTheme}} />
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
-          <script async defer src={link("/bundle.js?t=" + buster)}/>
+          <script async defer src={link("/bundle.js?t=" + buster)} />
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
             <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1`} style={{border: 0}} />

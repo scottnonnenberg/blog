@@ -1,3 +1,5 @@
+
+export default `
 /*
 
 Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
@@ -82,3 +84,4 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-strong {
   font-weight: bold;
 }
+`;

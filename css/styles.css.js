@@ -1,4 +1,5 @@
 
+export default `
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 125%;
@@ -35,7 +36,7 @@ td, th {
 }
 table tbody > tr:nth-child(odd) > th,
 table tbody > tr:nth-child(odd) > td {
-    background-color: #EEEEEE;
+  background-color: #EEEEEE;
 }
 
 a {
@@ -127,5 +128,4 @@ blockquote {
   margin-right: 0;
   padding-right: 0;
 }
-
-
+`;

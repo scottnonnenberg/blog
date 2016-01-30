@@ -4,16 +4,14 @@ import moment from 'moment';
 import DocumentTitle from 'react-document-title';
 import catchLinks from 'catch-links';
 
-import '../css/solarized-light.css';
-
 import map from 'lodash/collection/map';
 import { link } from 'gatsby-helpers';
 
 import { rhythm, fontSizeToMS } from 'utils/typography';
 import intersperse from 'utils/intersperse';
 
-import ReadMore from '../components/ReadMore';
-import Author from '../components/Author';
+import ReadMore from 'components/ReadMore';
+import Author from 'components/Author';
 
 
 export default React.createClass({

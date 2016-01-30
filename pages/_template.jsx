@@ -6,8 +6,6 @@ import { link } from 'gatsby-helpers';
 import { rhythm, fontSizeToMS } from 'utils/typography'
 import CurrentState from 'components/CurrentState';
 
-import '../css/styles.css';
-
 
 export default class RootTemplate extends React.Component {
   render() {
