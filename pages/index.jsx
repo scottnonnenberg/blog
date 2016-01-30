@@ -38,37 +38,13 @@ export default class Index extends React.Component {
               marginBottom: rhythm(1)
             }}
           />
-          <ol
-            style={{
-              listStyle: 'none',
-              marginLeft: 0
-            }}
-          >
-            <li
-              style={{
-                display: 'inline',
-                marginRight: rhythm(1)
-              }}
-            ><Link to={link('/popular/')}>Popular Posts</Link></li>
-            <li
-              style={{
-                display: 'inline',
-                marginRight: rhythm(1)
-              }}
-            ><Link to={link('/tags/')}>Tags</Link></li>
-            <li
-              style={{
-                display: 'inline',
-                marginRight: rhythm(1)
-              }}
-            ><a href="https://scottnonnenberg.com">About Me</a></li>
-            <li
-              style={{
-                display: 'inline',
-                marginRight: rhythm(1)
-              }}
-            ><a href="/rss.xml" target="_blank">RSS</a>/<a href="/atom.xml" target="_blank">Atom</a></li>
-
+          <ol className='menu'>
+            <li><Link to={link('/popular/')}>Popular Posts</Link></li>
+            <li><Link to={link('/tags/')}>Tags</Link></li>
+            <li><a href="https://scottnonnenberg.com">About Me</a></li>
+            <li>
+              <a href="/rss.xml" target="_blank">RSS</a>/<a href="/atom.xml" target="_blank">Atom</a>
+            </li>
           </ol>
           <hr
             style={{

@@ -1,8 +1,20 @@
 
 export default `
+ol.menu {
+  list-style: none;
+  margin-left: 0;
+}
+
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 125%;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  ol.menu li {
+    display: inline;
+    margin-right: 2em;
   }
 }
 
