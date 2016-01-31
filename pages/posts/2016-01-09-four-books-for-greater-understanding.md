@@ -62,7 +62,7 @@ As I mentioned in my [Open Source and Feelings: The Awesome](/open-source-and-fe
 
 ## [The Authoritarians (2006)](http://home.cc.umanitoba.ca/~altemey/)
 
-[Bob Altemeyer](https://en.wikipedia.org/wiki/Bob_Altemeyer) is a retired Professor of Psychology, who focused most of his research on understanding the ‘authoritarian’ mindset. He wrote this book, [freely available as a PDF here](http://home.cc.umanitoba.ca/~altemey/), very near to his retirement, knowing that it wouldn’t make much money and perhaps lacking the patience to send it through conventional publishing channels.
+[Bob Altemeyer](https://en.wikipedia.org/wiki/Bob_Altemeyer) is a retired Professor of Psychology, who focused most of his research on understanding the ‘authoritarian’ mindset. He wrote this book, [freely available as a PDF](http://home.cc.umanitoba.ca/~altemey/), very near to his retirement, knowing that it wouldn’t make much money and perhaps lacking the patience to send it through conventional publishing channels.
 
 What he wanted was to make his many years of research available to everyone, knowing its importance to the future of democracy. I found it a highly useful tool for better understanding the political environment in the United States of late. It handily explains the apparent improbability of Donald Trump as a frontrunner for the GOP Presidential candidate. And the hurtful emergence of #BlueLivesMatter and #AllLivesMatter both in the face of the #BlackLivesMatter movement.
 
