@@ -1,6 +1,6 @@
 ---
 title: N for Node.js (NERP stack part 1)
-date: 2016-01-25T19:14:19.547Z
+date: 2016-02-01T20:56:37.104Z
 layout: post
 path: /n-for-node-js-nerp-stack-part-1/
 next:
