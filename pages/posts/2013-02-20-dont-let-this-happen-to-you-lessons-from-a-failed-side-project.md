@@ -54,7 +54,7 @@ The next week things started to cool off. Fewer and fewer folks signed up or cam
 
 ### Mistake #6: More features never get you out of a death spiral
 
-_It’s a classic mistake to add features to get user engagement. If you didn’t understand users well enough to build something useful for them in the first place, that pattern is unlikely to change. And it’s highly unlikely that you’ll just get automatic viral growth just because your product is so good. Starting something new is hard. We weren’t beating the streets. We should have been marketing heavily or meeting with existing and potential customers._
+_It’s a classic mistake to add features to get user engagement. If you didn’t understand users well enough to build something useful for them in the first place, that pattern is unlikely to change. And it’s highly unlikely that you’ll get automatic viral growth just because your product is so good. Starting something new is hard. We weren’t beating the streets. We should have been marketing heavily or meeting with existing and potential customers._
 
 That spring was painful. I was really frustrated with all the effort I had spent and was spending on point releases. And I saw no change in the metrics. We could see every step that our few users were taking in our app, and we argued about what it all meant.
 
