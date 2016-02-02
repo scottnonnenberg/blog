@@ -112,7 +112,7 @@ Now let’s consider the other side, the negative aspects of Node.js. You alread
 
 Let’s face it. Nobody really likes JavaScript. Okay, it has some [good parts](http://shop.oreilly.com/product/9780596517748.do), but the people who profess to love it likely have a bit of [Stockholm Syndrome](https://en.wikipedia.org/wiki/Stockholm_syndrome). Your internet captors have forced you to use it so long, you now believe that you like it!
 
-It’s got [no proper number type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type). It has only [very limited support for immutability](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) (though it does have [immutable](https://facebook.github.io/immutable-js/) [libraries](https://github.com/rtfeldman/seamless-immutable)). It does no enforcement of any kind on method parameters - you can add too many or provide none at all. Its `arguments` keyword looks like an `Array`, but you’d get an error if you tried to `arguments.slice()`. It’s got no real hash maps, since all object keys are first coerced to strings. And that’s just the beginning of its [many, many quirks](/node-js-is-not-magical/).
+It’s got [no proper number type](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type). It has only [very limited support for immutability](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) (though it does have [immutable](https://facebook.github.io/immutable-js/) [libraries](https://github.com/rtfeldman/seamless-immutable)). It does no enforcement of any kind on method parameters - you can add too many or provide none at all. Its `arguments` keyword looks like an `Array`, but you’d get an error if you tried to `arguments.slice()`. It’s got no real hash maps, since all object keys are first coerced to strings. And that’s just the beginning of its [many, many quirks](/node-js-is-not-magical/#a-bit-tricky).
 
 If you want to produce quality code, [linting](http://eslint.org/) is necessary. The language and runtime won’t help.
 
@@ -120,7 +120,7 @@ If you want to produce quality code, [linting](http://eslint.org/) is necessary.
 
 The number of packages available on npm is a double-edged sword. It makes finding the right library for your needs that much harder. Say you’re looking for a generic set of utility functions: do you use [`underscore`](http://underscorejs.org/), [`lodash`](https://lodash.com/), or [something else](https://www.google.com/search?q=javascript%20utility%20library)?
 
-[How do you decide?](/node-js-is-not-magical/) If you’re on a team of people who have each used different options in the past, how will you decide what to use for a new project? When you make a final choice, will those unfamiliar with that library cause more bugs?
+[How do you decide?](/node-js-is-not-magical/#choosing-wisely) If you’re on a team of people who have each used different options in the past, how will you decide what to use for a new project? When you make a final choice, will those unfamiliar with that library cause more bugs?
 
 ### 3. Too much change
 

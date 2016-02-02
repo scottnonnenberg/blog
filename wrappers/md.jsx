@@ -19,12 +19,29 @@ export default React.createClass({
 
   mixins: [Navigation],
 
+  scroll() {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.replace('#','');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  },
+
   componentDidMount() {
     var _this = this;
 
     catchLinks(this.refs.markdown, function(href) {
       _this.transitionTo(href);
     });
+
+    setTimeout(this.scroll, 0);
+  },
+
+  componentWillReceiveProps() {
+    setTimeout(this.scroll, 0);
   },
 
   render() {
