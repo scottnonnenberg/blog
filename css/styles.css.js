@@ -90,6 +90,7 @@ a.plain {
 
 span.date {
   color: lightgray;
+  font-weight: normal;
 }
 
 .markdown p code, .markdown li code {
