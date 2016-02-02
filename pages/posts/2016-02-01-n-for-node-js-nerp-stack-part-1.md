@@ -132,9 +132,9 @@ Things move fast in the JavaScript world. The latest and greatest is changing al
 
 There’s been a lot of [discussion about how fast Node.js is](https://www.google.com/search?q=node.js%20fast), but the truth is that those benefits largely come from its handling of asynchronous I/O and use of one thread. Yes, V8 is a high-quality execution engine for JavaScript, with its [Crankshaft compile-time and runtime optimization component](http://blog.chromium.org/2010/12/new-crankshaft-for-v8.html).
 
-But [Java Virtual Machines are really fast](https://benchmarksgame.alioth.debian.org/u64q/javascript.html), with very mature hotspot optimization. And [C or C++ can be hand-tuned](https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=v8&lang2=gpp). When these technologies start using [the same single thread and async I/O techniques](https://www.nginx.com/blog/thread-pools-boost-performance-9x/), they can go even faster than Node.js.
+But other technologies are very fast to begin with. [Java Virtual Machines](https://benchmarksgame.alioth.debian.org/u64q/javascript.html) have very mature hotspot optimization. [C and C++](https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=v8&lang2=gpp) lack garbage collection overhead and can be hand-tuned down to the finest detail. When these technologies start using [the same single thread and async I/O techniques](https://www.nginx.com/blog/thread-pools-boost-performance-9x/), they can go faster than Node.js.
 
-Of course, so much of it comes down to the specific workload, as well as the specific algorithms and data structures used. But it’s a mistake to say that Node.js is fast without also stating some sort of reference point.
+Of course, so much of it comes down to the specific workload, as well as the specific algorithms and data structures used. But it’s a mistake to say that Node.js is fast without also including some sort of reference point.
 
 ## Conclusion: It’s worth it
 
