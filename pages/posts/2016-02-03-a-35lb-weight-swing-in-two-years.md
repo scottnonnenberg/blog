@@ -63,7 +63,7 @@ Last sumer, Summer 2015, having seen some great improvement, I decided to furthe
 
 My current standard breakfast is:
 
-* Warm boiled pearled barley
+* Warm boiled [pearled barley](https://en.wikipedia.org/wiki/Pearl_barley)
 * Two eggs
 * Hot tea (herbal medicinal tea most of the time)
 * Occasionally a piece of bacon
