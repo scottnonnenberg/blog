@@ -3,7 +3,7 @@ title: N for Node.js (NERP stack part 1)
 date: 2016-02-01T20:56:37.104Z
 layout: post
 path: /n-for-node-js-nerp-stack-part-1/
-next:
+next: /a-35lb-weight-swing-in-two-years/
 previous: /a-modest-async-proposal/
 tags:
   - javascript
