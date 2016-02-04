@@ -1,3 +1,3 @@
 mv .babelrc_ .babelrc
-babel-node $1 "$2"
+babel-node "$@"
 mv .babelrc .babelrc_
