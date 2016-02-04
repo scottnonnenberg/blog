@@ -34,7 +34,7 @@ In all seriousness, though, I started thinking: "Am I part of the problem?"
 
 I thought back to my first couple years at Microsoft, right out of college. I was initially surprised by all the yelling and swearing in meetings, but I was told that it was in service to higher ideals of logical perfection. So I joined in. The theory was that we would remove our egos from the conversation and it would be a battle of pure ideas. I tried, but it definitely didn’t feel good to be told publicly, frequently with a raised voice, that my idea or its presentation wasn’t good enough.
 
-I needed a ‘thick skin’ to survive there, but the culture didn’t even allow for that concept. A good friend, who later left for Silicon Valley, said that "Microsoft had made him a worse person." It’s a fair statement, because what we were dealing with is really the opposite of empathy. Empathy means putting effort in understanding an individual and their context. At Microsoft, people explicitly looked for your weaknesses.
+I needed a ‘thick skin’ to survive there, but the culture didn’t even allow for that concept. A good friend, who later left for Silicon Valley, said that "Microsoft had made him a worse person." It’s a fair statement, because what we were dealing with is really the opposite of empathy. Empathy means putting effort into understanding an individual and their context. At Microsoft, people explicitly looked for your weaknesses.
 
 Over time, however, I got good at it. I internalized it. I’d like to think that I was better because I didn’t yell or swear. But I did tear people’s ideas apart mercilessly.
 
