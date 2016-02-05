@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import prune from 'underscore.string/prune';
 
 import { link } from 'gatsby-helpers'
 
@@ -14,7 +13,7 @@ export default class TextPreview extends React.Component {
     const post = this.props.post;
     const html = post.data.body;
     const preFold = getPreFoldContent(html);
-    const body = prune(preFold.replace(/<[^>]*>/g, ''), 200);
+    const body = preFold.replace(/<[^>]*>/g, '');
 
     return <div>
       <h3
