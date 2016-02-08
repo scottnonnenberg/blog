@@ -13,6 +13,19 @@ exports.loadContext = function(callback) {
 
 var first = true;
 
+function getDuration() {
+  const start = window.start || new Date();
+  const now = new Date();
+  const difference = now.getTime() - start.getTime();
+
+  if (difference === 0) {
+    return null;
+  }
+  else {
+    return difference;
+  }
+}
+
 exports.onRouteChange = function(state, page, pages, config) {
   window._paq = window._paq || [];
 
@@ -25,6 +38,7 @@ exports.onRouteChange = function(state, page, pages, config) {
 
   if (first) {
     first = false;
+    window._paq.push(['trackEvent', 'javascript', 'load', 'duration', getDuration()]);
   }
   else {
     window._paq.push(['setCustomUrl', page.path]);

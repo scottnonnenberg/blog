@@ -35,6 +35,8 @@ export default class HTML extends React.Component {
       window._paq.push(['setDocumentTitle', document.domain + '/pre-js/' + document.title]);
       window._paq.push(['trackPageView']);
 
+      window.start = new Date();
+
       // add tag
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
       g.defer=true; g.async=true; g.src='${domainCDN}/js/piwik/2.15.0/piwik.min.js';
