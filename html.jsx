@@ -19,11 +19,12 @@ const buster = now.getTime();
 export default class HTML extends React.Component {
   render() {
     const title = this.props.title || DocumentTitle.rewind();
-    const { domainPiwik, domainCDN, favicon } = this.props.config || {};
+    const { domainPiwik, domainCDN, favicon, domain } = this.props.config || {};
 
     const state = CurrentState.rewind();
     const path = state ? state.path : null;
     const metaTags = generateMetaTags(this.props.page, this.props.config, path);
+    const encodedPath = encodeURIComponent(domain + path);
 
     const piwikSetup = `
       window._paq = window._paq || [];
@@ -61,7 +62,7 @@ export default class HTML extends React.Component {
           <script async defer src={link("/bundle.js?t=" + buster)} />
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
-            <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1`} style={{border: 0}} />
+            <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1&url=${encodedPath}`} style={{border: 0}} />
           </noscript>
         </body>
       </html>
