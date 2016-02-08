@@ -3,7 +3,7 @@ title: A 35lb weight swing in two years
 date: 2016-02-03T18:44:02.983Z
 layout: post
 path: /a-35lb-weight-swing-in-two-years/
-next:
+next: /e-for-express-nerp-stack-part-2/
 previous: /n-for-node-js-nerp-stack-part-1/
 tags:
   - fun
