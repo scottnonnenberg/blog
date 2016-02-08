@@ -32,7 +32,7 @@ export default React.createClass({
 
     const html = post.data.body;
     const preFold = getPreFoldContent(html);
-    const textLink = ` <a href="${link(post.path)}">Read more »</a>`;
+    const textLink = ` <a href="${link(post.path)}">Read more&nbsp;»</a>`;
     const callToAction = appendToLastTextBlock(preFold, textLink);
 
     return <div>

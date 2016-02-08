@@ -29,7 +29,7 @@ export default class TextPreview extends React.Component {
           {' ' + shortDate(post.data.date)}
         </span>
       </h3>
-      <p>{body} <Link to={link(post.path)}>Read more »</Link></p>
+      <p>{body} <Link to={link(post.path)}>Read more&nbsp;»</Link></p>
     </div>;
   }
 }
