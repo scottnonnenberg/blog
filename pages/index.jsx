@@ -19,10 +19,13 @@ import HTMLPreview from 'components/HTMLPreview';
 export default class Index extends React.Component {
   render() {
     const posts = getPosts(this.props.pages);
-    const highlightPost = posts[0];
-    const textPreviewPosts = posts.slice(1, 6);
-    const plainPosts = posts.slice(6);
+    const htmlPreviewPosts = posts.slice(0, 5);
+    const textPreviewPosts = posts.slice(5, 10);
+    const plainPosts = posts.slice(10);
 
+    const htmlPreviews = map(htmlPreviewPosts, post => (
+      <HTMLPreview key={post.path} post={post} />
+    ));
     const textPreviews = map(textPreviewPosts, post => (
       <TextPreview key={post.path} post={post} />
     ));
@@ -51,7 +54,7 @@ export default class Index extends React.Component {
               marginBottom: rhythm(1)
             }}
           />
-          <HTMLPreview post={highlightPost} />
+          {htmlPreviews}
           {textPreviews}
           {plainLinks}
           <hr
