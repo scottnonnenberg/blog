@@ -31,7 +31,7 @@ export default class TagIndex extends React.Component {
             color: 'lightgray'
           }}
         >
-          {` ${count} entries`}
+          {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
         </span>
       </li>
     ));
