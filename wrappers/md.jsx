@@ -20,6 +20,11 @@ export default React.createClass({
   mixins: [Navigation],
 
   scroll() {
+    const state = this.props.state;
+    if (!state || state.action === 'pop') {
+      return;
+    }
+
     const hash = window.location.hash;
     if (hash) {
       const id = hash.replace('#','');
