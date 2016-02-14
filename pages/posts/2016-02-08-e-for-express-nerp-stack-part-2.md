@@ -9,6 +9,7 @@ tags:
   - nodejs
   - nerp-stack
   - software
+  - javascript
 ---
 
 Welcome to Part 2 of my series ([Part 1](/n-for-node-js-nerp-stack-part-1/)) about a new, nicer-than-[MEAN](http://mean.io/), brighter-than-[LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) development stack. Today we turn to the Pros and Cons of Express.
