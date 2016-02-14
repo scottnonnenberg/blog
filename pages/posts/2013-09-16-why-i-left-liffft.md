@@ -38,7 +38,7 @@ So I joined up, and we had quite a journey. I learned a huge amount. Just a few 
 
 More importantly, I saw what it took to run a business. The various filings, the management of cash flow, and eventually bringing on employees. We doubled from three of us founders to six total in January of this year. And I saw what a consulting business was really like.
 
-In the midst of all this excitement, it took awhile to realize that it wasn’t working for me. But it did become clear that my goal wasn’t to build a consulting business at all. I was there for that second part, the stuff we’d do when we weren’t consulting. But we had all been overly optimistic - we didn’t really have that free time. We were focused on building a sustainable, successful consulting business.
+In the midst of all this excitement, it took a while to realize that it wasn’t working for me. But it did become clear that my goal wasn’t to build a consulting business at all. I was there for that second part, the stuff we’d do when we weren’t consulting. But we had all been overly optimistic - we didn’t really have that free time. We were focused on building a sustainable, successful consulting business.
 
 So, my dream wasn’t happening. I wasn’t building software that people love and makes the world a better place. I was so close, though! The LIFFFT vision is similar:
 
