@@ -3,7 +3,7 @@ title: E for Express (NERP stack part 2)
 date: 2016-02-08T22:43:15.846Z
 layout: post
 path: /e-for-express-nerp-stack-part-2/
-next:
+next: /r-for-react-nerp-stack-part-3/
 previous: /a-35lb-weight-swing-in-two-years/
 tags:
   - nodejs
@@ -153,4 +153,4 @@ I will admit, though, that this decision is probably the closest of the four tec
 
 Our E is in good shape. Two letters down, and we’re just about even with Ruby on Rails. It only ever had two capital letters in its RoR acronym. Onward!
 
-Stay tuned for *Part 3: R for React*...
+Next up: [*Part 3: R for React*](/e-for-express-nerp-stack-part-2/)...
