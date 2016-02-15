@@ -10,6 +10,8 @@ tags:
   - career
 ---
 
+*[To those arriving from Google: I was one of the three original founders of LIFFFT, along with [Kav Latiolais](https://twitter.com/kavla) and [Donald DeSantis](https://twitter.com/donalddesantis). In 2013, it was entirely innovation-focused. As of February 2016, it seems to be much more about contract software development.]*
+
 Most of you who I’ve spoken with in the last month or two likely know already that I left [LIFFFT](http://www.liffft.com/). I wanted to make a wider announcement as our trajectories continue to diverge.
 
 <div class='fold'></div>
