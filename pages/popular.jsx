@@ -19,9 +19,8 @@ export default class extends React.Component {
 
     let posts = getPosts(this.props.pages);
 
-    posts = filter(posts, post => Boolean(post.data.hits));
-    posts = sortBy(posts, post => post.data.hits);
-    posts = posts.reverse();
+    posts = filter(posts, post => Boolean(post.data.rank));
+    posts = sortBy(posts, post => post.data.rank);
     posts = posts.slice(0, 10);
 
     const pageLinks = map(posts, post => (
