@@ -1,5 +1,5 @@
 ---
-hits: 71
+rank: 4
 title: Woot Shirts!
 date: 2014-08-29T17:00:00.000Z
 layout: post

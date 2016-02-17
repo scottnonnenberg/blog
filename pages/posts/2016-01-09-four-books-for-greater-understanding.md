@@ -1,5 +1,5 @@
 ---
-hits: 1
+rank: 20
 title: Four books for greater understanding
 date: 2016-01-09T00:47:58.000Z
 layout: post

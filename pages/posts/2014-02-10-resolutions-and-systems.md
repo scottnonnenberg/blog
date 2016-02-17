@@ -1,5 +1,5 @@
 ---
-hits: 19
+rank: 15
 title: Resolutions (and Systems)
 date: 2014-02-10T17:00:00.000Z
 layout: post

@@ -69,7 +69,7 @@ superagent
       const rank = index + 1;
       const target = lookup[entry.url];
       let contents = target.contents;
-      const existingRank = /^hits: [0-9]+$/m;
+      const existingRank = /^rank: [0-9]+$/m;
       const newRank = /^[^-]*---/;
 
       const previousRank = _.get(target, 'data.rank')
