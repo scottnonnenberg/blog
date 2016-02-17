@@ -35,46 +35,56 @@ superagent
       throw new Error('non-200 response! ' + res.text);
     }
 
-    _.forEach(res.body, function(entry) {
-      var url = '/' + entry.label + '/';
-      var hits = entry.nb_hits;
+    const items = _(res.body)
+      .filter(function (entry) {
+        entry.url = '/' + entry.label + '/';
 
-      if (url === '/how-not-to-do-customer-service-credit-card-edition/') {
-        return;
-      }
-      if (url === '/why-i-left-liffft/') {
-        return;
-      }
+        if (entry.url === '/how-not-to-do-customer-service-credit-card-edition/') {
+          return false;
+        }
+        if (entry.url === '/why-i-left-liffft/') {
+          return false;
+        }
 
-      if (url === '/the-dangerous-cliffs-of-node-js/') {
-        hits += 631;
-      }
-      if (url === '/contract-teaching/') {
-        hits += 10;
-      }
+        if (entry.url === '/the-dangerous-cliffs-of-node-js/') {
+          entry.nb_hits += 631;
+        }
+        if (entry.url === '/contract-teaching/') {
+          entry.nb_hits += 10;
+        }
 
+        if (!lookup[entry.url]) {
+          return false;
+        }
+
+        return true;
+      })
+      .sortBy('nb_hits')
+      .reverse()
+      .value();
+
+    _.forEach(items, function(entry, index) {
       // console.log('checking', url);
 
-      var target = lookup[url];
-      if (!target) {
+      const rank = index + 1;
+      const target = lookup[entry.url];
+      let contents = target.contents;
+      const existingRank = /^hits: [0-9]+$/m;
+      const newRank = /^[^-]*---/;
+
+      const previousRank = _.get(target, 'data.rank')
+
+      if (previousRank === rank) {
         return;
       }
 
-      var contents = target.contents;
-      var existingHits = /^hits: [0-9]+$/m;
-      var newHits = /^[^-]*---/;
+      console.log(target.path, 'now has rank:', rank, '; previous:', previousRank);
 
-      if (target.data && target.data.hits && target.data.hits === hits) {
-        return;
-      }
-
-      console.log('updating', target.path, ' with ' + hits);
-
-      if (existingHits.test(contents)) {
-        contents = contents.replace(existingHits, 'hits: ' + hits);
+      if (existingRank.test(contents)) {
+        contents = contents.replace(existingRank, 'rank: ' + rank);
       }
       else {
-        contents = contents.replace(newHits, '---\nhits: ' + hits);
+        contents = contents.replace(newRank, '---\nrank: ' + rank);
       }
 
       fs.writeFileSync(target.path, contents);
