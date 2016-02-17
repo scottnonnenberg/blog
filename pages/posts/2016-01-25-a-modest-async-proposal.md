@@ -1,4 +1,5 @@
 ---
+rank: 23
 hits: 3
 title: A modest async proposal
 date: 2016-01-25T19:14:19.547Z

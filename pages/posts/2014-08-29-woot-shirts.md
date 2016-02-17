@@ -1,5 +1,5 @@
 ---
-rank: 4
+rank: 5
 title: Woot Shirts!
 date: 2014-08-29T17:00:00.000Z
 layout: post

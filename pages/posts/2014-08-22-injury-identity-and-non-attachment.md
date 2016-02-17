@@ -1,5 +1,5 @@
 ---
-rank: 6
+rank: 7
 title: Injury, identity, and non-attachment
 date: 2014-08-22T19:40:00.000Z
 layout: post

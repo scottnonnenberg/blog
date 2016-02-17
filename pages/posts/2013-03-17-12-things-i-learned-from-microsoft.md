@@ -1,5 +1,5 @@
 ---
-rank: 13
+rank: 17
 title: 12 things I learned from Microsoft
 date: 2013-03-17T15:00:00.000Z
 layout: post
