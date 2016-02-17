@@ -45,6 +45,9 @@ export default class HTML extends React.Component {
       s.parentNode.insertBefore(g,s);
     `;
 
+    const bundle = <script async defer src={link("/bundle.js?t=" + buster)} />;
+    const js = this.props.page ? null : bundle;
+
     return (
       <html lang="en">
         <head>
@@ -59,7 +62,7 @@ export default class HTML extends React.Component {
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
-          <script async defer src={link("/bundle.js?t=" + buster)} />
+          {js}
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
             <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1&url=${encodedPath}`} style={{border: 0}} />
