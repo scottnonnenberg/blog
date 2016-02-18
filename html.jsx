@@ -33,7 +33,6 @@ export default class HTML extends React.Component {
       window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
       window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
       window._paq.push(['enableLinkTracking']);
-      window._paq.push(['setDocumentTitle', document.domain + '/pre-js/' + document.title]);
       window._paq.push(['trackPageView']);
       window._paq.push(['enableHeartBeatTimer']);
 
