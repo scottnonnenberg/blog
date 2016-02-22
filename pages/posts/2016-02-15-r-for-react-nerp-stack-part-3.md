@@ -4,7 +4,7 @@ title: R for React (NERP stack part 3)
 date: 2016-02-15T19:38:29.637Z
 layout: post
 path: /r-for-react-nerp-stack-part-3/
-next:
+next: /p-for-postgres-nerp-stack-part-4/
 previous: /e-for-express-nerp-stack-part-2/
 tags:
   - nerp-stack
