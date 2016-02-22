@@ -74,7 +74,7 @@ As always, only effort on both sides of the situation will bring us to eventual 
 More reading:
 
 * Resources to help you design meetings and business processes for full participation by all: http://www.liberatingstructures.com/
-* A survey of some of the top theories, links to more resources: [http://en.wikipedia.org/wiki/Extraversion_and_introversion#Introversion](http://en.wikipedia.org/wiki/Extraversion_and_introversion#Introversion)
+* A survey of some of the top theories, links to more resources: http://en.wikipedia.org/wiki/Extraversion_and_introversion#Introversion
 * Book: [Quiet: The Power of Introverts in a World That Can't Stop Talking](http://www.amazon.com/Quiet-Power-Introverts-World-Talking/dp/0307352153)
 	* Biological/cultural aspects of the introversion/extraversion spectrum
 	* Using periods of extraversion for career advancement

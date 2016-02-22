@@ -114,5 +114,5 @@ Further reading:
 - I've got a cheap little standing desk setup: an
 [Ikea adjustable height desk](http://www.ikea.com/us/en/catalog/products/S89806740/#/S59860229)
 and [bed risers](http://www.amazon.com/gp/product/B003M8GI4O/ref=oh_aui_detailpage_o02_s00) for a little extra height
-- Using multiple bluetooth keyboards in OSX requires software to force control keys from one keyboard to affect the other keyboard. Doesn’t work in password fields. [https://github.com/mejedi/my-multiple-keyboards](https://github.com/mejedi/my-multiple-keyboards)
+- Using multiple bluetooth keyboards in OSX requires software to force control keys from one keyboard to affect the other keyboard. Doesn’t work in password fields. https://github.com/mejedi/my-multiple-keyboards
 

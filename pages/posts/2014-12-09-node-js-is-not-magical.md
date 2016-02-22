@@ -149,9 +149,9 @@ A little bit more:
 
 * If you’re just getting started, you might consider my library [thehelp-project](https://github.com/thehelp/project) to kickstart your project’s automation. I've also got a [few other libraries that might be useful](https://github.com/thehelp) for you...
 * Some resources for learning Node.js:
-    * [http://nodeschool.io/](http://nodeschool.io/)
-    * [https://www.codeschool.com/courses/real-time-web-with-node-js](https://www.codeschool.com/courses/real-time-web-with-node-js)
-    * [http://www.quora.com/What-are-the-best-resources-to-learn-Node-js](http://www.quora.com/What-are-the-best-resources-to-learn-Node-js)
+    * http://nodeschool.io/
+    * https://www.codeschool.com/courses/real-time-web-with-node-js
+    * http://www.quora.com/What-are-the-best-resources-to-learn-Node-js
 * A very detailed post from someone moving from .NET to MEAN (**M**ongo/**E**xpress.js/**A**ngular.js/**N**ode.js)  https://www.airpair.com/mean-stack/posts/developers-moving-dotnet-to-mean
 * PayPal talks about training their C++/Java developers in Javascript and Node.js. People and Processes are just as important as the technology itself: https://www.youtube.com/watch?v=bvDtEcQdGs0
 

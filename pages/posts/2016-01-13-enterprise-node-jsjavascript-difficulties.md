@@ -110,13 +110,13 @@ Additional resources:
   * https://www.nczonline.net/blog/2011/12/14/timer-resolution-in-browsers/
   * https://www.sencha.com/blog/a-survey-of-javascript-timers-on-mobile/
 * Learning:
-  * A nice little intro to git: [http://rogerdudler.github.io/git-guide/](http://rogerdudler.github.io/git-guide/)
-  * What is Test-Driven Development (TDD) [https://en.wikipedia.org/wiki/Test-driven_development](https://en.wikipedia.org/wiki/Test-driven_development)
-  * A path towards TDD maturity: [http://blog.testdouble.com/posts/2014-01-25-the-failures-of-intro-to-tdd.html](http://blog.testdouble.com/posts/2014-01-25-the-failures-of-intro-to-tdd.html)
+  * A nice little intro to git: http://rogerdudler.github.io/git-guide/
+  * What is Test-Driven Development (TDD) https://en.wikipedia.org/wiki/Test-driven_development
+  * A path towards TDD maturity: http://blog.testdouble.com/posts/2014-01-25-the-failures-of-intro-to-tdd.html
 * Windows and Node.js
-  * Alternatives to the default Windows Command Prompt: [http://stackoverflow.com/questions/60950/is-there-a-better-windows-console-window](http://stackoverflow.com/questions/60950/is-there-a-better-windows-console-window)
-  * More detailed discussion about Node.js/Windows issues: [http://stackoverflow.com/questions/12581416/node-js-development-windows-or-linux](http://stackoverflow.com/questions/12581416/node-js-development-windows-or-linux)
+  * Alternatives to the default Windows Command Prompt: http://stackoverflow.com/questions/60950/is-there-a-better-windows-console-window
+  * More detailed discussion about Node.js/Windows issues: http://stackoverflow.com/questions/12581416/node-js-development-windows-or-linux
 * The best approach for jumping in without much previous experience is a starter kit. Javascript projects require a lot of configuration out of the box, so start with a better box!
-  * React starter kit with hot-reload. Client-only. No flux implementation. [https://github.com/bradleyboy/yarsk](https://github.com/bradleyboy/yarsk)
-  * Universal React app built with Express, redux for flux implementation. [https://github.com/choonkending/react-webpack-node](https://github.com/choonkending/react-webpack-node)
-  * Express app with substantial API support. Worth an investigation (look at the installed middleware), but I wouldn’t base a new project on this. Minimal tests. [https://github.com/sahat/hackathon-starter](https://github.com/sahat/hackathon-starter)
+  * React starter kit with hot-reload. Client-only. No flux implementation. https://github.com/bradleyboy/yarsk
+  * Universal React app built with Express, redux for flux implementation. https://github.com/choonkending/react-webpack-node
+  * Express app with substantial API support. Worth an investigation (look at the installed middleware), but I wouldn’t base a new project on this. Minimal tests. https://github.com/sahat/hackathon-starter

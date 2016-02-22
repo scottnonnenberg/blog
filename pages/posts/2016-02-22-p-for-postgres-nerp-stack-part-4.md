@@ -153,27 +153,27 @@ Well, that’s all four technologies of NERP, each justified, each an exciting b
 
 Additional reading:
 
-* If you have a well-understood, specialized data scenario, here’s a high-level guide to your main NoSQL options: [http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis](http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis)
+* If you have a well-understood, specialized data scenario, here’s a high-level guide to your main NoSQL options: http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis
 * MongoDB lessons-learned articles:
-    * [http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
+    * http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/
         * "I’ve heard many people talk about dropping MongoDB in to their web application as a replacement for MySQL or PostgreSQL. There are no circumstances under which that is a good idea. Schema flexibility sounds like a great idea, but the only time it’s actually useful is when the structure of your data has no value. If you have an implicit schema — meaning, if there are things you are expecting in that JSON — then MongoDB is the wrong choice."
-    * [http://svs.io/post/31724990463/why-i-migrated-away-from-mongodb](http://svs.io/post/31724990463/why-i-migrated-away-from-mongodb)
+    * http://svs.io/post/31724990463/why-i-migrated-away-from-mongodb
         * "guess which problem you are more likely to have - needing joins, or scaling beyond facebook?"
         * "I can only come to the conclusion that mongodb is a well-funded and elaborate troll."
-    * [http://developer.olery.com/blog/goodbye-mongodb-hello-postgresql/](http://developer.olery.com/blog/goodbye-mongodb-hello-postgresql/)
+    * http://developer.olery.com/blog/goodbye-mongodb-hello-postgresql/
         * "The core problem here wasn’t just that our database was acting up, but also that whenever we’d look into it there was absolutely no indication as to what was causing the problem."
 * Comprehensive Postgres/MySQL comparisons
-    * [http://insights.dice.com/2015/03/19/why-i-choose-postgresql-over-mysqlmariadb/](http://insights.dice.com/2015/03/19/why-i-choose-postgresql-over-mysqlmariadb/)
-    * [https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL](https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL)
-    * [http://stackoverflow.com/questions/110927/would-you-recommend-postgresql-over-mysql](http://stackoverflow.com/questions/110927/would-you-recommend-postgresql-over-mysql)
-    * [http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL](http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL)
+    * http://insights.dice.com/2015/03/19/why-i-choose-postgresql-over-mysqlmariadb/
+    * https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL
+    * http://stackoverflow.com/questions/110927/would-you-recommend-postgresql-over-mysql
+    * http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL
 * Postgres/MongoDB comparisons
-    * [https://www.airpair.com/postgresql/posts/sql-vs-nosql-ko-postgres-vs-mongo#r13](https://www.airpair.com/postgresql/posts/sql-vs-nosql-ko-postgres-vs-mongo#r13)
-    * [http://rhaas.blogspot.com/2014/04/why-clock-is-ticking-for-mongodb.html](http://rhaas.blogspot.com/2014/04/why-clock-is-ticking-for-mongodb.html)
+    * https://www.airpair.com/postgresql/posts/sql-vs-nosql-ko-postgres-vs-mongo#r13
+    * http://rhaas.blogspot.com/2014/04/why-clock-is-ticking-for-mongodb.html
 * Postgres:
     * versus the world https://www.compose.io/articles/what-postgresql-has-over-other-open-source-sql-databases/
     * Mutating schema at scale: https://www.pgrs.net/2014/05/14/safe-operations-for-high-volume-postgresql/
 * Geeking out about databases:
-    * [http://www.xaprb.com/blog/2015/05/25/what-makes-a-solution-mature/](http://www.xaprb.com/blog/2015/05/25/what-makes-a-solution-mature/)
+    * http://www.xaprb.com/blog/2015/05/25/what-makes-a-solution-mature/
     * [http://www.xaprb.com/blog/2014/12/08/](http://www.xaprb.com/blog/2014/12/08/eventual-consistency-simpler-than-mvcc/)[eventual-consistency-simpler-than-mvcc](http://www.xaprb.com/blog/2014/12/08/eventual-consistency-simpler-than-mvcc/)[/](http://www.xaprb.com/blog/2014/12/08/eventual-consistency-simpler-than-mvcc/)
-    * "Transactions: myths, surprises and opportunities" by Martin Kleppmann at StrangeLoop 2015 [https://www.youtube.com/watch?v=5ZjhNTM8XU8](https://www.youtube.com/watch?v=5ZjhNTM8XU8)
+    * "Transactions: myths, surprises and opportunities" by Martin Kleppmann at StrangeLoop 2015 https://www.youtube.com/watch?v=5ZjhNTM8XU8
