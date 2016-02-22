@@ -202,7 +202,7 @@ But, like a strict personal trainer who has your best interests at heart, your a
 
 R is looking great! You can feel the momentum building - just one letter left to complete this new technology stack! Surely it will become one of the classics, known by all even if only the the lucky few can fully embrace it!
 
-Stay tuned for *Part 4: P for Postgres*...
+Next up: [*Part 4: P for Postgres*](/p-for-postgres-nerp-stack-part-4/)...
 
 ---
 
