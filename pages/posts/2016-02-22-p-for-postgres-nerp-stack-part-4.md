@@ -47,7 +47,7 @@ You don’t want to do that. A relational database is a good choice because it i
 
 ## P for Postgres
 
-Okay, now we’ve laid some good groundwork for this discussion. Let’s get into the details. The M in MEAN is MongoDB, and the M in LAMP is MySQL. We’ll be contrasting Postgres primarily with these two.
+Okay, now we’ve laid some good groundwork for this discussion. Let’s get into the details. The M in MEAN is [MongoDB](https://www.mongodb.org/), and the M in LAMP is [MySQL](https://www.mysql.com/). We’ll be contrasting Postgres primarily with these two.
 
 ## The Pros
 
