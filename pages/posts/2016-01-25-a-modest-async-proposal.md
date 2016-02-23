@@ -117,9 +117,9 @@ var saveUserNewPostReferences = function(id) {
 };
 ```
 
-The same process implemented with promises is not as deeply nested, so perhaps it is a little easier to read. And it’s easier to see what information is passed from step to step: it’s either returned from each step, or it is stored in one of the two variables declared at the top (`user` and `references`). This is in contrast to the callback style, where inner functions have access to any outer method’s variables via closures: a source of confusion and bugs.
+The same process implemented with promises is not as deeply nested, so perhaps it is a little easier to read. And it’s easier to see what information is passed from step to step: it’s either returned from each step, or it is stored in one of the two variables declared at the top (`user` and `references`). This is in contrast to the callback style, where inner functions have access to any outer function's variables via closures: a source of confusion and bugs.
 
-But it really doesn’t matter what async system technique we use, we still have the same problem. You can’t test any of these steps independently or rearrange them without pain. Nor is it easy to figure out what each step is trying to do. Naming can help, but it’s just too much happening in one method.
+But it really doesn’t matter what async system technique we use, we still have the same problem. You can’t test any of these steps independently or rearrange them without pain. Nor is it easy to figure out what each step is trying to do. Naming can help, but it’s just too much happening in one function.
 
 Let’s do something about that: let’s refactor.
 
@@ -179,7 +179,7 @@ We can do better.
 
 ## A modest proposal
 
-Here’s my attempt at a clean async composition system. First, let’s take a look at the overall coordination method, what you’d call to kick off the process. You can see each of the individual steps and then the call to [`async.series()`](https://github.com/caolan/async#seriestasks-callback):
+Here’s my attempt at a clean async composition system. First, let’s take a look at the overall coordination function, what you’d call to kick off the process. You can see each of the individual steps and then the call to [`async.series()`](https://github.com/caolan/async#seriestasks-callback):
 
 ```javascript
 NewReferencesProcess.prototype.go = function(cb) {
@@ -222,7 +222,7 @@ NewReferencesProcess.prototype.getUser = function(cb) {
 };
 ```
 
-You can see that we’re operating in the context of a class. `getUser` is a member function of that class, and when it calls its target async method `this.db.getUser()` you can see that it stores the result of that call at `this._user`. The value at  `this`, an instance of the `NewReferencesProcess` class, is the shared state used to pass values down the workflow and enable dependency injection of target libraries (by replacing `this.db`).
+You can see that we’re operating in the context of a class. `getUser` is a member function of that class, and when it calls its target async function `this.db.getUser()` you can see that it stores the result of that call at `this._user`. The value at  `this`, an instance of the `NewReferencesProcess` class, is the shared state used to pass values down the workflow and enable dependency injection of target libraries (by replacing `this.db`).
 
 The first two examples use both closures and direct return values to pass values down the workflow. We simplify things here by using `async.series()`, which does not pass the result of one step to the next step. The only way we share information is via `this`.
 

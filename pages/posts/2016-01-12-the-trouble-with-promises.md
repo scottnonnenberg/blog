@@ -72,7 +72,7 @@ When architecting systems, we must ask ourselves: is the additional complexity w
 
 Say you’ve decided to go with promises in your app. Here are a few tips to make that experience a bit nicer:
 
-* **Be clear with documentation** - jsdoc generation will push you towards documenting only parameters and return value. Yes, the return value is a ‘Promise’ but what exactly can it resolve to? Consider specifying whether method is async/sync in the name - with callbacks, `cb` in the argument list made it clear.
+* **Be clear with documentation** - jsdoc generation will push you towards documenting only parameters and return value. Yes, the return value is a ‘Promise’ but what exactly can it resolve to? Consider specifying whether a function is async/sync in the name - with callbacks, `cb` in the argument list made it clear.
 * **Be consistent with `.spread()`** - Determine a standard approach for your project and stick with it. Either multiple parameters with `spread()` or manually handling of resolved values. Consider using ‘named parameters’ via objects, avoiding `spread()` entirely.
 * **`reject()` real `Error` objects only** - Just like callback-style, rejections should always be real error objects.
 * **Pay close attention to your `return` statements** - Where with callbacks you could just `cb()` anywhere, now return statements should be in every function. Methods no longer take callbacks, so they must return promises. Inside a `then()`, you can return plain objects and that becomes the final resolved value for the promise, no need for a `Promise.resolve(x)` wrapper.
