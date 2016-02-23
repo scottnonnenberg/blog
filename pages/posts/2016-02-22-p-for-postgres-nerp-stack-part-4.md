@@ -61,7 +61,7 @@ What is exactly Postgres good at?
 
 ### 1. Rigorous data guarantees
 
-We already talked about how most NoSQL databases, including MongoDB, don’t have the concept of integrated schemas or transactions to maintain cross-database consistency. And this can cause problems for your business over time. But the surprising thing is that MySQL has some pretty major data rigor challenges, even as a relational database.
+We already talked about how most NoSQL databases, including MongoDB, don’t have the concept of integrated schemas or transactions to maintain cross-[collection](https://docs.mongodb.org/manual/reference/glossary/#term-collection) consistency. And this can cause problems for your business over time. But the surprising thing is that MySQL has some pretty major data rigor challenges, even as a relational database.
 
 First, the [default storage engine in MySQL versions prior to 5.5.5 is MyISAM](https://dev.mysql.com/doc/refman/5.5/en/storage-engine-setting.html). Tables created with [MyISAM](http://dev.mysql.com/doc/refman/5.7/en/myisam-storage-engine.html) will not honor foreign key references, nor transactions as you might expect. Happily, the default is now [InnoDB](http://dev.mysql.com/doc/refman/5.7/en/innodb-storage-engine.html).
 
