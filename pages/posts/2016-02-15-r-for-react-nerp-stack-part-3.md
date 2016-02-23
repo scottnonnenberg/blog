@@ -31,7 +31,7 @@ Today we finally move beyond the letters we share with MEAN. The first of these 
 
 First, some terminology. React is frequently used in the same breath as [Angular](https://angularjs.org/), [Ember](http://emberjs.com/), [Knockout](http://knockoutjs.com/), [Backbone](http://backbonejs.org/), and other [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) web frameworks. But the truth is that React can’t be compared directly with these frameworks, as it says on the React homepage:
 
-> *"Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project." (**[https://facebook.github.io/react*/](https://facebook.github.io/react/)*)*
+> *"Lots of people use React as the V in MVC. Since React makes no assumptions about the rest of your technology stack, it's easy to try it out on a small feature in an existing project." ([https://facebook.github.io/react/](https://facebook.github.io/react/))*
 
 So React isn’t a complete solution by itself. You give it data and it renders or re-renders HTML. And will emit events on user interaction. But that’s it. So, when I talk about React, I assume that you’ve selected a [Flux](https://facebook.github.io/react/blog/2014/05/06/flux.html) implementation to go along with it.
 
