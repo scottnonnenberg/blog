@@ -5,6 +5,6 @@ import TagPage from 'components/TagPage';
 
 export default class TaggedWithFun extends React.Component {
   render() {
-    return <TagPage tag="fun" {...this.props} />
+    return <TagPage tag="fun" {...this.props} />;
   }
 }

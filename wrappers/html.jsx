@@ -1,6 +1,8 @@
-import React, {PropTypes} from 'react'
+import React, {PropTypes} from 'react';
 
 module.exports = React.createClass({
+  displayName: 'HTMLWrapper',
+
   propTypes: {
     page: PropTypes.shape({
       data: PropTypes.string,

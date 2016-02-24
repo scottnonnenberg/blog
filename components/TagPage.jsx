@@ -3,7 +3,7 @@ import DocumentTitle from 'react-document-title';
 
 import map from 'lodash/collection/map';
 
-import { rhythm } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 import getPosts from 'utils/getPosts';
 import getPostsWithTag from 'utils/getPostsWithTag';
 
@@ -44,6 +44,6 @@ export default class TagPage extends React.Component {
           <Author {...this.props} />
         </div>
       </DocumentTitle>
-    )
+    );
   }
 }

@@ -8,4 +8,4 @@ export default function getPosts(allPages) {
   });
 
   return sortBy(posts, page => page.data.date).reverse();
-};
+}

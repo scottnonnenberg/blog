@@ -10,7 +10,7 @@ function reducePropsToState(propsList) {
   }
 }
 
-function handleStateChangeOnClient(title) {
+function handleStateChangeOnClient() {
   // no-op; entirely to pass state up for top-level attributes
 }
 

@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, Navigation } from 'react-router';
 import catchLinks from 'catch-links';
 
-import { link } from 'gatsby-helpers'
+import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
 import getPreFoldContent from 'utils/getPreFoldContent';
 import appendToLastTextBlock from 'utils/appendToLastTextBlock';

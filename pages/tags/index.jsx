@@ -58,6 +58,6 @@ export default class TagIndex extends React.Component {
           </div>
         </div>
       </DocumentTitle>
-    )
+    );
   }
 }

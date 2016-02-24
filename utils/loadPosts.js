@@ -9,7 +9,7 @@ const md = markdownIt({
   html: true,
   linkify: true,
   typographer: true
-})
+});
 
 export default function loadPosts() {
   const postsPath = path.join(__dirname, '../pages/posts');

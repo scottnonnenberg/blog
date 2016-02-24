@@ -4,24 +4,32 @@
   "version": "1.0.0",
   "homepage": "https://blogs.scottnonnenberg.com",
 
+  "scripts": {
+    "lint": "node ./node_modules/eslint/bin/eslint.js components/**/* utils/**/*.js pages/**/*.jsx wrappers/**/*.jsx"
+  },
+
   "dependencies": {
-    "babel-preset-es2015": "6.3.13",
-    "babel-preset-react": "6.3.13",
     "catch-links": "2.0.0",
-    "feed": "0.3.0",
-    "front-matter": "2.0.5",
     "lodash": "3.10.1",
-    "markdown-it": "5.1.0",
     "moment": "2.11.1",
     "react": "0.14.6",
     "react-document-title": "2.0.1",
     "react-dom": "0.14.3",
     "react-router": "0.13.5",
     "react-side-effect": "1.0.2",
-    "superagent": "1.7.1",
     "toml": "2.3.0",
     "typography": "0.6.2",
     "underscore.string": "3.2.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-react": "6.3.13",
+    "eslint": "2.2.0",
+    "eslint-plugin-react": "4.1.0",
+    "feed": "0.3.0",
+    "front-matter": "2.0.5",
+    "markdown-it": "5.1.0",
+    "superagent": "1.7.1"
   },
 
   "author": "Scott Nonnenberg <scott@nonnenberg.com>",

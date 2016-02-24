@@ -7,7 +7,7 @@ import catchLinks from 'catch-links';
 import map from 'lodash/collection/map';
 import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography';
+import { rhythm } from 'utils/typography';
 import intersperse from 'utils/intersperse';
 
 import ReadMore from 'components/ReadMore';

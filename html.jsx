@@ -44,7 +44,7 @@ export default class HTML extends React.Component {
       s.parentNode.insertBefore(g,s);
     `;
 
-    const bundle = <script async defer src={link("/bundle.js?t=" + buster)} />;
+    const bundle = <script async defer src={link('/bundle.js?t=' + buster)} />;
     const js = this.props.page ? null : bundle;
 
     return (

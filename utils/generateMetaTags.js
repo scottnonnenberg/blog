@@ -7,7 +7,7 @@ function create(name, value) {
   return (
     <meta key={name} name={name} value={value} />
   );
-};
+}
 
 function removeHTML(html) {
   return html.replace(/<[^>]*>/g, '');
@@ -29,7 +29,7 @@ export default function generateMetaTags(page, config, path) {
   />);
   tags.push(<link key="canonical" rel="canonical" href={url} />);
 
-  tags.push(create('og:site_name', config.blogTitle))
+  tags.push(create('og:site_name', config.blogTitle));
   tags.push(create('og:url', url));
   tags.push(create('twitter:url', url));
   tags.push(create('twitter:site', config.authorTwitter));
@@ -57,11 +57,11 @@ export default function generateMetaTags(page, config, path) {
       '@type': 'Article',
       publisher: config.blogTitle,
       author: {
-          '@type': 'Person',
-          name: config.authorName,
-          image: config.authorImage,
-          url: config.authorURL,
-          description: blurb
+        '@type': 'Person',
+        name: config.authorName,
+        image: config.authorImage,
+        url: config.authorURL,
+        description: blurb
       },
       headline: data.title,
       url: url,
@@ -76,4 +76,4 @@ export default function generateMetaTags(page, config, path) {
   }
 
   return tags;
-};
+}

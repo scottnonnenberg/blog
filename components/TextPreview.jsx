@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import prune from 'underscore.string/prune';
 
-import { link } from 'gatsby-helpers'
+import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm, fontSizeToMS } from 'utils/typography';
 import shortDate from 'utils/shortDate';
 import getPreFoldContent from 'utils/getPreFoldContent';
 

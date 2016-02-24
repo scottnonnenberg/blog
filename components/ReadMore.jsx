@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 import find from 'lodash/collection/find';
-import { link } from 'gatsby-helpers'
 
-import { rhythm, fontSizeToMS } from 'utils/typography'
-import shortDate from 'utils/shortDate';
+import { fontSizeToMS } from 'utils/typography';
 
 import TextPreview from 'components/TextPreview';
 
@@ -15,7 +12,7 @@ function includes(target, substring) {
   }
 
   return target.indexOf(substring) !== -1;
-};
+}
 
 
 export default class ReadMore extends React.Component {

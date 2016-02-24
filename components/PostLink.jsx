@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import find from 'lodash/collection/find';
-import { link } from 'gatsby-helpers'
+import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
 
 export default class PostLink extends React.Component {
