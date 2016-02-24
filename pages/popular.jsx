@@ -4,16 +4,15 @@ import DocumentTitle from 'react-document-title';
 import sortBy from 'lodash/collection/sortBy';
 import map from 'lodash/collection/map';
 import filter from 'lodash/collection/filter';
-import { link } from 'gatsby-helpers';
 
 import getPosts from 'utils/getPosts';
-import { rhythm } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 
 import Author from 'components/Author';
 import TextPreview from 'components/TextPreview';
 
 
-export default class extends React.Component {
+export default class Popular extends React.Component {
   render() {
     const title = 'Popular Posts';
 
@@ -45,6 +44,6 @@ export default class extends React.Component {
           <Author {...this.props} />
         </div>
       </DocumentTitle>
-    )
+    );
   }
 }

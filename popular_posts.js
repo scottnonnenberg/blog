@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 
 import superagent from 'superagent';
 import _ from 'lodash';
@@ -72,7 +71,7 @@ superagent
       const existingRank = /^rank: [0-9]+$/m;
       const newRank = /^[^-]*---/;
 
-      const previousRank = _.get(target, 'data.rank')
+      const previousRank = _.get(target, 'data.rank');
 
       if (previousRank === rank) {
         return;

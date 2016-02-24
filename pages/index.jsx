@@ -2,13 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
 
-import sortBy from 'lodash/collection/sortBy';
 import map from 'lodash/collection/map';
-import filter from 'lodash/collection/filter';
 import { link } from 'gatsby-helpers';
 
 import getPosts from 'utils/getPosts';
-import { rhythm } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 
 import Author from 'components/Author';
 import PostLink from 'components/PostLink';
@@ -72,6 +70,6 @@ export default class Index extends React.Component {
           </div>
         </div>
       </DocumentTitle>
-    )
+    );
   }
 }

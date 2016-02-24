@@ -5,8 +5,8 @@ module.exports = React.createClass({
 
   propTypes: {
     page: PropTypes.shape({
-      data: PropTypes.string,
-    }),
+      data: PropTypes.string
+    })
   },
 
   render: function () {

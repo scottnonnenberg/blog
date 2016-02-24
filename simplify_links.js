@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 
 import _ from 'lodash';
 
@@ -10,14 +9,12 @@ const posts = loadPosts();
 _.forEach(posts, function(post) {
   // console.log('checking', url);
 
-  let contents = post.contents;
   const dupeLink = /\[([^\)]+)\]\(\1\)/g;
-
-  let match = dupeLink.exec(contents);
-  contents = contents.replace(dupeLink, function(full, substring) {
+  const contents = post.contents.replace(dupeLink, function(full, substring) {
     return substring;
-  })
+  });
 
+  // let match = dupeLink.exec(contents);
   // while (match ) {
   //   console.log(post.path);
   //   console.log(match[0]);

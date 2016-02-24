@@ -8,4 +8,4 @@ export default function intersperce(items, toInject) {
   return items.slice(1).reduce(function(result, item) {
     return result.concat([toInject, item]);
   }, start);
-};
+}

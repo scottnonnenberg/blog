@@ -13,4 +13,4 @@ export default function shortDate(date) {
   else {
     return instance.format('YYYY/MM/DD');
   }
-};
+}

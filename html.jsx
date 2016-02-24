@@ -1,5 +1,4 @@
 import React from 'react';
-import Typography from 'typography';
 import DocumentTitle from 'react-document-title';
 
 import { link } from 'gatsby-helpers';
@@ -72,4 +71,4 @@ export default class HTML extends React.Component {
   }
 }
 
-HTML.defaultProps = { body: "" };
+HTML.defaultProps = { body: '' };

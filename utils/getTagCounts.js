@@ -27,4 +27,4 @@ export default function getTagCounts(posts) {
   counts.reverse();
 
   return zipObject(counts);
-};
+}

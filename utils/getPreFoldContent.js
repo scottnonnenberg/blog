@@ -10,4 +10,4 @@ export default function getPreFoldContent(content) {
   content = content.replace(prefix, '');
 
   return content;
-};
+}

@@ -3,7 +3,7 @@ import { RouteHandler, Link } from 'react-router';
 
 import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm } from 'utils/typography';
 import CurrentState from 'components/CurrentState';
 
 

@@ -4,7 +4,7 @@ import prune from 'underscore.string/prune';
 
 import { link } from 'gatsby-helpers';
 
-import { rhythm, fontSizeToMS } from 'utils/typography';
+import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
 import getPreFoldContent from 'utils/getPreFoldContent';
 

@@ -26,7 +26,7 @@ function getDuration() {
   }
 }
 
-exports.onRouteChange = function(state, page, pages, config) {
+exports.onRouteChange = function(state, page) {
   window._paq = window._paq || [];
 
   if (!page) {
@@ -45,4 +45,4 @@ exports.onRouteChange = function(state, page, pages, config) {
     window._paq.push(['setDocumentTitle', document.domain + '/' + title]);
     window._paq.push(['trackPageView']);
   }
-}
+};

@@ -5,7 +5,7 @@
   "homepage": "https://blogs.scottnonnenberg.com",
 
   "scripts": {
-    "lint": "node ./node_modules/eslint/bin/eslint.js components/**/* utils/**/*.js pages/**/*.jsx wrappers/**/*.jsx"
+    "lint": "node ./node_modules/eslint/bin/eslint.js *.js *.jsx components/**/* utils/**/*.js pages/*.jsx pages/**/*.jsx wrappers/**/*.jsx"
   },
 
   "dependencies": {

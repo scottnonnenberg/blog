@@ -19,5 +19,5 @@ export default function appendToLastTextBlock(content, toInsert) {
     }
   }
 
-  return startOfBlock + blocks.join(startOfBlock);;
-};
+  return startOfBlock + blocks.join(startOfBlock);
+}
