@@ -1,4 +1,4 @@
-{
+module.exports = {
   "env": {
     "browser": true,
     "commonjs": true,
@@ -30,4 +30,4 @@
     "react/jsx-uses-react": [2],
     "react/display-name": [2]
   }
-}
+};
