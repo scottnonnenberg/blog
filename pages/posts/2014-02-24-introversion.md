@@ -1,5 +1,5 @@
 ---
-rank: 10
+rank: 11
 title: Introversion
 date: 2014-02-24T10:28:13.000Z
 layout: post

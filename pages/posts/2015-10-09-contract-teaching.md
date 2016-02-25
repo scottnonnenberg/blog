@@ -1,5 +1,5 @@
 ---
-rank: 18
+rank: 19
 title: 'Contract: Teaching!'
 date: 2015-10-09T16:53:00.000Z
 layout: post

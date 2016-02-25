@@ -1,5 +1,5 @@
 ---
-rank: 6
+rank: 4
 title: Antidotes for antiskills
 date: 2014-09-12T15:00:00.000Z
 layout: post
