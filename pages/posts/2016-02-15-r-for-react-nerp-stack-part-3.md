@@ -39,7 +39,7 @@ So React isn’t a complete solution by itself. You give it data and it renders 
 
 You may have heard this nebulous term in connection with React. In a phrase, it is *the data flow for your application*. When the user makes a change in a textbox, where does that new data go? How does overall application state change? What exactly is the overall application state?
 
-The old model ([jQuery](https://jquery.com/) and most frameworks), is to make some local UI change to the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) then emit an event. Other components listening for that event can make their local DOM changes, then emit yet more events, and so on. In a large app, it gets hard to track the cascade of changes both to DOM and application state. Especially since than can easily get out of sync!
+The old model ([jQuery](https://jquery.com/) and most frameworks), is to make some local UI change to the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) then emit an event. Other components listening for that event can make their local DOM changes, then emit yet more events, and so on. In a large app, it gets hard to track the cascade of changes both to DOM and application state. Especially since they can easily get out of sync!
 
 Flux dictates that the user’s change must first affect the central application state, before attempting to do anything with that change locally. When application state changes, the app re-renders, finally changing the DOM. Cascading data changes are explicitly disallowed, greatly simplifying already-complex large applications.
 
