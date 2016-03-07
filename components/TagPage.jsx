@@ -1,7 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
-import map from 'lodash/collection/map';
+import map from 'lodash/map';
 
 import { rhythm } from 'utils/typography';
 import getPosts from 'utils/getPosts';
@@ -10,6 +10,7 @@ import getPostsWithTag from 'utils/getPostsWithTag';
 import TextPreview from 'components/TextPreview';
 import PostLink from 'components/PostLink';
 import Author from 'components/Author';
+import { config } from 'config';
 
 
 export default class TagPage extends React.Component {
@@ -17,7 +18,7 @@ export default class TagPage extends React.Component {
     const tag = this.props.tag;
 
     const title = `Posts tagged  '${tag}'`;
-    const posts = getPosts(this.props.pages);
+    const posts = getPosts(this.props.route.pages);
     const postsWithTag = getPostsWithTag(posts, tag);
     const textPreviewPosts = postsWithTag.slice(0, 5);
     const plainPosts = postsWithTag.slice(5);
@@ -30,7 +31,7 @@ export default class TagPage extends React.Component {
     ));
 
     return (
-      <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${title} | ${config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
           {textPreviews}

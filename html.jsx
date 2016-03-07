@@ -6,6 +6,7 @@ import { link } from 'gatsby-helpers';
 import { TypographyStyle } from 'utils/typography';
 import generateMetaTags from 'utils/generateMetaTags';
 import CurrentState from 'components/CurrentState';
+import last from 'lodash/last';
 
 
 import highlightTheme from 'css/solarized-light.css';
@@ -17,12 +18,16 @@ const buster = now.getTime();
 
 export default class HTML extends React.Component {
   render() {
-    const title = this.props.title || DocumentTitle.rewind();
-    const { domainPiwik, domainCDN, favicon, domain } = this.props.config || {};
+    const buildMode = Boolean(this.props.body);
+    const config = this.props.config;
 
+    const { domainPiwik, domainCDN, favicon, domain } = config || {};
+    const title = this.props.title || DocumentTitle.rewind();
     const state = CurrentState.rewind();
     const path = state ? state.path : null;
-    const metaTags = generateMetaTags(this.props.page, this.props.config, path);
+    const post = this.props.routes ? last(this.props.routes).page : null;
+
+    const metaTags = generateMetaTags(post, config, path);
     const encodedPath = encodeURIComponent(domain + path);
 
     const piwikSetup = `
@@ -44,7 +49,7 @@ export default class HTML extends React.Component {
     `;
 
     const bundle = <script async defer src={link('/bundle.js?t=' + buster)} />;
-    const js = this.props.page ? null : bundle;
+    const js = buildMode ? null : bundle;
 
     return (
       <html lang="en">

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link, Navigation } from 'react-router';
+import { Link } from 'react-router';
 import moment from 'moment';
 import DocumentTitle from 'react-document-title';
 import catchLinks from 'catch-links';
 
-import map from 'lodash/collection/map';
+import map from 'lodash/map';
 import { link } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
@@ -12,12 +12,15 @@ import intersperse from 'utils/intersperse';
 
 import ReadMore from 'components/ReadMore';
 import Author from 'components/Author';
+import { config } from 'config';
 
 
 export default React.createClass({
   displayName: 'MarkdownWrapper',
 
-  mixins: [Navigation],
+  contextTypes: {
+    router: React.PropTypes.object.isRequired
+  },
 
   scroll() {
     const state = this.props.state;
@@ -39,7 +42,7 @@ export default React.createClass({
     var _this = this;
 
     catchLinks(this.refs.markdown, function(href) {
-      _this.transitionTo(href);
+      _this.context.router.push(href);
     });
 
     setTimeout(this.scroll, 0);
@@ -50,14 +53,15 @@ export default React.createClass({
   },
 
   render() {
-    const data = this.props.page.data;
+    const post = this.props.route.page;
+    const data = post.data;
     const tags = data.tags;
     const tagLinks = map(tags, tag => (
       <Link key={tag} to={link(`/tags/${tag}/`)}>{tag}</Link>
     ));
 
     return (
-      <DocumentTitle title={`${data.title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
         <div className="post">
           <h1>{data.title}</h1>
           <div ref="markdown" className="markdown" dangerouslySetInnerHTML={{__html: data.body}}/>
@@ -90,7 +94,7 @@ export default React.createClass({
               marginBottom: rhythm(2)
             }}
           />
-          <ReadMore post={data} {...this.props}/>
+          <ReadMore post={data} posts={this.props.route.pages} />
         </div>
       </DocumentTitle>
     );

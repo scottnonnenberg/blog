@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { rhythm } from 'utils/typography';
+import { config } from 'config';
 
 
 export default class Author extends React.Component {
   render() {
-    const config = this.props.config;
     const image = config.authorImage;
     const url = config.authorURL;
     const blurb = config.authorBlurb;

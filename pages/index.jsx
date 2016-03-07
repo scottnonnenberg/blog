@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
 
-import map from 'lodash/collection/map';
+import map from 'lodash/map';
 import { link } from 'gatsby-helpers';
 
 import getPosts from 'utils/getPosts';
@@ -12,11 +12,12 @@ import Author from 'components/Author';
 import PostLink from 'components/PostLink';
 import TextPreview from 'components/TextPreview';
 import HTMLPreview from 'components/HTMLPreview';
+import { config } from 'config';
 
 
 export default class Index extends React.Component {
   render() {
-    const posts = getPosts(this.props.pages);
+    const posts = getPosts(this.props.route.pages);
     const htmlPreviewPosts = posts.slice(0, 5);
     const textPreviewPosts = posts.slice(5, 10);
     const plainPosts = posts.slice(10);
@@ -32,7 +33,7 @@ export default class Index extends React.Component {
     ));
 
     return (
-      <DocumentTitle title={this.props.config.blogTitle}>
+      <DocumentTitle title={config.blogTitle}>
         <div>
           <hr
             style={{

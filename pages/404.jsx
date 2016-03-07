@@ -7,6 +7,7 @@ import { link } from 'gatsby-helpers';
 import { rhythm } from 'utils/typography';
 
 import Author from 'components/Author';
+import { config } from 'config';
 
 
 export default class NotFound extends React.Component {
@@ -14,7 +15,7 @@ export default class NotFound extends React.Component {
     const title = 'Couldn\'t find that!';
 
     return (
-      <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${title} | ${config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
           Looks like something went a little wrong!

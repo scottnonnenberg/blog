@@ -1,5 +1,5 @@
-import filter from 'lodash/collection/filter';
-import sortBy from 'lodash/collection/sortBy';
+import filter from 'lodash/filter';
+import sortBy from 'lodash/sortBy';
 
 export default function getPosts(allPages) {
   const posts = filter(allPages, function(page) {

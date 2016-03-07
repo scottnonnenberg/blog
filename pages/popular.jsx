@@ -1,22 +1,23 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
-import sortBy from 'lodash/collection/sortBy';
-import map from 'lodash/collection/map';
-import filter from 'lodash/collection/filter';
+import sortBy from 'lodash/sortBy';
+import map from 'lodash/map';
+import filter from 'lodash/filter';
 
 import getPosts from 'utils/getPosts';
 import { rhythm } from 'utils/typography';
 
 import Author from 'components/Author';
 import TextPreview from 'components/TextPreview';
+import { config } from 'config';
 
 
 export default class Popular extends React.Component {
   render() {
     const title = 'Popular Posts';
 
-    let posts = getPosts(this.props.pages);
+    let posts = getPosts(this.props.route.pages);
 
     posts = filter(posts, post => Boolean(post.data.rank));
     posts = sortBy(posts, post => post.data.rank);
@@ -29,7 +30,7 @@ export default class Popular extends React.Component {
     ));
 
     return (
-      <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${title} | ${config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
           <ol>

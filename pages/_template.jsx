@@ -1,17 +1,18 @@
 import React from 'react';
-import { RouteHandler, Link } from 'react-router';
+import { Link } from 'react-router';
 
 import { link } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import CurrentState from 'components/CurrentState';
+import { config } from 'config';
 
 
 export default class RootTemplate extends React.Component {
   render() {
     let header;
 
-    if (this.props.state.path === link('/')) {
+    if (this.props.location.pathname === link('/')) {
       header = (
         <div>
           <h1
@@ -19,14 +20,14 @@ export default class RootTemplate extends React.Component {
               marginBottom: 0
             }}
           >
-            {this.props.config.blogTitle}
+            {config.blogTitle}
           </h1>
           <div
             style={{
               marginBottom: rhythm(1)
             }}
           >
-            {this.props.config.tagLine}
+            {config.tagLine}
           </div>
         </div>
       );
@@ -41,7 +42,7 @@ export default class RootTemplate extends React.Component {
               }}
               to={link('/')}
             >
-              « {this.props.config.blogTitle}
+              « {config.blogTitle}
             </Link>
           </h3>
           <hr
@@ -63,9 +64,11 @@ export default class RootTemplate extends React.Component {
           marginLeft: 'auto'
         }}
       >
-        <CurrentState state={this.props.state} />
+        <CurrentState state={{
+          path: this.props.location.pathname
+        }} />
         {header}
-        <RouteHandler {...this.props}/>
+        {this.props.children}
       </div>
     );
   }

@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
 
-import map from 'lodash/collection/map';
-import pairs from 'lodash/object/pairs';
+import map from 'lodash/map';
+import toPairs from 'lodash/toPairs';
 import { link } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
@@ -11,14 +11,15 @@ import getTagCounts from 'utils/getTagCounts';
 import getPosts from 'utils/getPosts';
 
 import Author from 'components/Author';
+import { config } from 'config';
 
 
 export default class TagIndex extends React.Component {
   render() {
     const title = 'Tags';
-    const posts = getPosts(this.props.pages);
+    const posts = getPosts(this.props.route.pages);
     const tags = getTagCounts(posts);
-    const tagLinks = map(pairs(tags), ([tag, count]) => (
+    const tagLinks = map(toPairs(tags), ([tag, count]) => (
        <li
         key={tag}
         style={{
@@ -37,7 +38,7 @@ export default class TagIndex extends React.Component {
     ));
 
     return (
-      <DocumentTitle title={`${title} | ${this.props.config.blogTitle}`}>
+      <DocumentTitle title={`${title} | ${config.blogTitle}`}>
         <div>
           <h1>{title}</h1>
           <ul>

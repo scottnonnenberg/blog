@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Navigation } from 'react-router';
+import { Link } from 'react-router';
 import catchLinks from 'catch-links';
 
 import { link } from 'gatsby-helpers';
@@ -13,13 +13,15 @@ import appendToLastTextBlock from 'utils/appendToLastTextBlock';
 export default React.createClass({
   displayName: 'HTMLPreview',
 
-  mixins: [Navigation],
+  contextTypes: {
+    router: React.PropTypes.object.isRequired
+  },
 
   componentDidMount() {
     var _this = this;
 
     catchLinks(this.refs.html, function(href) {
-      _this.transitionTo(href);
+      _this.context.router.push(href);
     });
   },
 

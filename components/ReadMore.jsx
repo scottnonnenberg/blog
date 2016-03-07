@@ -1,6 +1,6 @@
 import React from 'react';
 
-import find from 'lodash/collection/find';
+import find from 'lodash/find';
 
 import { fontSizeToMS } from 'utils/typography';
 
@@ -44,12 +44,12 @@ export default class ReadMore extends React.Component {
     let nextPost, previousPost;
 
     if (nextPath) {
-      nextPost = find(this.props.pages, function(page) {
+      nextPost = find(this.props.posts, function(page) {
         return includes(page.path, nextPath.slice(1, -1));
       });
     }
     if (previousPath) {
-      previousPost = find(this.props.pages, function(page) {
+      previousPost = find(this.props.posts, function(page) {
         return includes(page.path, previousPath.slice(1, -1));
       });
     }

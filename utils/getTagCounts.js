@@ -1,8 +1,8 @@
-import forEach from 'lodash/collection/forEach';
-import map from 'lodash/collection/map';
-import sortBy from 'lodash/collection/sortBy';
-import zipObject from 'lodash/array/zipObject';
-import pairs from 'lodash/object/pairs';
+import forEach from 'lodash/forEach';
+import map from 'lodash/map';
+import sortBy from 'lodash/sortBy';
+import fromPairs from 'lodash/fromPairs';
+import toPairs from 'lodash/toPairs';
 
 export default function getTagCounts(posts) {
   const lookup = Object.create(null);
@@ -14,7 +14,7 @@ export default function getTagCounts(posts) {
     });
   });
 
-  let counts = pairs(lookup);
+  let counts = toPairs(lookup);
 
   counts = map(counts, function(array) {
     return [array[0], array[1].length];
@@ -26,5 +26,5 @@ export default function getTagCounts(posts) {
 
   counts.reverse();
 
-  return zipObject(counts);
+  return fromPairs(counts);
 }
