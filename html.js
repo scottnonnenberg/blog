@@ -51,7 +51,10 @@ export default class HTML extends React.Component {
 
     const piwikSetup = buildPiwikSetup({domainCDN, domainPiwik});
     const bundle = <script async defer src={link('/bundle.js?t=' + buster)} />;
-    const js = buildMode ? null : bundle;
+    let js = bundle;
+    if (buildMode && !config.spa) {
+      js = null;
+    }
 
     return (
       <html lang="en">

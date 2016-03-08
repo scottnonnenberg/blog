@@ -1,6 +1,9 @@
 blogTitle = "Scott Nonnenberg"
 domain = "https://blog.scottnonnenberg.com"
 linkPrefix = "/"
+
+spa = false
+
 favicon = "/favicon.ico"
 tagLine = "A blog about software development and geekery of all kinds."
 domainCDN = "https://static.sinap.ps"

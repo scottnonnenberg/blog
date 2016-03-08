@@ -23,11 +23,6 @@ export default React.createClass({
   },
 
   scroll() {
-    const state = this.props.state;
-    if (!state || state.action === 'pop') {
-      return;
-    }
-
     const hash = window.location.hash;
     if (hash) {
       const id = hash.replace('#','');
