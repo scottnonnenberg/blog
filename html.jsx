@@ -12,6 +12,25 @@ import last from 'lodash/last';
 import highlightTheme from 'css/solarized-light.css';
 import generalStyles from 'css/styles.css';
 
+function buildPiwikSetup({domainCDN, domainPiwik}) {
+  return `
+    window._paq = window._paq || [];
+    window._paq.push(['setTrackerUrl', '${domainPiwik}/piwik.php']);
+    window._paq.push(['setSiteId', '3']);
+    window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
+    window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
+    window._paq.push(['enableLinkTracking']);
+    window._paq.push(['trackPageView']);
+    window._paq.push(['enableHeartBeatTimer']);
+
+    window.start = new Date();
+
+    // add tag
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src='${domainCDN}/js/piwik/2.15.0/piwik.min.js';
+    s.parentNode.insertBefore(g,s);
+  `;
+}
 
 const now = new Date();
 const buster = now.getTime();
@@ -30,24 +49,7 @@ export default class HTML extends React.Component {
     const metaTags = generateMetaTags(post, config, path);
     const encodedPath = encodeURIComponent(domain + path);
 
-    const piwikSetup = `
-      window._paq = window._paq || [];
-      window._paq.push(['setTrackerUrl', '${domainPiwik}/piwik.php']);
-      window._paq.push(['setSiteId', '3']);
-      window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
-      window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
-      window._paq.push(['enableLinkTracking']);
-      window._paq.push(['trackPageView']);
-      window._paq.push(['enableHeartBeatTimer']);
-
-      window.start = new Date();
-
-      // add tag
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-      g.defer=true; g.async=true; g.src='${domainCDN}/js/piwik/2.15.0/piwik.min.js';
-      s.parentNode.insertBefore(g,s);
-    `;
-
+    const piwikSetup = buildPiwikSetup({domainCDN, domainPiwik});
     const bundle = <script async defer src={link('/bundle.js?t=' + buster)} />;
     const js = buildMode ? null : bundle;
 
@@ -75,5 +77,3 @@ export default class HTML extends React.Component {
     );
   }
 }
-
-HTML.defaultProps = { body: '' };
