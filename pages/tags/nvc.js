@@ -3,7 +3,7 @@ import React from 'react';
 import TagPage from 'components/TagPage';
 
 
-export default class TaggedWithFun extends React.Component {
+export default class TagPageHost extends React.Component {
   render() {
     return <TagPage tag="nvc" {...this.props} />;
   }
