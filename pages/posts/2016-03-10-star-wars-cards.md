@@ -10,7 +10,7 @@ tags:
   - data
 ---
 
-## ![Luke and Vader](https://static.sinap.ps/blog/2016/03_mar/star_wars/cards.jpg)
+![Luke and Vader](https://static.sinap.ps/blog/2016/03_mar/star_wars/cards.jpg)
 
 It might surprise you to hear that I was obsessed with Star Wars when I was young. But it’ll probably surprise you more that in 2015 I delved into the world of Ebay collectibles and rebuilt my collection of [*Star Wars: Customizable Card Game (SW:CCG)*](https://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game) cards. Especially since the game hasn’t been in print since 2001!
 
@@ -105,33 +105,32 @@ Let me know if you’re interested!
 
 ---
 
-
 Resources:
 
 * My binder separator pages:
-    * [Color, just the major releases (includes images of packaging)](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators-Color.pdf)
-    * [Black and white, smaller releases](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators.pdf)
+  * [Color, just the major releases (includes images of packaging)](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators-Color.pdf)
+  * [Black and white, smaller releases](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators.pdf)
 * Getting started: https://boardgamegeek.com/thread/866727/star-wars-ccg-how-get-started
 * Online card database: http://swccg.polarhaven.net/
 * Other people talking about it:
-    * "The Best Card Game I Ever Played..." http://kotaku.com/the-best-card-game-i-ever-played-died-13-years-ago-1626118464
-    * "fun and addicting to your average nerd" http://geekti.me/wp/2013/01/card-wars-star-wars-ccg/
-    * "one of my favorite games of all time" http://www.boardgamereviewsbyjosh.com/2012/07/star-wars-customizable-card-game-review.html?m=1
-    * "game makers have learned that simplicity is better for a successful game, and so the Star Wars CCG is a product of a bygone era" http://overlordmusings.blogspot.com/2013/08/star-wars-ccg.html
-    * A collection of SW:CCG memories http://theforce.net/ccg/flashback/memories.asp
+  * "The Best Card Game I Ever Played..." http://kotaku.com/the-best-card-game-i-ever-played-died-13-years-ago-1626118464
+  * "fun and addicting to your average nerd" http://geekti.me/wp/2013/01/card-wars-star-wars-ccg/
+  * "one of my favorite games of all time" http://www.boardgamereviewsbyjosh.com/2012/07/star-wars-customizable-card-game-review.html?m=1
+  * "game makers have learned that simplicity is better for a successful game, and so the Star Wars CCG is a product of a bygone era" http://overlordmusings.blogspot.com/2013/08/star-wars-ccg.html
+  * A collection of SW:CCG memories http://theforce.net/ccg/flashback/memories.asp
 * Details about releases:
-    * http://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game
-    * http://starwars.wikia.com/wiki/Category:Star_Wars_Customizable_Card_Game
-    * https://boardgamegeek.com/article/12513722#12513722
-    * http://www.categoryonegames.com/catalog/star_wars_ccg/309
+  * http://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game
+  * http://starwars.wikia.com/wiki/Category:Star_Wars_Customizable_Card_Game
+  * https://boardgamegeek.com/article/12513722#12513722
+  * http://www.categoryonegames.com/catalog/star_wars_ccg/309
 * Comprehensive collector’s guide: http://www.starwarsccg.org/wp/wp-content/uploads/Collecting-Encyclopedia-2.pdf
 * Shops:
-    * http://www.categoryonegames.com/catalog/star_wars_ccg/309
-    * https://ccgcastle.com/product/star-wars-ccg
-    * http://www.ccg-singles.com/index.php?main_page=index&cPath=36
-    * http://www.ccgobsession.com/starwars.php
-    * http://peristilcards.com/product-category/star-wars/
+  * http://www.categoryonegames.com/catalog/star_wars_ccg/309
+  * https://ccgcastle.com/product/star-wars-ccg
+  * http://www.ccg-singles.com/index.php?main_page=index&cPath=36
+  * http://www.ccgobsession.com/starwars.php
+  * http://peristilcards.com/product-category/star-wars/
 * Categories on Ebay:
-    * "Decipher (CCG) Star Wars Trading Cards" http://www.ebay.com/sch/Decipher-CCG-/84619/i.html
-    * "Other Star Wars Card Sets" http://www.ebay.com/sch/Other-/99985/i.html
-    * Search for ‘star wars ccg’
+  * "Decipher (CCG) Star Wars Trading Cards" http://www.ebay.com/sch/Decipher-CCG-/84619/i.html
+  * "Other Star Wars Card Sets" http://www.ebay.com/sch/Other-/99985/i.html
+  * Search for ‘star wars ccg’
