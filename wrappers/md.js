@@ -57,6 +57,11 @@ export default React.createClass({
       <Link key={tag} to={prefixLink(`/tags/${tag}/`)}>{tag}</Link>
     ));
 
+    let tagSection;
+    if (tagLinks.length) {
+      tagSection = <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>;
+    }
+
     return (
       <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
         <div className="post">
@@ -76,7 +81,7 @@ export default React.createClass({
             }}
           >
             <div><em>Posted:</em> {moment(data.date).format('MMMM D, YYYY')}</div>
-            <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>
+            {tags}
           </div>
           <hr
             style={{
