@@ -11,7 +11,7 @@ tags:
   - nerp-stack
 ---
 
-Welcome to the fourth and final installment in my series ([Part 1](https://blog.scottnonnenberg.com/n-for-node-js-nerp-stack-part-1/), [Part 2](https://blog.scottnonnenberg.com/e-for-express-nerp-stack-part-2/), [Part 3](https://blog.scottnonnenberg.com/r-for-react-nerp-stack-part-3/)) delving into a new friendly (not [MEAN](http://mean.io/)), and perhaps even dazzling (but not a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle))) development stack: NERP. Today we take a look at the Pros and Cons of [PostgreSQL](http://www.postgresql.org/).
+Welcome to the fourth and final installment in my series ([Part 1](/n-for-node-js-nerp-stack-part-1/), [Part 2](/e-for-express-nerp-stack-part-2/), [Part 3](/r-for-react-nerp-stack-part-3/)) delving into a new friendly (not [MEAN](http://mean.io/)), and perhaps even dazzling (but not a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle))) development stack: NERP. Today we take a look at the Pros and Cons of [PostgreSQL](http://www.postgresql.org/).
 
 <div class='fold'></div>
 
