@@ -142,3 +142,10 @@ blockquote {
   margin-right: 0;
   padding-right: 0;
 }
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
