@@ -14,6 +14,8 @@ import ReadMore from 'components/ReadMore';
 import Author from 'components/Author';
 import { config } from 'config';
 
+import '../css/solarized-light.css';
+
 
 export default React.createClass({
   displayName: 'MarkdownWrapper',

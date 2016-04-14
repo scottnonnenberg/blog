@@ -1,5 +1,4 @@
 
-export default `
 ol.menu {
   list-style: none;
   margin-left: 0;
@@ -143,4 +142,3 @@ blockquote {
   margin-right: 0;
   padding-right: 0;
 }
-`;

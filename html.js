@@ -10,9 +10,6 @@ import last from 'lodash/last';
 
 import { config } from 'config';
 
-import highlightTheme from 'css/solarized-light.css';
-import generalStyles from 'css/styles.css';
-
 function buildPiwikSetup({domainCDN, domainPiwik}) {
   return `
     window._paq = window._paq || [];
@@ -50,10 +47,15 @@ export default class HTML extends React.Component {
     const encodedPath = encodeURIComponent(domain + path);
 
     const piwikSetup = buildPiwikSetup({domainCDN, domainPiwik});
-    const bundle = <script async defer src={prefixLink('/bundle.js?t=' + buster)} />;
+    const bundle = <script async defer src={prefixLink(`/bundle.js?t=${buster}`)} />;
+    const stylesheet =
+      <link rel='stylesheet' href={prefixLink(`/styles.css?t=${buster}`)} />;
+
     let js = bundle;
-    if (buildMode && config.noProductionJavascript) {
+    let css = null;
+    if (buildMode) {
       js = null;
+      css = stylesheet;
     }
 
     return (
@@ -66,14 +68,17 @@ export default class HTML extends React.Component {
           {metaTags}
           <link rel="shortcut icon" href={favicon}/>
           <TypographyStyle/>
-          <style dangerouslySetInnerHTML={{__html: generalStyles + highlightTheme}} />
+          {css}
         </head>
         <body className="landing-page">
           <div id="react-mount" dangerouslySetInnerHTML={{__html: this.props.body}} />
           {js}
           <script type="text/javascript" dangerouslySetInnerHTML={{__html: piwikSetup}} />
           <noscript>
-            <img src={`${domainPiwik}/piwik.php?idsite=3&rec=1&url=${encodedPath}`} style={{border: 0}} />
+            <img
+              src={`${domainPiwik}/piwik.php?idsite=3&rec=1&url=${encodedPath}`}
+              style={{border: 0}}
+            />
           </noscript>
         </body>
       </html>
