@@ -81,7 +81,7 @@ export default React.createClass({
             }}
           >
             <div><em>Posted:</em> {moment(data.date).format('MMMM D, YYYY')}</div>
-            {tags}
+            {tagSection}
           </div>
           <hr
             style={{
