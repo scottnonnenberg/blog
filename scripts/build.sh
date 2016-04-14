@@ -11,8 +11,7 @@ if [ "$1" != "--force" ]; then
   fi
 fi
 
-DIR=`dirname $0`
-TARGET=${DIR}/public
+TARGET=./public
 
 if [ -d "${TARGET}" ] ; then
   echo
@@ -25,17 +24,17 @@ fi
 echo
 echo '** building with gatsby'
 
-gatsby build
+npm run build
 
 echo
 echo '** building RSS/Atom XML'
 
-./run_script.sh generate_rss.js
+npm run generate-rss
 
 echo
 echo '** compressing files'
 
-find ./public | grep -v \.gz$ | while read FILE;
+find ${TARGET} | grep -v \.gz$ | while read FILE;
 do
   if [ -f "${FILE}" -a ! -f "${FILE}.gz" ] ; then
     echo "${FILE}"

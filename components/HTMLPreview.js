@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import catchLinks from 'catch-links';
 
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
@@ -34,7 +34,7 @@ export default React.createClass({
 
     const html = post.data.body;
     const preFold = getPreFoldContent(html);
-    const textLink = ` <a href="${link(post.path)}">Read more&nbsp;»</a>`;
+    const textLink = ` <a href="${prefixLink(post.path)}">Read more&nbsp;»</a>`;
     const callToAction = appendToLastTextBlock(preFold, textLink);
 
     return <div>
@@ -43,7 +43,7 @@ export default React.createClass({
           marginBottom: rhythm(1/4)
         }}
       >
-        <Link to={link(post.path)}>
+        <Link to={prefixLink(post.path)}>
           {post.data.title}
         </Link>
         <span className="date">

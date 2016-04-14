@@ -4,10 +4,10 @@ import _string from 'underscore.string';
 
 import moment from 'moment';
 
-import loadPosts from './utils/loadPosts';
+import loadPosts from '../utils/loadPosts';
 
 
-const templatePath = path.join(__dirname, 'utils/_postTemplate.md');
+const templatePath = path.join(__dirname, '../utils/_postTemplate.md');
 const template = fs.readFileSync(templatePath).toString();
 
 const now = new Date();
@@ -28,7 +28,7 @@ const newContents = template
   .replace('PREVIOUS', previousPath);
 
 const filePathDate = moment(now).format('YYYY-MM-DD');
-const newFilePath = path.join(__dirname, `pages/posts/${filePathDate}-${titleSlug}.md`);
+const newFilePath = path.join(__dirname, `../pages/posts/${filePathDate}-${titleSlug}.md`);
 
 fs.writeFileSync(newFilePath, newContents);
 

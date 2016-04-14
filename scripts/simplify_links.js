@@ -2,7 +2,7 @@ import fs from 'fs';
 
 import _ from 'lodash';
 
-import loadPosts from './utils/loadPosts';
+import loadPosts from '../utils/loadPosts';
 
 const posts = loadPosts();
 

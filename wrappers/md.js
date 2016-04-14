@@ -5,7 +5,7 @@ import DocumentTitle from 'react-document-title';
 import catchLinks from 'catch-links';
 
 import map from 'lodash/map';
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import intersperse from 'utils/intersperse';
@@ -52,7 +52,7 @@ export default React.createClass({
     const data = post.data;
     const tags = data.tags;
     const tagLinks = map(tags, tag => (
-      <Link key={tag} to={link(`/tags/${tag}/`)}>{tag}</Link>
+      <Link key={tag} to={prefixLink(`/tags/${tag}/`)}>{tag}</Link>
     ));
 
     return (

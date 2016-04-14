@@ -1,13 +1,14 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { TypographyStyle } from 'utils/typography';
 import generateMetaTags from 'utils/generateMetaTags';
 import CurrentState from 'components/CurrentState';
 import last from 'lodash/last';
 
+import { config } from 'config';
 
 import highlightTheme from 'css/solarized-light.css';
 import generalStyles from 'css/styles.css';
@@ -38,7 +39,6 @@ const buster = now.getTime();
 export default class HTML extends React.Component {
   render() {
     const buildMode = Boolean(this.props.body);
-    const config = this.props.config;
 
     const { domainPiwik, domainCDN, favicon, domain } = config || {};
     const title = this.props.title || DocumentTitle.rewind();
@@ -50,7 +50,7 @@ export default class HTML extends React.Component {
     const encodedPath = encodeURIComponent(domain + path);
 
     const piwikSetup = buildPiwikSetup({domainCDN, domainPiwik});
-    const bundle = <script async defer src={link('/bundle.js?t=' + buster)} />;
+    const bundle = <script async defer src={prefixLink('/bundle.js?t=' + buster)} />;
     let js = bundle;
     if (buildMode && config.noProductionJavascript) {
       js = null;

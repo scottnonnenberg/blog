@@ -7,7 +7,7 @@ A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 Generate files to `public/` folder:
 
 ```bash
-gatby build
+npm run build
 ```
 
 ## Development
@@ -15,7 +15,7 @@ gatby build
 Start server with hot reload at port 8000:
 
 ```bash
-gatsby develop
+npm run develop
 ```
 
-*Note: new files will not be picked up; you'll need to restart `gatsby`*
+*Note: new files will not be picked up; you'll need to restart the process.*

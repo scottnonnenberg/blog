@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import DocumentTitle from 'react-document-title';
 
 import map from 'lodash/map';
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import getPosts from 'utils/getPosts';
 import { rhythm } from 'utils/typography';
@@ -41,8 +41,8 @@ export default class Index extends React.Component {
             }}
           />
           <ol className='menu'>
-            <li><Link to={link('/popular/')}>Popular Posts</Link></li>
-            <li><Link to={link('/tags/')}>Tags</Link></li>
+            <li><Link to={prefixLink('/popular/')}>Popular Posts</Link></li>
+            <li><Link to={prefixLink('/tags/')}>Tags</Link></li>
             <li><a href="https://scottnonnenberg.com">About Me</a></li>
             <li>
               <a href="/rss.xml" target="_blank">RSS</a>/<a href="/atom.xml" target="_blank">Atom</a>

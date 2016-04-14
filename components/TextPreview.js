@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import prune from 'underscore.string/prune';
 
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
@@ -22,14 +22,14 @@ export default class TextPreview extends React.Component {
           marginBottom: rhythm(1/4)
         }}
       >
-        <Link to={link(post.path)}>
+        <Link to={prefixLink(post.path)}>
           {post.data.title}
         </Link>
         <span className="date">
           {' ' + shortDate(post.data.date)}
         </span>
       </h3>
-      <p>{body} <Link to={link(post.path)}>Read more&nbsp;»</Link></p>
+      <p>{body} <Link to={prefixLink(post.path)}>Read more&nbsp;»</Link></p>
     </div>;
   }
 }

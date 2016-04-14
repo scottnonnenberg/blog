@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import CurrentState from 'components/CurrentState';
@@ -12,7 +12,7 @@ export default class RootTemplate extends React.Component {
   render() {
     let header;
 
-    if (this.props.location.pathname === link('/')) {
+    if (this.props.location.pathname === prefixLink('/')) {
       header = (
         <div>
           <h1
@@ -40,7 +40,7 @@ export default class RootTemplate extends React.Component {
               style={{
                 color: 'inherit'
               }}
-              to={link('/')}
+              to={prefixLink('/')}
             >
               « {config.blogTitle}
             </Link>

@@ -36,7 +36,7 @@ export default function generateMetaTags(page, config, path) {
   // TODO: og:image
   // TODO: twitter:image
 
-  if (page && page.data) {
+  if (page && page.data && page.data.body) {
     const data = page.data;
 
     const date = data.date.toJSON ? data.date.toJSON() : data.date;

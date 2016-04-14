@@ -4,7 +4,7 @@ import DocumentTitle from 'react-document-title';
 
 import map from 'lodash/map';
 import toPairs from 'lodash/toPairs';
-import { link } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import getTagCounts from 'utils/getTagCounts';
@@ -26,7 +26,7 @@ export default class TagIndex extends React.Component {
           marginBottom: rhythm(1/4)
         }}
       >
-        <Link to={link(`/tags/${tag}/`)} >{tag}</Link>
+        <Link to={prefixLink(`/tags/${tag}/`)} >{tag}</Link>
         <span
           style={{
             color: 'lightgray'
