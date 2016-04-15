@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
-import CurrentState from 'components/CurrentState';
 import { config } from 'config';
 
 import '../css/styles.css';
@@ -65,9 +64,6 @@ export default class RootTemplate extends React.Component {
           marginLeft: 'auto'
         }}
       >
-        <CurrentState state={{
-          path: this.props.location.pathname
-        }} />
         {header}
         {this.props.children}
       </div>

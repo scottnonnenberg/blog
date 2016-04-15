@@ -29,7 +29,6 @@
     "react-document-title": "2.0.1",
     "react-dom": "0.14.7",
     "react-router": "2.0.0",
-    "react-side-effect": "1.0.2",
     "toml": "2.3.0",
     "typography": "0.7.0",
     "underscore.string": "3.3.4"

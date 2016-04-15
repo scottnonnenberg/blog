@@ -5,7 +5,6 @@ import { prefixLink } from 'gatsby-helpers';
 
 import { TypographyStyle } from 'utils/typography';
 import generateMetaTags from 'utils/generateMetaTags';
-import CurrentState from 'components/CurrentState';
 import last from 'lodash/last';
 
 import { config } from 'config';
@@ -39,12 +38,11 @@ export default class HTML extends React.Component {
 
     const { domainPiwik, domainCDN, favicon, domain } = config || {};
     const title = this.props.title || DocumentTitle.rewind();
-    const state = CurrentState.rewind();
-    const path = state ? state.path : null;
+    const path = this.props.location ? this.props.location.pathname : null;
+    const encodedPath = encodeURIComponent(domain + path);
     const post = this.props.routes ? last(this.props.routes).page : null;
 
     const metaTags = generateMetaTags(post, config, path);
-    const encodedPath = encodeURIComponent(domain + path);
 
     const piwikSetup = buildPiwikSetup({domainCDN, domainPiwik});
     const bundle = <script async defer src={prefixLink(`/bundle.js?t=${buster}`)} />;
