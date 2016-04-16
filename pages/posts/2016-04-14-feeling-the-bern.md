@@ -67,7 +67,7 @@ I had never done it before, but I jumped in all the way. Here’s the gist of wh
 
 Bernie ended up getting four delegates from my precinct, and Hillary got one.
 
-The whole thing was quite an experience. It was close to home, and I saw people from my building and others I knew lived in my neighborhood. It gave me a feeling of community that I haven’t really had before living in Seattle. It was also very encouraging, because I spoke to other people who were excited too!
+The whole thing was quite an experience. It was close to home, and I saw people from my building and others I knew lived in my neighborhood. It gave me a feeling of community that I haven’t really had since moving to Seattle. It was also very encouraging, because I spoke to other people who were excited too!
 
 And that brought me to my next first...
 
@@ -75,7 +75,7 @@ And that brought me to my next first...
 
 ## First: Campaign Volunteering
 
-After all the energy at the caucus, I wanted to get involved somehow. What else could I do? For those like me, not already connected and looking to help, there is a [Bernie Sanders event map](http://map.berniesanders.com/). I found then signed up for a local event.
+After all that energy at the caucus, I wanted to get involved somehow. What else could I do? For those like me, not already connected and looking to help, there is a [Bernie Sanders event map](http://map.berniesanders.com/). I found then signed up for a local event.
 
 I’m no stranger to volunteering, but I usually keep it to manual labor: cleaning up a park, repairing a trail in the Cascades, painting a non-profit’s building. It’s a great counterpoint to my cerebral everyday work. But this time it was neither my usual manual labor nor anything involving technical skill.
 
