@@ -3,11 +3,12 @@ title: Static site generation with Gatsby.js
 date: 2016-04-19T21:06:19.300Z
 layout: post
 path: /static-site-generation-with-gatsby-js/
-next:
+next: /practical-gatsby-js/
 previous: /feeling-the-bern/
 tags:
   - reactjs
   - nodejs
+  - gatsbyjs
   - javascript
   - open-source
 ---
