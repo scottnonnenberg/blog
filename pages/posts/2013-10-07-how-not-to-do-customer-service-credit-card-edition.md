@@ -14,13 +14,13 @@ There a lot of great companies out there today using technology to build really 
 
 <div class='fold'></div>
 
-_Actually, before I get started let me complain a little about my credit card company. Okay, fair enough, they didn’t cancel my old one so I had no immediate problems. What I’m concerned about is that the only notification I got about the situation was via a non-descript envelope in the mail, which I check probably once a week. No email, no text, no phone call, nothing. And I actually don’t recall any reason given for the new card - I assume that it was because “fraudulent activity” was detected, but I’m not sure. But I suppose it could have been some sort of hacked website or something. Very strange._
+_Actually, before I get started let me complain a little about my credit card company. Okay, fair enough, they didn't cancel my old one so I had no immediate problems. What I'm concerned about is that the only notification I got about the situation was via a non-descript envelope in the mail, which I check probably once a week. No email, no text, no phone call, nothing. And I actually don't recall any reason given for the new card - I assume that it was because "fraudulent activity" was detected, but I'm not sure. But I suppose it could have been some sort of hacked website or something. Very strange._
 
-Okay, on to the resultant customer service foibles. These stories all begin after I’d already gone through the process of updating my card in a few places as purchases failed, like Amazon and Apple.
+Okay, on to the resultant customer service foibles. These stories all begin after I'd already gone through the process of updating my card in a few places as purchases failed, like Amazon and Apple.
 
 ## Car2go
 
-I’m a big fan of car2go - it’s a great compromise between driving and the bus. Check it out if you haven’t yet. :0)
+I'm a big fan of car2go - it's a great compromise between driving and the bus. Check it out if you haven't yet. :0)
 
 A couple days after using one of their tiny little blue and white cars, I get this message:
 
@@ -33,7 +33,7 @@ A couple days after using one of their tiny little blue and white cars, I get th
 > With kind regards,
 > Your car2go Team
 
-Okay, so that’s a bit general, but I’m pretty sure what happened. Something to do with my payment information. As soon as I read it I hit the car2go site and update my billing information. Later that day, I miss a bus and attempt to use car2go. Nope! The account is still locked. I start to call customer service, but a bus arrives and I’m on my way.
+Okay, so that's a bit general, but I'm pretty sure what happened. Something to do with my payment information. As soon as I read it I hit the car2go site and update my billing information. Later that day, I miss a bus and attempt to use car2go. Nope! The account is still locked. I start to call customer service, but a bus arrives and I'm on my way.
 
 Four days later, I get this message:
 
@@ -51,11 +51,11 @@ Four days later, I get this message:
 > Sincerely,
 > car2go N.A. LLC
 
-In case you’re unfamiliar with the term "[dunning](http://en.wikipedia.org/wiki/Dunning_(process))" (I wasn't), it’s another way of saying “collections.” Probably has something to do with the fact that car2go is a German company. Either way, not the best term to use with your customers. And it’s all unnecessary anyway. I had already updated my billing information on the site. Why are they still unhappy? And a $25 charge? Really?
+In case you're unfamiliar with the term "[dunning](http://en.wikipedia.org/wiki/Dunning_(process))" (I wasn't), it's another way of saying "collections." Probably has something to do with the fact that car2go is a German company. Either way, not the best term to use with your customers. And it's all unnecessary anyway. I had already updated my billing information on the site. Why are they still unhappy? And a $25 charge? Really?
 
 I immediately forward the mail to the Seattle office, with an additional note:
 
-> Hi there - I updated my credit card number on the main car2go site Thursday of last week, but I just received this collections email. I assumed that updating it on the site would fix things, but that doesn’t seem to be the case. Can you tell me what else I need to do to unlock my account?
+> Hi there - I updated my credit card number on the main car2go site Thursday of last week, but I just received this collections email. I assumed that updating it on the site would fix things, but that doesn't seem to be the case. Can you tell me what else I need to do to unlock my account?
 >
 > _Scott
 
@@ -63,13 +63,13 @@ Never got a response to this, but my account was reactivated. I was able to use 
 
 ## Seattle ORCA card
 
-Seattle installed card readers in all their public transit a few years ago, allowing you to put money on their new “One Regional Card for All” (ORCA) cards. And you could even attach a credit card to them so when you got below a given balance, it would automatically charge the card for a refill amount you specify. A nice little convenient system.
+Seattle installed card readers in all their public transit a few years ago, allowing you to put money on their new "One Regional Card for All" (ORCA) cards. And you could even attach a credit card to them so when you got below a given balance, it would automatically charge the card for a refill amount you specify. A nice little convenient system.
 
-So, I’m happily using my card for the occasional bus trip when I get this email:
+So, I'm happily using my card for the occasional bus trip when I get this email:
 
 > Dear Customer:
 >
-> We’re sorry, the Autoload associated with your ORCA card(s) has been cancelled because payment from your bank was declined.
+> We're sorry, the Autoload associated with your ORCA card(s) has been cancelled because payment from your bank was declined.
 >
 > For E-Purse or Pass Autoload (not King County Metro Access pass):
 >
@@ -91,35 +91,35 @@ So, I’m happily using my card for the occasional bus trip when I get this emai
 > Thank you.
 > ORCA Regional Autoload Management Office
 
-Wow, that’s a lot to absorb. And there’s a lot of distracting text at the bottom, since I don’t have the King County Metro Access Pass. It’s too bad, too, because those folks “do not need to contact us unless you need help or have questions.” I’ll actually have to pick up the phone.
+Wow, that's a lot to absorb. And there's a lot of distracting text at the bottom, since I don't have the King County Metro Access Pass. It's too bad, too, because those folks "do not need to contact us unless you need help or have questions." I'll actually have to pick up the phone.
 
 First I check out what the ORCA card website says about my account - it looks like I have no autoload, so I set up a new one with my new credit card. That should just solve the problem, right?
 
-To be sure, I make the call, talk to them, and find out that I have to physically mail a check to them; my new settings will work going forward, but they can’t use that information to cover my failed charge. And, it seems, they’re just about as frustrated about that in their office, where they handle all this stuff manually, as I am. So I get out the rarely-used forever stamps and send the check.
+To be sure, I make the call, talk to them, and find out that I have to physically mail a check to them; my new settings will work going forward, but they can't use that information to cover my failed charge. And, it seems, they're just about as frustrated about that in their office, where they handle all this stuff manually, as I am. So I get out the rarely-used forever stamps and send the check.
 
-In the couple years I’ve had an ORCA card, I’ve actually had to go through this check-sending process twice. It hasn’t gotten better. But I feel pretty proud that I did catch it once before a failed charge required a check to be sent. And yes, I still have autoload set up even today…
+In the couple years I've had an ORCA card, I've actually had to go through this check-sending process twice. It hasn't gotten better. But I feel pretty proud that I did catch it once before a failed charge required a check to be sent. And yes, I still have autoload set up even today…
 
 ## Redbox
 
 I like redbox. I use it primarily because Netflix selection is weak and I have a few redboxes within easy walking distance. :0)
 
-So, as usual, I’m out to dinner and I open the app and reserve Jack the Giant Slayer, mindlessly clicking through things until I had everything reserved. And then it hit me - I don’t have that old credit card in my hand anymore, so I can’t just scan the card and pick it up like usual… Maybe I could change it?
+So, as usual, I'm out to dinner and I open the app and reserve Jack the Giant Slayer, mindlessly clicking through things until I had everything reserved. And then it hit me - I don't have that old credit card in my hand anymore, so I can't just scan the card and pick it up like usual… Maybe I could change it?
 
 So I use the app to add my new credit card and attempt to change the previous reservation. No dice.
 
-Later, at the machine, I try the new credit card in the machine, and it doesn’t find anything.
+Later, at the machine, I try the new credit card in the machine, and it doesn't find anything.
 
-I look to see if there are any more of Jack the Giant Slayer in stock at this location, and the answer is no. So I try to cancel the previous reservation, and I can’t do that.
+I look to see if there are any more of Jack the Giant Slayer in stock at this location, and the answer is no. So I try to cancel the previous reservation, and I can't do that.
 
 I start trying to call support over this $1.29 movie, and while I wait I try to reserve the movie at a different location with my new credit card, and I get this, the coup de grace:
 
 ![Redbox already rented message](https://static.sinap.ps/blog/2014/Feb/Redbox_already_rented-1.png)
 
-_NO! It’s NOT available for me at the location I chose! That’s why I’m trying to reserve it again! I’m not stupid!_
+_NO! It's NOT available for me at the location I chose! That's why I'm trying to reserve it again! I'm not stupid!_
 
 At this point my girlfriend starts trying to calm me down. I breathe deeply. Zen! I hang up on the customer service call, and we sit down for a drink.
 
-On our way home she walks up to a different machine with it in stock and rents it with her credit card, no account required. Definitely points for redbox convenience there. And the movie wasn’t completely horrible either.
+On our way home she walks up to a different machine with it in stock and rents it with her credit card, no account required. Definitely points for redbox convenience there. And the movie wasn't completely horrible either.
 
 ## So, what can we learn?
 

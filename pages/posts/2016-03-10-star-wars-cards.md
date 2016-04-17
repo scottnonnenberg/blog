@@ -12,7 +12,7 @@ tags:
 
 ![Luke and Vader](https://static.sinap.ps/blog/2016/03_mar/star_wars/cards.jpg)
 
-It might surprise you to hear that I was obsessed with Star Wars when I was young. But it’ll probably surprise you more that in 2015 I delved into the world of Ebay collectibles and rebuilt my collection of [*Star Wars: Customizable Card Game (SW:CCG)*](https://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game) cards. Especially since the game hasn’t been in print since 2001!
+It might surprise you to hear that I was obsessed with Star Wars when I was young. But it'll probably surprise you more that in 2015 I delved into the world of Ebay collectibles and rebuilt my collection of [*Star Wars: Customizable Card Game (SW:CCG)*](https://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game) cards. Especially since the game hasn't been in print since 2001!
 
 <div class='fold'></div>
 
@@ -30,7 +30,7 @@ Why? Because *Magic* was too focused on demons, death and destruction: it seemed
 
 ## The rise of SW:CCG
 
-In December 1995, [Decipher](https://en.wikipedia.org/wiki/Decipher,_Inc.) released the first *Star Wars: Customizable Card Game* set, based on first first movie of the original trilogy. I didn’t hear about it directly - I discovered the cards in a friend’s hands after our holiday break in January 1996. He had great parents. They bought him some packs for Christmas.
+In December 1995, [Decipher](https://en.wikipedia.org/wiki/Decipher,_Inc.) released the first *Star Wars: Customizable Card Game* set, based on first first movie of the original trilogy. I didn't hear about it directly - I discovered the cards in a friend's hands after our holiday break in January 1996. He had great parents. They bought him some packs for Christmas.
 
 My group of friends and I jumped in with him, and we all started building our decks. One deck of exactly 60 cards for the light side, and another for the dark side. Unlike *Magic*, games were always good against evil, and it was hard to include more than two people in one game. No matter; I had a lot of fun thinking through strategies, building decks, and playing games!
 
@@ -38,11 +38,11 @@ My group of friends and I jumped in with him, and we all started building our de
 
 ## The fall of SW:CCG
 
-It finally dawned on me, after the fourth set was released in April 1997, that I couldn’t stay on the treadmill. A lot of my friends had started to jump off already, but I needed hard proof that my hobby wasn’t good for me. The fourth set’s powerful cards and smaller pack sizes made it clear that each new set would overshadow cards from previous sets. And if I was going to continue to play (and have a chance at winning), I would be squeezed for money I didn’t really have.
+It finally dawned on me, after the fourth set was released in April 1997, that I couldn't stay on the treadmill. A lot of my friends had started to jump off already, but I needed hard proof that my hobby wasn't good for me. The fourth set's powerful cards and smaller pack sizes made it clear that each new set would overshadow cards from previous sets. And if I was going to continue to play (and have a chance at winning), I would be squeezed for money I didn't really have.
 
 Thus, I sold all my cards. It was a sad but necessary day. Happily, I was able to channel that analytical energy into programming (with Pascal, then) and proto-blogging (with hand-edited HTML via [notepad.exe](https://en.wikipedia.org/wiki/Notepad_(software))). The beginning of a lifelong obsession with software!
 
-In college, I bought some *Magic* cards and played them with friends, calling the effort *Socialist™ Magic®*. I took my lesson about the arms-race of commercial collectible card games to heart, building a shared set of cards my friends and I could play from. We had lots of fun, occasionally heading to the local comics/games shop to buy new cards we could all use. But I’d still look over to the new Star Wars cards sets wistfully, knowing that I didn’t have the money to jump back in.
+In college, I bought some *Magic* cards and played them with friends, calling the effort *Socialist™ Magic®*. I took my lesson about the arms-race of commercial collectible card games to heart, building a shared set of cards my friends and I could play from. We had lots of fun, occasionally heading to the local comics/games shop to buy new cards we could all use. But I'd still look over to the new Star Wars cards sets wistfully, knowing that I didn't have the money to jump back in.
 
 In 2001, unbeknownst to me, Decipher lost their contract to produce *Star Wars: Customizable Card Game*. During that final year, they produced a number of last-minute, inadequately-tested sets, some based on the new prequel trilogy. And then the game was officially dead.
 
@@ -52,7 +52,7 @@ In 2001, unbeknownst to me, Decipher lost their contract to produce *Star Wars: 
 
 Cut to early 2015. After many game nights, I had realized that I really enjoyed serious board games, like [*Betrayal at House on the Hill*](https://boardgamegeek.com/boardgame/10547/betrayal-house-hill) and [*Scoville*](https://boardgamegeek.com/boardgame/145659/scoville). All the little details, the strategies, the competition or cooperation. And the novelty: no game was ever the same, due to randomness. *Betrayal* has 50 different scenarios which can happen after its mid-game 'haunting.'
 
-At the same time, I was reading [*The more beautiful world our hearts know is possible*](/four-books-for-greater-understanding/#the-more-beautiful-world-our-hearts-know-is-possible-2013). It brought up the point that you don’t need an underlying principle for everything you do. It was a new idea for me, because I’m a pretty driven guy. Most things I do can be traced to some sort of self-improvement, or desire for excellence: fitness, nutrition, programming, non-fiction books, reading about various causes, etc. I was inspired to do something not connected to any principle.
+At the same time, I was reading [*The more beautiful world our hearts know is possible*](/four-books-for-greater-understanding/#the-more-beautiful-world-our-hearts-know-is-possible-2013). It brought up the point that you don't need an underlying principle for everything you do. It was a new idea for me, because I'm a pretty driven guy. Most things I do can be traced to some sort of self-improvement, or desire for excellence: fitness, nutrition, programming, non-fiction books, reading about various causes, etc. I was inspired to do something not connected to any principle.
 
 And it just so happened I was in the middle of an ancient data cleanup. Old file formats, like [*Ami Pro*](https://en.wikipedia.org/wiki/Am%C3%AD) school assignments from Elementary School and Junior high. Scanned, high-resolution images from High School in [*PaintShop Pro*](https://en.wikipedia.org/wiki/PaintShop_Pro) format. And then I found the *SW:CCG* card lists and deck ideas, a few saved images of the cards.
 
@@ -64,13 +64,13 @@ To the internet!
 
 ## Out-of-print collectibles
 
-I didn’t expect to find much. Surprisingly, I did find a [reasonably large group of people playing with printed overlays on top of their old cards](http://www.starwarsccg.org/). But you had to have the cards. So I continued my search: old and new card-specific [shops](http://www.ccgobsession.com/product_set.php?pi=8), [databases](http://swccg.polarhaven.net/), and [articles](http://kotaku.com/the-best-card-game-i-ever-played-died-13-years-ago-1626118464).
+I didn't expect to find much. Surprisingly, I did find a [reasonably large group of people playing with printed overlays on top of their old cards](http://www.starwarsccg.org/). But you had to have the cards. So I continued my search: old and new card-specific [shops](http://www.ccgobsession.com/product_set.php?pi=8), [databases](http://swccg.polarhaven.net/), and [articles](http://kotaku.com/the-best-card-game-i-ever-played-died-13-years-ago-1626118464).
 
-After getting an initial feel for the space, I decided that my best option for jumping in was a large set of random cards. [*Category One Games*](http://www.categoryonegames.com/) does brisk business in single cards and comprehensive sets, but [their large grab bags](http://www.categoryonegames.com/products/search?q=star+wars+grab+bag) seemed to be a good deal. The per-card price couldn’t be beat. In short order I had about 7,500 cards on their way to me. A heavy box.
+After getting an initial feel for the space, I decided that my best option for jumping in was a large set of random cards. [*Category One Games*](http://www.categoryonegames.com/) does brisk business in single cards and comprehensive sets, but [their large grab bags](http://www.categoryonegames.com/products/search?q=star+wars+grab+bag) seemed to be a good deal. The per-card price couldn't be beat. In short order I had about 7,500 cards on their way to me. A heavy box.
 
-But I was in the zone, and I couldn’t stop. I dipped my toe into the dangerous waters of Ebay collectibles, and [found lots and lots of cards for sale](http://www.ebay.com/sch/i.html?_nkw=star+wars+ccg). It wasn’t just single cards. It was total randomness, lots of unknown provenance. And it was also complete, mint or near-mint sets. Basically, what I dreamed of having when I was in High School: the full, pristine, binder, with no empty spaces.
+But I was in the zone, and I couldn't stop. I dipped my toe into the dangerous waters of Ebay collectibles, and [found lots and lots of cards for sale](http://www.ebay.com/sch/i.html?_nkw=star+wars+ccg). It wasn't just single cards. It was total randomness, lots of unknown provenance. And it was also complete, mint or near-mint sets. Basically, what I dreamed of having when I was in High School: the full, pristine, binder, with no empty spaces.
 
-It became clear, as I searched, that all of the cards I was interested in were actually available. I was surprised! Cards spanning the entire original trilogy: A New Hope to Death Star II. But I didn’t know if it would last. I sprang into action.
+It became clear, as I searched, that all of the cards I was interested in were actually available. I was surprised! Cards spanning the entire original trilogy: A New Hope to Death Star II. But I didn't know if it would last. I sprang into action.
 
 In the span of 5 days, I had done it. Careful research and comparison, heart-poundingly last-minute auctions and comparatively calm Buy It Now clicks. Sometimes the loss of an auction was good - the price had gone above a comparable Buy It Now price.
 
@@ -82,7 +82,7 @@ Now it was time to sit back and wait. One of every card produced between 1995 an
 
 As the shipments arrived, I categorized, sorted, and inventoried. It came out to just over 11,000 cards total. So many hours of staring at the cards. Such meditative. Very Jedi. Exactly what I was looking for!
 
-This wasn’t 1995, so my inventory is in the form of a spreadsheet, seeded with [comprehensive card data](http://www.starwarsccg.org/forums/viewtopic.php?f=188&t=54610) (rarity, stats, text, etc.). So much easier than simple text files with the card names! Just the ability to resort on various traits saved me a huge amount of time - every complete set came in a different sort order.
+This wasn't 1995, so my inventory is in the form of a spreadsheet, seeded with [comprehensive card data](http://www.starwarsccg.org/forums/viewtopic.php?f=188&t=54610) (rarity, stats, text, etc.). So much easier than simple text files with the card names! Just the ability to resort on various traits saved me a huge amount of time - every complete set came in a different sort order.
 
 ![Finally, organized binders!](https://static.sinap.ps/blog/2016/03_mar/star_wars/binders.jpg)
 
@@ -95,13 +95,13 @@ And of course that got me thinking. I do want to find cards all sorts of ways. T
 * Generate a pack, given an original set, based on the original probabilities.
 * Given a deck, generate key stats.
 
-And then it got serious. I realized that I wanted to know, if I was looking at a card that said "All Rogue Squadron pilots," I wanted to see those cards. Without doing a bunch of manual research. And so, I started building a tool for card exploration and deck building. It’s kinda there, but it’s been on hold for a while. I intend to get it useable in the next few months.
+And then it got serious. I realized that I wanted to know, if I was looking at a card that said "All Rogue Squadron pilots," I wanted to see those cards. Without doing a bunch of manual research. And so, I started building a tool for card exploration and deck building. It's kinda there, but it's been on hold for a while. I intend to get it useable in the next few months.
 
 ## Playing
 
-No, I didn’t just buy this stuff to have it, organize it, geek out about it. I want to play too! I’ve had to jump-start my own little community, roping friends in, starting from square one. And I’m always looking for more! It’s a satisfyingly complex game, so I have some basic trainer decks ready at all times.
+No, I didn't just buy this stuff to have it, organize it, geek out about it. I want to play too! I've had to jump-start my own little community, roping friends in, starting from square one. And I'm always looking for more! It's a satisfyingly complex game, so I have some basic trainer decks ready at all times.
 
-Let me know if you’re interested!
+Let me know if you're interested!
 
 ---
 
@@ -123,7 +123,7 @@ Resources:
   * http://starwars.wikia.com/wiki/Category:Star_Wars_Customizable_Card_Game
   * https://boardgamegeek.com/article/12513722#12513722
   * http://www.categoryonegames.com/catalog/star_wars_ccg/309
-* Comprehensive collector’s guide: http://www.starwarsccg.org/wp/wp-content/uploads/Collecting-Encyclopedia-2.pdf
+* Comprehensive collector's guide: http://www.starwarsccg.org/wp/wp-content/uploads/Collecting-Encyclopedia-2.pdf
 * Shops:
   * http://www.categoryonegames.com/catalog/star_wars_ccg/309
   * https://ccgcastle.com/product/star-wars-ccg
@@ -133,4 +133,4 @@ Resources:
 * Categories on Ebay:
   * "Decipher (CCG) Star Wars Trading Cards" http://www.ebay.com/sch/Decipher-CCG-/84619/i.html
   * "Other Star Wars Card Sets" http://www.ebay.com/sch/Other-/99985/i.html
-  * Search for ‘star wars ccg’
+  * Search for 'star wars ccg'

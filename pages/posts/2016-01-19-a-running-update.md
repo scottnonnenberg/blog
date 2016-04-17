@@ -12,7 +12,7 @@ tags:
   - data
 ---
 
-It’s hard to believe that it has been 16 months since my [last post on running](/learning-limits-post-injury-running/). I’m sure the suspense has been killing you since then! What has changed? What stayed the same?
+It's hard to believe that it has been 16 months since my [last post on running](/learning-limits-post-injury-running/). I'm sure the suspense has been killing you since then! What has changed? What stayed the same?
 
 <div class='fold'></div>
 
@@ -30,11 +30,11 @@ After over a year of fully on or fully off running, I finally figured out how to
 
 <a class="plain" href="https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png"><img src="https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png" alt="all runs since last post, X = time, Y = distance"></a>
 
-Before we dig into the natural changes in my running since September 2014, let’s cover some the empty and sparse spots that did persist:
+Before we dig into the natural changes in my running since September 2014, let's cover some the empty and sparse spots that did persist:
 
 * **Early October to late November 2014** - The fall in Seattle means cold, dark, raininess. And I was feeling pretty low energy, with people sick around me. I took time off from running to try to avoid sickness, but still ended up getting it. Then I took more time off for recovery.
-* **Jan 2015** - I was increasing distances naturally, all the way up to ~3 miles. I didn’t take a long break here, but I did move back to shorter runs to speed recovery from another bout of sickness.
-* **Mid-June 2015** - The runs get less frequent here, due to unusual heat in Seattle. I loved the warm weather, but it did make running less attractive: I’ve got no air conditioning to help cool down afterwards. I finally started trying to run earlier in the day to take advantage of cooler temperatures.
+* **Jan 2015** - I was increasing distances naturally, all the way up to ~3 miles. I didn't take a long break here, but I did move back to shorter runs to speed recovery from another bout of sickness.
+* **Mid-June 2015** - The runs get less frequent here, due to unusual heat in Seattle. I loved the warm weather, but it did make running less attractive: I've got no air conditioning to help cool down afterwards. I finally started trying to run earlier in the day to take advantage of cooler temperatures.
 * **Mid-September 2015** - The rainy, colder weather once more arrives in Seattle, I explicitly decide to mix up my distances. I relaxed my exercise rotation a bit: instead of my standard rigid 'every four days' run schedule, the plan was to run three times every two weeks.
 
 I think this is a clear improvement over the previous months. Just one long break, and no running injuries.
@@ -43,7 +43,7 @@ I think this is a clear improvement over the previous months. Just one long brea
 
 <a class="plain" href="https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png"><img src="https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png" alt="all runs since injury, X = time, Y = pace"></a>
 
-There was no clear trend on my run distances over the course of the year, but there was a clear trend in pace. I’ve generally been trending downward since March 2013. A nice surprise. Evidence that I'm doing something right.
+There was no clear trend on my run distances over the course of the year, but there was a clear trend in pace. I've generally been trending downward since March 2013. A nice surprise. Evidence that I'm doing something right.
 
 ## Overall averages
 
@@ -79,12 +79,12 @@ There was no clear trend on my run distances over the course of the year, but th
 </table>
 
 * **Pace** - In 2013 I was trying too hard. In 2014 I relaxed and good things happened.
-* **Frequency** - It’s amazing that, without planning it at all, I ended up running the same number of times in 2014 and 2015.
+* **Frequency** - It's amazing that, without planning it at all, I ended up running the same number of times in 2014 and 2015.
 * **Mileage** - Just looking at the total run count you might think that 2014 and 2015 were quite similar. Overall mileage shows that I ran quite a bit further.
 * **Time** - Total time spent running each year. 2015 again higher, but not 25% higher like distance. The faster running pace was a more efficient use of time!
 
 ## Contentment
 
-No matter how you slice it, I’m feeling good about 2015. The key really seems to be to relax. If numbers go down in 2016, I’m fine with that. In that vein, I’m taking a break from working out right now, while most are out on the streets in force due to their New Year’s Resolutions.
+No matter how you slice it, I'm feeling good about 2015. The key really seems to be to relax. If numbers go down in 2016, I'm fine with that. In that vein, I'm taking a break from working out right now, while most are out on the streets in force due to their New Year's Resolutions.
 
-One thing is for sure: I’ll keep collecting the data and running in my sandals.
+One thing is for sure: I'll keep collecting the data and running in my sandals.

@@ -15,9 +15,9 @@ tags:
 
 ![Social Security Administration Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
 
-If you’re a frequent visitor at [gammacorvi.com](https://gammacorvi.com/) (and of course you should be), you may have noticed an unusual entry under the [Clients heading](https://gammacorvi.com/#clients): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
+If you're a frequent visitor at [gammacorvi.com](https://gammacorvi.com/) (and of course you should be), you may have noticed an unusual entry under the [Clients heading](https://gammacorvi.com/#clients): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
 
-It was quite a bit different from recent contracts, because I didn’t write any code. I was simply there for knowledge transfer, via three primary tools:
+It was quite a bit different from recent contracts, because I didn't write any code. I was simply there for knowledge transfer, via three primary tools:
 
 1. Hands-on classroom training
 2. Pair/mob programming
@@ -27,7 +27,7 @@ It was quite a bit different from recent contracts, because I didn’t write any
 
 ## Node.js? SSA? What??
 
-Before we jump into what I did for them, you’re probably a bit surprised. Why is the SSA interested in using new open-source technology when they’ve been using other technologies for so long? The answer is [The United States Digital Service](https://www.whitehouse.gov/digital/united-states-digital-service) (USDS). In their words, USDS is:
+Before we jump into what I did for them, you're probably a bit surprised. Why is the SSA interested in using new open-source technology when they've been using other technologies for so long? The answer is [The United States Digital Service](https://www.whitehouse.gov/digital/united-states-digital-service) (USDS). In their words, USDS is:
 
 > "Teams of problem solvers making government services simple, effective, and efficient."
 
@@ -39,7 +39,7 @@ With the decision to use Node.js made but few resources of their own, USDS neede
 
 ## 1. Hands-on classroom training
 
-I was surprised when they asked for actual classroom training. I can point to any number of problems with the standard classroom training approach, but that actually makes me a better teacher. The classroom isn’t such a bad place, really - it does actually give you the opportunity to support most [learning styles](https://en.wikipedia.org/wiki/Learning_styles).
+I was surprised when they asked for actual classroom training. I can point to any number of problems with the standard classroom training approach, but that actually makes me a better teacher. The classroom isn't such a bad place, really - it does actually give you the opportunity to support most [learning styles](https://en.wikipedia.org/wiki/Learning_styles).
 
 My classroom technique focuses on exercises. Most of the 15 modules we covered over the three days included just a little bit of lecture, and a lot of tasks to be done individually. A student could completely ignore my lecture and just use the materials I prepared beforehand, following the instructions in the readme. These standalone-ready assets will be useful for the SSA going forward, as more developers will likely need to learn about Node.js over the coming years.
 
@@ -53,7 +53,7 @@ My goal was to get developers familiar with standard tools and approaches, confi
 
 Once the classroom time was complete, I worked with the dev team to start developing real features on their pilot project. A few times early on it was me and another developer pair programming a feature, the developer with hands on the keyboard. But we quickly settled into a rhythm: a bigger room with a large screen on the wall, one person on the keyboard, and a whole group of us watching and giving advice. This is usually called mob programming. It made sense; with more people in the room, more could learn from my guidance.
 
-The shift in focus to real development of features changed the tone; these weren’t toy examples anymore. The energy in the room was far higher, since was how they’d be doing things going forward: create a branch in git, write tests first, write production-quality code, then submit a pull request. No doubt about it, getting good at this process would pay big dividends.
+The shift in focus to real development of features changed the tone; these weren't toy examples anymore. The energy in the room was far higher, since was how they'd be doing things going forward: create a branch in git, write tests first, write production-quality code, then submit a pull request. No doubt about it, getting good at this process would pay big dividends.
 
 That is why I prefer this kind of learning, in the process of developing new features, on an as-needed basis. In contrast to predefined curriculum and purely illustrative tasks, there is no doubt as to whether the material will be useful in the future.
 
@@ -65,21 +65,21 @@ I surfed the energy level, constantly trying to keep developers at that edge whe
 
 SSA also asked me to address a wider audience to help build awareness about Node.js. One team had decided to pilot a project with it, perhaps other groups might also be interested?
 
-With this hour-long talk, my goal was to speak in a language that my audience understood. Happily, I’ve long been able to bridge the gap between the business and technical side. At Microsoft I was a Program Manager, doing this very thing. It’s one of the reasons my contracts generally go well: successful communication.
+With this hour-long talk, my goal was to speak in a language that my audience understood. Happily, I've long been able to bridge the gap between the business and technical side. At Microsoft I was a Program Manager, doing this very thing. It's one of the reasons my contracts generally go well: successful communication.
 
 In this case, my audience was high-level technology leaders. I started from the beginning - what are the actual components that make up Node.js, why is it special, and what is the value can it provide to an organization. Demos are always crowd-pleasers, so I did a quick live-code to show off asynchronous vs synchronous code, then the minimal code required to build an API producing data from a database.
 
-This lead to a healthy Q&A session. I noticed a clear trend in the questions I got from people who were encountering Node.js for the first time. They were looking for direct replacements for current tools. I’d get questions like "How do I do distributed transactions?" or “How do I connect it to an enterprise configuration server?” My goal with these questions was to break it down, get down to the specific scenario. Distributed transactions help you solve a set of problems. But what’s actual problem? Transactional database updates then hit another service on success only? That’s just basic asynchronous Node.js code and support for database transactions. No fancy library required.
+This lead to a healthy Q&A session. I noticed a clear trend in the questions I got from people who were encountering Node.js for the first time. They were looking for direct replacements for current tools. I'd get questions like "How do I do distributed transactions?" or "How do I connect it to an enterprise configuration server?" My goal with these questions was to break it down, get down to the specific scenario. Distributed transactions help you solve a set of problems. But what's actual problem? Transactional database updates then hit another service on success only? That's just basic asynchronous Node.js code and support for database transactions. No fancy library required.
 
 ## ![SSA parking lot](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-parking-lot.jpg)
 
 ## The result?
 
-Let’s start with some quotes from their developers:
+Let's start with some quotes from their developers:
 
-> "That’s the best training I’ve ever been to"
+> "That's the best training I've ever been to"
 
->“I realized how much we didn’t know”
+>"I realized how much we didn't know"
 
 I was brought in to help prepare them for a new project just starting up. That project still has aggressive goals and deadlines, and they still have a lot to learn. You can only learn so much in three weeks. But they know now what they should know, have materials to help them learn it, and have a new confidence that was missing before I arrived.
 
