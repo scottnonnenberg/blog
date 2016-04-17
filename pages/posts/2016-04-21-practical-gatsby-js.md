@@ -21,7 +21,7 @@ So you want to use [React.js](https://facebook.github.io/react/) to build your s
 
 You probably started with the [Gatsby Blog Starter Kit](https://github.com/gatsbyjs/gatsby-starter-blog). It puts each entry in its own directory, but that's not at all required. It would be equivalent to name each markdown file with the path you'd like.
 
-But really, you probably don't want your project directory structure dictated by the URLs you'd like to surface to the web. That's where the `path` [_frontmatter_](https://jekyllrb.com/docs/frontmatter/) property comes in. You can give a file whatever URL you want!
+But really, you probably don't want your project directory structure dictated by the URLs you'd like to surface to the web. That's where the `path` [_frontmatter_](https://jekyllrb.com/docs/frontmatter/) property comes in. You can give a file whatever URL you want! The only real requirement is that it's a file Gatsby understands under the `pages` directory.
 
 ## Upgrades
 
