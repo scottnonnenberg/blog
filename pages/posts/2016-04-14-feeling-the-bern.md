@@ -105,10 +105,10 @@ His successes are good for policies, yes, but it’s also bringing communities t
 
 Resources:
 
-* Bernie on the issues: [https://berniesanders.com/issues/](https://berniesanders.com/issues/)
-* A map of Bernie volunteer events: [http://map.berniesanders.com/](http://map.berniesanders.com/)
-* More on phonebanking for Bernie: [https://go.berniesanders.com/page/content/phonebank](https://go.berniesanders.com/page/content/phonebank)
-* Bernie Sanders profile in The Atlantic: [http://www.theatlantic.com/politics/archive/2015/10/bernie-sanders-mayor/407413/](http://www.theatlantic.com/politics/archive/2015/10/bernie-sanders-mayor/407413/)
-* Digging into Bernie vs. Hillary: [https://medium.com/life-tips/the-one-piece-of-writing-every-hillary-supporter-should-read-6ded898f9613#.h2zve1ofm](https://medium.com/life-tips/the-one-piece-of-writing-every-hillary-supporter-should-read-6ded898f9613#.h2zve1ofm)
-* How wrong this article about this presidential race was! No Jeb, and Bernie is a real contender. [http://socialistworker.org/2015/05/05/problem-bernie-sanders](http://socialistworker.org/2015/05/05/problem-bernie-sanders)
+* Bernie on the issues: https://berniesanders.com/issues/
+* A map of Bernie volunteer events: http://map.berniesanders.com/
+* More on phonebanking for Bernie: https://go.berniesanders.com/page/content/phonebank
+* Bernie Sanders profile in The Atlantic: http://www.theatlantic.com/politics/archive/2015/10/bernie-sanders-mayor/407413/
+* Digging into Bernie vs. Hillary: https://medium.com/life-tips/the-one-piece-of-writing-every-hillary-supporter-should-read-6ded898f9613#.h2zve1ofm
+* How wrong this article about this presidential race was! No Jeb, and Bernie is a real contender. http://socialistworker.org/2015/05/05/problem-bernie-sanders
 
