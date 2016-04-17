@@ -18,7 +18,8 @@
     "generate-tags": "babel-node scripts/generate_tags.js",
     "update-rankings": "babel-node scripts/update_rankings.js",
     "simplify-links": "babel-node scripts/simplify_links.js",
-    "make-post": "babel-node scripts/make_post.js"
+    "make-post": "babel-node scripts/make_post.js",
+    "remove-smart-quotes": "babel-node scripts/remove_smart_quotes.js"
   },
 
   "dependencies": {
