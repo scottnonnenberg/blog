@@ -17,7 +17,10 @@ const title = process.argv[2];
 const titleSlug = _string.slugify(title);
 const postPath = `/${titleSlug}/`;
 
-const posts = loadPosts();
+const posts = loadPosts({
+  limit: 1,
+  markdown: false
+});
 const previous = posts[0];
 const previousPath = previous.data.path;
 

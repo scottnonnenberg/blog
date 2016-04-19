@@ -6,7 +6,9 @@ import _ from 'lodash';
 import loadPosts from '../utils/loadPosts';
 
 
-const posts = loadPosts();
+const posts = loadPosts({
+  markdown: false
+});
 
 var lookup = Object.create(null);
 _.forEach(posts, function(post) {

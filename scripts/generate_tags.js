@@ -7,7 +7,9 @@ import loadPosts from '../utils/loadPosts';
 import getTagCounts from '../utils/getTagCounts';
 
 
-const posts = loadPosts();
+const posts = loadPosts({
+  markdown: false
+});
 const counts = getTagCounts(posts);
 
 console.log(counts);

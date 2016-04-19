@@ -4,10 +4,14 @@ import _ from 'lodash';
 
 import loadPosts from '../utils/loadPosts';
 
-const posts = loadPosts();
+const limit = parseInt(process.argv[2]) || 1;
+const posts = loadPosts({
+  limit,
+  markdown: false
+});
 
 _.forEach(posts, function(post) {
-  // console.log('checking', url);
+  console.log('checking', post.path);
 
   const dupeLink = /\[([^\)]+)\]\(\1\)/g;
   const contents = post.contents.replace(dupeLink, function(full, substring) {
