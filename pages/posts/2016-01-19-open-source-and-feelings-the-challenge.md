@@ -12,7 +12,7 @@ tags:
   - software
 ---
 
-<a class='plain' href='https://twitter.com/r343l/status/650412701059956736'><img src='https://static.sinap.ps/blog/2016/01_jan/osfeels_challenge/bathroom.jpg' alt='thanks to @r343l'></a>
+<a class="plain" href="https://twitter.com/r343l/status/650412701059956736"><img src="https://static.sinap.ps/blog/2016/01_jan/osfeels_challenge/bathroom.jpg" alt="thanks to @r343l"></a>
 
 [Open Source and Feelings, last October](http://osfeels.com/), was a great conference. My previous post about it, [The Awesome](/open-source-and-feelings-the-awesome/), covers the good parts. But I also want to talk about the hard parts. Because the feelings in question at the conference weren’t all warm and fuzzy.
 

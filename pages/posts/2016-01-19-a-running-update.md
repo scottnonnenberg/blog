@@ -18,7 +18,7 @@ It’s hard to believe that it has been 16 months since my [last post on running
 
 ## Consistency
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png'><img src='https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png' alt='all runs since injury, X = time, Y = distance'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png"><img src="https://static.sinap.ps/blog/2016/01_jan/running/overall-distance.png" alt="all runs since injury, X = time, Y = distance"></a>
 
 In my last post, I focused on my recovery from a serious injury: [a partial left achilles tear](/injury-identity-and-non-attachment/). Each time I tried to ramp up, given my pre-injury expectations for myself, I pushed too hard. I had quite a few small injuries, and quite a few empty spots on the graph. My biggest question was: "Can I find a running schedule that will work long-term?"
 
@@ -28,7 +28,7 @@ After over a year of fully on or fully off running, I finally figured out how to
 
 ## The interruptions
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png'><img src='https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png' alt='all runs since last post, X = time, Y = distance'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png"><img src="https://static.sinap.ps/blog/2016/01_jan/running/since-last-post-distance.png" alt="all runs since last post, X = time, Y = distance"></a>
 
 Before we dig into the natural changes in my running since September 2014, let’s cover some the empty and sparse spots that did persist:
 
@@ -41,7 +41,7 @@ I think this is a clear improvement over the previous months. Just one long brea
 
 ## Changes
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png'><img src='https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png' alt='all runs since injury, X = time, Y = pace'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png"><img src="https://static.sinap.ps/blog/2016/01_jan/running/overall-pace.png" alt="all runs since injury, X = time, Y = pace"></a>
 
 There was no clear trend on my run distances over the course of the year, but there was a clear trend in pace. I’ve generally been trending downward since March 2013. A nice surprise. Evidence that I'm doing something right.
 

@@ -12,7 +12,7 @@ tags:
   - nutrition
 ---
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/02_feb/weight/weight.png'><img src='https://static.sinap.ps/blog/2016/02_feb/weight/weight.png' alt='weight 5/15/2013 to 1/20/2016, X = time, Y = weight in lbs'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png" alt="weight 5/15/2013 to 1/20/2016, X = time, Y = weight in lbs"></a>
 
 Over the past two years, my max weight was 172 lbs, and my minimum was 137 lbs. That’s a 35-pound difference. But it definitely wasn’t the standard "I’m not sure why it’s happening, and I’m out of control!" I’m very interested in health, nutrition and fitness, and these changes were due to explicit experimentation!
 
@@ -42,7 +42,7 @@ You can see the weight I gained from late July 2013 to June 2014. Yes, it was a 
 
 More importantly, I felt good! My activity levels didn’t go down. [You can see a nice progression in my run distances that fall](/learning-limits-post-injury-running/), though I did end up pushing myself too hard.
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png'><img src='https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png' alt='bodyfat 5/15/2013 to 1/20/2016, X = time, Y = bodyfat percentage'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png" alt="bodyfat 5/15/2013 to 1/20/2016, X = time, Y = bodyfat percentage"></a>
 
 ## Acupuncture
 
@@ -76,7 +76,7 @@ Barley is [full of important nutrients](https://medium.com/war-is-boring/eating-
 
 My goal is balance: health and a strong metabolism.
 
-<a class='plain' href='https://static.sinap.ps/blog/2016/02_feb/weight/regression.png'><img src='https://static.sinap.ps/blog/2016/02_feb/weight/regression.png' alt='scatterplot, X = bodyfat percentage, Y = weight in lbs'></a>
+<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/regression.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/regression.png" alt="scatterplot, X = bodyfat percentage, Y = weight in lbs"></a>
 
 ## A bit on the data
 
