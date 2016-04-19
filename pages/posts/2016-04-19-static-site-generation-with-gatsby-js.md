@@ -36,7 +36,7 @@ Gatsby’s production build gives you a collection of static files. It’s quite
 
 With static files you can easily serve them with minimal configuration, using your favorite CDN, [github pages](https://pages.github.com/), or your own server with [nginx](https://www.nginx.com/). You don’t need to worry about updating your published site due to a newly-discovered vulnerability in one of your dependencies. Or maintaining a database. They won’t hog memory or CPU. They’ll continue doing their job through years of operating system and server updates.
 
-Now, you may be thinking "that approach is fine for blogs and other toy sites, but not my site!" It’s true. Blogs, documentation sites, company or product marketing sites are all ideal cases for static sites. They are modified/deployed only by privileged users, and changed relatively infrequently. But let’s get creative! What about a shopping site?
+Now, you may be thinking "that approach is fine for blogs and other toy sites, but not my site!" It’s true. Blogs, documentation sites, and company or product marketing sites are all ideal cases for static sites. They are modified/deployed only by privileged users, and changed relatively infrequently. But let’s get creative! What about a shopping site?
 
 Let’s really think about it. How often does the list of products change? Stock changes quickly, yes, but the overall set of products? What if you generated your entire site every night, and anything dynamic was via targeted javascript talking to a separate API? You could cache those static files aggressively. Just make sure your users haven’t disabled javascript!
 
@@ -44,7 +44,7 @@ Let’s really think about it. How often does the list of products change? Stock
 
 A surprising aspect of Gatsby is that it isn’t just an authoring and basic static file build tool. It also assembles a full javascript [Single-Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application) for your site. Once it’s loaded in a user’s browser, no further page requests are made!
 
-If you’re not familiar with SPAs, they use [browser history APIs](https://developer.mozilla.org/en-US/docs/Web/API/History_API) to make it look like it is navigating between different pages on a site. But it isn’t. The loaded app has all it needs to generate each of user-requested page on-demand, using cached or newly-requested data. With Gatsby, all posts are loading up front - as you navigate through the site, the only subsequent requests are for images.
+If you’re not familiar with SPAs, they use [browser history APIs](https://developer.mozilla.org/en-US/docs/Web/API/History_API) to make it seem like you are navigating between different pages on a site. But you aren't. Not really. The loaded app has all it needs to generate each user-requested page on-demand, using cached or newly-requested data from the server. With Gatsby, all posts are loading up front - as you navigate through the site, the only subsequent requests are for page assets like images.
 
 Why would you want this? Well, perhaps you’re in a coffee shop and you want to download as much as possible while your connection is still new and fresh. Or you’re on a wireless connection where high latency makes each round trip with the server take a while - get the entire site at once, and subsequent navigations will be quick.
 
@@ -54,7 +54,7 @@ But SPAs are not always a good idea. Let’s do some quick math for my blog:
     * Initial download: **8-14kb, gzipped**
     * Subsequent pages: **8-14kb, gzipped**
 * Single-Page App:
-    * Initial download: **~230kb, gzipped** (218kb bundle.js + 8-12kb for html page)
+    * Initial download: **~230kb, gzipped** (218kb bundle.js + 8-14kb for html page)
     * Subsequent pages: **none**
 
 And what’s the average number of pageviews per session on my blog? **Two.** That means, the average user will download **200kb** more than they need. Not to mention all the effort spent decompressing, parsing and running all that code!
