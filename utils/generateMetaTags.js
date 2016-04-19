@@ -60,10 +60,7 @@ export default function generateMetaTags(page, config, path) {
       '@type': 'Article',
       publisher: {
         name: config.blogTitle,
-        logo: {
-          '@type': 'ImageObject',
-          url: config.authorImage
-        }
+        logo: config.authorImage
       },
       author: {
         '@type': 'Person',
