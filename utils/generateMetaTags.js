@@ -1,6 +1,7 @@
 import React from 'react';
 
 import getPreFoldContent from './getPreFoldContent';
+import extractImage from './extractImage';
 
 
 function create(name, value) {
@@ -33,11 +34,13 @@ export default function generateMetaTags(page, config, path) {
   tags.push(create('og:url', url));
   tags.push(create('twitter:url', url));
   tags.push(create('twitter:site', config.authorTwitter));
-  // TODO: og:image
-  // TODO: twitter:image
 
   if (page && page.data && page.data.body) {
     const data = page.data;
+    const image = extractImage(data.body) || config.authorImage;
+
+    tags.push(create('og:image', image));
+    tags.push(create('twitter:image', image));
 
     const date = data.date.toJSON ? data.date.toJSON() : data.date;
     const preFold = getPreFoldContent(data.body);
@@ -55,7 +58,10 @@ export default function generateMetaTags(page, config, path) {
     const ld = {
       '@context': 'http://schema.org',
       '@type': 'Article',
-      publisher: config.blogTitle,
+      publisher: {
+        name: config.blogTitle,
+        image: config.authorImage
+      },
       author: {
         '@type': 'Person',
         name: config.authorName,
@@ -64,9 +70,11 @@ export default function generateMetaTags(page, config, path) {
         description: blurb
       },
       headline: data.title,
-      url: url,
       datePublished: date,
-      description: description
+      url,
+      description,
+      image,
+      mainEntityOfPage: url
     };
 
     tags.push(<script
