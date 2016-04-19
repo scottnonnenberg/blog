@@ -5,6 +5,7 @@ import _ from 'lodash';
 
 import loadPosts from '../utils/loadPosts';
 import getTagCounts from '../utils/getTagCounts';
+import writeIfDifferent from '../utils/writeIfDifferent';
 
 
 const posts = loadPosts({
@@ -22,17 +23,5 @@ _.forEach(_.keys(counts), function(tag) {
   const filePath = path.join(__dirname, '../pages/tags', tag + '.js');
   const contents = template.replace(findTag, `"${tag}"`);
 
-  try {
-    const currentContents = fs.readFileSync(filePath).toString();
-    if (currentContents === contents) {
-      return;
-    }
-  }
-  catch (err) {
-    // file doesn't exist; need to write it
-  }
-
-  console.log('writing page for tag ' + tag);
-
-  fs.writeFileSync(filePath, contents);
+  writeIfDifferent(filePath, contents);
 });

@@ -1,8 +1,7 @@
-import fs from 'fs';
-
 import _ from 'lodash';
 
 import loadPosts from '../utils/loadPosts';
+import writeIfDifferent from '../utils/writeIfDifferent';
 
 
 const limit = parseInt(process.argv[2]) || 1;
@@ -22,5 +21,5 @@ _.forEach(posts, function(post) {
 
   const contents = removeSmartQuotes(post.contents);
 
-  fs.writeFileSync(post.path, contents);
+  writeIfDifferent(post.path, contents);
 });
