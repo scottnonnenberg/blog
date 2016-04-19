@@ -82,4 +82,4 @@ I really like React because of its flexibility - I can pre-render to static file
 
 _A little bit more:_
 
-Kyle Mathews recently gave a talk on Gatsby: [http://www.slideshare.net/kylemathews/presentation-on-gatsby-to-sf-static-web-tech-meetup](http://www.slideshare.net/kylemathews/presentation-on-gatsby-to-sf-static-web-tech-meetup)
+Kyle Mathews recently gave a talk on Gatsby: http://www.staticwebtech.com/presentations/developing-with-react-gatsbyjs/
