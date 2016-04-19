@@ -14,7 +14,6 @@ const configPath = path.join(__dirname, '../config.toml');
 export default function buildFeeds(posts) {
   const config = toml.parse(fs.readFileSync(configPath).toString());
   const now = moment(new Date());
-  const recentPosts = posts.slice(0, 20);
 
   const author = {
     name: config.authorName,
@@ -30,11 +29,10 @@ export default function buildFeeds(posts) {
     copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
     updated: now.toJSON(),
     feed: config.domain + '/atom.xml',
-
     author
   });
 
-  _.forEach(recentPosts, function(post) {
+  _.forEach(posts, function(post) {
     const data = post.data;
     const preFoldContent = getPreFoldContent(post.body);
 
