@@ -29,7 +29,7 @@ Gatsby is still evolving, so upgrading between versions can be pretty rough. `0.
 
 ## Hot reload
 
-Hot really is really great, hugely useful when iterating on your site structure, style, or post contents. Be aware, however, that you will need to restart your `gatsby develop` command whenever you add, rename, or remove files Gatsby cares about. [Webpack](https://webpack.github.io/)'s hot reload does not pick up these kinds of filesystem changes.
+Hot reload is really great, hugely useful when iterating on your site structure, style, or post contents. Be aware, however, that you will need to restart your `gatsby develop` command whenever you add, rename, or remove files Gatsby cares about. [Webpack](https://webpack.github.io/)'s hot reload does not pick up these kinds of filesystem changes.
 
 ## Navigate hook
 
@@ -49,6 +49,18 @@ const buster = now.getTime();
 // inside its render() method
 <script src={`/bundle.js?t=${buster}`}/>
 ```
+
+## HTML Previews
+
+You might have noticed that my blog's [front page](/) has a couple entries at the top with full HTML previews, then a couple more with text previews. And the Blog Start Kit just has a list of links for its front page. The starter kit does include a `TextPreview` React component for the 'Read Next' link at the bottom of posts, but I wanted a bit more.
+
+The big question for an `HTMLPreview` React component is figuring out what to show. I didn't want to subdivide my post HTML algorithmically, so I inserted a marker into all of my posts to tell me where the 'fold' is:
+
+```html
+<div class="fold"></div>
+```
+
+Once you have the subset of HTML you'd like to show as the preview, you'll probably discover that you want a 'Read More' shown as well. I have a little function that inserts it at the end of the last text block. This ensures that my link is visually connected with the post HTML, and not separated by a blank line.
 
 ## Local links
 
