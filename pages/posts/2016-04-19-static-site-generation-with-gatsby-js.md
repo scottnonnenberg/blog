@@ -37,7 +37,7 @@ Gatsby's production build gives you a collection of static files. It's quite a b
 
 With static files you can easily serve them with minimal configuration, using your favorite CDN, [github pages](https://pages.github.com/), or your own server with [nginx](https://www.nginx.com/). You don't need to worry about updating your published site due to a newly-discovered vulnerability in one of your dependencies. Or maintaining a database. They won't hog memory or CPU. They'll continue doing their job through years of operating system and server updates.
 
-Now, you may be thinking "that approach is fine for blogs and other toy sites, but not my site!" It’s true. Blogs, documentation sites, and company or product marketing sites are all ideal cases for static sites. They are modified/deployed only by privileged users, and changed relatively infrequently. But let’s get creative! What about a shopping site?
+Now, you may be thinking "that approach is fine for blogs and other toy sites, but not my site!" It's true. Blogs, documentation sites, and company or product marketing sites are all ideal cases for static sites. They are modified/deployed only by privileged users, and changed relatively infrequently. But let's get creative! What about a shopping site?
 
 Let's really think about it. How often does the list of products change? Stock changes quickly, yes, but the overall set of products? What if you generated your entire site every night, and anything dynamic was via targeted javascript talking to a separate API? You could cache those static files aggressively. Just make sure your users haven't disabled javascript!
 
