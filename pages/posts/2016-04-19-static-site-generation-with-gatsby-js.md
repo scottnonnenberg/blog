@@ -15,7 +15,7 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wpkc8o1V_SU" frameborder="0" allowfullscreen></iframe>
 
-_[This is an adaptation of a talk I gave at the [Seattle React.js meetup in March 2016](http://www.meetup.com/seattle-react-js/events/228965559/) [Direct link to screencast.](https://www.youtube.com/watch?v=Wpkc8o1V_SU)]_
+_[This is an adaptation of a talk I gave at the [Seattle React.js meetup in March 2016](http://www.meetup.com/seattle-react-js/events/228965559/). [Direct link to screencast.](https://www.youtube.com/watch?v=Wpkc8o1V_SU)]_
 
 I've been on the web for a long time. I was hand-editing HTML with [Notepad](https://en.wikipedia.org/wiki/Microsoft_Notepad) all the way back in 1997, uploading to [jps.net](http://www.yelp.com/biz/o1-communications-el-dorado-hills) or [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) via [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) with my parents' [14.4 kbit/s modem](https://en.wikipedia.org/wiki/Modem#Echo_cancellation.2C_9600_and_14.2C400). So I have a lot of experience running websites from static files.
 
@@ -45,7 +45,7 @@ Let's really think about it. How often does the list of products change? Stock c
 
 A surprising aspect of Gatsby is that it isn't just an authoring and basic static file build tool. It also assembles a full javascript [Single-Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application) for your site. Once it's loaded in a user's browser, no further page requests are made!
 
-If you're not familiar with SPAs, they use [browser history APIs](https://developer.mozilla.org/en-US/docs/Web/API/History_API) to make it seem like you are navigating between different pages on a site. But you aren't. Not really. The loaded app has all it needs to generate each user-requested page on-demand, using cached or newly-requested data from the server. With Gatsby, all posts are loading up front - as you navigate through the site, the only subsequent requests are for page assets like images.
+If you're not familiar with SPAs, they use [browser history APIs](https://developer.mozilla.org/en-US/docs/Web/API/History_API) to make it seem like you are navigating between different pages on a site. But you aren't. Not really. The loaded app has all it needs to generate each user-requested page on-demand, using cached or newly-requested data from the server. With Gatsby, all posts are loaded up front - as you navigate through the site, the only subsequent requests are for page assets like images.
 
 Why would you want this? Well, perhaps you're in a coffee shop and you want to download as much as possible while your connection is still new and fresh. Or you're on a wireless connection where high latency makes each round trip with the server take a while - get the entire site at once, and subsequent navigations will be quick.
 
