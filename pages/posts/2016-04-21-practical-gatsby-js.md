@@ -13,7 +13,7 @@ tags:
   - open-source
 ---
 
-_[Check out my [introduction to Gatsby.js post and screencast](http://localhost:8000/static-site-generation-with-gatsby-js/) if you're not already familiar with it!]_
+_[Check out my [introduction to Gatsby.js post and screencast](/static-site-generation-with-gatsby-js/) if you're not already familiar with it!]_
 
 So you want to use [React.js](https://facebook.github.io/react/) to build your site, and you want to deploy just static files? [Gatsby.js](https://github.com/gatsbyjs/gatsby) is a great choice! But [it's dangerous to go alone](https://en.wikipedia.org/wiki/It%27s_dangerous_to_go_alone!) - take these hard-won tips!
 
@@ -96,7 +96,7 @@ render: function() {
 
 ## Deep linking
 
-Say you'd like to allow for deep-linking into your posts. There's a great plugin for [`markdown-it`](https://github.com/markdown-it/markdown-it) to generate anchors for each header: [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor).
+Say you'd like to allow for deep-linking into your posts ([like this](/static-site-generation-with-gatsby-js/#getting-started)). First, there's a great plugin for [`markdown-it`](https://github.com/markdown-it/markdown-it) to generate anchors for each header: [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor).
 
 Sadly, without Gatsby's [forthcoming plugin system (slide 25)](http://www.slideshare.net/kylemathews/presentation-on-gatsby-to-sf-static-web-tech-meetup), I need to maintain my own local fork to change how markdown is generated. The good news is that it's really quite painless with [npm scripts](https://docs.npmjs.com/misc/scripts) and an [`npm link`](https://docs.npmjs.com/cli/link) command on both sides.
 
@@ -148,9 +148,9 @@ const productionBuild = Boolean(this.props.body);
 
 I've found a few reasons to parse my markdown files outside of the Gatsby infrastructure:
 
-* I have a tool that connects to my analytics system to get the latest stats, then injects a `rank` property into the _frontmatter_ of my markdown files. I sort on that to generate my [popular](https://blog.scottnonnenberg.com/popular) page.
-* I wrote a little script to generate [Atom](http://blog.scottnonnenberg.com/atom.xml)/[RSS](https://blog.scottnonnenberg.com/rss.xml) feed XML files. The excellent [`feed`](https://github.com/jpmonette/feed) node module made it pretty easy.
-* My [tags](https://blog.scottnonnenberg.com/tags) page is built with _frontmatter_ data from all my posts. My tool generates a very basic javascript file for each tag into the `pages/tags` directory of my project. This is because [Gatsby doesn't yet support dynamic routing](https://github.com/gatsbyjs/gatsby/issues/33).
+* I have a tool that connects to my analytics system to get the latest stats, then injects a `rank` property into the _frontmatter_ of my markdown files. I sort on that to generate my [popular](/popular) page.
+* I wrote a little script to generate [Atom](http://blog.scottnonnenberg.com/atom.xml)/[RSS](/rss.xml) feed XML files. The excellent [`feed`](https://github.com/jpmonette/feed) node module made it pretty easy.
+* My [tags](/tags) page is built with _frontmatter_ data from all my posts. My tool generates a very basic javascript file for each tag into the `pages/tags` directory of my project. This is because [Gatsby doesn't yet support dynamic routing](https://github.com/gatsbyjs/gatsby/issues/33).
 
 So, here's my code to get all posts ready for further processing. Note that I use a simple `readdirSync()` because all my posts are in that single directory for now. You could easily switch this to using [`glob`](https://github.com/isaacs/node-glob).
 
