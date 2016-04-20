@@ -15,7 +15,7 @@ tags:
 
 _[Check out my [introduction to Gatsby.js post and screencast](http://localhost:8000/static-site-generation-with-gatsby-js/) if you're not already familiar with it!]_
 
-So you want to use [React.js](https://facebook.github.io/react/) to build your site, and you want to deploy just static files? [Gatsby.js](https://github.com/gatsbyjs/gatsby) is a great choice! But [it's dangerous to go alone](https://en.wikipedia.org/wiki/It%27s_dangerous_to_go_alone!) - take these tips!
+So you want to use [React.js](https://facebook.github.io/react/) to build your site, and you want to deploy just static files? [Gatsby.js](https://github.com/gatsbyjs/gatsby) is a great choice! But [it's dangerous to go alone](https://en.wikipedia.org/wiki/It%27s_dangerous_to_go_alone!) - take these hard-won tips!
 
 <div class='fold'></div>
 
