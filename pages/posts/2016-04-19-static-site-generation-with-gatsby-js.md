@@ -12,6 +12,7 @@ tags:
   - gatsbyjs
   - javascript
   - open-source
+  - software
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wpkc8o1V_SU" frameborder="0" allowfullscreen></iframe>

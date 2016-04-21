@@ -11,6 +11,7 @@ tags:
   - gatsbyjs
   - javascript
   - open-source
+  - software
 ---
 
 _[Check out my [introduction to Gatsby.js post and screencast](/static-site-generation-with-gatsby-js/) if you're not already familiar with it!]_
