@@ -1,5 +1,5 @@
 ---
-rank: 25
+rank: 27
 title: My Standard Breakfast
 date: 2013-09-30T14:00:00.000Z
 layout: post
