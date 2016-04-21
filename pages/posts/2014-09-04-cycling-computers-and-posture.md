@@ -62,7 +62,8 @@ After 20 years of sitting at a desk, I had succumbed to the hunched-over, closed
 
 - tight hamstrings
 - tight hip flexors
-- chest is folded inward, overly strong and tight - back is curved forward, weak and overstretched
+- chest is folded inward, overly strong and tight
+- back is curved forward, weak and overstretched
 - neck is pushed forward, not properly curved
 
 I did the prescribed injury recovery exercises, but we added more and more posture-focused exercises.
