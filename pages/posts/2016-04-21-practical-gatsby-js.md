@@ -94,13 +94,22 @@ render: function() {
 }
 ```
 
-## Deep linking
+## Meta tags
 
-Say you'd like to allow for deep-linking into your posts ([like this](/static-site-generation-with-gatsby-js/#getting-started)). First, there's a great plugin for [`markdown-it`](https://github.com/markdown-it/markdown-it) to generate anchors for each header: [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor).
+For the [best formatting in your shares to social media](https://moz.com/blog/meta-data-templates-123), and the [best treatment by search engines](https://support.google.com/webmasters/answer/79812?hl=en), you'll want to add some structured data to your page (usually `meta` tags). To do that, you'll need page-specific details in your HTML React component. You can get it in `render()` via [React-Router](https://github.com/reactjs/react-router) information on `props`:
 
-Sadly, without Gatsby's [forthcoming plugin system (slide 25)](http://www.slideshare.net/kylemathews/presentation-on-gatsby-to-sf-static-web-tech-meetup), I need to maintain my own local fork to change how markdown is generated. The good news is that it's really quite painless with [npm scripts](https://docs.npmjs.com/misc/scripts) and an [`npm link`](https://docs.npmjs.com/cli/link) command on both sides.
+  * `location` - its `pathname` key will give you the current base URL, with other parts of the URL avaiable too.
+  * `routes` - an array of all matched routes. The last one will be the target page, and its `data` key will include all _frontmatter_ from the top of the file as well as `body`, the final HTML generated from the target file.
 
-However, the world of scrolling in SPAs is pretty nasty. Browsers have some interesting  behavior around deep links (regarding back/forward behavior and delayed asset loading), and today a SPA needs to try to replicate all that. I've tried this code in `wrappers/md.js`, but I'm not really satisfied with it.
+Just remember that you won't get these in `develop` mode, only `build`.
+
+## Anchor links
+
+Say you'd like enable links into a specific section of your posts ([like this](/static-site-generation-with-gatsby-js/#getting-started)). First, there's a great plugin for [`markdown-it`](https://github.com/markdown-it/markdown-it) to generate an `id` for each header based on the slug of its text: [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor).
+
+Sadly, without Gatsby's [planned plugin system (slide 25)](http://www.slideshare.net/kylemathews/presentation-on-gatsby-to-sf-static-web-tech-meetup), I need to maintain my own local fork to use `markdown-it-anchor` to change how markdown is generated. The good news is that it's really quite painless with [npm scripts](https://docs.npmjs.com/misc/scripts) and an [`npm link`](https://docs.npmjs.com/cli/link) command on both sides.
+
+However, the world of scrolling in SPAs is pretty nasty. Browsers have some interesting built-in scroll behavior around anchor links (regarding back/forward navigations and delayed asset loading), and today a SPA needs to try to replicate all that. I've tried this code in `wrappers/md.js`, but I'm not really satisfied with it.
 
 ```javascript
 // inside MarkdownWrapper component
@@ -124,14 +133,7 @@ componentWillReceiveProps: function() {
 },
 ```
 
-## Meta tags
-
-For the [best formatting in your shares to social media](https://moz.com/blog/meta-data-templates-123), and the [best treatment by search engines](https://support.google.com/webmasters/answer/79812?hl=en), you'll want to add some structured data to your page (usually `meta` tags). To do that, you'll need page-specific details in your HTML React component. You can get it in `render()` via [React-Router](https://github.com/reactjs/react-router) information on `props`:
-
-  * `location` - its `pathname` key will give you the current base URL, with other parts of the URL avaiable too.
-  * `routes` - an array of all matched routes. The last one will be the target page, and its `data` key will include all _frontmatter_ from the top of the file as well as `body`, the final HTML generated from the target file.
-
-Just remember that you won't get these in `develop` mode, only `build`.
+I also tried looking at the [action type](https://github.com/reactjs/react-router/blob/70c23b4fb9604deebe0d441e1d42379a8b82798f/docs/Glossary.md#action) provided by [`React-Router`](https://github.com/reactjs/react-router), but that didn't seem to differentiate adequately between the various scenarios (initial load, in-page link, back, forward, reload). I'll dig into this again if I decide to use Gatsby with the SPA turned on.
 
 ## Don't want the Single-Page App?
 
