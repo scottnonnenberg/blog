@@ -97,13 +97,13 @@ First I check out what the ORCA card website says about my account - it looks li
 
 To be sure, I make the call, talk to them, and find out that I have to physically mail a check to them; my new settings will work going forward, but they can't use that information to cover my failed charge. And, it seems, they're just about as frustrated about that in their office, where they handle all this stuff manually, as I am. So I get out the rarely-used forever stamps and send the check.
 
-In the couple years I've had an ORCA card, I've actually had to go through this check-sending process twice. It hasn't gotten better. But I feel pretty proud that I did catch it once before a failed charge required a check to be sent. And yes, I still have autoload set up even today…
+In the couple years I've had an ORCA card, I've actually had to go through this check-sending process twice. It hasn't gotten better. But I feel pretty proud that I did catch it once before a failed charge required a check to be sent. And yes, I still have autoload set up even today...
 
 ## Redbox
 
 I like redbox. I use it primarily because Netflix selection is weak and I have a few redboxes within easy walking distance. :0)
 
-So, as usual, I'm out to dinner and I open the app and reserve Jack the Giant Slayer, mindlessly clicking through things until I had everything reserved. And then it hit me - I don't have that old credit card in my hand anymore, so I can't just scan the card and pick it up like usual… Maybe I could change it?
+So, as usual, I'm out to dinner and I open the app and reserve Jack the Giant Slayer, mindlessly clicking through things until I had everything reserved. And then it hit me - I don't have that old credit card in my hand anymore, so I can't just scan the card and pick it up like usual... Maybe I could change it?
 
 So I use the app to add my new credit card and attempt to change the previous reservation. No dice.
 

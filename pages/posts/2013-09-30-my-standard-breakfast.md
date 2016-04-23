@@ -88,7 +88,7 @@ Just as important, it's nutritionally comprehensive and very stabilizing. I'm al
 
 Yep, I've cooked in my kitchen just about every morning for the past three years. I've learned a few things:
 
-* You don't have to wash your cutting board every day (but you definitely should after potatoes, and very likely after garlic and onion. unless you like that classic apples and garlic flavor…)
+* You don't have to wash your cutting board every day (but you definitely should after potatoes, and very likely after garlic and onion. unless you like that classic apples and garlic flavor...)
 * For variety, I get different veggies every week, and rotate through different types of potatoes.
 * Frying eggs on cast iron is a bit of a pain. Even once I figured out the perfect temperatures to do it (too hot and too cold both cause sticking!), I never figured out how to do it without degrading the seasoning over time. Moar oil??
 * Get two of your favorite knife. One can be out of the house, being sharpened, while you use the other. Having that backup reduces procrastination - at least for me.

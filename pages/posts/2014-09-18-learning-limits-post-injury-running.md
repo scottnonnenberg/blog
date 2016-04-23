@@ -16,7 +16,7 @@ tags:
 
 After [partially tearing my left achilles tendon](/injury-identity-and-non-attachment/), it took more than a year until I tried to start running again. I trained and planned for months for that first day back running. But it definitely didn't happen like I expected.
 
-My reintroduction to running has been an exercise in learning to listen to my body and respect its limits. It's a story best told in four phases…
+My reintroduction to running has been an exercise in learning to listen to my body and respect its limits. It's a story best told in four phases...
 
 <div class='fold'></div>
 
@@ -28,7 +28,7 @@ In spring of 2013, a year after my injury, I was riding my bike every day and fe
 
 In my enthusiasm, I downloaded [RunKeeper](http://runkeeper.com/) to my phone. Courtesy of that decision and Runkeeper's 'export data' feature, you have all of these charts before you. My first post-injury run was on April 28th, 2013 at 6:24pm, 1.35 miles right in my neighborhood, and my comment was _"Quads are feelin' it."_ Yes, [quantified self](http://quantifiedself.com/) can feel downright magical at times.
 
-I ran four more times in quick succession after that historic first run. And, as you might expect with all that excitement, with all those expectations from my prior runs, those first five runs ended in minor injury: _"issue with my right calf … tight and a bit painful ... Walking home now. :0(" (5/6/2013)_
+I ran four more times in quick succession after that historic first run. And, as you might expect with all that excitement, with all those expectations from my prior runs, those first five runs ended in minor injury: _"issue with my right calf ... tight and a bit painful ... Walking home now. :0(" (5/6/2013)_
 
 Looking at the Phase 1 chart you can see that this was the first burst of four. And there's a clear trend downwards. My body was telling me what it could handle, but my listening skills took time to develop. By the fourth burst, I finally got the picture. The point was to focus on form, not distance.
 

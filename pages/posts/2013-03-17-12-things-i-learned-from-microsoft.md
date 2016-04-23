@@ -80,7 +80,7 @@ Early on at Microsoft, I believed that ideas themselves were powerful, and would
 
 I started pushing my ideas individually or with key smaller and influential groups. I recruited influential folks to be part of my initiatives, usually finding dev and test reps to get a balanced perspective. I developed relationships with people even before there was an idea to push with them. And I won the battle before the meeting.
 
-I have to admit, though, I knew about this one for a long time before finally getting reliable with it. I cut corners when I felt like I didn't have enough time. And that brings us to the next lesson…
+I have to admit, though, I knew about this one for a long time before finally getting reliable with it. I cut corners when I felt like I didn't have enough time. And that brings us to the next lesson...
 
 ### 10. How to manage email and personal productivity
 
