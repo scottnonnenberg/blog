@@ -8,7 +8,7 @@ import markdownIt from 'markdown-it';
 const md = markdownIt({
   html: true,
   linkify: true,
-  typographer: true
+  typographer: false
 });
 
 export default function loadPosts(options) {
