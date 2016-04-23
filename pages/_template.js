@@ -8,6 +8,7 @@ import { config } from 'config';
 
 import '../css/styles.css';
 
+
 export default class RootTemplate extends React.Component {
   render() {
     let header;

@@ -2,7 +2,7 @@ blogTitle = "Scott Nonnenberg"
 domain = "https://blog.scottnonnenberg.com"
 linkPrefix = "/"
 
-# noProductionJavascript = true
+noProductionJavascript = true
 
 favicon = "/favicon.ico"
 tagLine = "A blog about software development and geekery of all kinds."

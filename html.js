@@ -9,6 +9,7 @@ import last from 'lodash/last';
 
 import { config } from 'config';
 
+
 function buildPiwikSetup({domainCDN, domainPiwik}) {
   return `
     window._paq = window._paq || [];
@@ -51,8 +52,10 @@ export default class HTML extends React.Component {
 
     let js = bundle;
     let css = null;
-    if (buildMode) {
+    if (buildMode && config.noProductionJavascript) {
       js = null;
+    }
+    if (buildMode) {
       css = stylesheet;
     }
 
