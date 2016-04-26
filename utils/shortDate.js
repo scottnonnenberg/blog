@@ -8,9 +8,9 @@ export default function shortDate(date) {
   var year = instance.format('YYYY');
 
   if (currentYear === year) {
-    return instance.format('M/DD');
+    return instance.format('MMM DD');
   }
   else {
-    return instance.format('YYYY/MM/DD');
+    return instance.format('YYYY MMM DD');
   }
 }
