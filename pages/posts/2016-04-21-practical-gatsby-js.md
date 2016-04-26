@@ -3,7 +3,7 @@ title: Practical Gatsby.js
 date: 2016-04-21T22:48:55.316Z
 layout: post
 path: /practical-gatsby-js/
-next:
+next: /contract-react-training/
 previous: /static-site-generation-with-gatsby-js/
 tags:
   - nodejs
