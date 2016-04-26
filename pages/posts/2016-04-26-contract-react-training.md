@@ -12,6 +12,7 @@ tags:
   - software
   - training
   - speaking
+  - contract
 ---
 
 ![React.js logo](https://static.sinap.ps/blog/2016/04_apr/react_training/react-logo.png)

@@ -13,6 +13,7 @@ tags:
   - software
   - training
   - speaking
+  - contract
 ---
 
 ![Social Security Administration Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
