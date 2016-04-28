@@ -19,7 +19,7 @@ What is the NERP stack? I'm glad you asked! It's a fun little development stack 
 
 ## Don't be so MEAN
 
-What is it? It's a set of development technologies, frequently called a 'stack':
+What is MEAN? It's a set of development technologies, frequently called a 'stack':
 
 * **M** = [Mongo](https://www.mongodb.org/)
 * **E** = [ExpressJS](http://expressjs.com/)
