@@ -25,7 +25,7 @@ From those simple beginnings I moved to the [book versions of the movies](http:/
 
 But nothing quite captured [my analytical imagination](/introversion/#early-signs) like card games with infinite deck-building options. [*Magic: The Gathering*](http://magic.wizards.com/) was the first of this intense kind of game to cross my path. In late 1995, I had a couple friends with the cards and I was very intrigued. With limited funds and transportation options, I appealed to my parents for help in starting a collection. I was denied.
 
-Why? Because *Magic* was too focused on demons, death and destruction: it seemed to be a combination of [spiritual](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjVmdSc_9nKAhUUWWMKHWtoAagQFgghMAE&url=https%3A%2F%2Fpaulwilkinson.wordpress.com%2Fshould-christians-play-magic-the-gathering%2F&usg=AFQjCNEFtj9ogW3DwjvIZLf0NWVfa-o__A&sig2=vxkiwCcobxV5fUF1w-zWJw) and content-based objections. Happily this difference of opinion never became a real conflict because I was soon distracted...
+Why? Because *Magic* was too focused on demons, death and destruction: it seemed to be a combination of [spiritual](https://paulwilkinson.wordpress.com/should-christians-play-magic-the-gathering/) and content-based objections. Happily this difference of opinion never became a real conflict because I was soon distracted...
 
 ![Promotional Poster, Premiere 1995](https://static.sinap.ps/blog/2016/03_mar/star_wars/poster_premiere.jpg)
 
