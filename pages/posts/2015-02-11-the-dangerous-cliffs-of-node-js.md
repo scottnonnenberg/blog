@@ -15,7 +15,7 @@ tags:
 
 <a class="plain" href="https://www.flickr.com/photos/craigmoulding/5881291261"><img src="https://static.sinap.ps/blog/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg" alt="dangerous cliffs via craigmoulding on flickr"></a>
 
-*[Update: In July 2015 I gave [a talk based on this post at the Seattle Node.js meetup](http://www.meetup.com/Seattle-Node-js/events/222999198/). You can find my [slides and demos on Github](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs).]*
+*[Update: In July 2015 I gave [a talk based on this post at the Seattle Node.js meetup](http://www.meetup.com/Seattle-Node-js/events/222999198/). [Here's the screencast](https://www.youtube.com/watch?v=bMHB6zb9AXY). The [slides and demos are on Github](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs).]*
 
 It's not all roses in the world of [Node.js](http://nodejs.org/). In fact, more than just about every other platform I've used, it can feel like a precarious mountain path with a long cliff below. Yes, it features some very beautiful vistas, but one wrong step and it's all over. Let's cover four of those simple mistakes with substantial, unexpected consequences, as well as some potential guardrails.
 
@@ -55,7 +55,7 @@ Sadly, even quick restarts will result in [socket hang-ups](http://stackoverflow
 
 *Confused, I looked at my load balancer's logs and discovered that the app node which actually served me the response I saw was the second one tried, and 60 seconds was the load balancer's timeout. After some poking of the problematic first app node, I discovered that my node processes were hanging when they [requested session data from redis](https://github.com/tj/connect-redis).*
 
-Node.is really, really good at doing a lot async operations in parallel. [Promises](https://www.promisejs.org) and libraries like [`async`](https://github.com/caolan/async) help you kick off several at once and then do something when they're all complete. But what happens when one of those async calls never returns? In Rails, for example, if a page takes too long to gather data and render, an error is raised. In the Node.js world, it just looks like the user cancelled the request.
+Node.is really, really good at doing a lot of async operations in parallel. [Promises](https://www.promisejs.org) and libraries like [`async`](https://github.com/caolan/async) help you kick off several at once and then do something when they're all complete. But what happens when one of those async calls never returns? In Rails, for example, if a page takes too long to gather data and render, an error is raised. In the Node.js world, it just looks like the user cancelled the request.
 
 Happily, a lot of libraries have timeouts and will return errors in these kinds of cases. [`superagent`](https://github.com/visionmedia/superagent) and [`request`](https://github.com/request/request) will return a timeout error even if the underlying web request never returns. [`redis`, however, can get into a bad state](https://www.exratione.com/2013/01/nodejs-connections-will-end-close-and-otherwise-blow-up/) and hang on all async requests (be sure to listen for both *'error'* and *'end'* events on your redis client object). This is a perfect example of why we all need to understand our dependencies well.
 
