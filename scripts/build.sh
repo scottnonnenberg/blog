@@ -32,6 +32,11 @@ echo '** building RSS/Atom XML'
 npm run generate-rss
 
 echo
+echo '** building all.json and recent.json'
+
+npm run generate-json
+
+echo
 echo '** compressing files'
 
 find ${TARGET} | grep -v \.gz$ | while read FILE;

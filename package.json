@@ -15,6 +15,7 @@
     "serve": "cd public && python -m SimpleHTTPServer 8000",
 
     "generate-rss": "babel-node scripts/generate_rss.js",
+    "generate-json": "babel-node scripts/generate_json.js",
     "generate-tags": "babel-node scripts/generate_tags.js",
     "update-rankings": "babel-node scripts/update_rankings.js",
     "simplify-links": "babel-node scripts/simplify_links.js",

@@ -7,6 +7,8 @@ import moment from 'moment';
 import toml from 'toml';
 
 import getPreFoldContent from './getPreFoldContent';
+import fixLocalLinks from './fixLocalLinks';
+import appendToLastTextBlock from './appendToLastTextBlock';
 
 
 const configPath = path.join(__dirname, '../config.toml');
@@ -34,13 +36,16 @@ export default function buildFeeds(posts) {
 
   _.forEach(posts, function(post) {
     const data = post.data;
-    const preFoldContent = getPreFoldContent(post.body);
+    const preFoldContent = fixLocalLinks(config.domain, getPreFoldContent(post.body));
+    const url = config.domain + data.path;
+    const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
+    const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
 
     feed.addItem({
       title: data.title,
-      link: config.domain + data.path,
-      description: preFoldContent,
-      content: post.body,
+      link: url,
+      description: withCallToAction,
+      content: fixLocalLinks(config.domain, post.body),
       date: data.date,
       author: [author]
     });
