@@ -55,7 +55,7 @@ const buster = now.getTime();
 
 ## HTML Previews
 
-You might have noticed that my blog's [front page](/) has a couple entries at the top with full HTML previews, then a couple more with text previews. And the Blog Start Kit just has a list of links for its front page. The starter kit does include a `TextPreview` React component for the 'Read Next' link at the bottom of posts, but I wanted a bit more.
+You might have noticed that my blog's [front page](/) has a couple entries at the top with full HTML previews, then a couple more with text previews. And the Blog Starter Kit just has a list of links for its front page. The starter kit does include a `TextPreview` React component for the 'Read Next' link at the bottom of posts, but I wanted a bit more.
 
 The big question for an `HTMLPreview` React component is figuring out what to show. I didn't want to subdivide my post HTML algorithmically, so I inserted a marker into all of my posts to tell me where the 'fold' is:
 
@@ -99,7 +99,7 @@ render: function() {
 
 For the [best formatting in your shares to social media](https://moz.com/blog/meta-data-templates-123), and the [best treatment by search engines](https://support.google.com/webmasters/answer/79812?hl=en), you'll want to add some structured data to your page (usually `meta` tags). To do that, you'll need page-specific details in your HTML React component. You can get it in `render()` via [React-Router](https://github.com/reactjs/react-router) information on `props`:
 
-  * `location` - its `pathname` key will give you the current base URL, with other parts of the URL avaiable too.
+  * `location` - its `pathname` key will give you the current base URL, with other parts of the URL available too.
   * `routes` - an array of all matched routes. The last one will be the target page, and its `data` key will include all _frontmatter_ from the top of the file as well as `body`, the final HTML generated from the target file.
 
 Just remember that you won't get these in `develop` mode, only `build`.
