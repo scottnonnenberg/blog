@@ -63,7 +63,7 @@ The big question for an `HTMLPreview` React component is figuring out what to sh
 <div class="fold"></div>
 ```
 
-Once you have the subset of HTML you'd like to show as the preview, you'll probably discover that you want a 'Read More' shown as well. I have a little function that inserts it at the end of the last text block. This ensures that my link is visually connected with the post HTML, and not separated by a blank line.
+Once you have the subset of HTML you'd like to show as the preview, you'll probably discover that you want a 'Read More' link shown as well. I have a little function that inserts it at the end of the last text block. This ensures that my link is visually connected with the post HTML, and not separated by a blank line.
 
 ## Local links
 
