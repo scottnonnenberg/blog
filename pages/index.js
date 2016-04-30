@@ -33,7 +33,7 @@ export default class Index extends React.Component {
     ));
 
     return (
-      <DocumentTitle title={config.blogTitle}>
+      <DocumentTitle title={`Blog | ${config.blogTitle}`}>
         <div>
           <hr
             style={{
