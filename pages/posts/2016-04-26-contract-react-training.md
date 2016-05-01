@@ -15,7 +15,7 @@ tags:
   - contract
 ---
 
-![React.js logo](https://static.sinap.ps/blog/2016/04_apr/react_training/react-logo.png)
+![React.js logo](https://static.sinap.ps/blog/2016/04_apr/react_training/react-logo-rev2.png)
 
 In March I didn't just [give a talk at the Seattle React.js Meetup](/static-site-generation-with-gatsby-js/). I also had a contract to design and present a 10-hour training on [React.js](https://facebook.github.io/react/), [Redux](https://github.com/reactjs/redux), and [React-Router](https://github.com/reactjs/react-router). After last fall's [Social Security Administration (SSA) training contract](/contract-teaching/), it felt quite familiar. I was able to fine-tune my approach. But no matter how many times I do it, there are always surprises.
 
