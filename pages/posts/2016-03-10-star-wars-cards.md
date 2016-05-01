@@ -83,7 +83,7 @@ Now it was time to sit back and wait. One of every card produced between 1995 an
 
 As the shipments arrived, I categorized, sorted, and inventoried. It came out to just over 11,000 cards total. So many hours of staring at the cards. Such meditative. Very Jedi. Exactly what I was looking for!
 
-This wasn't 1995, so my inventory is in the form of a spreadsheet, seeded with [comprehensive card data](http://www.starwarsccg.org/forums/viewtopic.php?f=188&t=54610) (rarity, stats, text, etc.). So much easier than simple text files with the card names! Just the ability to resort on various traits saved me a huge amount of time - every complete set came in a different sort order.
+This wasn't 1995, so my inventory is in the form of a spreadsheet, seeded with [comprehensive card data](http://www.starwarsccg.org/forums/viewtopic.php?f=188&t=54610) (rarity, stats, text, etc.). So much easier than simple text files with the card names! Just the ability to re-sort on various traits saved me a huge amount of time - every complete set came in a different sort order.
 
 ![Finally, organized binders!](https://static.sinap.ps/blog/2016/03_mar/star_wars/binders.jpg)
 
