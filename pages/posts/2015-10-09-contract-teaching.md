@@ -18,7 +18,7 @@ tags:
 
 ![Social Security Administration Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
 
-If you're a frequent visitor at [gammacorvi.com](https://gammacorvi.com/) (and of course you should be), you may have noticed an unusual entry under the [Clients heading](https://gammacorvi.com/#clients): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
+If you're a frequent visitor at [scottnonnenberg.com](https://scottnonnenberg.com/) (and of course you should be), you may have noticed an unusual entry on the [work page](https://scottnonnenberg.com/work/#social-security-administration-2015-q-3): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
 
 It was quite a bit different from recent contracts, because I didn't write any code. I was simply there for knowledge transfer, via three primary tools:
 
