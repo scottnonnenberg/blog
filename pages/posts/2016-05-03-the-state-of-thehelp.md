@@ -6,6 +6,10 @@ path: /the-state-of-thehelp/
 next:
 previous: /contract-react-training/
 tags:
+  - open-source
+  - nodejs
+  - javascript
+  - software
 ---
 
 [The collection of node modules and client libraries](https://github.com/thehelp) I released under the `thehelp` family name has been available now for about a year and a half. It’s been a good run, but now it’s time to take stock. What’s next for `thehelp`?
