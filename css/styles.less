@@ -1,4 +1,9 @@
 
+@blue: rgb(74, 144, 226);
+@lightBlue: rgb(195, 223, 255);
+@orange: rgb(246, 166, 35);
+@lightOrange: rgb(255, 216, 151);
+
 ol.menu {
   list-style: none;
   margin-left: 0;
@@ -60,11 +65,19 @@ table tbody > tr:nth-child(odd) > td {
 }
 
 a {
-  color: rgb(74,144,226);
+  color: @blue;
   text-decoration: none;
   /* thanks to https://eager.io/blog/smarter-link-underlines/ */
   text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, rgb(74,144,226) 1px, rgb(74,144,226) 2px, rgba(0, 0, 0, 0) 2px);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, @blue 1px, @blue 2px, rgba(0, 0, 0, 0) 2px);
+}
+
+a.call-to-action {
+  color: @orange;
+  text-decoration: none;
+  /* thanks to https://eager.io/blog/smarter-link-underlines/ */
+  text-shadow: .03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, @orange 1px, @orange 2px, rgba(0, 0, 0, 0) 2px);
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -72,9 +85,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-shadow: none;
 }
 
+h1 a.call-to-action, h2 a.call-to-action, h3 a.call-to-action, h4 a.call-to-action, h5 a.call-to-action, h6 a.call-to-action {
+  background-image: none;
+  text-shadow: none;
+}
+
 a:hover {
   text-shadow: none;
-  background-color: rgb(255, 216, 151);
+  background-color: @lightOrange;
+}
+
+a.call-to-action:hover {
+  text-shadow: none;
+  background-color: @lightBlue;
 }
 
 a.plain {
@@ -84,12 +107,12 @@ a.plain {
 }
 
 ::-moz-selection {
-  background-color: rgb(255, 216, 151);
+  background-color: @lightOrange;
   text-shadow: none;
 }
 
 ::selection {
-  background-color: rgb(255, 216, 151);
+  background-color: @lightOrange;
   text-shadow: none;
 }
 
@@ -123,8 +146,8 @@ span.date {
 .markdown p a code:hover, .markdown li a code:hover {
   text-shadow: none;
   background-image: none;
-  background-color: rgb(255, 216, 151);
-  border: 1px solid rgb(255, 216, 151);
+  background-color: @lightOrange;
+  border: 1px solid @lightOrange;
 }
 
 .markdown pre {
