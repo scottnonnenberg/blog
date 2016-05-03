@@ -7,7 +7,6 @@ next: /the-state-of-thehelp/
 previous: /practical-gatsby-js/
 tags:
   - reactjs
-  - nodejs
   - javascript
   - software
   - training

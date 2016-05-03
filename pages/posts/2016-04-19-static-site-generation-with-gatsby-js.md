@@ -8,7 +8,6 @@ next: /practical-gatsby-js/
 previous: /feeling-the-bern/
 tags:
   - reactjs
-  - nodejs
   - gatsbyjs
   - javascript
   - open-source
