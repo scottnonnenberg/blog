@@ -1,6 +1,6 @@
 ---
 title: The State of thehelp
-date: 2016-05-02T16:59:47.221Z
+date: 2016-05-03T16:59:47.221Z
 layout: post
 path: /the-state-of-thehelp/
 next:
