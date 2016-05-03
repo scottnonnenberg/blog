@@ -6,7 +6,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { rhythm } from 'utils/typography';
 import { config } from 'config';
 
-import '../css/styles.css';
+import '../css/styles.less';
 
 
 export default class RootTemplate extends React.Component {

@@ -14,7 +14,7 @@ import ReadMore from 'components/ReadMore';
 import Author from 'components/Author';
 import { config } from 'config';
 
-import '../css/solarized-light.css';
+import '../css/solarized-light.less';
 
 
 export default React.createClass({
