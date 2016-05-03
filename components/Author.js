@@ -6,14 +6,14 @@ import { config } from 'config';
 
 export default class Author extends React.Component {
   render() {
-    const image = config.authorImage;
+    const icon = config.authorIcon;
     const url = config.authorURL;
     const blurb = config.authorBlurb;
 
     return (
       <div className="author">
         <a href={url}><img
-          src={image}
+          src={icon}
           style={{
             float: 'left',
             marginRight: rhythm(1/4),
