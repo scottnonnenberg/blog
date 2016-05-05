@@ -6,7 +6,7 @@ import extractImage from './extractImage';
 
 function create(name, value) {
   return (
-    <meta key={name} name={name} value={value} />
+    <meta key={name} name={name} content={value} />
   );
 }
 
