@@ -1,4 +1,5 @@
 ---
+rank: 5
 title: Practical Gatsby.js
 date: 2016-04-21T22:48:55.316Z
 layout: post
