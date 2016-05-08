@@ -62,7 +62,7 @@ In many cases, there's a core reason behind that need for high-frequency reactiv
 
 * When you get a notification, use a timer to keep from responding too quickly. This will start to train people that your response time is slower, making it more likely that they'll spend more time on it before coming to you. If they still have a problem and it's important, they can call you or come talk to you in person. Gradually increase the length of your timer.
 * Ask "Why?" about the interruption repeatedly until you get to something that can be fixed so it doesn't happen next time. Go fix that thing.
-* [Reserve some time every day for empty space](http://www.elephantjournal.com/2008/09/dr-reggie-ray-busy-ness-is-laziness/). No meetings, no tasks, just your subconscious churning on the problems of the day. You'll more creative, more relaxed.
+* [Reserve some time every day for empty space](http://www.elephantjournal.com/2008/09/dr-reggie-ray-busy-ness-is-laziness/). No meetings, no tasks, just your subconscious churning on the problems of the day. You'll be more creative, more relaxed.
 * In [Anything You Want](http://www.amazon.com/Anything-You-Want-Derek-Sivers/dp/1936719118), Derek Sivers talks about breaking out of this responsiveness trap by bringing his company together whenever someone asked him a question so everyone could hear the answer. This became the beginning of the [CDBaby](http://www.cdbaby.com/) company guidebook.
 
 ![obama: deal with it](https://static.sinap.ps/blog/2014/Sep/deal_with_it_obama-1410405282195.jpg)
