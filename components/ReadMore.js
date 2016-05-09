@@ -16,6 +16,11 @@ function includes(target, substring) {
 
 
 export default class ReadMore extends React.Component {
+  static propTypes = {
+    post: React.PropTypes.object.isRequired,
+    posts: React.PropTypes.array.isRequired,
+  }
+
   renderItem(label, post) {
     if (!post) {
       return;
@@ -28,7 +33,7 @@ export default class ReadMore extends React.Component {
             margin: 0,
             fontSize: fontSizeToMS(-0.5).fontSize,
             lineHeight: fontSizeToMS(-0.5).lineHeight,
-            letterSpacing: -0.5
+            letterSpacing: -0.5,
           }}
         >
           {label}:
@@ -39,31 +44,28 @@ export default class ReadMore extends React.Component {
   }
 
   render() {
+    const posts = this.props.posts;
     const nextPath = this.props.post.next;
     const previousPath = this.props.post.previous;
-    let nextPost, previousPost;
+    let nextPost;
+    let previousPost;
 
     if (nextPath) {
-      nextPost = find(this.props.posts, function(page) {
-        return includes(page.path, nextPath.slice(1, -1));
-      });
+      nextPost = find(posts, page => includes(page.path, nextPath.slice(1, -1)));
     }
     if (previousPath) {
-      previousPost = find(this.props.posts, function(page) {
-        return includes(page.path, previousPath.slice(1, -1));
-      });
+      previousPost = find(posts, page => includes(page.path, previousPath.slice(1, -1)));
     }
 
     if (!nextPost && !previousPost) {
-      return <noscript/>;
+      return <noscript />;
     }
-    else {
-      return (
-        <div>
-          {this.renderItem('NEXT', nextPost)}
-          {this.renderItem('PREVIOUS', previousPost)}
-        </div>
-      );
-    }
+
+    return (
+      <div>
+        {this.renderItem('NEXT', nextPost)}
+        {this.renderItem('PREVIOUS', previousPost)}
+      </div>
+    );
   }
 }

@@ -14,6 +14,11 @@ import { config } from 'config';
 
 
 export default class TagPage extends React.Component {
+  static propTypes = {
+    tag: React.PropTypes.object.isRequired,
+    route: React.PropTypes.object.isRequired,
+  }
+
   render() {
     const tag = this.props.tag;
 
@@ -39,7 +44,7 @@ export default class TagPage extends React.Component {
           <hr
             style={{
               marginTop: rhythm(2),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           />
           <Author {...this.props} />

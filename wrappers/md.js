@@ -16,27 +16,29 @@ import { config } from 'config';
 import '../css/solarized-light.less';
 
 
-export default React.createClass({
-  displayName: 'MarkdownWrapper',
+export default class MarkdownWrapper extends React.Component {
+  static propTypes = {
+    route: React.PropTypes.object.isRequired,
+  }
+
+  componentDidMount() {
+    setTimeout(this.scroll, 0);
+  }
+
+  componentWillReceiveProps() {
+    setTimeout(this.scroll, 0);
+  }
 
   scroll() {
     const hash = window.location.hash;
     if (hash) {
-      const id = hash.replace('#','');
+      const id = hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
         element.scrollIntoView();
       }
     }
-  },
-
-  componentDidMount() {
-    setTimeout(this.scroll, 0);
-  },
-
-  componentWillReceiveProps() {
-    setTimeout(this.scroll, 0);
-  },
+  }
 
   render() {
     const post = this.props.route.page;
@@ -55,18 +57,18 @@ export default React.createClass({
       <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
         <div className="post">
           <h1>{data.title}</h1>
-          <div className="markdown" dangerouslySetInnerHTML={{__html: data.body}}/>
+          <div className="markdown" dangerouslySetInnerHTML={{ __html: data.body }} />
           <hr
             style={{
               marginTop: rhythm(2),
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
           <div className="metadata"
             style={{
               display: 'block',
               marginTop: rhythm(1),
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           >
             <div><em>Posted:</em> {moment(data.date).format('MMMM D, YYYY')}</div>
@@ -75,14 +77,14 @@ export default React.createClass({
           <hr
             style={{
               marginTop: rhythm(1),
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
           <Author {...this.props} />
           <hr
             style={{
               marginTop: rhythm(1),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           />
           <ReadMore post={data} posts={this.props.route.pages} />
@@ -90,4 +92,4 @@ export default React.createClass({
       </DocumentTitle>
     );
   }
-});
+}

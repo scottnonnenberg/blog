@@ -1,5 +1,5 @@
 
-var first = true;
+let first = true;
 
 function getDuration() {
   const start = window.start || new Date();
@@ -9,12 +9,11 @@ function getDuration() {
   if (difference === 0) {
     return null;
   }
-  else {
-    return difference;
-  }
+
+  return difference;
 }
 
-exports.onRouteChange = function(state) {
+exports.onRouteChange = state => {
   window._paq = window._paq || [];
 
   if (first) {

@@ -60,14 +60,14 @@ export default function generateMetaTags(page, config, path) {
       '@type': 'Article',
       publisher: {
         name: config.blogTitle,
-        logo: config.authorImage
+        logo: config.authorImage,
       },
       author: {
         '@type': 'Person',
         name: config.authorName,
         image: config.authorImage,
         url: config.authorURL,
-        description: blurb
+        description: blurb,
       },
       headline: data.title,
       datePublished: date,
@@ -75,14 +75,14 @@ export default function generateMetaTags(page, config, path) {
       description,
       image: {
         '@type': 'ImageObject',
-        url: image
+        url: image,
       },
-      mainEntityOfPage: url
+      mainEntityOfPage: url,
     };
 
     tags.push(<script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{__html: JSON.stringify(ld, null, '  ')}}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(ld, null, '  ') }}
     />);
   }
 

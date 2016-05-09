@@ -3,9 +3,9 @@ export default function intersperce(items, toInject) {
     return [];
   }
 
-  var start = [items[0]];
+  const start = [items[0]];
 
-  return items.slice(1).reduce(function(result, item) {
-    return result.concat([toInject, item]);
-  }, start);
+  return items
+    .slice(1)
+    .reduce((result, item) => result.concat([toInject, item]), start);
 }

@@ -11,7 +11,7 @@ export default function writeIfDifferent(path, contents) {
     // file doesn't exist; need to write it
   }
 
-  console.log('writing ' + path);
+  console.log(`writing ${path}`);
 
   fs.writeFileSync(path, contents);
 }

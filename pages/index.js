@@ -16,6 +16,10 @@ import { config } from 'config';
 
 
 export default class Index extends React.Component {
+  static propTypes = {
+    route: React.PropTypes.object.isRequired,
+  }
+
   render() {
     const posts = getPosts(this.props.route.pages);
     const htmlPreviewPosts = posts.slice(0, 5);
@@ -37,20 +41,22 @@ export default class Index extends React.Component {
         <div>
           <hr
             style={{
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
-          <ol className='menu'>
+          <ol className="menu">
             <li><Link to={prefixLink('/popular/')}>Popular Posts</Link></li>
             <li><Link to={prefixLink('/tags/')}>Tags</Link></li>
             <li><a href="https://scottnonnenberg.com">About Me</a></li>
             <li>
-              <a href="/rss.xml" target="_blank">RSS</a>/<a href="/atom.xml" target="_blank">Atom</a>
+              <a href="/rss.xml" target="_blank">RSS</a>
+              /
+              <a href="/atom.xml" target="_blank">Atom</a>
             </li>
           </ol>
           <hr
             style={{
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
           {htmlPreviews}
@@ -59,12 +65,12 @@ export default class Index extends React.Component {
           <hr
             style={{
               marginTop: rhythm(2),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           />
           <div
             style={{
-              marginTop: rhythm(1.5)
+              marginTop: rhythm(1.5),
             }}
           >
             <Author {...this.props} />

@@ -1,5 +1,5 @@
-var prefix = /<p>(<em>)?\[[^\]]+\](<\/em>)?<\/p>\n/m;
-var fold = /<div class='fold'/;
+const prefix = /<p>(<em>)?\[[^\]]+\](<\/em>)?<\/p>\n/m;
+const fold = /<div class='fold'/;
 
 export default function getPreFoldContent(content) {
   const foldMatch = fold.exec(content);

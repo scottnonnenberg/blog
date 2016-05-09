@@ -7,11 +7,11 @@ import loadPosts from '../utils/loadPosts';
 
 
 const posts = loadPosts({
-  markdown: false
+  markdown: false,
 });
 
-var lookup = Object.create(null);
-_.forEach(posts, function(post) {
+const lookup = Object.create(null);
+_.forEach(posts, post => {
   lookup[post.data.path] = post;
 });
 
@@ -26,19 +26,19 @@ superagent
     date: '2013-1-1,2016-05-06',
     expanded: 1,
     token_auth: '8c3e249277ac43852917552b63335dba',
-    filter_limit: 100
+    filter_limit: 100,
   })
-  .end(function(err, res) {
+  .end((err, res) => {
     if (err) {
       throw err;
     }
     if (res.status !== 200) {
-      throw new Error('non-200 response! ' + res.text);
+      throw new Error(`non-200 response! ${res.text}`);
     }
 
     const items = _(res.body)
-      .filter(function (entry) {
-        entry.url = '/' + entry.label + '/';
+      .filter(entry => {
+        entry.url = `/${entry.label}/`;
 
         if (entry.url === '/how-not-to-do-customer-service-credit-card-edition/') {
           return false;
@@ -64,7 +64,7 @@ superagent
       .reverse()
       .value();
 
-    _.forEach(items, function(entry, index) {
+    _.forEach(items, (entry, index) => {
       // console.log('checking', url);
 
       const rank = index + 1;
@@ -82,10 +82,10 @@ superagent
       console.log(target.path, 'now has rank:', rank, '; previous:', previousRank);
 
       if (existingRank.test(contents)) {
-        contents = contents.replace(existingRank, 'rank: ' + rank);
+        contents = contents.replace(existingRank, `rank: ${rank}`);
       }
       else {
-        contents = contents.replace(newRank, '---\nrank: ' + rank);
+        contents = contents.replace(newRank, `---\nrank: ${rank}`);
       }
 
       fs.writeFileSync(target.path, contents);

@@ -2,7 +2,7 @@ import filter from 'lodash/filter';
 import sortBy from 'lodash/sortBy';
 
 export default function getPosts(allPages) {
-  const posts = filter(allPages, function(page) {
+  const posts = filter(allPages, page => {
     const data = page.data;
     return page.path && page.path !== '/' && data && data.body && !data.draft;
   });

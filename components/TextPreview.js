@@ -11,6 +11,10 @@ import getPreFoldContent from 'utils/getPreFoldContent';
 
 
 export default class TextPreview extends React.Component {
+  static propTypes = {
+    post: React.PropTypes.object.isRequired,
+  }
+
   render() {
     const post = this.props.post;
     const html = post.data.body;
@@ -20,14 +24,15 @@ export default class TextPreview extends React.Component {
     return <div>
       <h3
         style={{
-          marginBottom: rhythm(1/4)
+          marginBottom: rhythm(0.25),
         }}
       >
         <Link to={prefixLink(post.path)}>
           {post.data.title}
         </Link>
         <span className="date">
-          {' ' + shortDate(post.data.date)}
+          {' '}
+          {shortDate(post.data.date)}
         </span>
       </h3>
       <p>{body} <Link to={prefixLink(post.path)}>Read more&nbsp;»</Link></p>

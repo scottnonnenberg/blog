@@ -21,7 +21,7 @@ export default function buildFeeds(posts) {
   const author = {
     name: config.authorName,
     email: config.authorEmail,
-    link: config.authorURL
+    link: config.authorURL,
   };
 
   const feed = new Feed({
@@ -31,11 +31,11 @@ export default function buildFeeds(posts) {
     link: config.domain,
     copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
     updated: now.toJSON(),
-    feed: config.domain + '/atom.xml',
-    author
+    feed: `${config.domain}/atom.xml`,
+    author,
   });
 
-  _.forEach(posts, function(post) {
+  _.forEach(posts, post => {
     const data = post.data;
     const preFoldContent = fixLocalLinks(config.domain, getPreFoldContent(post.body));
     const url = config.domain + data.path;
@@ -48,7 +48,7 @@ export default function buildFeeds(posts) {
       description: withCallToAction,
       content: fixLocalLinks(config.domain, post.body),
       date: data.date,
-      author: [author]
+      author: [author],
     });
   });
 

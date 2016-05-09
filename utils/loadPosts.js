@@ -8,7 +8,7 @@ import markdownIt from 'markdown-it';
 const md = markdownIt({
   html: true,
   linkify: true,
-  typographer: false
+  typographer: false,
 });
 
 export default function loadPosts(options) {
@@ -24,16 +24,16 @@ export default function loadPosts(options) {
     .sortBy()
     .reverse()
     .take(limit)
-    .map(function(file) {
+    .map(file => {
       const filePath = path.join(postsPath, file);
       const contents = fs.readFileSync(filePath).toString();
       const metadata = frontMatter(contents);
 
       return {
         path: filePath,
-        contents: contents,
+        contents,
         body: markdown ? md.render(metadata.body) : null,
-        data: metadata.attributes
+        data: metadata.attributes,
       };
     })
     .value();

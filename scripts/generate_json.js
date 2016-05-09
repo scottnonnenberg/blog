@@ -29,7 +29,7 @@ const json = _.map(posts, post => {
     date: post.data.date,
     preview: withCallToAction,
     url,
-    tags: post.data.tags
+    tags: post.data.tags,
   };
 });
 

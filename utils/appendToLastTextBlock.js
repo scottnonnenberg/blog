@@ -1,8 +1,9 @@
 import filter from 'lodash/filter';
 
-var startOfBlock = '<p>';
-var endOfBlockTest = /<\/p>/m;
-var endOfBlock = '</p>';
+
+const startOfBlock = '<p>';
+const endOfBlockTest = /<\/p>/m;
+const endOfBlock = '</p>';
 
 export default function appendToLastTextBlock(content, toInsert) {
   const blocks = filter(content.split(startOfBlock), (block) => Boolean(block.length));

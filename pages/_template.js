@@ -11,16 +11,17 @@ import '../css/styles.less';
 
 
 export default class RootTemplate extends React.Component {
+  static propTypes = {
+    location: React.PropTypes.object.isRequired,
+    children: React.PropTypes.object.isRequired,
+  }
+
   static contextTypes = {
-    router: React.PropTypes.object.isRequired
+    router: React.PropTypes.object.isRequired,
   }
 
   componentDidMount() {
-    const _this = this;
-
-    catchLinks(this.refs.parent, function(href) {
-      _this.context.router.push(href);
-    });
+    catchLinks(this.refs.parent, href => this.context.router.push(href));
   }
 
   render() {
@@ -31,16 +32,16 @@ export default class RootTemplate extends React.Component {
         <div>
           <h1
             style={{
-              marginBottom: 0
+              marginBottom: 0,
             }}
           >
             {config.blogTitle}
           </h1>
           <div
             style={{
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
-            dangerouslySetInnerHTML={ {__html: config.tagLine} }
+            dangerouslySetInnerHTML={{ __html: config.tagLine }}
           />
         </div>
       );
@@ -51,7 +52,7 @@ export default class RootTemplate extends React.Component {
           <h3>
             <Link
               style={{
-                color: 'inherit'
+                color: 'inherit',
               }}
               to={prefixLink('/')}
             >
@@ -60,7 +61,7 @@ export default class RootTemplate extends React.Component {
           </h3>
           <hr
             style={{
-              marginBottom: rhythm(1)
+              marginBottom: rhythm(1),
             }}
           />
         </div>
@@ -72,10 +73,10 @@ export default class RootTemplate extends React.Component {
         ref="parent"
         style={{
           maxWidth: rhythm(24),
-          padding: `${rhythm(2)} ${rhythm(1/2)}`,
-          paddingTop: rhythm(1/2),
+          padding: `${rhythm(2)} ${rhythm(0.5)}`,
+          paddingTop: rhythm(0.5),
           marginRight: 'auto',
-          marginLeft: 'auto'
+          marginLeft: 'auto',
         }}
       >
         {header}

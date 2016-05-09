@@ -4,8 +4,8 @@ const options = {
   baseFontSize: '18px',
   baseLineHeight: '31px',
   modularScales: [{
-    scale: 'major third'
-  }]
+    scale: 'major third',
+  }],
 };
 
 const typography = new Typography(options);

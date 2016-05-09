@@ -22,13 +22,13 @@ export default class NotFound extends React.Component {
           <h3
             style={{
               marginTop: rhythm(1),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           ><Link to={prefixLink('/')}>« Go back home</Link></h3>
           <hr
             style={{
               marginTop: rhythm(1),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           />
           <Author {...this.props} />

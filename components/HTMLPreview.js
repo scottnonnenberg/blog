@@ -10,20 +10,18 @@ import getPreFoldContent from 'utils/getPreFoldContent';
 import appendToLastTextBlock from 'utils/appendToLastTextBlock';
 
 
-export default React.createClass({
-  displayName: 'HTMLPreview',
+export default class HTMLPreview extends React.Component {
+  static propTypes = {
+    post: React.PropTypes.object.isRequired,
+  }
 
-  contextTypes: {
-    router: React.PropTypes.object.isRequired
-  },
+  static contextTypes = {
+    router: React.PropTypes.object.isRequired,
+  }
 
   componentDidMount() {
-    var _this = this;
-
-    catchLinks(this.refs.html, function(href) {
-      _this.context.router.push(href);
-    });
-  },
+    catchLinks(this.refs.html, href => this.context.router.push(href));
+  }
 
   render() {
     const post = this.props.post;
@@ -40,21 +38,22 @@ export default React.createClass({
     return <div>
       <h2
         style={{
-          marginBottom: rhythm(1/4)
+          marginBottom: rhythm(0.25),
         }}
       >
         <Link to={prefixLink(post.path)}>
           {post.data.title}
         </Link>
         <span className="date">
-          {' ' + shortDate(post.data.date)}
+          {' '}
+          {shortDate(post.data.date)}
         </span>
       </h2>
       <div
         className="markdown"
         ref="html"
-        dangerouslySetInnerHTML={{__html: callToAction}}
+        dangerouslySetInnerHTML={{ __html: callToAction }}
       />
     </div>;
   }
-});
+}

@@ -16,13 +16,14 @@ export default class Author extends React.Component {
           src={icon}
           style={{
             float: 'left',
-            marginRight: rhythm(1/4),
+            marginRight: rhythm(0.25),
             marginBottom: 0,
             width: rhythm(2),
-            height: rhythm(2)
+            height: rhythm(2),
           }}
+          alt="It's me!"
         /></a>
-        <div dangerouslySetInnerHTML={{__html: blurb}} />
+        <div dangerouslySetInnerHTML={{ __html: blurb }} />
       </div>
     );
   }

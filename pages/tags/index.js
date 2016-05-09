@@ -15,21 +15,25 @@ import { config } from 'config';
 
 
 export default class TagIndex extends React.Component {
+  static propTypes = {
+    route: React.PropTypes.object.isRequired,
+  }
+
   render() {
     const title = 'Tags';
     const posts = getPosts(this.props.route.pages);
     const tags = getTagCounts(posts);
     const tagLinks = map(toPairs(tags), ([tag, count]) => (
-       <li
+      <li
         key={tag}
         style={{
-          marginBottom: rhythm(1/4)
+          marginBottom: rhythm(0.25),
         }}
       >
         <Link to={prefixLink(`/tags/${tag}/`)} >{tag}</Link>
         <span
           style={{
-            color: 'lightgray'
+            color: 'lightgray',
           }}
         >
           {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
@@ -47,12 +51,12 @@ export default class TagIndex extends React.Component {
           <hr
             style={{
               marginTop: rhythm(2),
-              marginBottom: rhythm(2)
+              marginBottom: rhythm(2),
             }}
           />
           <div
             style={{
-              marginTop: rhythm(1.5)
+              marginTop: rhythm(1.5),
             }}
           >
             <Author {...this.props} />

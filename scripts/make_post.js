@@ -19,7 +19,7 @@ const postPath = `/${titleSlug}/`;
 
 const posts = loadPosts({
   limit: 1,
-  markdown: false
+  markdown: false,
 });
 const previous = posts[0];
 const previousPath = previous.data.path;
