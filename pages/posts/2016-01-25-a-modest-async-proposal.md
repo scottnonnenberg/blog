@@ -7,6 +7,7 @@ path: /a-modest-async-proposal/
 next: /n-for-node-js-nerp-stack-part-1/
 previous: /open-source-and-feelings-the-challenge/
 tags:
+  - refactoring
   - javascript
   - software
 ---

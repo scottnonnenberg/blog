@@ -4,7 +4,7 @@ title: The State of thehelp
 date: 2016-05-03T16:59:47.221Z
 layout: post
 path: /the-state-of-thehelp/
-next:
+next: /a-functional-distinction/
 previous: /contract-react-training/
 tags:
   - open-source
