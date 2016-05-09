@@ -95,7 +95,7 @@ Unit testing for data transformations. Integration testing for workflow.
 
 ## Practice
 
-In my ["A modest async proposal"](https://blog.scottnonnenberg.com/a-modest-async-proposal/) post, I described a different way to structure asynchronous workflow code in Node.js. But it can be refactored further.
+In my ["A modest async proposal"](/a-modest-async-proposal/) post, I described a different way to structure asynchronous workflow code in Node.js. But it can be refactored further.
 
 How might you split [this `getUser` function](https://github.com/scottnonnenberg/blog-code/blob/2b76dc92c817b1b4a69c3bababdef007b1466c03/a-modest-async-proposal/05.%20promise%20refactored.js#L48) into one _workflow function_ and one _data transformation function_?
 
