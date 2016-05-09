@@ -8,6 +8,7 @@ import toml from 'toml';
 
 import getPreFoldContent from './getPreFoldContent';
 import fixLocalLinks from './fixLocalLinks';
+import removeTags from './removeTags';
 import appendToLastTextBlock from './appendToLastTextBlock';
 
 
@@ -26,7 +27,7 @@ export default function buildFeeds(posts) {
   const feed = new Feed({
     title: config.blogTitle,
     id: config.domain,
-    description: config.tagLine,
+    description: removeTags(config.tagLine),
     link: config.domain,
     copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
     updated: now.toJSON(),

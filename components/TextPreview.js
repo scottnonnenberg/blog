@@ -6,6 +6,7 @@ import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
+import removeTags from 'utils/removeTags';
 import getPreFoldContent from 'utils/getPreFoldContent';
 
 
@@ -14,7 +15,7 @@ export default class TextPreview extends React.Component {
     const post = this.props.post;
     const html = post.data.body;
     const preFold = getPreFoldContent(html);
-    const body = prune(preFold.replace(/<[^>]*>/g, ''), 200);
+    const body = prune(removeTags(preFold), 200);
 
     return <div>
       <h3

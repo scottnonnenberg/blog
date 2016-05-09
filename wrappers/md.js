@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 import DocumentTitle from 'react-document-title';
-import catchLinks from 'catch-links';
 
 import map from 'lodash/map';
 import { prefixLink } from 'gatsby-helpers';
@@ -20,10 +19,6 @@ import '../css/solarized-light.less';
 export default React.createClass({
   displayName: 'MarkdownWrapper',
 
-  contextTypes: {
-    router: React.PropTypes.object.isRequired
-  },
-
   scroll() {
     const hash = window.location.hash;
     if (hash) {
@@ -36,12 +31,6 @@ export default React.createClass({
   },
 
   componentDidMount() {
-    var _this = this;
-
-    catchLinks(this.refs.markdown, function(href) {
-      _this.context.router.push(href);
-    });
-
     setTimeout(this.scroll, 0);
   },
 
@@ -66,7 +55,7 @@ export default React.createClass({
       <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
         <div className="post">
           <h1>{data.title}</h1>
-          <div ref="markdown" className="markdown" dangerouslySetInnerHTML={{__html: data.body}}/>
+          <div className="markdown" dangerouslySetInnerHTML={{__html: data.body}}/>
           <hr
             style={{
               marginTop: rhythm(2),

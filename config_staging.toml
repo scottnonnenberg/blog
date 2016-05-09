@@ -5,7 +5,7 @@ linkPrefix = "/"
 noProductionJavascript = true
 
 favicon = "/favicon.ico"
-tagLine = "A blog about software development and geekery of all kinds."
+tagLine = "A blog about <a href='/tags/software/?tagline'>software development</a> and <a href='/star-wars-cards/?tagline'>geekery</a> <a href='/woot-shirts/?tagline'>of</a> <a href='/cycling-computers-and-posture/?tagline'>all</a> <a href='/a-35lb-weight-swing-in-two-years/?tagline'>kinds</a>."
 domainCDN = "https://static.gcap.ps"
 domainPiwik = "https://piwik.gcap.ps"
 

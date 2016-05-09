@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import catchLinks from 'catch-links';
 
 import { prefixLink } from 'gatsby-helpers';
 
@@ -10,6 +11,18 @@ import '../css/styles.less';
 
 
 export default class RootTemplate extends React.Component {
+  static contextTypes = {
+    router: React.PropTypes.object.isRequired
+  }
+
+  componentDidMount() {
+    const _this = this;
+
+    catchLinks(this.refs.parent, function(href) {
+      _this.context.router.push(href);
+    });
+  }
+
   render() {
     let header;
 
@@ -27,9 +40,8 @@ export default class RootTemplate extends React.Component {
             style={{
               marginBottom: rhythm(1)
             }}
-          >
-            {config.tagLine}
-          </div>
+            dangerouslySetInnerHTML={ {__html: config.tagLine} }
+          />
         </div>
       );
     }
@@ -57,6 +69,7 @@ export default class RootTemplate extends React.Component {
 
     return (
       <div
+        ref="parent"
         style={{
           maxWidth: rhythm(24),
           padding: `${rhythm(2)} ${rhythm(1/2)}`,
