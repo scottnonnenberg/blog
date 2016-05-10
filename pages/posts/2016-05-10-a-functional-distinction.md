@@ -47,7 +47,7 @@ Grator.prototype.list = function(cb) {
 };
 ```
 
-_Note: this code uses [breadcrumbs functionality](https://github.com/thehelp/core/blob/master/src/both/thehelp-core/breadcrumbs.js#L46) from my [thehelp-core](https://github.com/thehelp/core) library to make it easier to debug async errors. It's just a better way to write `if (err) cb(err)`._
+_Note: this code uses [breadcrumbs functionality](https://github.com/thehelp/core/blob/master/src/both/thehelp-core/breadcrumbs.js#L46) from my [thehelp-core](https://github.com/thehelp/core) library to make it easier to debug async errors. It's just a better way to write `if (err) return cb(err)`._
 
 Go ahead, I'll wait...
 
