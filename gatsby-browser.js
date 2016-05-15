@@ -1,3 +1,4 @@
+/* eslint-disable import/no-commonjs */
 
 let first = true;
 

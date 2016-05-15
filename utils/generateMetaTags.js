@@ -58,26 +58,27 @@ export default function generateMetaTags(page, config, path) {
     const ld = {
       '@context': 'http://schema.org',
       '@type': 'Article',
-      publisher: {
-        name: config.blogTitle,
-        logo: config.authorImage,
+      'publisher': {
+        '@type': 'Organization',
+        'name': config.blogTitle,
+        'logo': config.authorImage,
       },
-      author: {
+      'author': {
         '@type': 'Person',
-        name: config.authorName,
-        image: config.authorImage,
-        url: config.authorURL,
-        description: blurb,
+        'name': config.authorName,
+        'image': config.authorImage,
+        'url': config.authorURL,
+        'description': blurb,
       },
-      headline: data.title,
-      datePublished: date,
+      'headline': data.title,
+      'datePublished': date,
       url,
       description,
-      image: {
+      'image': {
         '@type': 'ImageObject',
-        url: image,
+        'url': image,
       },
-      mainEntityOfPage: url,
+      'mainEntityOfPage': url,
     };
 
     tags.push(<script

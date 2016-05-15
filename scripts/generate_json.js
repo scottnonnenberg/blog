@@ -1,14 +1,18 @@
+import './util/setupModulePath'; // eslint-disable-line
+
 import fs from 'fs';
 import path from 'path';
 
 import _ from 'lodash';
 import toml from 'toml';
 
-import loadPosts from '../utils/loadPosts';
-import getPreFoldContent from '../utils/getPreFoldContent';
-import fixLocalLinks from '../utils/fixLocalLinks';
-import appendToLastTextBlock from '../utils/appendToLastTextBlock';
+import getPreFoldContent from 'utils/getPreFoldContent';
+import fixLocalLinks from 'utils/fixLocalLinks';
+import appendToLastTextBlock from 'utils/appendToLastTextBlock';
 
+import loadPosts from 'scripts/util/loadPosts';
+
+const RECENT_LIMIT = 10;
 
 const allPath = path.join(__dirname, '../public/all.json');
 const recentPath = path.join(__dirname, '../public/recent.json');
@@ -34,4 +38,4 @@ const json = _.map(posts, post => {
 });
 
 fs.writeFileSync(allPath, JSON.stringify(json, null, '  '));
-fs.writeFileSync(recentPath, JSON.stringify(json.slice(0, 10), null, '  '));
+fs.writeFileSync(recentPath, JSON.stringify(json.slice(0, RECENT_LIMIT), null, '  '));

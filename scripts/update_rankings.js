@@ -1,10 +1,14 @@
+import './util/setupModulePath'; // eslint-disable-line
+
 import fs from 'fs';
 
 import superagent from 'superagent';
 import _ from 'lodash';
 
-import loadPosts from '../utils/loadPosts';
+import loadPosts from 'scripts/util/loadPosts';
 
+
+const SUCCESS = 200;
 
 const posts = loadPosts({
   markdown: false,
@@ -25,14 +29,14 @@ superagent
     period: 'range',
     date: '2013-1-1,2016-05-06',
     expanded: 1,
-    token_auth: '8c3e249277ac43852917552b63335dba',
-    filter_limit: 100,
+    token_auth: '8c3e249277ac43852917552b63335dba', // eslint-disable-line
+    filter_limit: 100, // eslint-disable-line
   })
   .end((err, res) => {
     if (err) {
       throw err;
     }
-    if (res.status !== 200) {
+    if (res.status !== SUCCESS) {
       throw new Error(`non-200 response! ${res.text}`);
     }
 
@@ -48,10 +52,10 @@ superagent
         }
 
         if (entry.url === '/the-dangerous-cliffs-of-node-js/') {
-          entry.nb_hits += 631;
+          entry.nb_hits += 631; // eslint-disable-line
         }
         if (entry.url === '/contract-teaching/') {
-          entry.nb_hits += 10;
+          entry.nb_hits += 10; // eslint-disable-line
         }
 
         if (!lookup[entry.url]) {

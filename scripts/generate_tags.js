@@ -1,11 +1,14 @@
+import './util/setupModulePath'; // eslint-disable-line
+
 import fs from 'fs';
 import path from 'path';
 
 import _ from 'lodash';
 
-import loadPosts from '../utils/loadPosts';
-import getTagCounts from '../utils/getTagCounts';
-import writeIfDifferent from '../utils/writeIfDifferent';
+import getTagCounts from 'utils/getTagCounts';
+
+import writeIfDifferent from 'scripts/util/writeIfDifferent';
+import loadPosts from 'scripts/util/loadPosts';
 
 
 const posts = loadPosts({

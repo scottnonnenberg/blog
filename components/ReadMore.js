@@ -15,6 +15,8 @@ function includes(target, substring) {
 }
 
 
+const SMALL_FONT = -0.5;
+
 export default class ReadMore extends React.Component {
   static propTypes = {
     post: React.PropTypes.object.isRequired,
@@ -31,9 +33,9 @@ export default class ReadMore extends React.Component {
         <h5
           style={{
             margin: 0,
-            fontSize: fontSizeToMS(-0.5).fontSize,
-            lineHeight: fontSizeToMS(-0.5).lineHeight,
-            letterSpacing: -0.5,
+            fontSize: fontSizeToMS(SMALL_FONT).fontSize,
+            lineHeight: fontSizeToMS(SMALL_FONT).lineHeight,
+            letterSpacing: SMALL_FONT,
           }}
         >
           {label}:
@@ -58,7 +60,7 @@ export default class ReadMore extends React.Component {
     }
 
     if (!nextPost && !previousPost) {
-      return <noscript />;
+      return null;
     }
 
     return (

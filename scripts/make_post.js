@@ -1,10 +1,12 @@
+import './util/setupModulePath'; // eslint-disable-line
+
 import fs from 'fs';
 import path from 'path';
 import _string from 'underscore.string';
 
 import moment from 'moment';
 
-import loadPosts from '../utils/loadPosts';
+import loadPosts from 'scripts/util/loadPosts';
 
 
 const templatePath = path.join(__dirname, '../utils/_postTemplate.md');
@@ -31,18 +33,17 @@ const newContents = template
   .replace('PREVIOUS', previousPath);
 
 const filePathDate = moment(now).format('YYYY-MM-DD');
-const newFilePath = path.join(__dirname, `../pages/posts/${filePathDate}-${titleSlug}.md`);
+const newFilePath =
+  path.join(__dirname, `../pages/posts/${filePathDate}-${titleSlug}.md`);
 
 fs.writeFileSync(newFilePath, newContents);
 
-const nextSearch = /^next:( \/[^\/]+\/)?$/m;
+const nextSearch = /^next:( \/[^\/]+\/)?$/m; // eslint-disable-line
 const match = nextSearch.exec(previous.contents);
 
-if (!match || match[1]) {
-  process.exit();
+if (match && match[1]) {
+  const next = `next: ${postPath}`;
+  const previousContents = previous.contents.replace(nextSearch, next);
+
+  fs.writeFileSync(previous.path, previousContents);
 }
-
-const next = `next: ${postPath}`;
-const previousContents = previous.contents.replace(nextSearch, next);
-
-fs.writeFileSync(previous.path, previousContents);

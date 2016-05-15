@@ -2,18 +2,18 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 import DocumentTitle from 'react-document-title';
-
 import map from 'lodash/map';
-import { prefixLink } from 'gatsby-helpers';
+
+import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
+import { config } from 'config'; // eslint-disable-line
 
 import { rhythm } from 'utils/typography';
 import intersperse from 'utils/intersperse';
 
 import ReadMore from 'components/ReadMore';
 import Author from 'components/Author';
-import { config } from 'config';
 
-import '../css/solarized-light.less';
+import 'css/solarized-light.less';
 
 
 export default class MarkdownWrapper extends React.Component {
@@ -44,9 +44,9 @@ export default class MarkdownWrapper extends React.Component {
     const post = this.props.route.page;
     const data = post.data;
     const tags = data.tags;
-    const tagLinks = map(tags, tag => (
+    const tagLinks = map(tags, tag =>
       <Link key={tag} to={prefixLink(`/tags/${tag}/`)}>{tag}</Link>
-    ));
+    );
 
     let tagSection;
     if (tagLinks.length) {
@@ -64,7 +64,8 @@ export default class MarkdownWrapper extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <div className="metadata"
+          <div
+            className="metadata"
             style={{
               display: 'block',
               marginTop: rhythm(1),

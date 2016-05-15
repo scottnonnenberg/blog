@@ -4,65 +4,67 @@ import DocumentTitle from 'react-document-title';
 
 import map from 'lodash/map';
 import toPairs from 'lodash/toPairs';
-import { prefixLink } from 'gatsby-helpers';
+
+import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
+import { config } from 'config'; // eslint-disable-line
 
 import { rhythm } from 'utils/typography';
 import getTagCounts from 'utils/getTagCounts';
 import getPosts from 'utils/getPosts';
 
 import Author from 'components/Author';
-import { config } from 'config';
 
 
-export default class TagIndex extends React.Component {
-  static propTypes = {
-    route: React.PropTypes.object.isRequired,
-  }
+const QUARTER = 0.25;
+const LARGER_MARGIN = 1.5;
 
-  render() {
-    const title = 'Tags';
-    const posts = getPosts(this.props.route.pages);
-    const tags = getTagCounts(posts);
-    const tagLinks = map(toPairs(tags), ([tag, count]) => (
-      <li
-        key={tag}
+export default function TagIndex(props) {
+  const title = 'Tags';
+  const posts = getPosts(props.route.pages);
+  const tags = getTagCounts(posts);
+  const tagLinks = map(toPairs(tags), ([tag, count]) =>
+    <li
+      key={tag}
+      style={{
+        marginBottom: rhythm(QUARTER),
+      }}
+    >
+      <Link to={prefixLink(`/tags/${tag}/`)} >{tag}</Link>
+      <span
         style={{
-          marginBottom: rhythm(0.25),
+          color: 'lightgray',
         }}
       >
-        <Link to={prefixLink(`/tags/${tag}/`)} >{tag}</Link>
-        <span
+        {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
+      </span>
+    </li>
+  );
+
+  return (
+    <DocumentTitle title={`${title} | ${config.blogTitle}`}>
+      <div>
+        <h1>{title}</h1>
+        <ul>
+          {tagLinks}
+        </ul>
+        <hr
           style={{
-            color: 'lightgray',
+            marginTop: rhythm(2),
+            marginBottom: rhythm(2),
+          }}
+        />
+        <div
+          style={{
+            marginTop: rhythm(LARGER_MARGIN),
           }}
         >
-          {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
-        </span>
-      </li>
-    ));
-
-    return (
-      <DocumentTitle title={`${title} | ${config.blogTitle}`}>
-        <div>
-          <h1>{title}</h1>
-          <ul>
-            {tagLinks}
-          </ul>
-          <hr
-            style={{
-              marginTop: rhythm(2),
-              marginBottom: rhythm(2),
-            }}
-          />
-          <div
-            style={{
-              marginTop: rhythm(1.5),
-            }}
-          >
-            <Author {...this.props} />
-          </div>
+          <Author {...this.props} />
         </div>
-      </DocumentTitle>
-    );
-  }
+      </div>
+    </DocumentTitle>
+  );
 }
+
+TagIndex.propTypes = {
+  route: React.PropTypes.object.isRequired,
+};

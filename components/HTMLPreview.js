@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-import catchLinks from 'catch-links';
 
-import { prefixLink } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
 import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
@@ -10,17 +9,11 @@ import getPreFoldContent from 'utils/getPreFoldContent';
 import appendToLastTextBlock from 'utils/appendToLastTextBlock';
 
 
+const QUARTER = 0.25;
+
 export default class HTMLPreview extends React.Component {
   static propTypes = {
     post: React.PropTypes.object.isRequired,
-  }
-
-  static contextTypes = {
-    router: React.PropTypes.object.isRequired,
-  }
-
-  componentDidMount() {
-    catchLinks(this.refs.html, href => this.context.router.push(href));
   }
 
   render() {
@@ -38,7 +31,7 @@ export default class HTMLPreview extends React.Component {
     return <div>
       <h2
         style={{
-          marginBottom: rhythm(0.25),
+          marginBottom: rhythm(QUARTER),
         }}
       >
         <Link to={prefixLink(post.path)}>
@@ -51,7 +44,6 @@ export default class HTMLPreview extends React.Component {
       </h2>
       <div
         className="markdown"
-        ref="html"
         dangerouslySetInnerHTML={{ __html: callToAction }}
       />
     </div>;

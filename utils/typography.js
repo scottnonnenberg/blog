@@ -11,8 +11,13 @@ const options = {
 const typography = new Typography(options);
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') { // eslint-disable-line
   typography.injectStyles();
 }
 
-export default typography;
+// two different exports to avoid prefer-default while supporting named
+// https://github.com/benmosher/eslint-plugin-import/issues/342
+
+export const { rhythm } = typography;
+export const { TypographyStyle } = typography;
+export const { fontSizeToMS } = typography;

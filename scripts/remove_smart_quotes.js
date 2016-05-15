@@ -1,7 +1,9 @@
+import './util/setupModulePath'; // eslint-disable-line
+
 import _ from 'lodash';
 
-import loadPosts from '../utils/loadPosts';
-import writeIfDifferent from '../utils/writeIfDifferent';
+import loadPosts from 'scripts/util/loadPosts';
+import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
 
 const limit = parseInt(process.argv[2], 10) || 1;

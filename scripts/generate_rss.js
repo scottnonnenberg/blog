@@ -1,5 +1,7 @@
-import loadPosts from '../utils/loadPosts';
-import buildFeeds from '../utils/buildFeeds';
+import './util/setupModulePath'; // eslint-disable-line
+
+import loadPosts from 'scripts/util/loadPosts';
+import buildFeeds from 'scripts/util/buildFeeds';
 
 const posts = loadPosts({
   limit: 20,

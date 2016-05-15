@@ -2,13 +2,16 @@ import React from 'react';
 import { Link } from 'react-router';
 import catchLinks from 'catch-links';
 
-import { prefixLink } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers';  // eslint-disable-line
+import { config } from 'config'; // eslint-disable-line
 
 import { rhythm } from 'utils/typography';
-import { config } from 'config';
 
-import '../css/styles.less';
+import 'css/styles.less';
 
+
+const MAX_WIDTH = 24;
+const HALF = 0.5;
 
 export default class RootTemplate extends React.Component {
   static propTypes = {
@@ -20,61 +23,67 @@ export default class RootTemplate extends React.Component {
     router: React.PropTypes.object.isRequired,
   }
 
+  constructor() {
+    super();
+
+    this.getParent = this.getParent.bind(this);
+  }
+
   componentDidMount() {
-    catchLinks(this.refs.parent, href => this.context.router.push(href));
+    catchLinks(this.parentNode, href => this.context.router.push(href));
+  }
+
+  getParent(ref) {
+    this.parentNode = ref;
   }
 
   render() {
     let header;
 
     if (this.props.location.pathname === prefixLink('/')) {
-      header = (
-        <div>
-          <h1
-            style={{
-              marginBottom: 0,
-            }}
-          >
-            {config.blogTitle}
-          </h1>
-          <div
-            style={{
-              marginBottom: rhythm(1),
-            }}
-            dangerouslySetInnerHTML={{ __html: config.tagLine }}
-          />
-        </div>
-      );
+      header = <div>
+        <h1
+          style={{
+            marginBottom: 0,
+          }}
+        >
+          {config.blogTitle}
+        </h1>
+        <div
+          style={{
+            marginBottom: rhythm(1),
+          }}
+          dangerouslySetInnerHTML={{ __html: config.tagLine }}
+        />
+      </div>;
     }
     else {
-      header = (
-        <div>
-          <h3>
-            <Link
-              style={{
-                color: 'inherit',
-              }}
-              to={prefixLink('/')}
-            >
-              « {config.blogTitle}
-            </Link>
-          </h3>
-          <hr
+      header = <div>
+        <h3>
+          <Link
             style={{
-              marginBottom: rhythm(1),
+              color: 'inherit',
             }}
-          />
-        </div>
-      );
+            to={prefixLink('/')}
+          >
+            « {config.blogTitle}
+          </Link>
+        </h3>
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+      </div>;
     }
 
     return (
       <div
-        ref="parent"
+        ref={this.getParent}
         style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(2)} ${rhythm(0.5)}`,
-          paddingTop: rhythm(0.5),
+          maxWidth: rhythm(MAX_WIDTH),
+          padding: `${rhythm(2)} ${rhythm(HALF)}`,
+          paddingTop: rhythm(HALF),
           marginRight: 'auto',
           marginLeft: 'auto',
         }}

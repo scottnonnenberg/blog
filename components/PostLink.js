@@ -1,34 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import { prefixLink } from 'gatsby-helpers';
+import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
 import { rhythm } from 'utils/typography';
 import shortDate from 'utils/shortDate';
 
-export default class PostLink extends React.Component {
-  static propTypes = {
-    post: React.PropTypes.object.isRequired,
-  }
 
-  render() {
-    const post = this.props.post;
-    const data = post.data;
+const QUARTER = 0.25;
 
-    return (
-      <div
-        style={{
-          marginBottom: rhythm(0.25),
-        }}
-      >
-        <Link to={prefixLink(post.path)}>
-          {data.title || post.path}
-        </Link>
-        <span className="date">
-          {' '}
-          {shortDate(data.date)}
-        </span>
-      </div>
-    );
-  }
+export default function PostLink(props) {
+  const post = props.post;
+  const data = post.data;
+
+  return <div
+    style={{
+      marginBottom: rhythm(QUARTER),
+    }}
+  >
+    <Link to={prefixLink(post.path)}>
+      {data.title || post.path}
+    </Link>
+    <span className="date">
+      {' '}
+      {shortDate(data.date)}
+    </span>
+  </div>;
 }
+
+PostLink.propTypes = {
+  post: React.PropTypes.object.isRequired,
+};
+
