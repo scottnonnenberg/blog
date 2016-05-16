@@ -16,4 +16,5 @@ authorTwitter = "@scottnonnenberg"
 authorURL = "https://scottnonnenberg.com"
 authorImage = "https://static.sinap.ps/img/profile/me_2012.jpg"
 authorIcon = "https://static.sinap.ps/img/profile/me_2012_square_300px.jpg"
-authorBlurb = "Hi, I'm <a href='https://scottnonnenberg.com'><strong>Scott</strong></a>. I've been in software <a href='https://scottnonnenberg.com/work/'>a long time</a>, and during most of that time I have worked to bridge the people/tech divide. <a class='call-to-action' href='mailto:scott@nonnenberg.com'>Contact me</a> if your company needs training, coding, or just an experienced outside perspective!"
+authorBlurb = "Hi, I'm <a href='https://scottnonnenberg.com'><strong>Scott</strong></a>. I've been in software <a href='https://scottnonnenberg.com/work/'>a long time</a>, and during most of that time I have worked to <a href='/from-tech-person-to-people-person/'>bridge the people/tech divide</a>. <a class='call-to-action' href='mailto:scott@nonnenberg.com'>Contact me</a> if your company needs training, coding, or just an experienced outside perspective!"
+
