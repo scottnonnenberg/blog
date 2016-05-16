@@ -1,6 +1,6 @@
 ---
 rank: 35
-title: The State of thehelp
+title: The state of thehelp
 date: 2016-05-03T16:59:47.221Z
 layout: post
 path: /the-state-of-thehelp/
