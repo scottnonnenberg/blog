@@ -17,7 +17,7 @@ export default function loadPosts(options) {
   const limit = options.limit || Infinity;
   const markdown = typeof options.markdown === 'undefined' ? true : options.markdown;
 
-  const postsPath = path.join(__dirname, '../pages/posts');
+  const postsPath = path.join(__dirname, '../../pages/posts');
   const postFiles = fs.readdirSync(postsPath);
 
   return _.chain(postFiles)

@@ -12,7 +12,7 @@ import removeTags from 'utils/removeTags';
 import appendToLastTextBlock from 'utils/appendToLastTextBlock';
 
 
-const configPath = path.join(__dirname, '../config.toml');
+const configPath = path.join(__dirname, '../../config.toml');
 
 export default function buildFeeds(posts) {
   const config = toml.parse(fs.readFileSync(configPath).toString());
