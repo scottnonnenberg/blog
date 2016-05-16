@@ -74,7 +74,7 @@ export default function Index(props) {
             marginTop: rhythm(LARGER_MARGIN),
           }}
         >
-          <Author {...this.props} />
+          <Author {...props} />
         </div>
       </div>
     </DocumentTitle>

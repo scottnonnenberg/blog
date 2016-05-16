@@ -44,7 +44,7 @@ export default function Popular(props) {
             marginBottom: rhythm(1),
           }}
         />
-        <Author {...this.props} />
+        <Author {...props} />
       </div>
     </DocumentTitle>
   );

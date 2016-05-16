@@ -10,7 +10,7 @@ import { rhythm } from 'utils/typography';
 import Author from 'components/Author';
 
 
-export default function NotFound() {
+export default function NotFound(props) {
   const title = 'Couldn\'t find that!';
 
   return <DocumentTitle title={`${title} | ${config.blogTitle}`}>
@@ -29,7 +29,7 @@ export default function NotFound() {
           marginBottom: rhythm(2),
         }}
       />
-      <Author {...this.props} />
+      <Author {...props} />
     </div>
   </DocumentTitle>;
 }

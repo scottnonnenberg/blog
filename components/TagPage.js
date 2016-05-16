@@ -18,7 +18,7 @@ export default function TagPage(props) {
   const tag = props.tag;
 
   const title = `Posts tagged '${tag}'`;
-  const posts = getPosts(this.props.route.pages);
+  const posts = getPosts(props.route.pages);
   const postsWithTag = getPostsWithTag(posts, tag);
   const textPreviewPosts = postsWithTag.slice(0, TEXT_PREVIEW_POSTS);
   const plainPosts = postsWithTag.slice(TEXT_PREVIEW_POSTS);
@@ -42,7 +42,7 @@ export default function TagPage(props) {
             marginBottom: rhythm(2),
           }}
         />
-        <Author {...this.props} />
+        <Author {...props} />
       </div>
     </DocumentTitle>
   );

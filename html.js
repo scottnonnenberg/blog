@@ -87,7 +87,7 @@ export default function HTML(props) {
 }
 
 HTML.propTypes = {
-  body: React.PropTypes.object,
+  body: React.PropTypes.string,
   title: React.PropTypes.object,
   location: React.PropTypes.object,
   routes: React.PropTypes.object,
