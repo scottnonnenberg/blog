@@ -9,6 +9,7 @@ previous: /my-2016-mantras/
 tags:
   - fun
   - data
+  - star-wars
 ---
 
 ![Luke and Vader](https://static.sinap.ps/blog/2016/03_mar/star_wars/cards.jpg)
