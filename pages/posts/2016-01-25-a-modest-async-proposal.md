@@ -243,7 +243,7 @@ refProcess.go(function(err, newReferences) {
 
 ## Heaven?
 
-Take a look at [my example code, with all five working example files](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal). Clone it and play with it. You'll find the complete callback-style version of my async pattern as well as a version implemented with promises. What do you think?
+Take a look at [my example code, with working example files](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal). Clone it and play with it. You'll find the complete callback-style version of my async pattern as well as a version implemented with promises. Thanks to [a friend](https://twitter.com/rphillips), you'll also see a version based on [`async.auto`](https://github.com/caolan/async#autotasks-concurrency-callback) which is about as flexible as what I've described above. What do you think?
 
 I like it. Each step is far easier to test and reason about, and you can rearrange the steps as long as each step has the information it needs on `this`. Speaking of `this`, you can print the whole object out at any time and see all the data you need to debug the workflow.
 
