@@ -1,15 +1,15 @@
 import moment from 'moment';
 
-export default function shortDate(date) {
-  const now = moment(new Date());
-  const instance = moment(date);
+export default function shortDate(providedDate, providedNow) {
+  const date = moment(providedDate);
+  const now = moment(providedNow);
 
   const currentYear = now.format('YYYY');
-  const year = instance.format('YYYY');
+  const year = date.format('YYYY');
 
   if (currentYear === year) {
-    return instance.format('MMM DD');
+    return date.format('MMM DD');
   }
 
-  return instance.format('YYYY MMM DD');
+  return date.format('YYYY MMM DD');
 }

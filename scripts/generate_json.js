@@ -23,7 +23,7 @@ const config = toml.parse(fs.readFileSync(configPath).toString());
 const posts = loadPosts();
 
 const json = _.map(posts, post => {
-  const preFoldContent = fixLocalLinks(config.domain, getPreFoldContent(post.body));
+  const preFoldContent = fixLocalLinks(getPreFoldContent(post.body), config.domain);
   const url = config.domain + post.data.path;
   const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
   const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);

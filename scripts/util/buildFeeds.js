@@ -37,7 +37,7 @@ export default function buildFeeds(posts) {
 
   _.forEach(posts, post => {
     const data = post.data;
-    const preFoldContent = fixLocalLinks(config.domain, getPreFoldContent(post.body));
+    const preFoldContent = fixLocalLinks(getPreFoldContent(post.body), config.domain);
     const url = config.domain + data.path;
     const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
     const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
@@ -46,7 +46,7 @@ export default function buildFeeds(posts) {
       title: data.title,
       link: url,
       description: withCallToAction,
-      content: fixLocalLinks(config.domain, post.body),
+      content: fixLocalLinks(post.body, config.domain),
       date: data.date,
       author: [author],
     });
