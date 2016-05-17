@@ -36,4 +36,17 @@ describe('unit/both/utils/fixLocalLinks', () => {
 
     expect(fixLocalLinks(html, domain)).to.equal(expected);
   });
+
+  it('replaces link to root of page', () => {
+    const html = stripIndent`
+      <a href="/">Text</a>
+    `;
+    const domain = 'domain';
+
+    const expected = stripIndent`
+      <a href="domain/">Text</a>
+    `;
+
+    expect(fixLocalLinks(html, domain)).to.equal(expected);
+  });
 });

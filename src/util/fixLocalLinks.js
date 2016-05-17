@@ -3,6 +3,6 @@ export default function fixLocalLinks(html, domain) {
     return html;
   }
 
-  const linkR = /href="(\/[^"]+)"/g;
+  const linkR = /href="(\/[^"]*)"/g;
   return html.replace(linkR, (match, link) => `href="${domain + link}"`);
 }
