@@ -18,10 +18,16 @@ function removeSmartQuotes(value) {
     .replace(/[“”]/g, '"');
 }
 
+function removeDupeLinks(contents) {
+  const dupeLink = /\[([^\)]+)\]\(\1\)/g;
+  return contents.replace(dupeLink, (full, substring) => substring);
+}
+
 _.forEach(posts, post => {
   console.log('checking', post.path);
 
-  const contents = removeSmartQuotes(post.contents);
+  const withoutSmartQuotes = removeSmartQuotes(post.contents);
+  const withoutDupeLinks = removeDupeLinks(withoutSmartQuotes);
 
-  writeIfDifferent(post.path, contents);
+  writeIfDifferent(post.path, withoutDupeLinks);
 });
