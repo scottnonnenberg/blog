@@ -1,4 +1,4 @@
-/* eslint-disable import/no-commonjs, no-magic-numbers, no-inline-comments */
+/* eslint-disable no-inline-comments, no-magic-numbers, import/no-commonjs, immutable/no-mutation */
 
 // Some guidelines for this file
 //   - all rules from all plugins must be included ('npm run find-missing-eslint-rules')
@@ -114,10 +114,10 @@ module.exports = {
     'no-class-assign': 'error',
     'no-cond-assign': ['error', 'always'],
     'no-confusing-arrow': 'error',
-    'no-console': 'off', // maybe for other projects; we have command-line apps
+    'no-console': 'error',
     'no-const-assign': 'error',
     'no-constant-condition': 'error',
-    'no-continue': 'off', // maybe for other projects; we use for loops
+    'no-continue': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-delete-var': 'error',
@@ -149,7 +149,7 @@ module.exports = {
     'no-floating-decimal': 'error',
     'no-func-assign': 'error',
     'no-implicit-coercion': 'error',
-    'no-implicit-globals': 'off', // all of my code is in modules anyway
+    'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
     'no-inline-comments': 'error',
     'no-inner-declarations': 'error',
@@ -228,7 +228,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-underscore-dangle': 'off', // may want to turn it on with allowAfterThis?
+    'no-underscore-dangle': 'off', // sometimes I'll export internals prefixed with _
     'no-unexpected-multiline': 'error',
     'no-unmodified-loop-condition': 'error',
     'no-unneeded-ternary': 'error',
@@ -243,7 +243,7 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
-    'no-var': 'error', // using only const and let!
+    'no-var': 'error',
     'no-void': 'error',
     'no-warning-comments': ['error', {
       terms: ['todo'],
@@ -307,7 +307,7 @@ module.exports = {
     'chai-expect/no-inner-compare': 'error',
     'chai-expect/terminating-properties': 'error',
 
-    'import/default': 'off', // breaks on import of package.json
+    'import/default': 'error',
     'import/export': 'error',
     'import/extensions': ['error', {
       json: 'always',
@@ -327,7 +327,7 @@ module.exports = {
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default': 'error',
     'import/no-named-as-default-member': 'error',
-    'import/no-namespace': 'off', // I'm okay with using '* as foo' to pull in everything
+    'import/no-namespace': 'error',
     'import/no-nodejs-modules': 'off', // We're definitely using the builtins
     'import/no-unresolved': ['error', { commonjs: true }],
     // documented default is not correct, specifying manually
@@ -339,7 +339,7 @@ module.exports = {
 
     'immutable/no-let': 'error',
     'immutable/no-mutation': 'error',
-    'immutable/no-this': 'off', // we're still using React
+    'immutable/no-this': 'off', // we're still using full React classes, otherwise no
 
     'jsx-a11y/aria-props': 'error',
     'jsx-a11y/aria-proptypes': 'error',

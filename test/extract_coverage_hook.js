@@ -1,4 +1,4 @@
-/* eslint-disable no-var, import/no-commonjs, immutable/no-mutation */
+/* eslint-disable no-console, no-var, import/no-commonjs, immutable/no-mutation */
 
 var fs = require('fs');
 

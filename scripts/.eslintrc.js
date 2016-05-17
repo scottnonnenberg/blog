@@ -1,5 +1,6 @@
 module.exports = {
   rules: {
+    'no-console': 'off',
     'no-sync': 'off',
 
     'import/imports-first': 'off',
