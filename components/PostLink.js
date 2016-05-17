@@ -28,7 +28,7 @@ export default function PostLink(props) {
   </div>;
 }
 
-PostLink.propTypes = {
+PostLink.propTypes = { // eslint-disable-line
   post: React.PropTypes.object.isRequired,
 };
 

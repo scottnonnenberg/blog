@@ -23,6 +23,12 @@ export default class ReadMore extends React.Component {
     posts: React.PropTypes.array.isRequired,
   }
 
+  getPath(posts, path) {
+    if (path) {
+      return find(posts, page => includes(page.path, path.slice(1, -1)));
+    }
+  }
+
   renderItem(label, post) {
     if (!post) {
       return;
@@ -47,17 +53,8 @@ export default class ReadMore extends React.Component {
 
   render() {
     const posts = this.props.posts;
-    const nextPath = this.props.post.next;
-    const previousPath = this.props.post.previous;
-    let nextPost;
-    let previousPost;
-
-    if (nextPath) {
-      nextPost = find(posts, page => includes(page.path, nextPath.slice(1, -1)));
-    }
-    if (previousPath) {
-      previousPost = find(posts, page => includes(page.path, previousPath.slice(1, -1)));
-    }
+    const nextPost = this.getPath(posts, this.props.post.next);
+    const previousPost = this.getPath(posts, this.props.post.previous);
 
     if (!nextPost && !previousPost) {
       return null;

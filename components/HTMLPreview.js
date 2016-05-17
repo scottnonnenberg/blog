@@ -16,6 +16,13 @@ export default class HTMLPreview extends React.Component {
     post: React.PropTypes.object.isRequired,
   }
 
+  getHTMLPreview(post) {
+    const html = post.data.body;
+    const preFold = getPreFoldContent(html);
+    const textLink = ` <a href="${prefixLink(post.path)}">Read more&nbsp;»</a>`;
+    return appendToLastTextBlock(preFold, textLink);
+  }
+
   render() {
     const post = this.props.post;
 
@@ -23,10 +30,7 @@ export default class HTMLPreview extends React.Component {
       return;
     }
 
-    const html = post.data.body;
-    const preFold = getPreFoldContent(html);
-    const textLink = ` <a href="${prefixLink(post.path)}">Read more&nbsp;»</a>`;
-    const callToAction = appendToLastTextBlock(preFold, textLink);
+    const preview = this.getHTMLPreview(post);
 
     return <div>
       <h2
@@ -44,7 +48,7 @@ export default class HTMLPreview extends React.Component {
       </h2>
       <div
         className="markdown"
-        dangerouslySetInnerHTML={{ __html: callToAction }}
+        dangerouslySetInnerHTML={{ __html: preview }}
       />
     </div>;
   }

@@ -37,7 +37,9 @@ module.exports = {
     'bdd',
     'chai-expect',
     'import',
+    'immutable',
     'jsx-a11y',
+    'no-loops',
     'react',
     'security',
     'thehelp',
@@ -45,7 +47,7 @@ module.exports = {
 
   rules: {
     'accessor-pairs': 'error',
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': 'error',
     'array-callback-return': 'error',
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'as-needed'],
@@ -58,7 +60,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': 'error',
     'comma-style': 'error',
-    'complexity': ['error', 8],
+    'complexity': ['error', { max: 8 }],
     'computed-property-spacing': 'error',
     'consistent-return': 'off', // conflicts with notate/breadcrumbs
     'consistent-this': ['error', '_this'],
@@ -89,14 +91,14 @@ module.exports = {
     'keyword-spacing': 'error',
     'linebreak-style': 'error',
     'lines-around-comment': 'off', // too restricting; conflicts with eslint-disable
-    'max-depth': ['error', 3],
+    'max-depth': ['error', { max: 3 }],
     'max-len': ['error', 90, 2, {
       ignoreUrls: true,
       ignoreComments: true,
     }],
     'max-nested-callbacks': ['error', { max: 3 }],
-    'max-params': ['error', 3],
-    'max-statements': 'off', // maybe useful for other projects? not this one though
+    'max-params': 'error',
+    'max-statements': ['error', { max: 12 }],
     'max-statements-per-line': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
@@ -139,7 +141,7 @@ module.exports = {
     'no-ex-assign': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
-    'no-extra-boolean-cast': 'off',
+    'no-extra-boolean-cast': 'error',
     'no-extra-label': 'error',
     'no-extra-parens': 'error',
     'no-extra-semi': 'error',
@@ -184,7 +186,7 @@ module.exports = {
     'no-obj-calls': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
-    'no-param-reassign': 'off', // no, I really like the 'options = options || {}' pattern
+    'no-param-reassign': 'error',
     'no-path-concat': 'error',
     'no-plusplus': 'error',
     'no-process-env': 'error',
@@ -250,6 +252,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
     'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': 'off', // wish there was a limit of two keys
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': 'error',
@@ -334,6 +337,10 @@ module.exports = {
     }],
     'import/prefer-default-export': 'error',
 
+    'immutable/no-let': 'error',
+    'immutable/no-mutation': 'error',
+    'immutable/no-this': 'off', // we're still using React
+
     'jsx-a11y/aria-props': 'error',
     'jsx-a11y/aria-proptypes': 'error',
     'jsx-a11y/aria-role': 'error',
@@ -350,6 +357,8 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'error',
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/tabindex-no-positive': 'error',
+
+    'no-loops/no-loops': 'error',
 
     'react/display-name': 'error',
     'react/forbid-prop-types': ['error', { forbid: ['any'] }],

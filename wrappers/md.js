@@ -40,18 +40,22 @@ export default class MarkdownWrapper extends React.Component {
     }
   }
 
-  render() {
-    const post = this.props.route.page;
-    const data = post.data;
-    const tags = data.tags;
+  renderTagLinks(tags) {
+    if (!tags || !tags.length) {
+      return;
+    }
+
     const tagLinks = map(tags, tag =>
       <Link key={tag} to={prefixLink(`/tags/${tag}/`)}>{tag}</Link>
     );
 
-    let tagSection;
-    if (tagLinks.length) {
-      tagSection = <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>;
-    }
+    return <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>;
+  }
+
+  render() {
+    const post = this.props.route.page;
+    const data = post.data;
+    const tags = data.tags;
 
     return (
       <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
@@ -73,7 +77,7 @@ export default class MarkdownWrapper extends React.Component {
             }}
           >
             <div><em>Posted:</em> {moment(data.date).format('MMMM D, YYYY')}</div>
-            {tagSection}
+            {this.renderTagLinks(tags)}
           </div>
           <hr
             style={{

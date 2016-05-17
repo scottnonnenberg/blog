@@ -37,6 +37,6 @@ export default function TextPreview(props) {
   </div>;
 }
 
-TextPreview.propTypes = {
+TextPreview.propTypes = { // eslint-disable-line
   post: React.PropTypes.object.isRequired,
 };

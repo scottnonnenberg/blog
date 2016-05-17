@@ -1,25 +1,22 @@
-import forEach from 'lodash/forEach';
-import map from 'lodash/map';
-import sortBy from 'lodash/sortBy';
-import fromPairs from 'lodash/fromPairs';
-import toPairs from 'lodash/toPairs';
+import map from 'lodash/fp/map';
+import sortBy from 'lodash/fp/sortBy';
+import toPairs from 'lodash/fp/toPairs';
+import flatten from 'lodash/fp/flatten';
+import fromPairs from 'lodash/fp/fromPairs';
+import reverse from 'lodash/fp/reverse';
+import groupBy from 'lodash/fp/groupBy';
+import flow from 'lodash/fp/flow';
 
 
-export default function getTagCounts(posts) {
-  const lookup = Object.create(null);
-
-  forEach(posts, post => {
-    forEach(post.data.tags, tag => {
-      const list = lookup[tag] = lookup[tag] || [];
-      list.push(post);
-    });
-  });
-
-  let counts = toPairs(lookup);
-
-  counts = map(counts, array => [array[0], array[1].length]);
-  counts = sortBy(counts, array => array[1]);
-  counts.reverse();
-
-  return fromPairs(counts);
-}
+export default flow(
+  map(post =>
+    map(tag => [tag, 1])(post.data.tags)
+  ),
+  flatten,
+  groupBy(0),
+  toPairs,
+  map(([name, list]) => [name, list.length]),
+  sortBy(1),
+  reverse,
+  fromPairs,
+);

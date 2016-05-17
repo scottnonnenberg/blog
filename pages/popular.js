@@ -1,9 +1,11 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 
-import sortBy from 'lodash/sortBy';
-import map from 'lodash/map';
-import filter from 'lodash/filter';
+import flow from 'lodash/fp/flow';
+import sortBy from 'lodash/fp/sortBy';
+import map from 'lodash/fp/map';
+import take from 'lodash/fp/take';
+import filter from 'lodash/fp/filter';
 
 import { config } from 'config'; // eslint-disable-line
 
@@ -15,21 +17,24 @@ import TextPreview from 'components/TextPreview';
 
 
 const LIMIT = 10;
+const renderPosts = flow(
+  filter(post => Boolean(post.data.rank)),
+  sortBy(post => post.data.rank),
+  take(LIMIT),
+  map(post =>
+    <li key={post.path}>
+      <TextPreview post={post} />
+    </li>
+  ),
+);
 
 export default function Popular(props) {
   const title = 'Popular Posts';
 
-  let posts = getPosts(props.route.pages);
+  const posts = getPosts(props.route.pages);
 
-  posts = filter(posts, post => Boolean(post.data.rank));
-  posts = sortBy(posts, post => post.data.rank);
-  posts = posts.slice(0, LIMIT);
 
-  const pageLinks = map(posts, post =>
-    <li key={post.path}>
-      <TextPreview post={post} />
-    </li>
-  );
+  const pageLinks = renderPosts(posts);
 
   return (
     <DocumentTitle title={`${title} | ${config.blogTitle}`}>
@@ -50,6 +55,6 @@ export default function Popular(props) {
   );
 }
 
-Popular.propTypes = {
+Popular.propTypes = { // eslint-disable-line
   route: React.PropTypes.object.isRequired,
 };

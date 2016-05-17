@@ -20,22 +20,23 @@ const TEXT_PREVIEW_POSTS = 5;
 
 const LARGER_MARGIN = 1.5;
 
+function getHTMLPreviews(posts) {
+  const sliced = posts.slice(0, HTML_PREVIEW_POSTS);
+  return map(sliced, post => <HTMLPreview key={post.path} post={post} />);
+}
+
+function getTextPreviews(posts) {
+  const sliced = posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
+  return map(sliced, post => <TextPreview key={post.path} post={post} />);
+}
+
+function getPlain(posts) {
+  const sliced = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
+  return map(sliced, post => <PostLink key={post.path} post={post} />);
+}
+
 export default function Index(props) {
   const posts = getPosts(props.route.pages);
-  const htmlPreviewPosts = posts.slice(0, HTML_PREVIEW_POSTS);
-  const textPreviewPosts =
-    posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-  const plainPosts = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-
-  const htmlPreviews = map(htmlPreviewPosts, post =>
-    <HTMLPreview key={post.path} post={post} />
-  );
-  const textPreviews = map(textPreviewPosts, post =>
-    <TextPreview key={post.path} post={post} />
-  );
-  const plainLinks = map(plainPosts, post =>
-    <PostLink key={post.path} post={post} />
-  );
 
   return (
     <DocumentTitle title={`Blog | ${config.blogTitle}`}>
@@ -60,9 +61,9 @@ export default function Index(props) {
             marginBottom: rhythm(1),
           }}
         />
-        {htmlPreviews}
-        {textPreviews}
-        {plainLinks}
+        {getHTMLPreviews(posts)}
+        {getTextPreviews(posts)}
+        {getPlain(posts)}
         <hr
           style={{
             marginTop: rhythm(2),
@@ -81,7 +82,7 @@ export default function Index(props) {
   );
 }
 
-Index.propTypes = {
+Index.propTypes = { // eslint-disable-line
   route: React.PropTypes.object.isRequired,
 };
 

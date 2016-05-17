@@ -14,10 +14,21 @@ const posts = loadPosts({
   markdown: false,
 });
 
-const lookup = Object.create(null);
-_.forEach(posts, post => {
-  lookup[post.data.path] = post;
-});
+const lookup = _.chain(posts)
+  .map(post => [post.data.path, post])
+  .fromPairs()
+  .value();
+
+function getNewContents(rank, contents) {
+  const existingRank = /^rank: [0-9]+$/m;
+  const newRank = /^[^-]*---/;
+
+  if (existingRank.test(contents)) {
+    return contents.replace(existingRank, `rank: ${rank}`);
+  }
+
+  return contents.replace(newRank, `---\nrank: ${rank}`);
+}
 
 superagent
   .get('https://piwik.sinap.ps/index.php')
@@ -41,16 +52,19 @@ superagent
     }
 
     const items = _(res.body)
+      .map(entry => ({
+        ...entry,
+        url: `/${entry.label}/`,
+      }))
       .filter(entry => {
-        entry.url = `/${entry.label}/`;
-
-        if (entry.url === '/how-not-to-do-customer-service-credit-card-edition/') {
-          return false;
-        }
-        if (entry.url === '/why-i-left-liffft/') {
+        if (entry.url === '/how-not-to-do-customer-service-credit-card-edition/'
+          || entry.url === '/why-i-left-liffft/') {
           return false;
         }
 
+        return Boolean(lookup[entry.url]);
+      })
+      .map(entry => {
         if (entry.url === '/the-dangerous-cliffs-of-node-js/') {
           entry.nb_hits += 631; // eslint-disable-line
         }
@@ -58,41 +72,29 @@ superagent
           entry.nb_hits += 10; // eslint-disable-line
         }
 
-        if (!lookup[entry.url]) {
-          return false;
-        }
-
-        return true;
+        return entry;
       })
       .sortBy('nb_hits')
       .reverse()
+      .map((entry, index) => ({
+        ...entry,
+        rank: index + 1,
+      }))
       .value();
 
-    _.forEach(items, (entry, index) => {
-      // console.log('checking', url);
-
-      const rank = index + 1;
+    _.forEach(items, entry => {
       const target = lookup[entry.url];
-      let contents = target.contents;
-      const existingRank = /^rank: [0-9]+$/m;
-      const newRank = /^[^-]*---/;
-
       const previousRank = _.get(target, 'data.rank');
 
-      if (previousRank === rank) {
+      if (previousRank === entry.rank) {
         return;
       }
 
-      console.log(target.path, 'now has rank:', rank, '; previous:', previousRank);
+      console.log(target.path, 'now has rank:', entry.rank, '; previous:', previousRank);
 
-      if (existingRank.test(contents)) {
-        contents = contents.replace(existingRank, `rank: ${rank}`);
-      }
-      else {
-        contents = contents.replace(newRank, `---\nrank: ${rank}`);
-      }
+      const newContents = getNewContents(entry.rank, target.contents);
 
-      fs.writeFileSync(target.path, contents);
+      fs.writeFileSync(target.path, newContents);
     });
   });
 

@@ -11,8 +11,8 @@ const md = markdownIt({
   typographer: false,
 });
 
-export default function loadPosts(options) {
-  options = options || {};
+export default function loadPosts(providedOptions) {
+  const options = providedOptions || {};
 
   const limit = options.limit || Infinity;
   const markdown = typeof options.markdown === 'undefined' ? true : options.markdown;

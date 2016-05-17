@@ -26,7 +26,7 @@ export default class RootTemplate extends React.Component {
   constructor() {
     super();
 
-    this.getParent = this.getParent.bind(this);
+    this.getParent = this.getParent.bind(this); // eslint-disable-line
   }
 
   componentDidMount() {
@@ -34,14 +34,12 @@ export default class RootTemplate extends React.Component {
   }
 
   getParent(ref) {
-    this.parentNode = ref;
+    this.parentNode = ref; // eslint-disable-line
   }
 
-  render() {
-    let header;
-
+  renderHeader() {
     if (this.props.location.pathname === prefixLink('/')) {
-      header = <div>
+      return <div>
         <h1
           style={{
             marginBottom: 0,
@@ -57,26 +55,27 @@ export default class RootTemplate extends React.Component {
         />
       </div>;
     }
-    else {
-      header = <div>
-        <h3>
-          <Link
-            style={{
-              color: 'inherit',
-            }}
-            to={prefixLink('/')}
-          >
-            « {config.blogTitle}
-          </Link>
-        </h3>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-      </div>;
-    }
 
+    return <div>
+      <h3>
+        <Link
+          style={{
+            color: 'inherit',
+          }}
+          to={prefixLink('/')}
+        >
+          « {config.blogTitle}
+        </Link>
+      </h3>
+      <hr
+        style={{
+          marginBottom: rhythm(1),
+        }}
+      />
+    </div>;
+  }
+
+  render() {
     return (
       <div
         ref={this.getParent}
@@ -88,7 +87,7 @@ export default class RootTemplate extends React.Component {
           marginLeft: 'auto',
         }}
       >
-        {header}
+        {this.renderHeader()}
         {this.props.children}
       </div>
     );
