@@ -1,5 +1,5 @@
 ---
-rank: 33
+rank: 34
 title: Four books for greater understanding
 date: 2016-01-09T00:47:58.000Z
 layout: post

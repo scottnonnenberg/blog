@@ -38,7 +38,7 @@ superagent
     format: 'JSON',
     idSite: 3,
     period: 'range',
-    date: '2013-1-1,2016-05-06',
+    date: '2013-1-1,2016-05-16',
     expanded: 1,
     token_auth: '8c3e249277ac43852917552b63335dba', // eslint-disable-line
     filter_limit: 100, // eslint-disable-line
