@@ -149,5 +149,7 @@ After all, why do we develop software in the first place? For people!
 
 Once more we come back to [this very useful mechanism](/the-why-of-agile/#feedback-loops). The system I've described is a positive feedback loop: you assemble mental models, refine those models, then gather data which goes back to make the models better. Put this cycle in place and your people skills will get better with every new bit of data collected, every new situation you experience.
 
-It worked for me! I wouldn't say I'm a 'people person,' but I'm doing a whole lot better. I'd love to hear about your thoughts and experiences with some of this stuff. Or talk about Han Solo. :0)
+It worked for me! I wouldn't say I'm a 'people person,' but I'm doing a whole lot better. I'd love to hear about your thoughts and experiences with some of this stuff.
+
+Or talk about Han Solo. :0)
 
