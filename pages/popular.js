@@ -9,11 +9,11 @@ import filter from 'lodash/fp/filter';
 
 import { config } from 'config'; // eslint-disable-line
 
-import getPosts from 'utils/getPosts';
-import { rhythm } from 'utils/typography';
+import getPosts from 'src/util/getPosts';
+import { rhythm } from 'src/util/typography';
 
-import Author from 'components/Author';
-import TextPreview from 'components/TextPreview';
+import Author from 'src/Author';
+import TextPreview from 'src/TextPreview';
 
 
 const LIMIT = 10;

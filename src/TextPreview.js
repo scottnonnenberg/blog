@@ -4,10 +4,10 @@ import prune from 'underscore.string/prune';
 
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import shortDate from 'utils/shortDate';
-import removeTags from 'utils/removeTags';
-import getPreFoldContent from 'utils/getPreFoldContent';
+import { rhythm } from 'src/util/typography';
+import shortDate from 'src/util/shortDate';
+import removeTags from 'src/util/removeTags';
+import getPreFoldContent from 'src/util/getPreFoldContent';
 
 
 const QUARTER = 0.25;

@@ -8,11 +8,11 @@ import toPairs from 'lodash/toPairs';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import getTagCounts from 'utils/getTagCounts';
-import getPosts from 'utils/getPosts';
+import { rhythm } from 'src/util/typography';
+import getTagCounts from 'src/util/getTagCounts';
+import getPosts from 'src/util/getPosts';
 
-import Author from 'components/Author';
+import Author from 'src/Author';
 
 
 const QUARTER = 0.25;

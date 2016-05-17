@@ -3,8 +3,8 @@ import { Link } from 'react-router';
 
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import shortDate from 'utils/shortDate';
+import { rhythm } from 'src/util/typography';
+import shortDate from 'src/util/shortDate';
 
 
 const QUARTER = 0.25;

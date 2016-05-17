@@ -5,9 +5,9 @@ import DocumentTitle from 'react-document-title';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
+import { rhythm } from 'src/util/typography';
 
-import Author from 'components/Author';
+import Author from 'src/Author';
 
 
 export default function NotFound(props) {

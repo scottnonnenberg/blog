@@ -7,11 +7,11 @@ import map from 'lodash/map';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import intersperse from 'utils/intersperse';
+import { rhythm } from 'src/util/typography';
+import intersperse from 'src/util/intersperse';
 
-import ReadMore from 'components/ReadMore';
-import Author from 'components/Author';
+import ReadMore from 'src/ReadMore';
+import Author from 'src/Author';
 
 import 'css/solarized-light.less';
 

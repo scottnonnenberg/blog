@@ -2,7 +2,7 @@ import React from 'react';
 
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
+import { rhythm } from 'src/util/typography';
 
 
 const QUARTER = 0.25;

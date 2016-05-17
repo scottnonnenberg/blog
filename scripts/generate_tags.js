@@ -5,7 +5,7 @@ import path from 'path';
 
 import _ from 'lodash';
 
-import getTagCounts from 'utils/getTagCounts';
+import getTagCounts from 'src/util/getTagCounts';
 
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 import loadPosts from 'scripts/util/loadPosts';

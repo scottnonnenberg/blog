@@ -4,13 +4,13 @@ import map from 'lodash/map';
 
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import getPosts from 'utils/getPosts';
-import getPostsWithTag from 'utils/getPostsWithTag';
+import { rhythm } from 'src/util/typography';
+import getPosts from 'src/util/getPosts';
+import getPostsWithTag from 'src/util/getPostsWithTag';
 
-import TextPreview from 'components/TextPreview';
-import PostLink from 'components/PostLink';
-import Author from 'components/Author';
+import TextPreview from 'src/TextPreview';
+import PostLink from 'src/PostLink';
+import Author from 'src/Author';
 
 const TEXT_PREVIEW_POSTS = 5;
 

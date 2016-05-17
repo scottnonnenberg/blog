@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import getTagCounts from 'utils/getTagCounts';
+import getTagCounts from 'src/util/getTagCounts';
 
 describe('unit/both/utils/getTagCounts', () => {
   it('returns an empty object for no input', () => {

@@ -3,10 +3,10 @@ import { Link } from 'react-router';
 
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
-import shortDate from 'utils/shortDate';
-import getPreFoldContent from 'utils/getPreFoldContent';
-import appendToLastTextBlock from 'utils/appendToLastTextBlock';
+import { rhythm } from 'src/util/typography';
+import shortDate from 'src/util/shortDate';
+import getPreFoldContent from 'src/util/getPreFoldContent';
+import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 
 const QUARTER = 0.25;

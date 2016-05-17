@@ -6,10 +6,10 @@ import _ from 'lodash';
 import moment from 'moment';
 import toml from 'toml';
 
-import getPreFoldContent from 'utils/getPreFoldContent';
-import fixLocalLinks from 'utils/fixLocalLinks';
-import removeTags from 'utils/removeTags';
-import appendToLastTextBlock from 'utils/appendToLastTextBlock';
+import getPreFoldContent from 'src/util/getPreFoldContent';
+import fixLocalLinks from 'src/util/fixLocalLinks';
+import removeTags from 'src/util/removeTags';
+import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 
 const configPath = path.join(__dirname, '../../config.toml');

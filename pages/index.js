@@ -6,13 +6,13 @@ import map from 'lodash/map';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import getPosts from 'utils/getPosts';
-import { rhythm } from 'utils/typography';
+import getPosts from 'src/util/getPosts';
+import { rhythm } from 'src/util/typography';
 
-import Author from 'components/Author';
-import PostLink from 'components/PostLink';
-import TextPreview from 'components/TextPreview';
-import HTMLPreview from 'components/HTMLPreview';
+import Author from 'src/Author';
+import PostLink from 'src/PostLink';
+import TextPreview from 'src/TextPreview';
+import HTMLPreview from 'src/HTMLPreview';
 
 
 const HTML_PREVIEW_POSTS = 5;

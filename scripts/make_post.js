@@ -9,7 +9,7 @@ import moment from 'moment';
 import loadPosts from 'scripts/util/loadPosts';
 
 
-const templatePath = path.join(__dirname, '../utils/_postTemplate.md');
+const templatePath = path.join(__dirname, 'util/_postTemplate.md');
 const template = fs.readFileSync(templatePath).toString();
 
 const now = new Date();

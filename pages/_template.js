@@ -5,7 +5,7 @@ import catchLinks from 'catch-links';
 import { prefixLink } from 'gatsby-helpers';  // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import { rhythm } from 'utils/typography';
+import { rhythm } from 'src/util/typography';
 
 import 'css/styles.less';
 

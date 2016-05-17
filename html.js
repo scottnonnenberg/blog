@@ -5,8 +5,8 @@ import last from 'lodash/last';
 import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
 import { config } from 'config'; // eslint-disable-line
 
-import { TypographyStyle } from 'utils/typography';
-import generateMetaTags from 'utils/generateMetaTags';
+import { TypographyStyle } from 'src/util/typography';
+import generateMetaTags from 'src/util/generateMetaTags';
 
 
 const now = new Date();

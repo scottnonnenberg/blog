@@ -6,9 +6,9 @@ import path from 'path';
 import _ from 'lodash';
 import toml from 'toml';
 
-import getPreFoldContent from 'utils/getPreFoldContent';
-import fixLocalLinks from 'utils/fixLocalLinks';
-import appendToLastTextBlock from 'utils/appendToLastTextBlock';
+import getPreFoldContent from 'src/util/getPreFoldContent';
+import fixLocalLinks from 'src/util/fixLocalLinks';
+import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 import loadPosts from 'scripts/util/loadPosts';
 

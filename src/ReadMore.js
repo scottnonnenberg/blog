@@ -2,9 +2,9 @@ import React from 'react';
 
 import find from 'lodash/find';
 
-import { fontSizeToMS } from 'utils/typography';
+import { fontSizeToMS } from 'src/util/typography';
 
-import TextPreview from 'components/TextPreview';
+import TextPreview from 'src/TextPreview';
 
 function includes(target, substring) {
   if (!target || !target.indexOf) {
