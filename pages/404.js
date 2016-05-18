@@ -29,7 +29,7 @@ export default function NotFound(props) {
           marginBottom: rhythm(2),
         }}
       />
-      <Author {...props} />
+      <Author />
     </div>
   </DocumentTitle>;
 }

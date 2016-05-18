@@ -87,7 +87,7 @@ export default class MarkdownWrapper extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <Author {...this.props} />
+          <Author />
           <hr
             style={{
               marginTop: rhythm(1),

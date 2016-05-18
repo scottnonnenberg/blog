@@ -43,7 +43,7 @@ export default function TagPage(props) {
             marginBottom: rhythm(2),
           }}
         />
-        <Author {...props} />
+        <Author />
       </div>
     </DocumentTitle>
   );
