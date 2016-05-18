@@ -9,6 +9,10 @@ import Html from 'html';
 
 
 describe('unit/both/root/html', () => {
+  beforeEach(() => {
+    DocumentTitle.rewind();
+  });
+
   it('renders in develop mode (empty body only)', () => {
     const body = '';
 

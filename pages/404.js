@@ -10,8 +10,8 @@ import { rhythm } from 'src/util/typography';
 import Author from 'src/Author';
 
 
-export default function NotFound(props) {
-  const title = 'Couldn\'t find that!';
+export default function NotFound() {
+  const title = "Couldn't find that!";
 
   return <DocumentTitle title={`${title} | ${config.blogTitle}`}>
     <div>

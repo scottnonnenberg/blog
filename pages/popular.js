@@ -32,8 +32,6 @@ export default function Popular(props) {
   const title = 'Popular Posts';
 
   const posts = getPosts(props.route.pages);
-
-
   const pageLinks = renderPosts(posts);
 
   return (
