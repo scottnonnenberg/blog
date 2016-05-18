@@ -26,7 +26,7 @@ export default function buildFeeds(posts) {
 
   const feed = new Feed({
     title: config.blogTitle,
-    id: config.domain,
+    id: `${config.domain}/`,
     description: removeTags(config.tagLine),
     link: config.domain,
     copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
