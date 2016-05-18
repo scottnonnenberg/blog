@@ -6,14 +6,6 @@ import { fontSizeToMS } from 'src/util/typography';
 
 import TextPreview from 'src/TextPreview';
 
-function includes(target, substring) {
-  if (!target || !target.indexOf) {
-    return false;
-  }
-
-  return target.indexOf(substring) !== -1;
-}
-
 
 const SMALL_FONT = -0.5;
 
@@ -25,7 +17,7 @@ export default class ReadMore extends React.Component {
 
   getPath(posts, path) {
     if (path) {
-      return find(posts, page => includes(page.path, path.slice(1, -1)));
+      return find(posts, page => page.path.indexOf(path) !== -1);
     }
   }
 
@@ -52,9 +44,11 @@ export default class ReadMore extends React.Component {
   }
 
   render() {
+    const data = this.props.post.data;
     const posts = this.props.posts;
-    const nextPost = this.getPath(posts, this.props.post.next);
-    const previousPost = this.getPath(posts, this.props.post.previous);
+
+    const nextPost = this.getPath(posts, data.next);
+    const previousPost = this.getPath(posts, data.previous);
 
     if (!nextPost && !previousPost) {
       return null;

@@ -14,12 +14,12 @@ import Author from 'src/Author';
 
 const TEXT_PREVIEW_POSTS = 5;
 
-function getTextPreviews(posts) {
+export function _getTextPreviews(posts) {
   const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
   return map(sliced, post => <TextPreview key={post.path} post={post} />);
 }
 
-function getPlain(posts) {
+export function _getPlain(posts) {
   const plainPosts = posts.slice(TEXT_PREVIEW_POSTS);
   return map(plainPosts, post => <PostLink key={post.path} post={post} />);
 }
@@ -35,8 +35,8 @@ export default function TagPage(props) {
     <DocumentTitle title={`${title} | ${config.blogTitle}`}>
       <div>
         <h1>{title}</h1>
-        {getTextPreviews(postsWithTag)}
-        {getPlain(postsWithTag)}
+        {_getTextPreviews(postsWithTag)}
+        {_getPlain(postsWithTag)}
         <hr
           style={{
             marginTop: rhythm(2),

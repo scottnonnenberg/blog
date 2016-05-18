@@ -19,7 +19,7 @@ export default function PostLink(props) {
     }}
   >
     <Link to={prefixLink(post.path)}>
-      {data.title || post.path}
+      {data.title}
     </Link>
     <span className="date">
       {' '}

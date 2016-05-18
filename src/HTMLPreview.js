@@ -25,11 +25,6 @@ export default class HTMLPreview extends React.Component {
 
   render() {
     const post = this.props.post;
-
-    if (!post) {
-      return;
-    }
-
     const preview = this.getHTMLPreview(post);
 
     return <div>

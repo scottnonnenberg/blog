@@ -69,6 +69,7 @@
     "moment": "2.13.0",
     "react": "15.0.2",
     "react-document-title": "2.0.1",
+    "react-dom": "15.0.2",
     "react-router": "2.4.0",
     "typography": "0.7.0",
     "underscore.string": "3.3.4"
@@ -106,6 +107,8 @@
     "markdown-it": "6.0.2",
     "mocha": "2.3.4",
     "mocha-phantomjs": "4.0.2",
+    "mock-require": "1.2.1",
+    "react-addons-test-utils": "15.0.2",
     "sinon": "1.17.3",
     "superagent": "1.8.3",
     "toml": "2.3.0",
