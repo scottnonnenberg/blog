@@ -1,5 +1,34 @@
 would like to automate:
-  check to ensure that all links on site are valid (google webmaster tools helps with this long-term)
+  check to ensure that all links on site are valid, including deep links (google webmaster tools helps with this long-term)
+
+html
+  overall page is structured properly
+  CSS loads in develop and production
+  Javascript loadss in develop, but only in production of config.noProductionJavascript is not set
+
+gatsby
+  linked fork generates ids for each header, allowing for deep-linking into articles
+
+meta tags
+  Meta tags for articles are well-formed
+  Meta tags for front page and other non-articles are well-formed
+  Test with structured data validators:
+    https://developers.facebook.com/tools/debug/
+    https://cards-dev.twitter.com/validator
+    https://search.google.com/structured-data/testing-tool/u/0/
+
+tracking
+  validate that each pageview is reported
+  validate that time on page is reported
+  with javascript off, validate that each pageview is reported
+
+with SPA enabled (or develop mode)
+  (wrappers/md)
+    validate proper scrolling to hash links - be sure to check back/forward, scroll positions, etc. Messy.
+  (html)
+    validate that each pageview is reported
+  (_template)
+    validate that local links in blog post contents (HTMLPreview/md) or author section (Author) stay within SPA via catch-links
 
 rss/atom
   test using feedly.com (other RSS tools?)
@@ -14,21 +43,3 @@ scripts:
   npm run generate-tags - creates files at pages/tags/* based on all tags included in post frontmatter
   npm run update-rankings - gets piwik data, then adds or updates rank frontmatter property
 
-gatsby
-  linked fork generates ids for each header, allowing for deep-linking into articles
-
-html
-  overall page is structured properly
-  CSS loads in develop and production
-  Javascript loadss in develop, but only in production of config.noProductionJavascript is not set
-
-wrappers/md
-  Scrolling to hash links - be sure to check back/forward, scroll positions, etc. Messy.
-
-generateMetaTags
-  Meta tags for articles are well-formed
-  Meta tags for front page and other non-articles are well-formed
-  Test with structured data validators:
-    https://developers.facebook.com/tools/debug/
-    https://cards-dev.twitter.com/validator
-    https://search.google.com/structured-data/testing-tool/u/0/
