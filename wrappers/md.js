@@ -54,6 +54,8 @@ export default class MarkdownWrapper extends React.Component {
 
   render() {
     const post = this.props.route.page;
+    const posts = this.props.route.pages;
+
     const data = post.data;
     const tags = data.tags;
 
@@ -92,7 +94,7 @@ export default class MarkdownWrapper extends React.Component {
               marginBottom: rhythm(2),
             }}
           />
-          <ReadMore post={post} posts={this.props.route.pages} />
+          <ReadMore post={post} posts={posts} />
         </div>
       </DocumentTitle>
     );

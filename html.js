@@ -19,7 +19,7 @@ export default function HTML(props) {
   const path = props.location ? props.location.pathname : null;
   const metaTags = generateMetaTags(post, config, path);
 
-  const title = props.title || DocumentTitle.rewind();
+  const title = DocumentTitle.rewind() || config.blogTitle;
   const piwikSetup = buildPiwikSetup(config);
   const piwikNoScript = buildPiwikNoScript(path, config);
   const js = getJS(buildMode, config.noProductionJavascript);
@@ -27,33 +27,30 @@ export default function HTML(props) {
 
   const { favicon } = config;
 
-  return (
-    <html lang="en">
-      <head>
-        <title>{title}</title>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="initial-scale=1.0" />
-        {metaTags}
-        <link rel="shortcut icon" href={favicon} />
-        <TypographyStyle />
-        {css}
-      </head>
-      <body className="landing-page">
-        <div id="react-mount" dangerouslySetInnerHTML={{ __html: props.body }} />
-        {js}
-        {piwikSetup}
-        {piwikNoScript}
-      </body>
-    </html>
-  );
+  return <html lang="en">
+    <head>
+      <title>{title}</title>
+      <meta charSet="utf-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="initial-scale=1.0" />
+      {metaTags}
+      <link rel="shortcut icon" href={favicon} />
+      <TypographyStyle />
+      {css}
+    </head>
+    <body className="landing-page">
+      <div id="react-mount" dangerouslySetInnerHTML={{ __html: props.body }} />
+      {js}
+      {piwikSetup}
+      {piwikNoScript}
+    </body>
+  </html>;
 }
 
 HTML.propTypes = { // eslint-disable-line
   body: React.PropTypes.string,
-  title: React.PropTypes.object,
   location: React.PropTypes.object,
-  routes: React.PropTypes.object,
+  routes: React.PropTypes.array,
 };
 
 function buildPiwikSetup({ domainCDN, domainPiwik }) {

@@ -86,6 +86,7 @@
     "chai": "3.5.0",
     "chai-immutable": "1.5.3-property",
     "common-tags": "0.1.1",
+    "css-modules-require-hook": "4.0.0",
     "enzyme": "2.3.0",
     "eslint": "2.10.2",
     "eslint-find-rules": "1.9.2",

@@ -49,7 +49,7 @@ export default function Popular(props) {
             marginBottom: rhythm(1),
           }}
         />
-        <Author {...props} />
+        <Author />
       </div>
     </DocumentTitle>
   );
