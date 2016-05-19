@@ -16,6 +16,9 @@
 
     "serve": "cd public && python -m SimpleHTTPServer 8000",
 
+    "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
+    "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
+
     "generate-rss": "babel-node scripts/generate_rss.js",
     "generate-json": "babel-node scripts/generate_json.js",
     "generate-tags": "babel-node scripts/generate_tags.js",
@@ -83,6 +86,7 @@
     "babel-preset-react": "6.5.0",
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-0": "6.5.0",
+    "broken-link-checker": "0.7.0",
     "chai": "3.5.0",
     "chai-immutable": "1.5.3-property",
     "common-tags": "0.1.1",

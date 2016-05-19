@@ -166,7 +166,6 @@ Additional reading:
 * Comprehensive Postgres/MySQL comparisons
     * http://insights.dice.com/2015/03/19/why-i-choose-postgresql-over-mysqlmariadb/
     * https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL
-    * http://stackoverflow.com/questions/110927/would-you-recommend-postgresql-over-mysql
     * http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL
 * Postgres/MongoDB comparisons
     * https://www.airpair.com/postgresql/posts/sql-vs-nosql-ko-postgres-vs-mongo#r13

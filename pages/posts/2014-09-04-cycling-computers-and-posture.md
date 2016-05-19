@@ -111,7 +111,7 @@ Further reading:
 
 - I heartily recommend my talented physical therapist, [Adina DeSantis](http://adinadesantis.com/)!
 - Check out my friend Larry Swanson's [Scared Sitless site](http://sitless.com/) for some healthy office fitness habits
-- If you do plan to continue cycling a lot, start [stretching](http://www.bicycling.com/training-nutrition/training-fitness/best-stretches-cycling). This is especially key to remember for those of you commuters - leave time for stretching!
+- If you do plan to continue cycling a lot, start [stretching](http://www.bicycling.com/training/fitness/best-stretches-cyclists). This is especially key to remember for those of you commuters - leave time for stretching!
 - I've got a cheap little standing desk setup: an
 [Ikea adjustable height desk](http://www.ikea.com/us/en/catalog/products/S89806740/#/S59860229)
 and [bed risers](http://www.amazon.com/gp/product/B003M8GI4O/ref=oh_aui_detailpage_o02_s00) for a little extra height

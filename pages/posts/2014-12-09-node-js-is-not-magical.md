@@ -42,7 +42,7 @@ The first thing to consider is your team's familiarity with Javascript. Yes, [yo
 
 ### Ubiquity
 
-This is one of the key reasons I use Node.js for my applications. I can write code and templates which run on both the server and in the browser, reducing code duplication and context-switching costs. You also can write [Windows 8 apps with Javascript](http://dev.windows.com/en-us/develop/winjs). [OSX Automation](https://developer.apple.com/library/prerelease/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html#//apple_ref/doc/uid/TP40014508). [CouchDB map/reduce functions](http://wiki.apache.org/couchdb/Introduction_to_CouchDB_views#Map_Functions). Even [PostgreSQL](https://blog.heroku.com/archives/2013/6/5/javascript_in_your_postgres) [stored procedures](https://blog.heroku.com/archives/2013/6/5/javascript_in_your_postgres).
+This is one of the key reasons I use Node.js for my applications. I can write code and templates which run on both the server and in the browser, reducing code duplication and context-switching costs. You also can write [Windows 8 apps with Javascript](https://developer.microsoft.com/en-us/windows/develop/winjs). [OSX Automation](https://developer.apple.com/library/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/Articles/Introduction.html). [CouchDB map/reduce functions](http://wiki.apache.org/couchdb/Introduction_to_CouchDB_views#Map_Functions). Even [PostgreSQL](https://blog.heroku.com/archives/2013/6/5/javascript_in_your_postgres) [stored procedures](https://blog.heroku.com/archives/2013/6/5/javascript_in_your_postgres).
 
 ### A bit tricky
 

@@ -20,7 +20,7 @@ One key point of confusion really frustrates me. The solution to 'callback hell'
 
 ## Hell
 
-The [pundits](http://stackabuse.com/avoiding-callback-hell-in-node-js/) [are](https://www.google.com/search?q=callback+hell&oq=callback+hell&aqs=chrome.0.69i59j69i60j69i57j69i60l2.1282j0j1&sourceid=chrome&es_sm=91&ie=UTF-8) [right](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/). The [callback pyramid of doom](http://tritarget.org/blog/2012/11/28/the-pyramid-of-doom-a-javascript-style-trap/) [is a problem](https://www.terlici.com/2015/10/28/solving-node-callback-hell-asyncjs.html). Take a look at this code ([also available via github](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal)). What is it trying to do? Is it successfully doing it?
+The [pundits](http://stackabuse.com/avoiding-callback-hell-in-node-js/) [are](https://www.google.com/search?q=callback+hell&oq=callback+hell&aqs=chrome.0.69i59j69i60j69i57j69i60l2.1282j0j1&sourceid=chrome&es_sm=91&ie=UTF-8) [right](https://strongloop.com/strongblog/node-js-callback-hell-promises-generators/). The [callback pyramid of doom](https://tritarget.org/#The%20Pyramid%20of%20Doom%3A%20A%20javaScript%20Style%20Trap) [is a problem](https://www.terlici.com/2015/10/28/solving-node-callback-hell-asyncjs.html). Take a look at this code ([also available via github](https://github.com/scottnonnenberg/blog-code/tree/master/a-modest-async-proposal)). What is it trying to do? Is it successfully doing it?
 
 ```javascript
 var saveUserNewPostReferences = function(id, cb) {
