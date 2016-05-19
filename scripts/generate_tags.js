@@ -18,7 +18,7 @@ const counts = getTagCounts(posts);
 
 console.log(counts);
 
-const templatePath = path.join(__dirname, '../components/_tagTemplate.js');
+const templatePath = path.join(__dirname, '../src/_tagTemplate.js');
 const template = fs.readFileSync(templatePath).toString();
 const findTag = /"TAG"/m;
 
