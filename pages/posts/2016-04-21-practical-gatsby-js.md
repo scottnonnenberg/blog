@@ -151,9 +151,9 @@ const productionBuild = Boolean(this.props.body);
 
 I've found a few reasons to parse my markdown files outside of the Gatsby infrastructure:
 
-* I have a tool that connects to my analytics system to get the latest stats, then injects a `rank` property into the _frontmatter_ of my markdown files. I sort on that to generate my [popular](/popular) page.
+* I have a tool that connects to my analytics system to get the latest stats, then injects a `rank` property into the _frontmatter_ of my markdown files. I sort on that to generate my [popular](/popular/) page.
 * I wrote a little script to generate [Atom](http://blog.scottnonnenberg.com/atom.xml)/[RSS](/rss.xml) feed XML files. The excellent [`feed`](https://github.com/jpmonette/feed) node module made it pretty easy.
-* My [tags](/tags) page is built with _frontmatter_ data from all my posts. My tool generates a very basic javascript file for each tag into the `pages/tags` directory of my project. This is because [Gatsby doesn't yet support dynamic routing](https://github.com/gatsbyjs/gatsby/issues/33).
+* My [tags](/tags/) page is built with _frontmatter_ data from all my posts. My tool generates a very basic javascript file for each tag into the `pages/tags` directory of my project. This is because [Gatsby doesn't yet support dynamic routing](https://github.com/gatsbyjs/gatsby/issues/33).
 
 So, here's my code to get all posts ready for further processing. Note that I use a simple `readdirSync()` because all my posts are in that single directory for now. You could easily switch this to using [`glob`](https://github.com/isaacs/node-glob).
 
