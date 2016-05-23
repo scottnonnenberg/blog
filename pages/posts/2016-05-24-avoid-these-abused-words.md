@@ -119,6 +119,8 @@ I'll leave you with one mental image that came to me recently:
 
 ---
 
+Notes:
+
 <div id="note1"></div>
 
 1. I really saw this claim about suitcases in a Facebook Ad. It didn't get its desired response from me.
