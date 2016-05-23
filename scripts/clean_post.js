@@ -1,10 +1,17 @@
 import './util/setupModulePath'; // eslint-disable-line
 
+import fs from 'fs';
+import path from 'path';
+
 import _ from 'lodash';
+import toml from 'toml';
 
 import loadPosts from 'scripts/util/loadPosts';
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
+
+const configPath = path.join(__dirname, '../config.toml');
+const config = toml.parse(fs.readFileSync(configPath).toString());
 
 const limit = parseInt(process.argv[2], 10) || 1;
 const posts = loadPosts({
@@ -28,6 +35,7 @@ _.forEach(posts, post => {
 
   const withoutSmartQuotes = removeSmartQuotes(post.contents);
   const withoutDupeLinks = removeDupeLinks(withoutSmartQuotes);
+  const withoutDomain = withoutDupeLinks.split(config.domain).join('');
 
-  writeIfDifferent(post.path, withoutDupeLinks);
+  writeIfDifferent(post.path, withoutDomain);
 });
