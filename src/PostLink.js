@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'src/util/typography';
 import shortDate from 'src/util/shortDate';

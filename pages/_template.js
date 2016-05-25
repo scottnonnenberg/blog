@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import catchLinks from 'catch-links';
 
-import { prefixLink } from 'gatsby-helpers';  // eslint-disable-line
-import { config } from 'config'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
+import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 

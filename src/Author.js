@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { config } from 'config'; // eslint-disable-line
+import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 

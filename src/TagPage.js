@@ -2,7 +2,7 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import map from 'lodash/map';
 
-import { config } from 'config'; // eslint-disable-line
+import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 import getPosts from 'src/util/getPosts';

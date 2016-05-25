@@ -1,4 +1,4 @@
-import './util/setupModulePath'; // eslint-disable-line
+import './util/setupModulePath';
 
 import fs from 'fs';
 import path from 'path';

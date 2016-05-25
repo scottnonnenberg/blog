@@ -4,8 +4,8 @@ import moment from 'moment';
 import DocumentTitle from 'react-document-title';
 import map from 'lodash/map';
 
-import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
-import { config } from 'config'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
+import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 import intersperse from 'src/util/intersperse';
@@ -42,7 +42,7 @@ export default class MarkdownWrapper extends React.Component {
 
   renderTagLinks(tags) {
     if (!tags || !tags.length) {
-      return;
+      return null;
     }
 
     const tagLinks = map(tags, tag =>

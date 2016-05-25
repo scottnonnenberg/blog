@@ -2,8 +2,8 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import last from 'lodash/last';
 
-import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
-import { config } from 'config'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
+import { config } from 'config';
 
 import { TypographyStyle } from 'src/util/typography';
 import generateMetaTags from 'src/util/generateMetaTags';
@@ -114,4 +114,6 @@ function getCSS(buildMode) {
   if (buildMode) {
     return stylesheet;
   }
+
+  return null;
 }

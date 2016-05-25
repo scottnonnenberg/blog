@@ -5,8 +5,8 @@ import DocumentTitle from 'react-document-title';
 import map from 'lodash/map';
 import toPairs from 'lodash/toPairs';
 
-import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
-import { config } from 'config'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
+import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 import getTagCounts from 'src/util/getTagCounts';

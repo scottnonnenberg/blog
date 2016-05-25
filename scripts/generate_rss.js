@@ -1,4 +1,4 @@
-import './util/setupModulePath'; // eslint-disable-line
+import './util/setupModulePath';
 
 import loadPosts from 'scripts/util/loadPosts';
 import buildFeeds from 'scripts/util/buildFeeds';

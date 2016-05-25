@@ -22,7 +22,7 @@ describe('unit/both/utils/extractImage', () => {
       src="somewhere"
     `;
 
-    expect(extractImage(body)).to.equal();
+    expect(extractImage(body)).to.equal(null);
   });
 
   it('returns first image src found', () => {

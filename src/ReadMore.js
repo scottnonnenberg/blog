@@ -19,28 +19,28 @@ export default class ReadMore extends React.Component {
     if (path) {
       return find(posts, page => page.path.indexOf(path) !== -1);
     }
+
+    return null;
   }
 
   renderItem(label, post) {
     if (!post) {
-      return;
+      return null;
     }
 
-    return (
-      <div>
-        <h5
-          style={{
-            margin: 0,
-            fontSize: fontSizeToMS(SMALL_FONT).fontSize,
-            lineHeight: fontSizeToMS(SMALL_FONT).lineHeight,
-            letterSpacing: SMALL_FONT,
-          }}
-        >
-          {label}:
-        </h5>
-        <TextPreview post={post} />
-      </div>
-    );
+    return <div>
+      <h5
+        style={{
+          margin: 0,
+          fontSize: fontSizeToMS(SMALL_FONT).fontSize,
+          lineHeight: fontSizeToMS(SMALL_FONT).lineHeight,
+          letterSpacing: SMALL_FONT,
+        }}
+      >
+        {label}:
+      </h5>
+      <TextPreview post={post} />
+    </div>;
   }
 
   render() {

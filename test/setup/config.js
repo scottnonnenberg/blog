@@ -1,3 +1,5 @@
+/* eslint-disable import/prefer-default-export */
+
 import fs from 'fs';
 import path from 'path';
 
@@ -6,7 +8,7 @@ import toml from 'toml';
 
 
 const configPath = path.join(__dirname, '../../config.toml');
-const config = toml.parse(fs.readFileSync(configPath).toString());
+export const config = toml.parse(fs.readFileSync(configPath).toString());
 
 mock('config', {
   config,

@@ -7,7 +7,7 @@ import map from 'lodash/fp/map';
 import take from 'lodash/fp/take';
 import filter from 'lodash/fp/filter';
 
-import { config } from 'config'; // eslint-disable-line
+import { config } from 'config';
 
 import getPosts from 'src/util/getPosts';
 import { rhythm } from 'src/util/typography';

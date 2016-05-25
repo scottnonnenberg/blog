@@ -8,4 +8,6 @@ export default function extractImage(body) {
   if (match) {
     return match[1];
   }
+
+  return null;
 }

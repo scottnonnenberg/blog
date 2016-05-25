@@ -1,4 +1,4 @@
-import '../../scripts/util/setupModulePath'; // eslint-disable-line
+import '../../scripts/util/setupModulePath';
 
 import './config';
 import './gatsby-helpers';
