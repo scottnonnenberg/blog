@@ -7,7 +7,7 @@ import TagTemplate from 'src/_tagTemplate';
 import TagPage from 'src/TagPage';
 
 
-describe('unit/both/_tagTemplate', () => {
+describe('unit/_tagTemplate', () => {
   it('renders', () => {
     const wrapper = shallow(<TagTemplate route={{}} b="2" />);
 

@@ -4,7 +4,7 @@ import { stripIndent } from 'common-tags';
 import removeTags from 'src/util/removeTags';
 
 
-describe('unit/both/utils/removeTags', () => {
+describe('unit/utils/removeTags', () => {
   it('returns undefined for undefined input', () => {
     expect(removeTags()).to.equal();
   });

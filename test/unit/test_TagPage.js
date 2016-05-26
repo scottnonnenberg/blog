@@ -10,7 +10,7 @@ import TextPreview from 'src/TextPreview';
 import PostLink from 'src/PostLink';
 
 
-describe('unit/both/TagPage', () => {
+describe('unit/TagPage', () => {
   it('renders', () => {
     const tag = 'one';
     const route = {

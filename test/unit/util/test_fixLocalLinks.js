@@ -4,7 +4,7 @@ import { stripIndent } from 'common-tags';
 import fixLocalLinks from 'src/util/fixLocalLinks';
 
 
-describe('unit/both/utils/fixLocalLinks', () => {
+describe('unit/utils/fixLocalLinks', () => {
   it('returns undefined for undefined input', () => {
     expect(fixLocalLinks()).to.equal();
   });

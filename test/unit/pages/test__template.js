@@ -6,7 +6,7 @@ import { shallow } from 'enzyme';
 import RootTemplate from 'pages/_template';
 
 
-describe('unit/both/pages/_template', () => {
+describe('unit/pages/_template', () => {
   it('renders', () => {
     const location = {
       pathname: '/page/',

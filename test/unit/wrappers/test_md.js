@@ -10,7 +10,7 @@ import Author from 'src/Author';
 import ReadMore from 'src/ReadMore';
 
 
-describe('unit/both/wrappers/md', () => {
+describe('unit/wrappers/md', () => {
   it('renders', () => {
     const route = {
       page: {

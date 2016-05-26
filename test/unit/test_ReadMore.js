@@ -7,7 +7,7 @@ import ReadMore from 'src/ReadMore';
 import TextPreview from 'src/TextPreview';
 
 
-describe('unit/both/ReadMore', () => {
+describe('unit/ReadMore', () => {
   it('renders', () => {
     const post = {
       path: '/post/',

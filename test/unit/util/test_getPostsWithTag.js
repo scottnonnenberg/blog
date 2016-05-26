@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import getPostsWithTag from 'src/util/getPostsWithTag';
 
 
-describe('unit/both/utils/getPostsWithTag', () => {
+describe('unit/utils/getPostsWithTag', () => {
   it('returns empty array when provided null', () => {
     expect(getPostsWithTag()).to.deep.equal([]);
   });

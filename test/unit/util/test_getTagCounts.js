@@ -2,7 +2,7 @@ import { expect } from 'chai';
 
 import getTagCounts from 'src/util/getTagCounts';
 
-describe('unit/both/utils/getTagCounts', () => {
+describe('unit/utils/getTagCounts', () => {
   it('returns an empty object for no input', () => {
     expect(getTagCounts()).to.deep.equal({});
   });

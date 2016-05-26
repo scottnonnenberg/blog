@@ -11,7 +11,7 @@ import PostLink from 'src/PostLink';
 import Author from 'src/Author';
 
 
-describe('unit/both/pages/index', () => {
+describe('unit/pages/index', () => {
   it('renders', () => {
     const page = {
       path: '/one/',

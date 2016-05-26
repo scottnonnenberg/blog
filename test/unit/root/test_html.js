@@ -8,7 +8,7 @@ import { shallow } from 'enzyme';
 import Html from 'html';
 
 
-describe('unit/both/root/html', () => {
+describe('unit/root/html', () => {
   beforeEach(() => {
     DocumentTitle.rewind();
   });

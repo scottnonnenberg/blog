@@ -9,7 +9,7 @@ import Author from 'src/Author';
 import TextPreview from 'src/TextPreview';
 
 
-describe('unit/both/pages/popular', () => {
+describe('unit/pages/popular', () => {
   it('renders', () => {
     const route = {
       pages: [{

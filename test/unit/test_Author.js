@@ -6,7 +6,7 @@ import { shallow } from 'enzyme';
 import Author from 'src/Author';
 
 
-describe('unit/both/Author', () => {
+describe('unit/Author', () => {
   it('renders', () => {
     const wrapper = shallow(<Author />);
 

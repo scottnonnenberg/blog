@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import intersperse from 'src/util/intersperse';
 
 
-describe('unit/both/utils/intersperse', () => {
+describe('unit/utils/intersperse', () => {
   it('returns empty array for null', () => {
     expect(intersperse()).to.deep.equal([]);
   });

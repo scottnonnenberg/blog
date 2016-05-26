@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import getPosts from 'src/util/getPosts';
 
 
-describe('unit/both/utils/getPosts', () => {
+describe('unit/utils/getPosts', () => {
   it('returns empty array when provided null', () => {
     expect(getPosts()).to.deep.equal([]);
   });

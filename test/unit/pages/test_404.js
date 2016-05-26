@@ -8,7 +8,7 @@ import NotFound from 'pages/404';
 import Author from 'src/Author';
 
 
-describe('unit/both/pages/404', () => {
+describe('unit/pages/404', () => {
   it('renders', () => {
     const wrapper = shallow(<NotFound />);
 

@@ -25,17 +25,17 @@
     "make-post": "babel-node scripts/make_post.js",
     "clean-post": "babel-node scripts/clean_post.js",
 
-    "test": "npm run test-server-unit && npm run lint",
+    "test": "npm run unit && npm run lint",
 
-    "test-server": "NODE_ENV=test time mocha --recursive --compilers js:babel-core/register --require test/setup/server.js",
-    "test-server-watch": "npm run test-server -- --watch",
-    "test-server-coverage": "NODE_ENV=test time babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/server.js",
+    "mocha": "NODE_ENV=test time mocha --recursive --compilers js:babel-core/register --require test/setup/server.js",
+    "mocha-watch": "npm run test-server -- --watch",
+    "mocha-coverage": "NODE_ENV=test time babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/server.js",
 
-    "test-server-unit": "npm run test-server -- -s 3 -t 150 test/unit",
-    "test-server-unit-watch": "npm run test-server-watch -- -s 3 -t 150 test/unit/server test/unit/both",
-    "test-server-unit-coverage": "npm run test-server-coverage -- test/unit/server test/unit/both",
+    "unit": "npm run mocha -- -s 3 -t 150 test/unit",
+    "unit-watch": "npm run mocha-watch -- -s 3 -t 150 test/unit",
+    "unit-coverage": "npm run mocha-coverage -- test/unit",
 
-    "open-server-coverage": "open coverage/server/lcov-report/index.html"
+    "open-coverage": "open coverage/server/lcov-report/index.html"
   },
 
   "dependencies": {
@@ -58,7 +58,7 @@
     "babel-preset-react": "6.5.0",
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-0": "6.5.0",
-    "broken-link-checker": "0.7.0",
+    "broken-link-checker": "0.7.1",
     "chai": "3.5.0",
     "chai-immutable": "1.5.3-property",
     "common-tags": "0.1.1",

@@ -8,7 +8,7 @@ import { shallow } from 'enzyme';
 import HTMLPreview from 'src/HTMLPreview';
 
 
-describe('unit/both/HTMLPreview', () => {
+describe('unit/HTMLPreview', () => {
   it('renders', () => {
     const post = {
       path: '/post/',

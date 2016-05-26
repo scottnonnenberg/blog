@@ -6,7 +6,7 @@ import { shallow } from 'enzyme';
 import { rhythm, TypographyStyle, fontSizeToMS } from 'src/util/typography';
 
 
-describe('unit/both/util/typography', () => {
+describe('unit/util/typography', () => {
   describe('#rhythm', () => {
     it('runs', () => {
       const actual = rhythm(1);

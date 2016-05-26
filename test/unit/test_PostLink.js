@@ -7,7 +7,7 @@ import { shallow } from 'enzyme';
 import PostLink from 'src/PostLink';
 
 
-describe('unit/both/PostLink', () => {
+describe('unit/PostLink', () => {
   it('renders post with title', () => {
     const post = {
       path: '/post/',

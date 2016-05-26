@@ -4,7 +4,7 @@ import { stripIndent } from 'common-tags';
 import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 
-describe('unit/both/utils/appendToLastTextBlock', () => {
+describe('unit/utils/appendToLastTextBlock', () => {
   it('returns undefined for undefined input', () => {
     expect(appendToLastTextBlock()).to.equal();
   });

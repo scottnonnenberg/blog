@@ -7,7 +7,7 @@ import { shallow } from 'enzyme';
 import Index from 'pages/tags/index';
 
 
-describe('unit/both/pages/tags/index', () => {
+describe('unit/pages/tags/index', () => {
   it('renders', () => {
     const route = {
       pages: [{

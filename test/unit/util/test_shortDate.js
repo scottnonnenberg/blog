@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import shortDate from 'src/util/shortDate';
 
 
-describe('unit/both/utils/shortDate', () => {
+describe('unit/utils/shortDate', () => {
   const now = new Date('2016-05-17T21:55:17.888Z');
 
   it('returns date with year for prior year', () => {

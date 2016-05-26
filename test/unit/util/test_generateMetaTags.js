@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import generateMetaTags from 'src/util/generateMetaTags';
 
 
-describe('unit/both/util/generateMetaTags', () => {
+describe('unit/util/generateMetaTags', () => {
   it('returns array when not given a page', () => {
     const page = {};
     const config = {};

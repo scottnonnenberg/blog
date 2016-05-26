@@ -3,7 +3,7 @@ import { stripIndent } from 'common-tags';
 
 import getPreFoldContent from 'src/util/getPreFoldContent';
 
-describe('unit/both/utils/getPreFoldContent', () => {
+describe('unit/utils/getPreFoldContent', () => {
   it('returns undefined for undefined input', () => {
     expect(getPreFoldContent()).to.equal();
   });
