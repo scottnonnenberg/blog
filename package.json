@@ -28,7 +28,7 @@
     "test": "npm run unit && npm run lint",
 
     "mocha": "NODE_ENV=test time mocha --recursive --compilers js:babel-core/register --require test/setup/server.js",
-    "mocha-watch": "npm run test-server -- --watch",
+    "mocha-watch": "npm run mocha -- --watch",
     "mocha-coverage": "NODE_ENV=test time babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/server.js",
 
     "unit": "npm run mocha -- -s 3 -t 150 test/unit",
