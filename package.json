@@ -5,8 +5,7 @@
   "homepage": "https://blogs.scottnonnenberg.com",
 
   "scripts": {
-    "lint": "eslint .",
-    "find-missing-eslint-rules": "eslint-find-rules -u .eslintrc.js",
+    "lint": "time eslint .",
 
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -26,44 +25,17 @@
     "make-post": "babel-node scripts/make_post.js",
     "clean-post": "babel-node scripts/clean_post.js",
 
-    "test": "npm run cli-test-client-all && npm run test-server-all",
-    "test-client": "time mocha-phantomjs",
-    "test-client-coverage": "time mocha-phantomjs --hooks ./test/extract_coverage_hook.js",
-    "test-client-unit": "npm run test-client -- http://localhost:8001/test/unit.html",
-    "test-client-unit-coverage": "npm run test-client-coverage -- http://localhost:8001/test/unit.html",
-    "test-client-integration": "npm run test-client -- http://localhost:8001/test/integration.html",
-    "test-client-integration-coverage": "npm run test-client-coverage -- http://localhost:8001/test/integration.html",
-    "test-client-all": "npm run test-client -- http://localhost:8001/test/all.html",
-    "test-client-all-coverage": "npm run test-client-coverage -- http://localhost:8001/test/all.html",
-    "build-client-report": "time istanbul report --include coverage/client/coverage.json --dir coverage/client",
-    "posttest-client-unit-coverage": "npm run build-client-report",
-    "posttest-client-integration-coverage": "npm run build-client-report",
-    "posttest-client-all-coverage": "npm run build-client-report",
+    "test": "npm run test-server-unit && npm run lint",
 
-    "cli-test-client": "NODE_ENV=test babel-node scripts/cli_client.js",
-    "cli-test-client-unit": "npm run cli-test-client -- http://localhost:8001/test/unit.html",
-    "cli-test-client-integration": "npm run cli-test-client -- http://localhost:8001/test/integration.html",
-    "cli-test-client-all": "npm run cli-test-client -- http://localhost:8001/test/all.html",
     "test-server": "NODE_ENV=test time mocha --recursive --compilers js:babel-core/register --require test/setup/server.js",
     "test-server-watch": "npm run test-server -- --watch",
     "test-server-coverage": "NODE_ENV=test time babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/server.js",
 
-    "test-server-unit": "npm run test-server -- -s 3 -t 150 test/unit/server test/unit/both",
+    "test-server-unit": "npm run test-server -- -s 3 -t 150 test/unit",
     "test-server-unit-watch": "npm run test-server-watch -- -s 3 -t 150 test/unit/server test/unit/both",
     "test-server-unit-coverage": "npm run test-server-coverage -- test/unit/server test/unit/both",
-    "test-server-integration": "npm run test-server -- -s 15 test/integration/server test/integration/both",
-    "test-server-integration-watch": "npm run test-server-watch -- -s 15 test/integration/server test/integration/both",
-    "test-server-integration-coverage": "npm run test-server-coverage -- test/integration/server test/integration/both",
-    "test-server-all": "npm run test-server -- -s 15 test/unit/server test/unit/both test/integration/server test/integration/both",
-    "test-server-all-watch": "npm run test-server-watch -- -s 15 test/unit/server test/unit/both test/integration/server test/integration/both",
-    "test-server-all-coverage": "npm run test-server-coverage -- test/unit/server test/unit/both test/integration/server test/integration/both",
 
-    "combine-coverage": "istanbul report --dir coverage/combined",
-    "full-coverage-run": "npm run test-server-all-coverage && npm run test-client-all-coverage && npm run combine-coverage",
-
-    "open-server-coverage": "open coverage/server/lcov-report/index.html",
-    "open-client-coverage": "open coverage/client/lcov-report/index.html",
-    "open-combined-coverage": "open coverage/combined/lcov-report/index.html"
+    "open-server-coverage": "open coverage/server/lcov-report/index.html"
   },
 
   "dependencies": {
@@ -102,7 +74,6 @@
     "istanbul": "0.4.2",
     "markdown-it": "6.0.2",
     "mocha": "2.3.4",
-    "mocha-phantomjs": "4.0.2",
     "mock-require": "1.2.1",
     "react-addons-test-utils": "15.0.2",
     "sinon": "1.17.3",
