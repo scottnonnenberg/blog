@@ -1,5 +1,4 @@
 would like to automate:
-  (note: broken-link-checker v0.7.0 is broken on 6.1.0, runs properly on node 4.x)
   npm run check-internal-links - runs very fast
   npm run check-external-links
     403 (quora) - often indicates false-positive, server doesn't like a robot doing a HEAD request
@@ -10,7 +9,7 @@ would like to automate:
 html
   overall page is structured properly
   CSS loads in develop and production
-  Javascript loadss in develop, but only in production of config.noProductionJavascript is not set
+  Javascript loads in develop, but only in production of config.noProductionJavascript is not set
 
 gatsby
   linked fork generates ids for each header, allowing for deep-linking into articles
