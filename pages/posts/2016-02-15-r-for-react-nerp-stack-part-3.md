@@ -172,7 +172,7 @@ Yes, it is a double-edged sword. It's not necessarily easy to re-train yourself 
 
 The old is gone - you can no longer sprinkle jQuery around for the odd tricky situation. And the new is uncomfortable. When I last taught Flux, my students struggled with how much code it took just to update one textbox. I didn't like JSX when I first encountered it.
 
-Once you've internalized all that, it's time to start thinking about your existing functionality and third-party libraries. What do you reimplement, what do you keep in place? You'll need to pay particular attention to [anything that attempts to modify the DOM itself](http://stackoverflow.com/questions/23530716/react-how-much-can-i-manipulate-the-dom-react-has-rendered). React is very jealous about the parts of the DOM it manages.
+Once you've internalized all that, it's time to start thinking about your existing functionality and third-party libraries. What do you reimplement, what do you keep in place? You'll need to pay particular attention to [anything that attempts to modify the DOM itself](http://stackoverflow.com/questions/23530716/react-how-much-can-i-manipulate-the-dom-react-has-rendered). React is very jealous about the parts of the DOM it manages, but you can explicitly tell it to back off.
 
 ### 2. Breaking changes
 
