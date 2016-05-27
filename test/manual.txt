@@ -4,7 +4,7 @@ would like to automate:
     403 (quora) - often indicates false-positive, server doesn't like a robot doing a HEAD request
     405 (amazon) - often indicates false-positive, server doesn't support HEAD
 
-  deep links need an extra bit of effort - can extract from a verbose broken-link-checker run; there are only ~20 or so as of 5/18/2016
+  npm run check-deep-links - to ensure that hash links within site continue to work
 
 html
   overall page is structured properly
