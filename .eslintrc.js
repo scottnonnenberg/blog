@@ -12,6 +12,8 @@ module.exports = { // eslint-disable-line
     'thehelp',
   ],
 
+  parser: 'babel-eslint',
+
   settings: {
     'import/resolver': {
       node: {
