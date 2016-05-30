@@ -6,6 +6,8 @@ path: /avoid-these-abused-words/
 next:
 previous: /from-tech-person-to-people-person/
 tags:
+  - ideas
+  - nvc
 ---
 
 ![definition of 'actually' from Google](https://static.sinap.ps/blog/2016/05_may/words/actually-google-cropped.png)
