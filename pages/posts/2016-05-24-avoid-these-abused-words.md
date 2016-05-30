@@ -3,7 +3,7 @@ title: Avoid these abused words
 date: 2016-05-24T16:28:32.927Z
 layout: post
 path: /avoid-these-abused-words/
-next:
+next: /contract-new-techniques-old-technology/
 previous: /from-tech-person-to-people-person/
 tags:
   - ideas
