@@ -24,9 +24,11 @@ function generatePageSpecificTags(page, config, url) {
   const date = data.date.toJSON ? data.date.toJSON() : data.date;
 
   const blurb = removeHTML(config.authorBlurb);
-  const image = extractImage(data.body) || config.authorImage;
+  const pageImage = extractImage(data.body);
   const preFold = getPreFoldContent(data.body);
   const description = removeHTML(preFold);
+  const twitterCardType = pageImage ? 'summary_large_image' : 'summary';
+  const socialImage = pageImage || config.authorImage;
 
   const ld = {
     '@context': 'http://schema.org',
@@ -49,21 +51,21 @@ function generatePageSpecificTags(page, config, url) {
     description,
     'image': {
       '@type': 'ImageObject',
-      'url': image,
+      'url': socialImage,
     },
     'mainEntityOfPage': url,
   };
 
   return [
-    create('og:image', image),
-    create('twitter:image', image),
+    create('og:image', socialImage),
+    create('twitter:image', socialImage),
 
     create('og:type', 'article'),
     create('og:title', data.title),
     create('og:description', description),
     create('article:published_time', date),
 
-    create('twitter:card', 'summary'),
+    create('twitter:card', twitterCardType),
     create('twitter:title', data.title),
     create('twitter:description', description),
 
