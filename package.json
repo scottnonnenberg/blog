@@ -18,6 +18,7 @@
     "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
     "check-deep-links": "babel-node scripts/check_deep_links.js",
+    "check-links": "broken-link-checker --ordered --filter-level=3",
 
     "generate-rss": "babel-node scripts/generate_rss.js",
     "generate-json": "babel-node scripts/generate_json.js",
