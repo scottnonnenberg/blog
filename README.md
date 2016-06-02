@@ -15,7 +15,7 @@ Note that this project relies on my [fork of `gatsby`](https://github.com/scottn
   - `domain` - where your piwik server is
   - `siteId` - the site number
   - `site` - the site domain
-  - `token` - your API access token, used in update_rankings
+  - `token` - your API access token, used by `update-rankings` npm script
 
 ## Develop
 
