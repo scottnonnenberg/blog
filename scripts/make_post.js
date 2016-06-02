@@ -41,7 +41,7 @@ fs.writeFileSync(newFilePath, newContents);
 const nextSearch = /^next:( \/[^\/]+\/)?$/m; // eslint-disable-line
 const match = nextSearch.exec(previous.contents);
 
-if (match && match[1]) {
+if (match && match[0]) {
   const next = `next: ${postPath}`;
   const previousContents = previous.contents.replace(nextSearch, next);
 
