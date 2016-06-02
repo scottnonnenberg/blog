@@ -84,7 +84,7 @@ Loads all posts from `pages/posts` and extracts all of their tags. Ensures that 
 npm run update-rankings
 ```
 
-Goes to my stats system (which uses [Piwik](https://piwik.org/)), grabs the top URLs, massages the data a little bit, then updates the `rank` property of the frontmatter in each markdown file.
+Goes to my stats system (which uses [Piwik](https://piwik.org/)), grabs the top URLs, massages the data a little bit, then updates the `rank` property of the frontmatter in each markdown file. If you use this, you'll want to periodically change the end date for the query.
 
 ### generate-rss
 
