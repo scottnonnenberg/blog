@@ -1,5 +1,5 @@
 ---
-rank: 11
+rank: 13
 title: Cycling, Computers, and Posture
 date: 2014-09-04T17:00:00.000Z
 layout: post

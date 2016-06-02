@@ -41,7 +41,7 @@ superagent
     format: 'JSON',
     idSite: piwikConfig.siteId,
     period: 'range',
-    date: '2013-1-1,2016-05-16',
+    date: '2013-1-1,2016-06-01',
     expanded: 1,
     token_auth: piwikConfig.token,
     filter_limit: 100,

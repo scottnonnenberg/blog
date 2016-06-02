@@ -1,5 +1,5 @@
 ---
-rank: 15
+rank: 14
 title: R for React (NERP stack part 3)
 date: 2016-02-15T19:38:29.637Z
 layout: post
