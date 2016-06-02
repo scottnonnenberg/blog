@@ -37,7 +37,7 @@
     "unit-watch": "npm run mocha-watch -- -s 3 -t 150 test/unit",
     "unit-coverage": "npm run mocha-coverage -- test/unit",
 
-    "open-coverage": "open coverage/server/lcov-report/index.html"
+    "open-coverage": "open coverage/lcov-report/index.html"
   },
 
   "dependencies": {
