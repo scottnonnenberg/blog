@@ -9,6 +9,14 @@ import moment from 'moment';
 import loadPosts from 'scripts/util/loadPosts';
 
 
+function fixForYaml(title) {
+  if (title.indexOf(':') !== -1) {
+    return `"${title.split('"').join('\\"')}"`;
+  }
+
+  return title;
+}
+
 const templatePath = path.join(__dirname, 'util/_postTemplate.md');
 const template = fs.readFileSync(templatePath).toString();
 
@@ -17,6 +25,7 @@ const date = now.toJSON();
 
 const title = process.argv[2];
 const titleSlug = _string.slugify(title);
+const titleForYaml = fixForYaml(title);
 const postPath = `/${titleSlug}/`;
 
 const posts = loadPosts({
@@ -27,7 +36,7 @@ const previous = posts[0];
 const previousPath = previous.data.path;
 
 const newContents = template
-  .replace('TITLE', title)
+  .replace('TITLE', titleForYaml)
   .replace('DATE', date)
   .replace('PATH', postPath)
   .replace('PREVIOUS', previousPath);
