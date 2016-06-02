@@ -1,5 +1,5 @@
 ---
-title: 'How not to do customer service: Credit card edition'
+title: "How not to do customer service: Credit card edition"
 date: 2013-10-07T20:00:00.000Z
 layout: post
 path: /how-not-to-do-customer-service-credit-card-edition/

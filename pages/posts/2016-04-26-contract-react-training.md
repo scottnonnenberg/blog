@@ -1,6 +1,6 @@
 ---
 rank: 29
-title: 'Contract: React Training'
+title: "Contract: React Training"
 date: 2016-04-26T17:29:10.448Z
 layout: post
 path: /contract-react-training/

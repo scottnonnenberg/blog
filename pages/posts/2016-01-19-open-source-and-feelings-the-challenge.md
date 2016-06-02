@@ -1,6 +1,6 @@
 ---
 rank: 18
-title: 'Open Source and Feelings: The Challenge'
+title: "Open Source and Feelings: The Challenge"
 date: 2016-01-19T18:48:54.000Z
 layout: post
 path: /open-source-and-feelings-the-challenge/
