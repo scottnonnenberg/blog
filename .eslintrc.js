@@ -17,7 +17,7 @@ module.exports = { // eslint-disable-line
   settings: {
     'import/resolver': {
       node: {
-        paths: [__dirname, path.resolve(__dirname, 'test/setup')],
+        paths: [__dirname, path.resolve(__dirname, 'test/setup/fakes')],
       },
     },
   },

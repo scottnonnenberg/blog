@@ -1,6 +1,7 @@
 import '../../scripts/util/setupModulePath';
 
-import './config';
-import './gatsby-helpers';
+import 'test/setup/fakes/config';
+import 'test/setup/fakes/gatsby-helpers';
+
 import './css';
 import './chai';
