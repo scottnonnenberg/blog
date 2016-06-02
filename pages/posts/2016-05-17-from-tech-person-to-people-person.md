@@ -17,7 +17,7 @@ tags:
 
 _[This is an adaptation of a talk I gave at the [Seattle Software Craftsmanship meetup in May 2014](http://www.meetup.com/seattle-software-craftsmanship/events/159243162/). [Direct link to screencast](https://youtu.be/pmIwRnujTIM). [Slides](https://github.com/scottnonnenberg/social-engineering-for-good).]_
 
-I've been on both sides: made fun of as a geeky computer enthusiast, and derided as useless [project management overhead](https://scottnonnenberg.com/work/#microsoft-2010-q-3-to-2011-q-3). Both sides of the technical divide are frustrated and unhappy. How how to bridge that gap? I've got some ideas for my fellow tech folks...
+I've been on both sides: made fun of as a geeky computer enthusiast, and derided as useless [project management overhead](https://scottnonnenberg.com/work/#microsoft-2010-q-3-to-2011-q-3). Both sides of the technical divide are frustrated and unhappy. How to bridge that gap? I've got some ideas for my fellow tech folks...
 
 <div class='fold'></div>
 
