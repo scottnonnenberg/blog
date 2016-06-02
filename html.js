@@ -4,6 +4,7 @@ import last from 'lodash/last';
 
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
+import piwikConfig from 'piwik';
 
 import { TypographyStyle } from 'src/util/typography';
 import generateMetaTags from 'src/util/generateMetaTags';
@@ -20,8 +21,8 @@ export default function HTML(props) {
   const metaTags = generateMetaTags(post, config, path);
 
   const title = DocumentTitle.rewind() || config.blogTitle;
-  const piwikSetup = buildPiwikSetup(config);
-  const piwikNoScript = buildPiwikNoScript(path, config);
+  const piwikSetup = buildPiwikSetup(config, piwikConfig);
+  const piwikNoScript = buildPiwikNoScript(path, config.domain, piwikConfig);
   const js = getJS(buildMode, config.noProductionJavascript);
   const css = getCSS(buildMode);
 
@@ -53,13 +54,13 @@ HTML.propTypes = { // eslint-disable-line
   routes: React.PropTypes.array,
 };
 
-function buildPiwikSetup({ domainCDN, domainPiwik }) {
+function buildPiwikSetup({ domainCDN }, { domain, siteId, site }) {
   const js = `
     window._paq = window._paq || [];
-    window._paq.push(['setTrackerUrl', '${domainPiwik}/piwik.php']);
-    window._paq.push(['setSiteId', '3']);
-    window._paq.push(['setCookieDomain', '*.scottnonnenberg.com']);
-    window._paq.push(['setDomains', ['*.scottnonnenberg.com']]);
+    window._paq.push(['setTrackerUrl', '${domain}/piwik.php']);
+    window._paq.push(['setSiteId', '${siteId}']);
+    window._paq.push(['setCookieDomain', '${site}']);
+    window._paq.push(['setDomains', ['${site}']]);
     window._paq.push(['enableLinkTracking']);
     window._paq.push(['trackPageView']);
     window._paq.push(['enableHeartBeatTimer']);
@@ -85,12 +86,12 @@ buildPiwikSetup.propTypes = {  // eslint-disable-line
 };
 
 
-function buildPiwikNoScript(path, { domainPiwik, domain }) {
-  const encodedPath = encodeURIComponent(domain + path);
+function buildPiwikNoScript(path, blogDomain, { domain }) {
+  const encodedPath = encodeURIComponent(blogDomain + path);
 
   return <noscript>
     <img
-      src={`${domainPiwik}/piwik.php?idsite=3&rec=1&url=${encodedPath}`}
+      src={`${domain}/piwik.php?idsite=3&rec=1&url=${encodedPath}`}
       style={{ border: 0 }}
       alt="tracker"
     />

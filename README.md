@@ -10,6 +10,13 @@ Note that this project relies on my [fork of `gatsby`](https://github.com/scottn
 
 `config.toml` contains key data you'll want to change first. The location of the blog, author name and details, and so on.
 
+`piwik.js` is excluded from the repository, but is used by `html.js` (to generate piwik tracking tags) and `scripts/update_rankings.js` (to get popularity numbers for posts). These four keys are required:
+
+  - `domain` - where your piwik server is
+  - `siteId` - the site number
+  - `site` - the site domain
+  - `token` - your API access token, used in update_rankings
+
 ## Develop
 
 ```bash

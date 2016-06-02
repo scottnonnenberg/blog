@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 import './util/setupModulePath';
 
 import fs from 'fs';
@@ -5,6 +7,7 @@ import fs from 'fs';
 import superagent from 'superagent';
 import _ from 'lodash';
 
+import piwikConfig from 'piwik';
 import loadPosts from 'scripts/util/loadPosts';
 
 
@@ -31,17 +34,17 @@ function getNewContents(rank, contents) {
 }
 
 superagent
-  .get('https://piwik.sinap.ps/index.php')
+  .get(`${piwikConfig.domain}/index.php`)
   .query({
     module: 'API',
     method: 'Actions.getPageUrls',
     format: 'JSON',
-    idSite: 3,
+    idSite: piwikConfig.siteId,
     period: 'range',
     date: '2013-1-1,2016-05-16',
     expanded: 1,
-    token_auth: '8c3e249277ac43852917552b63335dba', // eslint-disable-line
-    filter_limit: 100, // eslint-disable-line
+    token_auth: piwikConfig.token,
+    filter_limit: 100,
   })
   .end((err, res) => {
     if (err) {
@@ -57,6 +60,7 @@ superagent
         url: `/${entry.label}/`,
       }))
       .filter(entry => {
+        // these get way too much search traffic
         if (entry.url === '/how-not-to-do-customer-service-credit-card-edition/'
           || entry.url === '/why-i-left-liffft/') {
           return false;
@@ -65,6 +69,7 @@ superagent
         return Boolean(lookup[entry.url]);
       })
       .map(entry => {
+        // accounting for moving these posts from business blog
         if (entry.url === '/the-dangerous-cliffs-of-node-js/') {
           entry.nb_hits += 631; // eslint-disable-line
         }
