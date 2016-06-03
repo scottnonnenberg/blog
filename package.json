@@ -67,7 +67,7 @@
     "common-tags": "0.1.1",
     "css-modules-require-hook": "4.0.0",
     "enzyme": "2.3.0",
-    "eslint-config-thehelp": "0.4.0",
+    "eslint-config-thehelp": "0.4.1",
     "feed": "0.3.0",
     "front-matter": "2.0.7",
     "glob": "7.0.3",

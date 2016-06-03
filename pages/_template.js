@@ -26,7 +26,7 @@ export default class RootTemplate extends React.Component {
   constructor() {
     super();
 
-    this.getParent = this.getParent.bind(this); // eslint-disable-line
+    this.getParent = this.getParent.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +34,7 @@ export default class RootTemplate extends React.Component {
   }
 
   getParent(ref) {
-    this.parentNode = ref; // eslint-disable-line
+    this.parentNode = ref;
   }
 
   renderHeader() {
