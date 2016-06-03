@@ -48,7 +48,7 @@ export default function HTML(props) {
   </html>;
 }
 
-HTML.propTypes = { // eslint-disable-line
+HTML.propTypes = {
   body: React.PropTypes.string,
   location: React.PropTypes.object,
   routes: React.PropTypes.array,
@@ -80,7 +80,7 @@ function buildPiwikSetup({ domainCDN }, { domain, siteId, site }) {
   />;
 }
 
-buildPiwikSetup.propTypes = {  // eslint-disable-line
+buildPiwikSetup.propTypes = {
   domainCDN: React.PropTypes.string,
   domainPiwik: React.PropTypes.string,
 };

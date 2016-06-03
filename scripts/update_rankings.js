@@ -80,7 +80,7 @@ superagent
         return entry;
       })
       .sortBy('nb_hits')
-      .reverse()
+      .reverse() // eslint-disable-line
       .map((entry, index) => ({
         ...entry,
         rank: index + 1,

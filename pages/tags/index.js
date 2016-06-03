@@ -65,6 +65,6 @@ export default function TagIndex(props) {
   );
 }
 
-TagIndex.propTypes = { // eslint-disable-line
+TagIndex.propTypes = {
   route: React.PropTypes.object.isRequired,
 };

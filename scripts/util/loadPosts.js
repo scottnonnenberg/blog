@@ -22,7 +22,7 @@ export default function loadPosts(providedOptions) {
 
   return _.chain(postFiles)
     .sortBy()
-    .reverse()
+    .reverse() // eslint-disable-line
     .take(limit)
     .map(file => {
       const filePath = path.join(postsPath, file);

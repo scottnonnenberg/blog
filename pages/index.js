@@ -82,7 +82,7 @@ export default function Index(props) {
   );
 }
 
-Index.propTypes = { // eslint-disable-line
+Index.propTypes = {
   route: React.PropTypes.object.isRequired,
 };
 

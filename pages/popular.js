@@ -53,6 +53,6 @@ export default function Popular(props) {
   );
 }
 
-Popular.propTypes = { // eslint-disable-line
+Popular.propTypes = {
   route: React.PropTypes.object.isRequired,
 };

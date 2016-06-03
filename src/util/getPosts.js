@@ -1,3 +1,5 @@
+/* eslint-disable thehelp/no-array-mutation */
+
 import filter from 'lodash/filter';
 import sortBy from 'lodash/sortBy';
 

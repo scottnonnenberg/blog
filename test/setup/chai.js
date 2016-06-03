@@ -1,4 +1,4 @@
-/* eslint-disable immutable/no-mutation */
+/* eslint-disable thehelp/no-mutation */
 
 import chai from 'chai' ;
 

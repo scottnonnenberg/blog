@@ -1,4 +1,4 @@
-/* eslint-disable immutable/no-mutation, immutable/no-let, no-loops/no-loops */
+/* eslint-disable thehelp/no-mutation, immutable/no-let, no-loops/no-loops */
 
 import filter from 'lodash/filter';
 

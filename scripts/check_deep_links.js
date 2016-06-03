@@ -44,7 +44,7 @@ function checkLink({ pathname, hash }, cb) {
         return;
       }
 
-      cache[pathname] = res.text;  // eslint-disable-line
+      cache[pathname] = res.text; // eslint-disable-line
       return cb(null, verifyHash({ pathname, hash, contents: res.text }));
     });
 }

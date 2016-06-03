@@ -49,7 +49,7 @@ export default function TagPage(props) {
   );
 }
 
-TagPage.propTypes = { // eslint-disable-line
+TagPage.propTypes = {
   tag: React.PropTypes.string.isRequired,
   route: React.PropTypes.object.isRequired,
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import prune from 'underscore.string/prune';
 
-import { prefixLink } from 'gatsby-helpers'; // eslint-disable-line
+import { prefixLink } from 'gatsby-helpers';
 
 import { rhythm } from 'src/util/typography';
 import shortDate from 'src/util/shortDate';
@@ -37,6 +37,6 @@ export default function TextPreview(props) {
   </div>;
 }
 
-TextPreview.propTypes = { // eslint-disable-line
+TextPreview.propTypes = {
   post: React.PropTypes.object.isRequired,
 };

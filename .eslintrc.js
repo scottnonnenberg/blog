@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-module.exports = { // eslint-disable-line
+module.exports = {
   extends: [
     'thehelp',
     'thehelp/react',

@@ -1,4 +1,4 @@
-/* eslint-disable import/no-commonjs, immutable/no-let, immutable/no-mutation */
+/* eslint-disable import/no-commonjs, immutable/no-let, thehelp/no-mutation, thehelp/no-array-mutation */
 
 let first = true;
 

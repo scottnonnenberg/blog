@@ -30,7 +30,7 @@ export default class RootTemplate extends React.Component {
   }
 
   componentDidMount() {
-    catchLinks(this.parentNode, href => this.context.router.push(href));
+    catchLinks(this.parentNode, href => this.context.router.push(href)); // eslint-disable-line
   }
 
   getParent(ref) {
