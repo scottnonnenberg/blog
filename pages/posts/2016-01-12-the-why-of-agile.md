@@ -7,6 +7,7 @@ path: /the-why-of-agile/
 next: /enterprise-node-jsjavascript-difficulties/
 previous: /the-trouble-with-promises/
 tags:
+  - agile
   - business
   - software
   - books
@@ -90,4 +91,4 @@ Now it makes a little more sense why agile coaches say things like "early in you
 
 Agile can create a feedback loop which leads you towards your ultimate goal. Each step is a small win, leading to feeling good, leading to more wins. It's like a Thermostat, except you don't quite know what the target temperature is yet. It turns out that feedback loops are also the 'why' behind [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) and [Lean Startup](http://theleanstartup.com/).
 
-The question for you: How might you tune your software development feedback loops to enable your teams to be the best they can be?
+The question for you: How might you tune your software development feedback loops to enable your teams to be the best they can be? I've got some ideas for you, in [my second Agile post: Customizing Agile](/customizing-agile/).
