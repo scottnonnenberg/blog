@@ -24,6 +24,7 @@ const lookup = _.chain(posts)
 
 function getNewContents(rank, contents) {
   const existingRank = /^rank: [0-9]+$/m;
+  // allows for blank newlines
   const newRank = /^[^-]*---/;
 
   if (existingRank.test(contents)) {
