@@ -106,7 +106,7 @@ Something about regularly-scheduled meetings breeds apathy. It's fair, of course
 
 Meetings are especially painful for developers, whose coding flow is broken by any interruption. The frustration they feel starts there, and when they perceive that their value added or received at the meeting is low, they'll question its very existence. Try waiting for the team to request a meeting. You'll figure out what the right cadence should be.
 
-When I was a [project manager for the Visual Studio Languages team](http://microsoft-2003-q-3-to-2010-q-3), I built a weekly status system with email templates that worked really well. We had meetings every Friday morning to go over the information, but it was no longer necessary. I asked around in preparation for scaling it back, and was surprised: the team really liked the meeting. They saw it as a method of getting together once a week, getting face time with people they didn't normally work with. That's a far better purpose for a meeting!
+When I was a [project manager for the Visual Studio Languages team](http://scottnonnenberg.com/work/#microsoft-2003-q-3-to-2010-q-3), I built a weekly status system with email templates that worked really well. We had meetings every Friday morning to go over the information, but it was no longer necessary. I asked around in preparation for scaling it back, and was surprised: the team really liked the meeting. They saw it as a method of getting together once a week, getting face time with people they didn't normally work with. That's a far better purpose for a meeting!
 
 Maybe make your one standing meeting on Friday afternoons, with cool demos, tasty snacks, and alcohol! :0)
 
