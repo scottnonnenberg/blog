@@ -84,11 +84,11 @@ Retrospectives form the backbone of a [feedback loop](/the-why-of-agile/#feedbac
 
 Crunch time happens. If you know you won't be able to work on impediments in the face of a big milestone, temporarily suspend your retrospectives. But know that you will be building up debt. Keep track of the pressure building up on the team.
 
-You might be tempted to think the feedback you still get without retrospectives is good enough, but it's shadow of what a healthy retrospective system will elicit. Dedicated retrospectives, with proof that raised impediments are addressed, sends a message that feedback is important.
+You might be tempted to think the feedback you still get without retrospectives is good enough, but it's shadow of what a healthy retrospective system will elicit. Dedicated retrospectives, with proof that raised impediments are addressed, send a message that feedback is important.
 
 ### No initial sprint plan
 
-As mentioned above, teams sometimes get themselves into a paradox. They want to sign up for a certain amount of work every sprint, but they can never quite do it. They always fall short. Sometimes it really is because of some unpredictable external factor like emergency production bugs. But most of the time it's plain overoptimism. [Deadlines can make people do unexpected things](https://keen.io/blog/143850394061/how-should-deadlines-be-used-in-software).
+Teams sometimes get themselves into a paradox. They want to sign up for a certain amount of work every sprint, but they can never quite do it. They always fall short. Sometimes it really is because of some unpredictable external factor like emergency production bugs. But most of the time it's plain overoptimism. [Deadlines can make people do unexpected things](https://keen.io/blog/143850394061/how-should-deadlines-be-used-in-software).
 
 Try eliminating your sprint plan. You'll work directly from the backlog. Assure the team that progress is very important, but you trust that they'll work at the speed which is right for them. Here it helps to [connect the dev effort with the overall organizational mission](/systems-and-incentives/#keep-the-system-in-mind) to provide the urgency now no longer provided by arbitrary deadlines.
 
