@@ -1,0 +1,5 @@
+Copyright 2016, All Rights Reserved.
+
+This applies to all files in this directory.
+
+When you fork this repository, this directory is for your posts, not mine! :0)
