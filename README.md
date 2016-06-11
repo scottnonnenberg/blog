@@ -53,15 +53,11 @@ _Note: Due to the meta tags on each page, you'll get broken links until you've p
 
 ## Helper scripts
 
-### make-post
-
 ```bash
 npm run make-post -- "The name of your post"
 ```
 
 Creates a new markdown file from the template at `scripts/util/_postTemplate.md`. Sets the new post's `previous` URL to the last most-recent post's URL, and updates the previous post's markdown file with the newly-generated posts URL. That was annoying to do by hand. :0)
-
-### clean-post
 
 ```bash
 npm run clean-post
@@ -70,15 +66,11 @@ npm run clean-post -- 5
 
 By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `config.toml`) to ensure that links are all of the relative form.
 
-### generate-tags
-
 ```bash
 npm run generate-tags
 ```
 
 Loads all posts from `pages/posts` and extracts all of their tags. Ensures that a file `pages/tags/TAG.js` exists for every tag found. Prints out a count for each.
-
-### update-rankings
 
 ```bash
 npm run update-rankings
@@ -86,18 +78,14 @@ npm run update-rankings
 
 Goes to my stats system (which uses [Piwik](https://piwik.org/)), grabs the top URLs, massages the data a little bit, then updates the `rank` property of the frontmatter in each markdown file. If you use this, you'll want to periodically change the end date for the query.
 
-### generate-rss
-
 ```bash
 npm run generate-rss
 ```
 
-Generates `rss.xml` and `atom.xml` into `public/`. Run with every build.
-
-### generate-json
+Generates `rss.xml` and `atom.xml` into `public/`. Runs as part of every build.
 
 ```bash
 npm run generate-json
 ```
 
-Generates `all.json` and `recent.json` into `public/`. Also run with every build. I generate this file for easier syndication into other sites, like https://scottnonnenberg.com.
+Generates `all.json` and `recent.json` into `public/`. Also runs as part of every build. I generate this file for easier syndication into other sites, like https://scottnonnenberg.com.
