@@ -1,4 +1,4 @@
-# blog.scottnonnenberg.com
+# https://blog.scottnonnenberg.com
 
 A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
