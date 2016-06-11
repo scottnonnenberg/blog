@@ -19,7 +19,7 @@ So, how might we save it? I've already talked through [the reasons for the stand
 
 ## Definitions
 
-First, some definitions. We've been using the word _Agile_ a lot, but what does it mean, exactly? Where do terms like _standup_ and _sprint_ come from? Our first clue comes from [agilemethodology.org](http://agilemethodology.org/), the first result from a search for 'agile.' It is sure to differentiate between _Agile_ and _Scrum_. But it's interesting to note that _Scrum_ comes up after only four sentences, and is the same size in the [tag cloud](http://agilemethodology.org/#tagcloud/) on the page. And the term 'sprint', mentioned under the _Agile_ header, is actually a _Scrum_ term.
+First, some definitions. We've been using the word _Agile_ a lot, but what does it mean, exactly? Where do terms like _standup_ and _sprint_ come from? Our first clue comes from [agilemethodology.org](http://agilemethodology.org/), the first result from a search for 'agile.' It is sure to differentiate between _Agile_ and _Scrum_. But it's interesting to note that _Scrum_ comes up after only four sentences, and is the same size in the [tag cloud](http://agilemethodology.org/#tagcloud) on the page. And the term 'sprint', mentioned under the _Agile_ header, is actually a _Scrum_ term.
 
 These two concepts are wound together so tightly it's hard to tell the difference.
 
