@@ -12,10 +12,14 @@ Note that this project relies on my [fork of `gatsby`](https://github.com/scottn
 
 `piwik.js` is excluded from the repository, but is used by `html.js` (to generate piwik tracking tags) and `scripts/update_rankings.js` (to get popularity numbers for posts). These four keys are required:
 
-  - `domain` - where your piwik server is
-  - `siteId` - the site number
-  - `site` - the site domain
-  - `token` - your API access token, used by `update-rankings` npm script
+```javascript
+module.exports = {
+  domain: 'where your piwik server is',
+  siteId: 'the site number',
+  site: 'the site domain',
+  token: 'your API access token, used by `update-rankings` npm script',
+}
+```
 
 ## Develop
 
