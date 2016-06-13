@@ -10,6 +10,7 @@ const md = markdownIt({
   linkify: true,
   typographer: false,
 });
+const fileFilter = /.md$/;
 
 export default function loadPosts(providedOptions) {
   const options = providedOptions || {};
@@ -21,6 +22,7 @@ export default function loadPosts(providedOptions) {
   const postFiles = fs.readdirSync(postsPath);
 
   return _.chain(postFiles)
+    .filter(file => fileFilter.test(file))
     .sortBy()
     .reverse() // eslint-disable-line
     .take(limit)
