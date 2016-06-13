@@ -3,7 +3,7 @@ title: Customizing Agile
 date: 2016-06-07T16:51:17.622Z
 layout: post
 path: /customizing-agile/
-next:
+next: /eslint-part-1-exploration/
 previous: /contract-new-techniques-old-technology/
 tags:
   - agile
