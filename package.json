@@ -2,43 +2,33 @@
   "name": "blog-scottnonnenberg-com",
   "private": true,
   "version": "1.0.0",
-
   "scripts": {
+    "release": "standard-version",
     "lint": "time eslint .",
-
     "develop": "gatsby develop",
     "build": "gatsby build",
-
     "build-production": "scripts/build.sh",
     "build-staging": "cp config.toml config_production.toml && cp config_staging.toml config.toml && scripts/build.sh --force; mv config_production.toml config.toml",
-
     "serve": "cd public && python -m SimpleHTTPServer 8000",
-
     "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
     "check-deep-links": "babel-node scripts/check_deep_links.js",
     "check-links": "broken-link-checker --ordered --filter-level=3",
-
     "generate-rss": "babel-node scripts/generate_rss.js",
     "generate-json": "babel-node scripts/generate_json.js",
     "generate-tags": "babel-node scripts/generate_tags.js",
     "update-rankings": "babel-node scripts/update_rankings.js",
     "make-post": "babel-node scripts/make_post.js",
     "clean-post": "babel-node scripts/clean_post.js",
-
     "test": "npm run unit && npm run lint",
-
     "mocha": "NODE_ENV=test time mocha --recursive --compilers js:babel-core/register --require test/setup/index.js",
     "mocha-watch": "npm run mocha -- --watch",
     "mocha-coverage": "NODE_ENV=test time babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/index.js",
-
     "unit": "npm run mocha -- -s 3 -t 150 test/unit",
     "unit-watch": "npm run mocha-watch -- -s 3 -t 150 test/unit",
     "unit-coverage": "npm run mocha-coverage -- test/unit",
-
     "open-coverage": "open coverage/lcov-report/index.html"
   },
-
   "dependencies": {
     "catch-links": "2.0.1",
     "lodash": "4.12.0",
@@ -51,8 +41,8 @@
     "underscore.string": "3.3.4"
   },
   "devDependencies": {
-    "@scottnonnenberg/notate": "0.2.0",
     "@scottnonnenberg/eslint-config-thehelp": "0.5.0",
+    "@scottnonnenberg/notate": "0.2.0",
     "app-module-path": "1.0.6",
     "babel-cli": "6.9.0",
     "babel-eslint": "6.0.4",
@@ -69,6 +59,7 @@
     "enzyme": "2.3.0",
     "feed": "0.3.0",
     "front-matter": "2.0.7",
+    "ghooks": "^1.2.3",
     "glob": "7.0.3",
     "isparta": "4.0.0",
     "istanbul": "0.4.2",
@@ -77,14 +68,22 @@
     "mock-require": "1.2.1",
     "react-addons-test-utils": "15.0.2",
     "sinon": "1.17.3",
+    "standard-version": "^2.3.0",
     "superagent": "1.8.3",
     "toml": "2.3.0",
+    "validate-commit-msg": "^2.6.1",
     "webpack": "1.12.14"
   },
-
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "maxSubjectLength": 72
+    }
+  },
   "author": "Scott Nonnenberg <scott@nonnenberg.com>",
   "license": "MIT",
-
   "homepage": "https://github.com/scottnonnenberg/blog",
   "repository": {
     "type": "git",
