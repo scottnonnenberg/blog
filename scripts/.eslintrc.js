@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'thehelp/scripts',
+    '@scottnonnenberg/thehelp/scripts',
   ],
 
   rules: {

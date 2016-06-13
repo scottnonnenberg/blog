@@ -4,12 +4,8 @@ const path = require('path');
 
 module.exports = {
   extends: [
-    'thehelp',
-    'thehelp/react',
-  ],
-
-  plugins: [
-    'thehelp',
+    '@scottnonnenberg/thehelp',
+    '@scottnonnenberg/thehelp/react',
   ],
 
   parser: 'babel-eslint',
@@ -23,6 +19,8 @@ module.exports = {
   },
 
   rules: {
+    'filenames/match-regex': 'off', // for now; will make files consistent eventually
+
     'immutable/no-this': 'off', // we're using full React components still
 
     'security/detect-object-injection': 'off', // as a client-only app, no concerns here

@@ -41,7 +41,7 @@
     "underscore.string": "3.3.4"
   },
   "devDependencies": {
-    "@scottnonnenberg/eslint-config-thehelp": "0.5.0",
+    "@scottnonnenberg/eslint-config-thehelp": "0.6.1",
     "@scottnonnenberg/notate": "0.2.0",
     "app-module-path": "1.0.6",
     "babel-cli": "6.9.0",
