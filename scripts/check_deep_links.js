@@ -3,7 +3,7 @@ import './util/setupModulePath';
 import URL from 'url';
 
 import chalk from 'chalk';
-import notate from 'notate';
+import notate from '@scottnonnenberg/notate';
 import _ from 'lodash';
 import async from 'async';
 import superagent from 'superagent';
