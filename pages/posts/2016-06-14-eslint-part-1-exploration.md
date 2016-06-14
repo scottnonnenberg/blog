@@ -51,7 +51,7 @@ Recently, instead of upgrading to the latest AirBnB config, I embarked on my own
 
 And then I went, rule by rule, attempting to turn everything on. But I didn't do it in a vacuum; I used an existing project with a couple thousand lines of code to test each change. In some cases I absolutely changed a lot of code (`'comma-dangle': ['error', 'always-multiline']`) and in others I wanted to turn it on but the current codebase didn't really allow it (`'max-statements': 'off'`).
 
-When I was done, I wanted to be sure. I went looking for something that would guarantee that I had made a decision for every rule, and found the [`find-eslint-rules`](https://www.npmjs.com/package/eslint-find-rules) node module. Once installed, I had a new `npm` script to tell me whether I had configured, one way or another, every available rule available.
+When I was done, I wanted to be sure. I went looking for something that would guarantee that I had made a decision for every rule, and found the [`find-eslint-rules`](https://github.com/sarbbottam/eslint-find-rules) node module. Once installed, I had a new `npm` script to tell me whether I had configured, one way or another, every available rule available.
 
 ## Expanding horizons with plugins
 

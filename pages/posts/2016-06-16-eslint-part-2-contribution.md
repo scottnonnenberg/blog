@@ -31,11 +31,11 @@ I was confused when I got so many errors for my simple code, so I took a trip to
 
 Sadly, the project hasn't seen much movement lately. Maybe if you add a &#128077; you can help convince them to merge it? :0)
 
-### [eslint-plugin-filenames](https://github.com/spalger/eslint-plugin-test-filenames)
+### [eslint-plugin-filenames](https://github.com/selaux/eslint-plugin-filenames)
 
 Exploring the rules offered by this plugin, I was happy to see custom regular expressions available, because the default is `camelCase.js`. Call me old-school, but I like my `snake_case_file_names.js`.
 
-But then I encountered its `match-exports` rule. I wanted to use it as well, but it was doing a plain comparison between the filename and the exported variable. And I'm definitely not about to `var snake_case;`. So, time for [a pull request introducing a `transform` option](https://github.com/selaux/eslint-plugin-filenames/pull/9) allowing for '[snake](https://www.npmjs.com/package/lodash.snakecase)', '[kebab](https://www.npmjs.com/package/lodash.kebabcase),' and '[camel](https://www.npmjs.com/package/lodash.camelcase)' casing. Also still looking for that merge on this one.
+But then I encountered its `match-exports` rule. I wanted to use it as well, but it was doing a plain comparison between the filename and the exported variable. And I'm definitely not about to `var snake_case;`. So, time for [a pull request introducing a `transform` option](https://github.com/selaux/eslint-plugin-filenames/pull/9) allowing for '[snake](https://www.npmjs.com/package/lodash.snakecase)', '[kebab](https://www.npmjs.com/package/lodash.kebabcase),' and '[camel](https://www.npmjs.com/package/lodash.camelcase)' casing. Still looking for a merge.
 
 ### [eslint-plugin-immutable](https://github.com/jhusain/eslint-plugin-immutable)
 
@@ -43,23 +43,19 @@ I spent a bunch of time exploring true [Functional Design](https://en.wikipedia.
 
 But I ran into a couple problems. First, if you're using [CommonJS](https://webpack.github.io/docs/commonjs.html), you need to modify `module.exports` at least once per file. That's a whole lot of `// eslint-disable-line`. Second, [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) [pushes you](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md) to use [Stateless Components](https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d) if your component is really simple. But then its [`prop-types`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md) rule will fire unless you add a `propTypes` key. And that's mutation of an object, once more.
 
-So I [submitted a pull request for the `no-mutation` rule](https://github.com/jhusain/eslint-plugin-immutable/pull/15). It allows you to specify exceptions to the rule, appropriate for your project.
-
-Sadly, there's been no movement on that pull request either. If it's not going to happen, I'd really prefer an immediate "no." Still, it's worth a merge! I added comprehensive test coverage to the project with that PR!
+So I [submitted a pull request for the `no-mutation` rule](https://github.com/jhusain/eslint-plugin-immutable/pull/15). It allows you to specify exceptions to the rule, appropriate for your project. Sadly, there's been no movement on that pull request either. I really think they should merge it! I added comprehensive test coverage to the project with my PR!
 
 ### [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 
 This is such a useful plugin. I've started using named import statements (`import { name } from 'thing';`) because this plugin can verify that there's a corresponding export on the other side (`export name;`).
 
-I was getting false positives for the [`prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md) rule, so I [submitted a pull request to fix it](https://github.com/benmosher/eslint-plugin-import/pull/343). Updates to my code caused a regression, so I [submitted another pull request](https://github.com/benmosher/eslint-plugin-import/pull/359).
+I was getting false positives for the [`prefer-default-export`](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md) rule, so I [submitted a pull request to fix it](https://github.com/benmosher/eslint-plugin-import/pull/343). Updates to my code caused a regression, so I [submitted another pull request](https://github.com/benmosher/eslint-plugin-import/pull/359). It was a pleasure to work on an actively maintained project!
 
-The contrast was extreme. It was a pleasure to work on an actively maintained project!
-
-### [eslint-find-rules](https://github.com/kentcdodds/eslint-find-new-rules)
+### [eslint-find-rules](https://github.com/sarbbottam/eslint-find-rules)
 
 While preparing my packages for public release, I discovered that `eslint-find-rules` didn't properly handle scoped plugins! Yes, these are a relatively new feature ([a little over a year old](http://blog.npmjs.org/post/116936804365/solving-npms-hard-problem-naming-packages)) but if ESLint supports it, so should associated tools!
 
-Yet again, [time to wade in and contribute to the community](https://github.com/sarbbottam/eslint-find-rules/pull/104). This was another active project, with quite a few comments and merge less than day after my submission. Much appreciated!
+Yet again, [time for a pull request](https://github.com/sarbbottam/eslint-find-rules/pull/104). This was another active project, with quite a few comments and merge less than day after my submission. Much appreciated!
 
 ## Announcing: My Rules
 
