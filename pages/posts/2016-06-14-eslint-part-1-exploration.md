@@ -12,7 +12,7 @@ tags:
   - reactjs
 ---
 
-![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev2.png)
+![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
 
 I recently spent some time to review my [ESLint](http://eslint.org/) setup. It's got lots of rules, and a healthy ecosystem of plugins. It's intimidating! Maybe I can help you make some sense of it...
 
