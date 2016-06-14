@@ -3,9 +3,10 @@ title: "ESLint Part 1: Exploration"
 date: 2016-06-14T22:27:28.926Z
 layout: post
 path: /eslint-part-1-exploration/
-next:
+next: /eslint-part-2-contribution/
 previous: /customizing-agile/
 tags:
+  - eslint
   - javascript
   - software
   - nodejs
