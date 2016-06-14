@@ -15,9 +15,6 @@ tags:
 
 ![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
 
-- Update scottnonnenberg.com spreadsheet - lots of entries will use this URL!
-- Double-check status of all pull-requests.
-
 [I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I contributed several pull requests and a plugin of my own! Let's take a look...
 
 <div class='fold'></div>
