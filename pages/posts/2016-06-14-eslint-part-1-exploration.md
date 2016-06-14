@@ -90,7 +90,7 @@ And so, I went deep into the NPM registry with [a generic 'eslint-plugin' search
 
 [`eslint-plugin-json`](https://github.com/azeemba/eslint-plugin-json) is not a plugin I'd recommend. I like [JSON format checking](https://github.com/zaach/jsonlint) as much as the next guy, but this one [pulls in all of JSHint](https://github.com/azeemba/eslint-plugin-json/blob/master/package.json#L25) just to [check for well-formed JSON](https://github.com/azeemba/eslint-plugin-json/blob/master/lib/index.js#L37)!
 
-[`eslint-plugin-no-js`](https://github.com/mysticatea/eslint-plugin-node) is very opinionated. It recommends that you dispense with Javascript entirely. As it says, "your code sucks." :0)
+[`eslint-plugin-no-js`](https://github.com/chicoxyzzy/eslint-plugin-no-js) is very opinionated. It recommends that you dispense with Javascript entirely. As it says, "your code sucks." :0)
 
 ### Close, but not quite
 
