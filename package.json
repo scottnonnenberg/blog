@@ -66,6 +66,7 @@
     "markdown-it": "6.0.2",
     "mocha": "2.3.4",
     "mock-require": "1.2.1",
+    "punycode": "1.4.1",
     "react-addons-test-utils": "15.0.2",
     "sinon": "1.17.3",
     "standard-version": "2.3.0",
