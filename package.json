@@ -59,7 +59,7 @@
     "enzyme": "2.3.0",
     "feed": "0.3.0",
     "front-matter": "2.0.7",
-    "ghooks": "^1.2.3",
+    "ghooks": "1.2.3",
     "glob": "7.0.3",
     "isparta": "4.0.0",
     "istanbul": "0.4.2",
@@ -68,10 +68,10 @@
     "mock-require": "1.2.1",
     "react-addons-test-utils": "15.0.2",
     "sinon": "1.17.3",
-    "standard-version": "^2.3.0",
+    "standard-version": "2.3.0",
     "superagent": "1.8.3",
     "toml": "2.3.0",
-    "validate-commit-msg": "^2.6.1",
+    "validate-commit-msg": "2.6.1",
     "webpack": "1.12.14"
   },
   "config": {
