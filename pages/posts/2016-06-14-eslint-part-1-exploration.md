@@ -66,7 +66,7 @@ And so, I went deep into the NPM registry with [a generic 'eslint-plugin' search
 
 [`eslint-plugin-better`](https://github.com/idmitriev/eslint-plugin-better) draws from more [Douglas Crockford wisdom](https://www.youtube.com/watch?v=PSGEjv3Tqo0), attempting to limit you to the 'good parts' of Javascript. If you have some features of Javascript you want to avoid in your project, this plugin might be for you!
 
-[`eslint-plugin-filenames`](https://github.com/spalger/eslint-plugin-test-filenames) makes filenames consistent across your project. It's about more than just consistency - incorrect casing can cause problems on different OSes, since some are case-sensitive, some aren't. You definitely don't want something that works locally to break only the server, right?
+[`eslint-plugin-filenames`](https://github.com/selaux/eslint-plugin-filenames) makes filenames consistent across your project. It's about more than just consistency - incorrect casing can cause problems on different OSes, since some are case-sensitive, some aren't. You definitely don't want something that works locally to break only the server, right?
 
 ### React
 
