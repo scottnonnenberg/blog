@@ -16,6 +16,9 @@ module.exports = {
         paths: [__dirname, path.resolve(__dirname, 'test/setup/fakes')],
       },
     },
+    'react': {
+      version: '15.1.0',
+    },
   },
 
   rules: {

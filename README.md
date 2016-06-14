@@ -94,6 +94,11 @@ npm run generate-json
 
 Generates `all.json` and `recent.json` into `public/`. Also runs as part of every build. I generate this file for easier syndication into other sites, like https://scottnonnenberg.com.
 
+## TODO
+
+* Update `punycode` dependency when `broken-link-checker` updates to pull in newer version of `bhttp` and `tough-cookie`: https://github.com/stevenvachon/broken-link-checker/issues/34
+* `mocha` v2.3.4 is included because newer versions report errors twice in the browser: update when we can validate this is fixed: https://github.com/mochajs/mocha/issues/2083
+
 ## License
 
 The files under `pages/posts` are Copyright 2016, All Rights Reserved.
