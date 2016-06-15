@@ -15,13 +15,13 @@ tags:
 
 ![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
 
-[I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I contributed several pull requests and a plugin of my own! Let's take a look...
+[I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I learned how simple it is to contribute to the ESLint community by submitting several pull requests and releasing a [plugin of my own](https://github.com/scottnonnenberg/eslint-plugin-thehelp)!
 
 <div class='fold'></div>
 
 ## Pull Requests
 
-I had a beginner's mind as I dug deep into ESLint for the first time. I discovered, tried, and then contributed back to a number of plugins:
+I had a beginner's mind as I dug deep into ESLint for the first time. I discovered, tried, and then contributed back to a number of projects:
 
 ### [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
 
@@ -35,7 +35,9 @@ Sadly, the project hasn't seen much movement lately. Maybe if you add a &#128077
 
 Exploring the rules offered by this plugin, I was happy to see custom regular expressions available, because the default is `camelCase.js`. Call me old-school, but I like my `snake_case_file_names.js`.
 
-But then I encountered its `match-exports` rule. I wanted to use it as well, but it was doing a plain comparison between the filename and the exported variable. And I'm definitely not about to `var snake_case;`. So, time for [a pull request introducing a `transform` option](https://github.com/selaux/eslint-plugin-filenames/pull/9) allowing for '[snake](https://www.npmjs.com/package/lodash.snakecase)', '[kebab](https://www.npmjs.com/package/lodash.kebabcase),' and '[camel](https://www.npmjs.com/package/lodash.camelcase)' casing. Still looking for a merge.
+But then I encountered its `match-exports` rule. I wanted to use it as well, but it was doing a plain comparison between the filename and the exported variable. And I'm definitely not about to `var snake_case;`. So, time for [a pull request introducing a `transform` option](https://github.com/selaux/eslint-plugin-filenames/pull/9) allowing for '[snake](https://www.npmjs.com/package/lodash.snakecase)', '[kebab](https://www.npmjs.com/package/lodash.kebabcase),' and '[camel](https://www.npmjs.com/package/lodash.camelcase)' casing.
+
+Still looking for a merge on this one too.
 
 ### [eslint-plugin-immutable](https://github.com/jhusain/eslint-plugin-immutable)
 
@@ -43,7 +45,7 @@ I spent a bunch of time exploring true [Functional Design](https://en.wikipedia.
 
 But I ran into a couple problems. First, if you're using [CommonJS](https://webpack.github.io/docs/commonjs.html), you need to modify `module.exports` at least once per file. That's a whole lot of `// eslint-disable-line`. Second, [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react) [pushes you](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md) to use [Stateless Components](https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d) if your component is really simple. But then its [`prop-types`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md) rule will fire unless you add a `propTypes` key. And that's mutation of an object, once more.
 
-So I [submitted a pull request for the `no-mutation` rule](https://github.com/jhusain/eslint-plugin-immutable/pull/15). It allows you to specify exceptions to the rule, appropriate for your project. Sadly, there's been no movement on that pull request either. I really think they should merge it! I added comprehensive test coverage to the project with my PR!
+So I [submitted a pull request for the `no-mutation` rule](https://github.com/jhusain/eslint-plugin-immutable/pull/15). It allows you to specify exceptions to the rule, appropriate for your project. Sadly, there's been no movement on that pull request either. I really think they should merge it! It includes comprehensive test coverage for the whole project!
 
 ### [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 
@@ -53,9 +55,9 @@ I was getting false positives for the [`prefer-default-export`](https://github.c
 
 ### [eslint-find-rules](https://github.com/sarbbottam/eslint-find-rules)
 
-While preparing my packages for public release, I discovered that `eslint-find-rules` didn't properly handle scoped plugins! Yes, these are a relatively new feature ([a little over a year old](http://blog.npmjs.org/post/116936804365/solving-npms-hard-problem-naming-packages)) but if ESLint supports it, so should associated tools!
+While preparing my packages for public release, I discovered that `eslint-find-rules` didn't properly handle [scoped plugins](https://docs.npmjs.com/misc/scope)! Yes, it is a relatively new feature ([a little over a year old](http://blog.npmjs.org/post/116936804365/solving-npms-hard-problem-naming-packages)) but if ESLint supports scoped packages, so should associated tools!
 
-Yet again, [time for a pull request](https://github.com/sarbbottam/eslint-find-rules/pull/104). This was another active project, with quite a few comments and merge less than day after my submission. Much appreciated!
+Yet again, [time for a pull request](https://github.com/sarbbottam/eslint-find-rules/pull/104). This was another active project, and I got quite a few comments and merge less than day after my submission. Much appreciated!
 
 ## Announcing: My Plugin!
 
@@ -116,7 +118,7 @@ You may notice that the first line will throw an error! Fear not, you can [confi
 
 ### [thehelp/no-mutation](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/no_mutation.md)
 
-Sadly, I don't expect my [`eslint-plugin-immutable`](https://github.com/jhusain/eslint-plugin-immutable) [pull request](https://github.com/jhusain/eslint-plugin-immutable/pull/15) to be approved any time soon. This is where you'll be able to use my changes in the near term. As with [its predecessor](https://github.com/jhusain/eslint-plugin-immutable#no-mutation), this rule is designed to push you towards [functional design](https://en.wikipedia.org/wiki/Functional_design), where methods don't modify the data passed into them. It makes programs far, far easier to reason about.
+Sadly, I don't expect my [`eslint-plugin-immutable`](https://github.com/jhusain/eslint-plugin-immutable) [pull request](https://github.com/jhusain/eslint-plugin-immutable/pull/15) to be approved any time soon. This is where you'll be able to use my changes in the near term. As with [its predecessor](https://github.com/jhusain/eslint-plugin-immutable#no-mutation), this rule is designed to help you write methods which don't modify the data available to them. It makes programs far, far easier to reason about.
 
 ```javascript
 obj.x = 4; // invalid
