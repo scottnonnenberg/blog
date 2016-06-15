@@ -57,7 +57,7 @@ While preparing my packages for public release, I discovered that `eslint-find-r
 
 Yet again, [time for a pull request](https://github.com/sarbbottam/eslint-find-rules/pull/104). This was another active project, with quite a few comments and merge less than day after my submission. Much appreciated!
 
-## Announcing: My Rules
+## Announcing: My Plugin!
 
 You knew I was leading up to this. After all those pull requests, I decided to put my own plugin out there: [`@scottnonnenberg/eslint-plugin-thehelp`](https://github.com/scottnonnenberg/eslint-plugin-thehelp). It has just three rules:
 
