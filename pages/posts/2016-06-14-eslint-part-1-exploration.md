@@ -60,7 +60,7 @@ And so, I went deep into the NPM registry with [a generic 'eslint-plugin' search
 
 ### General
 
-[`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import/issues/151) is an amazing plugin, alerting you to missing or malformed `require()` or `import` statements. Before, you had to run your code to catch incorrect references! It made me realize the kinds of high-value things ESLint could do.
+[`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) is an amazing plugin, alerting you to missing or malformed `require()` or `import` statements. Before, you had to run your code to catch incorrect references! It made me realize the kinds of high-value things ESLint could do.
 
 [`eslint-plugin-security`](https://github.com/nodesecurity/eslint-plugin-security) is similarly creative. The [Node.js Security Project](https://nodesecurity.io/) reviews node modules and their [`nsp` tool](https://www.npmjs.com/package/nsp) checks for vulnerable node modules in your dependencies. This plugin helps them do that job, and it can help you with your project as well. _Note: it will fire false positives!_
 
