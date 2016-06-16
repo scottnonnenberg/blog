@@ -15,7 +15,7 @@ tags:
 
 ![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
 
-[I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I learned how simple it is to contribute to the ESLint community by submitting several pull requests and releasing a [plugin of my own](https://github.com/scottnonnenberg/eslint-plugin-thehelp)!
+[I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I contributed back to the ESLint community! I submitted several pull requests and released a [plugin of my own](https://github.com/scottnonnenberg/eslint-plugin-thehelp) - and you can too!
 
 <div class='fold'></div>
 
@@ -63,7 +63,7 @@ Yet again, [time for a pull request](https://github.com/sarbbottam/eslint-find-r
 
 You knew I was leading up to this. After all those pull requests, I decided to put my own plugin out there: [`@scottnonnenberg/eslint-plugin-thehelp`](https://github.com/scottnonnenberg/eslint-plugin-thehelp). It has just three rules:
 
-### [thehelp/absolute-or-current-dir](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/absolute_or_current_dir.md)
+### 1. [thehelp/absolute-or-current-dir](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/absolute_or_current_dir.md)
 
 I've come to hate `require()` or `import` statements with relative paths navigating up the directory hierarchy. The dreaded `../`. How many times have you seen this: `require('../../../../src/util/fn')`?
 
@@ -116,7 +116,7 @@ import thing from 'src/modules/thing';
 
 You may notice that the first line will throw an error! Fear not, you can [configure a set of exceptions](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/absolute_or_current_dir.md#configuration).
 
-### [thehelp/no-mutation](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/no_mutation.md)
+### 2. [thehelp/no-mutation](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/no_mutation.md)
 
 Sadly, I don't expect my [`eslint-plugin-immutable`](https://github.com/jhusain/eslint-plugin-immutable) [pull request](https://github.com/jhusain/eslint-plugin-immutable/pull/15) to be approved any time soon. This is where you'll be able to use my changes in the near term. As with [its predecessor](https://github.com/jhusain/eslint-plugin-immutable#no-mutation), this rule is designed to help you write methods which don't modify the data available to them. It makes programs far, far easier to reason about.
 
@@ -143,7 +143,7 @@ But some kinds of mutation are required. Like the first issue I describe above, 
 
 You can also provide a more generic rule by providing just `object` or `property`. That second exception will allow you to set `propTypes` on any object, solving the second issue I describe above.
 
-### [thehelp/no-array-mutation](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/no_array_mutation.md)
+### 3. [thehelp/no-array-mutation](https://github.com/scottnonnenberg/eslint-plugin-thehelp/blob/master/doc/no_array_mutation.md)
 
 Did you know that a large set of [standard `Array` methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) mutate the underlying array? Do you know which ones? [Another pull request](https://github.com/jhusain/eslint-plugin-immutable/pull/5) is waiting to be added to `eslint-plugin-immutable`, which flags these mutating methods.
 
@@ -225,5 +225,5 @@ Maybe you have some ESLint rules lurking in that head of yours? Maybe you've see
 
 Fork, modify, extend! Use [my plugin](https://github.com/scottnonnenberg/eslint-plugin-thehelp)! Use it for the rules themselves, or as a template for building your own rules! :0)
 
-Watch for my next post in this series: ESLint Part 3: Comparison.
+Watch for my next post in this series: _ESLint Part 3: Analysis_.
 
