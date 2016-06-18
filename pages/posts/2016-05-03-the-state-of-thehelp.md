@@ -102,9 +102,7 @@ Unit testing with Sauce Labs? You will need [this code](https://github.com/thehe
 Want code coverage in the browser? [Instrument your code with a Istanbul Webpack plugin](https://github.com/deepsweet/istanbul-instrumenter-loader), then run your tests with the excellent [`mocha-phantomjs`](https://github.com/nathanboktae/mocha-phantomjs) command-line tool like this:
 
 ```bash
-
 mocha-phantomjs --hooks ./test/extract_coverage_hook.js http://localhost:8000/tests.html
-
 ```
 
 You can extract Istanbul's code coverage information via this code in your hook, then process it with the Istanbul command-line tool:
