@@ -3,7 +3,7 @@ title: "ESLint Part 3: Analysis"
 date: 2016-06-21T16:35:10.133Z
 layout: post
 path: /eslint-part-3-analysis/
-next:
+next: /carrots-not-sticks/
 previous: /eslint-part-2-contribution/
 tags:
   - eslint
