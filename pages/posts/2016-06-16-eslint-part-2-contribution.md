@@ -4,7 +4,7 @@ title: "ESLint Part 2: Contribution"
 date: 2016-06-16T18:36:43.686Z
 layout: post
 path: /eslint-part-2-contribution/
-next:
+next: /eslint-part-3-analysis/
 previous: /eslint-part-1-exploration/
 tags:
   - eslint
@@ -226,5 +226,5 @@ Maybe you have some ESLint rules lurking in that head of yours? Maybe you've see
 
 Fork, modify, extend! Use [my plugin](https://github.com/scottnonnenberg/eslint-plugin-thehelp)! Use it for the rules themselves, or as a template for building your own rules! :0)
 
-Watch for my next post in this series: _ESLint Part 3: Analysis_.
+Don't miss the last installment in my series: [ESLint Part 3: Analysis](/eslint-part-3-analysis/), about the reasons for style tools, and my new configuration comparison tool!
 

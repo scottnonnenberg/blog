@@ -220,4 +220,4 @@ ESLint is an amazingly useful tool. If you're not using it today, I recommend th
 
 And you can use [`@scottnonnenberg/eslint-config-thehelp`](https://github.com/scottnonnenberg/eslint-config-thehelp) directly, submit pull requests to improve it, or fork it and make it your own!
 
-But first check out the next post in the series: [ESLint Part 2: Contribution](/eslint-part-2-contribution/), about contributing back to the ESLint ecosystem.
+But first check out the next post in the series: [ESLint Part 2: Contribution](/eslint-part-2-contribution/), about contributing back to the ESLint ecosystem. Or skip to the final post, [ESLint Part 3: Analysis](/eslint-part-3-analysis/)!
