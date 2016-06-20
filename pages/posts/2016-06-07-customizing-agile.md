@@ -1,4 +1,5 @@
 ---
+rank: 19
 title: Customizing Agile
 date: 2016-06-07T16:51:17.622Z
 layout: post

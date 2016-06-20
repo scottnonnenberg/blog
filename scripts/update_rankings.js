@@ -42,7 +42,7 @@ superagent
     format: 'JSON',
     idSite: piwikConfig.siteId,
     period: 'range',
-    date: '2013-1-1,2016-06-01',
+    date: '2013-1-1,2016-06-19',
     expanded: 1,
     token_auth: piwikConfig.token,
     filter_limit: 100,

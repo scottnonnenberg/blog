@@ -1,5 +1,5 @@
 ---
-rank: 29
+rank: 32
 title: "Contract: React Training"
 date: 2016-04-26T17:29:10.448Z
 layout: post

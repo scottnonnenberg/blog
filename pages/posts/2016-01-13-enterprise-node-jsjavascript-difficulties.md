@@ -1,5 +1,5 @@
 ---
-rank: 8
+rank: 9
 title: Enterprise Node.js/Javascript Difficulties
 date: 2016-01-13T18:18:12.000Z
 layout: post
