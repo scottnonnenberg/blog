@@ -8,13 +8,13 @@ previous: /eslint-part-2-contribution/
 tags:
   - eslint
   - javascript
-  - node-js
+  - nodejs
   - software
 ---
 
 ![ESLint Logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
 
-I've already spoken about my initial [ESLint](http://eslint.org/) [explorations (Part 1)](/eslint-part-1-exploration/) and [contributions (Part 2)](/eslint-part-2-contributions/). For Part 3, let's get a little deeper. Why use ESLint in the first place? Why is it so hard for a group of people to agree on one style guide? Can we at least make it easier to compare configurations?
+I've already spoken about my initial [ESLint](http://eslint.org/) [explorations (Part 1)](/eslint-part-1-exploration/) and [contributions (Part 2)](/eslint-part-2-contribution/). For Part 3, let's get a little deeper. Why use ESLint in the first place? Why is it so hard for a group of people to agree on one style guide? Can we at least make it easier to compare configurations?
 
 <div class='fold'></div>
 
