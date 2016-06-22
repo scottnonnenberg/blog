@@ -173,7 +173,7 @@ For example, in `test/.eslintrc.js` I can include this:
 ```javascript
 {
   extends: [
-    '@scottnonnenberg/thehelp/test`,
+    '@scottnonnenberg/thehelp/test',
   ],
 }
 ```
