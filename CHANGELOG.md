@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/scottnonnenberg/blog/compare/v0.3.0...v0.4.0) (2016-06-22)
+
+
+### Bug Fixes
+
+* **post:** Fix a couple typos in ESLint Part 3 ([2d21803](https://github.com/scottnonnenberg/blog/commit/2d21803))
+* **post:** the state of thehelp - remove extra newlines ([54addb5](https://github.com/scottnonnenberg/blog/commit/54addb5))
+
+
+### Features
+
+* **plain-links:** Restore hover behavior for plain links ([81c77d5](https://github.com/scottnonnenberg/blog/commit/81c77d5))
+* **popular:** Update date range to include June 19 ([3ffe53c](https://github.com/scottnonnenberg/blog/commit/3ffe53c))
+* **post:** Add ESLint part 3, update forward references ([9afb0df](https://github.com/scottnonnenberg/blog/commit/9afb0df))
+* **scripts:** Do production build right before release ([eeda09d](https://github.com/scottnonnenberg/blog/commit/eeda09d))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/scottnonnenberg/blog/compare/v0.2.0...v0.3.0) (2016-06-16)
 
