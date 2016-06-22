@@ -4,6 +4,7 @@
   "version": "0.3.0",
   "scripts": {
     "release": "standard-version",
+    "prerelease": "npm run build-production",
     "lint": "time eslint .",
     "develop": "gatsby develop",
     "build": "gatsby build",
