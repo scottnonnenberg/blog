@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/scottnonnenberg/blog/compare/v0.4.0...v0.5.0) (2016-06-23)
+
+
+### Bug Fixes
+
+* **post:** backtick to singlequote in ESLint Part 1 post ([00c6511](https://github.com/scottnonnenberg/blog/commit/00c6511))
+* **post:** Proper link to job on scottnonnenberg.com ([2f5c50f](https://github.com/scottnonnenberg/blog/commit/2f5c50f))
+
+
+### Features
+
+* **post:** Add Carrots, Not Sticks post ([8d0e0cf](https://github.com/scottnonnenberg/blog/commit/8d0e0cf))
+
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/scottnonnenberg/blog/compare/v0.3.0...v0.4.0) (2016-06-22)
 
