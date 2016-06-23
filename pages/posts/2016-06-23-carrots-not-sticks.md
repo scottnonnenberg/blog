@@ -19,7 +19,7 @@ It may feel satisfying to use punishment to get people to do what you want. But 
 
 ## Frustration
 
-A friend came to me recently looking for advice. Knowing my history in [project management](http://microsoft-2010-q-3-to-2011-q-3) and [team dynamics](/from-tech-person-to-people-person/), he wanted to know how he could change the culture of his team. But that's not how he phrased it. His frustration was evident in his first question:
+A friend came to me recently looking for advice. Knowing my history in [project management](http://scottnonnenberg.com/work/#microsoft-2010-q-3-to-2011-q-3) and [team dynamics](/from-tech-person-to-people-person/), he wanted to know how he could change the culture of his team. But that's not how he phrased it. His frustration was evident in his first question:
 
 > _"Have you ever worked with people who just don't get it?"_
 
