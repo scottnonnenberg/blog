@@ -7,6 +7,7 @@ next: /carrots-not-sticks/
 previous: /eslint-part-2-contribution/
 tags:
   - eslint
+  - open-source
   - javascript
   - nodejs
   - software

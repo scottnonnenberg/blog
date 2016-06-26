@@ -8,6 +8,7 @@ next: /eslint-part-3-analysis/
 previous: /eslint-part-1-exploration/
 tags:
   - eslint
+  - open-source
   - javascript
   - software
   - nodejs

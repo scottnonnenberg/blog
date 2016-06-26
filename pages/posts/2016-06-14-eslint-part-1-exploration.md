@@ -8,6 +8,7 @@ next: /eslint-part-2-contribution/
 previous: /customizing-agile/
 tags:
   - eslint
+  - open-source
   - javascript
   - software
   - nodejs
