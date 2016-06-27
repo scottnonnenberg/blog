@@ -3,7 +3,7 @@ title: Carrots, not sticks
 date: 2016-06-23T18:27:26.605Z
 layout: post
 path: /carrots-not-sticks/
-next:
+next: /notate-better-javascript-callstacks/
 previous: /eslint-part-3-analysis/
 tags:
   - software
