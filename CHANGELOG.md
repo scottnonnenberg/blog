@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.1"></a>
+## [0.6.1](https://github.com/scottnonnenberg/blog/compare/v0.6.0...v0.6.1) (2016-06-28)
+
+
+### Bug Fixes
+
+* **social:** Move to square authorImage for facebook sharing ([9e6901f](https://github.com/scottnonnenberg/blog/commit/9e6901f))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/scottnonnenberg/blog/compare/v0.5.0...v0.6.0) (2016-06-28)
 
