@@ -7,9 +7,10 @@ next: /notate-better-javascript-callstacks/
 previous: /eslint-part-3-analysis/
 tags:
   - nvc
-  - software
-  - business
+  - empathy
   - ideas
+  - business
+  - software
 ---
 
 ![via https://www.flickr.com/photos/adactio/18845759/](https://static.sinap.ps/blog/2016/06_jun/carrots_not_sticks/carrots.jpg)

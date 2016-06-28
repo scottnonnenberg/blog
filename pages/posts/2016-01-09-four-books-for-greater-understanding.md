@@ -7,9 +7,10 @@ path: /four-books-for-greater-understanding/
 next: /the-trouble-with-promises/
 previous: /open-source-and-feelings-the-awesome/
 tags:
+  - nvc
+  - empathy
   - fun
   - books
-  - nvc
   - ideas
 ---
 

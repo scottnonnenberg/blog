@@ -7,8 +7,9 @@ path: /avoid-these-abused-words/
 next: /contract-new-techniques-old-technology/
 previous: /from-tech-person-to-people-person/
 tags:
-  - ideas
   - nvc
+  - empathy
+  - ideas
 ---
 
 ![definition of 'actually' from Google](https://static.sinap.ps/blog/2016/05_may/words/actually-google-cropped.png)

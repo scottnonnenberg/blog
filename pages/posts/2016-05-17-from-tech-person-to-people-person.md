@@ -7,10 +7,11 @@ path: /from-tech-person-to-people-person/
 next: /avoid-these-abused-words/
 previous: /a-functional-distinction/
 tags:
-  - speaking
-  - software
-  - ideas
   - star-wars
+  - empathy
+  - speaking
+  - ideas
+  - software
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pmIwRnujTIM" frameborder="0" allowfullscreen></iframe>

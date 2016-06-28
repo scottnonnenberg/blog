@@ -7,9 +7,10 @@ path: /open-source-and-feelings-the-awesome/
 next: /four-books-for-greater-understanding/
 previous: /contract-teaching/
 tags:
+  - nvc
+  - empathy
   - business
   - conferences
-  - nvc
   - software
 ---
 
