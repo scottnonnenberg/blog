@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/scottnonnenberg/blog/compare/v0.5.0...v0.6.0) (2016-06-28)
+
+
+### Bug Fixes
+
+* **post:** add 'open-source' tag to all ESLint posts ([b7ebbcb](https://github.com/scottnonnenberg/blog/commit/b7ebbcb))
+* **post:** Add link to my library in notate post intro ([af10d8b](https://github.com/scottnonnenberg/blog/commit/af10d8b))
+* **post:** final cleanup on Notate blog post ([4631484](https://github.com/scottnonnenberg/blog/commit/4631484))
+* **tags:** add nvc tag to carrots not sticks post ([47dc183](https://github.com/scottnonnenberg/blog/commit/47dc183))
+
+
+### Features
+
+* **post:** add notate blog post ([dd688fc](https://github.com/scottnonnenberg/blog/commit/dd688fc))
+* **tags:** add new empathy tag, apply to six posts ([3a90e92](https://github.com/scottnonnenberg/blog/commit/3a90e92))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/scottnonnenberg/blog/compare/v0.4.0...v0.5.0) (2016-06-23)
 
