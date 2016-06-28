@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/scottnonnenberg/blog/compare/v0.6.1...v0.6.2) (2016-06-28)
+
+
+### Bug Fixes
+
+* **social:** profile image take two, bigger but still square ([77ee0cb](https://github.com/scottnonnenberg/blog/commit/77ee0cb))
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/scottnonnenberg/blog/compare/v0.6.0...v0.6.1) (2016-06-28)
 
