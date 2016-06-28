@@ -16,7 +16,7 @@ tags:
 
 _[Originally covered in Part 4 of [my talk at the Seattle Node.js meetup on 7/24/2015](http://www.meetup.com/Seattle-Node-js/events/222999198/). [Direct link to original screencast](https://youtu.be/bMHB6zb9AXY?t=15m4s). [My original Dangerous Cliffs of Node.js post](/the-dangerous-cliffs-of-node-js/).]_
 
-You might not have noticed it yet, but the [async event loop in Javascript](/node-js-is-not-magical/#3-evented-async) truncates the `stack` provided with your `Error` objects. And that makes it harder to debug both in the browser and in [Node.js](https://nodejs.org/). My new library helps you work around this.
+You might not have noticed it yet, but the [async event loop in Javascript](/node-js-is-not-magical/#3-evented-async) truncates the `stack` provided with your `Error` objects. And that makes it harder to debug both in the browser and in [Node.js](https://nodejs.org/). [My new library](https://github.com/scottnonnenberg/notate) helps you work around this.
 
 <div class='fold'></div>
 
