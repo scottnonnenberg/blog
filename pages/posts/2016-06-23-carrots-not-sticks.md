@@ -6,6 +6,7 @@ path: /carrots-not-sticks/
 next: /notate-better-javascript-callstacks/
 previous: /eslint-part-3-analysis/
 tags:
+  - nvc
   - software
   - business
   - ideas
