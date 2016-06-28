@@ -14,7 +14,7 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bMHB6zb9AXY?start=1497" frameborder="0" allowfullscreen></iframe>
 
-_[Originally covered in Part 4 of [my talk at the Seattle Node.js meetup on 7/24/2015](http://www.meetup.com/Seattle-Node-js/events/222999198/). [Code](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs/tree/master/src/demos/4.%20Error%20from%20async%20call). [Direct link to original screencast](https://youtu.be/bMHB6zb9AXY?t=15m4s). [My original Dangerous Cliffs of Node.js post](/the-dangerous-cliffs-of-node-js/).]_
+_[Originally covered in Part 4 of [my talk at the Seattle Node.js meetup on 7/24/2015](http://www.meetup.com/Seattle-Node-js/events/222999198/). [Direct link to original screencast](https://youtu.be/bMHB6zb9AXY?t=15m4s). [My original Dangerous Cliffs of Node.js post](/the-dangerous-cliffs-of-node-js/).]_
 
 You might not have noticed it yet, but the [async event loop in Javascript](/node-js-is-not-magical/#3-evented-async) truncates the `stack` provided with your `Error` objects. And that makes it harder to debug both in the browser and in [Node.js](https://nodejs.org/). My new library helps you work around this.
 
@@ -69,7 +69,7 @@ Error: Incorrect arguments supplied
     at Timer.listOnTimeout (timers.js:198:5)
 ```
 
-You might expect a number of calls starting from the invocation of the app, leading to the initial `setTimeout()` call. But those aren't present. All we see are the entries coming from the low level system kicking off the timer event in `timers.js`, then the line which had the `new Error()`. This also happens when going to the filesystem or to the web - try it out by replacing `setTimeout()` with an [`fs.readFile()](https://nodejs.org/dist/latest-v6.x/docs/api/fs.html#fs_fs_readfile_file_options_callback)`.
+You might expect a number of calls starting from the invocation of the app, leading to the initial `setTimeout()` call. But those aren't present. All we see are the entries coming from the low level system kicking off the timer event in `timers.js`, then the line which had the `new Error()`. This also happens when going to the filesystem or to the web - try it out by replacing `setTimeout()` with an [`fs.readFile()`](https://nodejs.org/dist/latest-v6.x/docs/api/fs.html#fs_fs_readfile_file_options_callback).
 
 With this minimal information, we know the specific line the error came from. But we don't know how we got there! We can't tell which of those five steps failed!
 
@@ -107,7 +107,6 @@ When an error happens, the `err.stack` gets an additional item for the `notate()
 
 ```text
 Error: Incorrect arguments supplied
-    at **notate: afterFiveSteps (/path/to/project/notate/2_five_steps_with_notate.js:82:9)
     at **notate: afterStep2 (/path/to/project/notate/2_five_steps_with_notate.js:32:9)
     at Timeout._onTimeout (/path/to/project/notate/2_five_steps_with_notate.js:13:17)
     at tryOnTimeout (timers.js:224:11)
@@ -151,8 +150,7 @@ fiveSteps(function(err) {
 Now you get more information with your error:
 
 ```text
-{ [Error: Incorrect arguments supplied] userId: 4 }
-    at **notate: afterFiveSteps (/3_five_steps_with_metadata.js:82:9)
+{ [Error: Incorrect arguments supplied] url: 'https://someplace.com' }
     at **notate: afterStep2 (/3_five_steps_with_metadata.js:32:9)
     at Timeout._onTimeout (/3_five_steps_with_metadata.js:13:17)
     at tryOnTimeout (timers.js:224:11)
@@ -186,7 +184,7 @@ Now, you may have started worrying:
 
 It's a fair point. That's why I spent so much time investigating browser support, and used `try`/`catch` liberally in all three entrypoints. If something goes wrong, these are the worst case situations:
 
-* `notate()` - it will throw if `cb` is not provided, but that's a programming error which should be caught the first time the code is run. Otherwise your provided `cb()` might be called with an `err` without modifications, or with incorrect modifications.
+* `notate()` - it will throw if `cb` is not a function, but that's a programming error which should be caught the first time the code is run. Beyond that, your provided `cb()` might be called with an `err` without modifications, or with incorrect modifications.
 * `justNotate()` - it might not modify the error, or modify the error incorrectly.
 * `prettyPrint()` - If not provided something other than an `Error`, it will simply return the result of `util.inspect()`. In the absolute worse case, it will return an empty string.
 
@@ -200,13 +198,13 @@ And feel free to [let me know](https://github.com/scottnonnenberg/notate/issues)
 
 _A little bit extra:_
 
+* Using promises? Bluebird's `longStackTraces` feature gives you the full async stack trace you would expect: http://bluebirdjs.com/docs/api/promise.config.html
+* `console.trace()` gives you a quick message and stack in Node.js and most browsers: https://nodejs.org/api/console.html#console_console_trace_message
 * Capturing and reporting client-side errors:
-    * https://errorception.com/
-    * http://www.muscula.com/
+  * https://errorception.com/
+  * http://www.muscula.com/
 * It's hard to get detailed errors from javascript loaded from another domain, even a sibling subdomain! http://blog.getsentry.com/2016/05/17/what-is-script-error.html
 * Related:
-    * Bluebird's `longStackTraces` feature gives you the full async stack trace you would expect: http://bluebirdjs.com/docs/api/promise.config.html
-    * Get stack traces even on downlevel browers: https://www.stacktracejs.com/#!/docs/stack-generator
-    * Deep analysis of v8 stack traces: https://github.com/watson/stackman
-    * `console.trace()` gives you a quick message and stack in Node.js and most browsers: https://nodejs.org/api/console.html#console_console_trace_message
+  * A library to get stack traces even on downlevel browers: https://www.stacktracejs.com/#!/docs/stack-generator
+  * Deep analysis of v8 stack traces: https://github.com/watson/stackman
 
