@@ -92,7 +92,7 @@ var notate = require('@scottnonnenberg/notate');
 
 function step2(cb) {
   callRemoteService(url, function afterStep2(err, result) {
-    if (notate(err, cb)) {
+    if (notate(cb, err)) {
       return;
     }
 
@@ -130,7 +130,7 @@ var notate = require('@scottnonnenberg/notate');
 
 function step2(url, cb) {
   callRemoteService(url, function afterStep2(err, result) {
-    if (notate(err, cb, { url: url })) {
+    if (notate(cb, err, { url: url })) {
       return;
     }
 
@@ -184,9 +184,9 @@ Now, you may have started worrying:
 
 It's a fair point. That's why I spent so much time investigating browser support, and used `try`/`catch` liberally in all three entrypoints. If something goes wrong, these are the worst case situations:
 
-* `notate()` - it will throw if `cb` is not a function, but that's a programming error which should be caught the first time the code is run. Beyond that, your provided `cb()` might be called with an `err` without modifications, or with incorrect modifications.
-* `justNotate()` - it might not modify the error, or modify the error incorrectly.
-* `prettyPrint()` - If not provided something other than an `Error`, it will simply return the result of `util.inspect()`. In the absolute worse case, it will return an empty string.
+* `notate(cb, err, data, level)` - it will throw if `cb` is not a function, but that's a programming error which should be caught the first time the code is run. Beyond that, your provided `cb()` might be called with an `err` without modifications, or with incorrect modifications.
+* `justNotate(err, data, level)` - it might not modify the error, or modify the error incorrectly.
+* `prettyPrint(err, options)` - If not provided something other than an `Error`, it will simply return the result of `util.inspect()`. In the absolute worse case, it will return an empty string.
 
 ## Use it!
 
