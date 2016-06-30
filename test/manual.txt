@@ -1,4 +1,4 @@
-would like to automate:
+scripts to run periodically:
   npm run check-internal-links - runs very fast
   npm run check-external-links
     403 (quora) - often indicates false-positive, server doesn't like a robot doing a HEAD request
@@ -40,7 +40,7 @@ rss/atom
   validator: https://validator.w3.org/feed/
   Filed bug for key validation failure on RSS: https://github.com/jpmonette/feed/issues/41
 
-scripts:
+other scripts:
   npm run clean-post - cleans the one latest post, or N most recent
   npm run make-post - creates one new file, updates previous' next key
   npm run generate-json - creates recent.json and all.json files in public
