@@ -14,7 +14,7 @@ tags:
   - software
 ---
 
-_[Check out my [introduction to Gatsby.js post and screencast](/static-site-generation-with-gatsby-js/) if you're not already familiar with it!]_
+_[Check out my [introduction to Gatsby.js post and screencast](/static-site-generation-with-gatsby-js/) if you're not already familiar with it! Also, [this blog is open source!](/this-blog-is-now-open-source/)]_
 
 So you want to use [React.js](https://facebook.github.io/react/) to build your site, and you want to deploy just static files? [Gatsby.js](https://github.com/gatsbyjs/gatsby) is a great choice! But [it's dangerous to go alone](https://en.wikipedia.org/wiki/It%27s_dangerous_to_go_alone!) - take these hard-won tips!
 

@@ -2,6 +2,8 @@
 
 A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
+More on how to use this project: https://blog.scottnonnenberg.com/this-blog-is-now-open-source/
+
 ## Forking gatsby!
 
 Note that this project relies on my [fork of `gatsby`](https://github.com/scottnonnenberg/gatsby/tree/anchors). To prevent confusion, I've removed it from the dependency list, though `npm` scripts do refer to it. To make those scripts work, I've used `npm link` in my local `gatsby` fork directory, and `npm link gatsby` in this project.

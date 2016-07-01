@@ -3,7 +3,7 @@ title: "Notate: Better Javascript callstacks"
 date: 2016-06-28T18:40:17.484Z
 layout: post
 path: /notate-better-javascript-callstacks/
-next:
+next: /this-blog-is-now-open-source/
 previous: /carrots-not-sticks/
 tags:
   - open-source
