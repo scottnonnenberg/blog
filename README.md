@@ -40,7 +40,7 @@ npm run build-production -- --force # build even with outstanding git changes
 
 ## Test
 
-Run `eslint` and the unit tests with `npm test`. All utility code and React components will be tested in Node.js. `npm run unit` will just run the tests, and `unit-watch` and `unit-coverage` are also available for active development. Once you've generated code coverage numbers, `npm run open-coverage` makes it easy to open [`istanbul`](https://github.com/gotwarlost/istanbul)'s the HTML report.
+Run `eslint` and the unit tests with `npm test`. All utility code and React components will be tested in Node.js. `npm run unit` will just run the tests, and `unit-watch` and `unit-coverage` are also available for active development. Once you've generated code coverage numbers, `npm run open-coverage` makes it easy to open [`istanbul`](https://github.com/gotwarlost/istanbul)'s HTML report.
 
 You can use `npm run serve` to serve static files from `public/` at http://localhost:8000 for manual and automated tests. A manual test script is available at `tests/manual.txt` - it covers the parts of the user experience without automated tests.
 
@@ -97,7 +97,6 @@ Generates `all.json` and `recent.json` into `public/`. Also runs as part of ever
 ## TODO
 
 * Update `punycode` dependency when `broken-link-checker` updates to pull in newer version of `bhttp` and `tough-cookie`: https://github.com/stevenvachon/broken-link-checker/issues/34
-* `mocha` v2.3.4 is included because newer versions report errors twice in the browser: update when we can validate this is fixed: https://github.com/mochajs/mocha/issues/2083
 
 ## License
 

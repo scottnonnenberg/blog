@@ -40,7 +40,7 @@ function checkLink({ pathname, hash }, cb) {
   return superagent
     .get(DOMAIN + pathname)
     .end((err, res) => {
-      if (notate(err, cb, { pathname })) {
+      if (notate(cb, err, { pathname })) {
         return;
       }
 
