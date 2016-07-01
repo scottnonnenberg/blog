@@ -94,6 +94,12 @@ npm run generate-json
 
 Generates `all.json` and `recent.json` into `public/`. Also runs as part of every build. I generate this file for easier syndication into other sites, like https://scottnonnenberg.com.
 
+## Contributing
+
+This project uses [`standard-version`](https://github.com/conventional-changelog/standard-version) to release new versions, automatically updating the version number and [changelog](https://github.com/scottnonnenberg/blog/blob/master/CHANGELOG.md) based on commit messages in [standard format](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md). [`ghooks`](https://github.com/gtramontina/ghooks) and [`validate-commit-msg`](https://github.com/kentcdodds/validate-commit-msg) are used to ensure all commit messages match the expected format (see [package.json](https://github.com/scottnonnenberg/blog/blob/master/package.json) for the configuration details).
+
+It takes some getting used to, but this configuration is absolutely worthwhile. A changelog is way easier to understand than the chaos of a raw commit stream, especially with `standard-version` providing direct links to bugs, commits and [commit ranges](https://github.com/scottnonnenberg/blog/compare/v0.5.0...v0.6.0).
+
 ## TODO
 
 * Update `punycode` dependency when `broken-link-checker` updates to pull in newer version of `bhttp` and `tough-cookie`: https://github.com/stevenvachon/broken-link-checker/issues/34
