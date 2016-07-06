@@ -215,7 +215,7 @@ getHTMLPreview(post) {
 }
 ```
 
-[`getPreFoldContent()`](https://github.com/scottnonnenberg/blog/blob/12e542df91469d4407a36b9bb86aa3d713934ebd/src/util/getPreFoldContent.js) returns post content above the `<div>` separator, and eliminates any post explainers surroundd with square brackets (like at the top of this post). [`appendToLastTextBlock()`](https://github.com/scottnonnenberg/blog/blob/dc92cd27f1d63cf4e7f8782c6dc4dc0b44cdba0e/src/util/appendToLastTextBlock.js) is a relatively complicated method which inserts the provided 'Read More' link at the end of the last block with text in it. This is to allow for Markdown-generated `<p></p>` blocks around images or videos.
+[`getPreFoldContent()`](https://github.com/scottnonnenberg/blog/blob/12e542df91469d4407a36b9bb86aa3d713934ebd/src/util/getPreFoldContent.js) returns post content above the `<div>` separator, and eliminates any post explainers surrounded with square brackets (like at the top of this post). [`appendToLastTextBlock()`](https://github.com/scottnonnenberg/blog/blob/dc92cd27f1d63cf4e7f8782c6dc4dc0b44cdba0e/src/util/appendToLastTextBlock.js) is a relatively complicated method which inserts the provided 'Read More' link at the end of the last block with text in it. This is to allow for Markdown-generated `<p></p>` blocks around images or videos.
 
 Both of these methods are also used in RSS/Atom/JSON generation, as well as the `<meta>` tags at the top of every page...
 
