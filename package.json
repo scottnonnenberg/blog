@@ -39,7 +39,7 @@
     "react-dom": "15.1.0",
     "react-router": "2.4.1",
     "react-router-scroll": "0.2.0",
-    "typography": "0.7.0",
+    "typography": "^0.10.6",
     "underscore.string": "3.3.4"
   },
   "devDependencies": {
