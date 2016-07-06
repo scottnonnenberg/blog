@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.7.2"></a>
+## [0.7.2](https://github.com/scottnonnenberg/blog/compare/v0.7.1...v0.7.2) (2016-07-06)
+
+
+### Bug Fixes
+
+* **post:** fix typo in 'this blog is open source' ([3449a9e](https://github.com/scottnonnenberg/blog/commit/3449a9e))
+* **post:** improve links to 'open source' post from other gatsby posts ([75c1195](https://github.com/scottnonnenberg/blog/commit/75c1195))
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/scottnonnenberg/blog/compare/v0.7.0...v0.7.1) (2016-07-06)
 
