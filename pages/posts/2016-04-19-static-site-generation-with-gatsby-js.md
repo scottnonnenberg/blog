@@ -17,7 +17,7 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Wpkc8o1V_SU" frameborder="0" allowfullscreen></iframe>
 
-_[This is an adaptation of a talk I gave at the [Seattle React.js meetup in March 2016](http://www.meetup.com/seattle-react-js/events/228965559/). [Direct link to screencast.](https://www.youtube.com/watch?v=Wpkc8o1V_SU) Looking for detailed tips on using Gatsby? [I've got a post for that!](/practical-gatsby-js/) Also, [this blog is open source!](/this-blog-is-now-open-source/)]_
+_[This is an adaptation of a talk I gave at the [Seattle React.js meetup in March 2016](http://www.meetup.com/seattle-react-js/events/228965559/). [Direct link to screencast.](https://www.youtube.com/watch?v=Wpkc8o1V_SU) Looking for detailed tips on using Gatsby? [I've got a post for that!](/practical-gatsby-js/) Also, you can get into the deep details now that [this blog is open source!](/this-blog-is-now-open-source/)]_
 
 I've been on the web for a long time. I was hand-editing HTML with [Notepad](https://en.wikipedia.org/wiki/Microsoft_Notepad) all the way back in 1997, uploading to [jps.net](http://www.yelp.com/biz/o1-communications-el-dorado-hills) or [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) via [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) with my parents' [14.4 kbit/s modem](https://en.wikipedia.org/wiki/Modem#Echo_cancellation.2C_9600_and_14.2C400). So I have a lot of experience running websites from static files.
 
