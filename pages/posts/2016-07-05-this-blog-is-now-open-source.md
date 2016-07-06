@@ -154,7 +154,7 @@ Immediately after starting my search I was happy to discover that the Node.js ec
 
 The first is very quick, since it keeps the checks local. The second takes longer, useful to do only occasionally to find those pesky sites without true _permalinks_. The third is useful for checking both internal and external links for a single URL - like when I'm about to publish a new post.
 
-The fourth is a script I wrote which piggybacks on top of a `broken-link-checker` local-only run. It harvests those links, then ensures that any link ending in '#hash has a corresponding `id="hash"` in the page. From [`scripts/check_deep_links.js`](https://github.com/scottnonnenberg/blog/blob/dc92cd27f1d63cf4e7f8782c6dc4dc0b44cdba0e/scripts/check_deep_links.js):
+The fourth is a script I wrote which piggybacks on top of a `broken-link-checker` local-only run. It harvests those links, then ensures that any link ending in '#hash' has a corresponding `id="hash"` in the page. From [`scripts/check_deep_links.js`](https://github.com/scottnonnenberg/blog/blob/dc92cd27f1d63cf4e7f8782c6dc4dc0b44cdba0e/scripts/check_deep_links.js):
 
 ```javascript
 if (contents.indexOf(` id="${id}"`) !== -1) {
@@ -259,7 +259,7 @@ As the manual test script says, it's highly useful to test these tags using the 
 
 ### Fancy underlines
 
-After encountering some better-looking links in the wild and reading [this great post](https://eager.io/blog/smarter-link-underlines/), I decided to use some [fancy CSS tricks for my links](https://github.com/scottnonnenberg/blog/blob/fe11498b5da21343a86613cd70ecdd0820d5616b/css/styles.less#L67-L73). We create a shadow behind the text which is the same color as the background, then add a gradient background for the underline. Anything hanging down below the text will interrupt the link underline, making the text easier to read. It works pretty well.
+After encountering some better-looking links in the wild and reading [this great post](https://eager.io/blog/smarter-link-underlines/), I decided to use some [fancy CSS tricks for my links](https://github.com/scottnonnenberg/blog/blob/fe11498b5da21343a86613cd70ecdd0820d5616b/css/styles.less#L67-L73). We create a shadow behind the text which is the same color as the background, then add a gradient background for the underline. The shadow around descenders will interrupt the link underline, making the text easier to read. It works pretty well.
 
 Sadly, because I don't have a way to specify link classes in markdown, I have to do something weird to eliminate inappropriate underlines from linked images: literal HTML including a `class` property. From my [Dangerous Cliffs of Node.js post markdown](https://github.com/scottnonnenberg/blog/blob/fe11498b5da21343a86613cd70ecdd0820d5616b/pages/posts/2015-02-11-the-dangerous-cliffs-of-node-js.md):
 
