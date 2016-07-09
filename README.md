@@ -4,6 +4,8 @@ A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
 More on how to use this project: https://blog.scottnonnenberg.com/this-blog-is-now-open-source/
 
+[![continous integration](https://img.shields.io/circleci/project/scottnonnenberg/blog/master.svg?maxAge=3600)](https://circleci.com/gh/scottnonnenberg/blog/tree/master) [![code coverage](https://img.shields.io/codecov/c/github/scottnonnenberg/blog/master.svg?maxAge=3600)](https://codecov.io/gh/scottnonnenberg/blog/branch/master) [![license](https://img.shields.io/github/license/scottnonnenberg/blog.svg?maxAge=2592000)](https://github.com/scottnonnenberg/blog#license)
+
 ## Forking gatsby!
 
 Note that this project relies on my [fork of `gatsby`](https://github.com/scottnonnenberg/gatsby/tree/anchors). To prevent confusion, I've removed it from the dependency list, though `npm` scripts do refer to it. To make those scripts work, I've used `npm link` in my local `gatsby` fork directory, and `npm link gatsby` in this project.
