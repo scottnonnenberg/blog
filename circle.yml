@@ -6,7 +6,7 @@ dependencies:
     # set up my gatsby fork
     - nvm use 6 && pushd .. && git clone https://github.com/scottnonnenberg/gatsby.git && pushd gatsby && git checkout anchors && npm install && npm run build && npm link && popd && popd && npm link gatsby
     # empty piwik.js placeholder
-    - 'echo "module.exports = {};" > piwik.js'
+    - 'echo "export default {};" > piwik.js'
 test:
   override:
     - nvm use 4 && npm run test
