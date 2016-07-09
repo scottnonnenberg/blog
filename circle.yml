@@ -1,0 +1,21 @@
+dependencies:
+  override:
+    - nvm install 6
+    - nvm use 6
+    - npm install
+    # set up my gatsby fork
+    - pushd ..
+    - git clone https://github.com/scottnonnenberg/gatsby.git
+    - cd gatsby
+    - npm install
+    - npm run build
+    - npm link
+    - popd
+    - npm link gatsby
+test:
+  override:
+    - nvm use 4
+    - npm run test
+    - nvm use 6
+    - npm run ci-with-server
+
