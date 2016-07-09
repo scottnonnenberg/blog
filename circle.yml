@@ -10,5 +10,7 @@ dependencies:
 test:
   override:
     - nvm use 4 && npm run test
+    # need to build first because 'serve' requires the public folder to exist
+    - nvm use 6 && npm run build-production
     - nvm use 6 && npm run ci-with-server
 
