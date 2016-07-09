@@ -23,7 +23,7 @@
     "clean-post": "babel-node scripts/clean_post.js",
     "test": "npm run unit && npm run lint",
     "ci": "npm run unit-coverage && npm run lint && npm run build-production && npm run check-internal-links && npm run send-to-codecov",
-    "ci-with-server": "npm-run-all --parallel --race serve run-ci",
+    "ci-with-server": "npm-run-all --parallel --race serve ci",
     "mocha": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register --require test/setup/index.js",
     "mocha-watch": "npm run mocha -- --watch",
     "mocha-coverage": "NODE_ENV=test babel-node ./node_modules/.bin/isparta cover _mocha -- --recursive --require test/setup/index.js",
