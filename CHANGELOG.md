@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/scottnonnenberg/blog/compare/v0.7.2...v0.8.0) (2016-07-12)
+
+
+### Bug Fixes
+
+* **popular:** update date range to include up to July 10 ([d00c472](https://github.com/scottnonnenberg/blog/commit/d00c472))
+
+
+### Features
+
+* **post:** add 'private node modules' post ([7bbe2b7](https://github.com/scottnonnenberg/blog/commit/7bbe2b7))
+
+
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/scottnonnenberg/blog/compare/v0.7.1...v0.7.2) (2016-07-06)
 
