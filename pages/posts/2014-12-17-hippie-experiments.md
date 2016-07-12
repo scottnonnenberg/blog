@@ -1,5 +1,5 @@
 ---
-rank: 30
+rank: 35
 title: Hippie Experiments
 date: 2014-12-17T18:00:00.000Z
 layout: post

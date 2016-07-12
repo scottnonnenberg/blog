@@ -1,4 +1,5 @@
 ---
+rank: 11
 title: "ESLint Part 3: Analysis"
 date: 2016-06-21T16:35:10.133Z
 layout: post
