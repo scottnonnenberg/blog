@@ -12,7 +12,7 @@ tags:
   - software
 ---
 
-I'm always on the lookout for ways to do things better, but I haven't found a good vehicle for these kinds of discoveries yet. [I briefly mentioned a few in a recent post](/the-state-of-thehelp/#lessons-learned), and [covered ESLint quite deeply in three full posts](/tags/eslint/).
+I'm always on the lookout for ways to do Node.js and Javascript development better, but I haven't found a good vehicle for these kinds of discoveries yet. [I briefly mentioned a few in a recent post](/the-state-of-thehelp/#lessons-learned), and [covered ESLint quite deeply in three full posts](/tags/eslint/).
 
 Let's channel [Goldilocks](https://en.wikipedia.org/wiki/Goldilocks_and_the_Three_Bears) and see if we can hit the sweet spot with this one. Here are a few nice stack improvements from my last couple months...
 
