@@ -1,16 +1,20 @@
 dependencies:
-  override:
+  pre:
     - nvm install 6
-    # use 6 so npm 3 installs our dependencies
-    - nvm use 6 && npm install
+    - nvm alias default 6
+    - rm -rf ./node_modules
+  override:
+    - npm install
     # set up my gatsby fork
-    - nvm use 6 && pushd .. && git clone https://github.com/scottnonnenberg/gatsby.git && pushd gatsby && git checkout anchors && npm install && npm run build && npm link && popd && popd && npm link gatsby
+    - pushd .. && git clone https://github.com/scottnonnenberg/gatsby.git && pushd gatsby && git checkout anchors && npm install && npm run build && npm link && popd && popd && npm link gatsby
     # empty piwik.js placeholder
     - 'echo "export default {};" > piwik.js'
+  cache_directories:
+    - ~/.npm
 test:
   override:
     - nvm use 4 && npm run test
     # need to build first because 'serve' requires the public folder to exist
-    - nvm use 6 && npm run build-production
-    - nvm use 6 && npm run ci-with-server
+    - npm run build-production
+    - npm run ci-with-server
 
