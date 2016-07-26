@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/scottnonnenberg/blog/compare/v0.9.0...v0.10.0) (2016-07-26)
+
+
+### Features
+
+* **post:** Add 'Hands-on with CircleCI and Node.js' post ([46d757a](https://github.com/scottnonnenberg/blog/commit/46d757a))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/scottnonnenberg/blog/compare/v0.8.0...v0.9.0) (2016-07-19)
 
