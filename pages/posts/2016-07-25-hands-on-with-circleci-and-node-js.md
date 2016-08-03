@@ -3,7 +3,7 @@ title: Hands-on with CircleCI and Node.js
 date: 2016-07-26T01:52:42.382Z
 layout: post
 path: /hands-on-with-circleci-and-node-js/
-next:
+next: /modern-evidence-requirements/
 previous: /better-changelogs-strings-and-paths/
 tags:
   - open-source
