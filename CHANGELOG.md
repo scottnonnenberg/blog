@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/scottnonnenberg/blog/compare/v0.10.0...v0.11.0) (2016-08-03)
+
+
+### Features
+
+* **post:** Add 'modern evidence requirements' post ([3e3db9d](https://github.com/scottnonnenberg/blog/commit/3e3db9d))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/scottnonnenberg/blog/compare/v0.9.0...v0.10.0) (2016-07-26)
 
