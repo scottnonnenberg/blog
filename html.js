@@ -34,6 +34,7 @@ export default function HTML(props) {
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="initial-scale=1.0" />
+      <meta name="msvalidate.01" content="C9F5166E8EC2D15AD50586E58B77F82D" />
       {metaTags}
       <link rel="shortcut icon" href={favicon} />
       <TypographyStyle />
