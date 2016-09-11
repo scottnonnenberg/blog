@@ -5,8 +5,6 @@ dependencies:
     - rm -rf ./node_modules
   override:
     - npm install
-    # set up my gatsby fork
-    - pushd .. && git clone https://github.com/scottnonnenberg/gatsby.git && pushd gatsby && git checkout anchors && npm install && npm run build && npm link && popd && popd && npm link gatsby
     # empty piwik.js placeholder
     - 'echo "export default {};" > piwik.js'
   cache_directories:
