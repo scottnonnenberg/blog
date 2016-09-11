@@ -6,24 +6,23 @@ More on how to use this project: https://blog.scottnonnenberg.com/this-blog-is-n
 
 [![continous integration](https://img.shields.io/circleci/project/scottnonnenberg/blog/master.svg?maxAge=3600)](https://circleci.com/gh/scottnonnenberg/blog/tree/master) [![code coverage](https://img.shields.io/codecov/c/github/scottnonnenberg/blog/master.svg?maxAge=3600)](https://codecov.io/gh/scottnonnenberg/blog/branch/master) [![license](https://img.shields.io/github/license/scottnonnenberg/blog.svg?maxAge=2592000)](https://github.com/scottnonnenberg/blog#license)
 
-## Forking gatsby!
-
-Note that this project relies on my [fork of `gatsby`](https://github.com/scottnonnenberg/gatsby/tree/anchors). To prevent confusion, I've removed it from the dependency list, though `npm` scripts do refer to it. To make those scripts work, I've used `npm link` in my local `gatsby` fork directory, and `npm link gatsby` in this project.
-
 ## Key settings
 
 `config.toml` contains key data you'll want to change first. The location of the blog, author name and details, and so on.
 
-`piwik.js` is excluded from the repository, but is used by `html.js` (to generate piwik tracking tags) and `scripts/update_rankings.js` (to get popularity numbers for posts). These four keys are required:
+`piwik.js` is excluded from the repository, but is used by `html.js` (to generate piwik tracking tags) and `scripts/update_rankings.js` (to get popularity numbers for posts). These four keys are required to use those features:
 
 ```javascript
-module.exports = {
+export default {
   domain: 'where your piwik server is',
   siteId: 'the site number',
   site: 'the site domain',
   token: 'your API access token, used by `update-rankings` npm script',
-}
+};
 ```
+
+_Note: if you don't want to use these features, put an empty file at
+`/piwik.js` (like `export default {};`) to make things work until you take the piwik-related code out._
 
 ## Develop
 
