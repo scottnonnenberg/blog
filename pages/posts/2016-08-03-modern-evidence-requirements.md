@@ -3,7 +3,7 @@ title: Modern evidence requirements
 date: 2016-08-03T20:22:29.294Z
 layout: post
 path: /modern-evidence-requirements/
-next:
+next: /understand-the-problem-dev-productivity-tip-1/
 previous: /hands-on-with-circleci-and-node-js/
 tags:
   - ideas
