@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/scottnonnenberg/blog/compare/v0.11.0...v0.12.0) (2016-09-13)
+
+
+### Features
+
+* **dev-tip-1:** Add first developer productivity tip post! ([7fe9bbc](https://github.com/scottnonnenberg/blog/commit/7fe9bbc))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/scottnonnenberg/blog/compare/v0.10.0...v0.11.0) (2016-08-03)
 
