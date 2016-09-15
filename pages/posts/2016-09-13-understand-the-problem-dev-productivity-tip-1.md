@@ -3,7 +3,7 @@ title: 'Understand the problem (Dev productivity tip #1)'
 date: 2016-09-13T17:15:51.682Z
 layout: post
 path: /understand-the-problem-dev-productivity-tip-1/
-next:
+next: /contract-an-unusual-skillset/
 previous: /modern-evidence-requirements/
 tags:
   - software

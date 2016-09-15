@@ -141,8 +141,8 @@ Does that customer-focused iterative development seem unrealistic to you? I'll b
 
 You might be wondering why I'm so interested in this. I have a unique perspective. I've spent [a lot of time in a number of software development roles](https://scottnonnenberg.com/work/):
 
-- as a _developer_, working within these systems
-- as a _project manager_, designing these systems
-- as a _consultant_, working with both developers and project managers to tune these systems
+- [as a _developer_](/contract-new-techniques-old-technology/), working within these systems
+- [as a _project manager_](/12-things-i-learned-from-microsoft/), designing these systems
+- [as a _consultant_](/contract-an-unusual-skillset/), working with both developers and project managers to tune these systems
 
 
