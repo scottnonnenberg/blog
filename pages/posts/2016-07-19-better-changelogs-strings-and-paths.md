@@ -108,7 +108,7 @@ function assembleTag(strings, ...values) {
 
 After that, you can do whatever you want with the resultant string. Here's a simple method of composing serial 'processor` methods which each take and return a string:
 
-```
+```javascript
 function composeTag(...processors) {
   return function tag(...args) {
     const value = assembleTag(...args);
@@ -121,7 +121,7 @@ function composeTag(...processors) {
 
 We can now build the two tags show above, `removeIndentTag` and `removeNewlinesTag`:
 
-```
+```javascript
 function trimNewlines(value) {
   return value
     .replace(/^\r\n|\n|\r/, '')
