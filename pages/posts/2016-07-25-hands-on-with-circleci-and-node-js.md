@@ -58,7 +58,7 @@ npm: "2.13.5"
 
 That is **quite** old! v0.10.33 was released in October 2014!
 
-The way to access the version you want (and also support multiple versions in your build) is via [`nvm`](https://github.com/creationix/nvm). You're already using a local node version manager, right? `nvm`, or perhaps [`n`](https://github.com/tj/n)?
+The recommended way to access the version you want (and [the only way support multiple versions in your build](https://discuss.circleci.com/t/testing-multiple-versions-of-node/542)) is via [`nvm`](https://github.com/creationix/nvm). You're already using a local node version manager, right? `nvm`, or perhaps [`n`](https://github.com/tj/n)?
 
 CircleCI's containers do come with Node.js 4.x installed, but it's not the default. You'll need to explicitly request it. If you want something newer, say for example, the [now-necessary npm v3](https://www.reddit.com/r/javascript/comments/3u7gob/babels_poor_performance_what_im_doing_wrong/), you'll need to install it yourself. In your [`circle.yml`](https://circleci.com/docs/config-sample/):
 
@@ -81,7 +81,7 @@ The 'test' section is similar. [The default is a raw `npm test` call](https://ci
 
 Because each statement underneath the 'override' key will be run with their own environment variables, they'll use the default (very old) version of Node.js. To fix that you'll need to use the `nvm use 6 &&` syntax for every command or set the default with `nvm alias default 6`.
 
-It's also worth noting that CircleCI will auto-detect your project type, so you don't even need a `circle.yml`. But you probably want to at least choose your Node.js version. To do just that, you can set the default node version in your `circle.yml` like this:
+It's also worth noting that CircleCI will auto-detect your project type, so you don't even need a `circle.yml`. But you probably want to at least choose your Node.js version. To update the default `node` and `npm` available on the machine, you can set the default node version in your `circle.yml` like this:
 
 ```yaml
 machine:
