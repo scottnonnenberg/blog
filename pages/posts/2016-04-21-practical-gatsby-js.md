@@ -193,6 +193,8 @@ export default function loadPosts() {
 
 ## Go forth and create!
 
-I've really enjoyed using and contributing to Gatsby. This blog is generated with it. All the code samples were copied from within this same git repository. Meta.
+I've really enjoyed using and contributing to Gatsby. This blog is generated with it. All the code samples were copied from within this same git repository. Meta. And you can now [explore that repository for this blog!](/this-blog-is-now-open-source/)
 
-I look forward to seeing what great sites you make with it!
+I look forward to seeing what great sites you make with Gatsby!
+
+
