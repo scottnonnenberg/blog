@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/scottnonnenberg/blog/compare/v0.12.0...v0.13.0) (2016-09-20)
+
+
+### Bug Fixes
+
+* **post:** Add link to 'Blog is now open source!' from Practical Gatsby ([1ea4a37](https://github.com/scottnonnenberg/blog/commit/1ea4a37))
+* **post:** Add some missing markdown code fence types ([0a61ddb](https://github.com/scottnonnenberg/blog/commit/0a61ddb))
+* **post:** Run clean-post on 'understand the problem' post ([01a2ffb](https://github.com/scottnonnenberg/blog/commit/01a2ffb))
+* **post:** Run clean-post on private node.js modules ([0c9fd13](https://github.com/scottnonnenberg/blog/commit/0c9fd13))
+* **post:** Tweak CircleCI post's coverage of Node.js version management ([4e5a170](https://github.com/scottnonnenberg/blog/commit/4e5a170))
+
+
+### Features
+
+* **post:** Add 'Contract: An unusual skillset' ([5362f03](https://github.com/scottnonnenberg/blog/commit/5362f03))
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/scottnonnenberg/blog/compare/v0.11.0...v0.12.0) (2016-09-13)
 
