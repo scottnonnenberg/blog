@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.1"></a>
+## [0.13.1](https://github.com/scottnonnenberg/blog/compare/v0.13.0...v0.13.1) (2016-09-20)
+
+
+### Bug Fixes
+
+* **post:** Move to social-ready SSA logo ([7e6d3b9](https://github.com/scottnonnenberg/blog/commit/7e6d3b9))
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/scottnonnenberg/blog/compare/v0.12.0...v0.13.0) (2016-09-20)
 
