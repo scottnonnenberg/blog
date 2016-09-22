@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.13.2"></a>
+## [0.13.2](https://github.com/scottnonnenberg/blog/compare/v0.13.1...v0.13.2) (2016-09-22)
+
+
+### Bug Fixes
+
+* **post:** Fix type in "Contract: An unusual skillset" intro ([d94cdd1](https://github.com/scottnonnenberg/blog/commit/d94cdd1))
+
+
+
 <a name="0.13.1"></a>
 ## [0.13.1](https://github.com/scottnonnenberg/blog/compare/v0.13.0...v0.13.1) (2016-09-20)
 
