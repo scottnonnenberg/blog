@@ -105,7 +105,9 @@ It takes some getting used to, but this configuration is absolutely worthwhile. 
 
 ## TODO
 
-* Update `punycode` dependency when `broken-link-checker` updates to pull in newer version of `bhttp` and `tough-cookie`: https://github.com/stevenvachon/broken-link-checker/issues/34
+* Remove pinned `punycode` dependency when `broken-link-checker` updates to pull in newer version of `bhttp` and `tough-cookie`: https://github.com/stevenvachon/broken-link-checker/issues/34
+* Remove pinned `babylon` dependency when `eslint-plugin-import` works with its most recent version once more: https://github.com/babel/babylon/issues/139
+
 
 ## License
 

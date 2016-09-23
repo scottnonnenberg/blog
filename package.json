@@ -55,6 +55,7 @@
     "app-module-path": "1.1.0",
     "babel-eslint": "6.0.4",
     "babel-cli": "6.11.4",
+    "babylon": "6.10.0",
     "broken-link-checker": "0.7.1",
     "chai": "3.5.0",
     "chalk": "1.1.3",
