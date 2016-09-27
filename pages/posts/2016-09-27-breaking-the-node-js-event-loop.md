@@ -115,7 +115,7 @@ The other way to break the event loop is to put too many tasks onto it. Your ser
 var async = require('async');
 var toobusy = require('toobusy-js');
 
-var LAUNCH_DELAY = 5; // 100 requests/second
+var LAUNCH_DELAY = 10; // 100 requests/second
 var SYNC_WORK = 8; // 8ms of synchronous work per task
 var TASK_DELAY = 20;
 
