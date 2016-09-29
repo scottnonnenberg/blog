@@ -225,12 +225,12 @@ lag: 1111
 ^C
 ```
 
-That is not a healthy event loop. Every iteration is getting slower, and the process never gets a chance to catch its breath under the constant load. This is what will happen to a Node.js server under heavy load. That original `getFile()` call will take over a second on this server, because that's how long it takes to get through the event loop. Once more, interaction between independent user requests can happen in a single Node.js process.
+That is not a healthy event loop. Every iteration is getting slower, and the process never gets a chance to catch its breath under the constant influx of new tasks. This is what will happen to a Node.js server under heavy load. That `getFile()` call from the first script will take over a second on this server, because that's how long it takes to get through the event loop. Once more, interaction between independent user requests can happen in a single Node.js process.
 
 ### Mitigations
 
 * **Detect health trends** - You can't do anything about potential load issues if you never saw it coming. The first thing to do is install some sort of process health monitor. For the event loop, I like sending data from [`toobusy-js`](https://github.com/lloyd/node-toobusy) to [`statsd`](https://github.com/etsy/statsd)/[`graphite`](http://graphite.wikidot.com/) on regular intervals. With this information in hand, you can add capacity before things start to fall apart.
-* **Reject new work under heavy load** - Sadly, you can never predict that massive influx of traffic. As we saw above, a Node.js process can grind to a halt under high load even if new nodes are starting to come online to share the load. We can use `toobusy-js` once more here to build [middleware that rejects new requests when things aren't looking good](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs/blob/master/src/demos/3.%20Event%20loop%20unavailability/c.%20express%2C%20limits.js#L17-L26). From there, you can [set your load-balancer to try another node](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream) if it gets this kind of 'too busy' response.
+* **Reject new work under heavy load** - Sadly, you can never predict that massive influx of traffic. As we saw above, a Node.js process can grind to a halt under high load even if new nodes are starting to come online to share the burden. We can use `toobusy-js` once more here to build [middleware that rejects new requests when things aren't looking good](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs/blob/master/src/demos/3.%20Event%20loop%20unavailability/c.%20express%2C%20limits.js#L17-L26). From there, you can [set your load-balancer to try another node](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_next_upstream) if it gets this kind of 'too busy' response.
 
 ## Break it to learn it!
 
