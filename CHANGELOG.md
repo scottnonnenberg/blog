@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.15.0"></a>
+# [0.15.0](https://github.com/scottnonnenberg/blog/compare/v0.14.0...v0.15.0) (2016-10-04)
+
+
+### Bug Fixes
+
+* **post:** A few tweaks to "breaking the event loop"  ([81d3ded](https://github.com/scottnonnenberg/blog/commit/81d3ded))
+
+
+### Features
+
+* **post:** Add "systems for collaboration" post ([50c23e2](https://github.com/scottnonnenberg/blog/commit/50c23e2))
+
+
+
 <a name="0.14.0"></a>
 # [0.14.0](https://github.com/scottnonnenberg/blog/compare/v0.13.2...v0.14.0) (2016-09-27)
 
