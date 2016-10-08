@@ -47,16 +47,23 @@ export default function Index(props) {
             marginBottom: rhythm(1),
           }}
         />
-        <ol className="menu">
-          <li><Link to={prefixLink('/popular/')}>Popular Posts</Link></li>
-          <li><Link to={prefixLink('/tags/')}>Tags</Link></li>
-          <li><a href="https://scottnonnenberg.com">About Me</a></li>
-          <li>
-            <a href="/rss.xml">RSS</a>
-            /
-            <a href="/atom.xml">Atom</a>
-          </li>
-        </ol>
+        <h3
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          <span style={{ whiteSpace: 'nowrap' }}><Link to={prefixLink('/popular/')}>
+            Popular Posts
+          </Link> - <Link to={prefixLink('/tags/')}>
+            Tags
+          </Link> -</span> <span style={{ whiteSpace: 'nowrap' }}><a href="/rss.xml">
+            RSS
+          </a> - <a href="/atom.xml">
+            Atom
+          </a> - <a href="https://scottnonnenberg.com">
+            About Me
+          </a></span>
+        </h3>
         <EmailSignup text="Get updates straight to your inbox!" />
         <hr
           style={{
