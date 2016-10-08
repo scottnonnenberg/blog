@@ -9,6 +9,7 @@ import HTMLPreview from 'src/HTMLPreview';
 import TextPreview from 'src/TextPreview';
 import PostLink from 'src/PostLink';
 import Author from 'src/Author';
+import EmailSignup from 'src/EmailSignup';
 
 
 describe('unit/pages/index', () => {
@@ -39,5 +40,7 @@ describe('unit/pages/index', () => {
 
     const aboutMeLink = <a href="https://scottnonnenberg.com">About Me</a>;
     expect(wrapper.contains(aboutMeLink)).to.equal(true);
+
+    expect(wrapper.find(EmailSignup)).to.have.length(1);
   });
 });

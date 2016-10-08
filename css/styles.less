@@ -121,6 +121,51 @@ span.date {
   font-weight: normal;
 }
 
+.call-to-action-box {
+  margin-top: 2em;
+  border: 1px @orange solid;
+  background-color: fade(@orange, 15%);
+  margin-bottom: 2em;
+  padding: 1.5em;
+  text-align: center;
+  color: @orange;
+}
+
+.call-to-action-box input {
+  border: 1px @orange solid;
+  background-color: @white;
+  height: 1.5em;
+  vertical-align: top;
+}
+
+.call-to-action-box input[type=email] {
+  margin-left: .25em;
+  padding: 0.25em;
+  margin-right: .25em;
+}
+
+.call-to-action-box input[type=submit]:hover {
+  color: @blue;
+  border: 1px @blue solid;
+  background-color: fade(@blue, 15%);
+}
+
+::-webkit-input-placeholder {
+   color: fade(@orange, 40%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: fade(@orange, 40%);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: fade(@orange, 40%);
+}
+
+:-ms-input-placeholder {
+   color: fade(@orange, 40%);
+}
+
 .markdown p code, .markdown li code {
   white-space: pre;
   white-space: pre-wrap;

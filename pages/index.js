@@ -13,6 +13,7 @@ import Author from 'src/Author';
 import PostLink from 'src/PostLink';
 import TextPreview from 'src/TextPreview';
 import HTMLPreview from 'src/HTMLPreview';
+import EmailSignup from 'src/EmailSignup';
 
 
 const HTML_PREVIEW_POSTS = 5;
@@ -56,6 +57,7 @@ export default function Index(props) {
             <a href="/atom.xml">Atom</a>
           </li>
         </ol>
+        <EmailSignup text="Get updates straight to your inbox!" />
         <hr
           style={{
             marginBottom: rhythm(1),

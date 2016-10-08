@@ -12,6 +12,7 @@ import intersperse from 'src/util/intersperse';
 
 import ReadMore from 'src/ReadMore';
 import Author from 'src/Author';
+import EmailSignup from 'src/EmailSignup';
 
 import 'css/solarized-light.less';
 
@@ -64,12 +65,7 @@ export default class MarkdownWrapper extends React.Component {
         <div className="post">
           <h1>{data.title}</h1>
           <div className="markdown" dangerouslySetInnerHTML={{ __html: data.body }} />
-          <hr
-            style={{
-              marginTop: rhythm(2),
-              marginBottom: rhythm(1),
-            }}
-          />
+          <EmailSignup text="Enjoy this post? Sign up for free updates!" />
           <div
             className="metadata"
             style={{
