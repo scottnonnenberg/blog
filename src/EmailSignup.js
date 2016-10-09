@@ -22,33 +22,50 @@ export default function EmailSignup(props) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <label htmlFor="email">{text}</label>
-      <input
-        id="email"
-        type="email"
-        name="EMAIL"
-        placeholder="Your email"
-        required
-        title="Your email. I won't share it. Easy unsubscribe! :0)"
-      />
-      <span
-        style={{
-          position: 'absolute',
-          left: '-5000px',
-        }}
-        aria-hidden
-      >
-        <input
-          type="text"
-          name={fakeField}
-          tabIndex="-1"
-        />
-      </span>
-      <input
-        type="submit"
-        name="subscribe"
-        value="Sign me up!"
-      />
+      <div style={{ display: 'inline-block' }} >
+        <label htmlFor="email">{text}</label>
+        <span style={{ whiteSpace: 'nowrap' }} >
+          <input
+            id="email"
+            type="email"
+            name="EMAIL"
+            placeholder="Your email"
+            required
+          />
+          <span
+            style={{
+              position: 'absolute',
+              left: '-5000px',
+            }}
+            aria-hidden
+          >
+            <input
+              type="text"
+              name={fakeField}
+              tabIndex="-1"
+            />
+          </span>
+          <input
+            type="submit"
+            name="subscribe"
+            value="Sign me up!"
+          />
+        </span>
+        <div
+          className="disclaimer"
+          style={{
+            marginTop: '0.25em',
+            lineHeight: 1,
+            fontSize: '0.6em',
+          }}
+        >
+          I won't share your email with anyone. <a
+            href={`http://${shard}.campaign-archive2.com/home/?u=${u}&id=${id}`}
+          >
+            See previous emails.
+          </a>
+        </div>
+      </div>
     </form>
   </div>;
 }
