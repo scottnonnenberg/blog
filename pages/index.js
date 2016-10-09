@@ -50,6 +50,7 @@ export default function Index(props) {
         <h3
           style={{
             textAlign: 'center',
+            marginBottom: 0,
           }}
         >
           <span style={{ whiteSpace: 'nowrap' }}><Link to={prefixLink('/popular/')}>
