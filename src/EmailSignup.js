@@ -27,8 +27,9 @@ export default function EmailSignup(props) {
         id="email"
         type="email"
         name="EMAIL"
-        placeholder="email address"
+        placeholder="Your email"
         required
+        title="Your email. I won't share it. Easy unsubscribe! :0)"
       />
       <span
         style={{
