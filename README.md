@@ -21,8 +21,20 @@ export default {
 };
 ```
 
-_Note: if you don't want to use these features, put an empty file at
-`/piwik.js` (like `export default {};`) to make things work until you take the piwik-related code out._
+`mailchimp.js` is also excluded from the repository, used by the `<EmailSignup>` React component in displaying its form. It uses five keys:
+
+```javascript
+export default {
+  account: 'your account name, the first part of your mailchimp links',
+  shard: 'the second component of your mailchimp links - like "us12"',
+  u: 'the "u" value in your embedded mailchimp form',
+  id: 'the "id" value in your embedded mailchimp form',
+  fakeField: 'the field for robots in the embedded mailchimp form',
+};
+```
+
+_Note: if you don't want to use these features, put empty files at
+`/piwik.js` and `/mailchimp.js` (like `export default {};`) to make things work until you take the unused code out._
 
 ## Develop
 
