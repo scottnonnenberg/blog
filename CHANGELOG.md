@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/scottnonnenberg/blog/compare/v0.15.0...v0.16.0) (2016-10-09)
+
+
+### Bug Fixes
+
+* **deprecated:** onRouteChange (deprecated) -> onRouteUpdate ([59d965b](https://github.com/scottnonnenberg/blog/commit/59d965b))
+* **design:** index.js - tighten up menu and email signup box ([6560d1c](https://github.com/scottnonnenberg/blog/commit/6560d1c))
+* **mailchimp:** Add input/label spacing, tweak placeholder/title ([a685b99](https://github.com/scottnonnenberg/blog/commit/a685b99))
+
+
+### Features
+
+* **design:** Larger, centered index.js menu, explicit line-break ([34f8f48](https://github.com/scottnonnenberg/blog/commit/34f8f48))
+* **mailchimp:** Email signup on homepage, bottom of post pages ([556c89a](https://github.com/scottnonnenberg/blog/commit/556c89a))
+* **mailchimp:** Link to previous emails, privacy assurance ([044d8b1](https://github.com/scottnonnenberg/blog/commit/044d8b1))
+
+
+
 <a name="0.15.0"></a>
 # [0.15.0](https://github.com/scottnonnenberg/blog/compare/v0.14.0...v0.15.0) (2016-10-04)
 
