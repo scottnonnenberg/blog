@@ -14,7 +14,7 @@ function getDuration() {
   return difference;
 }
 
-exports.onRouteChange = state => {
+exports.onRouteUpdate = state => {
   window._paq = window._paq || [];
 
   if (first) {
