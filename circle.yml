@@ -7,6 +7,7 @@ dependencies:
     - npm install
     # empty piwik.js placeholder
     - 'echo "export default {};" > piwik.js'
+    - 'echo "export default {u: \'something\'};" > mailchimp.js'
   cache_directories:
     - ~/.npm
 test:
