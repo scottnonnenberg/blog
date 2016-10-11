@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.17.0"></a>
+# [0.17.0](https://github.com/scottnonnenberg/blog/compare/v0.16.1...v0.17.0) (2016-10-11)
+
+
+### Features
+
+* **post:** Add stack improvements [#2](https://github.com/scottnonnenberg/blog/issues/2) post, stack-improvements tag ([de4d02b](https://github.com/scottnonnenberg/blog/commit/de4d02b))
+
+
+
 <a name="0.16.1"></a>
 ## [0.16.1](https://github.com/scottnonnenberg/blog/compare/v0.16.0...v0.16.1) (2016-10-09)
 
