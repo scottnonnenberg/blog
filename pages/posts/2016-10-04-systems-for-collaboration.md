@@ -3,7 +3,7 @@ title: Systems for collaboration
 date: 2016-10-04T17:55:42.189Z
 layout: post
 path: /systems-for-collaboration/
-next:
+next: /better-async-redux-i18n-and-node-js-versions/
 previous: /breaking-the-node-js-event-loop/
 tags:
   - ideas
