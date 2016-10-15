@@ -3,7 +3,7 @@ title: Better async Redux, i18n, and Node.js versions
 date: 2016-10-11T17:49:25.493Z
 layout: post
 path: /better-async-redux-i18n-and-node-js-versions/
-next:
+next: /the-technology-side-of-agile/
 previous: /systems-for-collaboration/
 tags:
   - stack-improvements
