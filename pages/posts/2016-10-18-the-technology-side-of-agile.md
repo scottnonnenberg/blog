@@ -3,7 +3,7 @@ title: The technology side of agile
 date: 2016-10-18T17:54:49.767Z
 layout: post
 path: /the-technology-side-of-agile/
-next:
+next: /focus-dev-productivity-tip-2/
 previous: /better-async-redux-i18n-and-node-js-versions/
 tags:
   - agile

@@ -6,10 +6,11 @@ path: /understand-the-problem-dev-productivity-tip-1/
 next: /contract-an-unusual-skillset/
 previous: /modern-evidence-requirements/
 tags:
+  - dev-productivity
   - software
 ---
 
-I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). How do I do it? You're about to find out! Welcome to the first of my developer productivity tips: **Understand the Problem**.
+I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). How do I do it? You're about to find out! Welcome to the first of [my developer productivity tips](/tags/dev-productivity/): **Understand the Problem**.
 
 Tutorials and bootcamps are all about book knowledge. For maximum coding productivity, you need deep knowledge of exactly what needs to be built and why!
 
