@@ -2,3 +2,4 @@ public
 node_modules
 coverage
 !.eslintrc.js
+assets
