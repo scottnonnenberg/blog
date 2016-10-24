@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/scottnonnenberg/blog/compare/v0.18.0...v1.0.0) (2016-10-24)
+
+
+### Features
+
+* **piwik:** Clean up piwik config, bring its javascript local ([193b2eb](https://github.com/scottnonnenberg/blog/commit/193b2eb))
+
+
+### BREAKING CHANGES
+
+* piwik: Structure of piwik config has changed. There are now
+just four keys used: `url`, `js`, `id`, and `token`.
+
+
+
 <a name="0.18.0"></a>
 # [0.18.0](https://github.com/scottnonnenberg/blog/compare/v0.17.0...v0.18.0) (2016-10-18)
 
