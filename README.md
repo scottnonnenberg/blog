@@ -14,9 +14,9 @@ More on how to use this project: https://blog.scottnonnenberg.com/this-blog-is-n
 
 ```javascript
 export default {
-  domain: 'where your piwik server is',
-  siteId: 'the site number',
-  site: 'the site domain',
+  url: 'usually something like "http://domain/piwik.php"',
+  id: 'the site number',
+  js: 'where to load your js from like "http://domain/piwik.js"',
   token: 'your API access token, used by `update-rankings` npm script',
 };
 ```

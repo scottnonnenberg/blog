@@ -21,7 +21,7 @@ export default function HTML(props) {
   const metaTags = generateMetaTags(post, config, path);
 
   const title = DocumentTitle.rewind() || config.blogTitle;
-  const piwikSetup = buildPiwikSetup(config, piwikConfig);
+  const piwikSetup = buildPiwikSetup(piwikConfig);
   const piwikNoScript = buildPiwikNoScript(path, config.domain, piwikConfig);
   const js = getJS(buildMode, config.noProductionJavascript);
   const css = getCSS(buildMode);
@@ -55,46 +55,45 @@ HTML.propTypes = {
   routes: React.PropTypes.array,
 };
 
-function buildPiwikSetup({ domainCDN }, { domain, siteId, site }) {
-  const js = `
-    window._paq = window._paq || [];
-    window._paq.push(['setTrackerUrl', '${domain}/piwik.php']);
-    window._paq.push(['setSiteId', '${siteId}']);
-    window._paq.push(['setCookieDomain', '${site}']);
-    window._paq.push(['setDomains', ['${site}']]);
-    window._paq.push(['enableLinkTracking']);
-    window._paq.push(['trackPageView']);
-    window._paq.push(['enableHeartBeatTimer']);
+function buildPiwikSetup({ url, js, id }) {
+  const html = `
+    var paq = window._paq = window._paq || [];
+    paq.push(['setTrackerUrl', '${url}']);
+    paq.push(['setSiteId', '${id}']);
+    paq.push(['enableLinkTracking']);
+    paq.push(['trackPageView']);
+    paq.push(['enableHeartBeatTimer']);
 
     window.start = new Date();
 
     // add tag
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.defer=true; g.async=true;
-    g.src='${domainCDN}/js/piwik/2.15.0/piwik.min.js';
+    g.src='${js}';
     s.parentNode.insertBefore(g,s);
   `;
 
   return <script
     type="text/javascript"
-    dangerouslySetInnerHTML={{ __html: js }}
+    dangerouslySetInnerHTML={{ __html: html }}
   />;
 }
 
 buildPiwikSetup.propTypes = {
-  domainCDN: React.PropTypes.string,
-  domainPiwik: React.PropTypes.string,
+  url: React.PropTypes.string,
+  id: React.PropTypes.string,
+  js: React.PropTypes.string,
 };
 
 
-function buildPiwikNoScript(path, blogDomain, { domain }) {
+function buildPiwikNoScript(path, blogDomain, { url, id }) {
   const encodedPath = encodeURIComponent(blogDomain + path);
 
   return <noscript>
     <img
-      src={`${domain}/piwik.php?idsite=3&rec=1&url=${encodedPath}`}
+      src={`${url}?idsite=${id}&rec=1&url=${encodedPath}`}
       style={{ border: 0 }}
-      alt="tracker"
+      alt="p"
     />
   </noscript>;
 }
