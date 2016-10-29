@@ -6,6 +6,7 @@ path: /breaking-the-node-js-event-loop/
 next: /systems-for-collaboration/
 previous: /contract-an-unusual-skillset/
 tags:
+  - break-it
   - nodejs
   - javascript
   - software

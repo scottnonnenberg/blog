@@ -3,7 +3,7 @@ title: 'Focus (Dev productivity tip #2)'
 date: 2016-10-25T20:00:47.683Z
 layout: post
 path: /focus-dev-productivity-tip-2/
-next:
+next: /breaking-other-servers-with-node-js/
 previous: /the-technology-side-of-agile/
 tags:
   - dev-productivity
