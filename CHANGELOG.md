@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/scottnonnenberg/blog/compare/v1.2.0...v1.3.0) (2016-11-08)
+
+
+### Features
+
+* **post:** Add "Fear of the subjective" post ([0b35a1d](https://github.com/scottnonnenberg/blog/commit/0b35a1d))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/scottnonnenberg/blog/compare/v1.1.0...v1.2.0) (2016-11-02)
 
