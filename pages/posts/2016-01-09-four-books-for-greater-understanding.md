@@ -44,7 +44,7 @@ The book is structured around a collection of speeches he gave, each in its own 
 
 ### Key ideas:
 
-* Generosity comes from feeling like you have enough. The 'story of the world' you have in your mind will affect your behavior as well. Are we all individuals fighting tooth and nail, or are well all in this together?
+* Generosity comes from feeling like you have enough. The 'story of the world' you have in your mind will affect your behavior as well. Are we all individuals fighting tooth and nail, or are we all in this together?
 * We are all told that we are worth nothing, it's what we do that make us worthwhile. What if we're worthwhile no matter what? Then you can really be yourself. Everything you do doesn't have to be attached to a principle.
 * Many activists do what they do because they want to self-legitimize. And they argue with other activist-types about which cause is the most worthwhile.
 * If the tools of oppression and war are used to try to change the world, the world won't really ever change. Activism needs a sense of play.
