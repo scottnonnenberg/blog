@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/scottnonnenberg/blog/compare/v1.3.0...v1.4.0) (2016-11-16)
+
+
+### Bug Fixes
+
+* **post:** Fix typo in "four books for greater understanding" ([6da009e](https://github.com/scottnonnenberg/blog/commit/6da009e))
+
+
+### Features
+
+* **post:** Add "Web application test strategy" ([3c1ce6a](https://github.com/scottnonnenberg/blog/commit/3c1ce6a))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/scottnonnenberg/blog/compare/v1.2.0...v1.3.0) (2016-11-08)
 
