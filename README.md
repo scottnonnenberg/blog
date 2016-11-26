@@ -18,6 +18,7 @@ export default {
   id: 'the site number',
   js: 'where to load your js from like "http://domain/piwik.js"',
   token: 'your API access token, used by `update-rankings` npm script',
+  domain: 'used only for update-rankings task; like http://domain'
 };
 ```
 
