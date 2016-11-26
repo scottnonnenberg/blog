@@ -7,29 +7,38 @@ import { shallow } from 'enzyme';
 import Popular from 'pages/popular';
 import Author from 'src/Author';
 import TextPreview from 'src/TextPreview';
+import PostLink from 'src/PostLink';
 
+
+function makePage(name, rank) {
+  return {
+    path: `/${name}/`,
+    data: {
+      body: `${name} content`,
+      rank,
+    },
+  };
+}
 
 describe('unit/pages/popular', () => {
   it('renders', () => {
+    const zero = makePage('zero', null);
+    const two = makePage('two', 2);
     const route = {
-      pages: [{
-        path: '/three/',
-        data: {
-          body: 'Three contenst',
-        },
-      }, {
-        path: '/two/',
-        data: {
-          rank: 2,
-          body: 'Three contenst',
-        },
-      }, {
-        path: '/one/',
-        data: {
-          rank: 1,
-          body: 'Three contenst',
-        },
-      }],
+      pages: [
+        zero,
+        two,
+        makePage('one', 1),
+        makePage('three', 3),
+        makePage('four', 4),
+        makePage('five', 5),
+        makePage('six', 6),
+        makePage('seven', 7),
+        makePage('eight', 8),
+        makePage('nine', 9),
+        makePage('ten', 10),
+        makePage('eleven', 11),
+      ],
     };
 
     const wrapper = shallow(<Popular route={route} />);
@@ -39,7 +48,11 @@ describe('unit/pages/popular', () => {
     expect(wrapper.find(Author)).to.have.length(1);
     expect(wrapper.find(DocumentTitle)).to.have.length(1);
 
-    expect(wrapper.find('li')).to.have.length(2);
-    expect(wrapper.find(TextPreview)).to.have.length(2);
+    expect(wrapper.find(TextPreview)).to.have.length(10);
+
+    expect(wrapper.find(PostLink)).to.have.length(1);
+
+    expect(wrapper.findWhere(node => node.prop('post') === zero)).to.have.length(0);
+    expect(wrapper.findWhere(node => node.prop('post') === two)).to.have.length(1);
   });
 });
