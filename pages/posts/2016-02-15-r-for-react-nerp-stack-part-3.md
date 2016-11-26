@@ -182,7 +182,7 @@ The good news is that React is being used in production by Facebook. And not as 
 
 ### 3. Batteries not included
 
-Angular comes with a [component for making AJAX requests](https://docs.angularjs.org/api/ng/service/$http), React doesn't. Angular comes with an [implementation of promises](https://docs.angularjs.org/api/ng/service/$q), React doesn't. Angular has [logging](https://docs.angularjs.org/api/ng/service/$log), React doesn't. Angular has [built-in routing](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider). React doesn't. Yes, a Flux implementation gets you closer to a web application framework, but you'll still need to select you preferred library for all of these scenarios.
+Angular comes with a [component for making AJAX requests](https://docs.angularjs.org/api/ng/service/$http), React doesn't. Angular comes with an [implementation of promises](https://docs.angularjs.org/api/ng/service/$q), React doesn't. Angular has [logging](https://docs.angularjs.org/api/ng/service/$log), React doesn't. Angular has [built-in routing](https://docs.angularjs.org/api/ngRoute/provider/$routeProvider). React doesn't. Yes, a Flux implementation gets you closer to a web application framework, but you'll still need to select your preferred library for all of these scenarios.
 
 But that's [nothing](/n-for-node-js-nerp-stack-part-1/#2-too-much-choice) [new](/e-for-express-nerp-stack-part-2/#1-not-production-ready-out-of-the-box) in the world of NERP, right? By now you've started to realize that the NERP stack is not all you need, it's the backbone of the app you end up building - a place to start. You have the power to round out your application with whatever it needs: [heavyweight](https://github.com/rackt/react-router) or [lightweight](https://slides.joreteg.com/dotjs/#71) solutions.
 
@@ -190,7 +190,7 @@ But that's [nothing](/n-for-node-js-nerp-stack-part-1/#2-too-much-choice) [new](
 
 React was [first released a little less than three years ago](https://github.com/facebook/react/releases/tag/v0.3.0). It only broke through to the mainstream in 2015, and [its search volumes still lag behind angular](http://www.google.com/trends/explore#cat=0-5&q=react.js%20%2B%20reactjs%20%2B%20%22react%20js%22%2C%20angular.js%20%2B%20angularjs%20%2B%20%22angular%20js%22%2C%20ext.js%20%2B%20%20extjs%2B%20%22ext%20js%22%2C%20backbone.js%20%2B%20%20backbonejs%20%2B%20%22backbone%20js%22%2C%20ember.js%20%2B%20emberjs%20%2B%20%22ember%20js%22%2C%20knockout.js%20%2B%20knockoutjs%20%2B%20%22knockout%20js%22&cmpt=q). Can you trust it? Will it just go away? Will you be able to find developers who know it well?
 
-It seems to be getting more popular every day, but we can't be sure. There is one thing we do know: React will eventually be replaced with the next hot thing. You'll have to decide if you can get enough value out of it in the near term.
+It seems to be getting more popular every day, but we can't be sure. There is one thing we do know: React will eventually be replaced with the next hot thing. You'll have to decide if you can get enough value out of it before then.
 
 ## Conclusion: Jump in!
 
@@ -206,4 +206,4 @@ Next up: [*Part 4: P for Postgres*](/p-for-postgres-nerp-stack-part-4/)...
 
 ---
 
-*Fun fact:* As of Feb 2016, this blog is a React/React-Router single-page web app. It's also statically generated at build time with Node.js, so pages render before javascript is ready. And for users without javascript!
+*Fun fact:* As of Feb 2016, this blog is [statically generated with Node.js and React/React-Router](/static-site-generation-with-gatsby-js/).
