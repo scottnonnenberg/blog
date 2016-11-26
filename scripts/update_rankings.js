@@ -40,7 +40,7 @@ superagent
     module: 'API',
     method: 'Actions.getPageUrls',
     format: 'JSON',
-    idSite: piwikConfig.siteId,
+    idSite: piwikConfig.id,
     period: 'range',
     date: '2013-1-1,2016-07-10',
     expanded: 1,
