@@ -1,4 +1,5 @@
 ---
+rank: 6
 title: Hands-on with CircleCI and Node.js
 date: 2016-07-26T01:52:42.382Z
 layout: post

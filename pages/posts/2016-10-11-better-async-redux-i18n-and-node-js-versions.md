@@ -1,4 +1,5 @@
 ---
+rank: 14
 title: Better async Redux, i18n, and Node.js versions
 date: 2016-10-11T17:49:25.493Z
 layout: post

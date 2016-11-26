@@ -1,5 +1,5 @@
 ---
-rank: 17
+rank: 32
 title: "Open Source and Feelings: The Challenge"
 date: 2016-01-19T18:48:54.000Z
 layout: post

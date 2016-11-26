@@ -1,5 +1,5 @@
 ---
-rank: 47
+rank: 57
 title: "Contract: New techniques, old technology"
 date: 2016-05-31T18:39:28.919Z
 layout: post

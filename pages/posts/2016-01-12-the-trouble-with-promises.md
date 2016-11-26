@@ -1,5 +1,5 @@
 ---
-rank: 6
+rank: 7
 title: The trouble with promises
 date: 2016-01-12T18:07:21.000Z
 layout: post

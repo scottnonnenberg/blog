@@ -1,4 +1,5 @@
 ---
+rank: 40
 title: The technology side of agile
 date: 2016-10-18T17:54:49.767Z
 layout: post

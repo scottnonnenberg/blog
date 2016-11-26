@@ -1,5 +1,5 @@
 ---
-rank: 3
+rank: 5
 title: Node.js is not magical
 date: 2014-12-09T18:00:00.000Z
 layout: post

@@ -1,4 +1,5 @@
 ---
+rank: 28
 title: Web application test strategy
 date: 2016-11-16T20:14:05.762Z
 layout: post

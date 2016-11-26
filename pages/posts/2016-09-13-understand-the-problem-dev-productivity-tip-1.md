@@ -1,4 +1,5 @@
 ---
+rank: 12
 title: 'Understand the problem (Dev productivity tip #1)'
 date: 2016-09-13T17:15:51.682Z
 layout: post

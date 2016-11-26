@@ -1,5 +1,5 @@
 ---
-rank: 4
+rank: 2
 title: Static site generation with Gatsby.js
 date: 2016-04-19T21:06:19.300Z
 layout: post

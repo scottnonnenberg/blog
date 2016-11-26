@@ -1,4 +1,5 @@
 ---
+rank: 11
 title: "Private Node.js modules: A journey"
 date: 2016-07-12T18:34:05.655Z
 layout: post

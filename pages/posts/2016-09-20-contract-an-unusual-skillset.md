@@ -1,4 +1,5 @@
 ---
+rank: 51
 title: "Contract: An unusual skillset"
 date: 2016-09-20T19:25:01.850Z
 layout: post

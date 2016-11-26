@@ -1,5 +1,5 @@
 ---
-rank: 2
+rank: 4
 title: "ESLint Part 1: Exploration"
 date: 2016-06-14T22:27:28.926Z
 layout: post
