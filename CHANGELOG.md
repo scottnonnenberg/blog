@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/scottnonnenberg/blog/compare/v1.4.0...v1.5.0) (2016-11-29)
+
+
+### Bug Fixes
+
+* **post:** Fix typo in 'R for React' post, add link ([e30d71b](https://github.com/scottnonnenberg/blog/commit/e30d71b))
+* **update-rankings:** User proper id for the site ([737ecaa](https://github.com/scottnonnenberg/blog/commit/737ecaa))
+
+
+### Features
+
+* **popular:** Show 20 posts, show last 10 as plain links ([9ec92fc](https://github.com/scottnonnenberg/blog/commit/9ec92fc))
+* **post:** Add "Be a scientist" post ([ce550ac](https://github.com/scottnonnenberg/blog/commit/ce550ac))
+
+
+
 <a name="1.4.0"></a>
 # [1.4.0](https://github.com/scottnonnenberg/blog/compare/v1.3.0...v1.4.0) (2016-11-16)
 
