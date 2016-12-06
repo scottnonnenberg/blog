@@ -3,7 +3,7 @@ title: "Be a scientist (Dev productivity tip #3)"
 date: 2016-11-29T20:38:21.622Z
 layout: post
 path: /be-a-scientist-dev-productivity-tip-3/
-next:
+next: /better-docs-and-static-analysis/
 previous: /web-application-test-strategy/
 tags:
   - dev-productivity
