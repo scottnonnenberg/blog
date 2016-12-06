@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/scottnonnenberg/blog/compare/v1.5.0...v1.6.0) (2016-12-06)
+
+
+### Bug Fixes
+
+* **post:** A couple tweaks to "Web application test strategy" ([cc1a23e](https://github.com/scottnonnenberg/blog/commit/cc1a23e))
+
+
+### Features
+
+* **post:** Add "Better docs and static analysis" ([f93fd81](https://github.com/scottnonnenberg/blog/commit/f93fd81))
+
+
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/scottnonnenberg/blog/compare/v1.4.0...v1.5.0) (2016-11-29)
 
