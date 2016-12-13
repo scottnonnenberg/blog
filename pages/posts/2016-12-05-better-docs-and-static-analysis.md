@@ -3,7 +3,7 @@ title: Better docs and static analysis
 date: 2016-12-06T18:19:26.567Z
 layout: post
 path: /better-docs-and-static-analysis/
-next:
+next: /six-books-for-greater-context/
 previous: /be-a-scientist-dev-productivity-tip-3/
 tags:
   - stack-improvements
