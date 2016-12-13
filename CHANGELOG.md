@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.7.0"></a>
+# [1.7.0](https://github.com/scottnonnenberg/blog/compare/v1.6.0...v1.7.0) (2016-12-13)
+
+
+### Features
+
+* **post:** Six books for greater context ([e691682](https://github.com/scottnonnenberg/blog/commit/e691682))
+
+
+
 <a name="1.6.0"></a>
 # [1.6.0](https://github.com/scottnonnenberg/blog/compare/v1.5.0...v1.6.0) (2016-12-06)
 
