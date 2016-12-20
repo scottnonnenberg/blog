@@ -3,7 +3,7 @@ title: Six books for greater context
 date: 2016-12-13T23:12:53.875Z
 layout: post
 path: /six-books-for-greater-context/
-next:
+next: /first-listen/
 previous: /better-docs-and-static-analysis/
 tags:
   - books
