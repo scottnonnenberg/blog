@@ -10,7 +10,7 @@ tags:
   - software
 ---
 
-I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). And I want you to have my techniques! Welcome to the fourth of my developer productivity tips: **Find a test rhythm**.
+I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). And I want you to have my techniques! Welcome to my fourth [developer productivity tip](/tags/dev-productivity/): **Find a test rhythm**.
 
 Stop worrying about test philosophy and start doing. Find a testing technique that works for you and make it into a habit.
 
