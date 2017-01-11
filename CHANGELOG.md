@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/scottnonnenberg/blog/compare/v1.8.0...v1.9.0) (2017-01-11)
+
+
+### Bug Fixes
+
+* **post:** Update back link to deep link to feedback loop section ([3b5c46c](https://github.com/scottnonnenberg/blog/commit/3b5c46c))
+
+
+### Features
+
+* **post:** Add "Find a test rhythm" post ([172d369](https://github.com/scottnonnenberg/blog/commit/172d369))
+
+
+
 <a name="1.8.0"></a>
 # [1.8.0](https://github.com/scottnonnenberg/blog/compare/v1.7.0...v1.8.0) (2016-12-20)
 
