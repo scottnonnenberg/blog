@@ -3,7 +3,7 @@ title: First, listen
 date: 2016-12-20T22:33:04.420Z
 layout: post
 path: /first-listen/
-next:
+next: /find-a-test-rhythm-dev-productivity-tip-4/
 previous: /six-books-for-greater-context/
 tags:
   - goals
