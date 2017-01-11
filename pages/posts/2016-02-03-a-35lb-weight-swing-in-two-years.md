@@ -32,7 +32,7 @@ One particular situation discussed in the book really rang true for me:
 
 It definitely happened to me sometimes, that urgent need to pee. Conventional wisdom was that peeing clear was a good thing, so I had a bottle of water around at all times, always sure to keep my body topped off. A lower fluid intake and better understanding of my symptoms gave me immediate success. After all, dry mouth often signals not dehydration but stress due to electrolyte imbalance or low blood sugar.
 
-[The systems analyst](/systems-and-incentives/) in me loved the idea of putting some sort of [feedback loop](/the-why-of-agile/) in place. I paid close attention to my subjective feeling as well as metrics like body temperature, warmth of hands, color of urine, etc. And I started eating more.
+[The systems analyst](/systems-and-incentives/) in me loved the idea of putting some sort of [feedback loop](/the-why-of-agile/#feedback-loops) in place. I paid close attention to my subjective feeling as well as metrics like body temperature, warmth of hands, color of urine, etc. And I started eating more.
 
 ## The High Everything Diet
 
