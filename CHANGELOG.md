@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/scottnonnenberg/blog/compare/v1.9.0...v1.9.1) (2017-01-11)
+
+
+### Bug Fixes
+
+* **post:** Update first paragraph - add link, streamline ([fb60f87](https://github.com/scottnonnenberg/blog/commit/fb60f87))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/scottnonnenberg/blog/compare/v1.8.0...v1.9.0) (2017-01-11)
 
