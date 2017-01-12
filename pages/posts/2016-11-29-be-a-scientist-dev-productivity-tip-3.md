@@ -1,4 +1,5 @@
 ---
+rank: 28
 title: "Be a scientist (Dev productivity tip #3)"
 date: 2016-11-29T20:38:21.622Z
 layout: post

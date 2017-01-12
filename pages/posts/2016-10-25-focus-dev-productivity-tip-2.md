@@ -1,5 +1,5 @@
 ---
-rank: 29
+rank: 32
 title: 'Focus (Dev productivity tip #2)'
 date: 2016-10-25T20:00:47.683Z
 layout: post

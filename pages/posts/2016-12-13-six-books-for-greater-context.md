@@ -1,4 +1,5 @@
 ---
+rank: 58
 title: Six books for greater context
 date: 2016-12-13T23:12:53.875Z
 layout: post

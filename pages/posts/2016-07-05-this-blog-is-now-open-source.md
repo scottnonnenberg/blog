@@ -1,5 +1,5 @@
 ---
-rank: 8
+rank: 7
 title: This blog is now open source!
 date: 2016-07-05T18:43:01.950Z
 layout: post

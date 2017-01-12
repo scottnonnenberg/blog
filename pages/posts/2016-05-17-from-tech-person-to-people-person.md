@@ -1,5 +1,5 @@
 ---
-rank: 21
+rank: 23
 title: From tech person to people person
 date: 2016-05-17T16:28:40.932Z
 layout: post

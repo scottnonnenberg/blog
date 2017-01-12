@@ -1,5 +1,5 @@
 ---
-rank: 25
+rank: 27
 title: P for Postgres (NERP stack part 4)
 date: 2016-02-22T17:15:11.427Z
 layout: post
