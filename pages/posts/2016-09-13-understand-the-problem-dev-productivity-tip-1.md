@@ -81,6 +81,6 @@ Develop a sixth sense for these kind of risks. It pays to explicitly seek them o
 
 > _"Whenever there's something wrong with your writing, suspect that there's something wrong with your thinking." - [Patricia T. O'Conner](https://www.goodreads.com/author/quotes/63015.Patricia_T_O_Conner)_
 
-I can tell when I don't have an adequately specific goal in mind for a bit of programming - the tests are really hard to write. I have to start asking questions or doing research. When the tests flow out of me, I know have enough to write code confidently.
+I can tell when I don't have an adequately specific goal in mind for a bit of programming - the tests are really hard to write. I have to start asking questions or doing research. When the tests flow out of me, I know enough to write code confidently.
 
 Ask questions until you're satisfied, even if you annoy people! You'll be more productive, and everyone involved will have a better understanding.
