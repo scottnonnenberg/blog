@@ -9,6 +9,7 @@ previous: /eslint-part-3-analysis/
 tags:
   - nvc
   - empathy
+  - feedback-loop
   - ideas
   - business
   - software

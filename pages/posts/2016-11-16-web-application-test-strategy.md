@@ -7,6 +7,7 @@ path: /web-application-test-strategy/
 next: /be-a-scientist-dev-productivity-tip-3/
 previous: /fear-of-the-subjective/
 tags:
+  - feedback-loop
   - software
 ---
 

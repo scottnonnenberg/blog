@@ -8,6 +8,7 @@ next: /eslint-part-1-exploration/
 previous: /contract-new-techniques-old-technology/
 tags:
   - agile
+  - feedback-loop
   - software
   - business
 ---

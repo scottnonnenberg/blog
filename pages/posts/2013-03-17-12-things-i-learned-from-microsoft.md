@@ -7,6 +7,7 @@ path: /12-things-i-learned-from-microsoft/
 next: /why-i-left-liffft/
 previous: /dont-let-this-happen-to-you-lessons-from-a-failed-side-project/
 tags:
+  - feedback-loop
   - business
   - software
 ---

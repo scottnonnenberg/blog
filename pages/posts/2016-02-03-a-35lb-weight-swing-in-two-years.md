@@ -7,9 +7,10 @@ path: /a-35lb-weight-swing-in-two-years/
 next: /e-for-express-nerp-stack-part-2/
 previous: /n-for-node-js-nerp-stack-part-1/
 tags:
-  - fun
+  - feedback-loop
   - data
   - nutrition
+  - fun
 ---
 
 <a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png" alt="weight 5/15/2013 to 1/20/2016, X = time, Y = weight in lbs"></a>
