@@ -4,7 +4,7 @@ title: "Find a test rhythm (Dev productivity tip #4)"
 date: 2017-01-11T01:42:06.133Z
 layout: post
 path: /find-a-test-rhythm-dev-productivity-tip-4/
-next:
+next: /top-ten-pull-request-review-mistakes/
 previous: /first-listen/
 tags:
   - dev-productivity
