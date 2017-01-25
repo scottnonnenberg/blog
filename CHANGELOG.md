@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/scottnonnenberg/blog/compare/v1.9.1...v1.10.0) (2017-01-25)
+
+
+### Bug Fixes
+
+* **post:** Small typo in "Understand the problem" ([1fd130a](https://github.com/scottnonnenberg/blog/commit/1fd130a))
+
+
+### Features
+
+* **post:** Top 10 pull request review mistakes ([9a3c736](https://github.com/scottnonnenberg/blog/commit/9a3c736))
+* **tag:** Add new tag: feedback-loop ([b3d6d66](https://github.com/scottnonnenberg/blog/commit/b3d6d66))
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/scottnonnenberg/blog/compare/v1.9.0...v1.9.1) (2017-01-11)
 
