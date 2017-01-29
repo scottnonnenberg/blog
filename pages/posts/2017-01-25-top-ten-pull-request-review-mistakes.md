@@ -42,7 +42,7 @@ Search your feelings! Let the force flow through you! You might have some very r
 Now that you've identified your real concerns, take action!
 
 * If there isn't enough guidance from the submitter on what's going on in all these changes, ask for it! For example, where are the original requirements?
-* If the changes are just too substantial to view at once, ask for them to be split up!
+* If the changes are just too substantial to review at once, ask for them to be split up!
 * If you don't understand something, break through your pride and ask about it!
 * If you've found a whole lot of problems/concerns, it may be time for some face-to-face interaction with the submitter.
 
@@ -102,7 +102,7 @@ Get out of your head, and pull the branch down. Try it in multiple browsers and 
 
 ## 8. The narrow mindset
 
-This is another area where you can be lulled to sleep by well-formed code in the diff. But it's important to consider the large scale. WIth this new code now in the project, what changes? What could happen?
+This is another area where you can be lulled to sleep by well-formed code in the diff. But it's important to consider the large scale. With this new code now in the project, what changes? What could happen?
 
 Some questions to get you started:
 
@@ -125,7 +125,7 @@ Some ideas to build accessible context for the future:
 
 ## 10. Cursory review of amendments
 
-Finally! The pull request has seem some lively attention, and it's back in the submitter's court. You've given your feedback, and the submitter is making some changes in response.
+Finally! The pull request has seen some lively attention, and it's back in the submitter's court. You've given your feedback, and the submitter is making some changes in response.
 
 Now is not the time to forget about the pull request. You've discussed needed changes with the submitter, but that doesn't mean those changes will be correct! Or even made at all!
 
