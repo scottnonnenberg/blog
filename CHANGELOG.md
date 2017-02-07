@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.0"></a>
+# [1.11.0](https://github.com/scottnonnenberg/blog/compare/v1.10.0...v1.11.0) (2017-02-07)
+
+
+### Bug Fixes
+
+* **post:** Fix a couple typos in 'pull request review mistakes' ([8100e14](https://github.com/scottnonnenberg/blog/commit/8100e14))
+
+
+### Features
+
+* **post:** Add "2017: Twenty years online" ([bd98d40](https://github.com/scottnonnenberg/blog/commit/bd98d40))
+
+
+
 <a name="1.10.0"></a>
 # [1.10.0](https://github.com/scottnonnenberg/blog/compare/v1.9.1...v1.10.0) (2017-01-25)
 
