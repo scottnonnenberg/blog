@@ -35,7 +35,7 @@ This [Geocities site](https://web.archive.org/web/20010806085629/http://www.geoc
 
 This was my first experience trying to maintain something long-term for the use of other people. I amassed a [good set of kids' homepages](https://archive.sinap.ps/dnet_19980423/homepage.htm), but it was tough - both to stay engaged myself, and to get traffic! I retired it about a year later.
 
-## [A home](https://archive.sinap.ps/homepage_19981010/)
+## [A home - v1](https://archive.sinap.ps/homepage_19981010/)
 
 With a couple initial efforts under my belt, it was time to get serious. I had spent a good amount of time visiting the pages created by people I encountered in chatrooms and the people they linked to - remember [webrings](https://www.hover.com/blog/what-ever-happened-to-webrings/) and [guestbooks](http://www.wikihow.com/Add-a-Guestbook-to-a-Blogger-Blog)? It was time for a real homepage.
 
@@ -74,7 +74,7 @@ Not long after releasing my HTML Help site, I released [another very similar sit
 
 I was very excited by the proposition of style sheets. How could I not? At that point, all style information was directly inline. If I wanted to change the design of a page, I had to update every single page. So, the project includes five stylesheets, and I remember writing some javascript to switch between them dynamically. Sadly, none of that remains.
 
-## [Home maintenance](https://archive.sinap.ps/homepage_20000107/)
+## [Home maintenance - v2](https://archive.sinap.ps/homepage_20000107/)
 
 Out of all of these sites, only my homepage survived. I regularly updated it from its creation in June 1997 all the way until I went to college in fall 1999.
 
