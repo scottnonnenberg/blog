@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.11.1"></a>
+## [1.11.1](https://github.com/scottnonnenberg/blog/compare/v1.11.0...v1.11.1) (2017-02-11)
+
+
+### Bug Fixes
+
+* **post:** Add v1/v2 to homepage links on 'twenty years online' ([bb175de](https://github.com/scottnonnenberg/blog/commit/bb175de))
+
+
+
 <a name="1.11.0"></a>
 # [1.11.0](https://github.com/scottnonnenberg/blog/compare/v1.10.0...v1.11.0) (2017-02-07)
 
