@@ -1,5 +1,5 @@
 ---
-rank: 21
+rank: 26
 title: "Notate: Better Javascript callstacks"
 date: 2016-06-28T18:40:17.484Z
 layout: post

@@ -1,5 +1,5 @@
 ---
-rank: 1
+rank: 4
 title: The dangerous cliffs of Node.js
 date: 2015-02-11T17:52:00.000Z
 layout: post

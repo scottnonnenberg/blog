@@ -1,5 +1,5 @@
 ---
-rank: 18
+rank: 23
 title: "ESLint Part 2: Contribution"
 date: 2016-06-16T18:36:43.686Z
 layout: post
