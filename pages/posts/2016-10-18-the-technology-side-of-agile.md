@@ -1,6 +1,6 @@
 ---
 rank: 42
-title: The technology side of agile
+title: The technology side of Agile
 date: 2016-10-18T17:54:49.767Z
 layout: post
 path: /the-technology-side-of-agile/
