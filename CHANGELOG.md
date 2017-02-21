@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.12.0"></a>
+# [1.12.0](https://github.com/scottnonnenberg/blog/compare/v1.11.1...v1.12.0) (2017-02-21)
+
+
+### Bug Fixes
+
+* **post:** Change 'agile' to 'Agile' in 'Technology of' title ([f6293a7](https://github.com/scottnonnenberg/blog/commit/f6293a7))
+
+
+### Features
+
+* **post:** Add "An Agile organization" ([df672d5](https://github.com/scottnonnenberg/blog/commit/df672d5))
+
+
+
 <a name="1.11.1"></a>
 ## [1.11.1](https://github.com/scottnonnenberg/blog/compare/v1.11.0...v1.11.1) (2017-02-11)
 
