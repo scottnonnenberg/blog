@@ -4,7 +4,7 @@ title: "2017: Twenty years online"
 date: 2017-02-07T22:04:34.480Z
 layout: post
 path: /2017-twenty-years-online/
-next:
+next: /an-agile-organization/
 previous: /top-ten-pull-request-review-mistakes/
 tags:
   - javascript
