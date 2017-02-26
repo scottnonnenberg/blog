@@ -136,8 +136,6 @@ As *The Agile Manifesto* says, we value:
 
 ---
 
-_A little bit more:_
-
 Does that customer-focused iterative development seem unrealistic to you? I'll be first to admit that true agility requires some key technical tools and practices. Check out my next Agile post: [The technology side of _Agile_](/the-technology-side-of-agile/).
 
 You might be wondering why I'm so interested in this. I have a unique perspective. I've spent [a lot of time in a number of software development roles](https://scottnonnenberg.com/work/):

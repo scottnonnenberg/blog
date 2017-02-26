@@ -87,7 +87,7 @@ It's important to think holistically about _Agile_ - sprints can feel pointless 
 
 ---
 
-Watch for my next post on _Agile_: the business side of _Agile_. It's easy to be _Agile_ within technical teams, but how to handle other parts of the organization still asking for specific features on specific dates?
+Now you're ready for my next post in the series: [An _Agile_ organization](/an-agile-organization/). It's easy to be _Agile_ within technical teams, but how to handle other parts of the organization still asking for specific features on specific dates?
 
 Resources:
 
