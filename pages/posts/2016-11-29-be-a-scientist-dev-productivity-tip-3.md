@@ -11,7 +11,7 @@ tags:
   - software
 ---
 
-I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). And it's not magic! Welcome to number three of my [my developer productivity tips](/tags/dev-productivity/): **Be a scientist**.
+I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scotts-value-add-is-beyond-mere-lines-of-code-h). And it's not magic! Welcome to number three of  [my developer productivity tips](/tags/dev-productivity/): **Be a scientist**.
 
 Scientists are curious, always learning, creative, and they know that they don't know everything. Let's talk about how you can be more like a scientist in your software development.
 
