@@ -3,7 +3,7 @@ title: An Agile organization
 date: 2017-02-21T22:15:12.585Z
 layout: post
 path: /an-agile-organization/
-next:
+next: /getting-started-with-elixir/
 previous: /2017-twenty-years-online/
 tags:
   - agile
