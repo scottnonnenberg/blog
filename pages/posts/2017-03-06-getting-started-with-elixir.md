@@ -95,12 +95,12 @@ I kept track of both the impressive things and the things I thought were worth k
 * There are some limits to guard expressions: http://elixir-lang.org/getting-started/case-cond-and-if.html#expressions-in-guard-clauses
 * `cond`, like else-if in other languages, looks for first result that evaluates to true. "cond considers any value besides nil and false to be true:"
 * A 'binary' is a bitstring where the number of bits is divisible by 8. You can create bitstrings with any number of bits per 'entry.'
-* Char lists (single-character strings): "In practice, char lists are used mostly when interfacing with Erlang, in particular old libraries that do not accept binaries as arguments"
+* Char lists (single-quote strings): "In practice, char lists are used mostly when interfacing with Erlang, in particular old libraries that do not accept binaries as arguments"
 * Keyword lists are useful for optional parameters, but can have duplicate keys and have linear lookup. Syntax: `[a: 1, b: 2]`, equivalent to `[{:a, 1}, {:b, 2}]`, created implicitly if the last parameter provided in a function call (`call param1, a: 1, b: 2`). Accessing a certain key uses this syntax: `list[:key]` - both nonexistent key lookups and recursive nonexistent lookups will return nil instead of a crash
 * Maps have constant-time lookup, are unique on key, and keys can be of any type. Syntax: `%{:a => 1, 2 => :b}` More useful in pattern matching because "map matches as long as the keys in the pattern exist in the given map." Also, "When all the keys in a map are atoms, you can use the keyword syntax for convenience: `%{a: 1, b: 2}`"
 * Two techniques to get map values out: `map.key` (crashes on missing key) and `map[:key]` (returns nil on missing) - `map.key` is recommended to fail fast: http://blog.plataformatec.com.br/2014/09/writing-assertive-code-with-elixir/
 * Interesting methods for deep access/modification: `put_in/2` and `update_in/2` (in `Kernel`)
-* In a module (`defmodule`), you define functions with `def/2`. For private functions use `defp/2`"
+* In a module (`defmodule`), you define functions with `def/2`. For private functions use `defp/2`
 * Default parameter value expressions with `\\`. If function has multiple clauses, then the default values have to be in a separate, body-less clause. Like this: `def dowork(x \\ IO.puts "hello")`
 * Ranges, like `1..6` are enumerable so `Enum` functions can operate on them. Sadly, `Range.range?` as a way to test for them doesn't match the rest of the `is_<type>/1` functions.
 
@@ -116,7 +116,7 @@ The next day I continued the language tutorial with [Enumerables and Streams](ht
 ### Impressive
 
 * "Elixir treats documentation as first-class and provides many functions to access documentation" - right inline with `@moduledoc` and `@doc` https://hexdocs.pm/elixir/writing-documentation.html
-* The pipe operator turns this: `Enum.sum(Enum.filter(Enum.map(1..100_000, &(&1 * 3)), odd?))` into this: `1..100_000 |> Enum.map(&(&1 * 3)) |> Enum.filter(odd?) |> Enum.sum`. The result of the previous expression is inserted as the first parameter in the nextfunction call.
+* The pipe operator turns this: `Enum.sum(Enum.filter(Enum.map(1..100_000, &(&1 * 3)), odd?))` into this: `1..100_000 |> Enum.map(&(&1 * 3)) |> Enum.filter(odd?) |> Enum.sum`. The result of the previous expression is inserted as the first parameter in the next function call.
 * Streams give you lazy evaluation with the same pipe syntax. There's even `Stream.cycle` for an infinitely repeating stream!
 * `Stream.unfold` is like the opposite of reduce. You need to return a tuple with result and next remaining state, like `String.next_codepoint`.
 * Erlang processes are the core building block for concurrency. They are very lightweight - you can create thousands in a given OS Process with very little impact.
@@ -160,7 +160,7 @@ The next day I continued the language tutorial with [Enumerables and Streams](ht
 * How to get the list of things inside a directory? I don't see readdir.
     * `File.ls`
 * What is the difference between Protocols, Behaviors and Callbacks?
-    * Kind of a subtle difference. Seems that one is about being able supporting different types of data with a given algorithm/intent, an dthe other is more about contracts and modularization: "Protocols handle polymorphism at the data/type level whereas Behaviours provide it at the module level" https://www.djm.org.uk/posts/elixir-behaviours-vs-protocols-what-is-the-difference/
+    * Kind of a subtle difference. Seems that one is about being able supporting different types of data with a given algorithm/intent, and the other is more about contracts and modularization: "Protocols handle polymorphism at the data/type level whereas Behaviours provide it at the module level" https://www.djm.org.uk/posts/elixir-behaviours-vs-protocols-what-is-the-difference/
     * Callbacks are a component of a Behavior, defining a part of its API surface area.
 * Now that I know more about Elixir, what are the differences between it and Erlang?
     * Useful article: http://elixir-lang.org/crash-course.html#notable-differences
@@ -224,7 +224,7 @@ Four days in, and I'm finally ready to dig into the core concepts for fault-tole
 * `with` construct is the pattern-matching corollary to `|>` operator
 * Wow. `quote` returns an Abstract Syntax Tree (AST) for the code provided, and `unquote` will execute that AST. http://elixir-lang.org/getting-started/meta/quote-and-unquote.html
 * `Macro.to_string/1` will produce the original source code for a provided AST
-* `quote(do: if(true, do: :this, else: :that))` is equivalent to `quote(do: if true do :this else :that end)`
+* `quote(do: if(true, [do: :this, else: :that]))` is equivalent to `quote(do: if true do :this else :that end)`
 * `unquote_splicing` takes a block of code and behaves as if that code was copied into the current context. For code blocks, for inserting array elements.
 * Macros take code constructs and transform them into other code constructs, which are injected back into the original code. `Macro.expand_once` helps you debug them, by showing you the intermediate code before it is run or turned into bytecode.
 * Macros don't interfere with variables already in their target scope, unless `var!()` surrounds the target value
