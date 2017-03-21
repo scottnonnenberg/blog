@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/scottnonnenberg/blog/compare/v1.13.2...v1.14.0) (2017-03-21)
+
+
+### Bug Fixes
+
+* **post:** Renamed Elixir post to reflect post date ([1da9e4a](https://github.com/scottnonnenberg/blog/commit/1da9e4a))
+
+
+### Features
+
+* **post:** Add "Think in alternatives" post ([d7eee8e](https://github.com/scottnonnenberg/blog/commit/d7eee8e))
+
+
+
 <a name="1.13.2"></a>
 ## [1.13.2](https://github.com/scottnonnenberg/blog/compare/v1.13.1...v1.13.2) (2017-03-14)
 
