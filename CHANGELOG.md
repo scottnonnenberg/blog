@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.1"></a>
+## [1.14.1](https://github.com/scottnonnenberg/blog/compare/v1.14.0...v1.14.1) (2017-03-21)
+
+
+### Bug Fixes
+
+* **post:** Add tags to dev productivity post ([a9643ca](https://github.com/scottnonnenberg/blog/commit/a9643ca))
+
+
+
 <a name="1.14.0"></a>
 # [1.14.0](https://github.com/scottnonnenberg/blog/compare/v1.13.2...v1.14.0) (2017-03-21)
 
