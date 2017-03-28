@@ -11,6 +11,7 @@ tags:
   - reactjs
   - nodejs
   - javascript
+  - eslint
 ---
 
 Welcome to the third post in my [stack improvements](/tags/stack-improvements/) series! This time we'll be talking about [Flow](https://flowtype.org/), a static analysis tool which can improve your Javascript development no matter your choice of framework or platform.
