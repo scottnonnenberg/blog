@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.14.2"></a>
+## [1.14.2](https://github.com/scottnonnenberg/blog/compare/v1.14.1...v1.14.2) (2017-03-28)
+
+
+### Bug Fixes
+
+* **post:** Add eslint tag to Flow post ([1ae8fce](https://github.com/scottnonnenberg/blog/commit/1ae8fce))
+
+
+
 <a name="1.14.1"></a>
 ## [1.14.1](https://github.com/scottnonnenberg/blog/compare/v1.14.0...v1.14.1) (2017-03-21)
 
