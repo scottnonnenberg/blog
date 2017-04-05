@@ -7,6 +7,7 @@ path: /better-changelogs-strings-and-paths/
 next: /hands-on-with-circleci-and-node-js/
 previous: /private-node-js-modules-a-journey/
 tags:
+  - git
   - stack-improvements
   - open-source
   - nodejs
