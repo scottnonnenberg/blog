@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.15.0"></a>
+# [1.15.0](https://github.com/scottnonnenberg/blog/compare/v1.14.2...v1.15.0) (2017-04-05)
+
+
+### Features
+
+* **post:** Add "Better Git configuration" ([aedcfe5](https://github.com/scottnonnenberg/blog/commit/aedcfe5))
+* **tag:** Add 'git' tag ([d0537f4](https://github.com/scottnonnenberg/blog/commit/d0537f4))
+
+
+
 <a name="1.14.2"></a>
 ## [1.14.2](https://github.com/scottnonnenberg/blog/compare/v1.14.1...v1.14.2) (2017-03-28)
 
