@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.15.1"></a>
+## [1.15.1](https://github.com/scottnonnenberg/blog/compare/v1.15.0...v1.15.1) (2017-04-06)
+
+
+### Bug Fixes
+
+* **post:** Fix a few typos in "Better Git configuration" ([885071a](https://github.com/scottnonnenberg/blog/commit/885071a))
+
+
+
 <a name="1.15.0"></a>
 # [1.15.0](https://github.com/scottnonnenberg/blog/compare/v1.14.2...v1.15.0) (2017-04-05)
 
