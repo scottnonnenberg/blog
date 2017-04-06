@@ -92,7 +92,7 @@ _Note:_ This can make transfers a bit slower.
 
 In addition to the built-in `git diff` command, Git allows you to specify [an external tool to visualize your diffs](https://git-scm.com/docs/git-difftool). This collection of entries sets Git up to use [`icdiff`](https://github.com/jeffkaufman/icdiff) to display the differences between two states of your repository:
 
-```
+```text
 [diff]
   tool = icdiff
 [difftool]
@@ -165,8 +165,7 @@ _Some good references:_
 * Get up to date on all the `git log` options: https://git-scm.com/docs/git-log#_options
 * Dig into the various Git revision formats: https://git-scm.com/docs/gitrevisions
 * Learn about signing commits: https://mikegerwitz.com/papers/git-horror-story
-* Customize aliases for fun and profit:
-* https://hackernoon.com/lesser-known-git-commands-151a1918a60
+* Customize aliases for fun and profit: https://hackernoon.com/lesser-known-git-commands-151a1918a60
 * More about git repository corruption:
     * https://groups.google.com/forum/#!topic/binary-transparency/f-BI4o8HZW0
     * http://git.661346.n2.nabble.com/propagating-repo-corruption-across-clone-td7580504i40.html
