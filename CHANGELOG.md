@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.0"></a>
+# [1.16.0](https://github.com/scottnonnenberg/blog/compare/v1.15.1...v1.16.0) (2017-04-19)
+
+
+### Bug Fixes
+
+* **deps:** Add react-dom dependency as requested by enzyme ([44deb46](https://github.com/scottnonnenberg/blog/commit/44deb46))
+* **post:** Fix link to mongodb in Node.js stories post ([b5eab54](https://github.com/scottnonnenberg/blog/commit/b5eab54))
+* **post:** Remove . in "Node.is" (was being interpreted as url) ([0b423d6](https://github.com/scottnonnenberg/blog/commit/0b423d6))
+
+
+### Features
+
+* **post:** Add Node.js stories post, new lessons learned tag ([d5119a8](https://github.com/scottnonnenberg/blog/commit/d5119a8))
+* **tag:** Add lessons-learned tag to some old posts ([b563671](https://github.com/scottnonnenberg/blog/commit/b563671))
+
+
+
 <a name="1.15.1"></a>
 ## [1.15.1](https://github.com/scottnonnenberg/blog/compare/v1.15.0...v1.15.1) (2017-04-06)
 
