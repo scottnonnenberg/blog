@@ -8,6 +8,7 @@ next: /a-functional-distinction/
 previous: /contract-react-training/
 tags:
   - open-source
+  - lessons-learned
   - nodejs
   - javascript
   - software

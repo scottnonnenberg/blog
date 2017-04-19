@@ -7,6 +7,7 @@ path: /enterprise-node-jsjavascript-difficulties/
 next: /systems-and-incentives/
 previous: /the-why-of-agile/
 tags:
+  - lessons-learned
   - business
   - nodejs
   - software

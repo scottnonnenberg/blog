@@ -7,8 +7,9 @@ path: /p-for-postgres-nerp-stack-part-4/
 next: /my-2016-mantras/
 previous: /r-for-react-nerp-stack-part-3/
 tags:
-  - software
   - nerp-stack
+  - lessons-learned
+  - software
 ---
 
 Welcome to the fourth and final installment in my series ([Part 1](/n-for-node-js-nerp-stack-part-1/), [Part 2](/e-for-express-nerp-stack-part-2/), [Part 3](/r-for-react-nerp-stack-part-3/)) delving into a new friendly (not [MEAN](http://mean.io/)), and perhaps even dazzling (but not a [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle))) development stack: NERP. Today we take a look at the Pros and Cons of [PostgreSQL](http://www.postgresql.org/).

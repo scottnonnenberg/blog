@@ -7,6 +7,7 @@ path: /the-dangerous-cliffs-of-node-js/
 next: /contract-teaching/
 previous: /a-system-for-2015/
 tags:
+  - lessons-learned
   - business
   - nodejs
   - javascript
