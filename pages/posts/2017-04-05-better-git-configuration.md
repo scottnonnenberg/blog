@@ -3,7 +3,7 @@ title: Better Git configuration
 date: 2017-04-05T20:25:28.823Z
 layout: post
 path: /better-git-configuration/
-next:
+next: /hard-won-lessons-five-years-with-node-js/
 previous: /think-in-alternatives-dev-productivity-tip-5/
 tags:
   - git
