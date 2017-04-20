@@ -22,7 +22,7 @@ Any new platform has its share of [tricky bits](/node-js-is-not-magical/#a-bit-t
 
 ### Classes
 
-*When I was first getting started with Node.js, I was writing [scraper](https://scottnonnenberg.com/work/#liffft-2012-q-1-to-2013-q-2). It didn't take me long to realize that if I didn't do something, I'd make a whole lot of requests in parallel. This alone was an important discovery. But since I hadn't yet fully internalized [the power of the ecosystem](/n-for-node-js-nerp-stack-part-1/#2-many-modules-available-via-npm), I sat down and wrote my own parallelism limiter. It worked, and made sure that there were never more than N requests in progress at any given time.*
+*When I was first getting started with Node.js, I was writing a [scraper](https://scottnonnenberg.com/work/#liffft-2012-q-1-to-2013-q-2). It didn't take me long to realize that if I didn't do something, I'd make a whole lot of requests in parallel. This alone was an important discovery. But since I hadn't yet fully internalized [the power of the ecosystem](/n-for-node-js-nerp-stack-part-1/#2-many-modules-available-via-npm), I sat down and wrote my own parallelism limiter. It worked, and made sure that there were never more than N requests in progress at any given time.*
 
 *Later, I needed to introduce a second area of parallelism limits in the app, to ensure that we only pulled the information for N users at a time. But I started running into really weird problems when I introduced a second instance of my class into the process. My logs didn't make sense. Eventually I realized that [CoffeeScript](http://coffeescript.org/)'s class property syntax didn't give me a new array for every instance, but one shared across all of them!*
 
@@ -155,6 +155,6 @@ If you need more reasons not to use New Relic, here are two more:
 
 ## Learned well!
 
-[Memory of emotional events is retained with more clarity and detail](https://en.wikipedia.org/wiki/Emotion_and_memory). Thus, each of these situations is nicely seared into my brain. You won't remember it quite as well as I do, but maybe if you imagine my struggle, that will help?
+[Memory of emotional events is retained with more clarity and detail](https://en.wikipedia.org/wiki/Emotion_and_memory). Thus, each of these situations is nicely seared into my brain. You won't remember it quite as well as I do, but maybe if you imagine my struggle that will help?
 
 Amazingly, my initial outline for this post started with twice as many situations worth mentioning, as well a lot which weren't Node.js specific. Watch for more posts like this one!
