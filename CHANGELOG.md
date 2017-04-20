@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.1"></a>
+## [1.16.1](https://github.com/scottnonnenberg/blog/compare/v1.16.0...v1.16.1) (2017-04-20)
+
+
+### Bug Fixes
+
+* **typo:** Fix a few typos in Hard-won Node.js lessons post ([a918e2a](https://github.com/scottnonnenberg/blog/commit/a918e2a))
+
+
+
 <a name="1.16.0"></a>
 # [1.16.0](https://github.com/scottnonnenberg/blog/compare/v1.15.1...v1.16.0) (2017-04-19)
 
