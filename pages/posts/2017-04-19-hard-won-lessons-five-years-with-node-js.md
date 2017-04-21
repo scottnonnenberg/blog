@@ -124,7 +124,7 @@ Much of getting good with Node.js is simply working in the larger ecosystem effe
 
 *Now I was hot on the trail. After a few more minutes I had a specific bit of code to attach to the error message I initially needed to dig to find. It was a dependency with new [ES6 language features](http://es6-features.org/) running on Node.js version 4! It turned out that [a dependency had an unbounded sub-dependency, pulling in a too-new version of `punycode`](https://github.com/scottnonnenberg/blog/commit/f64e14acfabb64d0f5dfbcc42206eb2bb3057da4).*
 
-Lock your entire dependency tree to specific versions with [Yarn](https://github.com/scottnonnenberg/blog/commit/f64e14acfabb64d0f5dfbcc42206eb2bb3057da4). If you can't do that, lock your direct dependencies to specific versions. But do know that your dependencies' too-loose dependency versions could still get you into this situation.
+Lock your entire dependency tree to specific versions with [Yarn](https://yarnpkg.com/). If you can't do that, lock your direct dependencies to specific versions. But do know that your dependencies' too-loose dependency versions could still get you into this situation.
 
 When it's time to upgrade, small changes, one at a time, are far easier to investigate if things go wrong. Install or upgrade a small number of dependencies at a time. And use a [Continuous Integration (CI)](https://en.wikipedia.org/wiki/Continuous_integration) server for frequent from-scratch installations of node modules.
 
