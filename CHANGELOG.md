@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.16.2"></a>
+## [1.16.2](https://github.com/scottnonnenberg/blog/compare/v1.16.1...v1.16.2) (2017-04-21)
+
+
+### Bug Fixes
+
+* **post:** Fix the link to Yarn in Hard-won Node.js lessons post ([0f0550f](https://github.com/scottnonnenberg/blog/commit/0f0550f))
+
+
+
 <a name="1.16.1"></a>
 ## [1.16.1](https://github.com/scottnonnenberg/blog/compare/v1.16.0...v1.16.1) (2017-04-20)
 
