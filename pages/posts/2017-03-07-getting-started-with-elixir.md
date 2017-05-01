@@ -1,4 +1,5 @@
 ---
+rank: 8
 title: Getting started with Elixir
 date: 2017-03-07T18:01:14.466Z
 layout: post

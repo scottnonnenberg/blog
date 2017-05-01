@@ -1,4 +1,5 @@
 ---
+rank: 15
 title: An Agile organization
 date: 2017-02-21T22:15:12.585Z
 layout: post

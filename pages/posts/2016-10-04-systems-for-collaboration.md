@@ -1,5 +1,5 @@
 ---
-rank: 59
+rank: 67
 title: Systems for collaboration
 date: 2016-10-04T17:55:42.189Z
 layout: post

@@ -1,4 +1,5 @@
 ---
+rank: 1
 title: "Hard-won lessons: Five years with Node.js"
 date: 2017-04-19T19:21:36.109Z
 layout: post

@@ -1,5 +1,5 @@
 ---
-rank: 33
+rank: 30
 title: Better changelogs, strings, and paths
 date: 2016-07-19T17:00:26.971Z
 layout: post

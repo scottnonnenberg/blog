@@ -1,5 +1,5 @@
 ---
-rank: 25
+rank: 11
 title: Better docs and static analysis
 date: 2016-12-06T18:19:26.567Z
 layout: post

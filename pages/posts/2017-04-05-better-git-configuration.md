@@ -1,4 +1,5 @@
 ---
+rank: 2
 title: Better Git configuration
 date: 2017-04-05T20:25:28.823Z
 layout: post

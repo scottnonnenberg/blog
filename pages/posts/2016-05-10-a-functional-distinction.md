@@ -1,5 +1,5 @@
 ---
-rank: 55
+rank: 48
 title: A functional distinction
 date: 2016-05-10T19:43:36.238Z
 layout: post

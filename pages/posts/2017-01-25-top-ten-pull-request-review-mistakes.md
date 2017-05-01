@@ -1,5 +1,5 @@
 ---
-rank: 1
+rank: 3
 title: Top ten pull request review mistakes
 date: 2017-01-25T20:14:22.894Z
 layout: post

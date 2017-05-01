@@ -1,5 +1,5 @@
 ---
-rank: 18
+rank: 27
 title: "Find a test rhythm (Dev productivity tip #4)"
 date: 2017-01-11T01:42:06.133Z
 layout: post
