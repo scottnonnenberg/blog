@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.17.0"></a>
+# [1.17.0](https://github.com/scottnonnenberg/blog/compare/v1.16.2...v1.17.0) (2017-05-04)
+
+
+### Bug Fixes
+
+* **post:** Fix broken link in Haskell post ([1503da9](https://github.com/scottnonnenberg/blog/commit/1503da9))
+
+
+### Features
+
+* **popularity:** Post rankings now up-to-date as of 4/30 ([6ac3de6](https://github.com/scottnonnenberg/blog/commit/6ac3de6))
+* **post:** Add new Haskell blog post ([868eb99](https://github.com/scottnonnenberg/blog/commit/868eb99))
+
+
+
 <a name="1.16.2"></a>
 ## [1.16.2](https://github.com/scottnonnenberg/blog/compare/v1.16.1...v1.16.2) (2017-04-21)
 
