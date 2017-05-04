@@ -249,7 +249,7 @@ data Day = Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
 * What's a good Haskell argument processing library?
   * Seems reasonable: https://github.com/vincenthz/hs-cli
 * "indentation is important in Haskell" - how, exactly?
-  * From https://en.wikibooks.org/wiki/Haskell/Indentation:
+  * From https://en.wikibooks.org/wiki/Haskell/Indentation
   * The golden rule of indentation: "Code which is part of some expression should be indented further in than the beginning of that expression"
   * Very important for the grouping of statements in `let` and `do`. Two choices:
 
