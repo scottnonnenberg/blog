@@ -90,14 +90,15 @@ I acknowledge that my preference for `function()` over `function ()` probably co
 
 1. Pascal
 2. A little bit of Javascript
-3. C++
-4. Java
-5. A little bit of Javascript
-6. C#
-7. Ruby and a little bit of Javascript
-8. Objective C
-9. CoffeeScript
-10. Lots of Javascript
+3. VBScript
+4. C++
+5. Java
+6. A little bit of Javascript
+7. C# and a bit of Visual Basic .NET
+8. Ruby and a little bit of Javascript
+9. Objective C
+10. CoffeeScript
+11. Lots of Javascript
 
 That's my fingerprint. Everything I see is filtered through all of my previous experiences. You can see why I feel right at home with curly braces. I often appeal to objective readability when discussing my dislike of [Ruby's paren-less function calls](http://stackoverflow.com/questions/340624/do-you-leave-parentheses-in-or-out-in-ruby), but it has more to do with my history.
 
