@@ -8,6 +8,7 @@ next: /from-tech-person-to-people-person/
 previous: /the-state-of-thehelp/
 tags:
   - refactoring
+  - functional
   - javascript
   - software
 ---

@@ -6,6 +6,9 @@ path: /what-s-a-monad-digging-into-haskell/
 next:
 previous: /hard-won-lessons-five-years-with-node-js/
 tags:
+  - elixir
+  - functional
+  - software
 ---
 
 _[Warning: This is a very long post. You might consider skipping the entire "Learning you for great good!" section, jumping directly to the "Well, what's a Monad?" section]_

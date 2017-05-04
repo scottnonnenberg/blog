@@ -7,6 +7,8 @@ path: /getting-started-with-elixir/
 next: /think-in-alternatives-dev-productivity-tip-5/
 previous: /an-agile-organization/
 tags:
+  - elixir
+  - functional
   - software
 ---
 
