@@ -4,7 +4,7 @@ title: "Hard-won lessons: Five years with Node.js"
 date: 2017-04-19T19:21:36.109Z
 layout: post
 path: /hard-won-lessons-five-years-with-node-js/
-next:
+next: /what-s-a-monad-digging-into-haskell/
 previous: /better-git-configuration/
 tags:
   - lessons-learned
