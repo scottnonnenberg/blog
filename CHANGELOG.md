@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.18.0"></a>
+# [1.18.0](https://github.com/scottnonnenberg/blog/compare/v1.17.0...v1.18.0) (2017-05-04)
+
+
+### Bug Fixes
+
+* **post:** Tune up my language history in ESLint Part 3 ([811483a](https://github.com/scottnonnenberg/blog/commit/811483a))
+
+
+### Features
+
+* **bio:** Update bio to reflect changed status ([d5afbc2](https://github.com/scottnonnenberg/blog/commit/d5afbc2))
+* **tags:** Introduce some needed new tags: elixir, functional ([9a7b27f](https://github.com/scottnonnenberg/blog/commit/9a7b27f))
+
+
+
 <a name="1.17.0"></a>
 # [1.17.0](https://github.com/scottnonnenberg/blog/compare/v1.16.2...v1.17.0) (2017-05-04)
 
