@@ -323,7 +323,7 @@ foo = Just 3   >>= (\x ->
 
 Can be rewritten as this. We could even take that last line and turn it into a `return` to make it simpler...
 
-```
+```haskell
 foo :: Maybe String
 foo = do
   x <- Just 3
