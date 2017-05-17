@@ -22,7 +22,7 @@ I've decided to put away my consultant hat for a while, because I've joined [Ope
 
 If you're not already one of the millions of people using Signal Private Messenger [for iOS](https://itunes.apple.com/us/app/signal-private-messenger/id874139669) or [for Android](https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms), you should start! Unlike text messages or email, it is encrypted so that nobody can snoop on your conversations.
 
-You might be thinking that you don't have that problem, since messages sent with services like [iMessage](https://en.wikipedia.org/wiki/IMessage) or [Facebook Messenger](https://www.messenger.com/) are encrypted when sent across the internet. That's true, but those messages are not encrypted when archived on Apple or Facebook servers. That's how your historical messages reappear when you log into the website and when you set up a new device.
+You might be thinking that you don't have that problem, since messages sent via [Facebook Messenger](https://www.messenger.com/) or [Twitter DMs](https://support.twitter.com/articles/14606) are encrypted when sent across the internet. That's true, but those messages are not encrypted when archived on Facebook or Twitter servers. That's how your historical messages reappear when you log into the website and when you set up a new device.
 
 Signal isn't built like that. Its core server component knows next to nothing about its users. Moreover, it cannot understand the messages being passed from one user to another, since it doesn't have the keys to decrypt those messages. Yes, the messages are saved in the client applications themselves, but even those can be eliminated by enabling [disappearing messages](https://whispersystems.org/blog/disappearing-messages/).
 
