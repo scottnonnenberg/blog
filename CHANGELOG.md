@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.19.0"></a>
+# [1.19.0](https://github.com/scottnonnenberg/blog/compare/v1.18.0...v1.19.0) (2017-05-17)
+
+
+### Bug Fixes
+
+* **post:** Add haskell type annotation to code sample ([3000b99](https://github.com/scottnonnenberg/blog/commit/3000b99))
+
+
+### Features
+
+* **post:** Add Starting on Signal post ([bad3983](https://github.com/scottnonnenberg/blog/commit/bad3983))
+
+
+
 <a name="1.18.0"></a>
 # [1.18.0](https://github.com/scottnonnenberg/blog/compare/v1.17.0...v1.18.0) (2017-05-04)
 
