@@ -3,7 +3,7 @@ title: What's a Monad? Digging into Haskell
 date: 2017-05-03T21:07:06.915Z
 layout: post
 path: /what-s-a-monad-digging-into-haskell/
-next:
+next: /starting-on-signal/
 previous: /hard-won-lessons-five-years-with-node-js/
 tags:
   - elixir
