@@ -1,7 +1,7 @@
 {
   "name": "blog-scottnonnenberg-com",
   "private": true,
-  "version": "1.19.1",
+  "version": "1.20.0",
   "scripts": {
     "release": "standard-version",
     "prerelease": "npm run build-production",

@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.20.0"></a>
+# [1.20.0](https://github.com/scottnonnenberg/blog/compare/v1.19.1...v1.20.0) (2017-05-31)
+
+
+### Features
+
+* **post:** Add 'A holistic health checkin' ([eb35789](https://github.com/scottnonnenberg/blog/commit/eb35789))
+
+
+
 <a name="1.19.1"></a>
 ## [1.19.1](https://github.com/scottnonnenberg/blog/compare/v1.19.0...v1.19.1) (2017-05-17)
 
