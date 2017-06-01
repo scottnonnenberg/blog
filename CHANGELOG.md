@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.20.1"></a>
+## [1.20.1](https://github.com/scottnonnenberg/blog/compare/v1.20.0...v1.20.1) (2017-06-01)
+
+
+### Bug Fixes
+
+* **post:** Update health checkin - proper CDN, a few tweaks ([a62dcb9](https://github.com/scottnonnenberg/blog/commit/a62dcb9))
+
+
+
 <a name="1.20.0"></a>
 # [1.20.0](https://github.com/scottnonnenberg/blog/compare/v1.19.1...v1.20.0) (2017-05-31)
 
