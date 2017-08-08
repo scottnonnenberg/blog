@@ -41,7 +41,7 @@ BREAKING CHANGE: now `notate(cb, err, data)` instead of
 
 How will you remember to follow this format? How will you ensure everyone working in a repository follows it?
 
-Have no fear! The [`ghooks`](https://github.com/gtramontina/ghooks) node module allows you to set up `package.json`-defined [`git` hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) ([`husky`](https://github.com/massiveart/husky) works for this too), installed in a project at `npm install` time. And the [`validate-commit-msg`](https://github.com/kentcdodds/validate-commit-msg) node module is designed for the [`commit-msg` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks#committing-workflow-hooks-KpT2hQhaik), ensuring that commit messages are formatted properly! In your `package.json`:
+Have no fear! The [`ghooks`](https://github.com/gtramontina/ghooks) node module allows you to set up `package.json`-defined [`git` hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) ([`husky`](https://github.com/typicode/husky) works for this too), installed in a project at `npm install` time. And the [`validate-commit-msg`](https://github.com/kentcdodds/validate-commit-msg) node module is designed for the [`commit-msg` hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks#committing-workflow-hooks-KpT2hQhaik), ensuring that commit messages are formatted properly! In your `package.json`:
 
 ```json
 {
