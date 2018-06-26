@@ -9,6 +9,7 @@ import { config } from 'config';
 
 import { rhythm } from 'src/util/typography';
 import intersperse from 'src/util/intersperse';
+import shortDate from 'src/util/shortDate';
 
 import ReadMore from 'src/ReadMore';
 import Author from 'src/Author';
@@ -63,7 +64,17 @@ export default class MarkdownWrapper extends React.Component {
     return (
       <DocumentTitle title={`${data.title} | ${config.blogTitle}`}>
         <div className="post">
-          <h1>{data.title}</h1>
+          <h1 style={{ marginBottom: 0 }}>{data.title}</h1>
+          <h3
+            style={{
+              color: 'lightgray',
+              marginTop: 0,
+              marginBottom: '1em',
+              fontWeight: 'normal',
+              letterSpaacing: '-2px',
+            }}
+          >{shortDate(post.data.date)}</h3>
+
           <div className="markdown" dangerouslySetInnerHTML={{ __html: data.body }} />
           <EmailSignup text="Enjoy this post? Sign up for free updates!" />
           <div
