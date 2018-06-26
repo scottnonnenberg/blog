@@ -31,9 +31,8 @@ describe('unit/wrappers/md', () => {
     expect(wrapper.find(Author)).to.have.length(1);
     expect(wrapper.find(ReadMore)).to.have.length(1);
 
-    expect(wrapper.contains(<h1>Post title</h1>)).to.equal(true);
-
     const html = wrapper.html();
+    expect(html).to.contain('Post title');
     expect(html).to.contain('Tags:');
   });
 
