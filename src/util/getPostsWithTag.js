@@ -1,7 +1,7 @@
-import filter from 'lodash/filter';
-import includes from 'lodash/includes';
-import get from 'lodash/get';
+const filter = require('lodash/filter');
+const includes = require('lodash/includes');
+const get = require('lodash/get');
 
-export default function getPostsWithTag(posts, tag) {
-  return filter(posts, post => includes(get(post, 'data.tags'), tag));
-}
+module.exports = function getPostsWithTag(posts, tag) {
+  return filter(posts, post => includes(get(post, 'frontmatter.tags'), tag));
+};

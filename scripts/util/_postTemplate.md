@@ -1,10 +1,7 @@
 ---
 title: TITLE
 date: DATE
-layout: post
 path: PATH
-next:
-previous: PREVIOUS
 tags:
 ---
 

@@ -14,7 +14,7 @@ function getDuration() {
   return difference;
 }
 
-exports.onRouteUpdate = state => {
+exports.onRouteUpdate = ({ location }) => {
   window._paq = window._paq || [];
 
   if (first) {
@@ -22,8 +22,8 @@ exports.onRouteUpdate = state => {
     window._paq.push(['trackEvent', 'javascript', 'load', 'duration', getDuration()]);
   }
   else {
-    window._paq.push(['setCustomUrl', state.pathname]);
-    window._paq.push(['setDocumentTitle', state.pathname]);
+    window._paq.push(['setCustomUrl', location.pathname]);
+    window._paq.push(['setDocumentTitle', location.pathname]);
     window._paq.push(['trackPageView']);
   }
 };

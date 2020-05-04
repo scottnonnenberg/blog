@@ -34,8 +34,11 @@ export default function loadPosts(providedOptions) {
       return {
         path: filePath,
         contents,
-        body: markdown ? md.render(metadata.body) : null,
-        data: metadata.attributes,
+        fields: {
+          slug: metadata.attributes.path,
+        },
+        html: markdown ? md.render(metadata.body) : null,
+        frontmatter: metadata.attributes,
       };
     })
     .value();

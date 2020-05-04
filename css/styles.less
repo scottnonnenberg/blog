@@ -77,6 +77,11 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-shadow: none;
 }
 
+// New markdown parsing gives us more <p> tags than we had before
+li p {
+  margin-bottom: 0px;
+}
+
 h1 a.call-to-action, h2 a.call-to-action, h3 a.call-to-action, h4 a.call-to-action, h5 a.call-to-action, h6 a.call-to-action {
   background-image: none;
   text-shadow: none;
@@ -210,7 +215,7 @@ span.date {
 }
 
 .markdown pre {
-  background: #EEEEEE;
+  margin-bottom: 1rem;
 }
 
 .markdown pre code {
@@ -221,6 +226,7 @@ span.date {
   word-wrap: normal;
   line-height: 1rem;
   background-image: none;
+  width: 100%;
 }
 
 blockquote {

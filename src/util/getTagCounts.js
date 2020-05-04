@@ -10,7 +10,7 @@ import flow from 'lodash/fp/flow';
 
 export default flow(
   map(post =>
-    map(tag => [tag, 1])(post.data.tags)
+    map(tag => [tag, 1])(post.frontmatter.tags)
   ),
   flatten,
   groupBy(0),

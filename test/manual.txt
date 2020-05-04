@@ -11,9 +11,6 @@ html
   CSS loads in develop and production
   Javascript loads in develop, but only in production of config.noProductionJavascript is not set
 
-gatsby
-  linked fork generates ids for each header, allowing for deep-linking into articles
-
 meta tags
   Meta tags for articles are well-formed
   Meta tags for front page and other non-articles are well-formed
@@ -22,18 +19,8 @@ meta tags
     https://cards-dev.twitter.com/validator
     https://search.google.com/structured-data/testing-tool/u/0/
 
-tracking
-  validate that each pageview is reported
-  validate that time on page is reported
-  with javascript off, validate that each pageview is reported
-
 with SPA enabled (or develop mode)
-  (wrappers/md)
-    validate proper scrolling to hash links - be sure to check back/forward, scroll positions, etc. Messy.
-  (html)
-    validate that each pageview is reported
-  (_template)
-    validate that local links in blog post contents (HTMLPreview/md) or author section (Author) stay within SPA via catch-links
+  validate proper scrolling to hash links - be sure to check back/forward, scroll positions, etc. Messy.
 
 rss/atom
   test using feedly.com (other RSS tools?)

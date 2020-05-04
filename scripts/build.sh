@@ -24,12 +24,12 @@ fi
 echo
 echo '** building with gatsby'
 
-npm run build
+yarn build
 
 echo
 echo '** building RSS/Atom XML'
 
-npm run generate-rss
+yarn generate-rss
 
 echo
 echo '** copying assets'
@@ -39,7 +39,7 @@ cp assets/* public/
 echo
 echo '** building all.json and recent.json'
 
-npm run generate-json
+yarn generate-json
 
 echo
 echo '** compressing files'

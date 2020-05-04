@@ -1,17 +1,14 @@
 import './util/setupModulePath';
 
-import fs from 'fs';
-import path from 'path';
-
 import _ from 'lodash';
-import toml from 'toml';
 
 import loadPosts from 'scripts/util/loadPosts';
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
+import * as globalConfig from 'gatsby-config';
 
-const configPath = path.join(__dirname, '../config.toml');
-const config = toml.parse(fs.readFileSync(configPath).toString());
+const config = globalConfig.siteMetadata;
+
 
 const limit = parseInt(process.argv[2], 10) || 1;
 const posts = loadPosts({

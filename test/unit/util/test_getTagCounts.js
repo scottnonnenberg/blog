@@ -9,7 +9,7 @@ describe('unit/utils/getTagCounts', () => {
 
   it('returns counts for one post', () => {
     const posts = [{
-      data: {
+      frontmatter: {
         tags: ['one', 'two', 'three'],
       },
     }];
@@ -24,11 +24,11 @@ describe('unit/utils/getTagCounts', () => {
 
   it('returns counts for two posts', () => {
     const posts = [{
-      data: {
+      frontmatter: {
         tags: ['one', 'two', 'three'],
       },
     }, {
-      data: {
+      frontmatter: {
         tags: ['two', 'three'],
       },
     }];

@@ -10,12 +10,12 @@ describe('unit/utils/getPostsWithTag', () => {
 
   it('handles posts without tags', () => {
     const posts = [{}, {
-      data: {
+      frontmatter: {
         tags: ['one', 'three'],
       },
     }];
     const expected = [{
-      data: {
+      frontmatter: {
         tags: ['one', 'three'],
       },
     }];
@@ -26,24 +26,24 @@ describe('unit/utils/getPostsWithTag', () => {
 
   it('includes posts with tag', () => {
     const posts = [{
-      data: {
+      frontmatter: {
         tags: ['one', 'two'],
       },
     }, {
-      data: {
+      frontmatter: {
         tags: ['two', 'three'],
       },
     }, {
-      data: {
+      frontmatter: {
         tags: ['three', 'four'],
       },
     }];
     const expected = [{
-      data: {
+      frontmatter: {
         tags: ['one', 'two'],
       },
     }, {
-      data: {
+      frontmatter: {
         tags: ['two', 'three'],
       },
     }];

@@ -4,6 +4,7 @@
     {
       "path": ".",
       "folder_exclude_patterns": [
+        ".cache",
         "packages",
         "node_modules",
         "bower_components",
@@ -20,6 +21,7 @@
         "logs"
       ],
       "file_exclude_patterns": [
+        "p.js",
         "*.sublime-workspace",
         "*.log",
         "*.rdb",
