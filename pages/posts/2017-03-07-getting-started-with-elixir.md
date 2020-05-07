@@ -12,7 +12,7 @@ tags:
   - software
 ---
 
-The more time I spend with [JavaScript](/tags/javascript/), the more brushes I have with the [dangerous cliffs of Node.js](https://blog.scottnonnenberg.com/the-dangerous-cliffs-of-node-js/), and the more I gravitate toward [functional design](/a-functional-distinction/) principles. Thus, I periodically find myself looking at functional languages. This is the deepest I've gone so far - with [Elixir](http://elixir-lang.org/). I'm excited!
+The more time I spend with [JavaScript](/tags/javascript/), the more brushes I have with the [dangerous cliffs of Node.js](/the-dangerous-cliffs-of-node-js/), and the more I gravitate toward [functional design](/a-functional-distinction/) principles. Thus, I periodically find myself looking at functional languages. This is the deepest I've gone so far - with [Elixir](http://elixir-lang.org/). I'm excited!
 
 <div class='fold'></div>
 
