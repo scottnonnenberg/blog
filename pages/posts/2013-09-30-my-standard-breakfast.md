@@ -1,11 +1,7 @@
 ---
-rank: 55
 title: My Standard Breakfast
 date: 2013-09-30T14:00:00.000Z
-layout: post
 path: /my-standard-breakfast/
-next: /how-not-to-do-customer-service-credit-card-edition/
-previous: /why-i-left-liffft/
 tags:
   - fun
   - nutrition

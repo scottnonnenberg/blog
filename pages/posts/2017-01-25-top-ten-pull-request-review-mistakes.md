@@ -2,10 +2,7 @@
 rank: 3
 title: Top ten pull request review mistakes
 date: 2017-01-25T20:14:22.894Z
-layout: post
 path: /top-ten-pull-request-review-mistakes/
-next: /2017-twenty-years-online/
-previous: /find-a-test-rhythm-dev-productivity-tip-4/
 tags:
   - feedback-loop
   - software

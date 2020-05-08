@@ -1,11 +1,7 @@
 ---
-rank: 60
 title: "Open Source and Feelings: The Awesome"
 date: 2016-01-07T01:26:05.000Z
-layout: post
 path: /open-source-and-feelings-the-awesome/
-next: /four-books-for-greater-understanding/
-previous: /contract-teaching/
 tags:
   - nvc
   - empathy
@@ -86,4 +82,3 @@ It's easy to walk out of an event like that, high on the great people, conversat
 
 Or, even more challenging: "wait, this industry I was pretty comfortable in has deep problems? What does that say about me?"
 
-Next: read my [second blog post about the conference, where I dig into *The Challenge*](/open-source-and-feelings-the-challenge/).

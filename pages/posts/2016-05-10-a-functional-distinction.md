@@ -1,11 +1,7 @@
 ---
-rank: 48
 title: A functional distinction
 date: 2016-05-10T19:43:36.238Z
-layout: post
 path: /a-functional-distinction/
-next: /from-tech-person-to-people-person/
-previous: /the-state-of-thehelp/
 tags:
   - refactoring
   - functional

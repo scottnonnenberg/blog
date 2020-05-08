@@ -1,11 +1,7 @@
 ---
-rank: 53
 title: Antidotes for antiskills
 date: 2014-09-12T15:00:00.000Z
-layout: post
 path: /antidotes-for-antiskills/
-next: /learning-limits-post-injury-running/
-previous: /cycling-computers-and-posture/
 tags:
   - fun
   - business

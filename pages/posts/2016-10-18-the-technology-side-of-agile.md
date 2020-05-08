@@ -1,11 +1,7 @@
 ---
-rank: 41
 title: The technology side of Agile
 date: 2016-10-18T17:54:49.767Z
-layout: post
 path: /the-technology-side-of-agile/
-next: /focus-dev-productivity-tip-2/
-previous: /better-async-redux-i18n-and-node-js-versions/
 tags:
   - agile
   - software

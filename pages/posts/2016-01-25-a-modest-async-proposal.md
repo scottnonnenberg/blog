@@ -1,11 +1,7 @@
 ---
-rank: 51
 title: A modest async proposal
 date: 2016-01-25T19:14:19.547Z
-layout: post
 path: /a-modest-async-proposal/
-next: /n-for-node-js-nerp-stack-part-1/
-previous: /open-source-and-feelings-the-challenge/
 tags:
   - refactoring
   - javascript

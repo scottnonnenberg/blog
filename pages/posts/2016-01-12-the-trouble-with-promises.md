@@ -1,11 +1,7 @@
 ---
-rank: 26
 title: The trouble with promises
 date: 2016-01-12T18:07:21.000Z
-layout: post
 path: /the-trouble-with-promises/
-next: /the-why-of-agile/
-previous: /four-books-for-greater-understanding/
 tags:
   - javascript
   - software

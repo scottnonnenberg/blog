@@ -1,11 +1,7 @@
 ---
-rank: 68
 title: The Last Year
 date: 2014-10-02T20:00:00.000Z
-layout: post
 path: /the-last-year/
-next: /node-js-is-not-magical/
-previous: /autumn-associations/
 tags:
   - business
   - career

@@ -1,11 +1,7 @@
 ---
-rank: 43
 title: "Contract: React Training"
 date: 2016-04-26T17:29:10.448Z
-layout: post
 path: /contract-react-training/
-next: /the-state-of-thehelp/
-previous: /practical-gatsby-js/
 tags:
   - reactjs
   - javascript

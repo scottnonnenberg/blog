@@ -2,10 +2,7 @@
 rank: 16
 title: This blog is now open source!
 date: 2016-07-05T18:43:01.950Z
-layout: post
 path: /this-blog-is-now-open-source/
-next: /private-node-js-modules-a-journey/
-previous: /notate-better-javascript-callstacks/
 tags:
   - gatsbyjs
   - open-source

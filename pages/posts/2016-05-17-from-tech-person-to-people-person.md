@@ -1,11 +1,7 @@
 ---
-rank: 29
 title: From tech person to people person
 date: 2016-05-17T16:28:40.932Z
-layout: post
 path: /from-tech-person-to-people-person/
-next: /avoid-these-abused-words/
-previous: /a-functional-distinction/
 tags:
   - star-wars
   - feedback-loop

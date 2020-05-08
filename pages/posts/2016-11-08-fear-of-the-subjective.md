@@ -1,11 +1,7 @@
 ---
-rank: 71
 title: Fear of the subjective
 date: 2016-11-08T19:42:29.032Z
-layout: post
 path: /fear-of-the-subjective/
-next: /web-application-test-strategy/
-previous: /breaking-other-servers-with-node-js/
 tags:
   - ideas
   - empathy

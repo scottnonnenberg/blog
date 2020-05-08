@@ -2,10 +2,7 @@
 rank: 14
 title: "Think in alternatives (Dev productivity tip #5)"
 date: 2017-03-21T20:07:25.090Z
-layout: post
 path: /think-in-alternatives-dev-productivity-tip-5/
-next: /better-git-configuration/
-previous: /getting-started-with-elixir/
 tags:
   - dev-productivity
   - software

@@ -2,10 +2,7 @@
 rank: 4
 title: The dangerous cliffs of Node.js
 date: 2015-02-11T17:52:00.000Z
-layout: post
 path: /the-dangerous-cliffs-of-node-js/
-next: /contract-teaching/
-previous: /a-system-for-2015/
 tags:
   - lessons-learned
   - business

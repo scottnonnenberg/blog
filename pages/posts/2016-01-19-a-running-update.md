@@ -1,11 +1,7 @@
 ---
-rank: 75
 title: A running update
 date: 2016-01-19T17:55:52.000Z
-layout: post
 path: /a-running-update/
-next: /open-source-and-feelings-the-challenge/
-previous: /systems-and-incentives/
 tags:
   - fun
   - fitness

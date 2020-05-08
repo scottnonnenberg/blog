@@ -1,11 +1,7 @@
 ---
-rank: 66
 title: "Contract: New techniques, old technology"
 date: 2016-05-31T18:39:28.919Z
-layout: post
 path: /contract-new-techniques-old-technology/
-next: /customizing-agile/
-previous: /avoid-these-abused-words/
 tags:
   - contract
   - reactjs

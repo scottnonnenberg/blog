@@ -2,10 +2,7 @@
 rank: 18
 title: Breaking the Node.js event loop
 date: 2016-09-27T16:06:36.530Z
-layout: post
 path: /breaking-the-node-js-event-loop/
-next: /systems-for-collaboration/
-previous: /contract-an-unusual-skillset/
 tags:
   - break-it
   - nodejs

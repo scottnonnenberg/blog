@@ -2,10 +2,7 @@
 rank: 8
 title: Getting started with Elixir
 date: 2017-03-07T18:01:14.466Z
-layout: post
 path: /getting-started-with-elixir/
-next: /think-in-alternatives-dev-productivity-tip-5/
-previous: /an-agile-organization/
 tags:
   - elixir
   - functional

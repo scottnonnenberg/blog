@@ -1,11 +1,7 @@
 ---
-rank: 52
 title: "Contract: Teaching!"
 date: 2015-10-09T16:53:00.000Z
-layout: post
 path: /contract-teaching/
-next: /open-source-and-feelings-the-awesome/
-previous: /the-dangerous-cliffs-of-node-js/
 tags:
   - business
   - reactjs

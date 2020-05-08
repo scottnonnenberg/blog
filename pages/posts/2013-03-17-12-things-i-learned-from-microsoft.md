@@ -1,11 +1,7 @@
 ---
-rank: 44
 title: 12 things I learned from Microsoft
 date: 2013-03-17T15:00:00.000Z
-layout: post
 path: /12-things-i-learned-from-microsoft/
-next: /why-i-left-liffft/
-previous: /dont-let-this-happen-to-you-lessons-from-a-failed-side-project/
 tags:
   - feedback-loop
   - business

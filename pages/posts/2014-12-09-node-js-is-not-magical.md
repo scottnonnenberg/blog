@@ -2,10 +2,7 @@
 rank: 7
 title: Node.js is not magical
 date: 2014-12-09T18:00:00.000Z
-layout: post
 path: /node-js-is-not-magical/
-next: /hippie-experiments/
-previous: /the-last-year/
 tags:
   - business
   - nodejs

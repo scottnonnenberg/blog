@@ -1,11 +1,7 @@
 ---
-rank: 72
 title: Systems and Incentives
 date: 2016-01-14T17:54:26.000Z
-layout: post
 path: /systems-and-incentives/
-next: /a-running-update/
-previous: /enterprise-node-jsjavascript-difficulties/
 tags:
   - empathy
   - business

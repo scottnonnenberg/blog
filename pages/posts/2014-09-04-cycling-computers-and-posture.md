@@ -1,11 +1,7 @@
 ---
-rank: 45
 title: Cycling, Computers, and Posture
 date: 2014-09-04T17:00:00.000Z
-layout: post
 path: /cycling-computers-and-posture/
-next: /antidotes-for-antiskills/
-previous: /woot-shirts/
 tags:
   - fun
   - fitness

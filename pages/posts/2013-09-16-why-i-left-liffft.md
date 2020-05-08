@@ -1,10 +1,7 @@
 ---
 title: Why I left LIFFFT
 date: 2013-09-16T14:00:00.000Z
-layout: post
 path: /why-i-left-liffft/
-next: /my-standard-breakfast/
-previous: /12-things-i-learned-from-microsoft/
 tags:
   - business
   - career

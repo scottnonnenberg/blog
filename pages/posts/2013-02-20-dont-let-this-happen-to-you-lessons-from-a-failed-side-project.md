@@ -1,10 +1,7 @@
 ---
-rank: 46
 title: Don't let this happen to you - lessons from a failed side project
 date: 2013-02-20T16:00:00.000Z
-layout: post
 path: /dont-let-this-happen-to-you-lessons-from-a-failed-side-project/
-next: /12-things-i-learned-from-microsoft/
 tags:
   - business
   - software

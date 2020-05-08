@@ -1,11 +1,7 @@
 ---
-rank: 61
 title: Four books for greater understanding
 date: 2016-01-09T00:47:58.000Z
-layout: post
 path: /four-books-for-greater-understanding/
-next: /the-trouble-with-promises/
-previous: /open-source-and-feelings-the-awesome/
 tags:
   - nvc
   - empathy

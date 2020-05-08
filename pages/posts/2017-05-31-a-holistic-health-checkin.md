@@ -1,10 +1,7 @@
 ---
 title: A holistic health checkin
 date: 2017-05-31T14:56:09.923Z
-layout: post
 path: /a-holistic-health-checkin/
-next:
-previous: /starting-on-signal/
 tags:
   - nutrition
   - fitness

@@ -1,11 +1,7 @@
 ---
-rank: 33
 title: E for Express (NERP stack part 2)
 date: 2016-02-08T22:43:15.846Z
-layout: post
 path: /e-for-express-nerp-stack-part-2/
-next: /r-for-react-nerp-stack-part-3/
-previous: /a-35lb-weight-swing-in-two-years/
 tags:
   - nodejs
   - nerp-stack

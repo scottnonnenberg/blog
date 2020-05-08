@@ -1,11 +1,7 @@
 ---
-rank: 31
 title: Breaking other servers with Node.js
 date: 2016-11-01T20:56:23.605Z
-layout: post
 path: /breaking-other-servers-with-node-js/
-next: /fear-of-the-subjective/
-previous: /focus-dev-productivity-tip-2/
 tags:
   - break-it
   - nodejs

@@ -1,11 +1,7 @@
 ---
-rank: 58
 title: "Contract: An unusual skillset"
 date: 2016-09-20T19:25:01.850Z
-layout: post
 path: /contract-an-unusual-skillset/
-next: /breaking-the-node-js-event-loop/
-previous: /understand-the-problem-dev-productivity-tip-1/
 tags:
   - training
   - contract

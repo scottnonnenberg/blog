@@ -1,11 +1,7 @@
 ---
-rank: 50
 title: Woot Shirts!
 date: 2014-08-29T17:00:00.000Z
-layout: post
 path: /woot-shirts/
-next: /cycling-computers-and-posture/
-previous: /injury-identity-and-non-attachment/
 tags:
   - fun
 ---

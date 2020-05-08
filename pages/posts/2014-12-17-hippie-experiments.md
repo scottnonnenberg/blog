@@ -1,11 +1,7 @@
 ---
-rank: 65
 title: Hippie Experiments
 date: 2014-12-17T18:00:00.000Z
-layout: post
 path: /hippie-experiments/
-next: /a-system-for-2015/
-previous: /node-js-is-not-magical/
 tags:
   - fun
   - nutrition

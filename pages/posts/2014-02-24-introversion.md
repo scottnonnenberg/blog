@@ -1,11 +1,7 @@
 ---
-rank: 59
 title: Introversion
 date: 2014-02-24T10:28:13.000Z
-layout: post
 path: /introversion/
-next: /injury-identity-and-non-attachment/
-previous: /resolutions-and-systems/
 tags:
   - fun
   - ideas

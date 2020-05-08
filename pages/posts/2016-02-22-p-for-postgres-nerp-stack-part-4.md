@@ -1,11 +1,7 @@
 ---
-rank: 34
 title: P for Postgres (NERP stack part 4)
 date: 2016-02-22T17:15:11.427Z
-layout: post
 path: /p-for-postgres-nerp-stack-part-4/
-next: /my-2016-mantras/
-previous: /r-for-react-nerp-stack-part-3/
 tags:
   - nerp-stack
   - lessons-learned

@@ -1,11 +1,7 @@
 ---
-rank: 30
 title: Better changelogs, strings, and paths
 date: 2016-07-19T17:00:26.971Z
-layout: post
 path: /better-changelogs-strings-and-paths/
-next: /hands-on-with-circleci-and-node-js/
-previous: /private-node-js-modules-a-journey/
 tags:
   - git
   - stack-improvements

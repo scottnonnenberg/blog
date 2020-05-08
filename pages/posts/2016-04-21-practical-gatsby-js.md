@@ -2,10 +2,7 @@
 rank: 6
 title: Practical Gatsby.js
 date: 2016-04-21T22:48:55.316Z
-layout: post
 path: /practical-gatsby-js/
-next: /contract-react-training/
-previous: /static-site-generation-with-gatsby-js/
 tags:
   - reactjs
   - gatsbyjs

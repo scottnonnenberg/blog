@@ -1,11 +1,7 @@
 ---
-rank: 73
 title: Feeling the Bern
 date: 2016-04-14T21:46:12.689Z
-layout: post
 path: /feeling-the-bern/
-next: /static-site-generation-with-gatsby-js/
-previous: /star-wars-cards/
 ---
 
 ![Bernie Sanders](https://static.sinap.ps/blog/2016/04_apr/bern/bernie-sanders.jpg)

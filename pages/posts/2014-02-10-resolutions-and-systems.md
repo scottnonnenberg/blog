@@ -1,11 +1,7 @@
 ---
-rank: 56
 title: Resolutions (and Systems)
 date: 2014-02-10T17:00:00.000Z
-layout: post
 path: /resolutions-and-systems/
-next: /introversion/
-previous: /how-not-to-do-customer-service-credit-card-edition/
 tags:
   - fun
   - goals

@@ -1,11 +1,7 @@
 ---
-rank: 25
 title: Enterprise Node.js/Javascript Difficulties
 date: 2016-01-13T18:18:12.000Z
-layout: post
 path: /enterprise-node-jsjavascript-difficulties/
-next: /systems-and-incentives/
-previous: /the-why-of-agile/
 tags:
   - lessons-learned
   - business

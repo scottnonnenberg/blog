@@ -1,10 +1,7 @@
 ---
 title: Starting on Signal
 date: 2017-05-17T15:30:10.064Z
-layout: post
 path: /starting-on-signal/
-next: /a-holistic-health-checkin/
-previous: /what-s-a-monad-digging-into-haskell/
 tags:
   - career
   - software

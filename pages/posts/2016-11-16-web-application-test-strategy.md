@@ -2,10 +2,7 @@
 rank: 13
 title: Web application test strategy
 date: 2016-11-16T20:14:05.762Z
-layout: post
 path: /web-application-test-strategy/
-next: /be-a-scientist-dev-productivity-tip-3/
-previous: /fear-of-the-subjective/
 tags:
   - feedback-loop
   - software
