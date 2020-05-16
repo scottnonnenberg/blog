@@ -79,7 +79,9 @@ So simple and so powerful. But how do others want to be treated, exactly? We nee
 
 ## Mental models for people
 
-Now is where we can shift into student mode again. We need to treat each person as a very complex system. The most complex system you've ever debugged. And you how did you debug it? You came up with mental models, tested those models with small experiments with the system, then modified your models based on the new data collected.
+Now is where we can shift into student mode again. We need to treat each person as a very complex system.
+
+Think of the most complex system you've ever debugged. How did you debug it? You came up with mental models, tested those models via small experiments with the system, then modified your models based on the new data collected.
 
 You confidently approach any software system with this plan in mind, right? Let's see if we can put a similar system in place for understanding people.
 
@@ -128,7 +130,7 @@ When trying to understand customers or clients, you'll often be presented with t
 * Ask for recent, specific stories instead of hypotheticals
 * Ask about how they use time or money
 
-At this point we need to check in with the _C's of Communication_. You need _Clarity_ here, because people might use key terms very differently. You need _Caring_ because these questions can very quickly put people on the defensive. Act like you care about them as a person to confirm that you are on their side. If you are talking about negative situations, stories about your similar experiences can sometimes help.
+At this point we need to check in with the _C's of Communication_. You need _Clarity_ here, because people might use key terms very differently. You need _Caring_ because these questions can very quickly put people on the defensive. Act like you care about them as a person to confirm that you are on their side. If you are talking about negative situations, sharing stories about your similar experiences can sometimes help.
 
 ## Why do all this?
 
