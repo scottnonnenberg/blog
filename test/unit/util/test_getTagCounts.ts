@@ -8,11 +8,13 @@ describe('unit/utils/getTagCounts', () => {
   });
 
   it('returns counts for one post', () => {
-    const posts = [{
-      frontmatter: {
-        tags: ['one', 'two', 'three'],
+    const posts = [
+      {
+        frontmatter: {
+          tags: ['one', 'two', 'three'],
+        },
       },
-    }];
+    ];
     const expected = {
       one: 1,
       two: 1,
@@ -23,15 +25,18 @@ describe('unit/utils/getTagCounts', () => {
   });
 
   it('returns counts for two posts', () => {
-    const posts = [{
-      frontmatter: {
-        tags: ['one', 'two', 'three'],
+    const posts = [
+      {
+        frontmatter: {
+          tags: ['one', 'two', 'three'],
+        },
       },
-    }, {
-      frontmatter: {
-        tags: ['two', 'three'],
+      {
+        frontmatter: {
+          tags: ['two', 'three'],
+        },
       },
-    }];
+    ];
     const expected = {
       one: 1,
       two: 2,

@@ -14,7 +14,7 @@ const MAX_TEXT_PREVIEW = 200;
 
 type PropsType = {
   post: PostType;
-}
+};
 
 export default function TextPreview(props: PropsType) {
   const post = props.post;
@@ -27,22 +27,21 @@ export default function TextPreview(props: PropsType) {
   }
   const body = prune(noTags, MAX_TEXT_PREVIEW);
 
-  return <div>
-    <h3
-      style={{
-        marginBottom: rhythm(QUARTER),
-      }}
-    >
-      <Link to={post?.fields?.slug!}>
-        {post?.frontmatter?.title}
-      </Link>
-      <span className="date">
-        {' '}
-        {shortDate(post?.frontmatter?.date)}
-      </span>
-    </h3>
-    <p>{body} <Link to={post?.fields?.slug!}>Read more&nbsp;»</Link></p>
-  </div>;
+  return (
+    <div>
+      <h3
+        style={{
+          marginBottom: rhythm(QUARTER),
+        }}
+      >
+        <Link to={post?.fields?.slug!}>{post?.frontmatter?.title}</Link>
+        <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+      </h3>
+      <p>
+        {body} <Link to={post?.fields?.slug!}>Read more&nbsp;»</Link>
+      </p>
+    </div>
+  );
 }
 
 // TextPreview.propTypes = {

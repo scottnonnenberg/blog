@@ -21,21 +21,21 @@ type DataType = {
     edges: Array<{
       node: PostType;
     }>;
-  }
-}
+  };
+};
 
 export default function Tags({ data, location }: PageProps<DataType>) {
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const tags = getTagCounts(posts);
-  const tagLinks = map(toPairs(tags), ([tag, count]) =>
+  const tagLinks = map(toPairs(tags), ([tag, count]) => (
     <li
       key={tag}
       style={{
         marginBottom: rhythm(QUARTER),
       }}
     >
-      <Link to={`/tags/${tag}/`} >{tag}</Link>
+      <Link to={`/tags/${tag}/`}>{tag}</Link>
       <span
         style={{
           color: 'lightgray',
@@ -44,16 +44,14 @@ export default function Tags({ data, location }: PageProps<DataType>) {
         {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
       </span>
     </li>
-  );
+  ));
 
   return (
-    <Wrapper location={location} >
+    <Wrapper location={location}>
       <SEO pageTitle={title} location={location} />
       <div>
         <h1>{title}</h1>
-        <ul>
-          {tagLinks}
-        </ul>
+        <ul>{tagLinks}</ul>
         <hr
           style={{
             marginTop: rhythm(2),

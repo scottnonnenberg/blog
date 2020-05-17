@@ -10,14 +10,12 @@ import flow from 'lodash/fp/flow';
 import { PostType } from 'src/types/Post';
 
 export default flow(
-  map((post: PostType) =>
-    map(tag => [tag, 1])(post?.frontmatter?.tags)
-  ),
+  map((post: PostType) => map(tag => [tag, 1])(post?.frontmatter?.tags)),
   flatten,
   groupBy(0),
   toPairs,
   map(([name, list]) => [name, list.length]),
   sortBy(1),
   reverse,
-  fromPairs,
+  fromPairs
 );

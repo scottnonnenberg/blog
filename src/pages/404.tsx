@@ -10,24 +10,28 @@ import Author from 'src/components/Author';
 export default function NotFound({ location }: PageProps) {
   const title = "Couldn't find that!";
 
-  return <Wrapper location={location} >
-    <SEO pageTitle={title} location={location} />
-    <div>
-      <h1>{title}</h1>
-      Looks like something went a little wrong!
-      <h3
-        style={{
-          marginTop: rhythm(1),
-          marginBottom: rhythm(2),
-        }}
-      ><Link to="/">« Go back home</Link></h3>
-      <hr
-        style={{
-          marginTop: rhythm(1),
-          marginBottom: rhythm(2),
-        }}
-      />
-      <Author />
-    </div>
-  </Wrapper>;
+  return (
+    <Wrapper location={location}>
+      <SEO pageTitle={title} location={location} />
+      <div>
+        <h1>{title}</h1>
+        Looks like something went a little wrong!
+        <h3
+          style={{
+            marginTop: rhythm(1),
+            marginBottom: rhythm(2),
+          }}
+        >
+          <Link to="/">« Go back home</Link>
+        </h3>
+        <hr
+          style={{
+            marginTop: rhythm(1),
+            marginBottom: rhythm(2),
+          }}
+        />
+        <Author />
+      </div>
+    </Wrapper>
+  );
 }

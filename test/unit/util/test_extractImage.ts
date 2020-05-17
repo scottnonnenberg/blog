@@ -3,7 +3,6 @@ import { stripIndent } from 'common-tags';
 
 import extractImage from 'src/util/extractImage';
 
-
 describe('unit/utils/extractImage', () => {
   it('returns undefined for undefined input', () => {
     expect(extractImage()).to.equal(undefined);

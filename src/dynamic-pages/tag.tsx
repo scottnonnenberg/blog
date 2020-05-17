@@ -19,7 +19,7 @@ const TEXT_PREVIEW_POSTS = 5;
 type PageContextType = {
   tag: string;
   postsWithTag: Array<PostType>;
-}
+};
 
 export function _getTextPreviews(posts: Array<PostType>) {
   const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
@@ -36,7 +36,7 @@ export default function Tag({ location, pageContext }: PageProps<null, PageConte
   const title = `Posts tagged '${tag}'`;
 
   return (
-    <Wrapper location={location} >
+    <Wrapper location={location}>
       <SEO pageTitle={title} location={location} />
       <div>
         <h1>{title}</h1>

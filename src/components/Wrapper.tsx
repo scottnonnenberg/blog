@@ -20,50 +20,51 @@ const KINDS_URL = '/a-35lb-weight-swing-in-two-years/';
 type PropsType = {
   location: LocationType;
   children: React.ReactNode;
-}
+};
 
 function renderHeader(blogTitle: string, url: string) {
   if (url === '/') {
-    return <div>
-      <h1
-        style={{
-          marginBottom: 0,
-        }}
-      >
-        {blogTitle}
-      </h1>
-      <div
+    return (
+      <div>
+        <h1
+          style={{
+            marginBottom: 0,
+          }}
+        >
+          {blogTitle}
+        </h1>
+        <div
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        >
+          A blog about <Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link> and{' '}
+          <Link to={GEEKERY_URL}>geekery</Link> <Link to={OF_URL}>of</Link>{' '}
+          <Link to={ALL_URL}>all</Link> <Link to={KINDS_URL}>kinds</Link>.
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <h3>
+        <Link
+          style={{
+            color: 'inherit',
+          }}
+          to={'/'}
+        >
+          « {blogTitle}
+        </Link>
+      </h3>
+      <hr
         style={{
           marginBottom: rhythm(1),
         }}
-      >
-        A blog about
-        {' '}<Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link> and
-        {' '}<Link to={GEEKERY_URL}>geekery</Link>
-        {' '}<Link to={OF_URL}>of</Link>
-        {' '}<Link to={ALL_URL}>all</Link>
-        {' '}<Link to={KINDS_URL}>kinds</Link>.
-      </div>
-    </div>;
-  }
-
-  return <div>
-    <h3>
-      <Link
-        style={{
-          color: 'inherit',
-        }}
-        to={'/'}
-      >
-        « {blogTitle}
-      </Link>
-    </h3>
-    <hr
-      style={{
-        marginBottom: rhythm(1),
-      }}
-    />
-  </div>;
+      />
+    </div>
+  );
 }
 
 function Wrapper({ location, children }: PropsType) {

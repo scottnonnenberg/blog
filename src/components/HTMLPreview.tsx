@@ -24,23 +24,17 @@ export default function HTMLPreview(props: PropsType) {
   const { post } = props;
   const preview = getHTMLPreview(post);
 
-  return <div>
-    <h2
-      style={{
-        marginBottom: rhythm(QUARTER),
-      }}
-    >
-      <Link to={post?.fields?.slug!}>
-        {post?.frontmatter?.title}
-      </Link>
-      <span className="date">
-        {' '}
-        {shortDate(post?.frontmatter?.date)}
-      </span>
-    </h2>
-    <div
-      className="markdown"
-      dangerouslySetInnerHTML={{ __html: preview || '' }}
-    />
-  </div>;
+  return (
+    <div>
+      <h2
+        style={{
+          marginBottom: rhythm(QUARTER),
+        }}
+      >
+        <Link to={post?.fields?.slug!}>{post?.frontmatter?.title}</Link>
+        <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+      </h2>
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: preview || '' }} />
+    </div>
+  );
 }

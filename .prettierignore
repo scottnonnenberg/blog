@@ -1,0 +1,9 @@
+css/solarized-light.less
+css/typography-compat.less
+
+pages/posts/*
+
+# Generated
+CHANGELOG.md
+.cache
+public

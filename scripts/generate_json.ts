@@ -22,25 +22,27 @@ const config = globalConfig.siteMetadata;
 
 const posts = loadPosts();
 
-const json = compact(map(posts, post => {
-  if (!post.frontmatter) {
-    console.error('Malformed post', post);
-    throw new Error('Post was missing frontmatter!');
-  }
+const json = compact(
+  map(posts, post => {
+    if (!post.frontmatter) {
+      console.error('Malformed post', post);
+      throw new Error('Post was missing frontmatter!');
+    }
 
-  const preFoldContent = fixLocalLinks(getPreFoldContent(post.html), config.domain);
-  const url = config.domain + post.frontmatter.path;
-  const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
-  const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
+    const preFoldContent = fixLocalLinks(getPreFoldContent(post.html), config.domain);
+    const url = config.domain + post.frontmatter.path;
+    const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
+    const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
 
-  return {
-    title: post.frontmatter.title,
-    date: post.frontmatter.date,
-    preview: withCallToAction,
-    url,
-    tags: post.frontmatter.tags,
-  };
-}));
+    return {
+      title: post.frontmatter.title,
+      date: post.frontmatter.date,
+      preview: withCallToAction,
+      url,
+      tags: post.frontmatter.tags,
+    };
+  })
+);
 
 fs.writeFileSync(allPath, JSON.stringify(json, null, '  '));
 fs.writeFileSync(recentPath, JSON.stringify(json.slice(0, RECENT_LIMIT), null, '  '));

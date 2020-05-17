@@ -21,30 +21,40 @@ import 'css/solarized-light.less';
 type PageContextType = {
   previous?: PostType;
   next?: PostType;
-}
+};
 
 type DataType = {
   markdownRemark: PostType;
-}
+};
 
 function renderTagLinks(tags?: Array<string>) {
   if (!tags || !tags.length) {
     return null;
   }
 
-  const tagLinks = map(tags, tag =>
-    <Link key={tag} to={`/tags/${tag}/`}>{tag}</Link>
-  );
+  const tagLinks = map(tags, tag => (
+    <Link key={tag} to={`/tags/${tag}/`}>
+      {tag}
+    </Link>
+  ));
 
-  return <div><em>Tags:</em> {intersperse(tagLinks, ', ')}</div>;
+  return (
+    <div>
+      <em>Tags:</em> {intersperse(tagLinks, ', ')}
+    </div>
+  );
 }
 
-export default function Post({ data, pageContext, location }: PageProps<DataType, PageContextType>) {
+export default function Post({
+  data,
+  pageContext,
+  location,
+}: PageProps<DataType, PageContextType>) {
   const { previous, next } = pageContext;
   const post = data.markdownRemark;
 
   return (
-    <Wrapper location={location} >
+    <Wrapper location={location}>
       <SEO pageTitle={post?.frontmatter?.title!} post={post} location={location} />
       <div className="post">
         <h1 style={{ marginBottom: 0 }}>{post?.frontmatter?.title}</h1>
@@ -56,7 +66,9 @@ export default function Post({ data, pageContext, location }: PageProps<DataType
             fontWeight: 'normal',
             letterSpacing: '-2px',
           }}
-        >{shortDate(post?.frontmatter?.date)}</h3>
+        >
+          {shortDate(post?.frontmatter?.date)}
+        </h3>
 
         <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
         <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />

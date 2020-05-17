@@ -1,6 +1,9 @@
 import moment from 'moment';
 
-export default function shortDate(providedDate?: string | Date, providedNow?: string | Date) {
+export default function shortDate(
+  providedDate?: string | Date,
+  providedNow?: string | Date
+) {
   const date = moment(providedDate);
   const now = moment(providedNow);
 

@@ -27,8 +27,8 @@ type DataType = {
     edges: Array<{
       node: PostType;
     }>;
-  }
-}
+  };
+};
 
 const sortPosts = flow(
   filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
@@ -37,22 +37,21 @@ const sortPosts = flow(
 
 const getTextPreviews = flow(
   take(TEXT_PREVIEW_POSTS),
-  map((post: PostType) =>
+  map((post: PostType) => (
     <li key={post?.fields?.slug}>
       <TextPreview post={post} />
     </li>
-  ),
+  ))
 );
 const getPostLinks = flow(
   drop(TEXT_PREVIEW_POSTS),
   take(POST_LINKS),
-  map((post: PostType) =>
+  map((post: PostType) => (
     <li key={post?.fields?.slug}>
       <PostLink post={post} />
     </li>
-  ),
+  ))
 );
-
 
 export default function Popular({ location, data }: PageProps<DataType>) {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);

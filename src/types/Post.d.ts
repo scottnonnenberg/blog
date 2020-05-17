@@ -14,4 +14,4 @@ export type PostAttributesType = {
   path?: string;
   tags?: Array<string>;
   rank?: number;
-}
+};

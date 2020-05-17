@@ -1,7 +1,6 @@
 const prefix = /<p>(<em>)?\[[^\]]+\](<\/em>)?<\/p>\n/m;
 const fold = /<div class='fold'/;
 
-
 function getAboveFold(content: string) {
   const foldMatch = fold.exec(content);
 

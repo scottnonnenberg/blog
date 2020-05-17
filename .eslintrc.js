@@ -3,10 +3,7 @@
 const path = require('path');
 
 module.exports = {
-  extends: [
-    '@scottnonnenberg/thehelp',
-    '@scottnonnenberg/thehelp/react',
-  ],
+  extends: ['@scottnonnenberg/thehelp', '@scottnonnenberg/thehelp/react'],
 
   parser: 'babel-eslint',
 
@@ -16,7 +13,7 @@ module.exports = {
         paths: [__dirname, path.resolve(__dirname, 'test/setup/fakes')],
       },
     },
-    'react': {
+    react: {
       version: '15.1.0',
     },
   },
@@ -28,8 +25,11 @@ module.exports = {
 
     'security/detect-object-injection': 'off', // as a client-only app, no concerns here
 
-    'thehelp/absolute-or-current-dir': ['error', {
-      exceptions: [/setupModulePath$/],
-    }],
+    'thehelp/absolute-or-current-dir': [
+      'error',
+      {
+        exceptions: [/setupModulePath$/],
+      },
+    ],
   },
 };

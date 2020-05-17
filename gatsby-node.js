@@ -1,14 +1,7 @@
 /* eslint-disable import/no-commonjs, thehelp/no-mutation */
 
 const path = require('path');
-const {
-  filter,
-  flatten,
-  get,
-  includes,
-  sortBy,
-  uniq,
-} = require('lodash');
+const { filter, flatten, get, includes, sortBy, uniq } = require('lodash');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -18,9 +11,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-        ) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
           edges {
             node {
               html
@@ -66,9 +57,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = sortBy(uniq(flatten(posts.map(post => post.frontmatter.tags))));
 
   tags.forEach(tag => {
-    const postsWithTag = filter(
-      posts,
-      post => includes(get(post, 'frontmatter.tags'), tag)
+    const postsWithTag = filter(posts, post =>
+      includes(get(post, 'frontmatter.tags'), tag)
     );
 
     createPage({

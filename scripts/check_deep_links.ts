@@ -11,14 +11,16 @@ import superagent from 'superagent';
 // @ts-ignore
 import { SiteChecker } from 'broken-link-checker';
 
-
 const MAX_PARALLEL = 5;
 const DOMAIN = 'http://localhost:8000';
 const links = Object.create(null);
 const cache = Object.create(null);
 
-
-function verifyHash({ pathname, hash, contents }: {
+function verifyHash({
+  pathname,
+  hash,
+  contents,
+}: {
   pathname: string;
   hash: string;
   contents: string;
@@ -40,7 +42,7 @@ function verifyHash({ pathname, hash, contents }: {
 
 type LinkType = {
   pathname: string;
-  hash: string
+  hash: string;
 };
 
 function checkLink({ pathname, hash }: LinkType, cb: Function) {
@@ -48,16 +50,14 @@ function checkLink({ pathname, hash }: LinkType, cb: Function) {
     return cb(null, verifyHash({ pathname, hash, contents: cache[pathname] }));
   }
 
-  return superagent
-    .get(DOMAIN + pathname)
-    .end((err, res) => {
-      if (notate(cb, err, { pathname })) {
-        return;
-      }
+  return superagent.get(DOMAIN + pathname).end((err, res) => {
+    if (notate(cb, err, { pathname })) {
+      return;
+    }
 
-      cache[pathname] = res.text; // eslint-disable-line
-      return cb(null, verifyHash({ pathname, hash, contents: res.text }));
-    });
+    cache[pathname] = res.text; // eslint-disable-line
+    return cb(null, verifyHash({ pathname, hash, contents: res.text }));
+  });
 }
 
 function checkLinks() {
@@ -80,12 +80,10 @@ function checkLinks() {
 
       console.log('\nAll Done!');
     });
-  }
-  catch (err) {
+  } catch (err) {
     console.log(notate.prettyPrint(err));
   }
 }
-
 
 const options = {
   excludeExternalLinks: true,
@@ -94,8 +92,8 @@ const options = {
 type SiteCheckerResultType = {
   url: {
     resolved: string;
-  }
-}
+  };
+};
 
 const handlers = {
   link: (result: SiteCheckerResultType) => {
@@ -107,4 +105,3 @@ const handlers = {
 const checker = new SiteChecker(options, handlers);
 
 checker.enqueue(DOMAIN);
-

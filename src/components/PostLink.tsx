@@ -10,22 +10,19 @@ const QUARTER = 0.25;
 
 type PropsType = {
   post: PostType;
-}
+};
 
 export default function PostLink(props: PropsType) {
   const post = props.post;
 
-  return <div
-    style={{
-      marginBottom: rhythm(QUARTER),
-    }}
-  >
-    <Link to={post?.fields?.slug!}>
-      {post?.frontmatter?.title}
-    </Link>
-    <span className="date">
-      {' '}
-      {shortDate(post?.frontmatter?.date)}
-    </span>
-  </div>;
+  return (
+    <div
+      style={{
+        marginBottom: rhythm(QUARTER),
+      }}
+    >
+      <Link to={post?.fields?.slug!}>{post?.frontmatter?.title}</Link>
+      <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+    </div>
+  );
 }

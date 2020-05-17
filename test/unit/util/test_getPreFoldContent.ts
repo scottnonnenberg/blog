@@ -46,7 +46,6 @@ describe('unit/utils/getPreFoldContent', () => {
     expect(getPreFoldContent(input)).to.equal(expected);
   });
 
-
   it('does not include the introductory text inside brackets (without <em>)', () => {
     const input = stripIndent`
       <p>[This post is special.]</p>

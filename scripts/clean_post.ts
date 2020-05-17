@@ -9,7 +9,6 @@ import * as globalConfig from 'gatsby-config';
 
 const config = globalConfig.siteMetadata;
 
-
 const limit = parseInt(process.argv[2], 10) || 1;
 const posts = loadPosts({
   limit,
@@ -21,9 +20,7 @@ function removeSmartQuotes(value?: string) {
     return value;
   }
 
-  return value
-    .replace(/[’‘]/g, '\'')
-    .replace(/[“”]/g, '"');
+  return value.replace(/[’‘]/g, "'").replace(/[“”]/g, '"');
 }
 
 function removeDupeLinks(contents?: string) {

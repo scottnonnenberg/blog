@@ -6,8 +6,7 @@ export default function writeIfDifferent(path: string, contents: string) {
     if (currentContents === contents) {
       return;
     }
-  }
-  catch (err) {
+  } catch (err) {
     // file doesn't exist; need to write it
   }
 

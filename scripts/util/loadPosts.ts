@@ -17,12 +17,14 @@ const fileFilter = /.md$/;
 type PostFrontMatterResultType = {
   attributes: PostAttributesType;
   body: string;
-}
+};
 
-export default function loadPosts(options: {
-  limit?: number;
-  markdown?: boolean;
-} = {}): Array<PostType> {
+export default function loadPosts(
+  options: {
+    limit?: number;
+    markdown?: boolean;
+  } = {}
+): Array<PostType> {
   const limit = options.limit || Infinity;
   const markdown = typeof options.markdown === 'undefined' ? true : options.markdown;
 
@@ -51,4 +53,3 @@ export default function loadPosts(options: {
     })
     .value();
 }
-

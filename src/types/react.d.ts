@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes } from 'react';
 
 // https://github.com/microsoft/TypeScript/blob/4eb59a2d77acde13d808ec302f6a28f4fa49aa01/tests/lib/react16.d.ts#L1494-L1503
 

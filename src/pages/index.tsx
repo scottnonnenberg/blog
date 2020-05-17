@@ -25,8 +25,8 @@ type DataType = {
     edges: Array<{
       node: PostType;
     }>;
-  }
-}
+  };
+};
 
 function getHTMLPreviews(posts: Array<PostType>) {
   const sliced = posts.slice(0, HTML_PREVIEW_POSTS);

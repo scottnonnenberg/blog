@@ -3,7 +3,6 @@ import { stripIndent } from 'common-tags';
 
 import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
-
 describe('unit/utils/appendToLastTextBlock', () => {
   it('returns undefined for undefined input', () => {
     expect(appendToLastTextBlock()).to.equal(undefined);
@@ -27,7 +26,6 @@ describe('unit/utils/appendToLastTextBlock', () => {
 
     expect(appendToLastTextBlock(input)).to.equal(input);
   });
-
 
   it('inserts at end of last non-tag entry', () => {
     const input = stripIndent`

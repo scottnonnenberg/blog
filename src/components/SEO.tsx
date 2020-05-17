@@ -14,16 +14,14 @@ type PropsType = {
   location: LocationType;
   pageTitle: string;
   post?: PostType;
-}
+};
 
 function create(name?: string, value?: string) {
   if (!name || !value) {
     return null;
   }
 
-  return (
-    <meta key={name} property={name} content={value} />
-  );
+  return <meta key={name} property={name} content={value} />;
 }
 
 function removeHTML(html?: string) {
@@ -33,7 +31,11 @@ function removeHTML(html?: string) {
   return html.replace(/<[^>]*>/g, '');
 }
 
-function generatePostSpecificTags(post: PostType | undefined, siteMetadata: SiteMetadataType, url: string) {
+function generatePostSpecificTags(
+  post: PostType | undefined,
+  siteMetadata: SiteMetadataType,
+  url: string
+) {
   if (!post) {
     return [];
   }
@@ -49,27 +51,27 @@ function generatePostSpecificTags(post: PostType | undefined, siteMetadata: Site
   const ld = {
     '@context': 'http://schema.org',
     '@type': 'Article',
-    'publisher': {
+    publisher: {
       '@type': 'Organization',
-      'name': siteMetadata.blogTitle,
-      'logo': siteMetadata.author.image,
+      name: siteMetadata.blogTitle,
+      logo: siteMetadata.author.image,
     },
-    'author': {
+    author: {
       '@type': 'Person',
-      'name': siteMetadata.author.name,
-      'image': siteMetadata.author.image,
-      'url': siteMetadata.author.url,
-      'description': siteMetadata.author.blurb,
+      name: siteMetadata.author.name,
+      image: siteMetadata.author.image,
+      url: siteMetadata.author.url,
+      description: siteMetadata.author.blurb,
     },
-    'headline': data.title,
-    'datePublished': data.date,
+    headline: data.title,
+    datePublished: data.date,
     url,
     description,
-    'image': {
+    image: {
       '@type': 'ImageObject',
-      'url': socialImage,
+      url: socialImage,
     },
-    'mainEntityOfPage': url,
+    mainEntityOfPage: url,
   };
 
   return [
@@ -93,7 +95,11 @@ function generatePostSpecificTags(post: PostType | undefined, siteMetadata: Site
   ];
 }
 
-function generateMetaTags(siteMetadata: SiteMetadataType, post: PostType | undefined, location: LocationType) {
+function generateMetaTags(
+  siteMetadata: SiteMetadataType,
+  post: PostType | undefined,
+  location: LocationType
+) {
   const url = siteMetadata.domain + location.pathname;
 
   const tags = [
@@ -152,6 +158,3 @@ function SEO({ pageTitle, post, location }: PropsType) {
 }
 
 export default SEO;
-
-
-
