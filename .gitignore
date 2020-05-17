@@ -31,5 +31,9 @@ npm-debug.log
 
 production_config.toml
 
-piwik.js
 mailchimp.js
+mailchimp.ts
+
+src/**/*.js
+test/**/*.js
+scripts/**/*.js

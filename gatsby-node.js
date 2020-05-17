@@ -1,15 +1,20 @@
 /* eslint-disable import/no-commonjs, thehelp/no-mutation */
 
 const path = require('path');
-const { flatten, uniq, sortBy } = require('lodash');
-
-const getPostsWithTag = require('./src/util/getPostsWithTag');
+const {
+  filter,
+  flatten,
+  get,
+  includes,
+  sortBy,
+  uniq,
+} = require('lodash');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const blogPostPage = path.resolve('./src/dynamic-pages/post.js');
-  const tagPage = path.resolve('./src/dynamic-pages/tag.js');
+  const blogPostPage = path.resolve('./src/dynamic-pages/post.tsx');
+  const tagPage = path.resolve('./src/dynamic-pages/tag.tsx');
   const result = await graphql(
     `
       {
@@ -61,12 +66,17 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = sortBy(uniq(flatten(posts.map(post => post.frontmatter.tags))));
 
   tags.forEach(tag => {
+    const postsWithTag = filter(
+      posts,
+      post => includes(get(post, 'frontmatter.tags'), tag)
+    );
+
     createPage({
       path: `/tags/${tag}`,
       component: tagPage,
       context: {
         tag,
-        postsWithTag: getPostsWithTag(posts, tag),
+        postsWithTag,
       },
     });
   });

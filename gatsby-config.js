@@ -53,6 +53,7 @@ module.exports = {
         src: path.join(__dirname, 'src'),
       },
     },
+    'gatsby-plugin-typescript',
     'gatsby-plugin-less',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-javascript',

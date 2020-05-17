@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "commonjs",
+    "target": "es2017",
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "include": [
+    "scripts/**/*.ts",
+    "scripts/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "test/**/*.ts",
+    "test/**/*.tsx"
+  ]
+}

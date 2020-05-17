@@ -25,7 +25,12 @@
         "*.sublime-workspace",
         "*.log",
         "*.rdb",
-        "result*.html"
+        "result*.html",
+        "src/**/*.js",
+        "test/**/*.js",
+        "scripts/*.js",
+        "scripts/**/*.js",
+        "mailchimp.js"
       ]
     }
   ],
