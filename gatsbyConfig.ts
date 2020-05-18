@@ -28,7 +28,7 @@ const gatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/pages/posts`,
+        path: `${__dirname}/posts`,
         name: 'blog',
       },
     },

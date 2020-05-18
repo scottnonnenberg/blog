@@ -1,7 +1,7 @@
 css/solarized-light.less
 css/typography-compat.less
 
-pages/posts/*
+posts/*
 
 # Generated
 CHANGELOG.md

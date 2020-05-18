@@ -31,9 +31,6 @@ const newContents = template
   .replace('PATH', postPath);
 
 const filePathDate = moment(now).format('YYYY-MM-DD');
-const newFilePath = path.join(
-  __dirname,
-  `../pages/posts/${filePathDate}-${titleSlug}.md`
-);
+const newFilePath = path.join(__dirname, `../posts/${filePathDate}-${titleSlug}.md`);
 
 fs.writeFileSync(newFilePath, newContents);

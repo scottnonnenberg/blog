@@ -4,9 +4,9 @@ A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
 ## Key settings
 
-`gatsby-config.ts` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
+`gatsbyConfig.ts` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
 
-`mailchimp.js` is also excluded from the repository, used by the `<EmailSignup>` React component in displaying its form. It uses five keys:
+`mailchimp.ts` is also excluded from the repository, used by the `<EmailSignup>` React component in displaying its form. It uses five keys:
 
 ```javascript
 export default {
@@ -18,7 +18,7 @@ export default {
 };
 ```
 
-_Note: if you don't want to connect to a mailchimp mailing list, delete the `<EmailSignup>` compononent. You put can a file at `/mailchimp.js` (like `export default {};`) to make things work until you take it out._
+_Note: if you don't want to connect to a mailchimp mailing list, delete the `<EmailSignup>` component. You put can a file at `/mailchimp.ts` (like `export default {};`) to make things work until you take it out._
 
 ## Develop
 
@@ -67,7 +67,7 @@ yarn clean-post
 yarn clean-post -- 5
 ```
 
-By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsby-config.ts`) to ensure that links are all of the relative form.
+By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsbyConfig.ts`) to ensure that links are all of the relative form.
 
 ```bash
 yarn generate-rss
@@ -89,7 +89,7 @@ It takes some getting used to, but this configuration is absolutely worthwhile. 
 
 ## License
 
-The files under `pages/posts` are Copyright 2016, All Rights Reserved.
+The files under `posts/` are Copyright 2016, All Rights Reserved.
 
 The rest of the project is under the MIT license:
 

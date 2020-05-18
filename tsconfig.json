@@ -10,7 +10,9 @@
     "skipLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "*": ["*"]
+      "*": ["*"],
+      "broken-link-checker": ["./src/types/broken-link-checker.d.ts"],
+      "@scottnonnenberg/notate": ["./src/types/notate.d.ts"]
     }
   },
   "include": ["./**/*.ts", "./**/*.tsx"]
