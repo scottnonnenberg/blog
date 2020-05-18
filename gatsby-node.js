@@ -1,4 +1,4 @@
-/* eslint-disable import/no-commonjs, thehelp/no-mutation */
+/* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/explicit-function-return-type */
 
 const path = require('path');
 const { filter, flatten, get, includes, sortBy, uniq } = require('lodash');

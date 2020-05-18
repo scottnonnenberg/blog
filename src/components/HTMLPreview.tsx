@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
@@ -14,13 +14,13 @@ type PropsType = {
   post: PostType;
 };
 
-function getHTMLPreview(post: PostType) {
+function getHTMLPreview(post: PostType): string | undefined {
   const preFold = getPreFoldContent(post.html);
   const textLink = ` <a href="${post?.fields?.slug}">Read more&nbsp;»</a>`;
   return appendToLastTextBlock(preFold, textLink);
 }
 
-export default function HTMLPreview(props: PropsType) {
+export default function HTMLPreview(props: PropsType): ReactElement | null {
   const { post } = props;
   const preview = getHTMLPreview(post);
 

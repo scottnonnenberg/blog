@@ -10,11 +10,11 @@ import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 import * as globalConfig from 'gatsby-config';
 
-import { PostType } from 'src/types/post.d';
+import { PostType } from 'src/types/Post.d';
 
 const config = globalConfig.siteMetadata;
 
-export default function buildFeeds(posts: Array<PostType>) {
+export default function buildFeeds(posts: Array<PostType>): void {
   const now = moment(new Date());
 
   const author = {

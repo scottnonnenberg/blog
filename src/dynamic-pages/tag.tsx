@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { PageProps } from 'gatsby';
 
 import map from 'lodash/map';
@@ -21,17 +21,20 @@ type PageContextType = {
   postsWithTag: Array<PostType>;
 };
 
-export function _getTextPreviews(posts: Array<PostType>) {
+export function _getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
   return map(sliced, post => <TextPreview key={post?.frontmatter?.path} post={post} />);
 }
 
-export function _getPlain(posts: Array<PostType>) {
+export function _getPlain(posts: Array<PostType>): Array<ReactElement | null> {
   const plainPosts = posts.slice(TEXT_PREVIEW_POSTS);
   return map(plainPosts, post => <PostLink key={post?.frontmatter?.path} post={post} />);
 }
 
-export default function Tag({ location, pageContext }: PageProps<null, PageContextType>) {
+export default function tag({
+  location,
+  pageContext,
+}: PageProps<null, PageContextType>): ReactElement | null {
   const { tag, postsWithTag } = pageContext;
   const title = `Posts tagged '${tag}'`;
 

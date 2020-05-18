@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-export default function writeIfDifferent(path: string, contents: string) {
+export default function writeIfDifferent(path: string, contents: string): void {
   try {
     const currentContents = fs.readFileSync(path).toString();
     if (currentContents === contents) {

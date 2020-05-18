@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 import moment from 'moment';
 import map from 'lodash/map';
@@ -27,7 +27,7 @@ type DataType = {
   markdownRemark: PostType;
 };
 
-function renderTagLinks(tags?: Array<string>) {
+function renderTagLinks(tags?: Array<string>): ReactElement | null {
   if (!tags || !tags.length) {
     return null;
   }
@@ -45,11 +45,11 @@ function renderTagLinks(tags?: Array<string>) {
   );
 }
 
-export default function Post({
+export default function post({
   data,
   pageContext,
   location,
-}: PageProps<DataType, PageContextType>) {
+}: PageProps<DataType, PageContextType>): ReactElement | null {
   const { previous, next } = pageContext;
   const post = data.markdownRemark;
 

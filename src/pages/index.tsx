@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable filenames/no-index -- necessary if we want to generate index.html! */
+
+import React, { ReactElement } from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 import map from 'lodash/map';
 
@@ -28,22 +30,25 @@ type DataType = {
   };
 };
 
-function getHTMLPreviews(posts: Array<PostType>) {
+function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(0, HTML_PREVIEW_POSTS);
   return map(sliced, post => <HTMLPreview key={post?.fields?.slug} post={post} />);
 }
 
-function getTextPreviews(posts: Array<PostType>) {
+function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
   return map(sliced, post => <TextPreview key={post?.fields?.slug} post={post} />);
 }
 
-function getPlain(posts: Array<PostType>) {
+function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
   return map(sliced, post => <PostLink key={post?.fields?.slug} post={post} />);
 }
 
-export default function Index({ data, location }: PageProps<DataType>) {
+export default function index({
+  data,
+  location,
+}: PageProps<DataType>): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
 
   return (

@@ -3,13 +3,11 @@ import './util/setupModulePath';
 import URL from 'url';
 
 import chalk from 'chalk';
-// @ts-ignore
 import notate from '@scottnonnenberg/notate';
 import _ from 'lodash';
 import async from 'async';
 import superagent from 'superagent';
-// @ts-ignore
-import { SiteChecker } from 'broken-link-checker';
+import { SiteChecker, SiteCheckerResultType } from 'broken-link-checker';
 
 const MAX_PARALLEL = 5;
 const DOMAIN = 'http://localhost:8000';
@@ -24,7 +22,7 @@ function verifyHash({
   pathname: string;
   hash: string;
   contents: string;
-}) {
+}): boolean {
   const id = hash.replace(/#/g, '');
   const goodPrefix = chalk.blue('GOOD:    ');
   const badPrefix = chalk.red('MISSING: ');
@@ -41,13 +39,20 @@ function verifyHash({
 }
 
 type LinkType = {
-  pathname: string;
-  hash: string;
+  pathname: string | null;
+  hash: string | null;
 };
 
-function checkLink({ pathname, hash }: LinkType, cb: Function) {
+function checkLink({ pathname, hash }: LinkType, cb: Function): void {
+  if (!pathname || !hash) {
+    console.error('Malformed link', { pathname, hash });
+    cb(new Error('Malformed link!'));
+    return;
+  }
+
   if (cache[pathname]) {
-    return cb(null, verifyHash({ pathname, hash, contents: cache[pathname] }));
+    cb(null, verifyHash({ pathname, hash, contents: cache[pathname] }));
+    return;
   }
 
   return superagent.get(DOMAIN + pathname).end((err, res) => {
@@ -55,12 +60,13 @@ function checkLink({ pathname, hash }: LinkType, cb: Function) {
       return;
     }
 
-    cache[pathname] = res.text; // eslint-disable-line
-    return cb(null, verifyHash({ pathname, hash, contents: res.text }));
+    cache[pathname] = res.text;
+    cb(null, verifyHash({ pathname, hash, contents: res.text }));
+    return;
   });
 }
 
-function checkLinks() {
+function checkLinks(): void {
   // try/catch is necessary because broken-link-checker swallows errors! :0(
   try {
     const deepLinks: Array<LinkType> = _.chain(links)
@@ -69,8 +75,7 @@ function checkLinks() {
       .sortBy()
       .map(url => URL.parse(url))
       .compact()
-      // We force it with 'any' because we know hash is truthy due to our previous check
-      .value() as any;
+      .value();
 
     async.mapLimit(deepLinks, MAX_PARALLEL, checkLink, err => {
       if (err) {
@@ -89,15 +94,9 @@ const options = {
   excludeExternalLinks: true,
 };
 
-type SiteCheckerResultType = {
-  url: {
-    resolved: string;
-  };
-};
-
 const handlers = {
-  link: (result: SiteCheckerResultType) => {
-    links[result.url.resolved] = true; // eslint-disable-line
+  link: (result: SiteCheckerResultType): void => {
+    links[result.url.resolved] = true;
   },
   end: checkLinks,
 };

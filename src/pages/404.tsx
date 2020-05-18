@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable filenames/match-exported */
+
+import React, { ReactElement } from 'react';
 import { Link, PageProps } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
@@ -7,7 +9,7 @@ import SEO from 'src/components/SEO';
 import Wrapper from 'src/components//Wrapper';
 import Author from 'src/components/Author';
 
-export default function NotFound({ location }: PageProps) {
+export default function NotFound({ location }: PageProps): ReactElement | null {
   const title = "Couldn't find that!";
 
   return (

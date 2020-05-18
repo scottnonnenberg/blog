@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
@@ -18,7 +18,7 @@ const MANY_LANGUAGES_URL = '/eslint-part-3-analysis/#your-fingerprint';
 const PERSPECTIVE_URL = '/from-tech-person-to-people-person/';
 const UNUSUAL_URL = '/contract-an-unusual-skillset/';
 
-export default function Author() {
+export default function Author(): ReactElement | null {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -52,17 +52,17 @@ export default function Author() {
         />
       </a>
       <div>
-        Hi, I'm{' '}
+        Hi, I&apos;m{' '}
         <a href={HOMEPAGE_URL}>
           <strong>Scott</strong>
         </a>
-        . I've written both server and client code in{' '}
+        . I&apos;ve written both server and client code in{' '}
         <Link to={MANY_LANGUAGES_URL}>many languages</Link> for{' '}
-        <a href={WORK_URL}>many employers and clients</a>. I've also got a bit of an{' '}
+        <a href={WORK_URL}>many employers and clients</a>. I&apos;ve also got a bit of an{' '}
         <Link to={UNUSUAL_URL}>unusual</Link>{' '}
-        <Link to={PERSPECTIVE_URL}>perspective</Link>, since I've spent time in{' '}
+        <Link to={PERSPECTIVE_URL}>perspective</Link>, since I&apos;ve spent time in{' '}
         <a href={ROLES_URL}>roles</a> <a href={OUTSIDE_URL}>outside</a>{' '}
-        <a href={THE_URL}>the</a> pure 'software developer.'
+        <a href={THE_URL}>the</a> pure &apos;software developer.&apos;
       </div>
     </div>
   );

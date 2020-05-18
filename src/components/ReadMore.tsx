@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import TextPreview from './TextPreview';
 
@@ -9,7 +9,7 @@ type PropsType = {
   next?: PostType;
 };
 
-function renderItem(label: string, post?: PostType) {
+function renderItem(label: string, post?: PostType): ReactElement | null {
   if (!post) {
     return null;
   }
@@ -31,7 +31,7 @@ function renderItem(label: string, post?: PostType) {
   );
 }
 
-export default function ReadMore(props: PropsType) {
+export default function ReadMore(props: PropsType): ReactElement | null {
   const { previous, next } = props;
 
   if (!previous && !next) {

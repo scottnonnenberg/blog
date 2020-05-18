@@ -5,7 +5,7 @@ import _ from 'lodash';
 import frontMatter from 'front-matter';
 import markdownIt from 'markdown-it';
 
-import { PostType, PostAttributesType } from 'src/types/post.d';
+import { PostType, PostAttributesType } from 'src/types/Post.d';
 
 const md = markdownIt({
   html: true,
@@ -34,7 +34,7 @@ export default function loadPosts(
   return _.chain(postFiles)
     .filter(file => fileFilter.test(file))
     .sortBy()
-    .reverse() // eslint-disable-line
+    .reverse()
     .take(limit)
     .map(file => {
       const filePath = path.join(postsPath, file);

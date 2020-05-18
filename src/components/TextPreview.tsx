@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 import { prune } from 'underscore.string';
 
@@ -16,7 +16,7 @@ type PropsType = {
   post: PostType;
 };
 
-export default function TextPreview(props: PropsType) {
+export default function TextPreview(props: PropsType): ReactElement | null {
   const post = props.post;
   const html = post.html;
   const preFold = getPreFoldContent(html);

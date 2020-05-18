@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
 import getPreFoldContent from 'src/util/getPreFoldContent';
@@ -16,7 +16,7 @@ type PropsType = {
   post?: PostType;
 };
 
-function create(name?: string, value?: string) {
+function create(name?: string, value?: string): ReactElement | null {
   if (!name || !value) {
     return null;
   }
@@ -24,7 +24,7 @@ function create(name?: string, value?: string) {
   return <meta key={name} property={name} content={value} />;
 }
 
-function removeHTML(html?: string) {
+function removeHTML(html?: string): string | undefined {
   if (!html) {
     return html;
   }
@@ -35,7 +35,7 @@ function generatePostSpecificTags(
   post: PostType | undefined,
   siteMetadata: SiteMetadataType,
   url: string
-) {
+): Array<ReactElement | null> {
   if (!post) {
     return [];
   }
@@ -99,7 +99,7 @@ function generateMetaTags(
   siteMetadata: SiteMetadataType,
   post: PostType | undefined,
   location: LocationType
-) {
+): Array<ReactElement | null> {
   const url = siteMetadata.domain + location.pathname;
 
   const tags = [
@@ -123,7 +123,7 @@ function generateMetaTags(
   return tags.concat(postSpecific);
 }
 
-function SEO({ pageTitle, post, location }: PropsType) {
+function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
   const { site } = useStaticQuery(
     graphql`
       query {

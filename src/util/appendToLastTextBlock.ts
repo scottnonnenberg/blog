@@ -1,12 +1,13 @@
-/* eslint-disable thehelp/no-mutation, immutable/no-let, no-loops/no-loops */
-
 import filter from 'lodash/filter';
 
 const startOfBlock = '<p>';
 const endOfBlockTest = /<\/p>/m;
 const endOfBlock = '</p>';
 
-export default function appendToLastTextBlock(content?: string, toInsert?: string) {
+export default function appendToLastTextBlock(
+  content?: string,
+  toInsert?: string
+): string | undefined {
   if (!content) {
     return content;
   }

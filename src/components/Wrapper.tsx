@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
@@ -22,7 +22,7 @@ type PropsType = {
   children: React.ReactNode;
 };
 
-function renderHeader(blogTitle: string, url: string) {
+function renderHeader(blogTitle: string, url: string): ReactElement | null {
   if (url === '/') {
     return (
       <div>
@@ -67,7 +67,7 @@ function renderHeader(blogTitle: string, url: string) {
   );
 }
 
-function Wrapper({ location, children }: PropsType) {
+function Wrapper({ location, children }: PropsType): ReactElement | null {
   const { site } = useStaticQuery(
     graphql`
       query {

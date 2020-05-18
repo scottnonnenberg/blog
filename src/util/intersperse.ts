@@ -1,4 +1,6 @@
-export default function intersperse(items?: Array<any>, toInject?: any) {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+export default function intersperse(items?: Array<any>, toInject?: any): Array<any> {
   if (!items || !items.length) {
     return [];
   }

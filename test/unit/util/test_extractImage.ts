@@ -21,7 +21,7 @@ describe('unit/utils/extractImage', () => {
       src="somewhere"
     `;
 
-    expect(extractImage(body)).to.equal(null);
+    expect(extractImage(body)).to.equal(undefined);
   });
 
   it('returns first image src found', () => {

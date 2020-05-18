@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import mailchimp from 'mailchimp';
 
@@ -6,7 +6,7 @@ type PropsType = {
   callToAction: string;
 };
 
-export default function EmailSignup(props: PropsType) {
+export default function EmailSignup(props: PropsType): ReactElement | null {
   const keys = Object.keys(mailchimp);
   if (!keys.length) {
     return null;
@@ -54,7 +54,7 @@ export default function EmailSignup(props: PropsType) {
               fontSize: '0.6em',
             }}
           >
-            I won't share your email with anyone.{' '}
+            I won&apos;t share your email with anyone.{' '}
             <a href={`http://${shard}.campaign-archive2.com/home/?u=${u}&id=${id}`}>
               See previous emails.
             </a>

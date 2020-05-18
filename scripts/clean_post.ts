@@ -15,7 +15,7 @@ const posts = loadPosts({
   markdown: false,
 });
 
-function removeSmartQuotes(value?: string) {
+function removeSmartQuotes(value?: string): string | undefined {
   if (!value) {
     return value;
   }
@@ -23,12 +23,12 @@ function removeSmartQuotes(value?: string) {
   return value.replace(/[’‘]/g, "'").replace(/[“”]/g, '"');
 }
 
-function removeDupeLinks(contents?: string) {
+function removeDupeLinks(contents?: string): string | undefined {
   if (!contents) {
     return contents;
   }
 
-  const dupeLink = /\[([^\)]+)\]\(\1\)/g;
+  const dupeLink = /\[([^)]+)\]\(\1\)/g;
   return contents.replace(dupeLink, (full: string, substring: string) => substring);
 }
 

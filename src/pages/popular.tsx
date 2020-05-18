@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { graphql, PageProps } from 'gatsby';
 
 import flow from 'lodash/fp/flow';
@@ -53,7 +53,10 @@ const getPostLinks = flow(
   ))
 );
 
-export default function Popular({ location, data }: PageProps<DataType>) {
+export default function popular({
+  location,
+  data,
+}: PageProps<DataType>): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const sorted = sortPosts(posts);
 

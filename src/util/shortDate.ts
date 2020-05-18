@@ -3,7 +3,7 @@ import moment from 'moment';
 export default function shortDate(
   providedDate?: string | Date,
   providedNow?: string | Date
-) {
+): string {
   const date = moment(providedDate);
   const now = moment(providedNow);
 

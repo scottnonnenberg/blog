@@ -1,4 +1,4 @@
-export default function extractImage(body?: string) {
+export default function extractImage(body?: string): string | undefined {
   if (!body) {
     return body;
   }
@@ -8,6 +8,4 @@ export default function extractImage(body?: string) {
   if (match) {
     return match[1];
   }
-
-  return null;
 }

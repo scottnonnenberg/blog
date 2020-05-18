@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
@@ -12,7 +12,7 @@ type PropsType = {
   post: PostType;
 };
 
-export default function PostLink(props: PropsType) {
+export default function PostLink(props: PropsType): ReactElement | null {
   const post = props.post;
 
   return (

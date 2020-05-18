@@ -1,7 +1,7 @@
 const prefix = /<p>(<em>)?\[[^\]]+\](<\/em>)?<\/p>\n/m;
 const fold = /<div class='fold'/;
 
-function getAboveFold(content: string) {
+function getAboveFold(content: string): string {
   const foldMatch = fold.exec(content);
 
   if (foldMatch) {
@@ -11,7 +11,7 @@ function getAboveFold(content: string) {
   return content;
 }
 
-export default function getPreFoldContent(content?: string) {
+export default function getPreFoldContent(content?: string): string | undefined {
   if (!content) {
     return content;
   }

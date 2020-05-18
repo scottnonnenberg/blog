@@ -1,11 +1,29 @@
-/* eslint-disable no-inline-comments, import/no-commonjs */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
 const path = require('path');
 
 module.exports = {
-  extends: ['@scottnonnenberg/thehelp', '@scottnonnenberg/thehelp/react'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
 
-  parser: 'babel-eslint',
+  plugins: ['@typescript-eslint', 'filenames', 'import', 'react'],
+
+  env: {
+    commonjs: true,
+    node: true,
+  },
+
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+  ],
 
   settings: {
     'import/resolver': {
@@ -14,22 +32,16 @@ module.exports = {
       },
     },
     react: {
-      version: '15.1.0',
+      version: '16.13.1',
     },
   },
 
   rules: {
-    'filenames/match-regex': 'off', // for now; will make files consistent eventually
+    // The <Link> component requires a string, but our types are nullable.
+    '@typescript-eslint/no-non-null-assertion': 'off',
 
-    'immutable/no-this': 'off', // we're using full React components still
-
-    'security/detect-object-injection': 'off', // as a client-only app, no concerns here
-
-    'thehelp/absolute-or-current-dir': [
-      'error',
-      {
-        exceptions: [/setupModulePath$/],
-      },
-    ],
+    // 'filenames/match-regex': 'error',
+    'filenames/match-exported': 'error',
+    'filenames/no-index': 'error',
   },
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 import SEO from 'src/components/SEO';
 
@@ -24,7 +24,10 @@ type DataType = {
   };
 };
 
-export default function Tags({ data, location }: PageProps<DataType>) {
+export default function tags({
+  data,
+  location,
+}: PageProps<DataType>): ReactElement | null {
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const tags = getTagCounts(posts);
@@ -69,10 +72,6 @@ export default function Tags({ data, location }: PageProps<DataType>) {
     </Wrapper>
   );
 }
-
-// TagIndex.propTypes = {
-//   route: React.PropTypes.object.isRequired,
-// };
 
 export const pageQuery = graphql`
   query {
