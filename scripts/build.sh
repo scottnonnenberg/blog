@@ -27,21 +27,6 @@ echo '** building with gatsby'
 yarn build
 
 echo
-echo '** building RSS/Atom XML'
-
-yarn generate-rss
-
-echo
-echo '** copying assets'
-
-cp assets/* public/
-
-echo
-echo '** building all.json and recent.json'
-
-yarn generate-json
-
-echo
 echo '** compressing files'
 
 find ${TARGET} | grep -v \.gz$ | while read FILE;

@@ -14,3 +14,5 @@ export type SiteMetadataQueryType = {
     siteMetadata: SiteMetadataType;
   };
 };
+
+export type AllDataQueryType = AllPostsQueryType & SiteMetadataQueryType;

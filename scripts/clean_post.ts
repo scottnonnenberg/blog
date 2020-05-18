@@ -1,19 +1,45 @@
 import './util/setupModulePath';
+import { readdirSync, readFileSync } from 'fs';
+import { join } from 'path';
 
 import _ from 'lodash';
 
-import loadPosts from 'scripts/util/loadPosts';
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
 import globalConfig from 'gatsbyConfig';
 
 const config = globalConfig.siteMetadata;
 
+const postsPath = join(__dirname, '../posts');
+const mdFileFilter = /.md$/;
+
+type BasicPostType = {
+  contents: string;
+  path: string;
+};
+
+function loadPosts(limit?: number): Array<BasicPostType> {
+  const postFiles = readdirSync(postsPath);
+
+  return _.chain(postFiles)
+    .filter(file => mdFileFilter.test(file))
+    .sortBy()
+    .reverse()
+    .take(limit)
+    .map(file => {
+      const path = join(postsPath, file);
+      const contents = readFileSync(path).toString();
+
+      return {
+        path,
+        contents,
+      };
+    })
+    .value();
+}
+
 const limit = parseInt(process.argv[2], 10) || 1;
-const posts = loadPosts({
-  limit,
-  markdown: false,
-});
+const posts = loadPosts(limit);
 
 function removeSmartQuotes(value?: string): string | undefined {
   if (!value) {
@@ -33,11 +59,6 @@ function removeDupeLinks(contents?: string): string | undefined {
 }
 
 _.forEach(posts, post => {
-  if (!post.path) {
-    console.error('Malformed post:', post);
-    throw new Error("Post was missing path, can't write it!");
-  }
-
   console.log('checking', post.path);
 
   const withoutSmartQuotes = removeSmartQuotes(post.contents);
