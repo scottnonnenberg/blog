@@ -3,6 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import { rhythm } from 'src/util/typography';
 
+import { SiteMetadataQueryType } from 'src/types/queries';
+
 const QUARTER = 0.25;
 
 // External
@@ -19,7 +21,7 @@ const PERSPECTIVE_URL = '/from-tech-person-to-people-person/';
 const UNUSUAL_URL = '/contract-an-unusual-skillset/';
 
 export default function Author(): ReactElement | null {
-  const { site } = useStaticQuery(
+  const data: SiteMetadataQueryType = useStaticQuery(
     graphql`
       query {
         site {
@@ -34,7 +36,7 @@ export default function Author(): ReactElement | null {
     `
   );
 
-  const { icon, url } = site.siteMetadata.author;
+  const { icon, url } = data.site.siteMetadata.author;
 
   return (
     <div className="author">
@@ -67,7 +69,3 @@ export default function Author(): ReactElement | null {
     </div>
   );
 }
-
-// Author.propTypes = {
-//   author: React.PropTypes.object.isRequired,
-// };

@@ -18,17 +18,10 @@ import TextPreview from 'src/components/TextPreview';
 import PostLink from 'src/components/PostLink';
 
 import { PostType } from 'src/types/Post';
+import { AllPostsQueryType } from 'src/types/queries.d';
 
 const TEXT_PREVIEW_POSTS = 10;
 const POST_LINKS = 10;
-
-type DataType = {
-  allMarkdownRemark: {
-    edges: Array<{
-      node: PostType;
-    }>;
-  };
-};
 
 const sortPosts = flow(
   filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
@@ -56,7 +49,7 @@ const getPostLinks = flow(
 export default function popular({
   location,
   data,
-}: PageProps<DataType>): ReactElement | null {
+}: PageProps<AllPostsQueryType>): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const sorted = sortPosts(posts);
 

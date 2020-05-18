@@ -5,7 +5,7 @@ import path from 'path';
 
 import { map, compact } from 'lodash';
 
-import * as globalConfig from 'gatsby-config';
+import globalConfig from 'gatsbyConfig';
 
 import getPreFoldContent from 'src/util/getPreFoldContent';
 import fixLocalLinks from 'src/util/fixLocalLinks';

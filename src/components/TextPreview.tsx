@@ -43,7 +43,3 @@ export default function TextPreview(props: PropsType): ReactElement | null {
     </div>
   );
 }
-
-// TextPreview.propTypes = {
-//   post: React.PropTypes.object.isRequired,
-// };

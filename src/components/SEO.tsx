@@ -9,6 +9,7 @@ import extractImage from 'src/util/extractImage';
 import { LocationType } from 'src/types/Location';
 import { PostType } from 'src/types/Post';
 import { SiteMetadataType } from 'src/types/SiteMetadata';
+import { SiteMetadataQueryType } from 'src/types/queries';
 
 type PropsType = {
   location: LocationType;
@@ -124,7 +125,7 @@ function generateMetaTags(
 }
 
 function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
-  const { site } = useStaticQuery(
+  const data: SiteMetadataQueryType = useStaticQuery(
     graphql`
       query {
         site {
@@ -146,7 +147,7 @@ function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
       }
     `
   );
-  const { siteMetadata } = site;
+  const { siteMetadata } = data.site;
 
   return (
     <Helmet>

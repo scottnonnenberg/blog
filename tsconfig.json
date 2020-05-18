@@ -13,12 +13,5 @@
       "*": ["*"]
     }
   },
-  "include": [
-    "scripts/**/*.ts",
-    "scripts/**/*.tsx",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "test/**/*.ts",
-    "test/**/*.tsx"
-  ]
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }

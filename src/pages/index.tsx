@@ -16,19 +16,12 @@ import HTMLPreview from 'src/components/HTMLPreview';
 import EmailSignup from 'src/components/EmailSignup';
 
 import { PostType } from 'src/types/Post';
+import { AllPostsQueryType } from 'src/types/queries.d';
 
 const HTML_PREVIEW_POSTS = 5;
 const TEXT_PREVIEW_POSTS = 5;
 
 const LARGER_MARGIN = 1.5;
-
-type DataType = {
-  allMarkdownRemark: {
-    edges: Array<{
-      node: PostType;
-    }>;
-  };
-};
 
 function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(0, HTML_PREVIEW_POSTS);
@@ -48,7 +41,7 @@ function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
 export default function index({
   data,
   location,
-}: PageProps<DataType>): ReactElement | null {
+}: PageProps<AllPostsQueryType>): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
 
   return (

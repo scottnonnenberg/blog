@@ -4,6 +4,7 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import { rhythm } from 'src/util/typography';
 
 import { LocationType } from 'src/types/Location';
+import { SiteMetadataQueryType } from 'src/types/queries';
 
 import 'css/typography-compat.less';
 import 'css/styles.less';
@@ -68,7 +69,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
 }
 
 function Wrapper({ location, children }: PropsType): ReactElement | null {
-  const { site } = useStaticQuery(
+  const data: SiteMetadataQueryType = useStaticQuery(
     graphql`
       query {
         site {
@@ -80,7 +81,7 @@ function Wrapper({ location, children }: PropsType): ReactElement | null {
     `
   );
 
-  const blogTitle = site.siteMetadata.blogTitle;
+  const blogTitle = data.site.siteMetadata.blogTitle;
   const url = location.pathname;
 
   return (

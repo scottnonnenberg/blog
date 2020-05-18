@@ -4,7 +4,7 @@ A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
 ## Key settings
 
-`gatsby-config.js` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
+`gatsby-config.ts` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
 
 `mailchimp.js` is also excluded from the repository, used by the `<EmailSignup>` React component in displaying its form. It uses five keys:
 
@@ -26,7 +26,7 @@ _Note: if you don't want to connect to a mailchimp mailing list, delete the `<Em
 yarn develop
 ```
 
-This runs `gatsby`'s hot-reloading development server on http://localhost:8000. It will have to be restarted if you rename, add, or remove files because [`webpack`](https://webpack.github.io/)'s watch mode doesn't handle those kinds of filesystem changes.
+This runs `gatsby`'s hot-reloading development server on http://localhost:8000.
 
 ## Build
 
@@ -67,7 +67,7 @@ yarn clean-post
 yarn clean-post -- 5
 ```
 
-By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsby-config.js`) to ensure that links are all of the relative form.
+By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsby-config.ts`) to ensure that links are all of the relative form.
 
 ```bash
 yarn generate-rss

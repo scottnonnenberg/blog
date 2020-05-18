@@ -8,7 +8,7 @@ import getPreFoldContent from 'src/util/getPreFoldContent';
 import fixLocalLinks from 'src/util/fixLocalLinks';
 import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
-import * as globalConfig from 'gatsby-config';
+import globalConfig from 'gatsbyConfig';
 
 import { PostType } from 'src/types/Post.d';
 

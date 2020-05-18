@@ -21,12 +21,12 @@ type PageContextType = {
   postsWithTag: Array<PostType>;
 };
 
-export function _getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
+export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
   return map(sliced, post => <TextPreview key={post?.frontmatter?.path} post={post} />);
 }
 
-export function _getPlain(posts: Array<PostType>): Array<ReactElement | null> {
+export function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
   const plainPosts = posts.slice(TEXT_PREVIEW_POSTS);
   return map(plainPosts, post => <PostLink key={post?.frontmatter?.path} post={post} />);
 }
@@ -43,8 +43,8 @@ export default function tag({
       <SEO pageTitle={title} location={location} />
       <div>
         <h1>{title}</h1>
-        {_getTextPreviews(postsWithTag)}
-        {_getPlain(postsWithTag)}
+        {getTextPreviews(postsWithTag)}
+        {getPlain(postsWithTag)}
         <hr
           style={{
             marginTop: rhythm(2),

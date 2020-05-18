@@ -5,7 +5,7 @@ import _ from 'lodash';
 import loadPosts from 'scripts/util/loadPosts';
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
-import * as globalConfig from 'gatsby-config';
+import globalConfig from 'gatsbyConfig';
 
 const config = globalConfig.siteMetadata;
 
