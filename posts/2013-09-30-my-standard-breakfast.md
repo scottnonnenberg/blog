@@ -14,7 +14,7 @@ Whenever I tell anyone about what I have for breakfast every morning, they say t
 
 First, yeah it's a lot of food. But then again I used to eat three or four bowls of cereal every morning. Second, no. Only a certain special someone gets my breakfasts. :0)
 
-![First Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast1.jpg)
+![First Breakfast Image](../assets/2014/02_feb/breakfast1.jpg)
 
 <div class='fold'></div>
 
@@ -30,20 +30,19 @@ As you might expect, it's made of very high-quality ingredients:
 * Hot sauce
 * A glass of organic, grass-fed whole raw milk
 
-![Second Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast2.jpg)
+![Second Breakfast Image](../assets/2014/02_feb/breakfast2.jpg)
 
 ## When?
 
 Every morning, even on weekends.
 
-
 ## Why?
 
 Why do I spend the time every morning to make this? Well, I believe in quality nutrition. Based on my research, good health is not all about exercise. It's about getting enough sleep, reducing the stress in your life, and giving your body high quality fuel. And then maybe some exercise when your body is ready.
 
-People worry about so-called "white" foods and their simple carbs, the large amount of saturated fat in butter, or the cholesterol in eggs. I figure that all of my breakfast ingredients are minimally processed and produced in really the best way I can find it. Treating the animals well, avoiding the use of chemicals. The obesity epidemic is new in the last ~50 years, and I'm attempting to eat how people ate before then.
+People worry about so-called "white" foods and their simple carbs, the large amount of saturated fat in butter, or the cholesterol in eggs. I figure that all of my breakfast ingredients are minimally processed and produced in really the best way I can find it. Treating the animals well, avoiding the use of chemicals. The obesity epidemic is new in the last \~50 years, and I'm attempting to eat how people ate before then.
 
-![Third Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast3.jpg)
+![Third Breakfast Image](../assets/2014/02_feb/breakfast3.jpg)
 
 ## How?
 
@@ -71,7 +70,7 @@ Since then, I've made some small tweaks:
 * I dice potatoes and cook them fresh every morning now, but I had an optimization for a while to make it all go faster in the morning: Before the week started, I would bake potato disks. These could just be warmed up in the pan with the veggies.
 * I'm really into soft-boiling my eggs right now. Makes it easier to manage all the various parts.
 
-![Fourth Breakfast Image](https://static.sinap.ps/blog/2014/Feb/breakfast4.jpg)
+![Fourth Breakfast Image](../assets/2014/02_feb/breakfast4.jpg)
 
 ## Is it worth it?
 

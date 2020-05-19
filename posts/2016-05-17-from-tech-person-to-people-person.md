@@ -19,7 +19,7 @@ I've been on both sides: made fun of as a geeky computer enthusiast, and derided
 
 <div class='fold'></div>
 
-![crab beanie baby](https://static.sinap.ps/blog/2016/05_may/people_person/crab.jpg)
+![crab beanie baby](../assets/2016/05_may/people_person/crab.jpg)
 
 ## People Matter
 
@@ -75,7 +75,7 @@ You've tuned your mannerisms and words. Now for your overall behavior. You alrea
 
 So simple and so powerful. But how do others want to be treated, exactly? We need to figure that out.
 
-<a class="plain" href="/star-wars-cards/"><img src="https://static.sinap.ps/blog/2016/05_may/people_person/captainhansolo.gif" alt="Han Solo Star Wars CCG card"></a>
+[![Han Solo Star Wars CCG card](../assets/2016/05_may/people_person/captainhansolo.gif)](/star-wars-cards/)
 
 ## Mental models for people
 

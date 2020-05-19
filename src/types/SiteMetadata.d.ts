@@ -5,7 +5,6 @@ export type SiteMetadataType = {
   linkPrefix: string;
 
   favicon: string;
-  domainCDN: string;
 
   author: {
     shortName: string;

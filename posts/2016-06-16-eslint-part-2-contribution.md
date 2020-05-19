@@ -11,7 +11,7 @@ tags:
   - reactjs
 ---
 
-![eslint logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
+![eslint logo](../assets/2016/06_jun/eslint/eslint-logo-rev3.png)
 
 [I recently wrote about](/eslint-part-1-exploration/) my [ESLint](http://eslint.org/) exploration and [configuration node module](https://github.com/scottnonnenberg/eslint-config-thehelp). But I went further than that - I contributed back to the ESLint community! I submitted several pull requests and released a [plugin of my own](https://github.com/scottnonnenberg/eslint-plugin-thehelp) - and you can too!
 

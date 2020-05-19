@@ -11,7 +11,7 @@ tags:
   - business
 ---
 
-![Social Security Administration Logo](https://static.sinap.ps/blog/2016/09_sep/ssa/ssa-logo-banner.png)
+![Social Security Administration Logo](../assets/2016/09_sep/ssa/ssa-logo-banner.png)
 
 I've spoken before about my [training](/tags/training/) and [development](/contract-new-techniques-old-technology/) contracts, but my second stint at the [Social Security Administration (SSA)](https://www.ssa.gov/) was an interesting mashup. I worked with the code itself as well as with developers, project managers and executives. It was a great opportunity to use my unusual skillset: [spanning the tech/non-tech divide](/from-tech-person-to-people-person/)...
 

@@ -27,7 +27,7 @@ function fetchJSON(options, cb) {
 
 In your mind, tell me about this code. What is it trying to do? Is it correct? In all scenarios? Go ahead, take some time.
 
-![waiting...](https://static.sinap.ps/blog/2016/01_jan/promises/waiting.gif)
+![waiting...](../assets/2016/01_jan/promises/waiting.gif)
 
 It is sound code, but only for the success case. If no exceptions are thrown by the success-case `cb()` call tree before it next defers to the event loop, everything will be fine.
 

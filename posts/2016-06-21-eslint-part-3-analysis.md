@@ -10,7 +10,7 @@ tags:
   - software
 ---
 
-![ESLint Logo](https://static.sinap.ps/blog/2016/06_jun/eslint/eslint-logo-rev3.png)
+![ESLint Logo](../assets/2016/06_jun/eslint/eslint-logo-rev3.png)
 
 I've already spoken about my initial [ESLint](http://eslint.org/) [explorations (Part 1)](/eslint-part-1-exploration/) and [contributions (Part 2)](/eslint-part-2-contribution/). For Part 3, let's get a little deeper. Why use ESLint in the first place? Why is it so hard for a group of people to agree on one style guide? Can we at least make it easier to compare configurations?
 
@@ -190,15 +190,15 @@ I pulled down a number of the most well-known configurations, then used my tool 
 <table>
   <tr>
     <td></td>
-    <td><a class="plain" href="https://github.com/feross/eslint-config-standard">"Standard"</a></td>
-    <td><a class="plain" href="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb">AirBnB</a></td>
-    <td><a class="plain" href="https://github.com/google/eslint-config-google">Google</a></td>
-    <td><a class="plain" href="https://github.com/walmartlabs/eslint-config-defaults">defaults</a></td>
-    <td><a class="plain" href="https://github.com/walmartlabs/eslint-config-defaults/blob/a464fed3c0d13e10b3c1f2f8a49298966658b325/configurations/walmart/es6-react.js">Walmart</a></td>
-    <td><a class="plain" href="https://github.com/indentline/eslint-config-indent">indent</a></td>
+    <td><a href="https://github.com/feross/eslint-config-standard">"Standard"</a></td>
+    <td><a href="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb">AirBnB</a></td>
+    <td><a href="https://github.com/google/eslint-config-google">Google</a></td>
+    <td><a href="https://github.com/walmartlabs/eslint-config-defaults">defaults</a></td>
+    <td><a href="https://github.com/walmartlabs/eslint-config-defaults/blob/a464fed3c0d13e10b3c1f2f8a49298966658b325/configurations/walmart/es6-react.js">Walmart</a></td>
+    <td><a href="https://github.com/indentline/eslint-config-indent">indent</a></td>
   </tr>
   <tr>
-    <td><a class="plain" href="https://github.com/scottnonnenberg/eslint-config-thehelp">thehelp</a></td>
+    <td><a href="https://github.com/scottnonnenberg/eslint-config-thehelp">thehelp</a></td>
     <td>28%</td>
     <td>42%</td>
     <td>38%</td>

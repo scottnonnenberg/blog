@@ -8,7 +8,7 @@ tags:
 
 A couple years ago, I did my civic duty: I delivered a 'not guilty' verdict on a [driving under the influence (DUI)](https://en.wikipedia.org/wiki/Driving_under_the_influence) case. But none of us on the jury were very happy about it. Why? We needed just a little more objective evidence. Important evidence that only technology can provide.
 
-![drab waiting room](https://static.sinap.ps/blog/2016/08_aug/evidence/waiting-room.jpg)
+![drab waiting room](../assets/2016/08_aug/evidence/waiting-room.jpg)
 
 <div class='fold'></div>
 
@@ -22,7 +22,7 @@ Periodically someone would stand at the door to the room and start listing juror
 
 Happily, I was called for a group of about 20.
 
-![old-school phone booth](https://static.sinap.ps/blog/2016/08_aug/evidence/phone-booth.jpg)
+![old-school phone booth](../assets/2016/08_aug/evidence/phone-booth.jpg)
 
 ## Novelty vs. Tradition
 

@@ -7,7 +7,7 @@ tags:
   - business
 ---
 
-![deal with it cat](https://static.sinap.ps/blog/2014/Sep/deal_with_it_cat-1410405231949.jpg)
+![deal with it cat](../assets/2014/09_sep/deal_with_it_cat-1410405231949.jpg)
 
 I've worked with quite a few companies over my career now, many of them very large. Some patterns of behavior have started to emerge, which I now call antiskills:
 
@@ -21,7 +21,7 @@ Let's dig into these antiskills and their antidotes...
 
 <div class='fold'></div>
 
-![sit down, shut up and do as you're told](https://static.sinap.ps/blog/2014/Sep/sit_down_shut_up_and_do_as_you_re_told-1410405365318.png)
+![sit down, shut up and do as you're told](../assets/2014/09_sep/sit_down_shut_up_and_do_as_you_re_told-1410405365318.png)
 
 ## Antiskill: Doing What You're Told
 
@@ -42,7 +42,7 @@ The best kind of workplace harnesses more than your ability to do tasks. It dema
 * Always have one active project which you initiated, and where you're making most of the decisions. Push hard; make mistakes. This is where true learning comes from.
 * Go to a [Startup Weekend](http://startupweekend.org/), where you'll work with a small team to get a business off the ground in three days! Nobody will tell you what to do; you'll have to figure it out for yourself.
 
-![headless chicken](https://static.sinap.ps/blog/2014/Sep/headless_chicken-1410405270942.jpg)
+![headless chicken](../assets/2014/09_sep/headless_chicken-1410405270942.jpg)
 
 ## Antiskill: Being Responsive
 
@@ -61,7 +61,7 @@ In many cases, there's a core reason behind that need for high-frequency reactiv
 * [Reserve some time every day for empty space](http://www.elephantjournal.com/2008/09/dr-reggie-ray-busy-ness-is-laziness/). No meetings, no tasks, just your subconscious churning on the problems of the day. You'll be more creative, more relaxed.
 * In [Anything You Want](http://www.amazon.com/Anything-You-Want-Derek-Sivers/dp/1936719118), Derek Sivers talks about breaking out of this responsiveness trap by bringing his company together whenever someone asked him a question so everyone could hear the answer. This became the beginning of the [CDBaby](http://www.cdbaby.com/) company guidebook.
 
-![obama: deal with it](https://static.sinap.ps/blog/2014/Sep/deal_with_it_obama-1410405282195.jpg)
+![obama: deal with it](../assets/2014/09_sep/deal_with_it_obama-1410405282195.jpg)
 
 ## Antiskill: Dealing With It
 

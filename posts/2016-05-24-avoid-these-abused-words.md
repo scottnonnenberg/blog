@@ -8,7 +8,7 @@ tags:
   - ideas
 ---
 
-![definition of 'actually' from Google](https://static.sinap.ps/blog/2016/05_may/words/actually-google-cropped.png)
+![definition of 'actually' from Google](../assets/2016/05_may/words/actually-google-cropped.png)
 
 There are some words which warrant caution. They can instantly turn people defensive, or cause your listener to completely disregard everything you say afterwards. Why are they so bad? What can we do instead? Let's dig into my collection of abused words.
 

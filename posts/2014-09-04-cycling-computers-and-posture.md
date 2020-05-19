@@ -7,7 +7,7 @@ tags:
   - fitness
 ---
 
-![bike](https://static.sinap.ps/blog/2014/Sep/bike-1409700490953.jpg)
+![bike](../assets/2014/09_sep/bike-1409700490953.jpg)
 
 Bikes have been a large part of my life for a long time. But not lately. Before we get into my reasons for that, let's talk about history a little bit...
 
@@ -32,7 +32,7 @@ At my one and only appointment, the primary message was that I needed to strengt
 
 I wasn't interested in addressing the system, just that bothersome symptom. But it wouldn't be long before I was shocked into addressing things more globally.
 
-![fully kitted out](https://static.sinap.ps/blog/2014/Sep/kit-1409700656226.jpg)
+![fully kitted out](../assets/2014/09_sep/kit-1409700656226.jpg)
 
 ## Rediscovering cycling
 
@@ -68,7 +68,7 @@ We talked about my work setup. She said that the right chair and mindfulness tow
 
 So decided to jump all the way in with a standing desk. Standing all day was tough at the start, and I needed breaks. But my posture was improving. Slowly. I couldn't expect fast progress; I was undoing __20 years__ of bad habits.
 
-![travel standing desk](https://static.sinap.ps/blog/2014/Sep/travel_standing_desk-1409700557302.jpg)
+![travel standing desk](../assets/2014/09_sep/travel_standing_desk-1409700557302.jpg)
 
 ## Cycling and posture
 
@@ -87,7 +87,7 @@ So I decided to take the plunge. No cycling for a while. It wasn't an easy decis
 - My exercise routine strengthens my back (rows and similar exercises), and includes no chest exercises. I haven't done a push-up or benchpress since March 2012.
 - I regularly stretch my fingers backward and loosen my shoulders with arm circles, since my arms, from wrists to shoulders, are tight from typing all day.
 
-![dual keyboards](https://static.sinap.ps/blog/2014/Sep/two_keyboards-1409700574744.jpg)
+![dual keyboards](../assets/2014/09_sep/two_keyboards-1409700574744.jpg)
 
 ## Work area changes for posture
 

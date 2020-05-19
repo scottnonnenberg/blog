@@ -11,7 +11,7 @@ tags:
   - software
 ---
 
-<a class="plain" href="https://www.flickr.com/photos/craigmoulding/5881291261"><img src="https://static.sinap.ps/blog/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg" alt="dangerous cliffs via craigmoulding on flickr"></a>
+[![dangerous cliffs via craigmoulding on flickr](../assets/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg)](https://www.flickr.com/photos/craigmoulding/5881291261)
 
 *[Update: In July 2015 I gave [a talk based on this post at the Seattle Node.js meetup](http://www.meetup.com/Seattle-Node-js/events/222999198/). [Here's the screencast](https://www.youtube.com/watch?v=bMHB6zb9AXY). The [slides and demos are on Github](https://github.com/scottnonnenberg/dangerous-cliffs-of-nodejs).]*
 
@@ -45,7 +45,7 @@ Sadly, even quick restarts will result in [socket hang-ups](http://stackoverflow
 * [`hapi`](http://hapijs.com/) is also resilient to crashes in endpoint handlers. It keeps the server alive after crashes, which could result in unexpected behavior or memory leaks.
 * Both of these solutions use [`domain`](http://nodejs.org/api/domain.html). Sadly, [domains are deprecated despite having no good replacement solution](https://github.com/iojs/io.js/issues/66).
 
-<a class="plain" href="https://www.flickr.com/photos/sarah_c_murray/5448305160"><img src="https://static.sinap.ps/blog/2015/02_feb/cliff_edges_are_dangerous-1423614893374.jpg" alt="dangerous cliffs via sarah_c_murray of flickr"></a>
+[![dangerous cliffs via sarah_c_murray of flickr](../assets/2015/02_feb/cliff_edges_are_dangerous-1423614893374.jpg)](https://www.flickr.com/photos/sarah_c_murray/5448305160)
 
 ## Hangs
 
@@ -67,7 +67,7 @@ But even if you've fully vetted all your third-party libraries, it's still easy 
 * Even if you're detecting these situations, I think we can agree that we don't want users waiting very long to finally get no response. By default, `express` and `hapi` will both keep a connection open until the remote client gives up, and I've seen Chrome to be something like two minutes, and [`nginx`](http://nginx.org/) is 60 seconds by default. `hapi` does have a [built-in route timeout option](http://hapijs.com/api#route-options) you'll want to investigate. `express` is a little trickier. You can use middleware like [`timeout`](https://github.com/expressjs/timeout), but you will need watch for your long-running handlers attempting to send responses after the timeout error has already been sent to the client.
 * If you're not writing a server interacting with clients, then embrace logging. The only way to catch a hang in this scenario is by detecting missing log entries!
 
-<a class="plain" href="https://www.flickr.com/photos/9610484@N05/3483050503"><img src="https://static.sinap.ps/blog/2015/02_feb/dangerous_cliffs-1423615251162.jpg" alt="dangerous cliffs via 9610484@N05 on flickr"></a>
+[![dangerous cliffs via 9610484@N05 on flickr](../assets/2015/02_feb/dangerous_cliffs-1423615251162.jpg)](https://www.flickr.com/photos/9610484@N05/3483050503)
 
 ## Blocking the event loop
 
@@ -85,7 +85,7 @@ For all that data transformation time, the process is unresponsive to other requ
 * If you must get all the data up front, be sure that you include some kind of __limit__ clause, and check any user-provided bounds input.
 * Monitor your request response times. [New Relic](http://newrelic.com/nodejs) plugs into Express automatically, or you can use [`morgan`](https://github.com/expressjs/morgan) support for response times. The `good-console` plugin for `hapi` includes response times by default. Because one too-long synchronous code block will delay everything else, you'll see very clear patterns in the data.
 
-<a class="plain" href="https://www.flickr.com/photos/swotai/3028197916"><img src="https://static.sinap.ps/blog/2015/02_feb/sheer_unstable_cliffs-1423615339192.jpg" alt="dangerous cliffs via swotai on flickr"></a>
+[![dangerous cliffs via swotai on flickr](../assets/2015/02_feb/sheer_unstable_cliffs-1423615339192.jpg)](https://www.flickr.com/photos/swotai/3028197916)
 
 ## Too much concurrency
 
@@ -102,7 +102,7 @@ Node.js is really good at kicking off a lot of concurrent tasks. But like anythi
 * If you do own the downstream service, or you know the failure modes of the third party service really well, you might consider using the [Circuit Breaker ](http://martinfowler.com/bliki/CircuitBreaker.html)[pattern](http://martinfowler.com/bliki/CircuitBreaker.html). Here is a [node implementation](https://github.com/ryanfitz/node-circuitbreaker).
 * In failure cases, consider using [exponential back-off](https://github.com/MathieuTurcotte/node-backoff), because Node.js is also good at retrying things very quickly: ["If you have all these fast node processes on lots of servers, all trying to connect to a database that went down, you can take down a production firewall. Just saying."](http://youtu.be/5ttx8Nkgjl8?t=47m5s)
 
-<a class="plain" href="https://www.flickr.com/photos/daveynin/4787623561"><img src="https://static.sinap.ps/blog/2015/02_feb/rocky_trail-1423614995322.jpg" alt="dangerous cliffs via daveynin on flickr"></a>
+[![dangerous cliffs via daveynin on flickr](../assets/2015/02_feb/rocky_trail-1423614995322.jpg)](https://www.flickr.com/photos/daveynin/4787623561)
 
 ## Getting to the summit
 

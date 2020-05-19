@@ -10,7 +10,7 @@ tags:
   - software
 ---
 
-![node.js](https://static.sinap.ps/blog/2014/Dec/nodejs_logo-1417834491072.png)
+![node.js](../assets/2014/12_dec/nodejs_logo-1417834491072.png)
 
 All the cool kids are using Node.js these days. But perhaps more interesting, big companies are using it too. In the spring, I contracted with Walmart Labs and saw it firsthand. They're getting good results with it, and that's legitimizing the platform. Maybe your team or company is even starting to think about moving to it.
 

@@ -49,7 +49,7 @@ _Note: this code uses [breadcrumbs functionality](https://github.com/thehelp/cor
 
 Go ahead, I'll wait...
 
-![cookie monster is waiting](https://static.sinap.ps/blog/2016/04_apr/functional/cookie-monster-waiting.gif)
+![cookie monster is waiting](../assets/2016/04_apr/functional/cookie-monster-waiting.gif)
 
 So what do you think? Maybe bring in [Sinon.js](http://sinonjs.org/) to stub out the three calls on `this` so we could cover the `_mergeFilesAndDB()` call without going to the database? Refactor `list()` to use [Async.js](https://github.com/caolan/async) primitives? Refactor it to reduce the [callback depth](http://eslint.org/docs/rules/max-nested-callbacks)?
 

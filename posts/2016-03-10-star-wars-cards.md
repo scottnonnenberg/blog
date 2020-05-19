@@ -8,7 +8,7 @@ tags:
   - star-wars
 ---
 
-![Luke and Vader](https://static.sinap.ps/blog/2016/03_mar/star_wars/cards.jpg)
+![Luke and Vader](../assets/2016/03_mar/star_wars/cards.jpg)
 
 It might surprise you to hear that I was obsessed with Star Wars when I was young. But it'll probably surprise you more that in 2015 I delved into the world of Ebay collectibles and rebuilt my collection of [*Star Wars: Customizable Card Game (SW:CCG)*](https://en.wikipedia.org/wiki/Star_Wars_Customizable_Card_Game) cards. Especially since the game hasn't been in print since 2001!
 
@@ -24,7 +24,7 @@ But nothing quite captured [my analytical imagination](/introversion/#early-sign
 
 Why? Because *Magic* was too focused on demons, death and destruction: it seemed to be a combination of [spiritual](https://paulwilkinson.wordpress.com/should-christians-play-magic-the-gathering/) and content-based objections. Happily this difference of opinion never became a real conflict because I was soon distracted...
 
-![Promotional Poster, Premiere 1995](https://static.sinap.ps/blog/2016/03_mar/star_wars/poster_premiere.jpg)
+![Promotional Poster, Premiere 1995](../assets/2016/03_mar/star_wars/poster_premiere.jpg)
 
 ## The rise of SW:CCG
 
@@ -32,7 +32,7 @@ In December 1995, [Decipher](https://en.wikipedia.org/wiki/Decipher,_Inc.) relea
 
 My group of friends and I jumped in with him, and we all started building our decks. One deck of exactly 60 cards for the light side, and another for the dark side. Unlike *Magic*, games were always good against evil, and it was hard to include more than two people in one game. No matter; I had a lot of fun thinking through strategies, building decks, and playing games!
 
-![Promotional Poster, Dagobah 1997](https://static.sinap.ps/blog/2016/03_mar/star_wars/poster_dagobah.jpg)
+![Promotional Poster, Dagobah 1997](../assets/2016/03_mar/star_wars/poster_dagobah.jpg)
 
 ## The fall of SW:CCG
 
@@ -44,7 +44,7 @@ In college, I bought some *Magic* cards and played them with friends, calling th
 
 In 2001, unbeknownst to me, Decipher lost their contract to produce *Star Wars: Customizable Card Game*. During that final year, they produced a number of last-minute, inadequately-tested sets, some based on the new prequel trilogy. And then the game was officially dead.
 
-![Playing Betrayal at House on the Hill](https://static.sinap.ps/blog/2016/03_mar/star_wars/bahoth.jpg)
+![Playing Betrayal at House on the Hill](../assets/2016/03_mar/star_wars/bahoth.jpg)
 
 ## Boardgaming, Hobbies, Nostalgia
 
@@ -58,7 +58,7 @@ It all came rushing back! A very enjoyable, pointless hobby that had an untimely
 
 To the internet!
 
-![Large package from Category One Games](https://static.sinap.ps/blog/2016/03_mar/star_wars/cog_package.jpg)
+![Large package from Category One Games](../assets/2016/03_mar/star_wars/cog_package.jpg)
 
 ## Out-of-print collectibles
 
@@ -74,7 +74,7 @@ In the span of 5 days, I had done it. Careful research and comparison, heart-pou
 
 Now it was time to sit back and wait. One of every card produced between 1995 and early 2001 was on its way to me in the form of many amateur shipments.
 
-![Alphabetizing that cards](https://static.sinap.ps/blog/2016/03_mar/star_wars/alphabetizing.jpg)
+![Alphabetizing that cards](../assets/2016/03_mar/star_wars/alphabetizing.jpg)
 
 ## Geeking Out
 
@@ -82,9 +82,9 @@ As the shipments arrived, I categorized, sorted, and inventoried. It came out to
 
 This wasn't 1995, so my inventory is in the form of a spreadsheet, seeded with [comprehensive card data](http://www.starwarsccg.org/forums/viewtopic.php?f=188&t=54610) (rarity, stats, text, etc.). So much easier than simple text files with the card names! Just the ability to re-sort on various traits saved me a huge amount of time - every complete set came in a different sort order.
 
-![Finally, organized binders!](https://static.sinap.ps/blog/2016/03_mar/star_wars/binders.jpg)
+![Finally, organized binders!](../assets/2016/03_mar/star_wars/binders.jpg)
 
-My long card boxes started coming together, and so did my binders. Four total binders, two light and two dark. I even made [custom separators](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators-Color.pdf) introducing each set of cards, with images of the original packs, the date released, and other random info. I decided on a straight alphabetical sort order. Easier to find a particular card, even if it might be harder to find all weapons in a given set.
+My long card boxes started coming together, and so did my binders. Four total binders, two light and two dark. I even made [custom separators](../assets/2016/03_mar/star_wars/SectionSeparators-Color.pdf) introducing each set of cards, with images of the original packs, the date released, and other random info. I decided on a straight alphabetical sort order. Easier to find a particular card, even if it might be harder to find all weapons in a given set.
 
 And of course that got me thinking. I do want to find cards all sorts of ways. The binders are nice to page through, yes. And yet, I have a complete inventory in my spreadsheet. It was time to write some code. I [downloaded images for all the cards](http://www.holotable.com/downloads.php), associated them with my spreadsheet, exported it to CSV, then started writing little tools:
 
@@ -106,8 +106,8 @@ Let me know if you're interested!
 Resources:
 
 * My binder separator pages:
-  * [Color, just the major releases (includes images of packaging)](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators-Color.pdf)
-  * [Black and white, smaller releases](https://static.sinap.ps/blog/2016/03_mar/star_wars/SectionSeparators.pdf)
+  * [Color, just the major releases (includes images of packaging)](../assets/2016/03_mar/star_wars/SectionSeparators-Color.pdf)
+  * [Black and white, smaller releases](../assets/2016/03_mar/star_wars/SectionSeparators.pdf)
 * Getting started: https://boardgamegeek.com/thread/866727/star-wars-ccg-how-get-started
 * Online card database: http://swccg.polarhaven.net/
 * Other people talking about it:

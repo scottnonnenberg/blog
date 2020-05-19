@@ -4,7 +4,7 @@ date: 2016-04-14T21:46:12.689Z
 path: /feeling-the-bern/
 ---
 
-![Bernie Sanders](https://static.sinap.ps/blog/2016/04_apr/bern/bernie-sanders.jpg)
+![Bernie Sanders](../assets/2016/04_apr/bern/bernie-sanders.jpg)
 
 This election really has me excited. Bernie Sanders is bringing a new energy into politics, and I've never been this engaged before. You could definitely say that I'm "Feeling the Bern."
 
@@ -22,7 +22,7 @@ I've always been a cynic regarding politics. Even in High School it was clear to
 
 Sadly, I never did anything with that early enthusiasm. I voted in most elections, but not all of them. I never got involved, never paid much attention. Even today I reject the normal hype cycle, the talking heads yelling at each other, so very few things get through.
 
-![First Democratic Debate](https://static.sinap.ps/blog/2016/04_apr/bern/debate-event.jpg)
+![First Democratic Debate](../assets/2016/04_apr/bern/debate-event.jpg)
 
 ## Slow Bern
 
@@ -50,7 +50,7 @@ Bernie wasn't simply talking about fixing campaign finance in the United States,
 
 He opened the door for me to walk through. And I did. I contributed to his campaign at [Bernie's site](https://go.berniesanders.com/page/content/contribute/). For the first time, I had gone beyond voting, that most basic civic duty.
 
-## ![#FuelTheBern at WA Democratic Caucus](https://static.sinap.ps/blog/2016/04_apr/bern/fuel-the-bern.jpg)
+## ![#FuelTheBern at WA Democratic Caucus](../assets/2016/04_apr/bern/fuel-the-bern.jpg)
 
 ## First: Caucus
 
@@ -68,7 +68,7 @@ The whole thing was quite an experience. It was close to home, and I saw people 
 
 And that brought me to my next first...
 
-![Caucus Precinct Results](https://static.sinap.ps/blog/2016/04_apr/bern/precinct-results.jpg)
+![Caucus Precinct Results](../assets/2016/04_apr/bern/precinct-results.jpg)
 
 ## First: Campaign Volunteering
 
@@ -88,7 +88,7 @@ My second event was a little less slick, because we had to manually dial people.
 
 The calling leaves me drained, but excited. Like I've really waded into the thick of it and made a difference. I think I'll continue!
 
-![Birdie Sanders!](https://static.sinap.ps/blog/2016/04_apr/bern/birdie.jpg)
+![Birdie Sanders!](../assets/2016/04_apr/bern/birdie.jpg)
 
 ## Do you feel it?
 

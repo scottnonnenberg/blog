@@ -28,7 +28,7 @@ My acupuncturist was a little bit worried. Any kind of quick change is worth a c
 
 So, I stopped working out in early January 2016. No runs, no lifting, no yoga. Just a walk through the neighborhood every day.
 
-[![Weight vs. runs over past four years](https://static.sinap.ps/blog/2017/05_may/holistic_health/weight-vs-runs.png)](https://static.sinap.ps/blog/2017/05_may/holistic_health/weight-vs-runs.png)
+![Weight vs. runs over past four years](../assets/2017/05_may/holistic_health/weight-vs-runs.png)
 
 Can you tell when I started working out again? Basically that low point in March. After two months, I think I was starting to lose some muscle. I took it as a sign, and started working out again. I moved past stretches, yoga, and strength training several weeks later, adding short runs. I eased into it to ensure I didn't overtax my body this time.
 
@@ -40,13 +40,13 @@ It's good to be stable. And it's good to zero in on the right level of activity.
 
 With all that analysis into my weight, you may be wondering what happened to my body fat percentage during this time. It mostly follows the curve above:
 
-[![Body fat vs. runs over past four years](https://static.sinap.ps/blog/2017/05_may/holistic_health/body-fat-vs-runs.png)](https://static.sinap.ps/blog/2017/05_may/holistic_health/body-fat-vs-runs.png)
+![Body fat vs. runs over past four years](../assets/2017/05_may/holistic_health/body-fat-vs-runs.png)
 
 [As before](/a-35lb-weight-swing-in-two-years/#the-high-everything-diet), there are interesting blips in the data which aren't reflected in the weight chart. Because this data is collected via electrical impedance, food can affect it a surprising amount, and very quickly. For example, [my records](/a-system-for-2015/) tell me that the jump from ~16.5% to ~18% in mid-March came (in part) from a brownie with ice cream.
 
 No, it didn't actually add that much fat overnight - it's the conductivity changes it caused!
 
-![40000 volts nutrition information](https://static.sinap.ps/blog/2017/05_may/holistic_health/40000-volts-nutrition.png)
+![40000 volts nutrition information](../assets/2017/05_may/holistic_health/40000-volts-nutrition.png)
 
 ## 40,000 volts
 
@@ -58,7 +58,7 @@ It's hard to explain, but plain water sometimes seems like it is taking somethin
 
 It does seem like its effect on my electrolyte balance keeps my body fat percentage higher than it would be normally. I'm cool with that.
 
-![bottle of enzymes](https://static.sinap.ps/blog/2017/05_may/holistic_health/enzymes.jpg)
+![bottle of enzymes](../assets/2017/05_may/holistic_health/enzymes.jpg)
 
 ## Digestion
 

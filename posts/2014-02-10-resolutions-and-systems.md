@@ -9,7 +9,7 @@ tags:
 ---
 
 
-![Something](https://static.sinap.ps/blog/2014/Feb/SublimeText_and_System.png)
+![Something](../assets/2014/02_feb/SublimeText_and_System.png)
 
 Here we are, already in February! What a great time to talk about 2014 Resolutions, right? After you've already forgotten yours? :0)
 

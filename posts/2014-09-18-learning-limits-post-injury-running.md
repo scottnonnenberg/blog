@@ -8,7 +8,7 @@ tags:
   - data
 ---
 
-![all runs since injury, X = time, Y = distance](https://static.sinap.ps/blog/2014/Sep/whole_chart-1411078782215.png)
+![all runs since injury, X = time, Y = distance](../assets/2014/09_sep/whole_chart-1411078782215.png)
 
 After [partially tearing my left achilles tendon](/injury-identity-and-non-attachment/), it took more than a year until I tried to start running again. I trained and planned for months for that first day back running. But it definitely didn't happen like I expected.
 
@@ -16,7 +16,7 @@ My reintroduction to running has been an exercise in learning to listen to my bo
 
 <div class='fold'></div>
 
-![early attempts](https://static.sinap.ps/blog/2014/Sep/2013_04_early_attempts-1411078820611.png)
+![early attempts](../assets/2014/09_sep/2013_04_early_attempts-1411078820611.png)
 
 ## Phase 1: Early Attempts
 
@@ -30,7 +30,7 @@ Looking at the Phase 1 chart you can see that this was the first burst of four. 
 
 But then everything changed. I bought a [FitBit Flex](https://www.fitbit.com/flex), and its charts, badges and daily metrics started teaching me that walking was a skill. And I wasn't skilled. I wasn't fully comfortable with multi-mile walks, at least not every day. So I replaced periodic runs with walking every day. Crawl, walk, _then_ run, right?
 
-![luna sandals](https://static.sinap.ps/blog/2014/Sep/sandals-1411078560084.jpg)
+![luna sandals](../assets/2014/09_sep/sandals-1411078560084.jpg)
 
 ## Interlude: Barefoot Running
 
@@ -40,7 +40,7 @@ Why barefoot? After my injury, I wanted to come back better, with the right form
 
 And so, with very few exceptions, I have only worn minimalist shoes since getting rid of that god-awful velcro boot. [VivoBarefoot](http://www.vivobarefoot.com/us) shoes still look pretty normal, and I absolutely love my [Luna Sandals](http://www.lunasandals.com/) when it's warm. This summer I've even started running in the sandals. Really great for [toe splay](http://runblogger.com/2011/01/toe-play-during-barefoot-running.html)!
 
-![successful progression](https://static.sinap.ps/blog/2014/Sep/2013_08_successful_progression-1411078622881.png)
+![successful progression](../assets/2014/09_sep/2013_08_successful_progression-1411078622881.png)
 
 ## Phase 2: Successful Progression
 
@@ -52,7 +52,7 @@ And so, after those good milestones around three miles, things got shaky. I push
 
 I exercised through the holidays, but without runs. I walked, I did yoga, I stretched, I lifted weights and did physical therapy exercises. But I didn't run. I didn't have an injury to point to, just a general feeling. Blame it on the winter. Or holiday eating. Or maybe I was just pouty because I still couldn't run like I used to, even a year and a half after the injury.
 
-![triumphant return](https://static.sinap.ps/blog/2014/Sep/2014_01_triumphant_return-1411078630322.png)
+![triumphant return](../assets/2014/09_sep/2014_01_triumphant_return-1411078630322.png)
 
 ## Phase 3: A Triumphant Return
 
@@ -62,7 +62,7 @@ Unbelievably, I still found a way to push too hard. You can see the runs jumble 
 
 I had learned something new. The value of recovery time.
 
-![sustainability](https://static.sinap.ps/blog/2014/Sep/2014_07_sustainability-1411078803808.png)
+![sustainability](../assets/2014/09_sep/2014_07_sustainability-1411078803808.png)
 
 ## Phase 4: Sustainability?
 

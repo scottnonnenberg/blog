@@ -7,7 +7,7 @@ tags:
   - ideas
 ---
 
-![it doesn't look that bad, right? right??](https://static.sinap.ps/blog/2014/Aug/injury-1408754037885.jpg)
+![it doesn't look that bad, right? right??](../assets/2014/08_aug/injury-1408754037885.jpg)
 
 Two years ago, I was forced to reevaluate my identity.
 
@@ -39,7 +39,7 @@ I was on crutches more than three months, until late June. I was very lucky that
 
 Crutches. Always crutches. Crrrrutches. International travel with crutches. Photobombing crutches.
 
-![My 31st birthday in Mexico. Yes, the stupid crutches photobombed me.](https://static.sinap.ps/blog/2014/Aug/cruches_photobomb-1408754027291.JPG)
+![My 31st birthday in Mexico. Yes, the stupid crutches photobombed me.](../assets/2014/08_aug/cruches_photobomb-1408754027291.JPG)
 
 ## Identity
 
@@ -73,7 +73,7 @@ A small identity:
 * Can speak frankly about and listen openly to inner thoughts and desires, knowing that they do not reflect on the value of the human holding them.
 * Cares less about labels of all kinds, including national boundaries, and more about action towards worthwhile goals.
 
-![I am groot!](https://static.sinap.ps/blog/2014/Aug/groot-1408753996233.jpg)
+![I am groot!](../assets/2014/08_aug/groot-1408753996233.jpg)
 
 Maybe we all need a little bit of [Groot](http://en.wikipedia.org/wiki/Groot) in us? Who am I? _I am Scott!_
 

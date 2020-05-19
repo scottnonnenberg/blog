@@ -11,7 +11,7 @@ tags:
 
 In American pop culture, Autumn is orange and brown, pumpkins, brightly colored leaves starting to fall, animals storing food for winter. I think of it a little differently. I think of it as a time of _new things_, _reflection_, and at least a little bit of _melancholy_.
 
-![leaves](https://static.sinap.ps/blog/2014/Sep/leaves-1411691625098.JPG)
+![leaves](../assets/2014/09_sep/leaves-1411691625098.JPG)
 
 <div class='fold'></div>
 
@@ -25,7 +25,7 @@ From a young age we're all conditioned to expect to start something new in the f
 - _New freedom_: Funny enough, I've had two big breakups in the fall. Freedom, emptiness, whatever you want to call it. :0)
 - _New perspective_: Late summer and fall I've taken some multi-week vacations. It's a great chance to reset.
 
-![equinox sunset](https://static.sinap.ps/blog/2014/Sep/equinox_sunset-1411691632311.jpg)
+![equinox sunset](../assets/2014/09_sep/equinox_sunset-1411691632311.jpg)
 
 ## Reflection
 
@@ -35,7 +35,7 @@ If it seems like a time of significance, it is. This is one of the two times of 
 
 To me, it just makes sense. No more margaritas on the patio. No more lazy dusk walks. Less relaxation, more silent reflection. Maybe it's that new chill in the air?
 
-![change per day chart](https://static.sinap.ps/blog/2014/Sep/change_per_day-1411692657480.png)
+![change per day chart](../assets/2014/09_sep/change_per_day-1411692657480.png)
 
 ## Melancholy
 
@@ -45,7 +45,7 @@ Fall marks the beginning of many months of darkness, gray skies and rainy days. 
 
 So, with the knowledge of all this approaching, the melancholy appears. But we can't do anything about the motion of the earth, can we? Well, we can analyze it, understand it, and plan for it. Maybe that will help? I like it! What better way to mourn the loss of daylight than to analyze it deeply?
 
-![sunset sunrise chart](https://static.sinap.ps/blog/2014/Sep/sunrise_sunset-1411691657761.png)
+![sunset sunrise chart](../assets/2014/09_sep/sunrise_sunset-1411691657761.png)
 
 ## Coping via Programming
 
@@ -60,7 +60,6 @@ Well, at least we don't have to worry about being too hot anymore. :0)
 Just a little more:
 
 - Don't forget to take your Vitamin D3!
-- In Seattle? Download pre-generated [2014](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/Sep/2014.csv) and [2015](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/Sep/2015.csv) CSV files.
-- Even easier, add my [Seattle Sunrise/Sunset Times](https://www.google.com/calendar/embed?src=9m16s7lk4c251q7iv0gjvddesg%40group.calendar.google.com&ctz=America/Los_Angeles) Google Calendar to your Google Calendar. Just click the button in the bottom right.
+- Add my [Seattle Sunrise/Sunset Times](https://www.google.com/calendar/embed?src=9m16s7lk4c251q7iv0gjvddesg%40group.calendar.google.com&ctz=America/Los_Angeles) Google Calendar to your Google Calendar. Just click the button in the bottom right.
 - Other cultures have their own Autumn Equinox traditions - [check 'em out!](http://mentalfloss.com/article/59049/autumnal-equinox-traditions)
 - The charts above were generated with [iWork Numbers 3.2.2](https://itunes.apple.com/us/app/numbers/id409203825?mt=12). It doesn't handle date axes very well. :0(

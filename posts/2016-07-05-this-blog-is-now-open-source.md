@@ -264,7 +264,7 @@ Sadly, because I don't have a way to specify link classes in markdown, I have to
 ```html
 <a class="plain" href="https://www.flickr.com/photos/craigmoulding/5881291261">
   <img
-    src="https://static.sinap.ps/blog/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg"
+    src="../assets/2015/02_feb/beware_dangerous_cliff-1423614563162.jpg"
     alt="dangerous cliffs via craigmoulding on flickr"
   >
 </a>

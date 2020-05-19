@@ -12,7 +12,7 @@ tags:
   - software
 ---
 
-![via https://www.flickr.com/photos/adactio/18845759/](https://static.sinap.ps/blog/2016/06_jun/carrots_not_sticks/carrots.jpg)
+![via https://www.flickr.com/photos/adactio/18845759/](../assets/2016/06_jun/carrots_not_sticks/carrots.jpg)
 
 It may feel satisfying to use punishment to get people to do what you want. But by doing that you ignore human psychology, creating resentment which will eventually make it harder to achieve your goals. It's better to go with rewards. Carrots, not sticks, for business, personal relationships, and public policy!
 

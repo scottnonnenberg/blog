@@ -9,7 +9,7 @@ tags:
   - fun
 ---
 
-<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/weight.png" alt="weight 5/15/2013 to 1/20/2016, X = time, Y = weight in lbs"></a>
+![weight 5/15/2013 to 1/20/2016, X = time, Y = weight in lbs](../assets/2016/02_feb/weight/weight.png)
 
 Over the past two years, my max weight was 172 lbs, and my minimum was 137 lbs. That's a 35-pound difference. But it definitely wasn't the standard "I'm not sure why it's happening, and I'm out of control!" I'm very interested in health, nutrition and fitness, and these changes were due to explicit experimentation!
 
@@ -39,7 +39,7 @@ You can see the weight I gained from late July 2013 to June 2014. Yes, it was a 
 
 More importantly, I felt good! My activity levels didn't go down. [You can see a nice progression in my run distances that fall](/learning-limits-post-injury-running/), though I did end up pushing myself too hard.
 
-<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/bodyfat.png" alt="bodyfat 5/15/2013 to 1/20/2016, X = time, Y = bodyfat percentage"></a>
+![bodyfat 5/15/2013 to 1/20/2016, X = time, Y = bodyfat percentage](../assets/2016/02_feb/weight/bodyfat.png)
 
 ## Acupuncture
 
@@ -73,7 +73,7 @@ Barley is [full of important nutrients](https://medium.com/war-is-boring/eating-
 
 My goal is balance: health and a strong metabolism.
 
-<a class="plain" href="https://static.sinap.ps/blog/2016/02_feb/weight/regression.png"><img src="https://static.sinap.ps/blog/2016/02_feb/weight/regression.png" alt="scatterplot, X = bodyfat percentage, Y = weight in lbs"></a>
+![scatterplot, X = bodyfat percentage, Y = weight in lbs](../assets/2016/02_feb/weight/regression.png)
 
 ## A bit on the data
 
@@ -83,7 +83,9 @@ How did I get all this data? FitBit scales don't just measure the data - they se
 
 First, you can only export 30 days at a time, and the selector makes it a pain to change your date range once you have one in place. Transitioning from "12/1 - 12/31" to "11/1 - 11/30" requires weird leapfrogging. And the fields are marked `readonly`! Why!?
 
-Second, Fitbit does some ill-advised data transformations on export. The scale only generates data on a day you step on it and it is able to connect to FitBit's servers. But Fitbit doesn't allow for days with your weight at zero in the export, so it *[interpolates](https://en.wikipedia.org/wiki/Interpolation) between your real data points*. And so, the Fitbit site knows about the real datapoints, and the exported data does not. I had to go through my spreadsheet manually to remove the fake datapoints. You can actually see the straight-line clusters in the [scatter](https://static.sinap.ps/blog/2016/02_feb/weight/regression-with-interpolation.png)[ chart without my manual cleaning](https://static.sinap.ps/blog/2016/02_feb/weight/regression-with-interpolation.png)!
+Second, Fitbit does some ill-advised data transformations on export. The scale only generates data on a day you step on it and it is able to connect to FitBit's servers. But Fitbit doesn't allow for days with your weight at zero in the export, so it *[interpolates](https://en.wikipedia.org/wiki/Interpolation) between your real data points*. And so, the Fitbit site knows about the real datapoints, and the exported data does not. I had to go through my spreadsheet manually to remove the fake datapoints. You can actually see the straight-line clusters in the scatter chart without my manual cleaning:
+
+![Same scatter chart, this time with Fitbit's interpolation included](../assets/2016/02_feb/weight/regression-with-interpolation.png)
 
 Lastly, thanks to [Kav Latiolais](https://twitter.com/kavla?lang=en) for the scale. I never would have bought it myself, but it's been fun playing with the data.
 

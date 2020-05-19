@@ -10,7 +10,6 @@ const gatsbyConfig = {
     linkPrefix: '/',
 
     favicon: '/favicon.ico',
-    domainCDN: 'https://static.sinap.ps',
 
     author: {
       shortName: 'Scott',
@@ -33,6 +32,13 @@ const gatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/assets`,
+        name: `assets`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -43,14 +49,24 @@ const gatsbyConfig = {
             },
           },
           'gatsby-remark-autolink-headers',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              disableBgImageOnAlpha: true,
+            },
+          },
+          // Default excluded file extensions: png, jpg, jpeg, bmp, tiff
+          'gatsby-remark-copy-linked-files',
         ],
       },
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
         css: join(__dirname, 'css'),
-        mailchimp$: join(__dirname, 'mailchimp.js'),
+        mailchimp$: join(__dirname, 'mailchimp.ts'),
         src: join(__dirname, 'src'),
       },
     },

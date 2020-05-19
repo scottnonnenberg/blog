@@ -8,7 +8,7 @@ tags:
   - software
 ---
 
-![Marionette + React](https://static.sinap.ps/blog/2016/05_may/new_tech_old_tech/marionette-and-react-rev2.png)
+![Marionette + React](../assets/2016/05_may/new_tech_old_tech/marionette-and-react-rev2.png)
 
 Last fall, after having worked with [React](https://facebook.github.io/react/) or [similar technologies](http://www.ractivejs.org/) for a couple years, I took [a contract](https://scottnonnenberg.com/work/#ookla-2015-q-3-to-q-4) working with [Marionette.js](http://marionettejs.com/). A much older technology, based on [Backbone.js](http://backbonejs.org/), it was uncomfortably familiar. I was dealing with problems I hadn't had to think about for a while! But there were some benefits to my contact with new technologies…
 

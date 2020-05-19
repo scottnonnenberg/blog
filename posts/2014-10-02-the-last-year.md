@@ -12,7 +12,7 @@ It's [Fall, a time for reflection](/autumn-associations/), and it has been about
 
 <div class='fold'></div>
 
-![taking javascript seriously](https://static.sinap.ps/blog/2014/Oct/taking_javascript_seriously_me-1412211402696.jpg)
+![taking javascript seriously](../assets/2014/10_oct/taking_javascript_seriously_me-1412211402696.jpg)
 
 ## Presentations
 
@@ -33,10 +33,10 @@ _[Social Engineering for Good, Not Evil](http://www.meetup.com/seattle-software-
 <br>
 Abstract: _When I last spoke at SSC, it was about Javascript. We covered a lot of information, but I'm no TJ Holowaychuk or Jeremy Ashkenas.  As Software Craftspeople, we think a lot about the software itself - yet it's not anything I spoke about in my last talk that makes me different from those Javascript luminaries. It's how they interact with people, with the world. In this talk I'll cover some techniques you can use to engineer higher creativity, better relationships, and a better career._
 [ [Slides](http://scottnonnenberg.github.io/social-engineering-for-good/dist/slides.html#/)
-/ [Audio](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/Oct/Social+Engineering+for+Good%2C+Not+Evil+at+SSC.m4a)
+/ [Audio](https://s3.amazonaws.com/blog-scottnonnenberg-com/2014/10_oct/Social+Engineering+for+Good%2C+Not+Evil+at+SSC.m4a)
 / [Slides Source]( https://github.com/scottnonnenberg/social-engineering-for-good) ]
 
-![open source](https://static.sinap.ps/blog/2014/Oct/open_source-1412211395097.png)
+![open source](../assets/2014/10_oct/open_source-1412211395097.png)
 
 ## Open Source
 
@@ -63,7 +63,7 @@ So far, I've released six TheHelp components via github and npm, with more on th
 Install 'em and let me know what you think! :0)
 
 
-![company logos](https://static.sinap.ps/blog/2014/Oct/clients-1412211376291.jpg)
+![company logos](../assets/2014/10_oct/clients-1412211376291.jpg)
 
 ## Contracting
 
@@ -76,7 +76,7 @@ In the last year, I've worked on three contracts:
 - [Haiku Deck](https://www.haikudeck.com/) - This one is a cross between the previous two contracts. It's a previously-existing project and I'm working with others on it, but it's nowhere near the size of the Walmart contract. I'm three weeks in and it seems to be going well. :0)
 
 
-![gamma corvi bird](https://static.sinap.ps/blog/2014/Oct/gamma_corvi_bird-1412211369527.png)
+![gamma corvi bird](../assets/2014/10_oct/gamma_corvi_bird-1412211369527.png)
 
 ## Introducing Gamma Corvi
 

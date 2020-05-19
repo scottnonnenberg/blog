@@ -13,7 +13,7 @@ I also experiment with a lot of weird things. Like making my own kombucha (*fail
 
 <div class='fold'></div>
 
-![bamboo steamer](https://static.sinap.ps/blog/2014/Dec/bamboo_steamer-1417828984766.jpg)
+![bamboo steamer](../assets/2014/12_dec/bamboo_steamer-1417828984766.jpg)
 
 ## Bamboo steamer
 
@@ -25,7 +25,7 @@ Enter the bamboo steamer.
 
 It's easy! I just put a water-filled pan on the stovetop on high, then drop the bamboo steamer in. Food goes in a heatproof container inside one of the compartments, and leftovers are reheated in a couple minutes. I can even steam up some veggies with a few more minutes of cooking time. Food stays warm a lot longer, is heated all the way through, and I never have to wash the steamer because it doesn't touch the food or absorb food smells.
 
-![deodorant ingredients](https://static.sinap.ps/blog/2014/Dec/deoderant_ingredients-1417828992821.jpg)
+![deodorant ingredients](../assets/2014/12_dec/deoderant_ingredients-1417828992821.jpg)
 
 ## Homemade Deodorant
 
@@ -37,7 +37,7 @@ Summer 2013 I finally tried making my own. And it's truly amazing what a little 
 
 Not convinced? Last summer my homemade deodorant got a ringing endorsement at a friend's wedding. I had fully committed to the dance floor, sleeves rolled up, tie loosened, quite sweaty. Earlier I had told a friend about my new deodorant, so she decided to test it. She walks up to me on the dance floor, grabs my arm, raises it up, and sniffs. The verdict? Thumbs-up. I can't think of a better test. :0)
 
-![magnesium chloride flakes](https://static.sinap.ps/blog/2014/Dec/magnesium_flakes-1417829007063.jpg)
+![magnesium chloride flakes](../assets/2014/12_dec/magnesium_flakes-1417829007063.jpg)
 
 ## Magnesium oil
 

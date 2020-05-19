@@ -10,7 +10,7 @@ tags:
   - software
 ---
 
-![Open Source and Feelings Logo](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/osfeels.png)
+![Open Source and Feelings Logo](../assets/2016/01_jan/osfeels_awesome/osfeels.png)
 
 I went to a little conference here in Seattle last fall called [Open Source and Feelings](http://osfeels.com). [It was awesome, inspiring, and challenging](https://twitter.com/scottnonnenberg/status/650745465806295040). The event was unique for a tech conference in that it didn't focus on code at all. It instead covered the issues that surround code: the difficulties of running open source projects, developing experiences that customers love, navigating the software development employment market, and so on. It's about time that we all started talking about these things!
 
@@ -18,7 +18,7 @@ Though it's been awhile, I thought it would still be useful to highlight some of
 
 <div class='fold'></div>
 
-![NVC is not about tone-policing, via https://twitter.com/onealexharms/status/650397122664095745](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/tone-policing.jpg)
+![NVC is not about tone-policing, via https://twitter.com/onealexharms/status/650397122664095745](../assets/2016/01_jan/osfeels_awesome/tone-policing.jpg)
 
 ## Non-violent communication
 
@@ -30,7 +30,7 @@ The *self-reflection* component is about fully acknowledging your own feelings, 
 
 And that's just barely scratching the surface. As Isaac mentioned in the slide shown above, it's important to note that NVC is not a system about pushing behavior on others, but striving to better understand them. All the benefits follow from that simple beginning. I have to say, it really resonates with me. In fact, I presented my own attempt at system for this kind of understanding specifically designed for tech folks in my [Social Engineering for Good, Not Evil talk](https://github.com/scottnonnenberg/social-engineering-for-good) [in 2014](http://www.meetup.com/seattle-software-craftsmanship/events/159243162/).
 
-![strong feels and being right, via https://twitter.com/Strabd/status/650074737356308480](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/empathy.jpg)
+![strong feels and being right, via https://twitter.com/Strabd/status/650074737356308480](../assets/2016/01_jan/osfeels_awesome/empathy.jpg)
 
 ## Empathy
 
@@ -52,7 +52,7 @@ Some choice quotes:
 
 > "When somebody is having strong feelings. I don't think they give a shit what your opinion of the statistics is." [(25:00)](https://youtu.be/U15nkcSY2GI?t=25m00s)
 
-![via https://twitter.com/osbridge/status/650008835629842432](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/impostor-syndrome.jpg)
+![via https://twitter.com/osbridge/status/650008835629842432](../assets/2016/01_jan/osfeels_awesome/impostor-syndrome.jpg)
 
 ## Positive self-talk
 
@@ -66,7 +66,7 @@ I particularly liked her 3-2-1 analysis technique [(25:15)](https://youtu.be/T4t
 
 The ratios help reinforce a mostly positive perspective. The fact that you're deciding to specifically address just one thing after listing two things you didn't like reinforces a practical perspective: you can't fix everything. You'll eventually get there, little steps at a time!
 
-![via https://twitter.com/osbridge/status/650008835629842432](https://static.sinap.ps/blog/2016/01_jan/osfeels_awesome/burnout.jpg)
+![via https://twitter.com/osbridge/status/650008835629842432](../assets/2016/01_jan/osfeels_awesome/burnout.jpg)
 
 ## Burnout and Open Source
 

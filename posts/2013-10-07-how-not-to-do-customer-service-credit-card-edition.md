@@ -110,7 +110,7 @@ I look to see if there are any more of Jack the Giant Slayer in stock at this lo
 
 I start trying to call support over this $1.29 movie, and while I wait I try to reserve the movie at a different location with my new credit card, and I get this, the coup de grace:
 
-![Redbox already rented message](https://static.sinap.ps/blog/2014/Feb/Redbox_already_rented-1.png)
+![Redbox already rented message](../assets/2014/02_feb/Redbox_already_rented-1.png)
 
 _NO! It's NOT available for me at the location I chose! That's why I'm trying to reserve it again! I'm not stupid!_
 

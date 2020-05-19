@@ -12,7 +12,7 @@ tags:
   - contract
 ---
 
-![Social Security Administration Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-logo.png)
+![Social Security Administration Logo](../assets/2015/10_oct/ssa/ssa-logo.png)
 
 If you're a frequent visitor at [scottnonnenberg.com](https://scottnonnenberg.com/) (and of course you should be), you may have noticed an unusual entry on the [work page](https://scottnonnenberg.com/work/#social-security-administration-2015-q-3): the [Social Security Administration](http://www.ssa.gov/) (SSA). Yes, I recently spent three weeks in Baltimore, Maryland, teaching SSA developers about [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [node.js](https://nodejs.org/), [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development), [express](http://expressjs.com/), [react.js](https://facebook.github.io/react/), [git](http://git-scm.com/), and much more.
 
@@ -34,7 +34,7 @@ In the case of their engagement with SSA, USDS recommended Node.js for its produ
 
 With the decision to use Node.js made but few resources of their own, USDS needed to pull others in to help bring SSA up to speed. They came across my name, and my availability and experience matched what they were looking for. This is what I did for them...
 
-![United States Digital Service Logo](https://static.sinap.ps/blog/2015/10_oct/ssa/usds-logo.png)
+![United States Digital Service Logo](../assets/2015/10_oct/ssa/usds-logo.png)
 
 ## 1. Hands-on classroom training
 
@@ -46,7 +46,7 @@ I spent a lot of time with students one-on-one as they progressed through the ma
 
 My goal was to get developers familiar with standard tools and approaches, confident in their ability to tackle new APIs without my help. Just about all exercises had students reading official documentation for the modules in use. With only three weeks on site, I had to be focused on building habits and attitudes.
 
-## ![my desk at the head of the classroom](https://static.sinap.ps/blog/2015/10_oct/ssa/head-of-classroom.jpg)
+## ![my desk at the head of the classroom](../assets/2015/10_oct/ssa/head-of-classroom.jpg)
 
 ## 2. Pair/mob programming
 
@@ -58,7 +58,7 @@ That is why I prefer this kind of learning, in the process of developing new fea
 
 I surfed the energy level, constantly trying to keep developers at that edge where they still had to work a little to suss it out for themselves, prompting only when necessary. With the larger group in the room the entire group can be working on the problem. We spent the majority of my time onsite in the mob.
 
-![mob programming screen](https://static.sinap.ps/blog/2015/10_oct/ssa/mob-programming-screen.jpg)
+![mob programming screen](../assets/2015/10_oct/ssa/mob-programming-screen.jpg)
 
 ## 3. Node.js overview session
 
@@ -70,7 +70,7 @@ In this case, my audience was high-level technology leaders. I started from the 
 
 This lead to a healthy Q&A session. I noticed a clear trend in the questions I got from people who were encountering Node.js for the first time. They were looking for direct replacements for current tools. I'd get questions like "How do I do distributed transactions?" or "How do I connect it to an enterprise configuration server?" My goal with these questions was to break it down, get down to the specific scenario. Distributed transactions help you solve a set of problems. But what's actual problem? Transactional database updates then hit another service on success only? That's just basic asynchronous Node.js code and support for database transactions. No fancy library required.
 
-## ![SSA parking lot](https://static.sinap.ps/blog/2015/10_oct/ssa/ssa-parking-lot.jpg)
+## ![SSA parking lot](../assets/2015/10_oct/ssa/ssa-parking-lot.jpg)
 
 ## The result?
 

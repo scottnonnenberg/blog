@@ -7,7 +7,7 @@ tags:
   - ideas
 ---
 
-![Some of my old base drawings](https://static.sinap.ps/blog/2014/Feb/base_drawings.jpg)
+![Some of my old base drawings](../assets/2014/02_feb/base_drawings.jpg)
 
 I am an introvert. Of course, like most binary labels, there is a continuum. I can act extraverted at times. But at this point I can pretty reliably tell, in advance, what a week full of meetings or meetups will do to me - what kind of recovery time I will need.
 
