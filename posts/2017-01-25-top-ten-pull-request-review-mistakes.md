@@ -105,21 +105,23 @@ This is another area where you can be lulled to sleep by well-formed code in the
 Some questions to get you started:
 
 * Does this impact the size of the download for the user? Perception of performance? Does it change the user experience enough that it should be in the release notes, or an email to users?
-* Does it introduce a new kind of code or feature? Does it require a new testing approach, new logging or monitoring techniques, or a deployment process change?
+* Does it introduce a new kind of code or feature? Does it require a new testing approach, new logging or monitoring techniques, or a deployment process change? Will your hosting or bandwidth costs go up?
 * Can it be exercised by users today, or is it behind a flag? What systems are in place to validate things behind flags?
 * How hard is this to test comprehensively? What might be different in staging or production?
+* Will it be easy to change? Or roll back?
 
 ## 9. Short-term thinking
 
-On some pull requests there is quite a bit of back and forth, maybe due to disagreements or just the need for clarification. This is really good stuff - it's building shared context. But what happens when the next developer comes along and encounters this code? They won't have easy access to this discussion.
+On some pull requests there is quite a bit of back and forth, maybe due to disagreements or just the need for clarification. At long last the set of you directly involved with the pull request have agreed on a way forward - you've built shared context!
+
+But what happens when the next developer comes along next week, next month, or next year, and encounters this code? They won't have easy access to this discussion.
 
 Some ideas to build accessible context for the future:
 
 * Capture key pull request discussion in code comments.
 * Change code that was hard for reviewers to understand - it will be hard for others in the future as well!
 * Create a place in the project for full conceptual documentation covering more involved, widely-applicable topics.
-* Make sure all `TODO`s in the code are paired an item in your work item database, with enough detail to make it actionable by someone other than the original reporter.
-* When reviewing, consider long-term maintenance of the code -  will it be easy to change? Easy to maintain in production? What's the long-term cost?
+* Make sure all `TODO`s in the code are paired with an item in your work item database, with enough detail to make it actionable by someone other than the original reporter.
 
 ## 10. Cursory review of amendments
 
