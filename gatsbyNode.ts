@@ -1,4 +1,5 @@
 import { writeFileSync } from 'fs';
+import { copy } from 'fs-extra';
 import { join, resolve } from 'path';
 import { compact, filter, flatten, get, includes, sortBy, uniq } from 'lodash';
 
@@ -169,6 +170,9 @@ const gatsbyNode = {
       console.error('Query results malformed', result);
       throw new Error('Query returned no data!');
     }
+
+    // Write favicon to public folder
+    await copy(`${__dirname}/assets/favicon.ico`, `${__dirname}/public/favicon.ico`);
 
     // Write RSS and Atom
     const posts = result.data.allMarkdownRemark.edges.map(item => item.node);

@@ -70,12 +70,6 @@ const gatsbyConfig = {
         src: join(__dirname, 'src'),
       },
     },
-    {
-      resolve: 'gatsby-plugin-emoji-favicon',
-      options: {
-        emoji: '🤔',
-      },
-    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-less',
     'gatsby-plugin-react-helmet',

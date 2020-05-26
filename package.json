@@ -28,8 +28,8 @@
   },
   "dependencies": {
     "feed": "4.1.0",
+    "fs-extra": "9.0.0",
     "gatsby": "2.21.9",
-    "gatsby-plugin-emoji-favicon": "1.4.2",
     "gatsby-plugin-less": "3.2.1",
     "gatsby-plugin-no-javascript": "2.0.5",
     "gatsby-plugin-react-helmet": "3.3.1",
@@ -59,6 +59,7 @@
     "@types/chai": "4.2.11",
     "@types/common-tags": "1.8.0",
     "@types/css-modules-require-hook": "4.0.2",
+    "@types/fs-extra": "9.0.1",
     "@types/markdown-it": "10.0.1",
     "@types/mocha": "7.0.2",
     "@types/react-helmet": "6.0.0",
