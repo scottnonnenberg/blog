@@ -57,6 +57,7 @@ const gatsbyConfig = {
           },
           // Default excluded file extensions: png, jpg, jpeg, bmp, tiff
           'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
         ],
       },
     },
