@@ -5,32 +5,14 @@
       "path": ".",
       "folder_exclude_patterns": [
         ".cache",
-        "packages",
         "node_modules",
-        "bower_components",
-
-        "coverage",
-        "dist",
-        "docs",
-        "lib",
-
         "public",
-        "tmp",
-        "temp",
-        "cache",
-        "logs"
       ],
       "file_exclude_patterns": [
-        "p.js",
         "*.sublime-workspace",
-        "*.log",
-        "*.rdb",
-        "result*.html",
-        "src/**/*.js",
-        "test/**/*.js",
-        "scripts/*.js",
-        "scripts/**/*.js",
-        "mailchimp.js"
+        "mailchimp.js",
+        "gatsby-node.js",
+        "gatsby-config.js"
       ]
     }
   ],
