@@ -41,7 +41,10 @@ function generatePostSpecificTags(
     return [];
   }
 
-  const data = post?.frontmatter!;
+  const data = post?.frontmatter;
+  if (!data) {
+    throw new Error(`Page had missing frontmatter: ${JSON.stringify(data)}`)
+  }
 
   const postImage = extractImage(post.html);
   const preFold = getPreFoldContent(post.html);

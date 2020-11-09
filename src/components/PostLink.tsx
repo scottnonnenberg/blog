@@ -15,13 +15,18 @@ type PropsType = {
 export default function PostLink(props: PropsType): ReactElement | null {
   const post = props.post;
 
+  const to = post?.fields?.slug;
+  if (!to) {
+    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+  }
+
   return (
     <div
       style={{
         marginBottom: rhythm(QUARTER),
       }}
     >
-      <Link to={post?.fields?.slug!}>{post?.frontmatter?.title}</Link>
+      <Link to={to}>{post?.frontmatter?.title}</Link>
       <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
     </div>
   );

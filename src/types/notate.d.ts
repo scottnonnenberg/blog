@@ -2,7 +2,7 @@
 
 declare module '@scottnonnenberg/notate' {
   type NotateType = {
-    (cb: Function, err?: Error, additionalProperties?: any): string;
+    (cb: (error?: Error | null, result?: any) => unknown, err?: Error, additionalProperties?: any): string;
     prettyPrint: (error: Error) => string;
   };
 

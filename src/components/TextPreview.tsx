@@ -27,6 +27,11 @@ export default function TextPreview(props: PropsType): ReactElement | null {
   }
   const body = prune(noTags, MAX_TEXT_PREVIEW);
 
+  const slug = post?.fields?.slug;
+  if (!slug) {
+    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+  }
+
   return (
     <div>
       <h3
@@ -34,11 +39,11 @@ export default function TextPreview(props: PropsType): ReactElement | null {
           marginBottom: rhythm(QUARTER),
         }}
       >
-        <Link to={post?.fields?.slug!}>{post?.frontmatter?.title}</Link>
+        <Link to={slug}>{post?.frontmatter?.title}</Link>
         <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
       </h3>
       <p>
-        {body} <Link to={post?.fields?.slug!}>Read more&nbsp;»</Link>
+        {body} <Link to={slug}>Read more&nbsp;»</Link>
       </p>
     </div>
   );

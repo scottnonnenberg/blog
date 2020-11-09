@@ -52,10 +52,14 @@ export default function post({
 }: PageProps<DataType, PageContextType>): ReactElement | null {
   const { previous, next } = pageContext;
   const post = data.markdownRemark;
+  const title = post?.frontmatter?.title;
+  if (!title) {
+    throw new Error(`Page had missing title: ${JSON.stringify(post)}`)
+  }
 
   return (
     <Wrapper location={location}>
-      <SEO pageTitle={post?.frontmatter?.title!} post={post} location={location} />
+      <SEO pageTitle={title} post={post} location={location} />
       <div className="post">
         <h1 style={{ marginBottom: 0 }}>{post?.frontmatter?.title}</h1>
         <h3

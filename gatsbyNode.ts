@@ -79,8 +79,13 @@ const gatsbyNode = {
       const next = index === 0 ? null : posts[index - 1];
       const previous = index === posts.length - 1 ? null : posts[index + 1];
 
+      const path = post?.fields?.slug;
+      if (!path) {
+        throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+      }
+
       createPage({
-        path: post?.fields?.slug!,
+        path,
         component: blogPostPage,
         context: {
           slug: post?.fields?.slug,

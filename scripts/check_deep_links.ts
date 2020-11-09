@@ -43,10 +43,14 @@ type LinkType = {
   hash: string | null;
 };
 
-function checkLink({ pathname, hash }: LinkType, cb: Function): void {
+function checkLink(
+  { pathname, hash }: LinkType,
+  cb: (error?: Error | null, broken?: boolean) => void
+): void {
   if (!pathname || !hash) {
     console.error('Malformed link', { pathname, hash });
     cb(new Error('Malformed link!'));
+
     return;
   }
 
@@ -55,15 +59,18 @@ function checkLink({ pathname, hash }: LinkType, cb: Function): void {
     return;
   }
 
-  return superagent.get(DOMAIN + pathname).end((err, res) => {
-    if (notate(cb, err, { pathname })) {
-      return;
-    }
+  return superagent
+    .get(DOMAIN + pathname)
+    .set('user-agent', 'scripts/check-deep-links')
+    .end((err, res) => {
+      if (notate(cb, err, { pathname })) {
+        return;
+      }
 
-    cache[pathname] = res.text;
-    cb(null, verifyHash({ pathname, hash, contents: res.text }));
-    return;
-  });
+      cache[pathname] = res.text;
+      cb(null, verifyHash({ pathname, hash, contents: res.text }));
+      return;
+    });
 }
 
 function checkLinks(): void {

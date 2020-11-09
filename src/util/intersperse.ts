@@ -1,8 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-export default function intersperse(items?: Array<any>, toInject?: any): Array<any> {
+export default function intersperse(items?: Array<string>, toInject?: string): Array<string> {
   if (!items || !items.length) {
     return [];
+  }
+  if (!toInject) {
+    return items;
   }
 
   const start = [items[0]];
