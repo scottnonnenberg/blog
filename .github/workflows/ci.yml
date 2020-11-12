@@ -1,0 +1,34 @@
+name: CI
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: lsb_release -a
+      - run: uname -a
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.15.0'
+
+      # Unpack our cached version of yarn to avoid roundtrip with npm
+      - run: tar -xvf yarn-v1.22.10.tar.gz
+      - run: mv yarn-v1.22.10 yarn
+
+      # install all node modules from offline cache; substantially faster
+      - run: ./yarn/bin/yarn install --offline --pure-lockfile
+
+      # First check for outstanding changes in the repo
+      - run: ./yarn/bin/yarn check-git
+
+      # Build the site in production mode
+      - run: ./yarn/bin/yarn build
+
+      # Lint, test, and broken link check
+      - run: ./yarn/bin/yarn ci-with-server
+
+      # Finally, again check for outstanding changes in the repo
+      - run: ./yarn/bin/yarn check-git
