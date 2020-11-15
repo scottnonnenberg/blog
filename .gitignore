@@ -1,4 +1,3 @@
-bower_components
 node_modules
 
 .cache
@@ -25,11 +24,7 @@ results
 *.gz
 *.rdb
 
-result*.html
-npm-debug.log
 *.sublime-workspace
-
-production_config.toml
 
 mailchimp.js
 mailchimp.ts
