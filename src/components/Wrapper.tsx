@@ -6,7 +6,6 @@ import { rhythm } from 'src/util/typography';
 import { LocationType } from 'src/types/Location';
 import { SiteMetadataQueryType } from 'src/types/queries';
 
-import 'css/typography-compat.less';
 import 'css/styles.less';
 
 const MAX_WIDTH = 24;

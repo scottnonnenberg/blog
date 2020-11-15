@@ -16,8 +16,6 @@ import EmailSignup from 'src/components/EmailSignup';
 
 import { PostType } from 'src/types/Post';
 
-import 'css/solarized-light.less';
-
 type PageContextType = {
   previous?: PostType;
   next?: PostType;
@@ -54,7 +52,7 @@ export default function post({
   const post = data.markdownRemark;
   const title = post?.frontmatter?.title;
   if (!title) {
-    throw new Error(`Page had missing title: ${JSON.stringify(post)}`)
+    throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
   }
 
   return (

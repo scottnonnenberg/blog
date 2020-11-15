@@ -41,6 +41,18 @@ module.exports = {
       ],
     ];
 
+    // ---- Force our global CSS into storybook
+    //   see require() in .storybook/preview.js, since we don't require CSS in all components
+
+    config.module.rules.push({
+      test: /\.less$/,
+      use: [
+        require.resolve('style-loader'),
+        require.resolve('css-loader'),
+        require.resolve('less-loader'),
+      ],
+    });
+
     // ---- Gatsby Link references this global, and we don't want errors in our storybook console
     //   via https://stackoverflow.com/questions/58431311/has-anybody-successfully-integrated-storybook-docs-with-gatsby
 
