@@ -49,7 +49,7 @@ If nothing else, this book is a good way to understand your own privilege. There
 
 ## History
 
-I had a better understanding of the current context, but I wanted a little bit more context. How did we get here? Why are some of these problems so hard solve?
+I had a better understanding of the current context, but I wanted a little bit more. How did we get here? Why are some of these problems so hard solve?
 
 ### [4. Corruption in America (2014)](http://www.goodreads.com/book/show/21878092-corruption-in-america?from_search=true)
 
@@ -65,7 +65,7 @@ Teachout laments the loss of experienced politicians from the Supreme Court in f
 
 ### [5. The Warmth of Other Suns (2010)](http://www.goodreads.com/book/show/8171378-the-warmth-of-other-suns?from_search=true)
 
-I first heard about this book at this year's [Open Source and Feelings conference](http://www.osfeels.com/), and again in the wake of the election. What better to understand a little bit more about the context behind [#BlackLivesMatter](http://blacklivesmatter.com/about/) and our continued difficulty with race in this country? It talks about the [Great Migration](https://en.wikipedia.org/wiki/Great_Migration_(African_American)) of six million black people from the south to the rest of the country from 1915 to 1975. Why did they leave? Because [Jim Crow laws ](https://en.wikipedia.org/wiki/Jim_Crow_laws)made things unbearable for them.
+I first heard about this book at this year's [Open Source and Feelings conference](http://www.osfeels.com/), and again in the wake of the election. What better to understand a little bit more about the context behind [#BlackLivesMatter](http://blacklivesmatter.com/about/) and our continued difficulty with race in this country? It talks about the [Great Migration](https://en.wikipedia.org/wiki/Great_Migration_(African_American)) of six million black people from the south to the rest of the country from 1915 to 1975. Why did they leave? Because [Jim Crow laws](https://en.wikipedia.org/wiki/Jim_Crow_laws) made things unbearable for them.
 
 This book was a shock in so many ways. First, the very clear message that slavery essentially continued past its [official end](https://www.google.com/search?q=emancipation+proclamation&oq=emancipation+proclamation&aqs=chrome.0.0l6.3581j0j1&sourceid=chrome&ie=UTF-8) via [sharecropping](https://en.wikipedia.org/wiki/Sharecropping). The book included the story of a black sharecropper needing to leave town to avoid a [lynching](https://en.wikipedia.org/wiki/Lynching) after questioning the books kept by their planter. It broke through one of my incorrect perceptions about the time - that most violence came from the worst of society, irrational, passionate, and in the moment. But this was a businessman with his employee, in a business context.
 
