@@ -69,6 +69,7 @@ module.exports = {
     alias.css = join(__dirname, '..', 'css');
     alias.mailchimp$ = join(__dirname, '..', 'mailchimp.ts');
     alias.src = join(__dirname, '..', 'src');
+    alias.test = join(__dirname, '..', 'test');
 
     return config;
   },

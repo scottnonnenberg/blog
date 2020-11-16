@@ -1,0 +1,14 @@
+diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
+index 72c43ea..a995418 100644
+--- a/node_modules/@types/react/index.d.ts
++++ b/node_modules/@types/react/index.d.ts
+@@ -2021,6 +2021,9 @@ declare namespace React {
+         name?: string;
+         noValidate?: boolean;
+         target?: string;
++
++        // Our new prop
++        rel?: string;
+     }
+ 
+     interface HtmlHTMLAttributes<T> extends HTMLAttributes<T> {

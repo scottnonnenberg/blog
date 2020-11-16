@@ -23,25 +23,9 @@ const TEXT_PREVIEW_POSTS = 5;
 
 const LARGER_MARGIN = 1.5;
 
-function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
-  const sliced = posts.slice(0, HTML_PREVIEW_POSTS);
-  return map(sliced, post => <HTMLPreview key={post?.fields?.slug} post={post} />);
-}
+export type PropsType = PageProps<AllPostsQueryType, null>;
 
-function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
-  const sliced = posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-  return map(sliced, post => <TextPreview key={post?.fields?.slug} post={post} />);
-}
-
-function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
-  const sliced = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-  return map(sliced, post => <PostLink key={post?.fields?.slug} post={post} />);
-}
-
-export default function index({
-  data,
-  location,
-}: PageProps<AllPostsQueryType>): ReactElement | null {
+export default function index({ data, location }: PropsType): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
 
   return (
@@ -98,6 +82,21 @@ export default function index({
       </div>
     </Wrapper>
   );
+}
+
+function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
+  const sliced = posts.slice(0, HTML_PREVIEW_POSTS);
+  return map(sliced, post => <HTMLPreview key={post?.fields?.slug} post={post} />);
+}
+
+function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
+  const sliced = posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
+  return map(sliced, post => <TextPreview key={post?.fields?.slug} post={post} />);
+}
+
+function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
+  const sliced = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
+  return map(sliced, post => <PostLink key={post?.fields?.slug} post={post} />);
 }
 
 export const pageQuery = graphql`

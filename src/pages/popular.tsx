@@ -23,33 +23,9 @@ import { AllPostsQueryType } from 'src/types/queries.d';
 const TEXT_PREVIEW_POSTS = 10;
 const POST_LINKS = 10;
 
-const sortPosts = flow(
-  filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
-  sortBy((post: PostType) => post?.frontmatter?.rank)
-);
+export type PropsType = PageProps<AllPostsQueryType, null>;
 
-const getTextPreviews = flow(
-  take(TEXT_PREVIEW_POSTS),
-  map((post: PostType) => (
-    <li key={post?.fields?.slug}>
-      <TextPreview post={post} />
-    </li>
-  ))
-);
-const getPostLinks = flow(
-  drop(TEXT_PREVIEW_POSTS),
-  take(POST_LINKS),
-  map((post: PostType) => (
-    <li key={post?.fields?.slug}>
-      <PostLink post={post} />
-    </li>
-  ))
-);
-
-export default function popular({
-  location,
-  data,
-}: PageProps<AllPostsQueryType>): ReactElement | null {
+export default function popular({ location, data }: PropsType): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const sorted = sortPosts(posts);
 
@@ -75,6 +51,29 @@ export default function popular({
     </Wrapper>
   );
 }
+
+const sortPosts = flow(
+  filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
+  sortBy((post: PostType) => post?.frontmatter?.rank)
+);
+
+const getTextPreviews = flow(
+  take(TEXT_PREVIEW_POSTS),
+  map((post: PostType) => (
+    <li key={post?.fields?.slug}>
+      <TextPreview post={post} />
+    </li>
+  ))
+);
+const getPostLinks = flow(
+  drop(TEXT_PREVIEW_POSTS),
+  take(POST_LINKS),
+  map((post: PostType) => (
+    <li key={post?.fields?.slug}>
+      <PostLink post={post} />
+    </li>
+  ))
+);
 
 export const pageQuery = graphql`
   query {

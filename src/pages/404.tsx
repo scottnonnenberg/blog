@@ -9,7 +9,9 @@ import SEO from 'src/components/SEO';
 import Wrapper from 'src/components//Wrapper';
 import Author from 'src/components/Author';
 
-export default function NotFound({ location }: PageProps): ReactElement | null {
+export type PropsType = PageProps<null, null>;
+
+export default function NotFound({ location }: PropsType): ReactElement | null {
   const title = "Couldn't find that!";
 
   return (

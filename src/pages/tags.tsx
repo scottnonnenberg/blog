@@ -24,10 +24,9 @@ type DataType = {
   };
 };
 
-export default function tags({
-  data,
-  location,
-}: PageProps<DataType>): ReactElement | null {
+export type PropsType = PageProps<DataType, null>;
+
+export default function tags({ data, location }: PropsType): ReactElement | null {
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const tags = getTagCounts(posts);

@@ -1,32 +1,22 @@
 import * as React from 'react';
 
-import Post, { PropsType } from './post';
+import NotFound, { PropsType } from 'src/pages/404';
 
 import { storiesOf } from '@storybook/react';
-import { posts } from 'test/fixtures';
-
-const { current, next, previous } = posts;
 
 function createProps(props: Partial<PropsType> = {}) {
   // Core fields
-  const data = {
-    markdownRemark: current,
-  };
   const location = {
     ...window.location,
     state: null,
-    pathname: '/page-slug',
-  };
-  const pageContext = {
-    next,
-    previous,
+    pathname: '/random',
   };
 
   return {
     // Core fields
-    data,
+    data: null,
     location,
-    pageContext,
+    pageContext: null,
 
     // Other stuff provided by Gatsby
     navigate: async () => undefined,
@@ -34,15 +24,15 @@ function createProps(props: Partial<PropsType> = {}) {
     params: {},
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     pageResources: {} as any,
-    path: '/page-slug',
+    path: '/random',
     pathContext: {},
-    uri: '/page-slug',
+    uri: '/random',
 
     // Any passed-in props take precedence
     ...props,
   };
 }
 
-const stories = storiesOf('src/dynamic-pages/post', module);
+const stories = storiesOf('src/pages/404', module);
 
-stories.add('Default', () => <Post {...createProps()} />);
+stories.add('Default', () => <NotFound {...createProps()} />);

@@ -29,7 +29,7 @@ export default function TextPreview(props: PropsType): ReactElement | null {
 
   const slug = post?.fields?.slug;
   if (!slug) {
-    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
   }
 
   return (
