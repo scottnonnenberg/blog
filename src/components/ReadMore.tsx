@@ -9,6 +9,21 @@ type PropsType = {
   next?: PostType;
 };
 
+export default function ReadMore(props: PropsType): ReactElement | null {
+  const { previous, next } = props;
+
+  if (!previous && !next) {
+    return null;
+  }
+
+  return (
+    <div>
+      {renderItem('NEXT', next)}
+      {renderItem('PREVIOUS', previous)}
+    </div>
+  );
+}
+
 function renderItem(label: string, post?: PostType): ReactElement | null {
   if (!post) {
     return null;
@@ -27,21 +42,6 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
         {label}:
       </h5>
       <TextPreview post={post} />
-    </div>
-  );
-}
-
-export default function ReadMore(props: PropsType): ReactElement | null {
-  const { previous, next } = props;
-
-  if (!previous && !next) {
-    return null;
-  }
-
-  return (
-    <div>
-      {renderItem('NEXT', next)}
-      {renderItem('PREVIOUS', previous)}
     </div>
   );
 }

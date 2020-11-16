@@ -22,6 +22,40 @@ type PropsType = {
   children: React.ReactNode;
 };
 
+function Wrapper({ location, children }: PropsType): ReactElement | null {
+  const data: SiteMetadataQueryType = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            blogTitle
+          }
+        }
+      }
+    `
+  );
+
+  const blogTitle = data.site.siteMetadata.blogTitle;
+  const url = location.pathname;
+
+  return (
+    <div
+      style={{
+        maxWidth: rhythm(MAX_WIDTH),
+        padding: `${rhythm(2)} ${rhythm(HALF)}`,
+        paddingTop: rhythm(HALF),
+        marginRight: 'auto',
+        marginLeft: 'auto',
+      }}
+    >
+      {renderHeader(blogTitle, url)}
+      {children}
+    </div>
+  );
+}
+
+export default Wrapper;
+
 function renderHeader(blogTitle: string, url: string): ReactElement | null {
   if (url === '/') {
     return (
@@ -66,37 +100,3 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
     </div>
   );
 }
-
-function Wrapper({ location, children }: PropsType): ReactElement | null {
-  const data: SiteMetadataQueryType = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            blogTitle
-          }
-        }
-      }
-    `
-  );
-
-  const blogTitle = data.site.siteMetadata.blogTitle;
-  const url = location.pathname;
-
-  return (
-    <div
-      style={{
-        maxWidth: rhythm(MAX_WIDTH),
-        padding: `${rhythm(2)} ${rhythm(HALF)}`,
-        paddingTop: rhythm(HALF),
-        marginRight: 'auto',
-        marginLeft: 'auto',
-      }}
-    >
-      {renderHeader(blogTitle, url)}
-      {children}
-    </div>
-  );
-}
-
-export default Wrapper;

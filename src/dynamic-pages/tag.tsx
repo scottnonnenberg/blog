@@ -21,20 +21,9 @@ type PageContextType = {
   postsWithTag: Array<PostType>;
 };
 
-export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
-  const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
-  return map(sliced, post => <TextPreview key={post?.frontmatter?.path} post={post} />);
-}
+export type PropsType = PageProps<null, PageContextType>;
 
-export function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
-  const plainPosts = posts.slice(TEXT_PREVIEW_POSTS);
-  return map(plainPosts, post => <PostLink key={post?.frontmatter?.path} post={post} />);
-}
-
-export default function tag({
-  location,
-  pageContext,
-}: PageProps<null, PageContextType>): ReactElement | null {
+export default function tag({ location, pageContext }: PropsType): ReactElement | null {
   const { tag, postsWithTag } = pageContext;
   const title = `Posts tagged '${tag}'`;
 
@@ -55,4 +44,14 @@ export default function tag({
       </div>
     </Wrapper>
   );
+}
+
+export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
+  const sliced = posts.slice(0, TEXT_PREVIEW_POSTS);
+  return map(sliced, post => <TextPreview key={post?.frontmatter?.path} post={post} />);
+}
+
+export function getPlain(posts: Array<PostType>): Array<ReactElement | null> {
+  const plainPosts = posts.slice(TEXT_PREVIEW_POSTS);
+  return map(plainPosts, post => <PostLink key={post?.frontmatter?.path} post={post} />);
 }

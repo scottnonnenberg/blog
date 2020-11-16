@@ -25,29 +25,13 @@ type DataType = {
   markdownRemark: PostType;
 };
 
-function renderTagLinks(tags?: Array<string>): ReactElement | null {
-  if (!tags || !tags.length) {
-    return null;
-  }
-
-  const tagLinks = map(tags, tag => (
-    <Link key={tag} to={`/tags/${tag}/`}>
-      {tag}
-    </Link>
-  ));
-
-  return (
-    <div>
-      <em>Tags:</em> {intersperse(tagLinks, ', ')}
-    </div>
-  );
-}
+export type PropsType = PageProps<DataType, PageContextType>;
 
 export default function post({
   data,
-  pageContext,
   location,
-}: PageProps<DataType, PageContextType>): ReactElement | null {
+  pageContext,
+}: PropsType): ReactElement | null {
   const { previous, next } = pageContext;
   const post = data.markdownRemark;
   const title = post?.frontmatter?.title;
@@ -103,6 +87,24 @@ export default function post({
         <ReadMore previous={previous} next={next} />
       </div>
     </Wrapper>
+  );
+}
+
+function renderTagLinks(tags?: Array<string>): ReactElement | null {
+  if (!tags || !tags.length) {
+    return null;
+  }
+
+  const tagLinks = map(tags, tag => (
+    <Link key={tag} to={`/tags/${tag}/`}>
+      {tag}
+    </Link>
+  ));
+
+  return (
+    <div>
+      <em>Tags:</em> {intersperse(tagLinks, ', ')}
+    </div>
   );
 }
 
