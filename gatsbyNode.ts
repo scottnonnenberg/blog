@@ -81,7 +81,7 @@ const gatsbyNode = {
 
       const path = post?.fields?.slug;
       if (!path) {
-        throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+        throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
       }
 
       createPage({

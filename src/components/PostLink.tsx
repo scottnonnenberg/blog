@@ -17,7 +17,7 @@ export default function PostLink(props: PropsType): ReactElement | null {
 
   const to = post?.fields?.slug;
   if (!to) {
-    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`)
+    throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
   }
 
   return (

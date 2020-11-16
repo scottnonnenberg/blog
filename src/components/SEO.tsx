@@ -43,7 +43,7 @@ function generatePostSpecificTags(
 
   const data = post?.frontmatter;
   if (!data) {
-    throw new Error(`Page had missing frontmatter: ${JSON.stringify(data)}`)
+    throw new Error(`Page had missing frontmatter: ${JSON.stringify(data)}`);
   }
 
   const postImage = extractImage(post.html);
