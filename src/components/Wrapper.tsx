@@ -72,7 +72,9 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
             marginBottom: rhythm(1),
           }}
         >
-          A blog about <Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link> and{' '}
+          {'A blog about '}
+          <Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link>
+          {' and '}
           <Link to={GEEKERY_URL}>geekery</Link> <Link to={OF_URL}>of</Link>{' '}
           <Link to={ALL_URL}>all</Link> <Link to={KINDS_URL}>kinds</Link>.
         </div>
@@ -89,7 +91,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
           }}
           to={'/'}
         >
-          « {blogTitle}
+          {`« ${blogTitle}`}
         </Link>
       </h3>
       <hr

@@ -30,8 +30,8 @@ export default function HTMLPreview(props: PropsType): ReactElement | null {
           marginBottom: rhythm(QUARTER),
         }}
       >
-        <Link to={slug}>{post?.frontmatter?.title}</Link>
-        <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+        <Link to={slug}>{post?.frontmatter?.title}</Link>{' '}
+        <span className="date">{shortDate(post?.frontmatter?.date)}</span>
       </h2>
       <div className="markdown" dangerouslySetInnerHTML={{ __html: preview || '' }} />
     </div>

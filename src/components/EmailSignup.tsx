@@ -54,7 +54,7 @@ export default function EmailSignup(props: PropsType): ReactElement | null {
               fontSize: '0.6em',
             }}
           >
-            I won&apos;t share your email with anyone.{' '}
+            {"I won't share your email with anyone. "}
             <a href={`http://${shard}.campaign-archive2.com/home/?u=${u}&id=${id}`}>
               See previous emails.
             </a>

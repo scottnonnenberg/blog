@@ -39,7 +39,7 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
           letterSpacing: '-0.5px',
         }}
       >
-        {label}:
+        {`${label}:`}
       </h5>
       <TextPreview post={post} />
     </div>

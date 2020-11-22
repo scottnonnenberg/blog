@@ -26,8 +26,8 @@ export default function PostLink(props: PropsType): ReactElement | null {
         marginBottom: rhythm(QUARTER),
       }}
     >
-      <Link to={to}>{post?.frontmatter?.title}</Link>
-      <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+      <Link to={to}>{post?.frontmatter?.title}</Link>{' '}
+      <span className="date">{shortDate(post?.frontmatter?.date)}</span>
     </div>
   );
 }

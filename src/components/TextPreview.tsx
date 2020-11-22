@@ -39,11 +39,12 @@ export default function TextPreview(props: PropsType): ReactElement | null {
           marginBottom: rhythm(QUARTER),
         }}
       >
-        <Link to={slug}>{post?.frontmatter?.title}</Link>
-        <span className="date"> {shortDate(post?.frontmatter?.date)}</span>
+        <Link to={slug}>{post?.frontmatter?.title}</Link>{' '}
+        <span className="date">{shortDate(post?.frontmatter?.date)}</span>
       </h3>
       <p>
-        {body} <Link to={slug}>Read more&nbsp;»</Link>
+        {`${body} `}
+        <Link to={slug}>Read more&nbsp;»</Link>
       </p>
     </div>
   );

@@ -54,17 +54,21 @@ export default function Author(): ReactElement | null {
         />
       </a>
       <div>
-        Hi, I&apos;m{' '}
+        {"Hi, I'm "}
         <a href={HOMEPAGE_URL}>
           <strong>Scott</strong>
         </a>
-        . I&apos;ve written both server and client code in{' '}
-        <Link to={MANY_LANGUAGES_URL}>many languages</Link> for{' '}
-        <a href={WORK_URL}>many employers and clients</a>. I&apos;ve also got a bit of an{' '}
+        {". I've written both server and client code in "}
+        <Link to={MANY_LANGUAGES_URL}>many languages</Link>
+        {' for '}
+        <a href={WORK_URL}>many employers and clients</a>
+        {". I've also got a bit of an "}
         <Link to={UNUSUAL_URL}>unusual</Link>{' '}
-        <Link to={PERSPECTIVE_URL}>perspective</Link>, since I&apos;ve spent time in{' '}
+        <Link to={PERSPECTIVE_URL}>perspective</Link>
+        {", since I've spent time in "}
         <a href={ROLES_URL}>roles</a> <a href={OUTSIDE_URL}>outside</a>{' '}
-        <a href={THE_URL}>the</a> pure &apos;software developer.&apos;
+        <a href={THE_URL}>the</a>
+        {" pure 'software developer.'"}
       </div>
     </div>
   );

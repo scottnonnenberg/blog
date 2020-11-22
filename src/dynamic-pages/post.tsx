@@ -67,7 +67,8 @@ export default function post({
           }}
         >
           <div>
-            <em>Posted:</em> {moment(post?.frontmatter?.date).format('MMMM D, YYYY')}
+            <em>Posted:</em>
+            {` ${moment(post?.frontmatter?.date).format('MMMM D, YYYY')}`}
           </div>
           {renderTagLinks(post?.frontmatter?.tags)}
         </div>
