@@ -30,12 +30,13 @@ This runs `gatsby`'s hot-reloading development server on http://localhost:8000.
 
 ## Build
 
-Generate files to `public/` folder. Will fail if there are outstanding `git` changes. Pre-gzips all files. Calls a shell script behind the scenes, so you might run into some problems on Windows.
+Generate production-ready files to `public/` folder:
 
 ```bash
-yarn build-production # or yarn build-staging
-yarn build-production -- --force # build even with outstanding git changes
+yarn build # or yarn build-staging
 ```
+
+_Note: this will generate `rss.xml`, `atom.xml`, `all.json` and `recent.json` to the root `public/` directory along with the site._
 
 ## Test
 
@@ -52,34 +53,22 @@ yarn check-deep-links
 yarn check-links http://localhost:8000/
 ```
 
-_Note: Due to the meta tags on each page, you'll get broken links until you've published all pages to production._
+_Note: Due to the meta tags on each page, you'll get broken links on a `check-external-links` run until you've published all pages to production._
 
 ## Helper scripts
 
 ```bash
-yarn make-post -- "The name of your post"
+yarn make-post "The name of your post"
 ```
 
 Creates a new markdown file from the template at `scripts/util/_postTemplate.md`.
 
 ```bash
 yarn clean-post
-yarn clean-post -- 5
+yarn clean-post 5
 ```
 
 By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsbyConfig.ts`) to ensure that links are all of the relative form.
-
-```bash
-yarn generate-rss
-```
-
-Generates `rss.xml` and `atom.xml` into `public/`. Runs as part of every build.
-
-```bash
-yarn generate-json
-```
-
-Generates `all.json` and `recent.json` into `public/`. Also runs as part of every build. I generate this file for easier syndication into other sites, like https://scottnonnenberg.com.
 
 ## Contributing
 
@@ -89,7 +78,7 @@ It takes some getting used to, but this configuration is absolutely worthwhile. 
 
 ## License
 
-The files under `posts/` are Copyright 2016, All Rights Reserved.
+The files under `posts/` are Copyright 2013-2020, All Rights Reserved.
 
 The rest of the project is under the MIT license:
 

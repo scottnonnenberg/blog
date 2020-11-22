@@ -1,4 +1,4 @@
-Copyright 2016, All Rights Reserved.
+Copyright 2013-2020, All Rights Reserved.
 
 This applies to all files in this directory.
 
