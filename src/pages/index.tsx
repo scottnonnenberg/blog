@@ -4,8 +4,6 @@ import React, { ReactElement } from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 import map from 'lodash/map';
 
-import { rhythm } from 'src/util/typography';
-
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
 import Author from 'src/components/Author';
@@ -21,8 +19,6 @@ import { AllPostsQueryType } from 'src/types/queries.d';
 const HTML_PREVIEW_POSTS = 5;
 const TEXT_PREVIEW_POSTS = 5;
 
-const LARGER_MARGIN = 1.5;
-
 export type PropsType = PageProps<AllPostsQueryType, null>;
 
 export default function index({ data, location }: PropsType): ReactElement | null {
@@ -32,24 +28,14 @@ export default function index({ data, location }: PropsType): ReactElement | nul
     <Wrapper location={location}>
       <SEO pageTitle="Blog" location={location} />
       <div>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <h3
-          style={{
-            textAlign: 'center',
-            marginBottom: 0,
-          }}
-        >
-          <span style={{ whiteSpace: 'nowrap' }}>
+        <h3 className="index__links">
+          <span className="index__links__nowrap">
             <Link to="/popular/">Popular Posts</Link>
             {' - '}
             <Link to="/tags/">Tags</Link>
             {' - '}
           </span>
-          <span style={{ whiteSpace: 'nowrap' }}>
+          <span className="index__links__nowrap">
             <a href="/rss.xml">RSS</a>
             {' - '}
             <a href="/atom.xml">Atom</a>
@@ -58,27 +44,12 @@ export default function index({ data, location }: PropsType): ReactElement | nul
           </span>
         </h3>
         <EmailSignup callToAction="Get updates straight to your inbox!" />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr />
         {getHTMLPreviews(posts)}
         {getTextPreviews(posts)}
         {getPlain(posts)}
-        <hr
-          style={{
-            marginTop: rhythm(2),
-            marginBottom: rhythm(2),
-          }}
-        />
-        <div
-          style={{
-            marginTop: rhythm(LARGER_MARGIN),
-          }}
-        >
-          <Author />
-        </div>
+        <hr className="index__end-divider" />
+        <Author />
       </div>
     </Wrapper>
   );

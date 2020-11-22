@@ -5,16 +5,12 @@ import SEO from 'src/components/SEO';
 import map from 'lodash/map';
 import toPairs from 'lodash/toPairs';
 
-import { rhythm } from 'src/util/typography';
 import getTagCounts from 'src/util/getTagCounts';
 
 import Author from 'src/components/Author';
 import Wrapper from 'src/components/Wrapper';
 
 import { PostType } from 'src/types/Post';
-
-const QUARTER = 0.25;
-const LARGER_MARGIN = 1.5;
 
 type DataType = {
   allMarkdownRemark: {
@@ -30,23 +26,15 @@ export default function tags({ data, location }: PropsType): ReactElement | null
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
   const tags = getTagCounts(posts);
-  const tagLinks = map(toPairs(tags), ([tag, count]) => (
-    <li
-      key={tag}
-      style={{
-        marginBottom: rhythm(QUARTER),
-      }}
-    >
-      <Link to={`/tags/${tag}/`}>{tag}</Link>
-      <span
-        style={{
-          color: 'lightgray',
-        }}
-      >
-        {` ${count} ${count === 1 ? 'entry' : 'entries'}`}
-      </span>
-    </li>
-  ));
+  const tagLinks = map(toPairs(tags), ([tag, count]) => {
+    const countString = ` ${count} ${count === 1 ? 'entry' : 'entries'}`;
+    return (
+      <li key={tag} className="tags__tag">
+        <Link to={`/tags/${tag}/`}>{tag}</Link>
+        <span className="tags__tag__count">{countString}</span>
+      </li>
+    );
+  });
 
   return (
     <Wrapper location={location}>
@@ -54,19 +42,8 @@ export default function tags({ data, location }: PropsType): ReactElement | null
       <div>
         <h1>{title}</h1>
         <ul>{tagLinks}</ul>
-        <hr
-          style={{
-            marginTop: rhythm(2),
-            marginBottom: rhythm(2),
-          }}
-        />
-        <div
-          style={{
-            marginTop: rhythm(LARGER_MARGIN),
-          }}
-        >
-          <Author />
-        </div>
+        <hr className="tags__divider" />
+        <Author />
       </div>
     </Wrapper>
   );

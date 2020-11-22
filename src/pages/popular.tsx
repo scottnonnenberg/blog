@@ -8,8 +8,6 @@ import take from 'lodash/fp/take';
 import drop from 'lodash/fp/drop';
 import filter from 'lodash/fp/filter';
 
-import { rhythm } from 'src/util/typography';
-
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
 import Author from 'src/components/Author';
@@ -40,12 +38,7 @@ export default function popular({ location, data }: PropsType): ReactElement | n
           {getTextPreviews(sorted)}
           {getPostLinks(sorted)}
         </ol>
-        <hr
-          style={{
-            marginTop: rhythm(2),
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr className="popular__divider" />
         <Author />
       </div>
     </Wrapper>
@@ -60,7 +53,7 @@ const sortPosts = flow(
 const getTextPreviews = flow(
   take(TEXT_PREVIEW_POSTS),
   map((post: PostType) => (
-    <li key={post?.fields?.slug}>
+    <li key={post?.fields?.slug} className="popular__html">
       <TextPreview post={post} />
     </li>
   ))

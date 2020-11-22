@@ -3,7 +3,6 @@ import { graphql, Link, PageProps } from 'gatsby';
 import moment from 'moment';
 import map from 'lodash/map';
 
-import { rhythm } from 'src/util/typography';
 import intersperse from 'src/util/intersperse';
 import shortDate from 'src/util/shortDate';
 
@@ -43,48 +42,20 @@ export default function post({
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
       <div className="post">
-        <h1 style={{ marginBottom: 0 }}>{post?.frontmatter?.title}</h1>
-        <h3
-          style={{
-            color: 'lightgray',
-            marginTop: 0,
-            marginBottom: '1em',
-            fontWeight: 'normal',
-            letterSpacing: '-2px',
-          }}
-        >
-          {shortDate(post?.frontmatter?.date)}
-        </h3>
-
+        <h1 className="post__header">{post?.frontmatter?.title}</h1>
+        <h3 className="post__sub-header">{shortDate(post?.frontmatter?.date)}</h3>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
         <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
-        <div
-          className="metadata"
-          style={{
-            display: 'block',
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1),
-          }}
-        >
+        <div className="post__metadata">
           <div>
             <em>Posted:</em>
             {` ${moment(post?.frontmatter?.date).format('MMMM D, YYYY')}`}
           </div>
           {renderTagLinks(post?.frontmatter?.tags)}
         </div>
-        <hr
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr className="post__divider" />
         <Author />
-        <hr
-          style={{
-            marginTop: rhythm(1),
-            marginBottom: rhythm(2),
-          }}
-        />
+        <hr className="post__divider-end" />
         <ReadMore previous={previous} next={next} />
       </div>
     </Wrapper>

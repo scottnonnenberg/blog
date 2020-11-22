@@ -31,16 +31,7 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
 
   return (
     <div>
-      <h5
-        style={{
-          margin: 0,
-          fontSize: '0.78615rem',
-          lineHeight: '1.72222rem',
-          letterSpacing: '-0.5px',
-        }}
-      >
-        {`${label}:`}
-      </h5>
+      <h5 className="read-more">{`${label}:`}</h5>
       <TextPreview post={post} />
     </div>
   );

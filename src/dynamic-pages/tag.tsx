@@ -3,8 +3,6 @@ import { PageProps } from 'gatsby';
 
 import map from 'lodash/map';
 
-import { rhythm } from 'src/util/typography';
-
 import SEO from 'src/components/SEO';
 import Author from 'src/components/Author';
 import Wrapper from 'src/components/Wrapper';
@@ -34,12 +32,7 @@ export default function tag({ location, pageContext }: PropsType): ReactElement 
         <h1>{title}</h1>
         {getTextPreviews(postsWithTag)}
         {getPlain(postsWithTag)}
-        <hr
-          style={{
-            marginTop: rhythm(2),
-            marginBottom: rhythm(2),
-          }}
-        />
+        <hr className="tag__divider" />
         <Author />
       </div>
     </Wrapper>

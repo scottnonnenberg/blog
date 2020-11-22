@@ -1,11 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import { rhythm } from 'src/util/typography';
-
 import { SiteMetadataQueryType } from 'src/types/queries';
-
-const QUARTER = 0.25;
 
 // External
 const HOMEPAGE_URL = 'https://scottnonnenberg.com';
@@ -41,17 +37,7 @@ export default function Author(): ReactElement | null {
   return (
     <div className="author">
       <a href={url}>
-        <img
-          src={icon}
-          style={{
-            float: 'left',
-            marginRight: rhythm(QUARTER),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-          }}
-          alt="It's me!"
-        />
+        <img src={icon} className="author__image" alt="It's me!" />
       </a>
       <div>
         {"Hi, I'm "}

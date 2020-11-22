@@ -2,14 +2,12 @@ import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 import { prune } from 'underscore.string';
 
-import { rhythm } from 'src/util/typography';
 import shortDate from 'src/util/shortDate';
 import removeTags from 'src/util/removeTags';
 import getPreFoldContent from 'src/util/getPreFoldContent';
 
 import { PostType } from 'src/types/Post';
 
-const QUARTER = 0.25;
 const MAX_TEXT_PREVIEW = 200;
 
 type PropsType = {
@@ -34,13 +32,9 @@ export default function TextPreview(props: PropsType): ReactElement | null {
 
   return (
     <div>
-      <h3
-        style={{
-          marginBottom: rhythm(QUARTER),
-        }}
-      >
+      <h3 className="text-preview">
         <Link to={slug}>{post?.frontmatter?.title}</Link>{' '}
-        <span className="date">{shortDate(post?.frontmatter?.date)}</span>
+        <span className="text-preview__date">{shortDate(post?.frontmatter?.date)}</span>
       </h3>
       <p>
         {`${body} `}
