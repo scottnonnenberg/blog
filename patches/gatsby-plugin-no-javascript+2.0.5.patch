@@ -1,0 +1,14 @@
+diff --git a/node_modules/gatsby-plugin-no-javascript/gatsby-ssr.js b/node_modules/gatsby-plugin-no-javascript/gatsby-ssr.js
+index 5484ebc..9a26c13 100644
+--- a/node_modules/gatsby-plugin-no-javascript/gatsby-ssr.js
++++ b/node_modules/gatsby-plugin-no-javascript/gatsby-ssr.js
+@@ -64,6 +64,9 @@ function getPostBodyComponentsNoJS(postBodyComponents, pluginOptions) {
+         if (postBodyComponent.props.id && (postBodyComponent.props.id === 'gatsby-script-loader' || postBodyComponent.props.id === 'gatsby-chunk-mapping')) {
+             return false;
+         }
++        if (postBodyComponent.props &&  postBodyComponent.props.src && postBodyComponent.props.src.startsWith('/polyfill')) {
++            return false;
++        }
+         return pageScripts.find(function (script) { return postBodyComponent.type === 'script' && "/" + script.name === postBodyComponent.props.src; }) === undefined;
+     });
+ }
