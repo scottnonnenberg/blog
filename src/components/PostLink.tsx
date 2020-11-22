@@ -12,15 +12,25 @@ type PropsType = {
 export default function PostLink(props: PropsType): ReactElement | null {
   const post = props.post;
 
-  const to = post?.fields?.slug;
-  if (!to) {
+  const slug = post?.fields?.slug;
+  if (!slug) {
     throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
+  }
+
+  const title = post?.frontmatter?.title;
+  if (!title) {
+    throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
+  }
+
+  const postDate = post?.frontmatter?.date;
+  if (!postDate) {
+    throw new Error(`Page had missing post date: ${JSON.stringify(post)}`);
   }
 
   return (
     <div className="post-link">
-      <Link to={to}>{post?.frontmatter?.title}</Link>{' '}
-      <span className="post-link__date">{shortDate(post?.frontmatter?.date)}</span>
+      <Link to={slug}>{title}</Link>{' '}
+      <span className="post-link__date">{shortDate(postDate)}</span>
     </div>
   );
 }

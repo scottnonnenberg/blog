@@ -3,17 +3,12 @@ import { graphql, PageProps } from 'gatsby';
 
 import flow from 'lodash/fp/flow';
 import sortBy from 'lodash/fp/sortBy';
-import map from 'lodash/fp/map';
-import take from 'lodash/fp/take';
-import drop from 'lodash/fp/drop';
 import filter from 'lodash/fp/filter';
 
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
-import Author from 'src/components/Author';
 
-import TextPreview from 'src/components/TextPreview';
-import PostLink from 'src/components/PostLink';
+import { getTextPreviews, getPostLinks } from './index';
 
 import { PostType } from 'src/types/Post';
 import { AllPostsQueryType } from 'src/types/queries.d';
@@ -29,18 +24,17 @@ export default function popular({ location, data }: PropsType): ReactElement | n
 
   const title = 'Popular Posts';
 
+  const text = sorted.slice(0, TEXT_PREVIEW_POSTS);
+  const link = sorted.slice(TEXT_PREVIEW_POSTS, TEXT_PREVIEW_POSTS + POST_LINKS);
+
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} location={location} />
-      <div>
-        <h1>{title}</h1>
-        <ol>
-          {getTextPreviews(sorted)}
-          {getPostLinks(sorted)}
-        </ol>
-        <hr className="popular__divider" />
-        <Author />
-      </div>
+      <h1>{title}</h1>
+      <ol>
+        {getTextPreviews(text)}
+        {getPostLinks(link)}
+      </ol>
     </Wrapper>
   );
 }
@@ -48,24 +42,6 @@ export default function popular({ location, data }: PropsType): ReactElement | n
 const sortPosts = flow(
   filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
   sortBy((post: PostType) => post?.frontmatter?.rank)
-);
-
-const getTextPreviews = flow(
-  take(TEXT_PREVIEW_POSTS),
-  map((post: PostType) => (
-    <li key={post?.fields?.slug} className="popular__html">
-      <TextPreview post={post} />
-    </li>
-  ))
-);
-const getPostLinks = flow(
-  drop(TEXT_PREVIEW_POSTS),
-  take(POST_LINKS),
-  map((post: PostType) => (
-    <li key={post?.fields?.slug}>
-      <PostLink post={post} />
-    </li>
-  ))
 );
 
 export const pageQuery = graphql`

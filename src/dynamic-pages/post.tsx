@@ -8,7 +8,6 @@ import shortDate from 'src/util/shortDate';
 
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
-import Author from 'src/components/Author';
 
 import ReadMore from 'src/components/ReadMore';
 import EmailSignup from 'src/components/EmailSignup';
@@ -33,31 +32,33 @@ export default function post({
 }: PropsType): ReactElement | null {
   const { previous, next } = pageContext;
   const post = data.markdownRemark;
+
   const title = post?.frontmatter?.title;
   if (!title) {
     throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
   }
 
+  const postDate = post?.frontmatter?.date;
+  if (!postDate) {
+    throw new Error(`Page had missing post date: ${JSON.stringify(post)}`);
+  }
+
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
-      <div className="post">
-        <h1 className="post__header">{post?.frontmatter?.title}</h1>
-        <h3 className="post__sub-header">{shortDate(post?.frontmatter?.date)}</h3>
-        <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
-        <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
-        <div className="post__metadata">
-          <div>
-            <em>Posted:</em>
-            {` ${moment(post?.frontmatter?.date).format('MMMM D, YYYY')}`}
-          </div>
-          {renderTagLinks(post?.frontmatter?.tags)}
+      <h1 className="post__header">{title}</h1>
+      <h3 className="post__sub-header">{shortDate(postDate)}</h3>
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
+      <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
+      <div className="post__metadata">
+        <div>
+          <em>Posted:</em>
+          {` ${moment(postDate).format('MMMM D, YYYY')}`}
         </div>
-        <hr className="post__divider" />
-        <Author />
-        <hr className="post__divider-end" />
-        <ReadMore previous={previous} next={next} />
+        {renderTagLinks(post?.frontmatter?.tags)}
       </div>
+      <hr className="post__divider" />
+      <ReadMore previous={previous} next={next} />
     </Wrapper>
   );
 }

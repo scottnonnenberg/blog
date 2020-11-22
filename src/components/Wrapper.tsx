@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
+import Author from 'src/components/Author';
+
 import { LocationType } from 'src/types/Location';
 import { SiteMetadataQueryType } from 'src/types/queries';
 
@@ -37,6 +39,8 @@ function Wrapper({ location, children }: PropsType): ReactElement | null {
     <div className="wrapper__container">
       {renderHeader(blogTitle, url)}
       {children}
+      <hr className="wrapper__divider" />
+      <Author />
     </div>
   );
 }
@@ -55,7 +59,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
           <Link to={GEEKERY_URL}>geekery</Link> <Link to={OF_URL}>of</Link>{' '}
           <Link to={ALL_URL}>all</Link> <Link to={KINDS_URL}>kinds</Link>.
         </div>
-        <hr className="wrapper__divider" />
+        <hr />
       </div>
     );
   }
@@ -67,7 +71,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
           {`« ${blogTitle}`}
         </Link>
       </h3>
-      <hr className="wrapper__divider" />
+      <hr />
     </div>
   );
 }

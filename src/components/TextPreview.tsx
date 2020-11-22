@@ -30,11 +30,21 @@ export default function TextPreview(props: PropsType): ReactElement | null {
     throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
   }
 
+  const title = post?.frontmatter?.title;
+  if (!title) {
+    throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
+  }
+
+  const postDate = post?.frontmatter?.date;
+  if (!postDate) {
+    throw new Error(`Page had missing post date: ${JSON.stringify(post)}`);
+  }
+
   return (
     <div>
       <h3 className="text-preview">
-        <Link to={slug}>{post?.frontmatter?.title}</Link>{' '}
-        <span className="text-preview__date">{shortDate(post?.frontmatter?.date)}</span>
+        <Link to={slug}>{title}</Link>{' '}
+        <span className="text-preview__date">{shortDate(postDate)}</span>
       </h3>
       <p>
         {`${body} `}

@@ -13,26 +13,37 @@ type PropsType = {
 
 export default function HTMLPreview(props: PropsType): ReactElement | null {
   const { post } = props;
-  const preview = getHTMLPreview(post);
 
   const slug = post?.fields?.slug;
   if (!slug) {
     throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
   }
 
+  const title = post?.frontmatter?.title;
+  if (!title) {
+    throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
+  }
+
+  const postDate = post?.frontmatter?.date;
+  if (!postDate) {
+    throw new Error(`Page had missing post date: ${JSON.stringify(post)}`);
+  }
+
+  const preview = getHTMLPreview(post, slug);
+
   return (
     <div>
       <h2 className="html-preview">
-        <Link to={slug}>{post?.frontmatter?.title}</Link>{' '}
-        <span className="html-preview__date">{shortDate(post?.frontmatter?.date)}</span>
+        <Link to={slug}>{title}</Link>{' '}
+        <span className="html-preview__date">{shortDate(postDate)}</span>
       </h2>
       <div className="markdown" dangerouslySetInnerHTML={{ __html: preview || '' }} />
     </div>
   );
 }
 
-function getHTMLPreview(post: PostType): string | undefined {
+function getHTMLPreview(post: PostType, slug: string): string | undefined {
   const preFold = getPreFoldContent(post.html);
-  const textLink = ` <a href="${post?.fields?.slug}">Read more&nbsp;»</a>`;
+  const textLink = ` <a href="${slug}">Read more&nbsp;»</a>`;
   return appendToLastTextBlock(preFold, textLink);
 }

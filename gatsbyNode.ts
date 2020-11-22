@@ -88,7 +88,7 @@ const gatsbyNode = {
         path,
         component: blogPostPage,
         context: {
-          slug: post?.fields?.slug,
+          slug: path,
           previous,
           next,
         },

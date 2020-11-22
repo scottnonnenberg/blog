@@ -7,7 +7,6 @@ import toPairs from 'lodash/toPairs';
 
 import getTagCounts from 'src/util/getTagCounts';
 
-import Author from 'src/components/Author';
 import Wrapper from 'src/components/Wrapper';
 
 import { PostType } from 'src/types/Post';
@@ -25,13 +24,14 @@ export type PropsType = PageProps<DataType, null>;
 export default function tags({ data, location }: PropsType): ReactElement | null {
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
+
   const tags = getTagCounts(posts);
   const tagLinks = map(toPairs(tags), ([tag, count]) => {
     const countString = ` ${count} ${count === 1 ? 'entry' : 'entries'}`;
     return (
       <li key={tag} className="tags__tag">
         <Link to={`/tags/${tag}/`}>{tag}</Link>
-        <span className="tags__tag__count">{countString}</span>
+        <span className="tags__count">{countString}</span>
       </li>
     );
   });
@@ -39,12 +39,8 @@ export default function tags({ data, location }: PropsType): ReactElement | null
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} location={location} />
-      <div>
-        <h1>{title}</h1>
-        <ul>{tagLinks}</ul>
-        <hr className="tags__divider" />
-        <Author />
-      </div>
+      <h1>{title}</h1>
+      <ul>{tagLinks}</ul>
     </Wrapper>
   );
 }
