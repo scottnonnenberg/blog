@@ -2,6 +2,8 @@ import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 import { prune } from 'underscore.string';
 
+import styles from './TextPreview.module.less';
+
 import shortDate from 'src/util/shortDate';
 import removeTags from 'src/util/removeTags';
 import getPreFoldContent from 'src/util/getPreFoldContent';
@@ -41,10 +43,10 @@ export default function TextPreview(props: PropsType): ReactElement | null {
   }
 
   return (
-    <div>
-      <h3 className="text-preview">
+    <div className={styles.container}>
+      <h3 className={styles.title}>
         <Link to={slug}>{title}</Link>{' '}
-        <span className="text-preview__date">{shortDate(postDate)}</span>
+        <span className={styles.date}>{shortDate(postDate)}</span>
       </h3>
       <p>
         {`${body} `}

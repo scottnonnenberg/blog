@@ -4,13 +4,15 @@ import React, { ReactElement } from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
 import map from 'lodash/map';
 
-import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
+import SEO from 'src/components/SEO';
 
 import PostLink from 'src/components/PostLink';
 import TextPreview from 'src/components/TextPreview';
 import HTMLPreview from 'src/components/HTMLPreview';
 import EmailSignup from 'src/components/EmailSignup';
+
+import styles from './index.module.less';
 
 import { PostType } from 'src/types/Post';
 import { AllPostsQueryType } from 'src/types/queries.d';
@@ -30,14 +32,14 @@ export default function index({ data, location }: PropsType): ReactElement | nul
   return (
     <Wrapper location={location}>
       <SEO pageTitle="Blog" location={location} />
-      <h3 className="index__links">
-        <span className="index__links__nowrap">
+      <h3 className={styles.links}>
+        <span className={styles.nowrap}>
           <Link to="/popular/">Popular Posts</Link>
           {' - '}
           <Link to="/tags/">Tags</Link>
           {' - '}
         </span>
-        <span className="index__links__nowrap">
+        <span className={styles.nowrap}>
           <a href="/rss.xml">RSS</a>
           {' - '}
           <a href="/atom.xml">Atom</a>

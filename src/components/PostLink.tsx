@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 
 import shortDate from 'src/util/shortDate';
 
+import styles from './PostLink.module.less';
+
 import { PostType } from 'src/types/Post';
 
 type PropsType = {
@@ -28,9 +30,9 @@ export default function PostLink(props: PropsType): ReactElement | null {
   }
 
   return (
-    <div className="post-link">
+    <div className={styles.title}>
       <Link to={slug}>{title}</Link>{' '}
-      <span className="post-link__date">{shortDate(postDate)}</span>
+      <span className={styles.date}>{shortDate(postDate)}</span>
     </div>
   );
 }

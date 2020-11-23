@@ -1,6 +1,8 @@
 import React, { ReactElement } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
+import styles from './Author.module.less';
+
 import { SiteMetadataQueryType } from 'src/types/queries';
 
 // External
@@ -37,7 +39,7 @@ export default function Author(): ReactElement | null {
   return (
     <div className="author">
       <a href={url}>
-        <img src={icon} className="author__image" alt="It's me!" />
+        <img src={icon} className={styles.image} alt="It's me!" />
       </a>
       <div>
         {"Hi, I'm "}

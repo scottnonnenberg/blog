@@ -1,12 +1,13 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
+import 'css/global.less';
+import styles from './Wrapper.module.less';
+
 import Author from 'src/components/Author';
 
 import { LocationType } from 'src/types/Location';
 import { SiteMetadataQueryType } from 'src/types/queries';
-
-import 'css/styles.less';
 
 const SOFTWARE_DEVELOPMENT_URL = '/tags/software/';
 const GEEKERY_URL = '/star-wars-cards/';
@@ -36,10 +37,10 @@ function Wrapper({ location, children }: PropsType): ReactElement | null {
   const url = location.pathname;
 
   return (
-    <div className="wrapper__container">
+    <div className={styles.container}>
       {renderHeader(blogTitle, url)}
       {children}
-      <hr className="wrapper__divider" />
+      <hr className={styles.divider} />
       <Author />
     </div>
   );
@@ -51,8 +52,8 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
   if (url === '/') {
     return (
       <div>
-        <h1 className="wrapper__main-header">{blogTitle}</h1>
-        <div className="wrapper__blog-summary">
+        <h1 className={styles.header}>{blogTitle}</h1>
+        <div className={styles.blogSummary}>
           {'A blog about '}
           <Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link>
           {' and '}
@@ -67,7 +68,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
   return (
     <div>
       <h3>
-        <Link className="wrapper__back-link" to={'/'}>
+        <Link className={styles.backLink} to={'/'}>
           {`« ${blogTitle}`}
         </Link>
       </h3>

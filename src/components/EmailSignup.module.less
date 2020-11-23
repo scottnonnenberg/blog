@@ -1,0 +1,96 @@
+@import 'css/colors.less';
+
+.container {
+  margin-top: 2em;
+  border: 1px @orange solid;
+  background-color: fade(@orange, 15%);
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  color: @orange;
+}
+
+.container form {
+  margin-bottom: 0;
+}
+
+.inner {
+  display: inline-block;
+}
+
+.inputSection {
+  white-space: nowrap;
+}
+
+.hidden {
+  position: absolute;
+  left: -5000px;
+}
+
+.container input {
+  border: 1px @orange solid;
+  background-color: @white;
+  height: 1.5em;
+  vertical-align: top;
+}
+
+.container ::-webkit-input-placeholder {
+  color: fade(@orange, 40%);
+}
+
+.container :-moz-placeholder {
+  /* Firefox 18- */
+  color: fade(@orange, 40%);
+}
+
+.container ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: fade(@orange, 40%);
+}
+
+.container :-ms-input-placeholder {
+  color: fade(@orange, 40%);
+}
+
+.container input[type='email'] {
+  margin-left: 0.25em;
+  padding: 0.25em;
+  margin-right: 0.25em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+}
+
+.container input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+}
+
+.container input[type='submit']:hover {
+  color: @blue;
+  border: 1px @blue solid;
+  background-color: fade(@blue, 15%);
+}
+
+@media only screen and (max-width: 320px) {
+  .container input[type='email'] {
+    width: 150px;
+  }
+}
+
+.disclaimer {
+  color: fade(@orange, 70%);
+  margin-top: 0.25em;
+  line-height: 1;
+  font-size: 0.6em;
+}
+
+.disclaimer a {
+  color: fade(@orange, 70%);
+  text-shadow: none;
+  text-decoration: underline;
+  background-color: none;
+  background-image: none;
+}

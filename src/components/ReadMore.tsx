@@ -2,6 +2,8 @@ import React, { ReactElement } from 'react';
 
 import TextPreview from './TextPreview';
 
+import styles from './ReadMore.module.less';
+
 import { PostType } from 'src/types/Post';
 
 type PropsType = {
@@ -31,7 +33,7 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
 
   return (
     <div>
-      <h5 className="read-more">{`${label}:`}</h5>
+      <h5 className={styles.title}>{`${label}:`}</h5>
       <TextPreview post={post} />
     </div>
   );

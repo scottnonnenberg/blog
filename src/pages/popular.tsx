@@ -32,8 +32,9 @@ export default function popular({ location, data }: PropsType): ReactElement | n
       <SEO pageTitle={title} location={location} />
       <h1>{title}</h1>
       <ol>
-        {getTextPreviews(text)}
-        {getPostLinks(link)}
+        {[...getTextPreviews(text), ...getPostLinks(link)].map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ol>
     </Wrapper>
   );

@@ -5,6 +5,8 @@ import shortDate from 'src/util/shortDate';
 import getPreFoldContent from 'src/util/getPreFoldContent';
 import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
+import styles from './HTMLPreview.module.less';
+
 import { PostType } from 'src/types/Post';
 
 type PropsType = {
@@ -33,9 +35,9 @@ export default function HTMLPreview(props: PropsType): ReactElement | null {
 
   return (
     <div>
-      <h2 className="html-preview">
+      <h2 className={styles.title}>
         <Link to={slug}>{title}</Link>{' '}
-        <span className="html-preview__date">{shortDate(postDate)}</span>
+        <span className={styles.date}>{shortDate(postDate)}</span>
       </h2>
       <div className="markdown" dangerouslySetInnerHTML={{ __html: preview || '' }} />
     </div>

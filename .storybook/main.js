@@ -9,7 +9,7 @@ module.exports = {
 
     process.env.NODE_ENV = 'test';
 
-    // ---- Basic setup
+    // ---- Basic Gatsby compatibility
     //   via https://www.gatsbyjs.org/docs/visual-testing-with-storybook/
 
     const { resolve } = config;
@@ -41,11 +41,30 @@ module.exports = {
       ],
     ];
 
-    // ---- Force our global CSS into storybook
-    //   see require() in .storybook/preview.js, since we don't require CSS in all components
+    // ---- Styles!
+    //   We have a combination of module and global less-based styles in the project.
 
+    // First we find all less module files, and force module mode. Automatic module
+    //   detection didn't seem to be working.
+    config.module.rules.push({
+      test: /\.module\.less$/,
+      use: [
+        require.resolve('style-loader'),
+        {
+          loader: require.resolve('css-loader'),
+          options: {
+            modules: true,
+          },
+        },
+        require.resolve('less-loader'),
+      ],
+    });
+
+    // Then we pull in all non-module .less files, and add them globally
+    //   see require() in .storybook/preview.js, since we don't require CSS in all components
     config.module.rules.push({
       test: /\.less$/,
+      exclude: /\.module\.less$/,
       use: [
         require.resolve('style-loader'),
         require.resolve('css-loader'),
@@ -53,7 +72,7 @@ module.exports = {
       ],
     });
 
-    // ---- Gatsby Link references this global, and we don't want errors in our storybook console
+    // ---- Workaround: Gatsby Link references this global, and we don't want errors in our storybook console
     //   via https://stackoverflow.com/questions/58431311/has-anybody-successfully-integrated-storybook-docs-with-gatsby
 
     config.plugins.push(
@@ -62,7 +81,7 @@ module.exports = {
       })
     );
 
-    // ---- Aliases to support our require search path customizations
+    // ---- Absolute path support: aliases to support require search path customizations
     //   see scripts/util/setupModulePath.ts for Node-side implementation of this
 
     const { alias } = resolve;

@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { PageProps } from 'gatsby';
 
-import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
+import SEO from 'src/components/SEO';
 
 import { getTextPreviews, getPostLinks } from '../pages/index';
 

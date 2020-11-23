@@ -6,11 +6,13 @@ import map from 'lodash/map';
 import intersperse from 'src/util/intersperse';
 import shortDate from 'src/util/shortDate';
 
-import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
+import SEO from 'src/components/SEO';
 
 import ReadMore from 'src/components/ReadMore';
 import EmailSignup from 'src/components/EmailSignup';
+
+import styles from './post.module.less';
 
 import { PostType } from 'src/types/Post';
 
@@ -46,18 +48,18 @@ export default function post({
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
-      <h1 className="post__header">{title}</h1>
-      <h3 className="post__sub-header">{shortDate(postDate)}</h3>
+      <h1 className={styles.header}>{title}</h1>
+      <h3 className={styles.subHeader}>{shortDate(postDate)}</h3>
       <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
-      <div className="post__metadata">
+      <div className={styles.metadata}>
         <div>
           <em>Posted:</em>
           {` ${moment(postDate).format('MMMM D, YYYY')}`}
         </div>
         {renderTagLinks(post?.frontmatter?.tags)}
       </div>
-      <hr className="post__divider" />
+      <hr className={styles.divider} />
       <ReadMore previous={previous} next={next} />
     </Wrapper>
   );
