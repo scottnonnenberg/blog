@@ -9,8 +9,9 @@ import shortDate from 'src/util/shortDate';
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
 
-import ReadMore from 'src/components/ReadMore';
 import EmailSignup from 'src/components/EmailSignup';
+import ReadMore from 'src/components/ReadMore';
+
 import Markdown from 'src/components/Markdown';
 
 import styles from './post.module.less';

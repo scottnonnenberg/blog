@@ -7,13 +7,17 @@ const stories = storiesOf('src/components/Markdown', module);
 
 stories.add('Basic HTML', () => <Markdown html={basicHTML} />);
 
+stories.add('With Inline Code (with links too)', () => (
+  <Markdown html={withInlineCode} />
+));
+
 stories.add('With Nested List', () => <Markdown html={withNestedList} />);
 
 stories.add('With Quote', () => <Markdown html={withQuote} />);
 
-stories.add('With Javascript', () => <Markdown html={withJavascript} />);
+stories.add('With Javascript Block', () => <Markdown html={withJavascriptBlock} />);
 
-stories.add('With Language Text', () => <Markdown html={withLanguageText} />);
+stories.add('With Plain Block', () => <Markdown html={withPlainBlock} />);
 
 stories.add('With iFrame', () => <Markdown html={withIFrame} />);
 
@@ -63,6 +67,15 @@ const basicHTML = `
 <p>It’s important to think holistically about <em>Agile</em> - sprints can feel pointless if your releases don’t actually go out the door afterwards. This infrastructure might even make your sprints seem too long!</p>
 <hr>
 <p>Now you’re ready for my next post in the series: <a href="/an-agile-organization/">An <em>Agile</em> organization</a>. It’s easy to be <em>Agile</em> within technical teams, but how to handle other parts of the organization still asking for specific features on specific dates?</p>
+`;
+
+// From post 'The dangerous cliffs of Node.js'
+const withInlineCode = `
+<ul>
+<li>Prefer streams. <a href="http://nodejs.org/api/stream.html"><code>streams</code></a> are the way to handle large amounts of data without taking down the process. Put the time in to <a href="http://www.sitepoint.com/basics-node-js-streams/">learn how to</a> <a href="https://github.com/substack/stream-handbook">use them effectively</a>.</li>
+<li>If you must get all the data up front, be sure that you include some kind of <strong>limit</strong> clause, and check any user-provided bounds input.</li>
+<li>Monitor your request response times. <a href="http://newrelic.com/nodejs">New Relic</a> plugs into Express automatically, or you can use <a href="https://github.com/expressjs/morgan"><code>morgan</code></a> support for response times. The <code>good-console</code> plugin for <code>hapi</code> includes response times by default. Because one too-long synchronous code block will delay everything else, you’ll see very clear patterns in the data.</li>
+</ul>
 `;
 
 // From post 'Getting started with Elixir'
@@ -122,7 +135,7 @@ const withQuote = `
 </blockquote>`;
 
 // From post 'Breaking the Node.js Event Loop'
-const withJavascript = `
+const withJavascriptBlock = `
 <pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> <span class="hljs-keyword">async</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'async'</span>);
 <span class="hljs-keyword">var</span> toobusy = <span class="hljs-built_in">require</span>(<span class="hljs-string">'toobusy-js'</span>);
 
@@ -185,7 +198,7 @@ setInterval(writeStatus, <span class="hljs-number">250</span>);
 go();</code></pre>`;
 
 // From post 'Breaking the Node.js Event Loop'
-const withLanguageText = `<pre><code class="language-text">writeInterval: -
+const withPlainBlock = `<pre><code class="language-text">writeInterval: -
 writeInterval: 141ms
 getFile: start
 getFile: done, 1ms

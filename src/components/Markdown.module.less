@@ -1,5 +1,11 @@
 @import 'css/colors.less';
 
+// Override hljs default background color
+.markdown :global(.hljs) {
+  background: none;
+}
+
+// Inline code blocks
 .markdown p code,
 .markdown li code {
   white-space: pre;
@@ -10,8 +16,8 @@
   white-space: -moz-pre-wrap;
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
-  background: #eeeeee;
-  border: 1px solid #cccccc;
+  background: @codeBackground;
+  border: 1px solid @inlineCodeBorder;
   display: inline;
   font-family: Inconsolata, monospace, serif;
   max-width: 100%;
@@ -24,13 +30,10 @@
   text-decoration: underline;
 }
 
-.markdown :global(.hljs) {
-  background: none;
-}
-
+// Full code blocks
 .markdown pre {
   margin-bottom: 1rem;
-  background: #eee;
+  background: @codeBackground;
 }
 
 .markdown pre code {
@@ -52,6 +55,7 @@
   padding-right: 0;
 }
 
+// Primarily used for Youtube
 .markdown iframe {
   display: block;
   margin-left: auto;
@@ -59,9 +63,10 @@
   max-width: 100%;
 }
 
+// Row formatting for tables
 .markdown td,
 .markdown th {
-  color: rgb(44, 44, 44);
+  color: @headerText;
   line-height: 1rem;
   padding: 0.5rem;
   text-align: left;
@@ -69,10 +74,10 @@
 }
 .markdown table tbody > tr:nth-child(odd) > th,
 .markdown table tbody > tr:nth-child(odd) > td {
-  background-color: #eeeeee;
+  background-color: @codeBackground;
 }
 
-// New markdown parsing gives us more <p> tags than we had before
+// Reasonably vertical spacing in nested lists
 .markdown li p {
   margin-bottom: 0px;
 }

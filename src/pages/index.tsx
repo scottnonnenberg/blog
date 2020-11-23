@@ -7,10 +7,10 @@ import map from 'lodash/map';
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
 
+import EmailSignup from 'src/components/EmailSignup';
 import PostLink from 'src/components/PostLink';
 import TextPreview from 'src/components/TextPreview';
 import HTMLPreview from 'src/components/HTMLPreview';
-import EmailSignup from 'src/components/EmailSignup';
 
 import styles from './index.module.less';
 
