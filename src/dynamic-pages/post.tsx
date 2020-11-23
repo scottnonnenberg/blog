@@ -11,6 +11,7 @@ import SEO from 'src/components/SEO';
 
 import ReadMore from 'src/components/ReadMore';
 import EmailSignup from 'src/components/EmailSignup';
+import Markdown from 'src/components/Markdown';
 
 import styles from './post.module.less';
 
@@ -50,7 +51,7 @@ export default function post({
       <SEO pageTitle={title} post={post} location={location} />
       <h1 className={styles.header}>{title}</h1>
       <h3 className={styles.subHeader}>{shortDate(postDate)}</h3>
-      <div className="markdown" dangerouslySetInnerHTML={{ __html: post.html || '' }} />
+      <Markdown html={post.html} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
       <div className={styles.metadata}>
         <div>

@@ -1,0 +1,81 @@
+@import 'css/colors.less';
+
+.markdown p code,
+.markdown li code {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+  background: #eeeeee;
+  border: 1px solid #cccccc;
+  display: inline;
+  font-family: Inconsolata, monospace, serif;
+  max-width: 100%;
+  padding: 0 0.1625rem;
+}
+
+.markdown p a code,
+.markdown li a code {
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+.markdown :global(.hljs) {
+  background: none;
+}
+
+.markdown pre {
+  margin-bottom: 1rem;
+  background: #eee;
+}
+
+.markdown pre code {
+  padding: 0.5rem;
+  border: none;
+  display: inline-block;
+  white-space: inherit;
+  word-wrap: normal;
+  line-height: 1rem;
+  background-image: none;
+  width: 100%;
+}
+
+.markdown blockquote {
+  padding-left: 16.875px;
+  border-left: 6px solid @lightGray;
+  margin-left: 10.875px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.markdown iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.markdown td,
+.markdown th {
+  color: rgb(44, 44, 44);
+  line-height: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+.markdown table tbody > tr:nth-child(odd) > th,
+.markdown table tbody > tr:nth-child(odd) > td {
+  background-color: #eeeeee;
+}
+
+// New markdown parsing gives us more <p> tags than we had before
+.markdown li p {
+  margin-bottom: 0px;
+}
+.markdown ul {
+  margin-bottom: 0.5rem;
+}

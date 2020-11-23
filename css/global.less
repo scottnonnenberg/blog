@@ -37,19 +37,6 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-td,
-th {
-  color: rgb(44, 44, 44);
-  line-height: 1rem;
-  padding: 0.5rem;
-  text-align: left;
-  vertical-align: top;
-}
-table tbody > tr:nth-child(odd) > th,
-table tbody > tr:nth-child(odd) > td {
-  background-color: #eeeeee;
-}
-
 a {
   color: @blue;
   text-decoration: underline;
@@ -64,74 +51,10 @@ h6 a {
   text-decoration: none;
 }
 
-// New markdown parsing gives us more <p> tags than we had before
-li p {
-  margin-bottom: 0px;
-}
-
 ::-moz-selection {
   background-color: @lightOrange;
 }
 
 ::selection {
   background-color: @lightOrange;
-}
-
-.markdown p code,
-.markdown li code {
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -hp-pre-wrap;
-  word-wrap: break-word;
-  background: #eeeeee;
-  border: 1px solid #cccccc;
-  display: inline;
-  font-family: Inconsolata, monospace, serif;
-  max-width: 100%;
-  padding: 0 0.1625rem;
-}
-
-.markdown p a code,
-.markdown li a code {
-  text-shadow: none;
-  text-decoration: underline;
-}
-
-.hljs {
-  background: none;
-}
-
-.markdown pre {
-  margin-bottom: 1rem;
-  background: #eee;
-}
-
-.markdown pre code {
-  padding: 0.5rem;
-  border: none;
-  display: inline-block;
-  white-space: inherit;
-  word-wrap: normal;
-  line-height: 1rem;
-  background-image: none;
-  width: 100%;
-}
-
-blockquote {
-  padding-left: 16.875px;
-  border-left: 6px solid @lightGray;
-  margin-left: 10.875px;
-  margin-right: 0;
-  padding-right: 0;
-}
-
-iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
 }
