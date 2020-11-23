@@ -18,7 +18,7 @@ export default {
 };
 ```
 
-_Note: if you don't want to connect to a mailchimp mailing list, delete the `<EmailSignup>` component. You put can a file at `/mailchimp.ts` (like `export default {};`) to make things work until you take it out._
+_Note: if you don't want to connect to a mailchimp mailing list, delete the `<EmailSignup>` component. You put can a file at `/mailchimp.ts` (like `export default { account: 'a', shard: 's', u: 'u', id: 'i', fakeField: 'f', };`) to make things work until you take it out._
 
 ## Develop
 

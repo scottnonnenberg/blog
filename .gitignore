@@ -32,3 +32,5 @@ mailchimp.ts
 src/**/*.js
 test/**/*.js
 scripts/**/*.js
+
+yarn/

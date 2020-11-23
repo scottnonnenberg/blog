@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +23,9 @@ jobs:
 
       # First check for outstanding changes in the repo
       - run: ./yarn/bin/yarn check-git
+
+      # Install empty placeholders
+      - run: 'echo "export default { account: ''a'', shard: ''s'', u: ''u'', id: ''i'', fakeField: ''f'', };" > mailchimp.ts'
 
       # Build the site in production mode
       - run: ./yarn/bin/yarn build
