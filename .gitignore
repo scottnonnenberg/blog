@@ -26,9 +26,6 @@ results
 
 *.sublime-workspace
 
-mailchimp.js
-mailchimp.ts
-
 src/**/*.js
 test/**/*.js
 scripts/**/*.js
