@@ -7,13 +7,14 @@
         ".cache",
         "node_modules",
         "public",
+        "patches"
       ],
       "file_exclude_patterns": [
         ".DS_Store",
         "*.sublime-workspace",
-        "mailchimp.js",
         "gatsby-node.js",
-        "gatsby-config.js"
+        "gatsby-config.js",
+        "yarn*.tar.gz"
       ]
     }
   ],

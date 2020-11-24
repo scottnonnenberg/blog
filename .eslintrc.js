@@ -37,9 +37,6 @@ module.exports = {
   },
 
   rules: {
-    // The <Link> component requires a string, but our types are nullable.
-    '@typescript-eslint/no-non-null-assertion': 'off',
-
     // 'filenames/match-regex': 'error',
     'filenames/match-exported': 'error',
     'filenames/no-index': 'error',
