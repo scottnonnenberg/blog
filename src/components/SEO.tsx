@@ -91,11 +91,9 @@ function generatePostSpecificTags(
     create('twitter:title', data.title),
     create('twitter:description', description),
 
-    <script
-      key="ld"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(ld, null, '  ') }}
-    />,
+    <script key="ld" type="application/ld+json">
+      {JSON.stringify(ld, null, '  ')}
+    </script>,
   ];
 }
 
