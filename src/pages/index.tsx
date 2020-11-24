@@ -37,8 +37,8 @@ export default function index({ data, location }: PropsType): ReactElement | nul
           <Link to="/popular/">Popular Posts</Link>
           {' - '}
           <Link to="/tags/">Tags</Link>
-          {' - '}
-        </span>
+          {' -'}
+        </span>{' '}
         <span className={styles.nowrap}>
           <a href="/rss.xml">RSS</a>
           {' - '}
