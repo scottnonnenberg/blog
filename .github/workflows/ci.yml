@@ -7,28 +7,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: lsb_release -a
-      - run: uname -a
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - name: Get Linux distro
+        run: lsb_release -a
+
+      - name: Get Linux system info
+        run: uname -a
+
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
         with:
           node-version: '14.15.0'
 
-      # Unpack our cached version of yarn to avoid roundtrip with npm
-      - run: tar -xvf yarn-v1.22.10.tar.gz
-      - run: mv yarn-v1.22.10 yarn
+      - name: Cache node_modules/
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node_modules-${{ hashFiles('yarn.lock') }}
 
-      # install all node modules from offline cache; substantially faster
-      - run: ./yarn/bin/yarn install --offline --pure-lockfile
+      - name: Unpack local yarn
+        run: tar -xvf yarn-v1.22.10.tar.gz
 
-      # First check for outstanding changes in the repo
-      - run: ./yarn/bin/yarn check-git
+      - name: Move yarn to generic ./yarn directory
+        run: mv yarn-v1.22.10 ./yarn
 
-      # Build the site in production mode
-      - run: ./yarn/bin/yarn build
+      - name: Install dependencies from offline cache
+        run: ./yarn/bin/yarn install --offline --pure-lockfile
 
-      # Lint, test, and broken link check
-      - run: ./yarn/bin/yarn ci-with-server
+      - name: Check for outstanding changes in the repo
+        run: ./yarn/bin/yarn check-git
 
-      # Finally, again check for outstanding changes in the repo
-      - run: ./yarn/bin/yarn check-git
+      - name: Build production site
+        run: ./yarn/bin/yarn build
+
+      - name: Lint, test, and broken link check
+        run: ./yarn/bin/yarn ci-with-server
+
+      - name: Final check for outstanding changes in the repo
+        run: ./yarn/bin/yarn check-git
