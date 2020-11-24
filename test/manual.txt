@@ -1,17 +1,13 @@
-scripts to run periodically:
-  npm run check-internal-links - runs very fast
-  npm run check-external-links
+Check for broken links:
+  yarn run check-external-links
+
+  It takes a while and is a bit messy. Here are some known weird responses:
     403 (quora) - often indicates false-positive, server doesn't like a robot doing a HEAD request
     405 (amazon) - often indicates false-positive, server doesn't support HEAD
 
-  npm run check-deep-links - to ensure that hash links within site continue to work
+  Note: Due to the meta tags on each page, you'll get broken links on this run until you've published all pages to production.
 
-html
-  overall page is structured properly
-  CSS loads in develop and production
-  Javascript loads in develop, but only in production of config.noProductionJavascript is not set
-
-meta tags
+Validate meta tags
   Meta tags for articles are well-formed
   Meta tags for front page and other non-articles are well-formed
   Test with structured data validators:
@@ -19,19 +15,7 @@ meta tags
     https://cards-dev.twitter.com/validator
     https://search.google.com/structured-data/testing-tool/u/0/
 
-with SPA enabled (or develop mode)
-  validate proper scrolling to hash links - be sure to check back/forward, scroll positions, etc. Messy.
-
-rss/atom
+Validate rss/atom
   test using feedly.com (other RSS tools?)
   validator: https://validator.w3.org/feed/
   Filed bug for key validation failure on RSS: https://github.com/jpmonette/feed/issues/41
-
-other scripts:
-  npm run clean-post - cleans the one latest post, or N most recent
-  npm run make-post - creates one new file, updates previous' next key
-  npm run generate-json - creates recent.json and all.json files in public
-  npm run generate-rss - creates rss.xml and atom.xml in public
-  npm run generate-tags - creates files at pages/tags/* based on all tags included in post frontmatter
-  npm run update-rankings - gets piwik data, then adds or updates rank frontmatter property
-

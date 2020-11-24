@@ -6,27 +6,21 @@ A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
 
 `gatsbyConfig.ts` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
 
-`mailchimp.ts` is also excluded from the repository, used by the `<EmailSignup>` React component in displaying its form. It uses five keys:
-
-```javascript
-export default {
-  account: 'your account name, the first part of your mailchimp links',
-  shard: 'the second component of your mailchimp links - like "us12"',
-  u: 'the "u" value in your embedded mailchimp form',
-  id: 'the "id" value in your embedded mailchimp form',
-  fakeField: 'the field for robots in the embedded mailchimp form',
-};
-```
-
-_Note: if you don't want to connect to a mailchimp mailing list, delete the `<EmailSignup>` component. You put can a file at `/mailchimp.ts` (like `export default { account: 'a', shard: 's', u: 'u', id: 'i', fakeField: 'f', };`) to make things work until you take it out._
+`mailchimp.ts` is the next thing you'll want to change, since it's pointing at my mailing list. The simplest thing to do here is delete this file, `EmailSignup.*` and re-add something like it when you're ready.
 
 ## Develop
+
+This runs `gatsby`'s hot-reloading development server on `http://localhost:8000`:
 
 ```bash
 yarn develop
 ```
 
-This runs `gatsby`'s hot-reloading development server on http://localhost:8000.
+To cover more permutations of a given component, [`Storybook`](https://storybook.js.org/) is a great tool. Start it up at `https://localhost:6006` like this:
+
+```bash
+yarn storybook
+```
 
 ## Build
 
@@ -40,20 +34,17 @@ _Note: this will generate `rss.xml`, `atom.xml`, `all.json` and `recent.json` to
 
 ## Test
 
-Run `eslint` and the unit tests with `npm test`.
+Run `eslint` and the unit tests with `yarn test`.
 
-You can use `yarn serve` to serve static files from `public/` at http://localhost:8000 for manual and automated tests. A manual test script is available at `tests/manual.txt` - it covers the parts of the user experience without automated tests.
+You can use `yarn serve` to serve static files from `public/` at http://localhost:8000 for manual and automated tests. `tests/manual.txt` has some weird tests you might consider doing if you make some larger changes.
 
 Once you have the static server running you can check for broken links:
 
 ```bash
 yarn check-local-links
-yarn check-external-links
 yarn check-deep-links
 yarn check-links http://localhost:8000/
 ```
-
-_Note: Due to the meta tags on each page, you'll get broken links on a `check-external-links` run until you've published all pages to production._
 
 ## Helper scripts
 
@@ -72,7 +63,9 @@ By default processes the most recent file. If a number is provided, it will proc
 
 ## Contributing
 
-This project uses [`standard-version`](https://github.com/conventional-changelog/standard-version) to release new versions, automatically updating the version number and [changelog](https://github.com/scottnonnenberg/blog/blob/master/CHANGELOG.md) based on commit messages in [standard format](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md). [`ghooks`](https://github.com/gtramontina/ghooks) and [`validate-commit-msg`](https://github.com/kentcdodds/validate-commit-msg) are used to ensure all commit messages match the expected format (see [package.json](https://github.com/scottnonnenberg/blog/blob/master/package.json) for the configuration details).
+`yarn ready` is the key thing to run to make sure things are in good shape. It checks types, runs tests, builds the site, and even checks for broken links.
+
+But before you get there, you'll need to make some commits. And this project has some restrictions about how those commits need to be structured. This project uses [`standard-version`](https://github.com/conventional-changelog/standard-version) to release new versions, automatically updating the version number and [changelog](https://github.com/scottnonnenberg/blog/blob/master/CHANGELOG.md) based on commit messages in [standard format](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md). [`ghooks`](https://github.com/gtramontina/ghooks) and [`validate-commit-msg`](https://github.com/kentcdodds/validate-commit-msg) are used to ensure all commit messages match the expected format (see [package.json](https://github.com/scottnonnenberg/blog/blob/master/package.json) for the configuration details).
 
 It takes some getting used to, but this configuration is absolutely worthwhile. A changelog is way easier to understand than the chaos of a raw commit stream, especially with `standard-version` providing direct links to bugs, commits and [commit ranges](https://github.com/scottnonnenberg/blog/compare/v0.5.0...v0.6.0).
 
