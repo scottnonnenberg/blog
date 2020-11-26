@@ -16,9 +16,7 @@ Those of you who know me know I've had my frustrations with Microsoft. But I spe
 
 When I worked at Hewlett-Packard and Terran Interactive in college, I just wrote code. I wasn't exposed to all that it took to get that code onto users' machines. In my first months as a Program Manager in Microsoft's DevDiv, working on Visual Studio's Debugger, I finally saw everything surrounding that core functionality:
 
-A wide range of testing:
-
-* unit testing, integration testing, internal use ("dogfooding"), performance and stress testing, security "fuzzing," etc.
+* A wide range of testing: unit testing, integration testing, internal use ("dogfooding"), performance and stress testing, security "fuzzing," etc.
 * Techniques to figure out if features addressed customer needs: usability studies, beta cycles and previews, design reviews.
 * Code quality metrics: cyclomatic complexity, code coverage, static analysis.
 * Support features: installers, localization, accessibility, the ability to ship patches, etc.

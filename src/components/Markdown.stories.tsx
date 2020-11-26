@@ -1,15 +1,62 @@
 import * as React from 'react';
 import Markdown from './Markdown';
+import { Helmet } from 'react-helmet';
 
 import { storiesOf } from '@storybook/react';
 
-const stories = storiesOf('src/components/Markdown', module);
+// Styles injected by our markdown handling; does the right thing with anchor links on hover
+const css = `
+.anchor.before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  padding-right: 4px;
+}
+.anchor.after {
+  display: inline-block;
+  padding-left: 4px;
+}
+h1 .anchor svg,
+h2 .anchor svg,
+h3 .anchor svg,
+h4 .anchor svg,
+h5 .anchor svg,
+h6 .anchor svg {
+  visibility: hidden;
+}
+h1:hover .anchor svg,
+h2:hover .anchor svg,
+h3:hover .anchor svg,
+h4:hover .anchor svg,
+h5:hover .anchor svg,
+h6:hover .anchor svg,
+h1 .anchor:focus svg,
+h2 .anchor:focus svg,
+h3 .anchor:focus svg,
+h4 .anchor:focus svg,
+h5 .anchor:focus svg,
+h6 .anchor:focus svg {
+  visibility: visible;
+}
+`;
+
+const stories = storiesOf('src/components/Markdown', module).addDecorator(story => (
+  <div>
+    <Helmet>
+      <style>{css}</style>
+    </Helmet>
+    {story()}
+  </div>
+));
 
 stories.add('Basic HTML', () => <Markdown html={basicHTML} />);
 
 stories.add('With Inline Code (with links too)', () => (
   <Markdown html={withInlineCode} />
 ));
+
+stories.add('With Basic List', () => <Markdown html={withBasicList} />);
 
 stories.add('With Nested List', () => <Markdown html={withNestedList} />);
 
@@ -25,43 +72,6 @@ stories.add('With Table', () => <Markdown html={withTable} />);
 
 // From post 'The technology side of Agile'
 const basicHTML = `
-<!-- Styles injected by our markdown handling; does the right thing with anchor links on hover -->
-<style>
-    .anchor.before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateX(-100%);
-      padding-right: 4px;
-    }
-    .anchor.after {
-      display: inline-block;
-      padding-left: 4px;
-    }
-    h1 .anchor svg,
-    h2 .anchor svg,
-    h3 .anchor svg,
-    h4 .anchor svg,
-    h5 .anchor svg,
-    h6 .anchor svg {
-      visibility: hidden;
-    }
-    h1:hover .anchor svg,
-    h2:hover .anchor svg,
-    h3:hover .anchor svg,
-    h4:hover .anchor svg,
-    h5:hover .anchor svg,
-    h6:hover .anchor svg,
-    h1 .anchor:focus svg,
-    h2 .anchor:focus svg,
-    h3 .anchor:focus svg,
-    h4 .anchor:focus svg,
-    h5 .anchor:focus svg,
-    h6 .anchor:focus svg {
-      visibility: visible;
-    }
-</style>
-<!-- Generated from markdown -->
 <h2 id="a-solid-foundation" style="position:relative;"><a href="#a-solid-foundation" aria-label="a solid foundation permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>A solid foundation</h2>
 <p>Get creative! You’ll be surprised how much these low-level features change behavior. If you can roll out a mostly-complete feature for just a few customers with an easy avenue for feedback, iteration will just happen naturally! It won’t feel like <a href="http://www.thefreedictionary.com/bushwhacking">bushwhacking</a> to iterate - it will be the main trail!</p>
 <p>It’s important to think holistically about <em>Agile</em> - sprints can feel pointless if your releases don’t actually go out the door afterwards. This infrastructure might even make your sprints seem too long!</p>
@@ -76,6 +86,19 @@ const withInlineCode = `
 <li>If you must get all the data up front, be sure that you include some kind of <strong>limit</strong> clause, and check any user-provided bounds input.</li>
 <li>Monitor your request response times. <a href="http://newrelic.com/nodejs">New Relic</a> plugs into Express automatically, or you can use <a href="https://github.com/expressjs/morgan"><code>morgan</code></a> support for response times. The <code>good-console</code> plugin for <code>hapi</code> includes response times by default. Because one too-long synchronous code block will delay everything else, you’ll see very clear patterns in the data.</li>
 </ul>
+`;
+
+// From post '12 things I learned from Microsoft'
+const withBasicList = `
+<h3 id="1-it-takes-a-lot-to-get-software-to-your-customers" style="position:relative;"><a href="#1-it-takes-a-lot-to-get-software-to-your-customers" aria-label="1 it takes a lot to get software to your customers permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. It takes a lot to get software to your customers</h3>
+<p>When I worked at Hewlett-Packard and Terran Interactive in college, I just wrote code. I wasn’t exposed to all that it took to get that code onto users’ machines. In my first months as a Program Manager in Microsoft’s DevDiv, working on Visual Studio’s Debugger, I finally saw everything surrounding that core functionality:</p>
+<ul>
+<li>A wide range of testing: unit testing, integration testing, internal use (“dogfooding”), performance and stress testing, security “fuzzing,” etc.</li>
+<li>Techniques to figure out if features addressed customer needs: usability studies, beta cycles and previews, design reviews.</li>
+<li>Code quality metrics: cyclomatic complexity, code coverage, static analysis.</li>
+<li>Support features: installers, localization, accessibility, the ability to ship patches, etc.</li>
+</ul>
+<h3 id="2-specs-should-have-expiration-dates" style="position:relative;"><a href="#2-specs-should-have-expiration-dates" aria-label="2 specs should have expiration dates permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Specs should have expiration dates</h3>
 `;
 
 // From post 'Getting started with Elixir'
@@ -130,9 +153,12 @@ const withNestedList = `
 
 // From post 'Starting on Signal'
 const withQuote = `
+<p>I’ve decided to put away my consultant hat for a while, because I’ve joined <a href="https://whispersystems.org/">Open Whisper Systems</a> to work on their <a href="https://en.wikipedia.org/wiki/Signal_(software)">Signal</a> <a href="https://whispersystems.org/blog/signal-desktop/">Desktop application</a>! I’m really excited to contribute to such an important mission.</p>
 <blockquote>
 <p><em>“I am regularly impressed with the thought and care put into both the security and the usability of this app. It’s my first choice for an encrypted conversation.”</em> - <a href="https://en.wikipedia.org/wiki/Bruce_Schneier">Bruce Schneier</a></p>
-</blockquote>`;
+</blockquote>
+<h2 id="what-is-signal" style="position:relative;"><a href="#what-is-signal" aria-label="what is signal permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is Signal?</h2>
+`;
 
 // From post 'Breaking the Node.js Event Loop'
 const withJavascriptBlock = `
@@ -195,7 +221,8 @@ setInterval(writeStatus, <span class="hljs-number">250</span>);
   }, LAUNCH_DELAY);
 };
 
-go();</code></pre>`;
+go();</code></pre>
+`;
 
 // From post 'Breaking the Node.js Event Loop'
 const withPlainBlock = `<pre><code class="language-text">writeInterval: -
@@ -213,7 +240,8 @@ writeInterval: 102ms
 writeInterval: 104ms
 writeInterval: 104ms
 writeInterval: 106ms
-</code></pre>`;
+</code></pre>
+`;
 
 // From post 'Breaking the Node.js Event Loop'
 const withIFrame = `
@@ -223,7 +251,8 @@ const withIFrame = `
   src="https://www.youtube.com/embed/bMHB6zb9AXY?start=904"
   frameborder="0"
   allowfullscreen
-></iframe>`;
+></iframe>
+`;
 
 // From post 'ESLint Part 3: Analysis'
 const withTable = `
@@ -291,4 +320,5 @@ const withTable = `
     <td></td>
     <td></td>
   </tr>
-</tbody></table>`;
+</tbody></table>
+`;
