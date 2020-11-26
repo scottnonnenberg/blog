@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const path = require('path');
-
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -28,7 +26,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: [__dirname, path.resolve(__dirname, 'test/setup/fakes')],
+        paths: [__dirname],
       },
     },
     react: {
@@ -37,7 +35,6 @@ module.exports = {
   },
 
   rules: {
-    // 'filenames/match-regex': 'error',
     'filenames/match-exported': 'error',
     'filenames/no-index': 'error',
   },
