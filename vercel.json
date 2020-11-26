@@ -1,29 +1,30 @@
 {
   "redirects": [
     {
-      "source": "/post/61715078272/why-i-left-liffft",
+      "source": "/post/61715078272/why-i-left-liffft/",
       "destination": "/why-i-left-liffft/",
       "permanent": true
     },
     {
-      "source": "/post/63443899879/how-not-to-do-customer-service-credit-card-edition",
+      "source": "/post/63443899879/how-not-to-do-customer-service-credit-card-edition/",
       "destination": "/how-not-to-do-customer-service-credit-card-edition/",
       "permanent": true
     },
     {
-      "source": "/post/62754570686/my-standard-breakfast",
+      "source": "/post/62754570686/my-standard-breakfast/",
       "destination": "/my-standard-breakfast/",
       "permanent": true
     },
     {
-      "source": "/post/45926203417/12-things-i-learned-from-microsoft",
+      "source": "/post/45926203417/12-things-i-learned-from-microsoft/",
       "destination": "/12-things-i-learned-from-microsoft/",
       "permanent": true
     },
     {
-      "source": "/post/44894026746/dont-let-this-happen-to-you-lessons-from-a-failed",
+      "source": "/post/44894026746/dont-let-this-happen-to-you-lessons-from-a-failed/",
       "destination": "/dont-let-this-happen-to-you-lessons-from-a-failed-side-project/",
       "permanent": true
     }
-  ]
+  ],
+  "trailingSlash": true
 }
