@@ -94,7 +94,7 @@ Coding in JavaScript is difficult. But we have tools to make it a bit more reaso
 
 ### Test cleanup
 
-*I was once asked to help a developer figure out where a test failure was coming from during a test run. When we looked at the test output coming from [`mocha`](https://mochajs.org/) we could see that the error was firing during a given error. When we looked closely at the callstack, it became clear that the error was coming from code totally unrelated to the test in question.*
+*I was once asked to help a developer figure out where a test failure was coming from during a test run. When we looked at the test output coming from [`mocha`](https://mochajs.org/) we could see that the error was firing during a specific test. But that was a red herring! When we looked closely at the callstack, it became clear that the error was coming from code totally unrelated to that test.*
 
 *Upon deeper investigation, we discovered that a previous test had claimed to be finished and successful while also having kicked off a set of async operations. The exceptions then thrown from that code were interpreted by `mocha`'s process-level handler as belonging to the actively-running test. Further investigation found mocking which also hadn't been cleaned up, leaking into other tests.*
 
