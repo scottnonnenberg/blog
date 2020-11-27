@@ -40,7 +40,7 @@ Like TravisCI, getting started is as easy as connecting to your GitHub account. 
 
 There are two options you'll likely want to change. Select _Project Settings_ in the top right:
 
-* _[Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_(operating_system)) version_ - by default you'll be building on Ubuntu Linux, version 12.04. That's  a bit old at this point. Select **Build Environment** on the left, then select **Ubuntu 14.04 (Trusty)** at the bottom of the page. _Note: CircleCI only supports Linux and OSX builds._
+* _[Ubuntu](https://en.wikipedia.org/wiki/Ubuntu\_(operating\_system)) version_ - by default you'll be building on Ubuntu Linux, version 12.04. That's  a bit old at this point. Select **Build Environment** on the left, then select **Ubuntu 14.04 (Trusty)** at the bottom of the page. _Note: CircleCI only supports Linux and OSX builds._
 * _Building pull requests_ - by default, for security reasons, CircleCI will not build pull requests sourced from forks of your project. This is to protect any private environment variables you've set up, since a pull request could very easily print all environment variables to the console. But you'll likely want to turn this on, **Advanced Settings** on the left, then find **Permissive building of fork pull requests**. Be sure to think a little bit about who can fork your projects!
 
 Now we're ready to go!

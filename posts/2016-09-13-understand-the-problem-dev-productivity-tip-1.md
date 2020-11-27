@@ -32,7 +32,7 @@ As programmers, our expertise is in the technology itself. But to be truly produ
 
 Have you ever worked with a _[product owner](https://www.mountaingoatsoftware.com/agile/scrum/product-owner)_? Or, at Microsoft, a _Program Manager_? At Amazon, a _Technical Program Manager_? Have you worked with a software specification? Have you implemented code to match mockups?
 
-A specification or mockup is a limited attempt build a mapping between organizational need and detailed software requirements. A _product owner_ is a step better, a living attempt to map between priorities and specific behaviors. Each of these attempts to define the _[problem domain](https://en.wikipedia.org/wiki/Problem_domain)_ for the project.
+A specification or mockup is a limited attempt build a mapping between organizational need and detailed software requirements. A _product owner_ is a step better, a living attempt to map between priorities and specific behaviors. Each of these attempts to define the _[problem domain](https://en.wikipedia.org/wiki/Problem\_domain)_ for the project.
 
 How does this relate to my productivity? Even with a high-quality, detailed, and recent spec, I encounter surprises as I write code, situations the spec didn't cover. The same is true even for a generally-available friendly neighborhood _product owner_ - if our conversations are limited to features, later I'll encounter decision points not previously discussed.
 
