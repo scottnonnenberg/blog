@@ -8,7 +8,7 @@ tags:
   - software
 ---
 
-_[Warning: This is a very long post. You might consider skipping the entire "Learning you for great good!" section, jumping directly to the "Well, what's a Monad?" section]_
+_[Warning: This is a very long post. You might consider skipping the entire [Learning you for great good!](#learning-you-for-great-good) section, jumping directly to the [Well, what's a Monad?](#well-whats-a-monad) section]_
 
 My functional journey started [with Javascript techniques](/a-functional-distinction/), grew as [I briefly explored a few functional languages](/getting-started-with-elixir/#my-road-to-elixir), then bloomed as I [got comfortable with Elixir](/getting-started-with-elixir/). Going further has finally defined some long-nebulous terms and shown me the power of both [algebraic data types](https://en.wikipedia.org/wiki/Algebraic_data_type) and compiler assurance that a given function is truly [pure](https://en.wikipedia.org/wiki/Pure_function).
 
