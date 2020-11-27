@@ -99,6 +99,7 @@ function checkLinks(): void {
 
 const options = {
   excludeExternalLinks: true,
+  excludeLinksToSamePage: false,
 };
 
 const handlers = {
