@@ -1,4 +1,5 @@
 @import 'css/colors.less';
+@import 'css/rhythm.less';
 
 // Override hljs default background color
 .markdown :global(.hljs) {
@@ -32,19 +33,24 @@
 
 // Full code blocks
 .markdown pre {
-  margin-bottom: 1rem;
+  margin-bottom: @rhythm;
   background: @codeBackground;
+
+  // Prevent weird half-height line between this and child <code/> at the bottom
+  line-height: 0;
 }
 
 .markdown pre code {
-  padding: 0.5rem;
+  padding: @rhythm-half;
   border: none;
   display: inline-block;
   white-space: inherit;
   word-wrap: normal;
-  line-height: 1rem;
   background-image: none;
   width: 100%;
+
+  // We fight typography-compat.css with this
+  line-height: 1rem;
 }
 
 .markdown blockquote {
@@ -67,10 +73,12 @@
 .markdown td,
 .markdown th {
   color: @headerText;
-  line-height: 1rem;
-  padding: 0.5rem;
   text-align: left;
   vertical-align: top;
+
+  // We fight typography-compat.css with this
+  line-height: 1rem;
+  padding: 0.5rem;
 }
 .markdown table tbody > tr:nth-child(odd) > th,
 .markdown table tbody > tr:nth-child(odd) > td {
@@ -83,5 +91,5 @@
 }
 .markdown li ul,
 .markdown li ol {
-  margin-bottom: 0.5rem;
+  margin-bottom: @rhythm-quarter;
 }

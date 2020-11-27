@@ -62,7 +62,7 @@ stories.add('With Nested List', () => <Markdown html={withNestedList} />);
 
 stories.add('With Quote', () => <Markdown html={withQuote} />);
 
-stories.add('With Javascript Block', () => <Markdown html={withJavascriptBlock} />);
+stories.add('With Code Block', () => <Markdown html={withCodeBlock} />);
 
 stories.add('With Plain Block', () => <Markdown html={withPlainBlock} />);
 
@@ -160,68 +160,15 @@ const withQuote = `
 <h2 id="what-is-signal" style="position:relative;"><a href="#what-is-signal" aria-label="what is signal permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is Signal?</h2>
 `;
 
-// From post 'Breaking the Node.js Event Loop'
-const withJavascriptBlock = `
-<pre><code class="hljs language-javascript"><span class="hljs-keyword">var</span> <span class="hljs-keyword">async</span> = <span class="hljs-built_in">require</span>(<span class="hljs-string">'async'</span>);
-<span class="hljs-keyword">var</span> toobusy = <span class="hljs-built_in">require</span>(<span class="hljs-string">'toobusy-js'</span>);
+// From post 'What's a Monad? Digging into Haskell'
+const withCodeBlock = `
+<p>The functional concept of mapping an operation over the contents of something is now quite widely known thanks to libraries like <a href="https://lodash.com/">Lodash</a>. Lodash has the ability to map over JavaScript objects and arrays. A <code>Functor</code> is anything that can be mapped over with <code>fmap</code>. <code>&lt;$</code> is the simplest form of this, replacing all values inside the <code>Functor</code> with a single value:</p>
+<pre><code class="hljs language-haskell"><span class="hljs-type">Prelude</span>&gt; fmap (+ <span class="hljs-number">1</span>) (<span class="hljs-type">Just</span> <span class="hljs-number">4</span>)
+<span class="hljs-type">Just</span> <span class="hljs-number">5</span>
+<span class="hljs-type">Prelude</span>&gt; <span class="hljs-number">5</span> &lt;$ (<span class="hljs-type">Just</span> <span class="hljs-number">4</span>)
+<span class="hljs-type">Just</span> <span class="hljs-number">5</span></code></pre>
+<h3 id="2-applicative" style="position:relative;"><a href="#2-applicative" aria-label="2 applicative permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. <a href="https://en.wikibooks.org/wiki/Haskell/Applicative_functors">Applicative</a></h3>
 
-<span class="hljs-keyword">var</span> LAUNCH_DELAY = <span class="hljs-number">10</span>; <span class="hljs-comment">// 100 requests/second</span>
-<span class="hljs-keyword">var</span> SYNC_WORK = <span class="hljs-number">8</span>; <span class="hljs-comment">// 8ms of synchronous work per task</span>
-<span class="hljs-keyword">var</span> TASK_DELAY = <span class="hljs-number">20</span>;
-
-<span class="hljs-keyword">var</span> concurrent = <span class="hljs-number">0</span>;
-<span class="hljs-keyword">var</span> completed = <span class="hljs-number">0</span>;
-
-<span class="hljs-keyword">var</span> doSyncWork = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-  <span class="hljs-keyword">var</span> now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-  <span class="hljs-keyword">while</span> (now.getTime() - start.getTime() &lt; SYNC_WORK) {
-    now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-  }
-};
-
-<span class="hljs-keyword">var</span> doTask = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  concurrent += <span class="hljs-number">1</span>;
-
-  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    concurrent -= <span class="hljs-number">1</span>;
-    completed += <span class="hljs-number">1</span>;
-    doSyncWork();
-  }, TASK_DELAY);
-};
-
-<span class="hljs-keyword">var</span> writeStatus = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'lag:'</span>, toobusy.lag());
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">' concurrent:'</span>, concurrent);
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'  completed:'</span>, completed);
-  completed = <span class="hljs-number">0</span>;
-};
-
-setInterval(writeStatus, <span class="hljs-number">250</span>);
-
-<span class="hljs-keyword">var</span> previous;
-
-<span class="hljs-keyword">var</span> go = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> now = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-    <span class="hljs-keyword">var</span> count = <span class="hljs-number">1</span>;
-
-    <span class="hljs-keyword">if</span> (previous) {
-      <span class="hljs-comment">// replicating lots of events coming in while event loop blocked</span>
-      <span class="hljs-keyword">var</span> delta = now.getTime() - previous.getTime();
-      count = <span class="hljs-built_in">Math</span>.floor(delta / LAUNCH_DELAY);
-    }
-
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; count; i+= <span class="hljs-number">1</span>) {
-      doTask();
-    }
-
-    previous = now;
-    go();
-  }, LAUNCH_DELAY);
-};
-
-go();</code></pre>
 `;
 
 // From post 'Breaking the Node.js Event Loop'
