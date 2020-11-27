@@ -14,11 +14,11 @@ Over the years, in various software development roles, I've learned to stop thin
 
 ## Frustration
 
-*A couple years ago I was working on two layers of an application: the Node.js proxy/translation middle tier, and the backbone-based single-page web app. After some investigation into my highest-priority task, I determined that I didn't have what I needed to implement it without a change in the third layer: the backend. I assembled a message with the intended customer experience and our high priority for the feature, then sent it off to the backend team.*
+A couple years ago I was working on two layers of an application: the Node.js proxy/translation middle tier, and the backbone-based single-page web app. After some investigation into my highest-priority task, I determined that I didn't have what I needed to implement it without a change in the third layer: the backend. I assembled a message with the intended customer experience and our high priority for the feature, then sent it off to the backend team.
 
-*The response was that they could deliver my requested functionality in **three months**. I escalated to leadership, and that ETA shrank to two months. I joked that I should just go make the change myself in their system, then moved to the next task on the backlog.*
+The response was that they could deliver my requested functionality in **three months**. I escalated to leadership, and that ETA shrank to two months. I joked that I should just go make the change myself in their system, then moved to the next task on the backlog.
 
-*Fast forward to a couple weeks later. The same backend team calls me and asks for my signoff on a change coming in the next release of their system. As I pushed toward clarity with many questions, it dawned on me that this new feature was worthless from my perspective. It didn't enable any new features for the customer, and would require changes from me to keep key functionality from breaking.*
+Fast forward to a couple weeks later. The same backend team calls me and asks for my signoff on a change coming in the next release of their system. As I pushed toward clarity with many questions, it dawned on me that this new feature was worthless from my perspective. It didn't enable any new features for the customer, and would require changes from me to keep key functionality from breaking.
 
 ## Who's the asshole?
 
