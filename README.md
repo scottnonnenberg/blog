@@ -27,7 +27,7 @@ yarn storybook
 Generate production-ready files to `public/` folder:
 
 ```bash
-yarn build # or yarn build-staging
+yarn build
 ```
 
 _Note: this will generate `rss.xml`, `atom.xml`, `all.json` and `recent.json` to the root `public/` directory along with the site._
