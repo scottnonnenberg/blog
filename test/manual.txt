@@ -13,7 +13,7 @@ Validate meta tags
   Test with structured data validators:
     https://developers.facebook.com/tools/debug/
     https://cards-dev.twitter.com/validator
-    https://search.google.com/structured-data/testing-tool/u/0/
+    https://search.google.com/test/rich-results
 
 Validate rss/atom
   test using feedly.com (other RSS tools?)
