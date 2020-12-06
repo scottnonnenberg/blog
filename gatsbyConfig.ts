@@ -74,8 +74,22 @@ const gatsbyConfig = {
     },
     'gatsby-plugin-typescript',
     'gatsby-plugin-less',
+    'gatsby-plugin-mini-css-class-name',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-javascript',
+    {
+      resolve: 'gatsby-plugin-no-javascript-utils',
+      options: {
+        noSourcemaps: true,
+        removeGeneratorTag: false,
+        removeReactHelmetAttrs: true,
+        noInlineStyles: true,
+        removeGatsbyAnnouncer: true,
+        // Note: this one causes the build to crash if you turn it on
+        removeFocusWrapper: false,
+        removePreloadLinks: true,
+      },
+    },
   ],
 };
 

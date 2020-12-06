@@ -99,6 +99,10 @@ const gatsbyNode = {
     const tags = sortBy(uniq(flatten(posts.map(post => post?.frontmatter?.tags))));
 
     tags.forEach(tag => {
+      if (!tag) {
+        return;
+      }
+
       const postsWithTag = filter(posts, post =>
         includes(get(post, 'frontmatter.tags'), tag)
       );

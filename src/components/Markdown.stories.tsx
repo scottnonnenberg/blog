@@ -1,54 +1,9 @@
 import * as React from 'react';
 import Markdown from './Markdown';
-import { Helmet } from 'react-helmet';
 
 import { storiesOf } from '@storybook/react';
 
-// Styles injected by our markdown handling; does the right thing with anchor links on hover
-const css = `
-.anchor.before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%);
-  padding-right: 4px;
-}
-.anchor.after {
-  display: inline-block;
-  padding-left: 4px;
-}
-h1 .anchor svg,
-h2 .anchor svg,
-h3 .anchor svg,
-h4 .anchor svg,
-h5 .anchor svg,
-h6 .anchor svg {
-  visibility: hidden;
-}
-h1:hover .anchor svg,
-h2:hover .anchor svg,
-h3:hover .anchor svg,
-h4:hover .anchor svg,
-h5:hover .anchor svg,
-h6:hover .anchor svg,
-h1 .anchor:focus svg,
-h2 .anchor:focus svg,
-h3 .anchor:focus svg,
-h4 .anchor:focus svg,
-h5 .anchor:focus svg,
-h6 .anchor:focus svg {
-  visibility: visible;
-}
-`;
-
-const stories = storiesOf('src/components/Markdown', module).addDecorator(story => (
-  <div>
-    <Helmet>
-      <style>{css}</style>
-    </Helmet>
-    {story()}
-  </div>
-));
+const stories = storiesOf('src/components/Markdown', module);
 
 stories.add('Basic HTML', () => <Markdown html={basicHTML} />);
 

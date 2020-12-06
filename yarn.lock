@@ -9165,6 +9165,18 @@ gatsby-plugin-less@4.0.6:
     "@babel/runtime" "^7.11.2"
     less-loader "^6.2.0"
 
+gatsby-plugin-mini-css-class-name@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mini-css-class-name/-/gatsby-plugin-mini-css-class-name-3.0.0.tgz#361ce94379768ac7f12ff1be8bc8f83e87087d4a"
+  integrity sha512-ADnDz5xPd1fmAQZ2LBVUT4TtRQkrw8OUk36Yr3fFitD30Y2SIl284YBxMXn8Nqwrmeo5a9BeEqsPw211SHWyaQ==
+  dependencies:
+    mini-css-class-name "^0.10.0"
+
+gatsby-plugin-no-javascript-utils@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-javascript-utils/-/gatsby-plugin-no-javascript-utils-0.5.0.tgz#f3daae4883c7b2859070ce9099fede4b38b3791f"
+  integrity sha512-HkdFdLu5qJvJA4b6E7Sb9ZffdhBXT73fS8lKYQypEsteFw+BMADPLuh7c/7EGcKnhcQ+a4lgc6QJTaDfDckNnQ==
+
 gatsby-plugin-no-javascript@2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-no-javascript/-/gatsby-plugin-no-javascript-2.0.5.tgz#b30bd412fabeab1663b6c40a3aaeee878acfddea"
@@ -13042,6 +13054,11 @@ min-indent@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.0.tgz#cfc45c37e9ec0d8f0a0ec3dd4ef7f7c3abe39256"
   integrity sha1-z8RcN+nsDY8KDsPdTvf3w6vjklY=
+
+mini-css-class-name@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/mini-css-class-name/-/mini-css-class-name-0.10.0.tgz#980ef9faec304bba2ef39d8592f100e84180bbda"
+  integrity sha512-HtCFkzfL4eeXB4FrU/reSeRZSxkCaj+8LMABHJvp3EXSQvRHLsNm3T5sdTiNOGZqCUImiekqaxYorT2IVBa6iQ==
 
 mini-css-extract-plugin@^0.11.2:
   version "0.11.3"

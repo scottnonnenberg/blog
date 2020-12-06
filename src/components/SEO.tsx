@@ -105,7 +105,6 @@ function generateMetaTags(
   const url = siteMetadata.domain + location.pathname;
 
   const tags = [
-    create('generator', 'https://www.gatsbyjs.org'),
     <link key="canonical" rel="canonical" href={url} />,
     <link
       key="alternate"

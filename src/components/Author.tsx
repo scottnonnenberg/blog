@@ -37,7 +37,7 @@ export default function Author(): ReactElement | null {
   const { icon, url } = data.site.siteMetadata.author;
 
   return (
-    <div className="author">
+    <div>
       <a href={url}>
         <img src={icon} className={styles.image} alt="It's me!" />
       </a>
