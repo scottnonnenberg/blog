@@ -75,6 +75,12 @@ const gatsbyConfig = {
     'gatsby-plugin-typescript',
     'gatsby-plugin-less',
     'gatsby-plugin-mini-css-class-name',
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en',
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-no-javascript',
     {

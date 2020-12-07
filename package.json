@@ -34,6 +34,7 @@
     "feed": "4.2.1",
     "fs-extra": "9.0.1",
     "gatsby": "2.25.3",
+    "gatsby-plugin-html-attributes": "1.0.5",
     "gatsby-plugin-less": "4.0.6",
     "gatsby-plugin-mini-css-class-name": "3.0.0",
     "gatsby-plugin-no-javascript": "2.0.5",

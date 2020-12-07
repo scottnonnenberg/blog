@@ -2,13 +2,13 @@
 
 .container {
   margin-top: 2em;
-  border: 1px @orange solid;
-  background-color: fade(@orange, 15%);
+  border: 1px @callToAction solid;
+  background-color: fade(@callToAction, 3%);
   margin-bottom: 2em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   text-align: center;
-  color: @orange;
+  color: @callToAction;
 }
 
 .container form {
@@ -29,28 +29,28 @@
 }
 
 .container input {
-  border: 1px @orange solid;
+  border: 1px @callToAction solid;
   background-color: @white;
   height: 1.5em;
   vertical-align: top;
 }
 
 .container ::-webkit-input-placeholder {
-  color: fade(@orange, 40%);
+  color: fade(@callToAction, 40%);
 }
 
 .container :-moz-placeholder {
   /* Firefox 18- */
-  color: fade(@orange, 40%);
+  color: fade(@callToAction, 40%);
 }
 
 .container ::-moz-placeholder {
   /* Firefox 19+ */
-  color: fade(@orange, 40%);
+  color: fade(@callToAction, 40%);
 }
 
 .container :-ms-input-placeholder {
-  color: fade(@orange, 40%);
+  color: fade(@callToAction, 40%);
 }
 
 .container input[type='email'] {
@@ -81,14 +81,13 @@
 }
 
 .disclaimer {
-  color: fade(@orange, 70%);
   margin-top: 0.25em;
   line-height: 1;
   font-size: 0.6em;
 }
 
 .disclaimer a {
-  color: fade(@orange, 70%);
+  color: @callToAction;
   text-shadow: none;
   text-decoration: underline;
   background-color: none;

@@ -32,7 +32,7 @@ export default function index({ data, location }: PropsType): ReactElement | nul
   return (
     <Wrapper location={location}>
       <SEO pageTitle="Blog" location={location} />
-      <h3 className={styles.links}>
+      <div className={styles.links}>
         <span className={styles.nowrap}>
           <Link to="/popular/">Popular Posts</Link>
           {' - '}
@@ -46,7 +46,7 @@ export default function index({ data, location }: PropsType): ReactElement | nul
           {' - '}
           <a href="https://scottnonnenberg.com">About Me</a>
         </span>
-      </h3>
+      </div>
       <EmailSignup callToAction="Get updates straight to your inbox!" />
       <hr />
       {getHTMLPreviews(html)}

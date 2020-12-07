@@ -85,6 +85,7 @@ function generatePostSpecificTags(
     create('og:type', 'article'),
     create('og:title', data.title),
     create('og:description', description),
+    <meta key="description" name="description" content={description} />,
     create('article:published_time', data.date),
 
     create('twitter:card', twitterCardType),
@@ -120,6 +121,11 @@ function generateMetaTags(
   ];
 
   const postSpecific = generatePostSpecificTags(post, siteMetadata, url);
+  if (!postSpecific.length) {
+    tags.push(
+      <meta key="description" name="description" content={siteMetadata.tagLine} />
+    );
+  }
 
   return tags.concat(postSpecific);
 }
@@ -130,9 +136,6 @@ function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
       query {
         site {
           siteMetadata {
-            blogTitle
-            favicon
-            domain
             author {
               name
               email
@@ -142,6 +145,10 @@ function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
               icon
               blurb
             }
+            blogTitle
+            domain
+            favicon
+            tagLine
           }
         }
       }
