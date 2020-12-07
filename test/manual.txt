@@ -19,3 +19,8 @@ Validate rss/atom
   test using feedly.com (other RSS tools?)
   validator: https://validator.w3.org/feed/
   Filed bug for key validation failure on RSS: https://github.com/jpmonette/feed/issues/41
+
+Vercel configuration
+  Caching
+  Trailing slash
+  Redirects

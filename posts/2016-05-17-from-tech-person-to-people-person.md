@@ -75,7 +75,7 @@ You've tuned your mannerisms and words. Now for your overall behavior. You alrea
 
 So simple and so powerful. But how do others want to be treated, exactly? We need to figure that out.
 
-[![Han Solo Star Wars CCG card](../assets/2016/05_may/people_person/captainhansolo.gif)](/star-wars-cards/)
+[![Han Solo Star Wars CCG card](../assets/2016/05_may/people_person/captainhansolo.jpg)](/star-wars-cards/)
 
 ## Mental models for people
 
