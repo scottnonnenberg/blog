@@ -147,7 +147,6 @@ const gatsbyNode = {
                 twitter
                 url
                 image
-                icon
                 blurb
               }
             }

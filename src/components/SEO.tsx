@@ -142,7 +142,6 @@ function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
               twitter
               url
               image
-              icon
               blurb
             }
             blogTitle

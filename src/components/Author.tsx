@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-
-import styles from './Author.module.less';
+import { AuthorImage } from './AuthorImage';
 
 import { SiteMetadataQueryType } from 'src/types/queries';
 
@@ -26,7 +25,6 @@ export default function Author(): ReactElement | null {
           siteMetadata {
             author {
               url
-              icon
             }
           }
         }
@@ -34,12 +32,12 @@ export default function Author(): ReactElement | null {
     `
   );
 
-  const { icon, url } = data.site.siteMetadata.author;
+  const { url } = data.site.siteMetadata.author;
 
   return (
     <div>
       <a href={url}>
-        <img src={icon} className={styles.image} alt="It's me!" />
+        <AuthorImage />
       </a>
       <div>
         {"Hi, I'm "}

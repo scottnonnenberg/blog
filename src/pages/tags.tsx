@@ -53,7 +53,6 @@ export const pageQuery = graphql`
         blogTitle
         author {
           url
-          icon
           blurb
         }
       }

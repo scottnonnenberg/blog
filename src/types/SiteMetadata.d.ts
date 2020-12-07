@@ -13,7 +13,6 @@ export type SiteMetadataType = {
     twitter: string;
     url: string;
     image: string;
-    icon: string;
     blurb: string;
   };
 };

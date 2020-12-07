@@ -18,7 +18,6 @@ const gatsbyConfig = {
       twitter: '@scottnonnenberg',
       url: 'https://scottnonnenberg.com',
       image: 'https://cdn.scottnonnenberg.com/img/profile/me_2012_square_300px_full.png',
-      icon: 'https://cdn.scottnonnenberg.com/img/profile/me_2012_square_300px.jpg',
       blurb:
         "Hi, I'm Scott. I've written both server and client code in many languages for many employers and clients. I've also got a bit of an unusual perspective, since I've spent time in roles outside the pure 'software developer.'",
     },
