@@ -53,15 +53,6 @@
           "value": "application/rss+xml"
         }
       ]
-    },
-    {
-      "source": "/(all|recent).json",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=300"
-        }
-      ]
     }
   ],
   "redirects": [
