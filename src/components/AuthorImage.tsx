@@ -2,6 +2,7 @@ import type { ReactElement } from 'react';
 import React from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image/withIEPolyfill';
 
 import {
   backupImage,
@@ -14,18 +15,13 @@ import {
 type ImgFixedQueryType = {
   file: {
     childImageSharp: {
-      fixed: {
-        base64: string;
-        width: string;
-        height: string;
-        sizes: string;
-        src: string;
-        srcSet: string;
-      };
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      fixed: any;
     };
   };
 };
 
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 export function AuthorImage(): ReactElement {
   const data: ImgFixedQueryType = useStaticQuery(graphql`
     query {
@@ -42,32 +38,8 @@ export function AuthorImage(): ReactElement {
 
   return (
     <div className={parent}>
-      <div
-        className={container}
-        style={{
-          width: `${fixed.width}px`,
-          height: `${fixed.height}px`,
-        }}
-      >
-        <div aria-hidden="true" className={padding} />
-        <img
-          aria-hidden="true"
-          className={backupImage}
-          src={fixed.base64}
-          alt="Placeholder of me for page load"
-        />
-        <picture>
-          <source srcSet={fixed.srcSet} sizes={fixed.sizes} />
-          <img
-            className={image}
-            sizes={fixed.sizes}
-            srcSet={fixed.srcSet}
-            src={fixed.src}
-            alt="It's me!"
-            loading="lazy"
-          />
-        </picture>
-      </div>
+      <Img fixed={fixed} objectFit="cover" objectPosition="50% 50%" alt="It's me!" />
     </div>
   );
 }
+/* eslint-enable @typescript-eslint/no-unsafe-assignment */
