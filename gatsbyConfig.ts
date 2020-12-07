@@ -120,22 +120,22 @@ const gatsbyConfig = {
     'gatsby-plugin-react-helmet',
 
     // Turns off JavaScript for the built site. You still get Javascript in development.
-    'gatsby-plugin-no-javascript',
+    // 'gatsby-plugin-no-javascript',
 
     // Further optimizations for a no-Javascript world, giving us a separate CSS file and
     //   removing further unneeded elements from our built files.
-    {
-      resolve: 'gatsby-plugin-no-javascript-utils',
-      options: {
-        // We're already doing this with gatsby-plugin-no-javascript
-        noScript: true,
-        noSourcemaps: true,
-        removeGeneratorTag: false,
-        removeReactHelmetAttrs: true,
-        noInlineStyles: true,
-        removeGatsbyAnnouncer: true,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-no-javascript-utils',
+    //   options: {
+    //     // We're already doing this with gatsby-plugin-no-javascript
+    //     noScript: true,
+    //     noSourcemaps: true,
+    //     removeGeneratorTag: false,
+    //     removeReactHelmetAttrs: true,
+    //     noInlineStyles: true,
+    //     removeGatsbyAnnouncer: true,
+    //   },
+    // },
   ],
 };
 
