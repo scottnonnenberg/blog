@@ -1,0 +1,9 @@
+// Note: this can't be named like its component, starting with 404, because our
+//   loader infrastructure can't deal with it.
+
+@import 'css/rhythm.scss';
+
+.divider {
+  margin-top: $rhythm;
+  margin-bottom: $rhythm-double;
+}

@@ -6,7 +6,7 @@ import { Link, PageProps } from 'gatsby';
 import Wrapper from 'src/components//Wrapper';
 import SEO from 'src/components/SEO';
 
-import styles from './404.module.scss';
+import styles from './NotFound.module.scss';
 
 export type PropsType = PageProps<null, null>;
 

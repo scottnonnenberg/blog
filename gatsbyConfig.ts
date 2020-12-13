@@ -71,7 +71,7 @@ const gatsbyConfig = {
       },
     },
     'gatsby-plugin-typescript',
-    'gatsby-plugin-sass',
+    'gatsby-plugin-scss-typescript',
     'gatsby-plugin-mini-css-class-name',
     {
       resolve: 'gatsby-plugin-html-attributes',
