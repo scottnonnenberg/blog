@@ -46,11 +46,14 @@ function generatePostSpecificTags(
     throw new Error(`Page had missing frontmatter: ${JSON.stringify(data)}`);
   }
 
-  const postImage = extractImage(post.html);
-  const preFold = getPreFoldContent(post.html);
-  const description = removeHTML(preFold);
+  const rawPath = extractImage(post.html);
+  const postImage =
+    rawPath && !rawPath.includes('http') ? `${siteMetadata.domain}${rawPath}` : rawPath;
   const twitterCardType = postImage ? 'summary_large_image' : 'summary';
   const socialImage = postImage || siteMetadata.author.image;
+
+  const preFold = getPreFoldContent(post.html);
+  const description = removeHTML(preFold);
 
   const ld = {
     '@context': 'http://schema.org',
@@ -125,6 +128,8 @@ function generateMetaTags(
     tags.push(
       <meta key="description" name="description" content={siteMetadata.tagLine} />
     );
+    tags.push(create('og:image', siteMetadata.author.image));
+    tags.push(create('twitter:image', siteMetadata.author.image));
   }
 
   return tags.concat(postSpecific);

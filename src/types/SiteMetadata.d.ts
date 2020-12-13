@@ -2,7 +2,6 @@ export type SiteMetadataType = {
   blogTitle: string;
   tagLine: string;
   domain: string;
-  linkPrefix: string;
 
   favicon: string;
 

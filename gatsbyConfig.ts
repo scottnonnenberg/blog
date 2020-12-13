@@ -7,7 +7,6 @@ const gatsbyConfig = {
     blogTitle: 'Scott Nonnenberg',
     tagLine: 'A blog about software development and geekery of all kinds.',
     domain: 'https://blog.scottnonnenberg.com',
-    linkPrefix: '/',
 
     favicon: '/favicon.ico',
 
