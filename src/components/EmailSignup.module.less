@@ -2,8 +2,8 @@
 
 .container {
   margin-top: 2em;
-  border: 1px @callToAction solid;
-  background-color: fade(@callToAction, 3%);
+  border: 1px @callToActionHighlight solid;
+  background-color: fade(@callToActionHighlight, 10%);
   margin-bottom: 2em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -60,12 +60,14 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
+  color: @callToAction;
 }
 
 .container input[type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
+  color: @callToAction;
 }
 
 .container input[type='submit']:hover {
