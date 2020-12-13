@@ -4,6 +4,7 @@ export type PostType = {
   contents?: string;
   fields?: {
     slug?: string;
+    relativePath?: string;
   };
   frontmatter?: PostAttributesType;
 };

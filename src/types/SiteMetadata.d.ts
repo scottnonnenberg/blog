@@ -5,6 +5,9 @@ export type SiteMetadataType = {
 
   favicon: string;
 
+  currentCommit: string;
+  github: string;
+
   author: {
     shortName: string;
     name: string;

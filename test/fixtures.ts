@@ -3,6 +3,7 @@ import moment from 'moment';
 const previous = {
   fields: {
     slug: 'previous-slug',
+    relativePath: 'posts/previous-slug',
   },
   frontmatter: {
     title: 'Previous Title',
@@ -15,6 +16,7 @@ const previous = {
 const current = {
   fields: {
     slug: 'current-slug',
+    relativePath: 'posts/current-slug',
   },
   frontmatter: {
     title: 'Current Title',
@@ -27,6 +29,7 @@ const current = {
 const next = {
   fields: {
     slug: 'next-slug',
+    relativePath: 'posts/next-slug',
   },
   frontmatter: {
     title: 'Next Title',
@@ -39,6 +42,7 @@ const next = {
 const lastYear = {
   fields: {
     slug: 'last-year-slug',
+    relativePath: 'posts/last-year-slug',
   },
   frontmatter: {
     title: 'Last Year Title',

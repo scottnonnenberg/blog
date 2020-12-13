@@ -9,8 +9,16 @@ const { current, next, previous } = posts;
 
 function createProps(props: Partial<PropsType> = {}) {
   // Core fields
+  const site = {
+    siteMetadata: {
+      currentCommit: 'fake-sha',
+      github: 'https://github.com/fake/repo',
+    },
+  };
+
   const data = {
     markdownRemark: current,
+    site,
   };
   const location = {
     ...window.location,

@@ -1,4 +1,5 @@
 import { join } from 'path';
+import { execSync } from 'child_process';
 
 import { GatsbyConfig } from 'gatsby';
 
@@ -9,6 +10,9 @@ const gatsbyConfig = {
     domain: 'https://blog.scottnonnenberg.com',
 
     favicon: '/favicon.ico',
+
+    github: 'https://github.com/scottnonnenberg/blog',
+    currentCommit: execSync('git rev-parse HEAD').toString().trim(),
 
     author: {
       shortName: 'Scott',

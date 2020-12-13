@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { copy } from 'fs-extra';
-import { join, resolve } from 'path';
+import { join, relative, resolve } from 'path';
 import { compact, filter, flatten, get, includes, sortBy, uniq } from 'lodash';
 
 import getPreFoldContent from 'src/util/getPreFoldContent';
@@ -122,12 +122,27 @@ const gatsbyNode = {
     const { createNodeField } = actions;
 
     if (node.internal.type === 'MarkdownRemark') {
-      const value = node?.frontmatter?.path;
+      const path: string | undefined = node?.frontmatter?.path;
+      if (!path) {
+        throw new Error(`Post was missing path: ${JSON.stringify(node)}`);
+      }
 
       createNodeField({
         name: 'slug',
         node,
-        value,
+        value: path,
+      });
+
+      const absolutePath = node?.fileAbsolutePath;
+      if (typeof absolutePath !== 'string') {
+        throw new Error(`Post was missing fileAbsolutePath: ${JSON.stringify(node)}`);
+      }
+      const relativePath = relative(__dirname, absolutePath);
+
+      createNodeField({
+        name: 'relativePath',
+        node,
+        value: relativePath,
       });
     }
   },
