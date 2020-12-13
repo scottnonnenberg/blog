@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import styles from './Markdown.module.less';
+import styles from './Markdown.module.scss';
 
 type PropsType = {
   html?: string;

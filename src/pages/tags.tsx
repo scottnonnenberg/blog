@@ -8,7 +8,7 @@ import getTagCounts from 'src/util/getTagCounts';
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
 
-import styles from './tags.module.less';
+import styles from './tags.module.scss';
 
 import { PostType } from 'src/types/Post';
 

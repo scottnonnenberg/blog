@@ -12,7 +12,7 @@ import PostLink from 'src/components/PostLink';
 import TextPreview from 'src/components/TextPreview';
 import HTMLPreview from 'src/components/HTMLPreview';
 
-import styles from './index.module.less';
+import styles from './index.module.scss';
 
 import { PostType } from 'src/types/Post';
 import { AllPostsQueryType } from 'src/types/queries.d';

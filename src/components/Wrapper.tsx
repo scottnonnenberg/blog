@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
-import 'css/global.less';
-import styles from './Wrapper.module.less';
+import 'css/global.scss';
+import styles from './Wrapper.module.scss';
 
 import Author from 'src/components/Author';
 

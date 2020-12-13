@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import TextPreview from './TextPreview';
 
-import styles from './ReadMore.module.less';
+import styles from './ReadMore.module.scss';
 
 import { PostType } from 'src/types/Post';
 

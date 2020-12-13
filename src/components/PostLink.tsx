@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import shortDate from 'src/util/shortDate';
 
-import styles from './PostLink.module.less';
+import styles from './PostLink.module.scss';
 
 import { PostType } from 'src/types/Post';
 

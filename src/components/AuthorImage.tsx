@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from './AuthorImage.module.less';
+import styles from './AuthorImage.module.scss';
 
 type ImgFixedQueryType = {
   file: {

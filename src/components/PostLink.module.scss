@@ -1,0 +1,11 @@
+@import 'css/colors.scss';
+@import 'css/rhythm.scss';
+
+.title {
+  margin-bottom: $rhythm-quarter;
+}
+
+.date {
+  color: $lightGraySmall;
+  white-space: nowrap;
+}

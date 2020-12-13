@@ -1,5 +1,5 @@
-css/solarized-light.less
-css/typography-compat.less
+css/solarized-light.scss
+css/typography-compat.scss
 
 posts/*
 

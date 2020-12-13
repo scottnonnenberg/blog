@@ -1,9 +1,9 @@
-@import 'css/rhythm.less';
+@import 'css/rhythm.scss';
 
 .parent {
   float: left;
   display: block;
-  margin-right: @rhythm-quarter;
+  margin-right: $rhythm-quarter;
 }
 
 .container {

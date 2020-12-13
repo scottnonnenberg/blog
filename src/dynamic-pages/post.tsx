@@ -14,7 +14,7 @@ import ReadMore from 'src/components/ReadMore';
 
 import Markdown from 'src/components/Markdown';
 
-import styles from './post.module.less';
+import styles from './post.module.scss';
 
 import { PostType } from 'src/types/Post';
 

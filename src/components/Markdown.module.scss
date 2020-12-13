@@ -1,5 +1,5 @@
-@import 'css/colors.less';
-@import 'css/rhythm.less';
+@import 'css/colors.scss';
+@import 'css/rhythm.scss';
 
 // Override hljs default background color
 .markdown :global(.hljs) {
@@ -17,8 +17,8 @@
   white-space: -moz-pre-wrap;
   white-space: -hp-pre-wrap;
   word-wrap: break-word;
-  background: @codeBackground;
-  border: 1px solid @inlineCodeBorder;
+  background: $codeBackground;
+  border: 1px solid $inlineCodeBorder;
   display: inline;
   font-family: Inconsolata, monospace, serif;
   max-width: 100%;
@@ -33,16 +33,16 @@
 
 // Full code blocks
 .markdown pre {
-  margin-bottom: @rhythm;
-  background: @codeBackground;
-  border: 1px solid @inlineCodeBorder;
+  margin-bottom: $rhythm;
+  background: $codeBackground;
+  border: 1px solid $inlineCodeBorder;
 
   // Prevent weird half-height line between this and child <code/> at the bottom
   line-height: 0;
 }
 
 .markdown pre code {
-  padding: @rhythm-half;
+  padding: $rhythm-half;
   border: none;
   display: inline-block;
   white-space: inherit;
@@ -56,7 +56,7 @@
 
 .markdown blockquote {
   padding-left: 16.875px;
-  border-left: 6px solid @lightGray;
+  border-left: 6px solid $lightGray;
   margin-left: 10.875px;
   margin-right: 0;
   padding-right: 0;
@@ -73,7 +73,7 @@
 // Row formatting for tables
 .markdown td,
 .markdown th {
-  color: @headerText;
+  color: $headerText;
   text-align: left;
   vertical-align: top;
 
@@ -83,7 +83,7 @@
 }
 .markdown table tbody > tr:nth-child(odd) > th,
 .markdown table tbody > tr:nth-child(odd) > td {
-  background-color: @codeBackground;
+  background-color: $codeBackground;
 }
 
 // Reasonably vertical spacing in nested lists
@@ -92,5 +92,5 @@
 }
 .markdown li ul,
 .markdown li ol {
-  margin-bottom: @rhythm-quarter;
+  margin-bottom: $rhythm-quarter;
 }

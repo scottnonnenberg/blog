@@ -42,12 +42,12 @@ module.exports = {
     ];
 
     // ---- Styles!
-    //   We have a combination of module and global less-based styles in the project.
+    //   We have a combination of module and global scss-based styles in the project.
 
-    // First we find all less module files, and force module mode. Automatic module
+    // First we find all scss module files, and force module mode. Automatic module
     //   detection didn't seem to be working.
     config.module.rules.push({
-      test: /\.module\.less$/,
+      test: /\.module\.scss$/,
       use: [
         require.resolve('style-loader'),
         {
@@ -56,19 +56,19 @@ module.exports = {
             modules: true,
           },
         },
-        require.resolve('less-loader'),
+        require.resolve('sass-loader'),
       ],
     });
 
-    // Then we pull in all non-module .less files, and add them globally
+    // Then we pull in all non-module .scss files, and add them globally
     //   see require() in .storybook/preview.js, since we don't require CSS in all components
     config.module.rules.push({
-      test: /\.less$/,
-      exclude: /\.module\.less$/,
+      test: /\.scss$/,
+      exclude: /\.module\.scss$/,
       use: [
         require.resolve('style-loader'),
         require.resolve('css-loader'),
-        require.resolve('less-loader'),
+        require.resolve('sass-loader'),
       ],
     });
 

@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import mailchimp from 'mailchimp';
 
-import styles from './EmailSignup.module.less';
+import styles from './EmailSignup.module.scss';
 
 type PropsType = {
   callToAction: string;

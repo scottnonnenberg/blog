@@ -1,12 +1,12 @@
-@import 'css/colors.less';
-@import 'css/rhythm.less';
+@import 'css/colors.scss';
+@import 'css/rhythm.scss';
 
 .header {
   margin-bottom: 0;
 }
 
 .date {
-  color: @lightGraySmall;
+  color: $lightGraySmall;
   margin-top: 0;
   margin-bottom: 1em;
   font-weight: normal;
@@ -20,12 +20,12 @@
 }
 
 .divider {
-  margin-top: @rhythm;
-  margin-bottom: @rhythm-double;
+  margin-top: $rhythm;
+  margin-bottom: $rhythm-double;
 }
 
 .metadata {
   display: block;
-  margin-top: @rhythm;
-  margin-bottom: @rhythm;
+  margin-top: $rhythm;
+  margin-bottom: $rhythm;
 }

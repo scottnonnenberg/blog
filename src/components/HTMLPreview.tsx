@@ -7,7 +7,7 @@ import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
 
 import Markdown from './Markdown';
 
-import styles from './HTMLPreview.module.less';
+import styles from './HTMLPreview.module.scss';
 
 import { PostType } from 'src/types/Post';
 
