@@ -1,8 +1,14 @@
 @import 'css/rhythm.less';
+@import 'css/colors.less';
 
 .title {
   margin: 0;
   font-size: @rhythm-half;
   line-height: @rhythm;
   letter-spacing: -0.5px;
+
+  // Compatibility with previous h5 tag
+  color: @headerText;
+  font-family: 'Avenir Next', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }

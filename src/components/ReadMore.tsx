@@ -33,7 +33,7 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
 
   return (
     <div>
-      <h5 className={styles.title}>{`${label}:`}</h5>
+      <div className={styles.title}>{`${label}:`}</div>
       <TextPreview post={post} />
     </div>
   );
