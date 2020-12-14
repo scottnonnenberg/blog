@@ -1,10 +1,10 @@
 import { expect } from 'chai';
 
-import getTagCounts from 'src/util/getTagCounts';
+import { getTagCounts } from 'src/util/getTagCounts';
 
 describe('unit/utils/getTagCounts', () => {
   it('returns an empty object for no input', () => {
-    expect(getTagCounts()).to.deep.equal({});
+    expect(getTagCounts([])).to.deep.equal([]);
   });
 
   it('returns counts for one post', () => {
@@ -15,11 +15,11 @@ describe('unit/utils/getTagCounts', () => {
         },
       },
     ];
-    const expected = {
-      one: 1,
-      two: 1,
-      three: 1,
-    };
+    const expected = [
+      { tag: 'one', count: 1 },
+      { tag: 'two', count: 1 },
+      { tag: 'three', count: 1 },
+    ];
 
     expect(getTagCounts(posts)).to.deep.equal(expected);
   });
@@ -37,11 +37,11 @@ describe('unit/utils/getTagCounts', () => {
         },
       },
     ];
-    const expected = {
-      one: 1,
-      two: 2,
-      three: 2,
-    };
+    const expected = [
+      { tag: 'two', count: 2 },
+      { tag: 'three', count: 2 },
+      { tag: 'one', count: 1 },
+    ];
 
     expect(getTagCounts(posts)).to.deep.equal(expected);
   });

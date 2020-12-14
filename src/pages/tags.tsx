@@ -1,9 +1,7 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
-import map from 'lodash/map';
-import toPairs from 'lodash/toPairs';
 
-import getTagCounts from 'src/util/getTagCounts';
+import { getTagCounts } from 'src/util/getTagCounts';
 
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
@@ -27,7 +25,7 @@ export default function tags({ data, location }: PropsType): ReactElement | null
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
 
   const tags = getTagCounts(posts);
-  const tagLinks = map(toPairs(tags), ([tag, count]) => {
+  const tagLinks = tags.map(({ tag, count }) => {
     const countString = ` ${count} ${count === 1 ? 'entry' : 'entries'}`;
     return (
       <li key={tag} className={styles.tag}>

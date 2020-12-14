@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 import moment from 'moment';
-import map from 'lodash/map';
 
 import intersperse from 'src/util/intersperse';
 import shortDate from 'src/util/shortDate';
@@ -97,7 +96,7 @@ function renderTagLinks(tags?: Array<string>): ReactElement | null {
     return null;
   }
 
-  const tagLinks = map(tags, tag => (
+  const tagLinks = tags.map(tag => (
     <Link key={tag} to={`/tags/${tag}/`}>
       {tag}
     </Link>

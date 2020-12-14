@@ -1,14 +1,14 @@
 import { writeFileSync } from 'fs';
-import { copy } from 'fs-extra';
 import { join, relative, resolve } from 'path';
-import { compact, filter, flatten, get, includes, sortBy, uniq } from 'lodash';
+
+import { copy } from 'fs-extra';
+import { Feed } from 'feed';
+import moment from 'moment';
 
 import getPreFoldContent from 'src/util/getPreFoldContent';
 import fixLocalLinks from 'src/util/fixLocalLinks';
 import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
-
-import { Feed } from 'feed';
-import moment from 'moment';
+import { getTagCounts } from 'src/util/getTagCounts';
 
 import { BuildArgs, CreateNodeArgs, CreatePagesArgs, Node } from 'gatsby';
 
@@ -96,16 +96,14 @@ const gatsbyNode = {
     });
 
     // Create tag pages
-    const tags = sortBy(uniq(flatten(posts.map(post => post?.frontmatter?.tags))));
+    const tagCounts = getTagCounts(posts);
 
-    tags.forEach(tag => {
+    tagCounts.forEach(({ tag }) => {
       if (!tag) {
         return;
       }
 
-      const postsWithTag = filter(posts, post =>
-        includes(get(post, 'frontmatter.tags'), tag)
-      );
+      const postsWithTag = posts.filter(post => post?.frontmatter?.tags?.includes(tag));
 
       createPage({
         path: `/tags/${tag}`,
@@ -255,30 +253,28 @@ const gatsbyNode = {
     writeFileSync(atomPath, feed.atom1());
 
     // Write JSON
-    const json = compact(
-      posts.map(post => {
-        if (!post.frontmatter) {
-          console.error('Malformed post', post);
-          throw new Error('Post was missing frontmatter!');
-        }
+    const json = posts.map(post => {
+      if (!post.frontmatter) {
+        console.error('Malformed post', post);
+        throw new Error('Post was missing frontmatter!');
+      }
 
-        const preFoldContent = fixLocalLinks(
-          getPreFoldContent(post.html),
-          siteMetadata.domain
-        );
-        const url = siteMetadata.domain + post.frontmatter.path;
-        const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
-        const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
+      const preFoldContent = fixLocalLinks(
+        getPreFoldContent(post.html),
+        siteMetadata.domain
+      );
+      const url = siteMetadata.domain + post.frontmatter.path;
+      const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
+      const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
 
-        return {
-          title: post.frontmatter.title,
-          date: post.frontmatter.date,
-          preview: withCallToAction,
-          url,
-          tags: post.frontmatter.tags,
-        };
-      })
-    );
+      return {
+        title: post.frontmatter.title,
+        date: post.frontmatter.date,
+        preview: withCallToAction,
+        url,
+        tags: post.frontmatter.tags,
+      };
+    });
 
     const allPath = join(__dirname, 'public/all.json');
     const recentPath = join(__dirname, 'public/recent.json');

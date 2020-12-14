@@ -1,21 +1,20 @@
-import map from 'lodash/fp/map';
-import sortBy from 'lodash/fp/sortBy';
-import toPairs from 'lodash/fp/toPairs';
-import flatten from 'lodash/fp/flatten';
-import fromPairs from 'lodash/fp/fromPairs';
-import reverse from 'lodash/fp/reverse';
-import groupBy from 'lodash/fp/groupBy';
-import flow from 'lodash/fp/flow';
-
 import { PostType } from 'src/types/Post';
 
-export default flow(
-  map((post: PostType) => map(tag => [tag, 1])(post?.frontmatter?.tags)),
-  flatten,
-  groupBy(0),
-  toPairs,
-  map(([name, list]) => [name, list.length]),
-  sortBy(1),
-  reverse,
-  fromPairs
-);
+export function getTagCounts(
+  posts: Array<PostType>
+): Array<{ tag: string; count: number }> {
+  const countByTag: Record<string, number> = posts.reduce((counts, post) => {
+    const tags = post?.frontmatter?.tags || [];
+    tags.forEach(tag => {
+      counts[tag] = (counts[tag] || 0) + 1;
+    });
+    return counts;
+  }, Object.create(null));
+
+  return (
+    Object.entries(countByTag)
+      .map(([tag, count]) => ({ tag, count }))
+      // We want this in descending order...
+      .sort((left, right) => right.count - left.count)
+  );
+}

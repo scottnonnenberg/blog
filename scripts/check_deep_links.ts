@@ -4,7 +4,6 @@ import URL from 'url';
 
 import chalk from 'chalk';
 import notate from '@scottnonnenberg/notate';
-import _ from 'lodash';
 import async from 'async';
 import superagent from 'superagent';
 import { SiteChecker, SiteCheckerResultType } from 'broken-link-checker';
@@ -76,13 +75,10 @@ function checkLink(
 function checkLinks(): void {
   // try/catch is necessary because broken-link-checker swallows errors! :0(
   try {
-    const deepLinks: Array<LinkType> = _.chain(links)
-      .keys()
+    const deepLinks: Array<LinkType> = Object.keys(links)
       .filter(url => url.indexOf('#') !== -1)
-      .sortBy()
-      .map(url => URL.parse(url))
-      .compact()
-      .value();
+      .sort()
+      .map(url => URL.parse(url));
 
     async.mapLimit(deepLinks, MAX_PARALLEL, checkLink, err => {
       if (err) {

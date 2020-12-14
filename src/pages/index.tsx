@@ -2,7 +2,6 @@
 
 import React, { ReactElement } from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
-import map from 'lodash/map';
 
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
@@ -57,7 +56,7 @@ export default function index({ data, location }: PropsType): ReactElement | nul
 }
 
 export function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
-  return map(posts, post => {
+  return posts.map(post => {
     const slug = post?.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);
@@ -68,7 +67,7 @@ export function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | nu
 }
 
 export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
-  return map(posts, post => {
+  return posts.map(post => {
     const slug = post?.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);
@@ -79,7 +78,7 @@ export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | nu
 }
 
 export function getPostLinks(posts: Array<PostType>): Array<ReactElement | null> {
-  return map(posts, post => {
+  return posts.map(post => {
     const slug = post?.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);

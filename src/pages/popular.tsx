@@ -1,10 +1,6 @@
 import React, { ReactElement } from 'react';
 import { graphql, PageProps } from 'gatsby';
 
-import flow from 'lodash/fp/flow';
-import sortBy from 'lodash/fp/sortBy';
-import filter from 'lodash/fp/filter';
-
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
 
@@ -40,10 +36,14 @@ export default function popular({ location, data }: PropsType): ReactElement | n
   );
 }
 
-const sortPosts = flow(
-  filter((post: PostType) => Boolean(post?.frontmatter?.rank)),
-  sortBy((post: PostType) => post?.frontmatter?.rank)
-);
+const sortPosts = function (posts: Array<PostType>) {
+  return posts
+    .filter((post: PostType) => Boolean(post?.frontmatter?.rank))
+    .sort(
+      (left: PostType, right: PostType) =>
+        (left?.frontmatter?.rank || 0) - (right?.frontmatter?.rank || 0)
+    );
+};
 
 export const pageQuery = graphql`
   query {

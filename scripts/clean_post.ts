@@ -2,8 +2,6 @@ import './util/setupModulePath';
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
 
-import _ from 'lodash';
-
 import writeIfDifferent from 'scripts/util/writeIfDifferent';
 
 import globalConfig from 'gatsbyConfig';
@@ -21,11 +19,11 @@ type BasicPostType = {
 function loadPosts(limit?: number): Array<BasicPostType> {
   const postFiles = readdirSync(postsPath);
 
-  return _.chain(postFiles)
+  return postFiles
     .filter(file => mdFileFilter.test(file))
-    .sortBy()
+    .sort()
     .reverse()
-    .take(limit)
+    .slice(0, limit)
     .map(file => {
       const path = join(postsPath, file);
       const contents = readFileSync(path).toString();
@@ -34,8 +32,7 @@ function loadPosts(limit?: number): Array<BasicPostType> {
         path,
         contents,
       };
-    })
-    .value();
+    });
 }
 
 const limit = parseInt(process.argv[2], 10) || 1;
@@ -58,7 +55,7 @@ function removeDupeLinks(contents?: string): string | undefined {
   return contents.replace(dupeLink, (full: string, substring: string) => substring);
 }
 
-_.forEach(posts, post => {
+posts.forEach(post => {
   console.log('checking', post.path);
 
   const withoutSmartQuotes = removeSmartQuotes(post.contents);
