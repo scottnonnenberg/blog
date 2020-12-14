@@ -119,6 +119,9 @@ const gatsbyConfig = {
     // Allows us to set top-level page attributes during the server-side rendering stage.
     'gatsby-plugin-react-helmet',
 
+    // Detailed analysis of what ends up in our client-side Javascript files.
+    'gatsby-plugin-webpack-bundle-analyser-v2',
+
     // Turns off JavaScript for the built site. You still get Javascript in development.
     // 'gatsby-plugin-no-javascript',
 

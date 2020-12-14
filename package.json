@@ -83,6 +83,7 @@
     "gatsby-plugin-sass": "4.13.0",
     "gatsby-plugin-sharp": "3.13.0",
     "gatsby-plugin-typescript": "3.13.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "1.1.25",
     "gatsby-remark-autolink-headers": "4.10.0",
     "gatsby-remark-copy-linked-files": "4.10.0",
     "gatsby-remark-highlight.js": "0.0.1",
