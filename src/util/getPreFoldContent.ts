@@ -11,7 +11,7 @@ function getAboveFold(content: string): string {
   return content;
 }
 
-export default function getPreFoldContent(content?: string): string | undefined {
+export function getPreFoldContent(content?: string): string | undefined {
   if (!content) {
     return content;
   }

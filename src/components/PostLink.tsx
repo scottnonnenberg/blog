@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
-import shortDate from 'src/util/shortDate';
+import { shortDate } from 'src/util/shortDate';
 
 import styles from './PostLink.module.scss';
 

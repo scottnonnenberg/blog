@@ -1,7 +1,4 @@
-export default function fixLocalLinks(
-  html?: string,
-  domain?: string
-): string | undefined {
+export function fixLocalLinks(html?: string, domain?: string): string | undefined {
   if (!html) {
     return html;
   }

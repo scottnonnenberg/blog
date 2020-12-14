@@ -3,11 +3,10 @@ import { join, relative, resolve } from 'path';
 
 import { copy } from 'fs-extra';
 import { Feed } from 'feed';
-import moment from 'moment';
 
-import getPreFoldContent from 'src/util/getPreFoldContent';
-import fixLocalLinks from 'src/util/fixLocalLinks';
-import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
+import { getPreFoldContent } from 'src/util/getPreFoldContent';
+import { fixLocalLinks } from 'src/util/fixLocalLinks';
+import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
 import { getTagCounts } from 'src/util/getTagCounts';
 
 import { BuildArgs, CreateNodeArgs, CreatePagesArgs, Node } from 'gatsby';
@@ -198,7 +197,7 @@ const gatsbyNode = {
     // Write RSS and Atom
     const posts = result.data.allMarkdownRemark.edges.map(item => item.node);
     const { siteMetadata } = result.data.site;
-    const now = moment(new Date());
+    const now = new Date();
 
     const author = {
       name: siteMetadata.author.name,
@@ -211,7 +210,7 @@ const gatsbyNode = {
       id: `${siteMetadata.domain}/`,
       description: siteMetadata.tagLine,
       link: siteMetadata.domain,
-      copyright: `All rights reserved ${now.format('YYYY')}, Scott Nonnenberg`,
+      copyright: `All rights reserved ${now.getFullYear()}, Scott Nonnenberg`,
       feed: `${siteMetadata.domain}/atom.xml`,
       author,
     });

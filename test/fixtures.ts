@@ -1,4 +1,11 @@
-import moment from 'moment';
+const HOUR = 60 * 60 * 1000;
+const DAY = 24 * HOUR;
+const YEAR = 365 * DAY; // not always true, but good enough for these tests
+
+const now = new Date();
+const yesterday = new Date(Date.now() - HOUR);
+const tomorrow = new Date(Date.now() + HOUR);
+const nextYear = new Date(Date.now() + YEAR);
 
 const previous = {
   fields: {
@@ -7,7 +14,7 @@ const previous = {
   },
   frontmatter: {
     title: 'Previous Title',
-    date: moment().subtract(1, 'day').toJSON(),
+    date: yesterday.toJSON(),
     rank: 2,
   },
   html:
@@ -20,7 +27,7 @@ const current = {
   },
   frontmatter: {
     title: 'Current Title',
-    date: moment().toJSON(),
+    date: now.toJSON(),
     tags: ['tag1', 'tag2'],
   },
   html:
@@ -33,7 +40,7 @@ const next = {
   },
   frontmatter: {
     title: 'Next Title',
-    date: moment().add(1, 'day').toJSON(),
+    date: tomorrow.toJSON(),
   },
   html:
     "<p>Next <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
@@ -46,7 +53,7 @@ const lastYear = {
   },
   frontmatter: {
     title: 'Last Year Title',
-    date: moment().subtract(1, 'year').toJSON(),
+    date: nextYear.toJSON(),
     rank: 1,
   },
   html:

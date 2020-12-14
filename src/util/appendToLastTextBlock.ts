@@ -2,7 +2,7 @@ const startOfBlock = '<p>';
 const endOfBlockTest = /<\/p>/m;
 const endOfBlock = '</p>';
 
-export default function appendToLastTextBlock(
+export function appendToLastTextBlock(
   content?: string,
   toInsert?: string
 ): string | undefined {

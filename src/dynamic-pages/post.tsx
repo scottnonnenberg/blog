@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
-import moment from 'moment';
 
-import intersperse from 'src/util/intersperse';
-import shortDate from 'src/util/shortDate';
+import { intersperse } from 'src/util/intersperse';
+import { shortDate } from 'src/util/shortDate';
+import { longDate } from 'src/util/longDate';
 
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
@@ -77,7 +77,7 @@ export default function post({
       <div className={styles.metadata}>
         <div>
           <em>Posted:</em>
-          {` ${moment(postDate).format('MMMM D, YYYY')}`}
+          {` ${longDate(postDate)}`}
         </div>
         {renderTagLinks(post?.frontmatter?.tags)}
         <div>

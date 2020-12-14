@@ -3,8 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
-import getPreFoldContent from 'src/util/getPreFoldContent';
-import extractImage from 'src/util/extractImage';
+import { getPreFoldContent } from 'src/util/getPreFoldContent';
+import { extractImage } from 'src/util/extractImage';
 
 import { LocationType } from 'src/types/Location';
 import { PostType } from 'src/types/Post';

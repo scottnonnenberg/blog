@@ -1,9 +1,9 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
-import shortDate from 'src/util/shortDate';
-import getPreFoldContent from 'src/util/getPreFoldContent';
-import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
+import { shortDate } from 'src/util/shortDate';
+import { getPreFoldContent } from 'src/util/getPreFoldContent';
+import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
 
 import Markdown from './Markdown';
 

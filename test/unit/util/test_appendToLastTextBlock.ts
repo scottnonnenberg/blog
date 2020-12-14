@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { stripIndent } from 'common-tags';
 
-import appendToLastTextBlock from 'src/util/appendToLastTextBlock';
+import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
 
 describe('unit/utils/appendToLastTextBlock', () => {
   it('returns undefined for undefined input', () => {

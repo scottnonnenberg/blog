@@ -4,9 +4,9 @@ import { prune } from 'underscore.string';
 
 import styles from './TextPreview.module.scss';
 
-import shortDate from 'src/util/shortDate';
-import removeTags from 'src/util/removeTags';
-import getPreFoldContent from 'src/util/getPreFoldContent';
+import { shortDate } from 'src/util/shortDate';
+import { removeTags } from 'src/util/removeTags';
+import { getPreFoldContent } from 'src/util/getPreFoldContent';
 
 import { PostType } from 'src/types/Post';
 

@@ -1,4 +1,4 @@
-export default function extractImage(body?: string): string | undefined {
+export function extractImage(body?: string): string | undefined {
   if (!body) {
     return body;
   }

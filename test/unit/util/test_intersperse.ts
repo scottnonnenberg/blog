@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import intersperse from 'src/util/intersperse';
+import { intersperse } from 'src/util/intersperse';
 
 describe('unit/utils/intersperse', () => {
   it('returns empty array for null', () => {
