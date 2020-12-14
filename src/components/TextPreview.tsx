@@ -1,12 +1,12 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
-import { prune } from 'underscore.string';
 
 import styles from './TextPreview.module.scss';
 
 import { shortDate } from 'src/util/shortDate';
 import { removeTags } from 'src/util/removeTags';
 import { getPreFoldContent } from 'src/util/getPreFoldContent';
+import { prune } from 'src/util/prune';
 
 import { PostType } from 'src/types/Post';
 

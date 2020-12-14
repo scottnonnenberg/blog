@@ -58,8 +58,7 @@
     "patch-package": "6.2.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-helmet": "6.1.0",
-    "underscore.string": "3.3.5"
+    "react-helmet": "6.1.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "7.12.1",
