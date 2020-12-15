@@ -4,13 +4,8 @@ import { Link } from 'gatsby';
 import styles from './TextPreview.module.scss';
 
 import { shortDate } from 'src/util/shortDate';
-import { removeTags } from 'src/util/removeTags';
-import { getPreFoldContent } from 'src/util/getPreFoldContent';
-import { prune } from 'src/util/prune';
 
 import { PostType } from 'src/types/Post';
-
-const MAX_TEXT_PREVIEW = 200;
 
 type PropsType = {
   post: PostType;
@@ -18,18 +13,15 @@ type PropsType = {
 
 export default function TextPreview(props: PropsType): ReactElement | null {
   const post = props.post;
-  const html = post.html;
-  const preFold = getPreFoldContent(html);
-  const noTags = removeTags(preFold);
-
-  if (!noTags) {
-    throw new Error('No text available for text preview!');
-  }
-  const body = prune(noTags, MAX_TEXT_PREVIEW);
 
   const slug = post?.fields?.slug;
   if (!slug) {
     throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
+  }
+
+  const textPreview = post?.textPreview;
+  if (!textPreview) {
+    throw new Error(`Page had missing textPreview: ${JSON.stringify(post)}`);
   }
 
   const title = post?.frontmatter?.title;
@@ -49,7 +41,7 @@ export default function TextPreview(props: PropsType): ReactElement | null {
         <span className={styles.date}>{shortDate(postDate)}</span>
       </h3>
       <p>
-        {`${body} `}
+        {`${textPreview} `}
         <Link to={slug}>Read more&nbsp;»</Link>
       </p>
     </div>

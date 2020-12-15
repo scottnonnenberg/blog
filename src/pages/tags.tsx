@@ -58,14 +58,13 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          html
           fields {
             slug
           }
           frontmatter {
-            date
             title
             tags
+            date
           }
         }
       }

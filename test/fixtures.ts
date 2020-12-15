@@ -17,8 +17,10 @@ const previous = {
     date: yesterday.toJSON(),
     rank: 2,
   },
+  htmlPreview: '<p>Previous post with <b>real</b> HTML! Above the fold</p>',
+  textPreview: 'Previous post with real HTML! Above the fold',
   html:
-    "<p>Previous <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+    "<p>Previous post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 const current = {
   fields: {
@@ -30,6 +32,8 @@ const current = {
     date: now.toJSON(),
     tags: ['tag1', 'tag2'],
   },
+  htmlPreview: '<p>Current post with <b>real</b> HTML! Above the fold</p>',
+  textPreview: 'Current post with real HTML! Above the fold',
   html:
     "<p>Current post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
@@ -42,8 +46,10 @@ const next = {
     title: 'Next Title',
     date: tomorrow.toJSON(),
   },
+  htmlPreview: '<p>Next post with <b>real</b> HTML! Above the fold</p>',
+  textPreview: 'Next post with real HTML! Above the fold',
   html:
-    "<p>Next <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+    "<p>Next post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 
 const lastYear = {
@@ -56,8 +62,10 @@ const lastYear = {
     date: nextYear.toJSON(),
     rank: 1,
   },
+  htmlPreview: '<p>Last year post with <b>real</b> HTML! Above the fold</p>',
+  textPreview: 'Last year post with real HTML! Above the fold',
   html:
-    "<p>This is some <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+    "<p>Last year post with real <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 
 export const posts = {

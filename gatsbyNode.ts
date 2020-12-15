@@ -8,8 +8,18 @@ import { getPreFoldContent } from 'src/util/getPreFoldContent';
 import { fixLocalLinks } from 'src/util/fixLocalLinks';
 import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
 import { getTagCounts } from 'src/util/getTagCounts';
+import { removeTags } from 'src/util/removeTags';
+import { prune } from 'src/util/prune';
 
-import { BuildArgs, CreateNodeArgs, CreatePagesArgs, Node } from 'gatsby';
+import { PostType } from 'src/types/Post';
+
+import {
+  BuildArgs,
+  CreateNodeArgs,
+  CreatePagesArgs,
+  CreateResolversArgs,
+  Node,
+} from 'gatsby';
 
 import { AllDataQueryType, AllPostsQueryType } from 'src/types/queries';
 
@@ -34,6 +44,23 @@ type NodeType = Node & {
   };
 };
 
+function getHTMLPreview(html: string, slug: string): string | undefined {
+  const preFold = getPreFoldContent(html);
+  const textLink = ` <a href="${slug}">Read more&nbsp;»</a>`;
+  return appendToLastTextBlock(preFold, textLink);
+}
+
+const MAX_TEXT_PREVIEW = 200;
+function getTextPreview(html: string) {
+  const preFold = getPreFoldContent(html);
+  const noTags = removeTags(preFold);
+  if (!noTags) {
+    throw new Error(`No tags returned for html: ${preFold}`);
+  }
+
+  return prune(noTags, MAX_TEXT_PREVIEW);
+}
+
 const gatsbyNode = {
   createPages: async ({ graphql, actions }: CreatePagesArgs): Promise<void> => {
     const { createPage } = actions;
@@ -46,7 +73,8 @@ const gatsbyNode = {
           allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
               node {
-                html
+                htmlPreview
+                textPreview
                 fields {
                   slug
                 }
@@ -119,15 +147,14 @@ const gatsbyNode = {
     const { createNodeField } = actions;
 
     if (node.internal.type === 'MarkdownRemark') {
-      const path: string | undefined = node?.frontmatter?.path;
-      if (!path) {
+      const slug: string | undefined = node?.frontmatter?.path;
+      if (!slug) {
         throw new Error(`Post was missing path: ${JSON.stringify(node)}`);
       }
-
       createNodeField({
         name: 'slug',
         node,
-        value: path,
+        value: slug,
       });
 
       const absolutePath = node?.fileAbsolutePath;
@@ -135,13 +162,45 @@ const gatsbyNode = {
         throw new Error(`Post was missing fileAbsolutePath: ${JSON.stringify(node)}`);
       }
       const relativePath = relative(__dirname, absolutePath);
-
       createNodeField({
         name: 'relativePath',
         node,
         value: relativePath,
       });
     }
+  },
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  createResolvers: ({ createResolvers }: CreateResolversArgs): any => {
+    const resolvers = {
+      MarkdownRemark: {
+        htmlPreview: {
+          type: 'String',
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          resolve: async (source: PostType, args: any, context: any, info: any) => {
+            const htmlField = info.schema.getType('MarkdownRemark').getFields()['html'];
+            const html = await htmlField.resolve(source, args, context, info);
+
+            const slug = source?.frontmatter?.path;
+            if (!slug) {
+              throw new Error(`source was missing path: ${JSON.stringify(source)}`);
+            }
+            return getHTMLPreview(html, slug);
+          },
+        },
+        textPreview: {
+          type: 'String',
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          resolve: async (source: PostType, args: any, context: any, info: any) => {
+            const htmlField = info.schema.getType('MarkdownRemark').getFields()['html'];
+            const html = await htmlField.resolve(source, args, context, info);
+
+            return getTextPreview(html);
+          },
+        },
+      },
+    };
+    createResolvers(resolvers);
   },
 
   onPostBuild: async ({ graphql }: BuildArgs): Promise<void> => {
@@ -167,6 +226,8 @@ const gatsbyNode = {
             edges {
               node {
                 html
+                textPreview
+                htmlPreview
                 fields {
                   slug
                 }
@@ -228,18 +289,19 @@ const gatsbyNode = {
         throw new Error('Post metadata was missing title or date');
       }
 
-      const preFoldContent = fixLocalLinks(
-        getPreFoldContent(post.html),
-        siteMetadata.domain
-      );
-      const url = siteMetadata.domain + data.path;
-      const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
-      const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
+      const htmlPreview = post?.htmlPreview;
+      if (!htmlPreview) {
+        console.error('Malformed post', post);
+        throw new Error('Post metadata was missing htmlPreview');
+      }
+
+      const description = fixLocalLinks(htmlPreview, siteMetadata.domain);
+      const link = siteMetadata.domain + data.path;
 
       feed.addItem({
         title: data.title,
-        link: url,
-        description: withCallToAction,
+        link,
+        description,
         content: fixLocalLinks(post.html, siteMetadata.domain),
         date: new Date(data.date),
         author: [author],
@@ -258,18 +320,19 @@ const gatsbyNode = {
         throw new Error('Post was missing frontmatter!');
       }
 
-      const preFoldContent = fixLocalLinks(
-        getPreFoldContent(post.html),
-        siteMetadata.domain
-      );
+      const htmlPreview = post?.htmlPreview;
+      if (!htmlPreview) {
+        console.error('Malformed post', post);
+        throw new Error('Post metadata was missing htmlPreview');
+      }
+
+      const preview = fixLocalLinks(htmlPreview, siteMetadata.domain);
       const url = siteMetadata.domain + post.frontmatter.path;
-      const readMore = ` <a href="${url}">Read more&nbsp;»</a>`;
-      const withCallToAction = appendToLastTextBlock(preFoldContent, readMore);
 
       return {
         title: post.frontmatter.title,
         date: post.frontmatter.date,
-        preview: withCallToAction,
+        preview,
         url,
         tags: post.frontmatter.tags,
       };

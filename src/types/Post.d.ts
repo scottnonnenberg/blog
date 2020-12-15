@@ -1,5 +1,7 @@
 export type PostType = {
   html?: string;
+  htmlPreview?: string;
+  textPreview?: string;
   path?: string;
   contents?: string;
   fields?: {
