@@ -27,9 +27,7 @@
     "ci": "npm run format && npm run test && npm run check-internal-links && npm run check-deep-links",
     "ci-with-server": "npm-run-all --parallel --race serve ci",
     "mocha": "NODE_ENV=test mocha --recursive --require ts-node/register --require test/setup.ts --extension ts",
-    "mocha-watch": "npm run mocha -- --watch",
-    "unit": "npm run mocha -- -s 3 -t 150 test/unit",
-    "unit-watch": "npm run mocha-watch -- -s 3 -t 150 test/unit"
+    "unit": "npm run mocha -- -s 3 -t 150 test/unit"
   },
   "dependencies": {
     "gatsby": "2.25.3",
