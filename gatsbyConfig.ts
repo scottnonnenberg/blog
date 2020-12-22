@@ -122,6 +122,9 @@ const gatsbyConfig = {
     // Detailed analysis of what ends up in our client-side Javascript files.
     'gatsby-plugin-webpack-bundle-analyser-v2',
 
+    // Catch post/preview links and keep navigation within SPA. For performance!
+    'gatsby-plugin-catch-links',
+
     // Turns off JavaScript for the built site. You still get Javascript in development.
     // 'gatsby-plugin-no-javascript',
 
