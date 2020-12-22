@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
-import { getPreFoldContent } from 'src/util/getPreFoldContent';
 import { extractImage } from 'src/util/extractImage';
 
 import { LocationType } from 'src/types/Location';
@@ -23,13 +22,6 @@ function create(name?: string, value?: string): ReactElement | null {
   }
 
   return <meta key={name} property={name} content={value} />;
-}
-
-function removeHTML(html?: string): string | undefined {
-  if (!html) {
-    return html;
-  }
-  return html.replace(/<[^>]*>/g, '');
 }
 
 function generatePostSpecificTags(
@@ -52,8 +44,7 @@ function generatePostSpecificTags(
   const twitterCardType = postImage ? 'summary_large_image' : 'summary';
   const socialImage = postImage || siteMetadata.author.image;
 
-  const preFold = getPreFoldContent(post.html);
-  const description = removeHTML(preFold);
+  const description = post.textPreview;
 
   const ld = {
     '@context': 'http://schema.org',
@@ -83,17 +74,18 @@ function generatePostSpecificTags(
 
   return [
     create('og:image', socialImage),
-    create('twitter:image', socialImage),
-
     create('og:type', 'article'),
     create('og:title', data.title),
     create('og:description', description),
-    <meta key="description" name="description" content={description} />,
-    create('article:published_time', data.date),
 
+    create('twitter:image', socialImage),
     create('twitter:card', twitterCardType),
     create('twitter:title', data.title),
     create('twitter:description', description),
+
+    <meta key="description" name="description" content={description} />,
+
+    create('article:published_time', data.date),
 
     <script key="ld" type="application/ld+json">
       {JSON.stringify(ld, null, '  ')}
@@ -117,8 +109,10 @@ function generateMetaTags(
       title={siteMetadata.blogTitle}
       href={`${siteMetadata.domain}/rss.xml`}
     />,
+
     create('og:site_name', siteMetadata.blogTitle),
     create('og:url', url),
+
     create('twitter:url', url),
     create('twitter:site', siteMetadata.author.twitter),
   ];
