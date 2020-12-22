@@ -1,6 +1,63 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.0.0](https://github.com/scottnonnenberg/blog/compare/v1.20.2...v2.0.0) (2020-12-22)
+
+
+### Features
+
+* **archive:** Point '20 years online' links to new endpoint ([8eafa67](https://github.com/scottnonnenberg/blog/commit/8eafa67389bea71005040dcfc49e9cf97bc74876))
+* **assets:** Pull assets local, introduce image-processing plugins ([f40c7ea](https://github.com/scottnonnenberg/blog/commit/f40c7ea6cdfb76e849b8e1ba255aea07ede6dced))
+* **caching:** Long timeout for static files, five minutes for pages ([e163c2f](https://github.com/scottnonnenberg/blog/commit/e163c2f5e51364782f94504979d9d3882fe88b0b))
+* **ci:** GitHub Actions for CI, using yarn offline cache for perf ([c694949](https://github.com/scottnonnenberg/blog/commit/c6949494f896e6f7f9ef81516629a5ce4afd2bf0))
+* **css-modules:** Put component-specific styles into <name>.module.less ([ebedb0e](https://github.com/scottnonnenberg/blog/commit/ebedb0e266417ab20c8250acecf2248475750053))
+* **docs:** Improved readme and more comprehensive explanatory comments ([76a87e0](https://github.com/scottnonnenberg/blog/commit/76a87e09648c02103d0873b2876aaece8c62eadc))
+* **gatsby:** Move to Gatsby V2 ([7dfc4b3](https://github.com/scottnonnenberg/blog/commit/7dfc4b39618ccc77c324b31677257f919c5e794e))
+* **lighthouse-100:** Proper contrast, meta description, h3 tag order ([1093019](https://github.com/scottnonnenberg/blog/commit/10930193d2114d26ea3cd7ffc1ef89961663bf03))
+* **link-to-github:** Link to post on GitHub in post.tsx ([a1a2ecd](https://github.com/scottnonnenberg/blog/commit/a1a2ecdb04688c77b36d4f0ded9cf53ef354de7d))
+* **page-data:** Further decrease page-data size with better queries ([494452d](https://github.com/scottnonnenberg/blog/commit/494452d8643de9bfe164762a400cda4f690ae78b))
+* **page-data:** Take page-data.json size down by precomputing previews ([fe72525](https://github.com/scottnonnenberg/blog/commit/fe725251510d8fb75ef9d23f022dc622a5ae9182))
+* **perf:** Minify css classes, no inline CSS, strip unnecessary markup ([1f861fb](https://github.com/scottnonnenberg/blog/commit/1f861fb22fec4e502dc7172e4840d5e10f4dd811))
+* **prettier:** Introduce prettier and update all files ([c9b8984](https://github.com/scottnonnenberg/blog/commit/c9b89840b2b7c0db96e9d89df0ff022ebbfd10b6))
+* **redirects:** Add vercel.json for redirects on tumblr-era posts ([dc794ec](https://github.com/scottnonnenberg/blog/commit/dc794ec6984f7e4ae28e46abf0314ace497cca98))
+* **remove-lodash:** To make the bundle smaller, simplify ([cf55baa](https://github.com/scottnonnenberg/blog/commit/cf55baaffc3af2ff61a961afd10a2af5b4d93f29))
+* **remove-moment:** To make the bundle smaller, simplify ([40d7254](https://github.com/scottnonnenberg/blog/commit/40d7254ff4618a4cb68618bd31d896a8e44bb2db))
+* **remove-underscore.string:** To make the bundle smaller, simplify ([fa8f380](https://github.com/scottnonnenberg/blog/commit/fa8f3805fcd3acf1f7fd6086e51de0ea371ce91b))
+* **static:** Pull author image into assets, blur image during loading ([4e38909](https://github.com/scottnonnenberg/blog/commit/4e38909d39d27ae945fd6666385b420c3a72a2aa))
+* **storybook:** Initial storybook setup, basic set of stories ([9f3fb16](https://github.com/scottnonnenberg/blog/commit/9f3fb16d6104c76e2b61d8ea39a56976f56a7919))
+* **style:** Use SCSS instead of LESS ([ee9614c](https://github.com/scottnonnenberg/blog/commit/ee9614c5db78ef8cc08db7bdbc1b1d35f425c540))
+* **trailing-slash:** Force trailing slashes, update redirects ([3fc018b](https://github.com/scottnonnenberg/blog/commit/3fc018bc79b86a8d98d900a0be4f5a8b86433901))
+* **typed-css:** d.ts files generated for SCSS Modules on develop/build ([2ecc642](https://github.com/scottnonnenberg/blog/commit/2ecc642603f8598ea6c4b757814400bbbed935a5))
+* **typescript:** The great move to typescript! ([fc57953](https://github.com/scottnonnenberg/blog/commit/fc57953f1d8f8ca2c5f9b04e5f0d4fbbbb5dc184))
+
+
+### Bug Fixes
+
+* **caching:** Ensure that page-data files are not cached long-term ([2185e1b](https://github.com/scottnonnenberg/blog/commit/2185e1bd431e49bf2630131fa35a45c4bfca25ed))
+* **check-deep-links:** Capture all deep links, even to same page ([85fcd2c](https://github.com/scottnonnenberg/blog/commit/85fcd2ce0472904c832c9c821e2d21a17d794732))
+* **CI:** Get CI based on Github Actions passing ([040ac8d](https://github.com/scottnonnenberg/blog/commit/040ac8d1ce1a8da822df91bd754156770f95933f))
+* **dependency:** Remove js-only dependencies after bad rebase ([8a86804](https://github.com/scottnonnenberg/blog/commit/8a868043bd461ffe72f1f06014aa654225dc4727))
+* **deploy:** Add mailchimp.ts to project to support build ([f99d550](https://github.com/scottnonnenberg/blog/commit/f99d5504d643468188005e05aa3a7b4591e754ae))
+* **headers:** Remove h5 from ReadMore to eliminate out-of-order warning ([aab6c98](https://github.com/scottnonnenberg/blog/commit/aab6c983f7abee22be82a5a0acddcfee8896eadf))
+* **meta-tags:** Ensure post images are absolute, and images to non-posts ([f7037a0](https://github.com/scottnonnenberg/blog/commit/f7037a0df504eb4c23d0191ead3a21ce6204d4d4))
+* **metadata:** an application/ld+json script tag that react-helmet likes ([ed070db](https://github.com/scottnonnenberg/blog/commit/ed070db64e83b504af787fbc2c146114eb59f2cc))
+* **mobile:** Tighten up EmailSignup, fix index top link wrapping ([9321d50](https://github.com/scottnonnenberg/blog/commit/9321d50ebda30d9a6d0744264bdbf7bbaef05f98))
+* **package.json:** Production is for stuff in bundle, rimraf not rm ([6d9a726](https://github.com/scottnonnenberg/blog/commit/6d9a7265a72657c7d56e15f2d2e940f0a59f5d9f))
+* **post:** A couple tweaks to 'From Tech Person...' post ([0dfa4db](https://github.com/scottnonnenberg/blog/commit/0dfa4db99eda603046c4fb59451ae8cbb3c51e84))
+* **post:** A little tweak to 'Top ten pull requests' ([dd7b33f](https://github.com/scottnonnenberg/blog/commit/dd7b33f404956f1ab5f1be2a5818d832193c9afb))
+* **post:** Add links to referenced sections at top of Haskell post ([2e9cb87](https://github.com/scottnonnenberg/blog/commit/2e9cb87f66c8e3f2a674e9a7c63b741a70ebb7ca))
+* **post:** Fix code fence on 'better async redux' post ([f75833c](https://github.com/scottnonnenberg/blog/commit/f75833cc6a1ceef85d5213406f923480a3a5fba4))
+* **post:** Fix formatting of 'Systems and Incentives' post ([309af88](https://github.com/scottnonnenberg/blog/commit/309af8857ac625ea6d58a6cd8f640c47a5e14761))
+* **post:** Fix links containing _ within _ for emphasis ([f612c86](https://github.com/scottnonnenberg/blog/commit/f612c86ef0456b8bf98dab00001d7f5d3d12ab87))
+* **post:** Fix list on '12 things I learned from Microsoft' post ([a3ffc5d](https://github.com/scottnonnenberg/blog/commit/a3ffc5d11f87a25d3c6a2872ff840746fcc095d3))
+* **post:** Improve flow of 'Hard won lessons: Five years...' post ([bbab72a](https://github.com/scottnonnenberg/blog/commit/bbab72aaba0f83a776203f886d6e0fdecc4f6dac))
+* **post:** Slight change to 'Six Books' post for better flow ([10b2699](https://github.com/scottnonnenberg/blog/commit/10b2699092d06d33389aea9d63e767d5eb479873))
+* **project-file:** Properly exclude scss.d.ts files ([b4ce8e3](https://github.com/scottnonnenberg/blog/commit/b4ce8e3c57c523a9913696faf5a99834231a6dd7))
+* **style:** Reintroduce orange as background of EmailSignup ([518aa91](https://github.com/scottnonnenberg/blog/commit/518aa91dbe6e4dbbd0006ab6695bc41ef7eb4edb))
+* **style:** Remove half-height line at bottom of multiline code blocks ([126a7f8](https://github.com/scottnonnenberg/blog/commit/126a7f86b4fcb7e8f170b2b02518645d6af10fbd))
+* **styles:** Remove all link highlighting on hover. It's time. ([c137a19](https://github.com/scottnonnenberg/blog/commit/c137a1915053cbac3d5026a27379ca65d646a606))
+* **tag-page:** Remove duplicated posts in list ([abf2a32](https://github.com/scottnonnenberg/blog/commit/abf2a3203a21b9acc7e531ceea33098d1c6b13e2))
 
 <a name="1.20.2"></a>
 ## [1.20.2](https://github.com/scottnonnenberg/blog/compare/v1.20.1...v1.20.2) (2018-06-26)
