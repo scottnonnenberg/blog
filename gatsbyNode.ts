@@ -147,13 +147,13 @@ const gatsbyNode = {
             ...post,
             htmlPreview: undefined,
           });
+        } else {
+          justLink.push({
+            ...post,
+            htmlPreview: undefined,
+            textPreview: undefined,
+          });
         }
-
-        justLink.push({
-          ...post,
-          htmlPreview: undefined,
-          textPreview: undefined,
-        });
       });
 
       createPage({
