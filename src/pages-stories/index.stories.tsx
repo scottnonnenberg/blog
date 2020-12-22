@@ -7,28 +7,32 @@ import { posts } from 'test/fixtures';
 
 const { current, next, previous, lastYear } = posts;
 
-const edges = [
-  { node: previous },
-  { node: previous },
-  { node: previous },
-  { node: current },
-  { node: current },
-  { node: current },
-  { node: next },
-  { node: next },
-  { node: next },
-  { node: lastYear },
-  { node: lastYear },
-  { node: lastYear },
-  { node: lastYear },
-];
+const withHtml = {
+  edges: [
+    { node: previous },
+    { node: previous },
+    { node: previous },
+    { node: current },
+    { node: current },
+  ],
+};
+const withText = {
+  edges: [
+    { node: current },
+    { node: next },
+    { node: next },
+    { node: next },
+    { node: lastYear },
+  ],
+};
+const justLink = { edges: [{ node: lastYear }, { node: lastYear }, { node: lastYear }] };
 
 function createProps(props: Partial<PropsType> = {}) {
   // Core fields
   const data = {
-    allMarkdownRemark: {
-      edges,
-    },
+    withHtml,
+    withText,
+    justLink,
   };
   const location = {
     ...window.location,

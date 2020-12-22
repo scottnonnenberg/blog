@@ -14,20 +14,15 @@ import HTMLPreview from 'src/components/HTMLPreview';
 import styles from './index.module.scss';
 
 import { PostType } from 'src/types/Post';
-import { AllPostsQueryType } from 'src/types/queries.d';
+import { MarkdownRemarkResultType, SplitPostsQueryType } from 'src/types/queries.d';
 
-const HTML_PREVIEW_POSTS = 5;
-const TEXT_PREVIEW_POSTS = 5;
+export type PropsType = PageProps<SplitPostsQueryType, null>;
 
-export type PropsType = PageProps<AllPostsQueryType, null>;
+function getPosts(data: MarkdownRemarkResultType): Array<PostType> {
+  return data.edges.map(item => item.node);
+}
 
 export default function index({ data, location }: PropsType): ReactElement | null {
-  const posts = data.allMarkdownRemark.edges.map(item => item.node);
-
-  const html = posts.slice(0, HTML_PREVIEW_POSTS);
-  const text = posts.slice(HTML_PREVIEW_POSTS, HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-  const link = posts.slice(HTML_PREVIEW_POSTS + TEXT_PREVIEW_POSTS);
-
   return (
     <Wrapper location={location}>
       <SEO pageTitle="Blog" location={location} />
@@ -48,9 +43,9 @@ export default function index({ data, location }: PropsType): ReactElement | nul
       </div>
       <EmailSignup callToAction="Get updates straight to your inbox!" />
       <hr />
-      {getHTMLPreviews(html)}
-      {getTextPreviews(text)}
-      {getPostLinks(link)}
+      {getHTMLPreviews(getPosts(data.withHtml))}
+      {getTextPreviews(getPosts(data.withText))}
+      {getPostLinks(getPosts(data.justLink))}
     </Wrapper>
   );
 }
@@ -90,11 +85,47 @@ export function getPostLinks(posts: Array<PostType>): Array<ReactElement | null>
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    withHtml: allMarkdownRemark(
+      limit: 5
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           htmlPreview
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+          }
+        }
+      }
+    }
+    withText: allMarkdownRemark(
+      skip: 5
+      limit: 5
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
           textPreview
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            title
+          }
+        }
+      }
+    }
+    justLink: allMarkdownRemark(
+      skip: 10
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
           fields {
             slug
           }

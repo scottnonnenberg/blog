@@ -8,17 +8,9 @@ import SEO from 'src/components/SEO';
 
 import styles from './tags.module.scss';
 
-import { PostType } from 'src/types/Post';
+import { AllPostsQueryType } from 'src/types/queries';
 
-type DataType = {
-  allMarkdownRemark: {
-    edges: Array<{
-      node: PostType;
-    }>;
-  };
-};
-
-export type PropsType = PageProps<DataType, null>;
+export type PropsType = PageProps<AllPostsQueryType, null>;
 
 export default function tags({ data, location }: PropsType): ReactElement | null {
   const title = 'Tags';

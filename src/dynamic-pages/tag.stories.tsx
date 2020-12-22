@@ -7,18 +7,9 @@ import { posts } from 'test/fixtures';
 
 const { current, next, previous, lastYear } = posts;
 
-const postsWithTag = [
-  previous,
-  previous,
-  previous,
-  current,
-  current,
-  current,
-  next,
-  next,
-  next,
-  lastYear,
-];
+const withText = [previous, previous, previous, current, current];
+
+const justLink = [current, next, next, next, lastYear];
 
 function createProps(props: Partial<PropsType> = {}) {
   // Core fields
@@ -29,7 +20,8 @@ function createProps(props: Partial<PropsType> = {}) {
   };
   const pageContext = {
     tag: 'tech',
-    postsWithTag,
+    withText,
+    justLink,
   };
 
   return {

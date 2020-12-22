@@ -1,12 +1,20 @@
 import { PostType } from './Post.d';
 import { SiteMetadataType } from './SiteMetadata.d';
 
+export type MarkdownRemarkResultType = {
+  edges: Array<{
+    node: PostType;
+  }>;
+};
+
 export type AllPostsQueryType = {
-  allMarkdownRemark: {
-    edges: Array<{
-      node: PostType;
-    }>;
-  };
+  allMarkdownRemark: MarkdownRemarkResultType;
+};
+
+export type SplitPostsQueryType = {
+  withHtml: MarkdownRemarkResultType;
+  withText: MarkdownRemarkResultType;
+  justLink: MarkdownRemarkResultType;
 };
 
 export type SiteMetadataQueryType = {

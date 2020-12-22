@@ -99,7 +99,7 @@ const gatsbyNode = {
       throw new Error('Query returned no data!');
     }
 
-    // Create blog posts pages.
+    // Create a page for each blog post
     const posts = result.data.allMarkdownRemark.edges.map(item => item.node);
 
     posts.forEach((post, index) => {
@@ -116,13 +116,19 @@ const gatsbyNode = {
         component: blogPostPage,
         context: {
           slug: path,
-          previous,
-          next,
+          previous: previous && {
+            ...previous,
+            htmlPreview: undefined,
+          },
+          next: next && {
+            ...next,
+            htmlPreview: undefined,
+          },
         },
       });
     });
 
-    // Create tag pages
+    // Create a page for each tag
     const tagCounts = getTagCounts(posts);
 
     tagCounts.forEach(({ tag }) => {
@@ -131,13 +137,33 @@ const gatsbyNode = {
       }
 
       const postsWithTag = posts.filter(post => post?.frontmatter?.tags?.includes(tag));
+      const withText: Array<PostType> = [];
+      const justLink: Array<PostType> = [];
+
+      // By removing some of this data, we can reduce the size of the page-data.json for
+      //   this page.
+      postsWithTag.forEach((post, index) => {
+        if (index <= 5) {
+          withText.push({
+            ...post,
+            htmlPreview: undefined,
+          });
+        }
+
+        justLink.push({
+          ...post,
+          htmlPreview: undefined,
+          textPreview: undefined,
+        });
+      });
 
       createPage({
         path: `/tags/${tag}`,
         component: tagPage,
         context: {
           tag,
-          postsWithTag,
+          withText,
+          justLink,
         },
       });
     });
