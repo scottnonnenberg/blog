@@ -1,5 +1,8 @@
 /* eslint-disable filenames/match-exported */
 
+// Though it's strange, it's important to name this '404' so Gatsby and our hosting
+//   infrastructure understand the resultant filename: '404.html'
+
 import React, { ReactElement } from 'react';
 import { Link, PageProps } from 'gatsby';
 

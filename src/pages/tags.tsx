@@ -12,6 +12,8 @@ import { AllPostsQueryType } from 'src/types/queries';
 
 export type PropsType = PageProps<AllPostsQueryType, null>;
 
+// Note: strange to make this component lowercase, but we want a final path of /tags/
+//   and our eslint rules want this component name to match the filename.
 export default function tags({ data, location }: PropsType): ReactElement | null {
   const title = 'Tags';
   const posts = data.allMarkdownRemark.edges.map(item => item.node);

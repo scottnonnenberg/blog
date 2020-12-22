@@ -1,3 +1,5 @@
+// This old component doesn't have typings, so we put our own typings in place!
+
 declare module 'broken-link-checker' {
   export type SiteCheckerResultType = {
     url: {

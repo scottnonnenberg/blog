@@ -1,12 +1,32 @@
 # https://blog.scottnonnenberg.com
 
-A [`gatsby`](https://github.com/gatsbyjs/gatsby)-based blog.
+A fully-featured [`gatsby`](https://www.gatsbyjs.com/)-based blog.
+
+## Quick start
+
+Get this blog running locally ASAP!
+
+```bash
+git clone git@github.com:scottnonnenberg/blog.git
+cd blog
+npm install -g yarn # if you don't already have it
+yarn install --offline --pure-lockfile
+yarn develop
+```
+
+Now you've got my blog running on `http://localhost:8000`!
+
+## A note about Javascript
+
+I've decided to disable one of the key features of Gatsby for this blog: Javascript on the client side. It increases the download size for your site, but makes intra-site navigations faster. If you'd like your blog to have Javascript enabled, I have a `js` branch with all of that enabled: https://github.com/scottnonnenberg/blog/compare/main...js
+
+You can also see for yourself what the experience is like with Javascript enabled here: https://blog-js.scottnonnenberg.com
 
 ## Key settings
 
 `gatsbyConfig.ts` contains key data you'll want to change first. The location of the blog, author name and details, gatsby plugins, and so on.
 
-`mailchimp.ts` is the next thing you'll want to change, since it's pointing at my mailing list. The simplest thing to do here is delete this file, `EmailSignup.*` and re-add something like it when you're ready.
+`mailchimp.ts` is the next thing you'll want to change, since it's pointing at my mailing list. The simplest thing to do here is delete this file along with `EmailSignup.*` and re-add something like it when you're ready.
 
 ## Develop
 
@@ -22,6 +42,8 @@ To cover more permutations of a given component, [`Storybook`](https://storybook
 yarn storybook
 ```
 
+If you're implementing deeper changes in `gatsbyNode.ts`, you might want to take a look at the GraphQL schema, or do some test querying. The excellent [GraphiQL](https://github.com/graphql/graphiql/tree/main/packages/graphiql#readme) tool is available while the development-mode side is active at `http://localhost:8000/__graphql`.
+
 ## Build
 
 Generate production-ready files to `public/` folder:
@@ -34,7 +56,7 @@ _Note: this will generate `rss.xml`, `atom.xml`, `all.json` and `recent.json` to
 
 ## Test
 
-Run `eslint` and the unit tests with `yarn test`.
+Check types, run `eslint`, and the unit tests with `yarn test`.
 
 You can use `yarn serve` to serve static files from `public/` at http://localhost:8000 for manual and automated tests. `tests/manual.txt` has some weird tests you might consider doing if you make some larger changes.
 
@@ -45,6 +67,8 @@ yarn check-local-links
 yarn check-deep-links
 yarn check-links http://localhost:8000/
 ```
+
+This project uses GitHub actions for CI. On every push, it will run tests, lint, check types, and check local and deep links: https://github.com/scottnonnenberg/blog/blob/main/.github/workflows/ci.yml
 
 ## Helper scripts
 
@@ -60,6 +84,10 @@ yarn clean-post 5
 ```
 
 By default processes the most recent file. If a number is provided, it will process that many most-recent posts. Removes smart quotes, duplicate links (same text as URL), and all mentions of the blog's `domain` (taken from `gatsbyConfig.ts`) to ensure that links are all of the relative form.
+
+## Hosting
+
+This blog is hosted on [Vercel](https://vercel.com/). It is deployed to production with every push to the `main` branch. You can see Vercel-specific configuration here, with redirects, cache settings, and forced trailing slashes: https://github.com/scottnonnenberg/blog/blob/main/vercel.json
 
 ## Contributing
 

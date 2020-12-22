@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+// This old component doesn't have typings, so we put our own typings in place!
 declare module '@scottnonnenberg/notate' {
   type NotateType = {
     (

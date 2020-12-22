@@ -3,7 +3,6 @@ export type PostType = {
   htmlPreview?: string;
   textPreview?: string;
   path?: string;
-  contents?: string;
   fields?: {
     slug?: string;
     relativePath?: string;

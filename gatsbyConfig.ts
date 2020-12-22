@@ -26,6 +26,7 @@ const gatsbyConfig = {
     },
   },
   plugins: [
+    // These are the two places we want Gatsby to look for non-code assets
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -40,32 +41,53 @@ const gatsbyConfig = {
         name: `assets`,
       },
     },
+
+    // This makes our markdown and resultant HTML available in GraphQL
     {
       resolve: 'gatsby-transformer-remark',
       options: {
         pedantic: false,
         plugins: [
+          // Code highlighting
           {
             resolve: 'gatsby-remark-highlight.js',
             options: {
               exclude: ['text'],
             },
           },
+
+          // Little link icons next to headers to make it easy to copy a link to that
+          //   section of the page.
           'gatsby-remark-autolink-headers',
+
+          // A blurred placeholder baked into the HTML for initial load.
           {
             resolve: 'gatsby-remark-images',
             options: {
               disableBgImageOnAlpha: true,
             },
           },
-          // Default excluded file extensions: png, jpg, jpeg, bmp, tiff
+
+          // If we link to a file in a post, we want that file availabe.
+          //   Note: Default excluded file extensions: png, jpg, jpeg, bmp, tiff
           'gatsby-remark-copy-linked-files',
+
+          // Automatically replace plain quotes with smart quotes when translating
+          //   markdwon to HTML.
           'gatsby-remark-smartypants',
         ],
       },
     },
+
+    // Allows advanced preprocessing of images - creating multiple sizes, the small
+    //   blurred preview images, etc.
     'gatsby-transformer-sharp',
+
+    // The core provider of sharp, the image processing utility.
     'gatsby-plugin-sharp',
+
+    // Allows us to refer to files with an absolute path on the client side.
+    //   See also .storybook/main.js, and scripts/util/setupModulePath.ts for Node.js
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
@@ -74,17 +96,34 @@ const gatsbyConfig = {
         src: join(__dirname, 'src'),
       },
     },
+
+    // We want typescript!
     'gatsby-plugin-typescript',
+
+    // Generates typescript definitions for each of our module.scss files.
     'gatsby-plugin-scss-typescript',
+
+    // Minifies our class names in production. In development, classnames are descriptive,
+    //   like 'HTMLPreview-module--title--3dwpy'. In production, it's just 'b'.
     'gatsby-plugin-mini-css-class-name',
+
+    // Simple plugin to allow us to put lang=en into our top-level <html> tag. Necessary
+    //   for a 100% Lighthouse score.
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'en',
       },
     },
+
+    // Allows us to set top-level page attributes during the server-side rendering stage.
     'gatsby-plugin-react-helmet',
+
+    // Turns off JavaScript for the built site. You still get Javascript in development.
     'gatsby-plugin-no-javascript',
+
+    // Further optimizations for a no-Javascript world, giving us a separate CSS file and
+    //   removing further unneeded elements from our built files.
     {
       resolve: 'gatsby-plugin-no-javascript-utils',
       options: {

@@ -1,7 +1,6 @@
 import { writeFileSync } from 'fs';
 import { join, relative, resolve } from 'path';
 
-import { copy } from 'fs-extra';
 import { Feed } from 'feed';
 
 import { getPreFoldContent } from 'src/util/getPreFoldContent';
@@ -169,6 +168,11 @@ const gatsbyNode = {
     });
   },
 
+  // This is the easy way to add fields to a given GrapnQL node.
+  // Note: values generated here are persisted in Gatsby's build cache, so it should be
+  //   reserved for values that don't change very often. If you make a change here while
+  //   running 'yarn develop', you'll need to both shut down and `yarn clean` before it
+  //   will show up.
   onCreateNode: ({ node, actions }: CreateNodeArgs<NodeType>): void => {
     const { createNodeField } = actions;
 
@@ -196,6 +200,12 @@ const gatsbyNode = {
     }
   },
 
+  // This server-side calculation of htmlPreview/textPreview ensure that Gatsby's
+  //   generated page-data.json files don't balloon out of control. We get complex here,
+  //   adding custom fields to the GraphQL, because gatsby-transformer-remark lazily
+  //   generates HTML from markdown. We only get html when we call that plugin's resolver
+  //   manually!
+  // Thanks, @zaparo! https://github.com/gatsbyjs/gatsby/issues/17045#issuecomment-529161439
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   createResolvers: ({ createResolvers }: CreateResolversArgs): any => {
     const resolvers = {
@@ -229,6 +239,7 @@ const gatsbyNode = {
     createResolvers(resolvers);
   },
 
+  // Build key assets that live next to built files in public/
   onPostBuild: async ({ graphql }: BuildArgs): Promise<void> => {
     const result: RawAllDataType = await graphql(
       `
@@ -277,9 +288,6 @@ const gatsbyNode = {
       console.error('Query results malformed', result);
       throw new Error('Query returned no data!');
     }
-
-    // Write favicon to public folder
-    await copy(`${__dirname}/assets/favicon.ico`, `${__dirname}/public/favicon.ico`);
 
     // Write RSS and Atom
     const posts = result.data.allMarkdownRemark.edges.map(item => item.node);

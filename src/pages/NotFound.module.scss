@@ -1,5 +1,5 @@
-// Note: this can't be named like its component, starting with 404, because our
-//   loader infrastructure can't deal with it.
+// Note: this can't be named like its component, starting with 404, because our generated
+//   CSS module types break.
 
 @import 'css/rhythm.scss';
 

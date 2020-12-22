@@ -13,6 +13,8 @@ const POST_LINKS = 10;
 
 export type PropsType = PageProps<AllPostsQueryType, null>;
 
+// Note: strange to make this component lowercase, but we want a final path of /popular/
+//   and our eslint rules want this component name to match the filename.
 export default function popular({ location, data }: PropsType): ReactElement | null {
   const posts = data.allMarkdownRemark.edges.map(item => item.node);
 
