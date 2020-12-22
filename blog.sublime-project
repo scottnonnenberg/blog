@@ -15,7 +15,7 @@
         "gatsby-node.js",
         "gatsby-config.js",
         "yarn*.tar.gz",
-        ".scss.d.ts"
+        "*.scss.d.ts"
       ]
     }
   ],
