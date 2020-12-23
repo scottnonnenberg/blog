@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "clean-typed-css": "rimraf ./**/*.scss.d.ts",
     "serve": "cd public && http-server -p 8000 -a localhost",
-    "storybook": "start-storybook -p 6006 -s ./",
+    "storybook": "start-storybook -p 6006 -s ./,./public",
     "check-git": "scripts/check_git.sh",
     "check-internal-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-external --filter-level=3",
     "check-external-links": "broken-link-checker http://localhost:8000/ --recursive --ordered --exclude-internal --filter-level=3",
