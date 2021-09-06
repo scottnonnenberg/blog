@@ -19,8 +19,7 @@ const previous = {
   },
   htmlPreview: '<p>Previous post with <b>real</b> HTML! Above the fold</p>',
   textPreview: 'Previous post with real HTML! Above the fold',
-  html:
-    "<p>Previous post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+  html: "<p>Previous post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 const current = {
   fields: {
@@ -34,8 +33,7 @@ const current = {
   },
   htmlPreview: '<p>Current post with <b>real</b> HTML! Above the fold</p>',
   textPreview: 'Current post with real HTML! Above the fold',
-  html:
-    "<p>Current post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+  html: "<p>Current post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 const next = {
   fields: {
@@ -48,8 +46,7 @@ const next = {
   },
   htmlPreview: '<p>Next post with <b>real</b> HTML! Above the fold</p>',
   textPreview: 'Next post with real HTML! Above the fold',
-  html:
-    "<p>Next post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+  html: "<p>Next post with <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 
 const lastYear = {
@@ -64,8 +61,7 @@ const lastYear = {
   },
   htmlPreview: '<p>Last year post with <b>real</b> HTML! Above the fold</p>',
   textPreview: 'Last year post with real HTML! Above the fold',
-  html:
-    "<p>Last year post with real <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
+  html: "<p>Last year post with real <b>real</b> HTML! Above the fold</p><div class='fold'></div><p>Below this is a second paragraph</p>",
 };
 
 export const posts = {

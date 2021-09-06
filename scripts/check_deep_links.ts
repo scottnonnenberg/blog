@@ -89,7 +89,11 @@ function checkLinks(): void {
       console.log('\nAll Done!');
     });
   } catch (err) {
-    console.log(notate.prettyPrint(err));
+    if (err instanceof Error) {
+      console.log(notate.prettyPrint(err));
+    } else {
+      console.log('Something really went wrong:', err);
+    }
   }
 }
 
