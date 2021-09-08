@@ -7,7 +7,8 @@
         ".cache",
         "node_modules",
         "public",
-        "patches"
+        "patches",
+        "yarn-offline-cache"
       ],
       "file_exclude_patterns": [
         ".DS_Store",
@@ -15,6 +16,7 @@
         "gatsby-node.js",
         "gatsby-config.js",
         "yarn*.tar.gz",
+        "yarn.lock",
         "*.scss.d.ts"
       ]
     }
