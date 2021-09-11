@@ -1,0 +1,87 @@
+diff --git a/node_modules/gatsby-plugin-mini-css-class-name/gatsby-node.js b/node_modules/gatsby-plugin-mini-css-class-name/gatsby-node.js
+index 105d540..fd89978 100644
+--- a/node_modules/gatsby-plugin-mini-css-class-name/gatsby-node.js
++++ b/node_modules/gatsby-plugin-mini-css-class-name/gatsby-node.js
+@@ -1,4 +1,4 @@
+-const cloneDeepWith = require('lodash/cloneDeepWith');
++const map = require('lodash/map');
+ const isString = require('lodash/isString');
+ const has = require('lodash/has');
+ const miniClassName = require('mini-css-class-name');
+@@ -23,30 +23,57 @@ const createLocaiIdent = (options) => {
+   };
+ };
+ 
+-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
+-  if (stage.includes('build')) {
+-    const config = getConfig();
+-    const getLocalIdent = createLocaiIdent(options);
++function updateClassGeneration(value, getLocalIdent) {
++  const options = value.options;
++
++  if (!options) {
++    return;
++  }
++
++  // css-loader <= v2.0.0
++  if (options.modules === true && isString(options.localIdentName)) {
++    delete localIdentName;
++
++    options.getLocalIdent = getLocalIdent;
++  }
++
++  // css-loader >= v3.0.0
++  else if (has(options, 'modules.localIdentName') && isString(options.modules.localIdentName)) {
++    delete options.modules.localIdentName;
++
++    options.modules.getLocalIdent = getLocalIdent;
++  }
++}
+ 
+-    config.module.rules = cloneDeepWith(config.module.rules, (value, key) => {
+-      if (key === 'options') {
+-        // css-loader <= v2.0.0
+-        if (value.modules === true && isString(value.localIdentName)) {
+-          delete value.localIdentName;
++function updateLoaderArray(array, getLocalIdent) {
++  return map(array.slice(0), (value) => {  
++    if (Array.isArray(value.use)) {
++      value.use = updateLoaderArray(value.use, getLocalIdent);
++      return value;
++    }
+ 
+-          value.getLocalIdent = getLocalIdent;
+-        }
++    if (Array.isArray(value.oneOf)) {
++      value.oneOf = updateLoaderArray(value.oneOf, getLocalIdent);
++      return value;
++    }
+ 
+-        // css-loader >= v3.0.0
+-        else if (has(value, 'modules.localIdentName') && isString(value.modules.localIdentName)) {
+-          delete value.modules.localIdentName;
++    if (value.use) {
++      updateClassGeneration(value, getLocalIdent);  
++    }
++    else {
++      updateClassGeneration(value, getLocalIdent);  
++    }
+     
+-          value.modules.getLocalIdent = getLocalIdent;
+-        }
++    return value;
++  });
++}
++
++exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
++  if (stage.includes('build')) {
++    const config = getConfig();
++    const getLocalIdent = createLocaiIdent(options);
+ 
+-        return value;
+-      }
+-    });
++    config.module.rules = updateLoaderArray(config.module.rules, getLocalIdent);
+ 
+     actions.replaceWebpackConfig(config);
+   }
