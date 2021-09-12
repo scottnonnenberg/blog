@@ -13,7 +13,7 @@ import ReadMore from 'src/components/ReadMore';
 
 import Markdown from 'src/components/Markdown';
 
-import styles from './post.module.scss';
+import { date, divider, header, metadata } from './post.module.scss';
 
 import { PostType } from 'src/types/Post';
 
@@ -70,11 +70,11 @@ export default function post({
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
-      <h1 className={styles.header}>{title}</h1>
-      <div className={styles.date}>{shortDate(postDate)}</div>
+      <h1 className={header}>{title}</h1>
+      <div className={date}>{shortDate(postDate)}</div>
       <Markdown html={post.html} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
-      <div className={styles.metadata}>
+      <div className={metadata}>
         <div>
           <em>Posted:</em>
           {` ${longDate(postDate)}`}
@@ -85,7 +85,7 @@ export default function post({
           <a href={`${github}/blob/${currentCommit}/${relativePath}`}>{relativePath}</a>
         </div>
       </div>
-      <hr className={styles.divider} />
+      <hr className={divider} />
       <ReadMore previous={previous} next={next} />
     </Wrapper>
   );

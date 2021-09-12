@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 
 import TextPreview from './TextPreview';
 
-import styles from './ReadMore.module.scss';
+import { title } from './ReadMore.module.scss';
 
 import { PostType } from 'src/types/Post';
 
@@ -33,7 +33,7 @@ function renderItem(label: string, post?: PostType): ReactElement | null {
 
   return (
     <div>
-      <div className={styles.title}>{`${label}:`}</div>
+      <div className={title}>{`${label}:`}</div>
       <TextPreview post={post} />
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import styles from './Markdown.module.scss';
+import { markdown } from './Markdown.module.scss';
 
 type PropsType = {
   html?: string;
@@ -12,5 +12,5 @@ export default function Markdown(props: PropsType): ReactElement {
     throw new Error('html prop was not provided!');
   }
 
-  return <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div className={markdown} dangerouslySetInnerHTML={{ __html: html }} />;
 }

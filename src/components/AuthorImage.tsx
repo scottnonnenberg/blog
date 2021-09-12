@@ -2,7 +2,13 @@ import React, { ReactElement } from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
 
-import styles from './AuthorImage.module.scss';
+import {
+  backupImage,
+  container,
+  image,
+  padding,
+  parent,
+} from './AuthorImage.module.scss';
 
 type ImgFixedQueryType = {
   file: {
@@ -34,20 +40,20 @@ export function AuthorImage(): ReactElement {
   const { fixed } = data.file.childImageSharp;
 
   return (
-    <div className={styles.parent}>
+    <div className={parent}>
       <div
-        className={styles.container}
+        className={container}
         style={{
           width: `${fixed.width}px`,
           height: `${fixed.height}px`,
         }}
       >
-        <div aria-hidden="true" className={styles.padding} />
-        <img aria-hidden="true" className={styles.backupImage} src={fixed.base64} />
+        <div aria-hidden="true" className={padding} />
+        <img aria-hidden="true" className={backupImage} src={fixed.base64} />
         <picture>
           <source srcSet={fixed.srcSet} sizes={fixed.sizes} />
           <img
-            className={styles.image}
+            className={image}
             sizes={fixed.sizes}
             srcSet={fixed.srcSet}
             src={fixed.src}

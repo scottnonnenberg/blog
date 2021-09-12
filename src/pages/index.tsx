@@ -11,7 +11,7 @@ import PostLink from 'src/components/PostLink';
 import TextPreview from 'src/components/TextPreview';
 import HTMLPreview from 'src/components/HTMLPreview';
 
-import styles from './index.module.scss';
+import { links, nowrap } from './index.module.scss';
 
 import { PostType } from 'src/types/Post';
 import { MarkdownRemarkResultType, SplitPostsQueryType } from 'src/types/queries.d';
@@ -26,14 +26,14 @@ export default function index({ data, location }: PropsType): ReactElement | nul
   return (
     <Wrapper location={location}>
       <SEO pageTitle="Blog" location={location} />
-      <div className={styles.links}>
-        <span className={styles.nowrap}>
+      <div className={links}>
+        <span className={nowrap}>
           <Link to="/popular/">Popular Posts</Link>
           {' - '}
           <Link to="/tags/">Tags</Link>
           {' -'}
         </span>{' '}
-        <span className={styles.nowrap}>
+        <span className={nowrap}>
           <a href="/rss.xml">RSS</a>
           {' - '}
           <a href="/atom.xml">Atom</a>

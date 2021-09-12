@@ -5,7 +5,7 @@ import { shortDate } from 'src/util/shortDate';
 
 import Markdown from './Markdown';
 
-import styles from './HTMLPreview.module.scss';
+import { date, title } from './HTMLPreview.module.scss';
 
 import { PostType } from 'src/types/Post';
 
@@ -26,8 +26,8 @@ export default function HTMLPreview(props: PropsType): ReactElement | null {
     throw new Error(`Page had missing htmlPreview: ${JSON.stringify(post)}`);
   }
 
-  const title = post?.frontmatter?.title;
-  if (!title) {
+  const postTitle = post?.frontmatter?.title;
+  if (!postTitle) {
     throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
   }
 
@@ -38,9 +38,9 @@ export default function HTMLPreview(props: PropsType): ReactElement | null {
 
   return (
     <div>
-      <h2 className={styles.title}>
-        <Link to={slug}>{title}</Link>{' '}
-        <span className={styles.date}>{shortDate(postDate)}</span>
+      <h2 className={title}>
+        <Link to={slug}>{postTitle}</Link>{' '}
+        <span className={date}>{shortDate(postDate)}</span>
       </h2>
       <Markdown html={htmlPreview} />
     </div>

@@ -56,7 +56,6 @@ function createProps(props: Partial<PropsType> = {}) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     pageResources: {} as any,
     path: '/popular',
-    pathContext: {},
     uri: '/popular',
 
     // Any passed-in props take precedence

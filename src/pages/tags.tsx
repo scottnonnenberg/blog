@@ -6,7 +6,7 @@ import { getTagCounts } from 'src/util/getTagCounts';
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
 
-import styles from './tags.module.scss';
+import { countItem, tagItem } from './tags.module.scss';
 
 import { AllPostsQueryType } from 'src/types/queries';
 
@@ -22,9 +22,9 @@ export default function tags({ data, location }: PropsType): ReactElement | null
   const tagLinks = tags.map(({ tag, count }) => {
     const countString = ` ${count} ${count === 1 ? 'entry' : 'entries'}`;
     return (
-      <li key={tag} className={styles.tag}>
+      <li key={tag} className={tagItem}>
         <Link to={`/tags/${tag}/`}>{tag}</Link>
-        <span className={styles.count}>{countString}</span>
+        <span className={countItem}>{countString}</span>
       </li>
     );
   });

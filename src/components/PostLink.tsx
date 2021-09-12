@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import { shortDate } from 'src/util/shortDate';
 
-import styles from './PostLink.module.scss';
+import { date, title } from './PostLink.module.scss';
 
 import { PostType } from 'src/types/Post';
 
@@ -19,8 +19,8 @@ export default function PostLink(props: PropsType): ReactElement | null {
     throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
   }
 
-  const title = post?.frontmatter?.title;
-  if (!title) {
+  const postTitle = post?.frontmatter?.title;
+  if (!postTitle) {
     throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
   }
 
@@ -30,9 +30,9 @@ export default function PostLink(props: PropsType): ReactElement | null {
   }
 
   return (
-    <div className={styles.title}>
-      <Link to={slug}>{title}</Link>{' '}
-      <span className={styles.date}>{shortDate(postDate)}</span>
+    <div className={title}>
+      <Link to={slug}>{postTitle}</Link>{' '}
+      <span className={date}>{shortDate(postDate)}</span>
     </div>
   );
 }

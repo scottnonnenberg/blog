@@ -35,7 +35,7 @@ const gatsbyConfig = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/assets`,
         name: `assets`,
@@ -79,6 +79,12 @@ const gatsbyConfig = {
       },
     },
 
+    // We want all the syntactic niceties of sass.
+    'gatsby-plugin-sass',
+
+    // We want to generate on-disk d.ts files for all of our css module files.
+    'gatsby-plugin-dts-css-modules',
+
     // Allows advanced preprocessing of images - creating multiple sizes, the small
     //   blurred preview images, etc.
     'gatsby-transformer-sharp',
@@ -96,9 +102,6 @@ const gatsbyConfig = {
         src: join(__dirname, 'src'),
       },
     },
-
-    // Generates typescript definitions for each of our module.scss files.
-    'gatsby-plugin-scss-typescript',
 
     // Minifies our class names in production. In development, classnames are descriptive,
     //   like 'HTMLPreview-module--title--3dwpy'. In production, it's just 'b'.

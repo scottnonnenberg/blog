@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
-import styles from './TextPreview.module.scss';
+import { container, title, date } from './TextPreview.module.scss';
 
 import { shortDate } from 'src/util/shortDate';
 
@@ -24,8 +24,8 @@ export default function TextPreview(props: PropsType): ReactElement | null {
     throw new Error(`Page had missing textPreview: ${JSON.stringify(post)}`);
   }
 
-  const title = post?.frontmatter?.title;
-  if (!title) {
+  const postTitle = post?.frontmatter?.title;
+  if (!postTitle) {
     throw new Error(`Page had missing title: ${JSON.stringify(post)}`);
   }
 
@@ -35,10 +35,10 @@ export default function TextPreview(props: PropsType): ReactElement | null {
   }
 
   return (
-    <div className={styles.container}>
-      <h3 className={styles.title}>
-        <Link to={slug}>{title}</Link>{' '}
-        <span className={styles.date}>{shortDate(postDate)}</span>
+    <div className={container}>
+      <h3 className={title}>
+        <Link to={slug}>{postTitle}</Link>{' '}
+        <span className={date}>{shortDate(postDate)}</span>
       </h3>
       <p>
         {`${textPreview} `}

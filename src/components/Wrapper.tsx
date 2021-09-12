@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import 'css/global.scss';
-import styles from './Wrapper.module.scss';
+import { backLink, blogSummary, container, divider, header } from './Wrapper.module.scss';
 
 import Author from 'src/components/Author';
 
@@ -37,10 +37,10 @@ function Wrapper({ location, children }: PropsType): ReactElement | null {
   const url = location.pathname;
 
   return (
-    <div className={styles.container}>
+    <div className={container}>
       {renderHeader(blogTitle, url)}
       {children}
-      <hr className={styles.divider} />
+      <hr className={divider} />
       <Author />
     </div>
   );
@@ -52,8 +52,8 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
   if (url === '/') {
     return (
       <div>
-        <h1 className={styles.header}>{blogTitle}</h1>
-        <div className={styles.blogSummary}>
+        <h1 className={header}>{blogTitle}</h1>
+        <div className={blogSummary}>
           {'A blog about '}
           <Link to={SOFTWARE_DEVELOPMENT_URL}>software development</Link>
           {' and '}
@@ -68,7 +68,7 @@ function renderHeader(blogTitle: string, url: string): ReactElement | null {
   return (
     <div>
       <h3>
-        <Link className={styles.backLink} to={'/'}>
+        <Link className={backLink} to={'/'}>
           {`« ${blogTitle}`}
         </Link>
       </h3>
