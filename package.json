@@ -39,7 +39,6 @@
     "@babel/plugin-proposal-class-properties": "7.14.5",
     "@scottnonnenberg/notate": "1.0.0",
     "@storybook/react": "6.3.8",
-    "@teamsupercell/typings-for-css-modules-loader": "2.5.1",
     "@types/app-module-path": "2.2.0",
     "@types/async": "3.2.7",
     "@types/chai": "4.2.21",

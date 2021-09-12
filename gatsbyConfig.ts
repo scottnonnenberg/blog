@@ -97,9 +97,6 @@ const gatsbyConfig = {
       },
     },
 
-    // We want typescript!
-    'gatsby-plugin-typescript',
-
     // Generates typescript definitions for each of our module.scss files.
     'gatsby-plugin-scss-typescript',
 
@@ -127,14 +124,13 @@ const gatsbyConfig = {
     {
       resolve: 'gatsby-plugin-no-javascript-utils',
       options: {
+        // We're already doing this with gatsby-plugin-no-javascript
+        noScript: true,
         noSourcemaps: true,
         removeGeneratorTag: false,
         removeReactHelmetAttrs: true,
         noInlineStyles: true,
         removeGatsbyAnnouncer: true,
-        // Note: this one causes the build to crash if you turn it on
-        removeFocusWrapper: false,
-        removePreloadLinks: true,
       },
     },
   ],
