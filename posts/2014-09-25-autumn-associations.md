@@ -11,7 +11,7 @@ tags:
 
 In American pop culture, Autumn is orange and brown, pumpkins, brightly colored leaves starting to fall, animals storing food for winter. I think of it a little differently. I think of it as a time of _new things_, _reflection_, and at least a little bit of _melancholy_.
 
-![leaves](../assets/2014/09_sep/leaves-1411691625098.JPG)
+![leaves](../assets/2014/09_sep/leaves-1411691625098.jpg)
 
 <div class='fold'></div>
 

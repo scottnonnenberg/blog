@@ -39,7 +39,7 @@ I was on crutches more than three months, until late June. I was very lucky that
 
 Crutches. Always crutches. Crrrrutches. International travel with crutches. Photobombing crutches.
 
-![My 31st birthday in Mexico. Yes, the stupid crutches photobombed me.](../assets/2014/08_aug/cruches_photobomb-1408754027291.JPG)
+![My 31st birthday in Mexico. Yes, the stupid crutches photobombed me.](../assets/2014/08_aug/cruches_photobomb-1408754027291.jpg)
 
 ## Identity
 

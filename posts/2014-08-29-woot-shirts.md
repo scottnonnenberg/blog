@@ -44,7 +44,7 @@ Since I had proven my worthiness by buying a shirt, I could now vote in their we
 
 I bought a shirt every time I encountered one I liked. And it was good. Without much effort, and certainly with no panicked trips to the mall, my wardrobe was expanding! I actually got excited about clothes! I bought socks to match the colors in my shirts. I coordinated like only a true geek can.
 
-![me and Danielle in tahoe, penguin/orca](../assets/2014/08_aug/orca-1409176591274.JPG)
+![me and Danielle in tahoe, penguin/orca](../assets/2014/08_aug/orca-1409176591274.jpg)
 
 ## The beginning of the end
 Unfortunately, woot was bought by Amazon in 2010. It retained its character reasonably well for a couple years after that, but recently their daily emails were feeling a little more like spam. As if to confirm that thought, [Matt Rutledge](http://www.dmagazine.com/publications/d-magazine/2014/july/matt-rutledge-woot-has-a-new-deal-mediocre-corporation?single=1), the founder of woot, left Amazon this spring and started a [statement of a company](http://mediocre.com) and [new daily deals site](http://meh.com). Seems there was a bit of a culture clash.
