@@ -3,12 +3,14 @@ import { join, relative, resolve } from 'path';
 
 import { Feed } from 'feed';
 
-import { getPreFoldContent } from 'src/util/getPreFoldContent';
-import { fixLocalLinks } from 'src/util/fixLocalLinks';
-import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
-import { getTagCounts } from 'src/util/getTagCounts';
-import { removeTags } from 'src/util/removeTags';
-import { prune } from 'src/util/prune';
+// Note: we need to use relative paths here because app-module-path causes WebPack 5 to throw
+//   PackFileCacheStrategy/FileSystemInfo warnings. Even though the overall build works.
+import { getPreFoldContent } from './src/util/getPreFoldContent';
+import { fixLocalLinks } from './src/util/fixLocalLinks';
+import { appendToLastTextBlock } from './src/util/appendToLastTextBlock';
+import { getTagCounts } from './src/util/getTagCounts';
+import { removeTags } from './src/util/removeTags';
+import { prune } from './src/util/prune';
 
 import { PostType } from 'src/types/Post';
 

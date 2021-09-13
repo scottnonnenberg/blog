@@ -4,6 +4,7 @@
 
 require('source-map-support').install();
 require('./register');
-require('./scripts/util/setupModulePath');
+// Disable for now - causes PackFileCacheStrategy/FileSystemInfo warnings from WebPack 5
+// require('./scripts/util/setupModulePath');
 
 module.exports = require('./gatsbyConfig').default;
