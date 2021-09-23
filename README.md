@@ -63,7 +63,10 @@ You can use `yarn serve` to serve static files from `public/` at http://localhos
 Once you have the static server running you can check for broken links:
 
 ```bash
+# quick run
 yarn check-local-links
+
+# these can take some time
 yarn check-deep-links
 yarn check-links http://localhost:8000/
 ```
@@ -99,11 +102,11 @@ It takes some getting used to, but this configuration is absolutely worthwhile. 
 
 ## License
 
-The files under `posts/` are Copyright 2013-2020, All Rights Reserved.
+The files under `posts/` are Copyright 2013-2021, All Rights Reserved.
 
 The rest of the project is under the MIT license:
 
-Copyright (c) 2016 Scott Nonnenberg <scott@nonnenberg.com>
+Copyright (c) 2021 Scott Nonnenberg <scott@nonnenberg.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
 associated documentation files (the "Software"), to deal in the Software without restriction,
