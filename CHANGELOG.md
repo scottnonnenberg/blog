@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/scottnonnenberg/blog/compare/v2.0.0...v2.1.0) (2021-09-23)
+
+
+### Features
+
+* **gatsby:** Upgrade to Gatsby v3 ([0c51a24](https://github.com/scottnonnenberg/blog/commit/0c51a2415778601d36abba1891741817babc50eb))
+
+
+### Bug Fixes
+
+* **css-minify:** Restore CSS minification with Gatsby 3/Webpack 5 patch ([2e65e4d](https://github.com/scottnonnenberg/blog/commit/2e65e4d7789adf60bc1c49df41ff34df033b8984))
+* **img:** Fix capitalized JPG extensions - now they're responsive ([a66805c](https://github.com/scottnonnenberg/blog/commit/a66805c370b89fbdb4645b9785c2d22e19adc857))
+* **typed-css:** Fix typed css by removing typescript plugin ([c9d17e6](https://github.com/scottnonnenberg/blog/commit/c9d17e60476bb2f4894249753e68d35d88644847))
+* **webpack:** Eliminate PackFileCacheStrategy/FileSystemInfo warnings ([2b70f92](https://github.com/scottnonnenberg/blog/commit/2b70f92e772146e49f538cb658a0eb3b59cda464))
+
 ## [2.0.0](https://github.com/scottnonnenberg/blog/compare/v1.20.2...v2.0.0) (2020-12-22)
 
 
