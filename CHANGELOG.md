@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/scottnonnenberg/blog/compare/v2.1.0...v2.1.1) (2021-09-23)
+
+
+### Bug Fixes
+
+* **deps:** Add missing js-string-escape to yarn-offline-cache ([3a3848b](https://github.com/scottnonnenberg/blog/commit/3a3848b3a9ef54cc91353189ed017965d4928701))
+
 ## [2.1.0](https://github.com/scottnonnenberg/blog/compare/v2.0.0...v2.1.0) (2021-09-23)
 
 
