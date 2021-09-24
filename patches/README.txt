@@ -11,6 +11,3 @@ gatsby-plugin-no-javascript
     - A style tag added by gatsby-remark-autolink-headers
     - A script tag added by gatsby-remark-autolink-headers
     - A 90k polyfill.js file pulled in by Gatsby
-
-gatsby-plugin-scss-typescript
-  So we can generate the scss.d.ts files on develop and on build, deeper changes to bring the compatibility needed to combine css-loader and typings-for-css-modules-loader.
