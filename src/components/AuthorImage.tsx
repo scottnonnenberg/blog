@@ -4,13 +4,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image/withIEPolyfill';
 
-import {
-  backupImage,
-  container,
-  image,
-  padding,
-  parent,
-} from './AuthorImage.module.scss';
+import { parent } from './AuthorImage.module.scss';
 
 type ImgFixedQueryType = {
   file: {
