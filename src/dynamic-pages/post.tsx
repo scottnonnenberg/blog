@@ -66,11 +66,16 @@ export default function post({
     throw new Error(`post.tsx had missing relativePath: ${JSON.stringify(post)}`);
   }
 
+  const postUpdatedDate = post?.frontmatter?.updatedDate;
+  const postUpdatedDateString = postUpdatedDate
+    ? ` (updated ${renderDate(postUpdatedDate)})`
+    : '';
+
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
       <h1 className={header}>{title}</h1>
-      <div className={date}>{renderDate(postDate)}</div>
+      <div className={date}>{`${renderDate(postDate)}${postUpdatedDateString}`}</div>
       <Markdown html={post.html} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
       <div className={metadata}>
@@ -78,6 +83,12 @@ export default function post({
           <em>Posted:</em>
           {` ${renderDate(postDate)}`}
         </div>
+        {postUpdatedDate ? (
+          <div>
+            <em>Updated:</em>
+            {` ${renderDate(postUpdatedDate)}`}
+          </div>
+        ) : null}
         {renderTagLinks(post?.frontmatter?.tags)}
         <div>
           <em>On GitHub:</em>{' '}
@@ -126,6 +137,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date
+        updatedDate
         tags
       }
     }
