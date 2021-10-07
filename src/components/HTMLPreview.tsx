@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
-import { shortDate } from 'src/util/shortDate';
+import { renderDate } from 'src/util/renderDate';
 
 import Markdown from './Markdown';
 
@@ -40,7 +40,7 @@ export default function HTMLPreview(props: PropsType): ReactElement | null {
     <div>
       <h2 className={title}>
         <Link to={slug}>{postTitle}</Link>{' '}
-        <span className={date}>{shortDate(postDate)}</span>
+        <span className={date}>{renderDate(postDate)}</span>
       </h2>
       <Markdown html={htmlPreview} />
     </div>

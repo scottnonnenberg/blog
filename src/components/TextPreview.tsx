@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import { container, title, date } from './TextPreview.module.scss';
 
-import { shortDate } from 'src/util/shortDate';
+import { renderDate } from 'src/util/renderDate';
 
 import { PostType } from 'src/types/Post';
 
@@ -38,7 +38,7 @@ export default function TextPreview(props: PropsType): ReactElement | null {
     <div className={container}>
       <h3 className={title}>
         <Link to={slug}>{postTitle}</Link>{' '}
-        <span className={date}>{shortDate(postDate)}</span>
+        <span className={date}>{renderDate(postDate)}</span>
       </h3>
       <p>
         {`${textPreview} `}

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { Link } from 'gatsby';
 
-import { shortDate } from 'src/util/shortDate';
+import { renderDate } from 'src/util/renderDate';
 
 import { date, title } from './PostLink.module.scss';
 
@@ -32,7 +32,7 @@ export default function PostLink(props: PropsType): ReactElement | null {
   return (
     <div className={title}>
       <Link to={slug}>{postTitle}</Link>{' '}
-      <span className={date}>{shortDate(postDate)}</span>
+      <span className={date}>{renderDate(postDate)}</span>
     </div>
   );
 }

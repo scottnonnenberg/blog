@@ -2,8 +2,7 @@ import React, { ReactElement } from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 
 import { intersperse } from 'src/util/intersperse';
-import { shortDate } from 'src/util/shortDate';
-import { longDate } from 'src/util/longDate';
+import { renderDate } from 'src/util/renderDate';
 
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
@@ -71,13 +70,13 @@ export default function post({
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
       <h1 className={header}>{title}</h1>
-      <div className={date}>{shortDate(postDate)}</div>
+      <div className={date}>{renderDate(postDate)}</div>
       <Markdown html={post.html} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
       <div className={metadata}>
         <div>
           <em>Posted:</em>
-          {` ${longDate(postDate)}`}
+          {` ${renderDate(postDate)}`}
         </div>
         {renderTagLinks(post?.frontmatter?.tags)}
         <div>

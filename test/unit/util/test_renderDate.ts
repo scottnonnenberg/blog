@@ -1,13 +1,13 @@
 import { expect } from 'chai';
 
-import { longDate } from 'src/util/longDate';
+import { renderDate } from 'src/util/renderDate';
 
-describe('unit/utils/longDate', () => {
+describe('unit/utils/renderDate', () => {
   it('returns date with year for prior year', () => {
     const date = '2015-05-17T21:55:17.888Z';
     const expected = '2015 May 17';
 
-    const actual = longDate(date);
+    const actual = renderDate(date);
     expect(actual).to.equal(expected);
   });
 
@@ -15,7 +15,7 @@ describe('unit/utils/longDate', () => {
     const date = '2016-05-17T21:55:17.888Z';
     const expected = '2016 May 17';
 
-    const actual = longDate(date);
+    const actual = renderDate(date);
     expect(actual).to.equal(expected);
   });
 });
