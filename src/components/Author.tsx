@@ -10,7 +10,7 @@ const OUTSIDE_URL = 'https://scottnonnenberg.com/work/#nordstrom-2012-q-2-to-q-4
 const ROLES_URL = 'https://scottnonnenberg.com/work/#microsoft-2010-q-3-to-2011-q-3';
 const THE_URL =
   'https://scottnonnenberg.com/work/#social-security-administration-2015-q-3';
-const WORK_URL = 'https://scottnonnenberg.com/work';
+const WORK_URL = 'https://scottnonnenberg.com/work/';
 
 // Internal
 const MANY_LANGUAGES_URL = '/eslint-part-3-analysis/#your-fingerprint';

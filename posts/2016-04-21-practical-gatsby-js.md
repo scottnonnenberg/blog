@@ -2,7 +2,7 @@
 rank: 6
 title: Practical Gatsby.js
 date: 2016-04-21T22:48:55.316Z
-updatedDate: 2021-09-26T23:25:09.026Z
+updatedDate: 2021-10-17T23:07:40.223Z
 path: /practical-gatsby-js/
 tags:
   - reactjs

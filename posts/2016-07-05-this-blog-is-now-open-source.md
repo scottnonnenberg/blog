@@ -2,7 +2,7 @@
 rank: 16
 title: This blog is now open source!
 date: 2016-07-05T18:43:01.950Z
-updatedDate: 2021-09-26T23:25:09.026Z
+updatedDate: 2021-10-17T23:07:40.223Z
 path: /this-blog-is-now-open-source/
 tags:
   - gatsbyjs

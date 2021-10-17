@@ -2,7 +2,7 @@
 rank: 5
 title: Static site generation with Gatsby.js
 date: 2016-04-19T21:06:19.300Z
-updatedDate: 2021-09-26T23:25:09.026Z
+updatedDate: 2021-10-17T23:07:40.223Z
 path: /static-site-generation-with-gatsby-js/
 tags:
   - reactjs
