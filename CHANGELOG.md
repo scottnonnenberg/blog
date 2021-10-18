@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/scottnonnenberg/blog/compare/v2.1.1...v2.2.0) (2021-10-18)
+
+
+### Features
+
+* **dates:** Eliminate short/longDate in favor of one renderDate ([ec91e13](https://github.com/scottnonnenberg/blog/commit/ec91e13006384d5ea51ba1d2e0e06d5c4fb2e239))
+* **new-post:** The great gatsby upgrade ([c249e10](https://github.com/scottnonnenberg/blog/commit/c249e100eaf2f1a7640e36f086eb0e60fd20d757))
+* **post:** Update old Gatsby posts ([aeac0ae](https://github.com/scottnonnenberg/blog/commit/aeac0ae7e5fbdc6ab8c0678ba211731e368e6bf3))
+* **update-commit:** Pages can now link to their update commit ([ebbff0c](https://github.com/scottnonnenberg/blog/commit/ebbff0cfa3f6c85c595b4197a423ba60e95a948d))
+* **updated-date:** Posts can now have an updated date ([8f5e311](https://github.com/scottnonnenberg/blog/commit/8f5e3110f4b9ebc3983a04469d47e5dfd13a7ac2))
+
 ### [2.1.1](https://github.com/scottnonnenberg/blog/compare/v2.1.0...v2.1.1) (2021-09-23)
 
 
