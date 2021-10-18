@@ -71,6 +71,8 @@ export default function post({
     ? ` (updated ${renderDate(postUpdatedDate)})`
     : '';
 
+  const postUpdatedCommit = post?.frontmatter?.updatedCommit;
+
   return (
     <Wrapper location={location}>
       <SEO pageTitle={title} post={post} location={location} />
@@ -85,8 +87,16 @@ export default function post({
         </div>
         {postUpdatedDate ? (
           <div>
-            <em>Updated:</em>
-            {` ${renderDate(postUpdatedDate)}`}
+            <em>Updated:</em>{' '}
+            {postUpdatedCommit ? (
+              <a
+                href={`https://github.com/scottnonnenberg/blog/commit/${postUpdatedCommit}`}
+              >
+                {renderDate(postUpdatedDate)}
+              </a>
+            ) : (
+              renderDate(postUpdatedDate)
+            )}
           </div>
         ) : null}
         {renderTagLinks(post?.frontmatter?.tags)}
@@ -138,6 +148,7 @@ export const pageQuery = graphql`
         title
         date
         updatedDate
+        updatedCommit
         tags
       }
     }

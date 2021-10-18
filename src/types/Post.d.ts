@@ -11,10 +11,11 @@ export type PostType = {
 };
 
 export type PostAttributesType = {
-  title?: string;
   date?: string;
   path?: string;
-  tags?: Array<string>;
   rank?: number;
+  tags?: Array<string>;
+  title?: string;
+  updatedCommit?: string;
   updatedDate?: string;
 };
