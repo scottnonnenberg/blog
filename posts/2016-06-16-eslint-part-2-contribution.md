@@ -25,9 +25,10 @@ I had a beginner's mind as I dug deep into ESLint for the first time. I discover
 
 It was pleasure to have [Adam Baldwin](https://github.com/evilpacket) of the [Node.js Security Project](https://nodesecurity.io/) [speak at Seattle Node.js in April](http://www.meetup.com/Seattle-Node-js/events/229425709/). And I saw him [talk about evil regular expressions at CascadiaJS](http://2015.cascadiajs.com/speakers/adam-baldwin) last summer. So I was happy to discover a security-focused ESLint plugin written by the man himself!
 
-I was confused when I got so many errors for my simple code, so I took a trip to the readme. Sadly, there wasn't a lot of documentation. Looking further, I did get what I was looking for at the [^Lift Security blog](https://blog.liftsecurity.io/). So I [submitted a pull request improving the documentation](https://github.com/nodesecurity/eslint-plugin-security/pull/2). Doesn't [my updated readme](https://github.com/scottnonnenberg/eslint-plugin-security/blob/28b01f708f0dd6b51da5b07a492a74f5b639ac12/README.md) look more helpful?
+I was confused when I got so many errors for my simple code, so I took a trip to the readme. Sadly, there wasn't a lot of documentation. Looking further, I did get what I was looking for at the [
+\^Lift Security blog](https://blog.liftsecurity.io/). So I [submitted a pull request improving the documentation](https://github.com/nodesecurity/eslint-plugin-security/pull/2). Doesn't [my updated readme](https://github.com/scottnonnenberg/eslint-plugin-security/blob/28b01f708f0dd6b51da5b07a492a74f5b639ac12/README.md) look more helpful?
 
-Sadly, the project hasn't seen much movement lately. Maybe if you add a &#128077; you can help convince them to merge it? :0)
+Sadly, the project hasn't seen much movement lately. Maybe if you add a 👍🏼 you can help convince them to merge it? :0)
 
 ### [eslint-plugin-filenames](https://github.com/selaux/eslint-plugin-filenames)
 
