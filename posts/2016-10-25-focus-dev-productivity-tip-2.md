@@ -25,7 +25,7 @@ I believe that just about all of us in tech are chasing that feeling: a combinat
 
 ## Flow
 
-This feeling is not a new concept, nor is it unique to technology. This phenomenon, generally called [_flow](https://en.wikipedia.org/wiki/Flow_(psychology))[_](https://en.wikipedia.org/wiki/Flow_(psychology)), has been described over the years by writers, poets, composers, scientists and more. Mihaly Csikszentmihalyi, the psychologist who came up with the _flow_ name, believes that it is the key to human happiness. I'd recommend his [TED Talk, "Flow, the secret to happiness"](https://www.ted.com/talks/mihaly_csikszentmihalyi_on_flow) for a quick primer.
+This feeling is not a new concept, nor is it unique to technology. This phenomenon, generally called [_flow_](https://en.wikipedia.org/wiki/Flow_(psychology)), has been described over the years by writers, poets, composers, scientists and more. Mihaly Csikszentmihalyi, the psychologist who came up with the _flow_ name, believes that it is the key to human happiness. I'd recommend his [TED Talk, "Flow, the secret to happiness"](https://www.ted.com/talks/mihaly_csikszentmihalyi_on_flow) for a quick primer.
 
 He says that three key components are required for _flow_:
 
