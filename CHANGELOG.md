@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/scottnonnenberg/blog/compare/v2.2.0...v2.3.0) (2021-10-31)
+
+
+### Features
+
+* **post:** New post "Better web development and deployment" ([c59609f](https://github.com/scottnonnenberg/blog/commit/c59609fcc5e2fc48d4b07a673b8802d6997e9837))
+
+
+### Bug Fixes
+
+* **post:** Fix a couple bugs in 'ESLint Part 2: Contribution' ([60f7217](https://github.com/scottnonnenberg/blog/commit/60f72172c2b6254d77118f7b97fabc5e464a3bc4))
+* **post:** Fix formatting bug in 'Focus: Dev Produtivity Tip [#2](https://github.com/scottnonnenberg/blog/issues/2)' ([f4ef47e](https://github.com/scottnonnenberg/blog/commit/f4ef47e7fffb5e0fb60c85b823aad6fb7e85919e))
+
 ## [2.2.0](https://github.com/scottnonnenberg/blog/compare/v2.1.1...v2.2.0) (2021-10-18)
 
 
