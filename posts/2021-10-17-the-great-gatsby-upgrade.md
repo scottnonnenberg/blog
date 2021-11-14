@@ -5,6 +5,7 @@ path: /the-great-gatsby-upgrade/
 tags:
   - gatsbyjs
   - reactjs
+  - typescript
   - javascript
   - open-source
   - software

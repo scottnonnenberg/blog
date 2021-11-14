@@ -4,6 +4,7 @@ title: Better docs and static analysis
 date: 2016-12-06T18:19:26.567Z
 path: /better-docs-and-static-analysis/
 tags:
+  - typescript
   - stack-improvements
   - reactjs
   - nodejs

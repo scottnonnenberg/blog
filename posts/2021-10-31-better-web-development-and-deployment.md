@@ -4,6 +4,7 @@ date: 2021-10-31T23:11:26.862Z
 path: /better-web-development-and-deployment/
 tags:
   - stack-improvements
+  - typescript
   - javascript
   - software
 ---
