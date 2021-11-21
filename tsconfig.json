@@ -4,7 +4,6 @@
     "module": "commonjs",
     "target": "es2017",
     "jsx": "preserve",
-    "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
@@ -13,7 +12,27 @@
       "*": ["*"],
       "broken-link-checker": ["./src/types/broken-link-checker.d.ts"],
       "@scottnonnenberg/notate": ["./src/types/notate.d.ts"]
-    }
+    },
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictBindCallApply": true,
+
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+
+    "useUnknownInCatchVariables": true,
   },
   "include": ["./**/*.ts", "./**/*.tsx"]
 }

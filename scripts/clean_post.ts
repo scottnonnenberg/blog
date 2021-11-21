@@ -35,7 +35,8 @@ function loadPosts(limit?: number): Array<BasicPostType> {
     });
 }
 
-const limit = parseInt(process.argv[2], 10) || 1;
+const firstArgument = process.argv[2];
+const limit = firstArgument ? parseInt(firstArgument, 10) || 1 : 1;
 const posts = loadPosts(limit);
 
 function removeSmartQuotes(value?: string): string | undefined {
@@ -52,7 +53,7 @@ function removeDupeLinks(contents?: string): string | undefined {
   }
 
   const dupeLink = /\[([^)]+)\]\(\1\)/g;
-  return contents.replace(dupeLink, (full: string, substring: string) => substring);
+  return contents.replace(dupeLink, (_full: string, substring: string) => substring);
 }
 
 posts.forEach(post => {

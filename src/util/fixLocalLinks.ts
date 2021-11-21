@@ -4,5 +4,5 @@ export function fixLocalLinks(html?: string, domain?: string): string | undefine
   }
 
   const linkR = /href="(\/[^"]*)"/g;
-  return html.replace(linkR, (match, link) => `href="${domain + link}"`);
+  return html.replace(linkR, (_match, link) => `href="${domain + link}"`);
 }

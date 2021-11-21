@@ -14,6 +14,9 @@ export function appendToLastTextBlock(
 
   for (let i = result.length - 1; i >= 0; i -= 1) {
     const block = result[i];
+    if (block === undefined) {
+      continue;
+    }
 
     const withoutTags = block.replace(/<[^>]*>/g, '');
     const withoutWhitespace = withoutTags.replace(/\s/g, '');

@@ -189,7 +189,7 @@ const gatsbyNode = {
         value: slug,
       });
 
-      const absolutePath = node?.fileAbsolutePath;
+      const absolutePath = node ?? node['fileAbsolutePath'];
       if (typeof absolutePath !== 'string') {
         throw new Error(`Post was missing fileAbsolutePath: ${JSON.stringify(node)}`);
       }

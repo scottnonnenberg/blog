@@ -9,7 +9,14 @@ export function prune(input: string, limit: number): string {
 
   const index = limit - 3;
   for (let i = index; i >= 1; i -= 1) {
-    if (charR.test(text[i - 1]) && !charR.test(text[i])) {
+    const current = text[i];
+    const next = text[i - 1];
+
+    if (next === undefined || current === undefined) {
+      continue;
+    }
+
+    if (charR.test(next) && !charR.test(current)) {
       return `${text.slice(0, i)}...`;
     }
   }

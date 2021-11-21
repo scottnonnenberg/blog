@@ -19,6 +19,11 @@ const now = new Date();
 const dateJSON = now.toJSON();
 
 const title = process.argv[2];
+if (!title) {
+  console.log('No title provided!');
+  process.exit(1);
+}
+
 const titleSlug = slugify(title);
 const titleForYaml = fixForYaml(title);
 const postPath = `/${titleSlug}/`;
