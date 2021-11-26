@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/scottnonnenberg/blog/compare/v2.4.0...v2.5.0) (2021-11-26)
+
+
+### Features
+
+* **lint:** Add eslint cache for faster small changes ([2a534ff](https://github.com/scottnonnenberg/blog/commit/2a534ff266d2f30ee79d86f832b764df1bdc7914))
+* **lint:** Update to my latest lint libraries, get lint clean ([8bb1f53](https://github.com/scottnonnenberg/blog/commit/8bb1f53e2daba406d98358155857e3034dcce730))
+* **typescript:** Update typescript and turn on some additional checks ([0d86788](https://github.com/scottnonnenberg/blog/commit/0d86788eea35c20ed38370ff1137577ecaa38936))
+
 ## [2.4.0](https://github.com/scottnonnenberg/blog/compare/v2.3.0...v2.4.0) (2021-11-14)
 
 
