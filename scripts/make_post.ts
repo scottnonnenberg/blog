@@ -5,7 +5,7 @@ import { join } from 'path';
 import { slugify } from 'underscore.string';
 
 function fixForYaml(title: string): string {
-  if (title.indexOf(':') !== -1) {
+  if (title.includes(':')) {
     return `"${title.split('"').join('\\"')}"`;
   }
 

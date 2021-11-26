@@ -4,15 +4,7 @@ import { stripIndent } from 'common-tags';
 import { appendToLastTextBlock } from 'src/util/appendToLastTextBlock';
 
 describe('unit/utils/appendToLastTextBlock', () => {
-  it('returns undefined for undefined input', () => {
-    expect(appendToLastTextBlock()).to.equal(undefined);
-  });
-
-  it('returns empty string for empty string input', () => {
-    expect(appendToLastTextBlock('')).to.equal('');
-  });
-
-  it('does not insert toInsert of all blocks are tag/whitespace only', () => {
+  it('does not insert toInsert if all blocks are tag/whitespace only', () => {
     const input = stripIndent`
       <p>
         <a href="somewhere">
@@ -24,7 +16,7 @@ describe('unit/utils/appendToLastTextBlock', () => {
       </p>
     `;
 
-    expect(appendToLastTextBlock(input)).to.equal(input);
+    expect(appendToLastTextBlock(input, 'Read More...')).to.equal(input);
   });
 
   it('inserts at end of last non-tag entry', () => {

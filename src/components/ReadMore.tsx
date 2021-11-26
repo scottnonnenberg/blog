@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 
+import type { PostType } from 'src/types/Post';
 import TextPreview from './TextPreview';
 
 import { title } from './ReadMore.module.scss';
-
-import { PostType } from 'src/types/Post';
 
 type PropsType = {
   previous?: PostType;

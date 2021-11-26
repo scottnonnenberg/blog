@@ -1,7 +1,6 @@
 import * as React from 'react';
-import EmailSignup from './EmailSignup';
-
 import { storiesOf } from '@storybook/react';
+import EmailSignup from './EmailSignup';
 
 const stories = storiesOf('src/components/EmailSignup', module);
 

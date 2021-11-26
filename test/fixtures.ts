@@ -1,6 +1,8 @@
 const HOUR = 60 * 60 * 1000;
 const DAY = 24 * HOUR;
-const YEAR = 365 * DAY; // not always true, but good enough for these tests
+
+// Not always true, but good enough for these tests
+const YEAR = 365 * DAY;
 
 const now = new Date();
 const yesterday = new Date(Date.now() - HOUR);

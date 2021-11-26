@@ -1,8 +1,8 @@
 import * as React from 'react';
-import HTMLPreview from './HTMLPreview';
 
 import { storiesOf } from '@storybook/react';
 import { posts } from 'test/fixtures';
+import HTMLPreview from './HTMLPreview';
 
 const { current, lastYear } = posts;
 

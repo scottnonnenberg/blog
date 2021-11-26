@@ -1,8 +1,8 @@
 import * as React from 'react';
-import ReadMore from './ReadMore';
 
 import { storiesOf } from '@storybook/react';
 import { posts } from 'test/fixtures';
+import ReadMore from './ReadMore';
 
 const { next, previous } = posts;
 

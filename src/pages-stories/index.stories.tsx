@@ -1,8 +1,9 @@
 import * as React from 'react';
 
-import Index, { PropsType } from 'src/pages/index';
-
 import { storiesOf } from '@storybook/react';
+import type { PropsType } from 'src/pages/index';
+import Index from 'src/pages/index';
+
 import { posts } from 'test/fixtures';
 
 const { current, next, previous, lastYear } = posts;
@@ -47,10 +48,10 @@ function createProps(props: Partial<PropsType> = {}) {
     pageContext: null,
 
     // Other stuff provided by Gatsby
-    navigate: async () => undefined,
+    navigate: async () => Promise.resolve(),
     children: undefined,
     params: {},
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
     pageResources: {} as any,
     path: '/',
     uri: '/',

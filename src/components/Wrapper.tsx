@@ -1,13 +1,14 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
 import 'css/global.scss';
-import { backLink, blogSummary, container, divider, header } from './Wrapper.module.scss';
 
 import Author from 'src/components/Author';
 
-import { LocationType } from 'src/types/Location';
-import { SiteMetadataQueryType } from 'src/types/queries';
+import type { LocationType } from 'src/types/Location';
+import type { SiteMetadataQueryType } from 'src/types/queries';
+import { backLink, blogSummary, container, divider, header } from './Wrapper.module.scss';
 
 const SOFTWARE_DEVELOPMENT_URL = '/tags/software/';
 const GEEKERY_URL = '/star-wars-cards/';

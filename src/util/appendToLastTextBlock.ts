@@ -2,14 +2,7 @@ const startOfBlock = '<p>';
 const endOfBlockTest = /<\/p>/m;
 const endOfBlock = '</p>';
 
-export function appendToLastTextBlock(
-  content?: string,
-  toInsert?: string
-): string | undefined {
-  if (!content) {
-    return content;
-  }
-
+export function appendToLastTextBlock(content: string, toInsert: string): string {
   const result = content.split(startOfBlock).filter(block => Boolean(block.length));
 
   for (let i = result.length - 1; i >= 0; i -= 1) {
@@ -22,7 +15,7 @@ export function appendToLastTextBlock(
     const withoutWhitespace = withoutTags.replace(/\s/g, '');
 
     if (withoutWhitespace.length) {
-      result[i] = block.replace(endOfBlockTest, toInsert + endOfBlock);
+      result[i] = block.replace(endOfBlockTest, `${toInsert}${endOfBlock}`);
       break;
     }
   }

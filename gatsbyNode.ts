@@ -1,20 +1,10 @@
+/* eslint-disable no-console, @scottnonnenberg/thehelp/absolute-or-current-dir */
+
 import { writeFileSync } from 'fs';
 import { join, relative, resolve } from 'path';
 
 import { Feed } from 'feed';
-
-// Note: we need to use relative paths here because app-module-path causes WebPack 5 to throw
-//   PackFileCacheStrategy/FileSystemInfo warnings. Even though the overall build works.
-import { getPreFoldContent } from './src/util/getPreFoldContent';
-import { fixLocalLinks } from './src/util/fixLocalLinks';
-import { appendToLastTextBlock } from './src/util/appendToLastTextBlock';
-import { getTagCounts } from './src/util/getTagCounts';
-import { removeTags } from './src/util/removeTags';
-import { prune } from './src/util/prune';
-
-import { PostType } from 'src/types/Post';
-
-import {
+import type {
   BuildArgs,
   CreateNodeArgs,
   CreatePagesArgs,
@@ -22,7 +12,21 @@ import {
   Node,
 } from 'gatsby';
 
-import { AllDataQueryType, AllPostsQueryType } from 'src/types/queries';
+// Note: we need to use relative paths here because app-module-path causes WebPack 5 to throw
+//   PackFileCacheStrategy/FileSystemInfo warnings. Even though the overall build works.
+import type { PostType } from 'src/types/Post';
+import type { AllDataQueryType, AllPostsQueryType } from 'src/types/queries';
+
+import { appendToLastTextBlock } from './src/util/appendToLastTextBlock';
+import { fixLocalLinks } from './src/util/fixLocalLinks';
+import { getPreFoldContent } from './src/util/getPreFoldContent';
+import { getTagCounts } from './src/util/getTagCounts';
+import { prune } from './src/util/prune';
+import { removeTags } from './src/util/removeTags';
+
+const POST_COUNT_FOR_FEEDS = 20;
+const RECENT_COUNT_FOR_SYNDICATION = 10;
+const TAG_POSTS_WITH_HTML_PREVIEW = 5;
 
 type RawAllPostsQueryType = {
   errors?: Array<Error>;
@@ -45,8 +49,12 @@ type NodeType = Node & {
   };
 };
 
-function getHTMLPreview(html: string, slug: string): string | undefined {
+function getHTMLPreview(html: string, slug: string): string {
   const preFold = getPreFoldContent(html);
+  if (!preFold) {
+    throw new Error('getHTMLPreview: Missing pre-fold content!');
+  }
+
   const textLink = ` <a href="${slug}">Read more&nbsp;»</a>`;
   return appendToLastTextBlock(preFold, textLink);
 }
@@ -54,9 +62,13 @@ function getHTMLPreview(html: string, slug: string): string | undefined {
 const MAX_TEXT_PREVIEW = 200;
 function getTextPreview(html: string) {
   const preFold = getPreFoldContent(html);
+  if (!preFold) {
+    throw new Error('getTextPreview: Missing pre-fold content!');
+  }
+
   const noTags = removeTags(preFold);
   if (!noTags) {
-    throw new Error(`No tags returned for html: ${preFold}`);
+    throw new Error(`getTextPreview: No tags returned for html: ${preFold}`);
   }
 
   return prune(noTags, MAX_TEXT_PREVIEW);
@@ -92,8 +104,8 @@ const gatsbyNode = {
       `
     );
 
-    if (result.errors) {
-      throw result.errors;
+    if (result.errors?.length) {
+      throw result.errors[0] ?? new Error('Something went wrong!');
     }
     if (!result.data) {
       console.error('Query results malformed', result);
@@ -107,7 +119,7 @@ const gatsbyNode = {
       const next = index === 0 ? null : posts[index - 1];
       const previous = index === posts.length - 1 ? null : posts[index + 1];
 
-      const path = post?.fields?.slug;
+      const path = post.fields?.slug;
       if (!path) {
         throw new Error(`Page had missing slug: ${JSON.stringify(post)}`);
       }
@@ -137,14 +149,14 @@ const gatsbyNode = {
         return;
       }
 
-      const postsWithTag = posts.filter(post => post?.frontmatter?.tags?.includes(tag));
+      const postsWithTag = posts.filter(post => post.frontmatter?.tags?.includes(tag));
       const withText: Array<PostType> = [];
       const justLink: Array<PostType> = [];
 
       // By removing some of this data, we can reduce the size of the page-data.json for
       //   this page.
       postsWithTag.forEach((post, index) => {
-        if (index <= 5) {
+        if (index <= TAG_POSTS_WITH_HTML_PREVIEW) {
           withText.push({
             ...post,
             htmlPreview: undefined,
@@ -179,7 +191,7 @@ const gatsbyNode = {
     const { createNodeField } = actions;
 
     if (node.internal.type === 'MarkdownRemark') {
-      const slug: string | undefined = node?.frontmatter?.path;
+      const slug: string | undefined = node.frontmatter?.path;
       if (!slug) {
         throw new Error(`Post was missing path: ${JSON.stringify(node)}`);
       }
@@ -189,7 +201,7 @@ const gatsbyNode = {
         value: slug,
       });
 
-      const absolutePath = node ?? node['fileAbsolutePath'];
+      const absolutePath = node['fileAbsolutePath'];
       if (typeof absolutePath !== 'string') {
         throw new Error(`Post was missing fileAbsolutePath: ${JSON.stringify(node)}`);
       }
@@ -208,18 +220,17 @@ const gatsbyNode = {
   //   generates HTML from markdown. We only get html when we call that plugin's resolver
   //   manually!
   // Thanks, @zaparo! https://github.com/gatsbyjs/gatsby/issues/17045#issuecomment-529161439
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  /* eslint-disable max-params, @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
   createResolvers: ({ createResolvers }: CreateResolversArgs): any => {
     const resolvers = {
       MarkdownRemark: {
         htmlPreview: {
           type: 'String',
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           resolve: async (source: PostType, args: any, context: any, info: any) => {
-            const htmlField = info.schema.getType('MarkdownRemark').getFields()['html'];
+            const htmlField = info.schema.getType('MarkdownRemark').getFields().html;
             const html = await htmlField.resolve(source, args, context, info);
 
-            const slug = source?.frontmatter?.path;
+            const slug = source.frontmatter?.path;
             if (!slug) {
               throw new Error(`source was missing path: ${JSON.stringify(source)}`);
             }
@@ -228,9 +239,8 @@ const gatsbyNode = {
         },
         textPreview: {
           type: 'String',
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           resolve: async (source: PostType, args: any, context: any, info: any) => {
-            const htmlField = info.schema.getType('MarkdownRemark').getFields()['html'];
+            const htmlField = info.schema.getType('MarkdownRemark').getFields().html;
             const html = await htmlField.resolve(source, args, context, info);
 
             return getTextPreview(html);
@@ -240,6 +250,7 @@ const gatsbyNode = {
     };
     createResolvers(resolvers);
   },
+  /* eslint-enable max-params, @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 
   // Build key assets that live next to built files in public/
   onPostBuild: async ({ graphql }: BuildArgs): Promise<void> => {
@@ -283,8 +294,8 @@ const gatsbyNode = {
       `
     );
 
-    if (result.errors) {
-      throw result.errors;
+    if (result.errors?.length) {
+      throw result.errors[0] ?? new Error('Something went wrong!');
     }
     if (!result.data) {
       console.error('Query results malformed', result);
@@ -312,27 +323,31 @@ const gatsbyNode = {
       author,
     });
 
-    const mostRecent20 = posts.slice(0, 20);
-    mostRecent20.forEach(post => {
+    const mostRecent = posts.slice(0, POST_COUNT_FOR_FEEDS);
+    mostRecent.forEach(post => {
       if (!post.frontmatter) {
         console.error('Malformed post', post);
         throw new Error('Post was missing frontmatter!');
       }
-
-      const data = post.frontmatter;
-      if (!data.title || !data.date) {
+      if (!post.html) {
         console.error('Malformed post', post);
-        throw new Error('Post metadata was missing title or date');
+        throw new Error('Post was missing html!');
       }
 
-      const htmlPreview = post?.htmlPreview;
+      const data = post.frontmatter;
+      if (!data.title || !data.date || !data.path) {
+        console.error('Malformed post', post);
+        throw new Error('Post metadata was missing title, date, or path');
+      }
+
+      const htmlPreview = post.htmlPreview;
       if (!htmlPreview) {
         console.error('Malformed post', post);
         throw new Error('Post metadata was missing htmlPreview');
       }
 
       const description = fixLocalLinks(htmlPreview, siteMetadata.domain);
-      const link = siteMetadata.domain + data.path;
+      const link = `${siteMetadata.domain}${data.path}`;
 
       feed.addItem({
         title: data.title,
@@ -355,15 +370,20 @@ const gatsbyNode = {
         console.error('Malformed post', post);
         throw new Error('Post was missing frontmatter!');
       }
+      const data = post.frontmatter;
+      if (!data.path) {
+        console.error('Malformed post', post);
+        throw new Error('Post metadata was missing path');
+      }
 
-      const htmlPreview = post?.htmlPreview;
+      const htmlPreview = post.htmlPreview;
       if (!htmlPreview) {
         console.error('Malformed post', post);
         throw new Error('Post metadata was missing htmlPreview');
       }
 
       const preview = fixLocalLinks(htmlPreview, siteMetadata.domain);
-      const url = siteMetadata.domain + post.frontmatter.path;
+      const url = `${siteMetadata.domain}${data.path}`;
 
       return {
         title: post.frontmatter.title,
@@ -377,7 +397,10 @@ const gatsbyNode = {
     const allPath = join(__dirname, 'public/all.json');
     const recentPath = join(__dirname, 'public/recent.json');
     writeFileSync(allPath, JSON.stringify(json, null, '  '));
-    writeFileSync(recentPath, JSON.stringify(json.slice(0, 10), null, '  '));
+    writeFileSync(
+      recentPath,
+      JSON.stringify(json.slice(0, RECENT_COUNT_FOR_SYNDICATION), null, '  ')
+    );
   },
 };
 

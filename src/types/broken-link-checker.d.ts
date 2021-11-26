@@ -16,7 +16,7 @@ declare module 'broken-link-checker' {
   };
 
   export class SiteChecker {
-    constructor(options: OptionsType, handlers: HandlersType);
-    enqueue: (domain: string) => void;
+    public constructor(options: OptionsType, handlers: HandlersType);
+    public enqueue: (domain: string) => void;
   }
 }

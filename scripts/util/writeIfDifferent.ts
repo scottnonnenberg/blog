@@ -1,16 +1,16 @@
-import fs from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
 export default function writeIfDifferent(path: string, contents: string): void {
   try {
-    const currentContents = fs.readFileSync(path).toString();
+    const currentContents = readFileSync(path).toString();
     if (currentContents === contents) {
       return;
     }
-  } catch (err) {
+  } catch (error) {
     // file doesn't exist; need to write it
   }
 
   console.log(`writing ${path}`);
 
-  fs.writeFileSync(path, contents);
+  writeFileSync(path, contents);
 }

@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Wrapper from './Wrapper';
-
 import { storiesOf } from '@storybook/react';
+import Wrapper from './Wrapper';
 
 const stories = storiesOf('src/components/Wrapper', module);
 

@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { execSync } from 'child_process';
 
-import { GatsbyConfig } from 'gatsby';
+import type { GatsbyConfig } from 'gatsby';
 
 const gatsbyConfig = {
   siteMetadata: {
@@ -38,7 +38,7 @@ const gatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/assets`,
-        name: `assets`,
+        name: 'assets',
       },
     },
 

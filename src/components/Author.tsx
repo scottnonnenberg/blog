@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
+import type { SiteMetadataQueryType } from 'src/types/queries';
 import { AuthorImage } from './AuthorImage';
-
-import { SiteMetadataQueryType } from 'src/types/queries';
 
 // External
 const HOMEPAGE_URL = 'https://scottnonnenberg.com';

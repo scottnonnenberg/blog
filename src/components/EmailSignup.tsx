@@ -1,6 +1,7 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 
-import mailchimp from 'mailchimp';
+import { mailchimp } from 'mailchimp';
 
 import {
   container,
@@ -20,6 +21,7 @@ export default function EmailSignup(props: PropsType): ReactElement | null {
     return null;
   }
 
+  const { callToAction } = props;
   const { account, shard, u, id, fakeField } = mailchimp;
 
   return (
@@ -31,9 +33,12 @@ export default function EmailSignup(props: PropsType): ReactElement | null {
         rel="noopener noreferrer"
       >
         <div className={inner}>
-          <label htmlFor="email">{props.callToAction}</label>
+          <label htmlFor="email" id="email-label">
+            {callToAction}
+          </label>
           <span className={inputSection}>
             <input
+              aria-labelledby="email-label"
               id="email"
               type="email"
               name="EMAIL"
@@ -41,9 +46,9 @@ export default function EmailSignup(props: PropsType): ReactElement | null {
               required
             />
             <span className={hidden} aria-hidden>
-              <input type="text" name={fakeField} tabIndex={-1} />
+              <input type="text" name={fakeField} tabIndex={-1} aria-hidden />
             </span>
-            <input type="submit" name="subscribe" value="Sign me up!" />
+            <input type="submit" name="subscribe" value="Sign me up!" alt="Sign me up!" />
           </span>
           <div className={disclaimer}>
             {"I won't share your email with anyone. "}

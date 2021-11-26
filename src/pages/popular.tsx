@@ -1,12 +1,15 @@
-import React, { ReactElement } from 'react';
-import { graphql, PageProps } from 'gatsby';
+/* eslint-disable react/no-array-index-key */
+
+import type { ReactElement } from 'react';
+import React from 'react';
+import type { PageProps } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import SEO from 'src/components/SEO';
 import Wrapper from 'src/components/Wrapper';
 
+import type { AllPostsQueryType } from 'src/types/queries.d';
 import { getTextPreviews, getPostLinks } from './index';
-
-import { AllPostsQueryType } from 'src/types/queries.d';
 
 const TEXT_PREVIEW_POSTS = 10;
 const POST_LINKS = 10;

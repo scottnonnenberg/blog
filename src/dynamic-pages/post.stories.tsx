@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import Post, { PropsType } from './post';
-
 import { storiesOf } from '@storybook/react';
 import { posts } from 'test/fixtures';
+import type { PropsType } from './post';
+import Post from './post';
 
 const { current, next, previous } = posts;
 
@@ -37,10 +37,10 @@ function createProps(props: Partial<PropsType> = {}) {
     pageContext,
 
     // Other stuff provided by Gatsby
-    navigate: async () => undefined,
+    navigate: async () => Promise.resolve(),
     children: undefined,
     params: {},
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
     pageResources: {} as any,
     path: '/page-slug',
     uri: '/page-slug',

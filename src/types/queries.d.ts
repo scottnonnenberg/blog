@@ -1,5 +1,5 @@
-import { PostType } from './Post.d';
-import { SiteMetadataType } from './SiteMetadata.d';
+import type { PostType } from './Post.d';
+import type { SiteMetadataType } from './SiteMetadata.d';
 
 export type MarkdownRemarkResultType = {
   edges: Array<{

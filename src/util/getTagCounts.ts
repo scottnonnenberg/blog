@@ -1,15 +1,15 @@
-import { PostType } from 'src/types/Post';
+import type { PostType } from 'src/types/Post';
 
 export function getTagCounts(
   posts: Array<PostType>
 ): Array<{ tag: string; count: number }> {
-  const countByTag: Record<string, number> = posts.reduce((counts, post) => {
-    const tags = post?.frontmatter?.tags || [];
+  const countByTag = posts.reduce<Record<string, number>>((counts, post) => {
+    const tags = post.frontmatter?.tags ?? [];
     tags.forEach(tag => {
-      counts[tag] = (counts[tag] || 0) + 1;
+      counts[tag] = (counts[tag] ?? 0) + 1;
     });
     return counts;
-  }, Object.create(null));
+  }, {});
 
   return (
     Object.entries(countByTag)

@@ -6,12 +6,13 @@ import chalk from 'chalk';
 import notate from '@scottnonnenberg/notate';
 import async from 'async';
 import superagent from 'superagent';
-import { SiteChecker, SiteCheckerResultType } from 'broken-link-checker';
+import { SiteChecker } from 'broken-link-checker';
+import type { SiteCheckerResultType } from 'broken-link-checker';
 
 const MAX_PARALLEL = 5;
 const DOMAIN = 'http://localhost:8000';
-const links = Object.create(null);
-const cache = Object.create(null);
+const links: Record<string, boolean> = {};
+const cache: Record<string, string> = {};
 
 function verifyHash({
   pathname,
@@ -26,7 +27,7 @@ function verifyHash({
   const goodPrefix = chalk.blue('GOOD:    ');
   const badPrefix = chalk.red('MISSING: ');
 
-  if (contents.indexOf(` id="${id}"`) !== -1) {
+  if (contents.includes(` id="${id}"`)) {
     console.log(`${goodPrefix}${chalk.cyan(pathname)} contains '${chalk.blue(id)}'`);
     return true;
   }
@@ -44,55 +45,56 @@ type LinkType = {
 
 function checkLink(
   { pathname, hash }: LinkType,
-  cb: (error?: Error | null, broken?: boolean) => void
+  callback: (error?: Error | null, broken?: boolean) => void
 ): void {
   if (!pathname || !hash) {
     console.error('Malformed link', { pathname, hash });
-    cb(new Error('Malformed link!'));
+    callback(new Error('Malformed link!'));
 
     return;
   }
 
-  if (cache[pathname]) {
-    cb(null, verifyHash({ pathname, hash, contents: cache[pathname] }));
+  const contents = cache[pathname];
+  if (contents) {
+    callback(null, verifyHash({ pathname, hash, contents }));
     return;
   }
 
-  return superagent
+  superagent
     .get(DOMAIN + pathname)
     .set('user-agent', 'scripts/check-deep-links')
-    .end((err, res) => {
-      if (notate(cb, err, { pathname })) {
+    .end((error: Error | undefined, res) => {
+      if (notate(callback, error, { pathname })) {
         return;
       }
 
       cache[pathname] = res.text;
-      cb(null, verifyHash({ pathname, hash, contents: res.text }));
-      return;
+      callback(null, verifyHash({ pathname, hash, contents: res.text }));
     });
 }
 
 function checkLinks(): void {
   // try/catch is necessary because broken-link-checker swallows errors! :0(
   try {
+    const collator = new Intl.Collator();
     const deepLinks: Array<LinkType> = Object.keys(links)
-      .filter(url => url.indexOf('#') !== -1)
-      .sort()
+      .filter(url => url.includes('#'))
+      .sort(collator.compare.bind(collator))
       .map(url => URL.parse(url));
 
-    async.mapLimit(deepLinks, MAX_PARALLEL, checkLink, err => {
-      if (err) {
-        console.log(notate.prettyPrint(err));
+    async.mapLimit(deepLinks, MAX_PARALLEL, checkLink, error => {
+      if (error) {
+        console.log(notate.prettyPrint(error));
         return;
       }
 
       console.log('\nAll Done!');
     });
-  } catch (err) {
-    if (err instanceof Error) {
-      console.log(notate.prettyPrint(err));
+  } catch (error) {
+    if (error instanceof Error) {
+      console.log(notate.prettyPrint(error));
     } else {
-      console.log('Something really went wrong:', err);
+      console.log('Something really went wrong:', error);
     }
   }
 }

@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Markdown from './Markdown';
-
 import { storiesOf } from '@storybook/react';
+import Markdown from './Markdown';
 
 const stories = storiesOf('src/components/Markdown', module);
 

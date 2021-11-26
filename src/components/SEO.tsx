@@ -1,14 +1,15 @@
 import { useStaticQuery, graphql } from 'gatsby';
 
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import { extractImage } from 'src/util/extractImage';
 
-import { LocationType } from 'src/types/Location';
-import { PostType } from 'src/types/Post';
-import { SiteMetadataType } from 'src/types/SiteMetadata';
-import { SiteMetadataQueryType } from 'src/types/queries';
+import type { LocationType } from 'src/types/Location';
+import type { PostType } from 'src/types/Post';
+import type { SiteMetadataType } from 'src/types/SiteMetadata';
+import type { SiteMetadataQueryType } from 'src/types/queries';
 
 type PropsType = {
   location: LocationType;
@@ -33,7 +34,7 @@ function generatePostSpecificTags(
     return [];
   }
 
-  const data = post?.frontmatter;
+  const data = post.frontmatter;
   if (!data) {
     throw new Error(`Page had missing frontmatter: ${JSON.stringify(data)}`);
   }
@@ -42,11 +43,11 @@ function generatePostSpecificTags(
   const postImage =
     rawPath && !rawPath.includes('http') ? `${siteMetadata.domain}${rawPath}` : rawPath;
   const twitterCardType = postImage ? 'summary_large_image' : 'summary';
-  const socialImage = postImage || siteMetadata.author.image;
+  const socialImage = postImage ?? siteMetadata.author.image;
 
   const description = post.textPreview;
 
-  const ld = {
+  const structuredData = {
     '@context': 'http://schema.org',
     '@type': 'Article',
     publisher: {
@@ -88,7 +89,7 @@ function generatePostSpecificTags(
     create('article:published_time', data.date),
 
     <script key="ld" type="application/ld+json">
-      {JSON.stringify(ld, null, '  ')}
+      {JSON.stringify(structuredData, null, '  ')}
     </script>,
   ];
 }
@@ -157,7 +158,7 @@ function SEO({ pageTitle, post, location }: PropsType): ReactElement | null {
   return (
     <Helmet>
       <title>{`${pageTitle} | ${siteMetadata.blogTitle}`}</title>
-      <link rel="shortcut icon" href={siteMetadata.favicon} />
+      <link rel="icon" href={siteMetadata.favicon} />
       {generateMetaTags(siteMetadata, post, location)}
     </Helmet>
   );

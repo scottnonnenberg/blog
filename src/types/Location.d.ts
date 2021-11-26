@@ -1,4 +1,4 @@
-import { WindowLocation } from '@reach/router';
+import type { WindowLocation } from '@reach/router';
 
 // For better typing of components that interact with Gatsby.
 

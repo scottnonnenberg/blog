@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import NotFound, { PropsType } from 'src/pages/404';
-
 import { storiesOf } from '@storybook/react';
+import type { PropsType } from 'src/pages/404';
+import NotFound from 'src/pages/404';
 
 function createProps(props: Partial<PropsType> = {}) {
   // Core fields
@@ -19,10 +19,10 @@ function createProps(props: Partial<PropsType> = {}) {
     pageContext: null,
 
     // Other stuff provided by Gatsby
-    navigate: async () => undefined,
+    navigate: async () => Promise.resolve(),
     children: undefined,
     params: {},
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
     pageResources: {} as any,
     path: '/random',
     uri: '/random',

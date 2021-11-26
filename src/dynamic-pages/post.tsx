@@ -1,5 +1,7 @@
-import React, { ReactElement } from 'react';
-import { graphql, Link, PageProps } from 'gatsby';
+import type { ReactElement } from 'react';
+import React from 'react';
+import type { PageProps } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 import { intersperse } from 'src/util/intersperse';
 import { renderDate } from 'src/util/renderDate';
@@ -12,9 +14,8 @@ import ReadMore from 'src/components/ReadMore';
 
 import Markdown from 'src/components/Markdown';
 
+import type { PostType } from 'src/types/Post';
 import { date, divider, header, metadata } from './post.module.scss';
-
-import { PostType } from 'src/types/Post';
 
 type PageContextType = {
   previous?: PostType;
@@ -50,56 +51,54 @@ export default function post({
     throw new Error(`post.tsx couldn't get github: ${JSON.stringify(data.site)}`);
   }
 
-  const post = data.markdownRemark;
-  const title = post?.frontmatter?.title;
+  const postData = data.markdownRemark;
+  const title = postData.frontmatter?.title;
   if (!title) {
-    throw new Error(`post.tsx had missing title: ${JSON.stringify(post)}`);
+    throw new Error(`postData.tsx had missing title: ${JSON.stringify(post)}`);
   }
 
-  const postDate = post?.frontmatter?.date;
-  if (!postDate) {
-    throw new Error(`post.tsx had missing post date: ${JSON.stringify(post)}`);
+  const publishData = postData.frontmatter?.date;
+  if (!publishData) {
+    throw new Error(`postData.tsx had missing post date: ${JSON.stringify(post)}`);
   }
 
-  const relativePath = post?.fields?.relativePath;
+  const relativePath = postData.fields?.relativePath;
   if (!relativePath) {
-    throw new Error(`post.tsx had missing relativePath: ${JSON.stringify(post)}`);
+    throw new Error(`postData.tsx had missing relativePath: ${JSON.stringify(post)}`);
   }
 
-  const postUpdatedDate = post?.frontmatter?.updatedDate;
-  const postUpdatedDateString = postUpdatedDate
-    ? ` (updated ${renderDate(postUpdatedDate)})`
-    : '';
+  const updatedDate = postData.frontmatter?.updatedDate;
+  const updatedDateString = updatedDate ? ` (updated ${renderDate(updatedDate)})` : '';
 
-  const postUpdatedCommit = post?.frontmatter?.updatedCommit;
+  const postUpdatedCommit = postData.frontmatter?.updatedCommit;
 
   return (
     <Wrapper location={location}>
-      <SEO pageTitle={title} post={post} location={location} />
+      <SEO pageTitle={title} post={postData} location={location} />
       <h1 className={header}>{title}</h1>
-      <div className={date}>{`${renderDate(postDate)}${postUpdatedDateString}`}</div>
-      <Markdown html={post.html} />
+      <div className={date}>{`${renderDate(publishData)}${updatedDateString}`}</div>
+      <Markdown html={postData.html} />
       <EmailSignup callToAction="Enjoy this post? Sign up for free updates!" />
       <div className={metadata}>
         <div>
           <em>Posted:</em>
-          {` ${renderDate(postDate)}`}
+          {` ${renderDate(publishData)}`}
         </div>
-        {postUpdatedDate ? (
+        {updatedDate ? (
           <div>
             <em>Updated:</em>{' '}
             {postUpdatedCommit ? (
               <a
                 href={`https://github.com/scottnonnenberg/blog/commit/${postUpdatedCommit}`}
               >
-                {renderDate(postUpdatedDate)}
+                {renderDate(updatedDate)}
               </a>
             ) : (
-              renderDate(postUpdatedDate)
+              renderDate(updatedDate)
             )}
           </div>
         ) : null}
-        {renderTagLinks(post?.frontmatter?.tags)}
+        {renderTagLinks(postData.frontmatter?.tags)}
         <div>
           <em>On GitHub:</em>{' '}
           <a href={`${github}/blob/${currentCommit}/${relativePath}`}>{relativePath}</a>

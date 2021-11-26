@@ -1,6 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import type { ReactElement } from 'react';
 
-export function intersperse(items?: Array<any>, toInject?: string): Array<string> {
+export function intersperse(
+  items?: Array<ReactElement | string>,
+  toInject?: string
+): Array<ReactElement | string> {
   if (!items || !items.length) {
     return [];
   }
@@ -8,7 +11,12 @@ export function intersperse(items?: Array<any>, toInject?: string): Array<string
     return items;
   }
 
-  const start = [items[0]];
+  const start = items[0];
+  if (!start) {
+    return [];
+  }
 
-  return items.slice(1).reduce((result, item) => result.concat([toInject, item]), start);
+  return items
+    .slice(1)
+    .reduce((result, item) => result.concat([toInject, item]), [start]);
 }

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 'use strict';
 
 require('source-map-support').install();

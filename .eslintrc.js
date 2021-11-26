@@ -1,32 +1,24 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 module.exports = {
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-  },
-
-  plugins: ['@typescript-eslint', 'filenames', 'import', 'react'],
-
-  env: {
-    commonjs: true,
-    node: true,
-  },
-
   extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
+    '@scottnonnenberg/eslint-config-thehelp',
+    '@scottnonnenberg/eslint-config-thehelp/react',
+    '@scottnonnenberg/eslint-config-thehelp/typescript',
+    '@scottnonnenberg/eslint-config-thehelp/prettier',
+    '@scottnonnenberg/eslint-config-thehelp/prettierReact',
+    '@scottnonnenberg/eslint-config-thehelp/prettierTypescript',
   ],
+
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
 
   settings: {
     'import/resolver': {
       node: {
         paths: [__dirname],
+      },
+      typescript: {
+        project: ['./tsconfig.json'],
       },
     },
     react: {
@@ -35,7 +27,21 @@ module.exports = {
   },
 
   rules: {
-    'filenames/match-exported': 'error',
-    'filenames/no-index': 'error',
+    // This is an odd project, in that the vast majority of dependencies are not 'production'
+    'import/no-extraneous-dependencies': 'off',
+
+    // We're not handling user data in this project
+    'security/detect-object-injection': 'off',
+
+    // The `graphql` tag function type definition returns void, but we assign it to
+    //   variables and pass it to hooks
+    '@typescript-eslint/no-confusing-void-expression': 'off',
+
+    // These two need to be changed together
+    'import/no-internal-modules': 'off',
+    '@scottnonnenberg/thehelp/absolute-or-current-dir': [
+      'error',
+      { exceptions: ['setupModulePath'] },
+    ],
   },
 };

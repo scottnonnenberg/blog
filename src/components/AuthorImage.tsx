@@ -1,4 +1,5 @@
-import React, { ReactElement } from 'react';
+import type { ReactElement } from 'react';
+import React from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -49,7 +50,12 @@ export function AuthorImage(): ReactElement {
         }}
       >
         <div aria-hidden="true" className={padding} />
-        <img aria-hidden="true" className={backupImage} src={fixed.base64} />
+        <img
+          aria-hidden="true"
+          className={backupImage}
+          src={fixed.base64}
+          alt="Placeholder of me for page load"
+        />
         <picture>
           <source srcSet={fixed.srcSet} sizes={fixed.sizes} />
           <img

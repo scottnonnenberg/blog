@@ -32,7 +32,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
 
-    "useUnknownInCatchVariables": true,
+    "useUnknownInCatchVariables": true
   },
   "include": ["./**/*.ts", "./**/*.tsx"]
 }

@@ -3,8 +3,10 @@
 // Though it's strange, it's important to name this '404' so Gatsby and our hosting
 //   infrastructure understand the resultant filename: '404.html'
 
-import React, { ReactElement } from 'react';
-import { Link, PageProps } from 'gatsby';
+import type { ReactElement } from 'react';
+import React from 'react';
+import type { PageProps } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Wrapper from 'src/components//Wrapper';
 import SEO from 'src/components/SEO';

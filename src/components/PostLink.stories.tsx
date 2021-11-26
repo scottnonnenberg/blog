@@ -1,8 +1,8 @@
 import * as React from 'react';
-import PostLink from './PostLink';
 
 import { storiesOf } from '@storybook/react';
 import { posts } from 'test/fixtures';
+import PostLink from './PostLink';
 
 const { current, lastYear } = posts;
 

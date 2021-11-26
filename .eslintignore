@@ -4,3 +4,4 @@ coverage
 !.eslintrc.js
 assets
 yarn/
+*.scss.d.ts

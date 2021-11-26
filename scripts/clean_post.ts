@@ -19,9 +19,10 @@ type BasicPostType = {
 function loadPosts(limit?: number): Array<BasicPostType> {
   const postFiles = readdirSync(postsPath);
 
+  const collator = new Intl.Collator();
   return postFiles
     .filter(file => mdFileFilter.test(file))
-    .sort()
+    .sort(collator.compare.bind(collator))
     .reverse()
     .slice(0, limit)
     .map(file => {

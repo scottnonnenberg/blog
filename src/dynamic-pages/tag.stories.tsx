@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import Tag, { PropsType } from './tag';
-
 import { storiesOf } from '@storybook/react';
 import { posts } from 'test/fixtures';
+import type { PropsType } from './tag';
+import Tag from './tag';
 
 const { current, next, previous, lastYear } = posts;
 
@@ -31,10 +31,10 @@ function createProps(props: Partial<PropsType> = {}) {
     pageContext,
 
     // Other stuff provided by Gatsby
-    navigate: async () => undefined,
+    navigate: async () => Promise.resolve(),
     children: undefined,
     params: {},
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment
     pageResources: {} as any,
     path: '/tags/tech',
     uri: '/tags/tech',

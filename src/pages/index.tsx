@@ -1,7 +1,7 @@
-/* eslint-disable filenames/no-index -- necessary if we want to generate index.html! */
-
-import React, { ReactElement } from 'react';
-import { Link, graphql, PageProps } from 'gatsby';
+import type { ReactElement } from 'react';
+import React from 'react';
+import type { PageProps } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 
 import Wrapper from 'src/components/Wrapper';
 import SEO from 'src/components/SEO';
@@ -11,10 +11,9 @@ import PostLink from 'src/components/PostLink';
 import TextPreview from 'src/components/TextPreview';
 import HTMLPreview from 'src/components/HTMLPreview';
 
+import type { PostType } from 'src/types/Post';
+import type { MarkdownRemarkResultType, SplitPostsQueryType } from 'src/types/queries.d';
 import { links, nowrap } from './index.module.scss';
-
-import { PostType } from 'src/types/Post';
-import { MarkdownRemarkResultType, SplitPostsQueryType } from 'src/types/queries.d';
 
 export type PropsType = PageProps<SplitPostsQueryType, null>;
 
@@ -52,7 +51,7 @@ export default function index({ data, location }: PropsType): ReactElement | nul
 
 export function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   return posts.map(post => {
-    const slug = post?.fields?.slug;
+    const slug = post.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);
     }
@@ -63,7 +62,7 @@ export function getHTMLPreviews(posts: Array<PostType>): Array<ReactElement | nu
 
 export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | null> {
   return posts.map(post => {
-    const slug = post?.fields?.slug;
+    const slug = post.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);
     }
@@ -74,7 +73,7 @@ export function getTextPreviews(posts: Array<PostType>): Array<ReactElement | nu
 
 export function getPostLinks(posts: Array<PostType>): Array<ReactElement | null> {
   return posts.map(post => {
-    const slug = post?.fields?.slug;
+    const slug = post.fields?.slug;
     if (!slug) {
       throw new Error(`Page has missing slug: ${JSON.stringify(post)}`);
     }
