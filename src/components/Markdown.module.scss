@@ -7,8 +7,7 @@
 }
 
 // Inline code blocks
-.markdown p code,
-.markdown li code {
+.markdown code {
   white-space: pre;
   white-space: pre-wrap;
   white-space: pre-line;
