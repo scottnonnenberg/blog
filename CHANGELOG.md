@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/scottnonnenberg/blog/compare/v2.5.0...v2.6.0) (2021-11-28)
+
+
+### Features
+
+* **post:** New post "A Typescript onramp", fix in-header code snippets ([8a87181](https://github.com/scottnonnenberg/blog/commit/8a871819227914ab1a2db39a9cead514f3fc1e40))
+
+
+### Bug Fixes
+
+* **lint:** Add missing .eslintrc.js files in /test and /script ([5b765aa](https://github.com/scottnonnenberg/blog/commit/5b765aa7b1cd15679cd495cdbeeee684d532c9ef))
+
 ## [2.5.0](https://github.com/scottnonnenberg/blog/compare/v2.4.0...v2.5.0) (2021-11-26)
 
 
