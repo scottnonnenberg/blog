@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/scottnonnenberg/blog/compare/v2.6.0...v2.7.0) (2021-12-12)
+
+
+### Features
+
+* **post:** New post "Take breaks (Dev productivity tip 6)" ([dc0ed8d](https://github.com/scottnonnenberg/blog/commit/dc0ed8d3460042c14c9d0983e2708f7351eb1369))
+
 ## [2.6.0](https://github.com/scottnonnenberg/blog/compare/v2.5.0...v2.6.0) (2021-11-28)
 
 
