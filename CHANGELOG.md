@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/scottnonnenberg/blog/compare/v2.7.0...v2.7.1) (2021-12-12)
+
+
+### Bug Fixes
+
+* **tags:** Add proper tags to most recent post ([b8a482d](https://github.com/scottnonnenberg/blog/commit/b8a482dcd3d3ef09687b762af81ec4c8db9e5ae2))
+
 ## [2.7.0](https://github.com/scottnonnenberg/blog/compare/v2.6.0...v2.7.0) (2021-12-12)
 
 
