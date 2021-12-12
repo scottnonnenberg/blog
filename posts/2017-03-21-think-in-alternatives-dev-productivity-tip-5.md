@@ -6,6 +6,7 @@ path: /think-in-alternatives-dev-productivity-tip-5/
 tags:
   - dev-productivity
   - software
+  - business
 ---
 
 I've been [told that I'm a very productive developer](https://scottnonnenberg.com/work/#scott-is-a-meticulous-thinker-and-he-produces-cod). And I'm sharing how I do it. Welcome to the fifth in [my developer productivity tips series](/tags/dev-productivity/): **Think in alternatives.**

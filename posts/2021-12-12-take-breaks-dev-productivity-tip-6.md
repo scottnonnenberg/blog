@@ -3,6 +3,9 @@ title: "Take breaks (Dev productivity tip #6)"
 date: 2021-12-12T19:15:37.844Z
 path: /take-breaks-dev-productivity-tip-6/
 tags:
+  - dev-productivity
+  - software
+  - business
 ---
 
 I’ve been [told that I’m a very productive developer](https://scottnonnenberg.com/work/#scott-is-a-meticulous-thinker-and-he-produces-cod). And it’s not magic; it’s a set of skills you can build! Welcome to the sixth in [my developer productivity tips series](https://blog.scottnonnenberg.com/tags/dev-productivity/): **Take breaks**.
