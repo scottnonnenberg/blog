@@ -6,6 +6,7 @@ tags:
   - fun
   - data
   - star-wars
+  - cards
 ---
 
 ![Luke and Vader](../assets/2016/03_mar/star_wars/cards.jpg)

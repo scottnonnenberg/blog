@@ -30,7 +30,7 @@ I like to think of automated testing as taking this effort and making it both re
 
 ## The value of testing
 
-Imagine trying to fix a tricky bug six months from now, deep inside the code you just wrote. A year? Two years? If you don't plan to stay at your job that long, [imagine someone new trying to make changes in your code](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjM96LvgLfRAhUIw1QKHW7pAWIQFggcMAA&url=http%3A%2F%2Fthedailywtf.com%2F&usg=AFQjCNETv_WJf9NiC7VH982LdL3oV3PUPQ&sig2=eYCVzkdjaSENfaOt8Z5Wxw). Tests can act as guide rails for future changes, reducing the probability of unintended consequences.
+Imagine trying to fix a tricky bug six months from now, deep inside the code you just wrote. A year? Two years? If you don't plan to stay at your job that long, [imagine someone new trying to make changes in your code](https://thedailywtf.com/). Tests can act as guide rails for future changes, reducing the probability of unintended consequences.
 
 Ultimately, the tests you write are more about tomorrow than they are today, just like the code itself. But tests can still provide a lot of value as you write them. Your tests can catch scenarios you didn't think about or handle perfectly - before you submit the pull request.
 
