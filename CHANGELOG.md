@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/scottnonnenberg/blog/compare/v2.7.1...v2.8.0) (2022-01-24)
+
+
+### Features
+
+* **post:** New post "Magic: The Gathering" ([3faea9d](https://github.com/scottnonnenberg/blog/commit/3faea9d50714665cc2b2ea7205de82ab3eb67e93))
+
 ### [2.7.1](https://github.com/scottnonnenberg/blog/compare/v2.7.0...v2.7.1) (2021-12-12)
 
 
