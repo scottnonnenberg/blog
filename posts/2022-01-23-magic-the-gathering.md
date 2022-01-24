@@ -1,6 +1,6 @@
 ---
 title: "Magic: The Gathering"
-date: 2022-01-24T02:28:38.426Z
+date: 2022-01-23T10:28:38.426Z
 path: /magic-the-gathering/
 tags:
   - fun
@@ -10,6 +10,8 @@ tags:
 ![Classic cards: Lightning Bolt and Counterspell](../assets/2022/01_jan/magic/classics.jpg)
 
 _Magic: The Gathering_ is a fun and amazingly deep game. I have a lot of fun with it. But I went really deep. Probably too deep. Let's talk about how I got in, and how I took a step back. Maybe you can learn from my story, as well as my [recommendations for beginners](#recommendations-for-getting-into-magic)!
+
+<div class='fold'></div>
 
 ## Early leanings
 
