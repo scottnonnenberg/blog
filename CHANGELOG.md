@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.8.1](https://github.com/scottnonnenberg/blog/compare/v2.8.0...v2.8.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* **make_post:** pad month and day when generating date ([5f0d9a4](https://github.com/scottnonnenberg/blog/commit/5f0d9a4508ff8ed1f8bd92d3776f6181e91c7f26))
+* **post:** Restore fold to Magic post, fix post date and filename ([ab77cd8](https://github.com/scottnonnenberg/blog/commit/ab77cd8f39d569eb0d1da344fe8a481f0a001820))
+
 ## [2.8.0](https://github.com/scottnonnenberg/blog/compare/v2.7.1...v2.8.0) (2022-01-24)
 
 
