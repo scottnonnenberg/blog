@@ -4,12 +4,22 @@ import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { slugify } from 'underscore.string';
 
+const LARGEST_SINGLE_DIGIT = 9;
+
 function fixForYaml(title: string): string {
   if (title.includes(':')) {
     return `"${title.split('"').join('\\"')}"`;
   }
 
   return title;
+}
+
+function padNumber(value: number): string {
+  if (value <= LARGEST_SINGLE_DIGIT) {
+    return `0${value}`;
+  }
+
+  return `${value}`;
 }
 
 const templatePath = join(__dirname, 'util/_postTemplate.md');
@@ -33,7 +43,9 @@ const newContents = template
   .replace('DATE', dateJSON)
   .replace('PATH', postPath);
 
-const dateString = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
+const month = padNumber(now.getMonth() + 1);
+const day = padNumber(now.getDate());
+const dateString = `${now.getFullYear()}-${month}-${day}`;
 const newFilePath = join(__dirname, `../posts/${dateString}-${titleSlug}.md`);
 
 writeFileSync(newFilePath, newContents);
