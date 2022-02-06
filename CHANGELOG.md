@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/scottnonnenberg/blog/compare/v2.8.1...v2.9.0) (2022-02-06)
+
+
+### Features
+
+* **post:** New post "Six years with Tarot" ([13eef90](https://github.com/scottnonnenberg/blog/commit/13eef90a4b5982684f73c3ad7103433b00ec4e99))
+
+
+### Bug Fixes
+
+* **post:** Fix intra-post link so it works as main page preview ([096ff39](https://github.com/scottnonnenberg/blog/commit/096ff39ebfd46695120409361116aeae0f10612f))
+
 ### [2.8.1](https://github.com/scottnonnenberg/blog/compare/v2.8.0...v2.8.1) (2022-01-24)
 
 
