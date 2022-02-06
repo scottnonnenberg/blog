@@ -9,7 +9,7 @@ tags:
 
 ![Classic cards: Lightning Bolt and Counterspell](../assets/2022/01_jan/magic/classics.jpg)
 
-_Magic: The Gathering_ is a fun and amazingly deep game. I have a lot of fun with it. But I went really deep. Probably too deep. Let's talk about how I got in, and how I took a step back. Maybe you can learn from my story, as well as my [recommendations for beginners](#recommendations-for-getting-into-magic)!
+_Magic: The Gathering_ is a fun and amazingly deep game. I have a lot of fun with it. But I went really deep. Probably too deep. Let's talk about how I got in, and how I took a step back. Maybe you can learn from my story, as well as my [recommendations for beginners](/magic-the-gathering/#recommendations-for-getting-into-magic)!
 
 <div class='fold'></div>
 
