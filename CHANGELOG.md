@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.10.0](https://github.com/scottnonnenberg/blog/compare/v2.9.0...v2.10.0) (2022-11-20)
+
+
+### Features
+
+* **twitter->mastodon:** The time has come ([91c3fa3](https://github.com/scottnonnenberg/blog/commit/91c3fa3a52d2df0dd16ee63ff1f82b5824d35077))
+
 ## [2.9.0](https://github.com/scottnonnenberg/blog/compare/v2.8.1...v2.9.0) (2022-02-06)
 
 
