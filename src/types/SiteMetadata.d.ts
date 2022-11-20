@@ -13,6 +13,7 @@ export type SiteMetadataType = {
     name: string;
     email: string;
     twitter: string;
+    mastodon: string;
     url: string;
     image: string;
     blurb: string;

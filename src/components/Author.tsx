@@ -11,6 +11,7 @@ const ROLES_URL = 'https://scottnonnenberg.com/work/#microsoft-2010-q-3-to-2011-
 const THE_URL =
   'https://scottnonnenberg.com/work/#social-security-administration-2015-q-3';
 const WORK_URL = 'https://scottnonnenberg.com/work/';
+const MASTODON_URL = 'https://fosstodon.org/@scottnonnenberg';
 
 // Internal
 const MANY_LANGUAGES_URL = '/eslint-part-3-analysis/#your-fingerprint';
@@ -54,7 +55,12 @@ export default function Author(): ReactElement | null {
         {", since I've spent time in "}
         <a href={ROLES_URL}>roles</a> <a href={OUTSIDE_URL}>outside</a>{' '}
         <a href={THE_URL}>the</a>
-        {" pure 'software developer.'"}
+        {" pure 'software developer.' You can find me on "}
+        {/* eslint-disable-next-line react/no-invalid-html-attribute */}
+        <a href={MASTODON_URL} rel="me">
+          Mastodon
+        </a>
+        {'.'}
       </div>
     </div>
   );
